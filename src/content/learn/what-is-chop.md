@@ -1,12 +1,14 @@
 ---
 title: 快嘴 ≠ Chopper：先把概念分清
 kicker: 入门
-summary: 语速快不等于 chopper。快歌、快嘴、Chopper 是三个层次，本站给每个人物都标了其中一个。
+summary: 语速快不等于 chopper。快歌、快嘴、Chopper 是三个层次；刚入圈、只追速度的新人小孩，圈内叫"SPS kid"。
 order: 1
 sources:
   - { title: '知乎 – chopping 在说唱中是什么风格？', url: 'https://www.zhihu.com/question/295864036' }
   - { title: '网易 – 国内很少提到的 Chopper 是什么说唱风格？（2017）', url: 'https://www.163.com/dy/article/D5V5SPNJ0518I8NI.html' }
   - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
+  - { title: 'Rap Wiki – Crucified（关于"只找最快一秒"与 2024 年改规则之争）', url: 'https://rap.fandom.com/wiki/Crucified' }
+  - { title: 'SPS and Chopper Rap Wiki', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Sps_and_chopper_rap_Wiki' }
 ---
 
 ## 一句话版本
@@ -27,6 +29,21 @@ sources:
 2. **Flow 多变、难以预测**：高速里不断变换节奏型，而不是一路平推。
 3. **密集押韵**：大量韵脚让高速段落听起来"爽"，而不是一团糊。
 4. **贯穿整首**：很多技术型 rapper 会在个别段落用加速、切拍来增加 flow 的灵活性，但只有整首、长期都这样唱的人，才会被叫作 chopper。
+
+## 最极端的一种："SPS kid"
+
+SPS 是 syllables per second（每秒音节数）。海外 chopper 圈里有个带贬义的说法叫 **"SPS kid"**，专指**刚入圈的新人小孩**，特点是：
+
+- **只追求速度**，数字越高越好；
+- 为了多塞音节，**含糊吐字、甚至胡乱发音**，听不出在说什么词；
+- 靠**剪辑拼接、后期加速**等技巧把数字堆上去；
+- 只挑**最快的那 1 秒**来算，甚至**夸大测算结果**。
+
+公开资料里也能看到这种现象：Rap Wiki 写道，"网上的小孩只想找最快的那一秒"；2024 年还有一群想自称"最快"的人试图改写纪录规则，只比 1 秒爆发。SPS 社区的 wiki 里，也有人被描述为"前 SPS kid"，或者被说在某个阶段"最像 SPS kid：只顾押韵和打爆发"。
+
+所以 SPS kid 和 chopper 正好是两个方向：**chopper 快，而且每个音节都是词、有 flow、能现场唱出来**；SPS kid 只剩一个数字。这也是本站坚持"快 ≠ Chopper"的原因。
+
+一个对照的例子：德州的 [Crucified](../../choppers/crucified/) 被质疑"加速"和"乱吐字"后，录了一段现场视频（46 秒 799 个音节），并公开了歌词，证明自己每个音节都是词。
 
 ## 为什么中文圈常把它们混在一起
 
