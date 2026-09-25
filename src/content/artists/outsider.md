@@ -19,6 +19,7 @@ speed:
     unit: syl/s
     label: 本人词条说法：「超过每秒 16 个音节」
     kind: claimed
+    window: unknown
     confidence: disputed
     note: 词条没给具体测量来源；另一个词条写的是 21，两个数字互相矛盾。
     sources:
@@ -27,6 +28,7 @@ speed:
     unit: syl/s
     label: Chopper 词条说法：「每秒 21 个音节」
     kind: claimed
+    window: unknown
     confidence: disputed
     note: 和本人词条的 16 冲突，缺少一手测量资料，暂不能作为纪录引用。
     sources:

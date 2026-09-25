@@ -21,6 +21,8 @@ speed:
     unit: char/s
     label: 《健将》中一段 5 秒快嘴（峰值）
     kind: measured
+    window: short
+    seconds: 5
     confidence: pending
     note: 同一来源称他在该曲的整体平均语速为 8.730 字/秒。目前只有这一个第三方测算来源。
     sources:

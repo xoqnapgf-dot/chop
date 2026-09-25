@@ -19,6 +19,14 @@ const speedClaim = z.object({
   unit: z.enum(['syl/s', 'char/s', 'word/s']).default('syl/s'),
   label: z.string(), // 例如 "Godzilla 第三段主歌"
   kind: z.enum(['official', 'measured', 'claimed']), // 官方认证 / 第三方测算 / 自称或传闻
+  /**
+   * 测量窗口：不同窗口的数字不能直接比
+   * burst = 爆发（约 1–2 秒，SPS 社区常用）；short = 短段（3–15 秒）；long = 整段平均（15 秒以上）；unknown = 口径不明
+   */
+  window: z.enum(['burst', 'short', 'long', 'unknown']),
+  /** 有的话填上，页面会显示算式 */
+  syllables: z.number().optional(),
+  seconds: z.number().optional(),
   confidence,
   note: z.string().optional(),
   sources: z.array(source).min(1),
@@ -152,4 +160,19 @@ const scenes = defineCollection({
   }),
 });
 
-export const collections = { artists, tracks, timeline, learn, regions, scenes };
+/** chopper cypher 的逐人测算表（来自社区，只收录艺名和作品数据） */
+const cyphers = defineCollection({
+  loader: file('src/data/cyphers.yaml'),
+  schema: z.object({
+    title: z.string(),
+    host: z.string(),
+    youtube: z.string(),
+    note: z.string(),
+    calculator: z.string(),
+    window: z.enum(['burst', 'short', 'long']),
+    entries: z.array(z.object({ name: z.string(), sps: z.number(), syllables: z.number(), seconds: z.number() })).min(1),
+    sources: z.array(source).min(1),
+  }),
+});
+
+export const collections = { artists, tracks, timeline, learn, regions, scenes, cyphers };

@@ -3,11 +3,12 @@
   name: 美国
   en: United States
   geo: [39.5, -95.5]
-  summary: Chopper 的发源地。1990 年代初从中西部兴起，Tech N9ne 的 Strange Music 把它做成了系列企划。
+  summary: Chopper 的发源地。1990 年代初从中西部兴起，Tech N9ne 的 Strange Music 把它做成了系列企划；如今 YouTube 上的 SPS 社区还在把语速往上推。
   mentions: [Krizz Kaliko, Yelawolf, D-Loc, JL B.Hood, Dayton Family]
   sources:
     - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
     - { title: 'Wikipedia – Worldwide Choppers', url: 'https://en.wikipedia.org/wiki/Worldwide_Choppers' }
+    - { title: 'SPS and Chopper Rap Wiki', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Sps_and_chopper_rap_Wiki' }
 - id: cn
   name: 中国
   en: China

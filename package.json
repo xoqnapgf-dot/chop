@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist",
+    "build": "astro build && node scripts/check-dist.mjs && pagefind --site dist",
     "preview": "astro preview",
     "check": "node scripts/lint-yaml.mjs && astro check",
     "fetch:yt": "node scripts/fetch-youtube.mjs",

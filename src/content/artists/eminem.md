@@ -20,6 +20,8 @@ speed:
     unit: syl/s
     label: Godzilla（2020）第三段主歌：31 秒 224 个单词
     kind: measured
+    window: long
+    seconds: 31
     confidence: verified
     sources:
       - { title: 'Wikipedia – Godzilla (Eminem song)', url: 'https://en.wikipedia.org/wiki/Godzilla_(Eminem_song)' }
@@ -27,6 +29,7 @@ speed:
     unit: syl/s
     label: Majesty（2018）
     kind: measured
+    window: unknown
     confidence: pending
     note: 目前只看到 Godzilla 词条里的对比数字，还缺独立来源。
     sources:
@@ -35,6 +38,9 @@ speed:
     unit: syl/s
     label: Rap God（2013）最快段落：16.45 秒 157 个音节
     kind: measured
+    window: long
+    syllables: 157
+    seconds: 16.45
     confidence: disputed
     note: 157 ÷ 16.45 ≈ 9.54，但 Godzilla 词条引用的是 9.6，两处口径不一致。
     sources:

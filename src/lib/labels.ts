@@ -33,6 +33,14 @@ export const SPEED_KIND = {
   claimed: '说法/传闻',
 } as const;
 
+export const WINDOW = {
+  burst: { name: '爆发', desc: '约 1–2 秒内的峰值，SPS 社区常用口径', order: 1 },
+  short: { name: '短段', desc: '3–15 秒的一段', order: 2 },
+  long: { name: '整段平均', desc: '15 秒以上的整段主歌或整段表演', order: 3 },
+  unknown: { name: '口径不明', desc: '来源没说测了多长', order: 4 },
+} as const;
+export type SpeedWindow = keyof typeof WINDOW;
+
 export const UNIT = {
   'syl/s': '音节/秒',
   'char/s': '字/秒',

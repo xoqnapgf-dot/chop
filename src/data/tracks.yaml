@@ -296,18 +296,20 @@
     - { title: '维基百科 – 周杰伦音乐作品列表', url: 'https://zh.wikipedia.org/zh-cn/%E5%91%A8%E6%9D%B0%E5%80%AB%E9%9F%B3%E6%A8%82%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8' }
 - id: taotie
   title: 饕餮
-  credit: 南征北战
+  artists: [zhao-chenlong]
+  credit: 南征北战（快嘴段落据网络资料由赵辰龙演唱）
   scene: china
   starter: true
   year: 2016
   youtube: 9ExsVjLenjs
   youtubeChannel: William Wang
   officialUpload: false
-  note: 电影《长城》推广曲，常被宣传为"最快华语歌""332 BPM"。但伴奏只有 83 BPM，332 = 83 × 4，换算约每秒 5.5 个音，这个说法有争议。
+  note: 电影《长城》推广曲，常被宣传为"最快华语歌""332 BPM"。但伴奏只有 83 BPM，332 = 83 × 4；而且赵辰龙说过自己的快嘴是逐字录制拼接的。这个说法有争议。
   confidence: disputed
   sources:
     - { title: '万达 – 南征北战献唱《长城》推广曲', url: 'https://www.wanda.cn/2016/2016latest_1209/34181.html' }
     - { title: '百度百科 – 饕餮（南征北战）', url: 'https://baike.baidu.com/item/%E9%A5%95%E9%A4%AE/20269071' }
+    - { title: '新浪 – 赵辰龙公开回应（2022-04-01）', url: 'https://k.sina.cn/article_1163858357_v455f11b5019012ps5.html' }
 - id: upuan
   title: Upuan
   artists: [gloc-9]
@@ -320,3 +322,38 @@
   note: Gloc-9 最有名的作品之一，官方 MV 播放量近 8000 万。
   sources:
     - { title: 'Wikipedia – Gloc-9', url: 'https://en.wikipedia.org/wiki/Gloc-9' }
+- id: infinite-choppers
+  title: Infinite Choppers
+  artists: [crucified]
+  credit: DOWN6 ft. Crucified, SPLXT, AceThaGoblin, Kal Paseo, LEECHY! 等 18 人
+  scene: world
+  youtube: EBLVVhPbv3Y
+  youtubeChannel: DOWN6
+  officialUpload: true
+  note: SPS 社区最有代表性的 chopper cypher 之一，全长约 18 分钟，18 位参与者，wiki 上有逐人的测算表。
+  confidence: pending
+  sources:
+    - { title: 'SPS and Chopper Rap Wiki – Infinite choppers 1', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Infinite_choppers_1' }
+- id: power-up
+  title: Power Up
+  artists: [crucified]
+  credit: Crucified
+  scene: world
+  youtube: y0J3LJBohWQ
+  youtubeChannel: crucified830
+  officialUpload: true
+  note: 曾被误算成 28.9 SPS 并广泛流传，SPS 团队后来更正为 18 SPS。
+  confidence: disputed
+  sources:
+    - { title: 'SPS and Chopper Rap Wiki – Crucified', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Crucified' }
+- id: that-music
+  title: That Music
+  artists: [crucified]
+  credit: Crucified
+  scene: world
+  youtube: iFrZqDMb884
+  youtubeChannel: crucified830
+  officialUpload: true
+  note: Crucified 播放量最高的歌，据 wiki 记载到 2026 年约 270 万播放。
+  sources:
+    - { title: 'SPS and Chopper Rap Wiki – Crucified', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Crucified' }
