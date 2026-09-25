@@ -144,14 +144,6 @@
   confidence: pending
   sources:
     - { title: '豆瓣小组 – 幼稚园杀手 简介（2010）', url: 'https://www.douban.com/group/topic/14768861/' }
-- id: 2014-xie-di
-  year: 2014
-  title: 方言说唱上电视
-  body: 谢帝在《中国好歌曲》第一季唱《老子明天不上班》，进入全国总决赛四强，四川话说唱第一次被大量路人听到。
-  scene: china
-  artist: xie-di
-  sources:
-    - { title: '维基百科 – 谢帝', url: 'https://zh.wikipedia.org/zh-cn/%E8%B0%A2%E5%B8%9D' }
 - id: 2016-taotie
   year: 2016
   title: "“最快华语歌”之争"

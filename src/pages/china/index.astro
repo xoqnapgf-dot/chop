@@ -19,7 +19,7 @@ const artists = (await getCollection('artists', (a) => a.data.country === 'CN'))
 );
 const tracks = await getCollection('tracks', (t) => t.data.scene === 'china');
 const starters = tracks.filter((t) => t.data.starter);
-const deepCuts = ['speed-no1', 'walking-dead-2018-cypher', 'erzi-wawa', 'jian-jiang', 'tru-master', 'yayun-ge']
+const deepCuts = ['speed-no1', 'walking-dead-2018-cypher', 'mao-wang', 'jian-jiang', 'tru-master', 'yayun-ge']
   .map((id) => tracks.find((t) => t.id === id))
   .filter((t) => t !== undefined);
 const events = (await getCollection('timeline', (e) => e.data.scene === 'china')).sort((a, b) => a.data.year - b.data.year);
@@ -184,7 +184,7 @@ const toc = [
   <section id="start" class="container-x scroll-mt-32 pt-28">
     <SectionHeading index="05" eyebrow="Start here" title="路人入门：从这几首开始">
       <p class="mt-4 max-w-3xl text-ink-2">
-        先说明：下面前两首是<strong class="text-ink">流行歌里的快段落</strong>。周杰伦不是快嘴说唱歌手；《饕餮》的快嘴段落据网络资料由南征北战的赵辰龙演唱。放在这里，是因为它们是很多路人第一次意识到"中文也能唱这么快"的歌。说唱圈里的快嘴作品在后面。
+        先听这两首：《饕餮》是电影《长城》的推广曲，快嘴段落据网络资料由南征北战的赵辰龙演唱；《儿子娃娃》是选秀舞台上的"机枪快嘴"。它们是很多路人第一次意识到"中文也能唱这么快"的歌。说唱圈里的快嘴作品在后面。
       </p>
     </SectionHeading>
     <div class="grid gap-4 md:grid-cols-2">

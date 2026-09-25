@@ -20,7 +20,7 @@ const cn = artists.filter((a) => a.data.country === 'CN');
 const world = artists.filter((a) => a.data.country !== 'CN');
 const bySince = (a: (typeof artists)[number], b: (typeof artists)[number]) => (a.data.activeSince ?? 9999) - (b.data.activeSince ?? 9999);
 const featuredWorld = world.filter((a) => a.data.featured).sort(bySince).slice(0, 4);
-const homeTracks = ['worldwide-choppers', 'speed-no1', 'godzilla', 'walking-dead-2018-cypher', 'holocaust', 'yikouqi']
+const homeTracks = ['worldwide-choppers', 'speed-no1', 'godzilla', 'walking-dead-2018-cypher', 'holocaust', 'star-warz']
   .map((id) => tracks.find((t) => t.id === id))
   .filter((t) => t !== undefined);
 
