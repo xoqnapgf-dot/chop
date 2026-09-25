@@ -150,21 +150,22 @@
   sources:
     - { title: 'Wikipedia – Ceza', url: 'https://en.wikipedia.org/wiki/Ceza' }
     - { title: 'Last.fm – Holocaust', url: 'https://www.last.fm/music/Ceza/_/Holocaust' }
-- id: loner
-  title: 외톨이 (Loner)
+- id: hero
+  title: 주인공 (Hero)
   artists: [outsider]
-  credit: Outsider
-  year: 2009
-  album: Maestro
-  youtube: yROjTblMPag
-  bilibili: BV1mt411V7mY
-  netease: 22841624
-  youtubeChannel: PONYCANYON KOREA
+  credit: Outsider feat. LMNOP
+  year: 2010
+  album: 주인공
+  youtube: xLl8fKxKiho
+  bilibili: BV1r54y197o4
+  netease: 22841582
+  youtubeChannel: Josie1007
   officialUpload: false
   scene: world
-  note: 在 Mnet、Melon 两榜登顶超过五周。
+  note: Outsider 最快的正式歌曲：NahDah 2023 榜测得 1.070 秒 16 个音节，约 14.95 SPS。
   sources:
-    - { title: 'Wikipedia – Outsider (rapper)', url: 'https://en.wikipedia.org/wiki/Outsider_(rapper)' }
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'Wikipedia – Outsider (rapper)（第三张专辑 Hero，2010）', url: 'https://en.wikipedia.org/wiki/Outsider_(rapper)' }
 - id: star-warz
   title: Star Warz (별들의 전쟁)
   artists: [outsider, twista]
@@ -195,20 +196,6 @@
   sources:
     - { title: '网易云音乐 – 健将', url: 'https://music.163.com/song?id=1988565273' }
     - { title: '百度百科 – 健将mixtape', url: 'https://baike.baidu.com/item/%E5%81%A5%E5%B0%86mixtape/62070166' }
-- id: wo-xiang-part2
-  title: 我想part2
-  artists: [pharaoh]
-  credit: 法老
-  year: 2018
-  youtube: bX5clSB_x0A
-  bilibili: BV1YJ411i7wX
-  netease: 1336856498
-  youtubeChannel: LIOUBE
-  officialUpload: false
-  scene: china
-  note: 法老的代表作之一。
-  sources:
-    - { title: '维基百科 – 法老 (歌手)', url: 'https://zh.wikipedia.org/zh-cn/%E6%B3%95%E8%80%81_(%E6%AD%8C%E6%89%8B)' }
 - id: mao-wang
   title: 猫王
   artists: [kindergarten-killer]
@@ -252,37 +239,11 @@
   note: 活死人全员 cypher，小安迪的快嘴段落常被拿出来讨论。
   sources:
     - { title: '网易 – 谁才是中文说唱圈第一快嘴？（2018）', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }
-- id: rap-god-remix
-  title: Rap God Remix
-  artists: [xie-di]
-  credit: 谢帝
-  scene: china
-  youtube: EqP-XAn3nUM
-  bilibili: BV1Ez4y117xf
-  youtubeChannel: Chengdu Rap House
-  officialUpload: false
-  note: 翻唱 Eminem《Rap God》，有网络盘点称平均约 7 字/秒。
-  confidence: pending
-  sources:
-    - { title: '网易 – 谁才是中文说唱圈第一快嘴？（2018）', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }
-- id: mingtian-bu-shangban
-  title: 老子明天不上班
-  artists: [xie-di]
-  credit: 谢帝
-  scene: china
-  year: 2014
-  youtube: KugiopC40ac
-  bilibili: BV1Ex411H78A
-  netease: 28191643
-  youtubeChannel: CCTV中国中央电视台
-  officialUpload: true
-  note: 《中国好歌曲》参赛曲，四川话说唱出圈之作，不是快嘴歌。
-  sources:
-    - { title: '维基百科 – 谢帝', url: 'https://zh.wikipedia.org/zh-cn/%E8%B0%A2%E5%B8%9D' }
 - id: erzi-wawa
   title: 儿子娃娃
   artists: [nawukere]
   credit: 那吾克热
+  starter: true
   scene: china
   year: 2018
   youtube: Bg2Ri8omcSY
@@ -319,35 +280,6 @@
   note: 西安红花会与成都说唱会馆的合作。
   sources:
     - { title: '豆瓣 HMC – Tru Master (Remix)', url: 'https://site.douban.com/Hip-HopMusicClub/widget/notes/18634931/note/526533723/' }
-- id: my-car-goes
-  title: My Car Goes
-  artists: [after-journey]
-  credit: 艾福杰尼
-  scene: china
-  youtube: xdjH3Og9q9k
-  bilibili: BV15G41137EZ
-  netease: 1981008515
-  youtubeChannel: After Journey
-  officialUpload: true
-  note: 艾福杰尼官方频道上传的 MV。
-  sources:
-    - { title: 'YouTube – After Journey 官方频道', url: 'https://www.youtube.com/channel/UC9-O1enTglU1RSLw9QFAfgg' }
-- id: yikouqi
-  title: 一口气全念对
-  credit: 周杰伦
-  scene: china
-  starter: true
-  year: 2014
-  album: 哎呦，不错哦
-  youtube: C18nyaRnR1Q
-  bilibili: BV1cs41197x4
-  netease: 29822032
-  youtubeChannel: 周杰倫 Jay Chou
-  officialUpload: true
-  note: 流行歌里的快段落，副歌是 61 个字的"文字谜"，要一口气念完。路人最熟悉的"快嘴挑战"之一。
-  sources:
-    - { title: '百度百科 – 一口气全念对', url: 'https://baike.baidu.com/item/%E4%B8%80%E5%8F%A3%E6%B0%94%E5%85%A8%E5%BF%B5%E5%AF%B9/16315694' }
-    - { title: '维基百科 – 周杰伦音乐作品列表', url: 'https://zh.wikipedia.org/zh-cn/%E5%91%A8%E6%9D%B0%E5%80%AB%E9%9F%B3%E6%A8%82%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8' }
 - id: taotie
   title: 饕餮
   artists: [zhao-chenlong]

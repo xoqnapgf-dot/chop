@@ -343,6 +343,11 @@
       "video": "https://www.youtube.com/watch?v=3TJrTSgRBqk",
       "size": "maxresdefault",
       "color": "#080808"
+    },
+    "hero": {
+      "video": "https://www.youtube.com/watch?v=xLl8fKxKiho",
+      "size": "maxresdefault",
+      "color": "#f8f8f8"
     }
   }
 }
