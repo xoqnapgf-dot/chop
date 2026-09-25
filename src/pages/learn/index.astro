@@ -1,17 +1,16 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '@/layouts/Base.astro';
-import LaneChip from '@/components/LaneChip.astro';
 import { url } from '@/lib/url';
 
 const articles = (await getCollection('learn')).sort((a, b) => a.data.order - b.data.order);
 ---
 
-<Base title="百科" description="Chopper、Chopped & Screwed、Sample Chop 的入门与专题文章。">
+<Base title="百科" description="快嘴与 chopper 的入门、起源和语速口径。">
   <section class="container-x pt-14 md:pt-20">
     <p class="eyebrow">Learn · {articles.length} 篇</p>
     <h1 class="mt-4 text-5xl font-bold md:text-7xl">百科</h1>
-    <p class="mt-5 max-w-2xl text-lg text-ink-2">从"chop 到底指什么"开始，到快嘴的节奏原理和数据口径。</p>
+    <p class="mt-5 max-w-2xl text-lg text-ink-2">从"快嘴和 chopper 有什么区别"开始，到 chopper 的起源和语速口径。</p>
 
     <ol class="mt-14 grid gap-4">
       {
@@ -22,7 +21,6 @@ const articles = (await getCollection('learn')).sort((a, b) => a.data.order - b.
               <span>
                 <span class="flex flex-wrap items-center gap-2">
                   <span class="eyebrow">{a.data.kicker}</span>
-                  <LaneChip lane={a.data.lane} short />
                 </span>
                 <span class="mt-2 block font-display text-2xl font-semibold md:text-3xl">{a.data.title}</span>
                 <span class="mt-2 block text-ink-2">{a.data.summary}</span>

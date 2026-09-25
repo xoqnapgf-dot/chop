@@ -80,7 +80,6 @@ async function channelImages(channelId) {
 for (const f of (await fs.readdir(artistsDir)).filter((f) => f.endsWith('.md'))) {
   const slug = f.replace(/\.md$/, '');
   const fm = frontmatter(await fs.readFile(path.join(artistsDir, f), 'utf8'));
-  if (!fm.youtube?.channelId) continue;
   const dir = path.join(root, 'src/assets/artists', slug);
   const avatarPath = path.join(dir, 'avatar.jpg');
   const bannerPath = path.join(dir, 'banner.jpg');
@@ -94,6 +93,18 @@ for (const f of (await fs.readdir(artistsDir)).filter((f) => f.endsWith('.md')))
     } catch (e) {
       console.warn(`✗ ${slug} portrait: ${e.message}`);
     }
+  }
+  // 没有频道、只有视频截图的人物：只记录截图来源和主色
+  if (!fm.youtube?.channelId) {
+    if (fm.portrait?.video && (await exists(portraitPath)) && (force || !media.artists[slug])) {
+      media.artists[slug] = {
+        channelUrl: null,
+        kind: 'video',
+        color: await dominant(portraitPath),
+        fetchedAt: new Date().toISOString().slice(0, 10),
+      };
+    }
+    continue;
   }
   if (!force && (await exists(avatarPath))) continue;
 

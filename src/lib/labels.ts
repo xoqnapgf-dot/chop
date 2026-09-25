@@ -1,20 +1,22 @@
-export const COUNTRY: Record<string, { name: string; flag: string }> = {
-  US: { name: '美国', flag: '🇺🇸' },
-  KR: { name: '韩国', flag: '🇰🇷' },
-  TR: { name: '土耳其', flag: '🇹🇷' },
-  CN: { name: '中国', flag: '🇨🇳' },
-  DK: { name: '丹麦', flag: '🇩🇰' },
-  DE: { name: '德国', flag: '🇩🇪' },
-  PH: { name: '菲律宾', flag: '🇵🇭' },
-  JP: { name: '日本', flag: '🇯🇵' },
-  OTHER: { name: '其他', flag: '🌐' },
+export const COUNTRY: Record<string, { name: string }> = {
+  US: { name: '美国' },
+  KR: { name: '韩国' },
+  TR: { name: '土耳其' },
+  CN: { name: '中国' },
+  PH: { name: '菲律宾' },
 };
 
-export const LANE = {
-  chopper: { name: 'Chopper 快嘴', short: '快嘴', color: 'var(--lane-chopper)' },
-  screw: { name: 'Chopped & Screwed', short: 'C&S', color: 'var(--lane-screw)' },
-  sample: { name: 'Sample Chop 切采样', short: '切采样', color: 'var(--lane-sample)' },
-  general: { name: '综合', short: '综合', color: 'var(--ink-3)' },
+/** 风格标签：快 ≠ Chopper */
+export const STYLE = {
+  chopper: { name: 'Chopper', short: 'Chopper', color: 'var(--style-chopper)', desc: '有来源称其为 chopper，或长期整首使用 chopping 技巧' },
+  fast: { name: '快嘴', short: '快嘴', color: 'var(--style-fast)', desc: '以语速、咬字清晰度为主要标签' },
+  track: { name: '快歌', short: '快歌', color: 'var(--style-track)', desc: '因个别快歌或快段落出圈，本人不以快著称' },
+} as const;
+export type Style = keyof typeof STYLE;
+
+export const SCENE = {
+  china: { name: '中国区', color: 'var(--scene-china)' },
+  world: { name: '世界', color: 'var(--scene-world)' },
 } as const;
 
 export type Confidence = 'verified' | 'disputed' | 'pending' | 'debunked';

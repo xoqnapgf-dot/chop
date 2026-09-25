@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import { trackThumb } from '@/lib/media';
 import { url } from '@/lib/url';
-import LaneChip from './LaneChip.astro';
+import { SCENE } from '@/lib/labels';
 import Confidence from './Confidence.astro';
 
 interface Props { track: CollectionEntry<'tracks'> }
@@ -12,7 +12,7 @@ const t = track.data;
 const thumb = trackThumb(t.youtube);
 ---
 
-<article class="track-card group card flex flex-col overflow-hidden transition hover:border-line-strong" data-lane={t.lane} data-year={t.year ?? 0} data-name={`${t.title} ${t.credit}`.toLowerCase()}>
+<article class="track-card group card flex flex-col overflow-hidden transition hover:border-line-strong" data-scene={t.scene} data-year={t.year ?? 0} data-name={`${t.title} ${t.credit}`.toLowerCase()}>
   <a href={url(`tracks/#${track.id}`)} class="relative block aspect-video overflow-hidden bg-black">
     {thumb && <Image src={thumb} alt={`${t.title} 视频缩略图`} widths={[400, 640]} sizes="(min-width: 1024px) 380px, 90vw" class="size-full object-cover transition duration-700 group-hover:scale-[1.04]" />}
     <span class="absolute bottom-3 left-3 rounded-full bg-black/60 px-2.5 py-1 font-mono text-[11px] text-white">{t.year ?? '年份待考'}</span>
@@ -22,7 +22,8 @@ const thumb = trackThumb(t.youtube);
   </a>
   <div class="flex flex-1 flex-col gap-2 p-4">
     <div class="flex items-center gap-2">
-      <LaneChip lane={t.lane} short />
+      <span class="chip"><span class="size-1.5 rounded-full" style={`background:${SCENE[t.scene].color}`} />{SCENE[t.scene].name}</span>
+      {t.starter && <span class="chip">路人入门</span>}
       {t.confidence !== 'verified' && <Confidence level={t.confidence} />}
     </div>
     <h3 class="text-lg font-semibold leading-snug">{t.title}</h3>

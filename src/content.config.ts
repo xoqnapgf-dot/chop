@@ -10,6 +10,9 @@ const source = z.object({
   url: z.url(),
 });
 
+/** [纬度, 经度] */
+const geo = z.tuple([z.number().min(-90).max(90), z.number().min(-180).max(180)]);
+
 /** 一条"速度"说法：数值 + 口径 + 可信度 + 出处 */
 const speedClaim = z.object({
   value: z.number(),
@@ -28,14 +31,22 @@ const artists = defineCollection({
     nameZh: z.string().optional(),
     realName: z.string().optional(),
     tagline: z.string(),
-    country: z.enum(['US', 'KR', 'TR', 'CN', 'DK', 'DE', 'PH', 'JP', 'OTHER']),
+    country: z.enum(['US', 'KR', 'TR', 'CN', 'PH']),
     city: z.string(),
-    region: z.string(), // 例如 "美国中西部"
-    activeSince: z.number().int(),
+    /** 分组用的地区名，中国区按这个分组（如"川渝"） */
+    region: z.string(),
+    geo: geo.optional(),
+    activeSince: z.number().int().optional(),
     born: z.string().optional(),
     died: z.string().optional(),
-    /** 在 chop 三种含义里属于哪一类 */
-    lane: z.array(z.enum(['chopper', 'screw', 'sample'])).min(1),
+    /**
+     * 风格标签（快 ≠ Chopper）：
+     * chopper = 有来源称其为 chopper，或长期整首使用 chopping 技巧
+     * fast    = 以语速/快嘴著称
+     * track   = 因个别快歌或快段落出圈，本人不以快著称
+     */
+    style: z.enum(['chopper', 'fast', 'track']),
+    styleNote: z.string(),
     tags: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
     youtube: z
@@ -59,14 +70,17 @@ const tracks = defineCollection({
   loader: file('src/data/tracks.yaml'),
   schema: z.object({
     title: z.string(),
-    artists: z.array(reference('artists')).min(1),
-    credit: z.string(), // 展示用的完整署名，含非收录艺人
+    /** 本站收录的艺人；流行歌手等不建档的可以为空 */
+    artists: z.array(reference('artists')).default([]),
+    credit: z.string(), // 展示用的完整署名
+    scene: z.enum(['china', 'world']),
+    /** 路人入门曲目（流行歌里的快段落等） */
+    starter: z.boolean().default(false),
     year: z.number().int().optional(),
     album: z.string().optional(),
     youtube: z.string(), // 视频 ID
     youtubeChannel: z.string(), // 上传频道名
     officialUpload: z.boolean(),
-    lane: z.enum(['chopper', 'screw', 'sample']),
     note: z.string(),
     confidence: confidence.default('verified'),
     sources: z.array(source).min(1),
@@ -79,7 +93,7 @@ const timeline = defineCollection({
     year: z.number().int(),
     title: z.string(),
     body: z.string(),
-    lane: z.enum(['chopper', 'screw', 'sample']),
+    scene: z.enum(['china', 'world']),
     artist: reference('artists').optional(),
     confidence: confidence.default('verified'),
     sources: z.array(source).min(1),
@@ -93,9 +107,37 @@ const learn = defineCollection({
     kicker: z.string(),
     summary: z.string(),
     order: z.number(),
-    lane: z.enum(['chopper', 'screw', 'sample', 'general']),
     sources: z.array(source).default([]),
   }),
 });
 
-export const collections = { artists, tracks, timeline, learn };
+/** 中国区的地区场景 */
+const regions = defineCollection({
+  loader: file('src/data/china-regions.yaml'),
+  schema: z.object({
+    name: z.string(),
+    en: z.string(),
+    cities: z.array(z.object({ name: z.string(), geo })),
+    summary: z.string(),
+    body: z.string(),
+    order: z.number(),
+    sources: z.array(source).default([]),
+  }),
+});
+
+/** 地球上的国家/场景标记（除了本站建档的人物之外，也可以列出来源里提到的名字） */
+const scenes = defineCollection({
+  loader: file('src/data/world-scenes.yaml'),
+  schema: z.object({
+    name: z.string(),
+    en: z.string(),
+    geo,
+    summary: z.string(),
+    /** 未建档但有来源提到的人 */
+    mentions: z.array(z.string()).default([]),
+    link: z.string().optional(),
+    sources: z.array(source).min(1),
+  }),
+});
+
+export const collections = { artists, tracks, timeline, learn, regions, scenes };

@@ -1,0 +1,80 @@
+---
+/**
+ * 人物图：有照片用照片；没有可靠照片时，用人物名字做成的文字头像（不硬凑图片）。
+ */
+import { Image } from 'astro:assets';
+import { artistPhoto, artistColor } from '@/lib/media';
+import { displayName } from '@/lib/labels';
+
+interface Props {
+  id: string;
+  data: { name: string; nameZh?: string; country: string };
+  widths?: number[];
+  sizes?: string;
+  class?: string;
+  eager?: boolean;
+  alt?: string;
+}
+const { id, data, widths = [320, 480, 720], sizes = '300px', class: cls = '', eager = false, alt } = Astro.props;
+const photo = artistPhoto(id);
+const name = displayName(data);
+const color = artistColor(id);
+// 中文名只取汉字竖排；英文名取前两个字母
+const han = name.match(/\p{Script=Han}/gu);
+const glyphs = han ? han : [name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase()];
+---
+
+{
+  photo ? (
+    <Image src={photo} alt={alt ?? `${name} 的照片`} widths={widths} sizes={sizes} loading={eager ? 'eager' : 'lazy'} class={cls} />
+  ) : (
+    <div class:list={['type-avatar', cls]} style={`--tc:${color}`} role="img" aria-label={`${name}（暂无可靠照片）`}>
+      <span class:list={['glyphs', { vertical: glyphs.length > 1 }]} style={`--n:${glyphs.length}`}>{glyphs.map((g) => <b>{g}</b>)}</span>
+    </div>
+  )
+}
+
+<style>
+  .type-avatar {
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    container-type: size;
+    background:
+      radial-gradient(120% 90% at 20% 10%, color-mix(in oklab, var(--tc) 55%, transparent), transparent 60%),
+      radial-gradient(90% 80% at 90% 100%, color-mix(in oklab, var(--tc) 35%, #000), transparent 70%),
+      #121217;
+  }
+  .type-avatar::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(-12deg, rgb(255 255 255 / 0.05) 0 2px, transparent 2px 9px);
+  }
+  .glyphs {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 0.02em;
+    font-family: var(--font-display);
+    font-weight: 800;
+    line-height: 0.9;
+    color: #fff;
+    font-size: 42cqmin;
+    letter-spacing: -0.04em;
+    text-shadow: 0 0.04em 0.2em rgb(0 0 0 / 0.35);
+  }
+  .glyphs.vertical {
+    flex-direction: column;
+    font-size: min(calc(86cqh / var(--n)), 58cqw);
+  }
+  /* 偶数字向右错开 0.18em，右侧留出同样的空间，避免被裁掉 */
+  .glyphs.vertical {
+    padding-right: 0.18em;
+  }
+  .glyphs.vertical b:nth-child(even) {
+    transform: translateX(0.18em);
+    color: color-mix(in oklab, var(--tc) 70%, white);
+  }
+</style>

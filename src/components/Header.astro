@@ -12,7 +12,7 @@ const isActive = (href: string) => path.startsWith(url(href));
   <div class="container-x flex h-16 items-center gap-6">
     <a href={url()} class="text-lg" aria-label="CHOP/ 首页"><Logo /></a>
 
-    <nav class="hidden flex-1 md:block" aria-label="主导航">
+    <nav class="hidden flex-1 lg:block" aria-label="主导航">
       <ul class="flex items-center gap-1">
         {
           NAV.map((n) => (
@@ -30,7 +30,7 @@ const isActive = (href: string) => path.startsWith(url(href));
       </ul>
     </nav>
 
-    <div class="ml-auto flex items-center gap-2 md:ml-0">
+    <div class="ml-auto flex items-center gap-2 lg:ml-0">
       <a
         href={url('search/')}
         class="hidden items-center gap-2 rounded-full border border-line px-3 py-1.5 text-sm text-ink-3 transition hover:border-line-strong hover:text-ink sm:inline-flex"
@@ -42,7 +42,7 @@ const isActive = (href: string) => path.startsWith(url(href));
       <ThemeToggle />
       <button
         type="button"
-        class="menu-btn grid size-9 place-items-center rounded-full border border-line md:hidden"
+        class="menu-btn grid size-9 place-items-center rounded-full border border-line lg:hidden"
         aria-label="打开菜单"
         aria-expanded="false"
         aria-controls="mobile-nav"
@@ -52,8 +52,8 @@ const isActive = (href: string) => path.startsWith(url(href));
     </div>
   </div>
 
-  <nav id="mobile-nav" class="mobile-nav md:hidden" aria-label="移动端导航" hidden>
-    <ul class="container-x grid gap-1 pb-5 pt-2">
+  <nav id="mobile-nav" class="mobile-nav lg:hidden" aria-label="移动端导航" hidden>
+    <ul class="container-x grid grid-cols-2 gap-1 pb-5 pt-2">
       {
         NAV.map((n) => (
           <li>

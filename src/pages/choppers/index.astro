@@ -2,34 +2,36 @@
 import { getCollection } from 'astro:content';
 import Base from '@/layouts/Base.astro';
 import ArtistCard from '@/components/ArtistCard.astro';
-import { COUNTRY, LANE } from '@/lib/labels';
+import { STYLE, SCENE } from '@/lib/labels';
 
-const artists = (await getCollection('artists')).sort((a, b) => a.data.activeSince - b.data.activeSince);
-const countries = [...new Set(artists.map((a) => a.data.country))];
-const lanes = [...new Set(artists.flatMap((a) => a.data.lane))];
+// 中国区在前；各自按出道年份排
+const artists = (await getCollection('artists')).sort(
+  (a, b) => Number(b.data.country === 'CN') - Number(a.data.country === 'CN') || (a.data.activeSince ?? 9999) - (b.data.activeSince ?? 9999),
+);
 ---
 
-<Base title="人物" description="世界各地的 chopper 快嘴说唱者、Chopped & Screwed DJ 和切采样制作人。">
+<Base title="人物" description="中国区和世界的快嘴、快歌与 chopper 人物库，可按分区和风格筛选。">
   <section class="container-x pt-14 md:pt-20">
-    <p class="eyebrow">Choppers · {artists.length}</p>
+    <p class="eyebrow">People · {artists.length}</p>
     <h1 class="mt-4 text-5xl font-bold md:text-7xl">人物库</h1>
-    <p class="mt-5 max-w-2xl text-lg text-ink-2">按出道年份排列。人物照片来自本人或厂牌的官方 YouTube 频道。</p>
+    <p class="mt-5 max-w-2xl text-lg text-ink-2">
+      每个人都标了风格：<span style="color:var(--style-track)">快歌</span>、<span style="color:var(--style-fast)">快嘴</span>或 <span style="color:var(--style-chopper)">Chopper</span>。快不等于 chopper，标签依据写在每个人的页面里。
+    </p>
 
-    <!-- 筛选栏 -->
     <div class="filters sticky top-16 z-30 -mx-4 mt-10 border-y border-line px-4 py-4 md:mx-0 md:rounded-2xl md:border md:px-5" data-pagefind-ignore>
       <div class="flex flex-col gap-3 lg:flex-row lg:items-center">
         <label class="relative flex-1">
           <span class="sr-only">搜索人物</span>
-          <svg class="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-ink-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-          <input id="q" type="search" placeholder="名字、城市、标签…" autocomplete="off" class="w-full rounded-full border border-line bg-surface py-2.5 pl-10 pr-4 text-sm outline-none transition placeholder:text-ink-3 focus:border-line-strong" />
+          <svg class="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-ink-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          <input id="q" type="search" placeholder="名字、城市、地区、标签…" autocomplete="off" class="w-full rounded-full border border-line bg-surface py-2.5 pl-10 pr-4 text-sm outline-none transition placeholder:text-ink-3 focus:border-line-strong" />
         </label>
-        <div class="flex flex-wrap gap-2" role="group" aria-label="按类别筛选">
-          <button class="f-btn chip" data-filter="lane" data-value="" aria-pressed="true">全部</button>
-          {lanes.map((l) => <button class="f-btn chip" data-filter="lane" data-value={l} aria-pressed="false">{LANE[l].short}</button>)}
+        <div class="flex flex-wrap gap-2" role="group" aria-label="按分区筛选">
+          <button class="f-btn chip" data-filter="scene" data-value="" aria-pressed="true">全部</button>
+          {(Object.keys(SCENE) as (keyof typeof SCENE)[]).map((k) => <button class="f-btn chip" data-filter="scene" data-value={k} aria-pressed="false">{SCENE[k].name}</button>)}
         </div>
-        <div class="flex flex-wrap gap-2" role="group" aria-label="按国家筛选">
-          <button class="f-btn chip" data-filter="country" data-value="" aria-pressed="true">全球</button>
-          {countries.map((c) => <button class="f-btn chip" data-filter="country" data-value={c} aria-pressed="false">{COUNTRY[c].name}</button>)}
+        <div class="flex flex-wrap gap-2" role="group" aria-label="按风格筛选">
+          <button class="f-btn chip" data-filter="style" data-value="" aria-pressed="true">全部风格</button>
+          {(Object.keys(STYLE) as (keyof typeof STYLE)[]).map((k) => <button class="f-btn chip" data-filter="style" data-value={k} aria-pressed="false">{STYLE[k].name}</button>)}
         </div>
       </div>
     </div>
@@ -44,7 +46,7 @@ const lanes = [...new Set(artists.flatMap((a) => a.data.lane))];
 
 <style>
   .filters {
-    background: color-mix(in oklab, var(--bg) 85%, transparent);
+    background: color-mix(in oklab, var(--bg) 94%, transparent);
   }
   .f-btn {
     cursor: pointer;
@@ -62,28 +64,23 @@ const lanes = [...new Set(artists.flatMap((a) => a.data.lane))];
 </style>
 
 <script>
-  function initFilters() {
-    const grid = document.getElementById('grid');
-    if (!grid) return;
+  type Key = 'scene' | 'style';
+  const grid = document.getElementById('grid');
+  if (grid) {
     const cards = [...grid.querySelectorAll<HTMLElement>('.artist-card')];
     const q = document.getElementById('q') as HTMLInputElement;
     const count = document.getElementById('count')!;
     const empty = document.getElementById('empty')!;
-    const state = { lane: '', country: '', text: '' };
-
-    // 从网址读取筛选条件，方便分享
     const params = new URLSearchParams(location.search);
-    state.lane = params.get('lane') ?? '';
-    state.country = params.get('country') ?? '';
-    state.text = params.get('q') ?? '';
+    const state = { scene: params.get('scene') ?? '', style: params.get('style') ?? '', text: params.get('q') ?? '' };
     q.value = state.text;
 
     const apply = () => {
       let n = 0;
       for (const c of cards) {
         const ok =
-          (!state.lane || c.dataset.lane!.split(' ').includes(state.lane)) &&
-          (!state.country || c.dataset.country === state.country) &&
+          (!state.scene || c.dataset.scene === state.scene) &&
+          (!state.style || c.dataset.style === state.style) &&
           (!state.text || c.dataset.name!.includes(state.text.toLowerCase()));
         c.style.display = ok ? '' : 'none';
         if (ok) n++;
@@ -91,26 +88,25 @@ const lanes = [...new Set(artists.flatMap((a) => a.data.lane))];
       count.textContent = String(n);
       empty.classList.toggle('hidden', n > 0);
       document.querySelectorAll<HTMLButtonElement>('.f-btn').forEach((b) => {
-        b.setAttribute('aria-pressed', String(state[b.dataset.filter as 'lane' | 'country'] === b.dataset.value));
+        b.setAttribute('aria-pressed', String(state[b.dataset.filter as Key] === b.dataset.value));
       });
       const p = new URLSearchParams();
-      if (state.lane) p.set('lane', state.lane);
-      if (state.country) p.set('country', state.country);
+      if (state.scene) p.set('scene', state.scene);
+      if (state.style) p.set('style', state.style);
       if (state.text) p.set('q', state.text);
       history.replaceState(history.state, '', p.size ? `?${p}` : location.pathname);
     };
 
     document.querySelectorAll<HTMLButtonElement>('.f-btn').forEach((b) => {
-      b.onclick = () => {
-        state[b.dataset.filter as 'lane' | 'country'] = b.dataset.value ?? '';
+      b.addEventListener('click', () => {
+        state[b.dataset.filter as Key] = b.dataset.value ?? '';
         apply();
-      };
+      });
     });
-    q.oninput = () => {
+    q.addEventListener('input', () => {
       state.text = q.value.trim();
       apply();
-    };
+    });
     apply();
   }
-  initFilters();
 </script>

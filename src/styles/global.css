@@ -22,9 +22,11 @@
   --accent-ink: #0c0c0d; /* 荧光绿底上的文字 */
   --accent-text: #3f6b00; /* 荧光绿作为文字时的加深版 */
   --hot: #ff4d2e;
-  --lane-chopper: #3f6b00;
-  --lane-screw: #6d4bd8;
-  --lane-sample: #0b7fa8;
+  --style-chopper: #3f6b00;
+  --style-fast: #c2410c;
+  --style-track: #2f5fd0;
+  --scene-china: #d62d20;
+  --scene-world: #3f6b00;
   --good: #0ca30c;
   --warning: #b77900;
   --serious: #c85a2e;
@@ -48,9 +50,11 @@
   --accent-ink: #0c0c0d;
   --accent-text: #c6f432;
   --hot: #ff5a3c;
-  --lane-chopper: #c6f432;
-  --lane-screw: #a58bff;
-  --lane-sample: #38c8ff;
+  --style-chopper: #c6f432;
+  --style-fast: #ff8a4c;
+  --style-track: #82a8ff;
+  --scene-china: #ff4b3e;
+  --scene-world: #c6f432;
   --good: #2fc02f;
   --warning: #fab219;
   --serious: #ec835a;
@@ -73,9 +77,8 @@
   --color-accent-ink: var(--accent-ink);
   --color-accent-text: var(--accent-text);
   --color-hot: var(--hot);
-  --color-chopper: var(--lane-chopper);
-  --color-screw: var(--lane-screw);
-  --color-sample: var(--lane-sample);
+  --color-china: var(--scene-china);
+  --color-world: var(--scene-world);
 
   --font-display: 'Unbounded Variable', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
   --font-sans: 'Space Grotesk Variable', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', system-ui, sans-serif;

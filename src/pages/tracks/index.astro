@@ -2,34 +2,35 @@
 import { getCollection, getEntries } from 'astro:content';
 import Base from '@/layouts/Base.astro';
 import LiteYouTube from '@/components/LiteYouTube.astro';
-import LaneChip from '@/components/LaneChip.astro';
 import Confidence from '@/components/Confidence.astro';
 import { url } from '@/lib/url';
-import { LANE, displayName } from '@/lib/labels';
+import { SCENE, displayName } from '@/lib/labels';
 
 const tracks = (await getCollection('tracks')).sort((a, b) => (a.data.year ?? 9999) - (b.data.year ?? 9999));
 const withArtists = await Promise.all(tracks.map(async (t) => ({ t, artists: await getEntries(t.data.artists) })));
-const lanes = [...new Set(tracks.map((t) => t.data.lane))];
+const scenes = Object.keys(SCENE) as (keyof typeof SCENE)[];
 ---
 
-<Base title="曲目" description="Chopper 快嘴和 Chopped & Screwed 的代表曲目，附官方视频和来源。">
+<Base title="曲目" description="中国区与世界的快嘴、chopper 代表曲目，附官方视频和来源。">
   <section class="container-x pt-14 md:pt-20">
     <p class="eyebrow">Tracks · {tracks.length}</p>
     <h1 class="mt-4 text-5xl font-bold md:text-7xl">曲目库</h1>
     <p class="mt-5 max-w-2xl text-lg text-ink-2">按年份排列。点击封面在页面内播放；优先收录艺人或厂牌官方上传的视频，非官方上传的会注明。</p>
 
-    <div class="mt-8 flex flex-wrap gap-2" role="group" aria-label="按类别筛选" data-pagefind-ignore>
+    <div class="mt-8 flex flex-wrap gap-2" role="group" aria-label="按分区筛选" data-pagefind-ignore>
       <button class="t-btn chip cursor-pointer" data-value="" aria-pressed="true">全部</button>
-      {lanes.map((l) => <button class="t-btn chip cursor-pointer" data-value={l} aria-pressed="false">{LANE[l].name}</button>)}
+      {scenes.map((k) => <button class="t-btn chip cursor-pointer" data-value={k} aria-pressed="false">{SCENE[k].name}</button>)}
+      <button class="t-btn chip cursor-pointer" data-value="starter" aria-pressed="false">路人入门</button>
     </div>
 
     <div class="mt-10 grid gap-x-8 gap-y-16 lg:grid-cols-2">
       {
         withArtists.map(({ t, artists }) => (
-          <article id={t.id} class="track scroll-mt-24" data-lane={t.data.lane}>
+          <article id={t.id} class="track scroll-mt-24" data-scene={t.data.scene} data-starter={t.data.starter ? '1' : undefined}>
             <LiteYouTube id={t.data.youtube} title={`${t.data.title} ${t.data.credit}`} channel={t.data.youtubeChannel} official={t.data.officialUpload} />
             <div class="mt-5 flex flex-wrap items-center gap-2">
-              <LaneChip lane={t.data.lane} short />
+              <span class="chip"><span class="size-1.5 rounded-full" style={`background:${SCENE[t.data.scene].color}`} />{SCENE[t.data.scene].name}</span>
+              {t.data.starter && <span class="chip">路人入门</span>}
               <span class="chip font-mono">{t.data.year ?? '年份待考'}</span>
               {t.data.confidence !== 'verified' && <Confidence level={t.data.confidence} />}
             </div>
@@ -59,17 +60,20 @@ const lanes = [...new Set(tracks.map((t) => t.data.lane))];
 </style>
 
 <script>
-  function initTrackFilter() {
-    const btns = document.querySelectorAll<HTMLButtonElement>('.t-btn');
-    btns.forEach((b) => {
-      b.onclick = () => {
-        const v = b.dataset.value;
-        btns.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
-        document.querySelectorAll<HTMLElement>('article.track').forEach((el) => {
-          el.style.display = !v || el.dataset.lane === v ? '' : 'none';
-        });
-      };
+  const btns = [...document.querySelectorAll<HTMLButtonElement>('.t-btn')];
+  const items = [...document.querySelectorAll<HTMLElement>('article.track')];
+  const apply = (v: string) => {
+    btns.forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.value === v)));
+    items.forEach((el) => {
+      const ok = !v || (v === 'starter' ? el.dataset.starter === '1' : el.dataset.scene === v);
+      el.style.display = ok ? '' : 'none';
     });
-  }
-  initTrackFilter();
+    const p = new URLSearchParams(location.search);
+    v ? p.set('scene', v) : p.delete('scene');
+    history.replaceState(history.state, '', (p.size ? `?${p}` : location.pathname) + location.hash);
+  };
+  btns.forEach((b) => b.addEventListener('click', () => apply(b.dataset.value ?? '')));
+  const initial = new URLSearchParams(location.search).get('scene');
+  // 带锚点直接跳到某首歌时，不做筛选，保证那首歌可见
+  if (initial && !location.hash) apply(initial);
 </script>

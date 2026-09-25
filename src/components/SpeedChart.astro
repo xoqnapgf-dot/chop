@@ -7,10 +7,10 @@ import { getCollection } from 'astro:content';
 import { CONFIDENCE, SPEED_KIND, UNIT, displayName } from '@/lib/labels';
 import { url } from '@/lib/url';
 
-interface Props { limit?: number; compact?: boolean }
-const { limit, compact = false } = Astro.props;
+interface Props { limit?: number; compact?: boolean; scene?: 'china' | 'world' }
+const { limit, compact = false, scene } = Astro.props;
 
-const artists = await getCollection('artists');
+const artists = (await getCollection('artists')).filter((a) => !scene || (scene === 'china') === (a.data.country === 'CN'));
 let rows = artists
   .flatMap((a) => a.data.speed.map((s) => ({ ...s, artist: displayName(a.data), slug: a.id })))
   .sort((a, b) => b.value - a.value);

@@ -5,7 +5,9 @@ country: US
 city: 克利夫兰 Cleveland
 region: 美国中西部
 activeSince: 1991
-lane: [chopper]
+style: chopper
+styleNote: 维基百科称其"帮助开创了 chopper 风格"。
+geo: [41.5, -81.69]
 tags: [中西部, 组合, 格莱美, 先驱]
 featured: true
 youtube: { channelId: UCjSkdzVdUS1crC89RI2cNWw, handle: '@bonethugsnharmony', kind: official }

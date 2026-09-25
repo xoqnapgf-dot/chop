@@ -6,8 +6,10 @@ country: US
 city: 纽约 Brooklyn
 region: 美国东岸
 activeSince: 1986
+style: chopper
+styleNote: 维基百科 Chopper 词条列为东岸代表，也参与了 Worldwide Choppers。
+geo: [40.65, -73.95]
 born: '1972-05-20'
-lane: [chopper]
 tags: [东岸, 客串, Leaders of the New School]
 featured: true
 youtube: { channelId: UCCWKLP04ZkaVpxb6l5BKZOw, handle: '@bustarhymes', kind: official }

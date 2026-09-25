@@ -6,8 +6,10 @@ country: TR
 city: 伊斯坦布尔 Istanbul
 region: 土耳其
 activeSince: 1995
+style: chopper
+styleNote: Worldwide Choppers 成员，被称为土耳其最快的说唱者。
+geo: [41.01, 28.98]
 born: '1976-12-31'
-lane: [chopper]
 tags: [土耳其语, MTV EMA, Worldwide Choppers]
 youtube: { channelId: UCJuok0XMLXfVoDUA-FLWXSQ, handle: '@CEZAChannel', kind: official }
 related: [tech-n9ne, outsider]

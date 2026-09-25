@@ -1,9 +1,8 @@
 ---
-title: Chopper 快嘴：从中西部到全世界
-kicker: 核心专题
+title: Chopper 的起源：从美国中西部到全世界
+kicker: 世界
 summary: 定义、起源、代表人物，以及"快"到底是怎么做出来的。
 order: 2
-lane: chopper
 sources:
   - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
   - { title: 'Red Bull – Twista tells the history of speed rapping', url: 'https://www.redbull.com/us-en/twista-chopping-history-interview' }
@@ -13,7 +12,7 @@ sources:
 
 ## 定义
 
-Chopper 是一种强调**发音速度**的说唱风格。它的特点不只是"快"，而是在原本放一个音节的位置塞进好几个音节，同时保持清晰的咬字和大量押韵。
+Chopper 是一种强调**发音速度**的说唱风格。它的特点不只是"快"，而是在原本放一个音节的位置塞进好几个音节，同时保持清晰的咬字、多变的 flow 和大量押韵。和"快嘴"的区别见[快嘴 ≠ Chopper](../what-is-chop/)。
 
 ## 起源
 
