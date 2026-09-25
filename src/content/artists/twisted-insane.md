@@ -12,7 +12,7 @@ geo: [32.72, -117.16]
 born: '1983-09-22'
 tags: [西岸, 恐怖核, 独立厂牌]
 youtube: { channelId: UC9LwwugiYd69YLGsIJOb32A, handle: '@THEREALTWISTEDINSANE', kind: official }
-related: [tech-n9ne, twista, crucified]
+related: [tech-n9ne, twista, crucified, dna-tru-lyricist]
 speed:
   - value: 15.24
     unit: syl/s
