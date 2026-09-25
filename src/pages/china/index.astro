@@ -8,6 +8,7 @@ import SectionHeading from '@/components/SectionHeading.astro';
 import StyleChip from '@/components/StyleChip.astro';
 import Avatar from '@/components/Avatar.astro';
 import Confidence from '@/components/Confidence.astro';
+import CollabNetwork from '@/components/CollabNetwork.astro';
 import { url } from '@/lib/url';
 import { STYLE, displayName } from '@/lib/labels';
 import { mdLite } from '@/lib/md';
@@ -32,6 +33,7 @@ const toc = [
   ['styles', '先分清'],
   ['regions', '地区'],
   ['people', '人物'],
+  ['links', '合作'],
   ['start', '入门'],
   ['speed', '语速'],
   ['history', '时间线'],
@@ -172,8 +174,15 @@ const toc = [
   </section>
 
   <!-- ============ 入门 ============ -->
+  <section id="links" class="container-x scroll-mt-32 pt-28">
+    <SectionHeading index="04" eyebrow="Links" title="谁和谁合作过">
+      <p class="mt-4 max-w-2xl text-ink-2">法老和小安迪从 2016 年起合作了近十首；杨和苏把 AR、谢帝、光光、法老都请进了自己的专辑；幼稚园杀手也在法老的《镇海》《中国的说法2025》里露面。</p>
+    </SectionHeading>
+    <CollabNetwork />
+  </section>
+
   <section id="start" class="container-x scroll-mt-32 pt-28">
-    <SectionHeading index="04" eyebrow="Start here" title="路人入门：从这几首开始">
+    <SectionHeading index="05" eyebrow="Start here" title="路人入门：从这几首开始">
       <p class="mt-4 max-w-3xl text-ink-2">
         先说明：下面前两首是<strong class="text-ink">流行歌里的快段落</strong>。周杰伦不是快嘴说唱歌手；《饕餮》的快嘴段落据网络资料由南征北战的赵辰龙演唱。放在这里，是因为它们是很多路人第一次意识到"中文也能唱这么快"的歌。说唱圈里的快嘴作品在后面。
       </p>
@@ -189,7 +198,7 @@ const toc = [
 
   <!-- ============ 语速 ============ -->
   <section id="speed" class="container-x scroll-mt-32 pt-28">
-    <SectionHeading index="05" eyebrow="Speed" title="中文快嘴怎么算快" href="lab/" linkLabel="自己测一下" />
+    <SectionHeading index="06" eyebrow="Speed" title="中文快嘴怎么算快" href="lab/" linkLabel="自己测一下" />
     <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]">
       <div class="card p-6 sm:p-8">
         <p class="eyebrow">单位</p>
@@ -220,7 +229,7 @@ const toc = [
 
   <!-- ============ 时间线 ============ -->
   <section id="history" class="container-x scroll-mt-32 pt-28">
-    <SectionHeading index="06" eyebrow="History" title="中国快嘴时间线" href="timeline/?scene=china" linkLabel="完整时间线" />
+    <SectionHeading index="07" eyebrow="History" title="中国快嘴时间线" href="timeline/?scene=china" linkLabel="完整时间线" />
     <ol class="cn-tl relative grid gap-3">
       {
         events.map((e) => (

@@ -10,6 +10,7 @@ import LiteYouTube from '@/components/LiteYouTube.astro';
 import { artistPhoto, artistBanner, artistColor, artistMedia } from '@/lib/media';
 import { COUNTRY, SPEED_KIND, UNIT, SCENE, STYLE, WINDOW, displayName } from '@/lib/labels';
 import { url } from '@/lib/url';
+import { collabPairs, collabHref, collabYear } from '@/lib/collabs';
 
 export async function getStaticPaths() {
   // 与人物库同样的顺序：中国区在前，各自按出道年份
@@ -45,6 +46,11 @@ const related = data.related.length ? await getEntries(data.related) : [];
 const tracks = (await getCollection('tracks', (t) => t.data.artists.some((a) => a.id === id))).sort((a, b) => (b.data.year ?? 0) - (a.data.year ?? 0));
 const [lead, ...moreTracks] = tracks;
 const events = (await getCollection('timeline', (e) => e.data.artist?.id === id)).sort((a, b) => a.data.year - b.data.year);
+const partners = await Promise.all(
+  (await collabPairs()).pairs
+    .filter((p) => p.a === id || p.b === id)
+    .map(async (p) => ({ ...p, other: (await getEntries([{ collection: 'artists', id: p.a === id ? p.b : p.a }]))[0] })),
+);
 
 const age = (born: string, until?: string) => {
   const b = new Date(born);
@@ -130,6 +136,32 @@ const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生
                 ))}
               </ul>
             )}
+          </section>
+        )}
+
+        {partners.length > 0 && (
+          <section class="mt-16">
+            <p class="eyebrow mb-5">合作过的收录人物</p>
+            <ul class="grid gap-3 sm:grid-cols-2">
+              {partners.map((p) => (
+                <li class="card p-4">
+                  <a href={url(`choppers/${p.other.id}/`)} class="group flex items-center gap-3">
+                    <Avatar id={p.other.id} data={p.other.data} widths={[80]} sizes="36px" class="size-9 overflow-hidden rounded-full object-cover" />
+                    <span class="min-w-0 flex-1 font-semibold group-hover:underline">{displayName(p.other.data)}</span>
+                    <span class="font-mono text-xs text-accent-text">{p.songs.length} 首</span>
+                  </a>
+                  <ul class="mt-3 grid gap-1.5 text-sm">
+                    {p.songs.map((c) => (
+                      <li class="flex gap-2">
+                        <span class="w-9 shrink-0 font-mono text-xs leading-5 text-ink-3">{collabYear(c)}</span>
+                        <a href={collabHref(c)} target="_blank" rel="noopener nofollow" class="link-u min-w-0 text-ink-2 hover:text-ink">{c.data.title} ↗</a>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+            <p class="mt-3 text-xs text-ink-3">署名以网易云音乐为准。<a href={url('china/#links')} class="link-u hover:text-ink">看完整合作网络 →</a></p>
           </section>
         )}
 

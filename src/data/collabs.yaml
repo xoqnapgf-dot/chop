@@ -1,0 +1,261 @@
+# 收录人物之间的合作曲。署名以网易云音乐为准（netease = 歌曲 ID）；网易云没有的，写明其他出处
+# 由 scratchpad 扫描网易云歌手专辑生成，人工去掉了伴奏、skit 和非说唱主题曲
+- id: 'letsfeat艾福杰尼'
+  title: 'Let''s（feat 艾福杰尼）'
+  artists: [after-journey, lil-andy]
+  credit: '小安迪LilAndyKillThemAll/艾福杰尼'
+  date: '2015-01-26'
+  album: 'Evolution'
+  netease: 29779795
+- id: 'icantmarryyounowfeatmc法老'
+  title: 'I can''t marry you now（feat.MC法老）'
+  artists: [lil-andy, pharaoh]
+  credit: '小安迪LilAndyKillThemAll/法老'
+  date: '2016-08-21'
+  album: 'CloudFiles（云文件）'
+  netease: 426342583
+- id: '俊升rip'
+  title: '俊升R.I.P'
+  artists: [lil-andy, pharaoh]
+  credit: '法老 feat. Lil Andy、俊升的野爹'
+  date: '2016-12-03'
+  album: '东海岸'
+  source: { title: '维基百科 – 法老 (歌手)（《东海岸》曲目表）', url: 'https://zh.wikipedia.org/zh-cn/%E6%B3%95%E8%80%81_(%E6%AD%8C%E6%89%8B)' }
+- id: 'hiphopdreamfeat法老'
+  title: 'Hip-hop Dream（feat.法老）'
+  artists: [lil-andy, pharaoh]
+  credit: '小安迪 feat. 法老'
+  date: '2016-12-04'
+  album: 'Lil Andy 作品集'
+  netease: 29783401
+- id: 'payfeatmc法老'
+  title: 'PAY（feat MC法老）'
+  artists: [lil-andy, pharaoh]
+  credit: '小安迪 feat. 法老'
+  date: '2017-05-13'
+  album: 'PAY（feat MC法老）'
+  netease: 478382773
+- id: 'ciovol1'
+  title: 'CIO vol.1'
+  artists: [lil-andy, pharaoh]
+  credit: 'CIO/拖鞋OneFly/小安迪/小神仙Boogie/法老'
+  date: '2017-09-29'
+  album: 'check it out第一季'
+  netease: 509935243
+- id: '活死人2018cypher'
+  title: '活死人2018Cypher'
+  artists: [lil-andy, pharaoh, yang-he-su]
+  credit: '活死人/Oxy/杨和苏KeyNG/龚子建/龙崎/小精灵/戾仁Lyrin/法老/Buzzy/小安迪'
+  date: '2018-08-19'
+  album: '活死人2018Cypher'
+  netease: 1303079913
+- id: 'swagshxx'
+  title: 'swag shxx'
+  artists: [guang-guang, xie-di]
+  credit: 'Mc光光/谢帝'
+  date: '2019-05-03'
+  album: '一生悬命'
+  netease: 1362172653
+- id: 'wokenday'
+  title: 'Woken Day'
+  artists: [pharaoh, yang-he-su]
+  credit: '活死人/法老/杨和苏KeyNG/Buzzy/龙崎/JarStick/李毅杰PISSY/隆历奇/小精灵/FOX胡天渝'
+  date: '2019-08-30'
+  album: 'Woken Day'
+  netease: 1387629743
+- id: 'allthatremix'
+  title: 'All That (Remix)'
+  artists: [ar-liu-fuyang, guang-guang]
+  credit: 'AR刘夫阳/Mc光光/直火帮 Straight Fire Gang'
+  date: '2019-10-22'
+  album: 'All That (Remix)'
+  netease: 1398237657
+- id: 'ko'
+  title: 'K.O.'
+  artists: [guang-guang, pharaoh]
+  credit: '高天佐/Mc光光/AThree/法老/404 RAPPER/AYO!/Free-Out/弹壳Danko/AZ啊之'
+  date: '2019-12-24'
+  album: 'K.O.'
+  netease: 1411990343
+- id: '一丢丢feat法老'
+  title: '一丢丢（feat. 法老）'
+  artists: [ar-liu-fuyang, pharaoh]
+  credit: 'AR刘夫阳/法老'
+  date: '2020-05-28'
+  album: '非流行说唱'
+  netease: 1449873414
+- id: '寄生虫feat杨和苏keyng'
+  title: '寄生虫 (feat. 杨和苏KeyNG)'
+  artists: [ar-liu-fuyang, yang-he-su]
+  credit: 'AR刘夫阳/杨和苏KeyNG'
+  date: '2020-05-28'
+  album: '非流行说唱'
+  netease: 1449876047
+- id: '街上孩子的梦feat法老prodby牧羊少年'
+  title: '街上孩子的梦$（Feat.法老,Prod.by牧羊少年)'
+  artists: [lil-andy, pharaoh]
+  credit: '深蓝儿童/小安迪LilAndyKillThemAll/龚子建/法老/牧羊少年'
+  date: '2020-05-29'
+  album: '街上孩子的梦$（Feat.法老,Prod.by牧羊少年)'
+  netease: 1451744402
+- id: '这圈子是个trap'
+  title: '这圈子是个trap'
+  artists: [ar-liu-fuyang, guang-guang]
+  credit: 'Mc光光/AR刘夫阳'
+  date: '2020-09-07'
+  album: 'The Light In The Dark'
+  netease: 1477562583
+- id: '闪电侠'
+  title: '闪电侠'
+  artists: [guang-guang, lil-andy]
+  credit: 'Mc光光/小安迪LilAndyKillThemAll/JD'
+  date: '2020-09-07'
+  album: 'The Light In The Dark'
+  netease: 1466346969
+- id: '终极斗士remix'
+  title: '终极斗士REMIX'
+  artists: [lil-andy, pharaoh]
+  credit: '法老/小安迪LilAndyKillThemAll/BigKey/BigGun'
+  date: '2020-10-21'
+  album: '科幻小说'
+  netease: 1488990358
+- id: '健康ganggangfeat杨和苏remix'
+  title: '健康GANGGANG [feat. 杨和苏] (Remix)'
+  artists: [xie-di, yang-he-su]
+  credit: '谢帝/杨和苏KeyNG'
+  date: '2021-02-03'
+  album: '健康GANGGANG (REMIX) [feat. 杨和苏]'
+  netease: 1817438659
+- id: '空壳'
+  title: '空壳'
+  artists: [ar-liu-fuyang, bei-bei, xie-di]
+  credit: '谢帝/ljz329/AR刘夫阳'
+  date: '2021-03-14'
+  album: 'Couple Hunnid Mixtape Vol.2'
+  netease: 1827059566
+- id: '发光弹'
+  title: '发光弹'
+  artists: [guang-guang, pharaoh]
+  credit: '弹壳Danko/Mc光光/法老'
+  date: '2021-04-28'
+  album: 'Bombshell'
+  netease: 1961990684
+- id: 'god'
+  title: 'GOD'
+  artists: [ar-liu-fuyang, xie-di, yang-he-su]
+  credit: '杨和苏KeyNG/AR刘夫阳/谢帝'
+  date: '2021-07-04'
+  album: '荒诞故事'
+  netease: 1858696232
+- id: '国王与法老'
+  title: '国王与法老'
+  artists: [pharaoh, yang-he-su]
+  credit: '杨和苏KeyNG/法老/张馨月'
+  date: '2021-07-04'
+  album: '荒诞故事'
+  netease: 1858696234
+- id: '我会想象有一个世界feat法老'
+  title: '我会想象有一个世界 (feat.法老)'
+  artists: [lil-andy, pharaoh]
+  credit: '小安迪LilAndyKillThemAll/法老'
+  date: '2021-08-15'
+  album: '封闭世界假定'
+  netease: 1869161136
+- id: '找回我的精神featmc光光'
+  title: '找回我的精神 (feat.Mc光光)'
+  artists: [guang-guang, lil-andy]
+  credit: '小安迪LilAndyKillThemAll/Mc光光'
+  date: '2021-08-15'
+  album: '封闭世界假定'
+  netease: 1869161179
+- id: '1936ft谢帝'
+  title: '19:36 (ft. 谢帝)'
+  artists: [ar-liu-fuyang, xie-di]
+  credit: 'AR刘夫阳/谢帝'
+  date: '2021-11-16'
+  album: 'P.M.'
+  netease: 1895457179
+- id: '健身歌ft杨和苏keyng'
+  title: '健身歌 (ft. 杨和苏KeyNG)'
+  artists: [ar-liu-fuyang, yang-he-su]
+  credit: 'AR刘夫阳/杨和苏KeyNG'
+  date: '2022-02-14'
+  album: '流行说唱 1.5'
+  netease: 1912875128
+- id: '镇海'
+  title: '镇海'
+  artists: [kindergarten-killer, pharaoh]
+  credit: '法老/EINK/幼稚园杀手'
+  date: '2022-08-06'
+  album: '退潮'
+  netease: 1969845253
+- id: 'suckthat'
+  title: 'Suck That'
+  artists: [after-journey, xie-di]
+  credit: '艾福杰尼/谢帝'
+  date: '2022-09-21'
+  album: '福气庙'
+  netease: 1982963268
+- id: 'holdmyhandstudioversion'
+  title: 'Hold My Hand (studio version)'
+  artists: [guang-guang, pharaoh]
+  credit: 'Mc光光/法老'
+  date: '2022-10-08'
+  album: '文明时代'
+  netease: 1988024508
+- id: '活死人2022没有cypher'
+  title: '活死人2022没有Cypher'
+  artists: [pharaoh, yang-he-su]
+  credit: '活死人/龙崎/隆历奇/JarStick/李毅杰PISSY/小精灵/杨和苏KeyNG/喉结蜥蜴/法老'
+  date: '2022-12-30'
+  album: '活死人2022没有Cypher'
+  netease: 2009744753
+- id: '直播带货'
+  title: '直播带货'
+  artists: [ar-liu-fuyang, pharaoh]
+  credit: 'AR刘夫阳/法老'
+  date: '2023-06-14'
+  album: '直播带货'
+  netease: 2055024607
+- id: 'reverse'
+  title: 'Reverse'
+  artists: [bei-bei, xie-di]
+  credit: 'ljz329/建坤YOUNG/谢帝'
+  date: '2023-06-26'
+  album: 'Reverse'
+  netease: 2058735448
+- id: '七宗罪feat法老'
+  title: '七宗罪 (feat. 法老)'
+  artists: [pharaoh, yang-he-su]
+  credit: '杨和苏KeyNG/法老'
+  date: '2024-06-15'
+  album: '理想国'
+  netease: 2166790895
+- id: '执政官feat谢帝黄旭mc光光'
+  title: '执政官 (feat. 谢帝/黄旭/Mc光光)'
+  artists: [guang-guang, xie-di, yang-he-su]
+  credit: '杨和苏KeyNG/谢帝/黄旭BooM/Mc光光'
+  date: '2024-06-15'
+  album: '理想国'
+  netease: 2166788110
+- id: '社区阿姆'
+  title: '社区阿姆'
+  artists: [xie-di, yang-he-su]
+  credit: '谢帝/杨和苏KeyNG'
+  date: '2024-08-14'
+  album: '社区生活2'
+  netease: 2606581350
+- id: '中国的说法2025'
+  title: '中国的说法2025'
+  artists: [kindergarten-killer, pharaoh]
+  credit: '法老/南征北战NZBZ/幼稚园杀手/龚琳娜/杭异凡'
+  date: '2025-08-11'
+  album: '中国的说法2025'
+  netease: 2735174725
+- id: '活死人2026cypher'
+  title: '活死人2026Cypher'
+  artists: [pharaoh, yang-he-su]
+  credit: '活死人/杨和苏KeyNG/JarStick/隆历奇/李毅杰PISSY/Buzzy/小精灵/杨秋儒/法老/鼠尾草/喉结蜥蜴'
+  date: '2025-12-31'
+  album: '活死人2026Cypher'
+  netease: 3333138880
