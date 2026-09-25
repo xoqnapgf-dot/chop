@@ -1,7 +1,8 @@
 ---
 import { STYLE, type Style } from '@/lib/labels';
-interface Props { style: Style; size?: 'sm' | 'md'; onDark?: boolean }
-const { style, size = 'sm', onDark = false } = Astro.props;
+/** level：显示风格名（Chop），默认显示人物标签（Chopper） */
+interface Props { style: Style; size?: 'sm' | 'md'; onDark?: boolean; level?: boolean }
+const { style, size = 'sm', onDark = false, level = false } = Astro.props;
 const s = STYLE[style];
 ---
 <span
@@ -10,7 +11,7 @@ const s = STYLE[style];
   title={s.desc}
 >
   <span class="size-1.5 rounded-full" style="background:var(--sc)" aria-hidden="true"></span>
-  {s.name}
+  {level ? s.level : s.name}
 </span>
 
 <style>

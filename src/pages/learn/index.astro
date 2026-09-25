@@ -6,11 +6,11 @@ import { url } from '@/lib/url';
 const articles = (await getCollection('learn')).sort((a, b) => a.data.order - b.data.order);
 ---
 
-<Base title="百科" description="快嘴与 chopper 的入门、起源和语速口径。">
+<Base title="百科" description="快嘴与 chop 的入门、起源和语速口径。">
   <section class="container-x pt-14 md:pt-20">
     <p class="eyebrow">Learn · {articles.length} 篇</p>
     <h1 class="mt-4 text-5xl font-bold md:text-7xl">百科</h1>
-    <p class="mt-5 max-w-2xl text-lg text-ink-2">从"快嘴和 chopper 有什么区别"开始，到 chopper 的起源和语速口径。</p>
+    <p class="mt-5 max-w-2xl text-lg text-ink-2">从"快嘴和 chop 有什么区别"开始，到 chop 的起源和语速口径。</p>
 
     <ol class="mt-14 grid gap-4">
       {

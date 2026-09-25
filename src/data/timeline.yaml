@@ -32,7 +32,7 @@
 - id: 1999-strange-music
   year: 1999
   title: Strange Music 成立
-  body: Tech N9ne 与 Travis O'Guin 在堪萨斯城创立独立厂牌 Strange Music，后来成了 chopper 的大本营。
+  body: Tech N9ne 与 Travis O'Guin 在堪萨斯城创立独立厂牌 Strange Music，后来成了 chop 的大本营。
   scene: world
   artist: tech-n9ne
   sources:
@@ -78,6 +78,14 @@
   artist: eminem
   sources:
     - { title: 'Wikipedia – Rap God', url: 'https://en.wikipedia.org/wiki/Rap_God' }
+- id: 2015-star-warz
+  year: 2015
+  title: Star Warz
+  body: 韩国快嘴 Outsider 和美国 chopper Twista 合作发行《Star Warz》，两人你来我往地对射快段落。
+  scene: world
+  artist: outsider
+  sources:
+    - { title: 'xportsnews – 아웃사이더, 美래퍼 트위스타와 세기의 속사포 랩 배틀（2015）', url: 'https://www.xportsnews.com/article/540238' }
 - id: 2015-speedom
   year: 2015
   title: Speedom (WWC2)

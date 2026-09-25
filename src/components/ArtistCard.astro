@@ -30,6 +30,7 @@ const place = isCN ? (data.city === '未公开' ? '所在地未公开' : `${data
     <div class="shade absolute inset-0"></div>
     <div class="absolute left-3 top-3 flex flex-wrap gap-1.5">
       <StyleChip style={data.style} onDark />
+      {data.nearChop && <span class="near-chip inline-flex items-center rounded-full border px-2 py-0.5 text-[11px] font-semibold whitespace-nowrap" title={data.nearChop}>近 Chop</span>}
     </div>
     <div class="absolute inset-x-0 bottom-0 p-3 text-white sm:p-4">
       <p class="truncate font-mono text-[10px] tracking-widest text-white/70 sm:text-[11px]">{place}</p>
@@ -44,6 +45,11 @@ const place = isCN ? (data.city === '未公开' ? '所在地未公开' : `${data
 </a>
 
 <style>
+  .near-chip {
+    color: #fff;
+    background: rgb(0 0 0 / 0.55);
+    border-color: color-mix(in oklab, var(--style-chopper) 70%, transparent);
+  }
   .artist-card {
     transition:
       transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1),

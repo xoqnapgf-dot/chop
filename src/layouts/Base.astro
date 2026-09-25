@@ -13,7 +13,7 @@ interface Props {
   indexable?: boolean;
 }
 const { title, description = SITE.description, image, indexable = true } = Astro.props;
-const fullTitle = title ? `${title} · ${SITE.fullName}` : `${SITE.fullName} — Chopper 快嘴说唱资料库`;
+const fullTitle = title ? `${title} · ${SITE.fullName}` : `${SITE.fullName} — Chop 快嘴说唱资料库`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = image ? new URL(image, Astro.site).href : undefined;
 ---
@@ -28,8 +28,8 @@ const ogImage = image ? new URL(image, Astro.site).href : undefined;
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />
     <link rel="sitemap" href={url('sitemap-index.xml')} />
-    <meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)" />
-    <meta name="theme-color" content="#f3f2ec" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0a0807" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f5efe4" media="(prefers-color-scheme: light)" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={SITE.fullName} />
     <meta property="og:title" content={fullTitle} />
@@ -57,6 +57,24 @@ const ogImage = image ? new URL(image, Astro.site).href : undefined;
       <slot />
     </main>
     <Footer />
+
+    <!-- 返回时保留浏览进度：浏览器自己恢复了就不动，没恢复（部分 App 内置浏览器）才补一次 -->
+    <script is:inline>
+      (function () {
+        var key = 'scroll:' + location.pathname + location.search;
+        addEventListener('pagehide', function () {
+          try { sessionStorage.setItem(key, String(Math.round(scrollY))); } catch (e) {}
+        });
+        var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+        if (!nav || nav.type !== 'back_forward') return;
+        var y = 0;
+        try { y = Number(sessionStorage.getItem(key)) || 0; } catch (e) {}
+        if (y < 10) return;
+        addEventListener('load', function () {
+          requestAnimationFrame(function () { if (scrollY < 10) scrollTo(0, y); });
+        });
+      })();
+    </script>
 
   </body>
 </html>

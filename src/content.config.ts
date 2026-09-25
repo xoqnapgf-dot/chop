@@ -48,13 +48,15 @@ const artists = defineCollection({
     born: z.string().optional(),
     died: z.string().optional(),
     /**
-     * 风格标签（快 ≠ Chopper）：
-     * chopper = 有来源称其为 chopper，或长期整首使用 chopping 技巧
+     * 风格标签（快 ≠ Chop；chop 是风格，chopper 是唱 chop 的人）：
+     * chopper = 有来源称其为 chopper，或长期整首地唱 chop
      * fast    = 以语速/快嘴著称
      * track   = 因个别快歌或快段落出圈，本人不以快著称
      */
     style: z.enum(['chopper', 'fast', 'track']),
     styleNote: z.string(),
+    /** 没标 Chopper，但接近 chop（有争议、和 chopper 合作过、速度强度接近等），写明理由 */
+    nearChop: z.string().optional(),
     tags: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
     youtube: z

@@ -145,6 +145,18 @@
   note: 在 Mnet、Melon 两榜登顶超过五周。
   sources:
     - { title: 'Wikipedia – Outsider (rapper)', url: 'https://en.wikipedia.org/wiki/Outsider_(rapper)' }
+- id: star-warz
+  title: Star Warz (별들의 전쟁)
+  artists: [outsider, twista]
+  credit: Outsider & Twista
+  year: 2015
+  youtube: 3TJrTSgRBqk
+  youtubeChannel: Lovetoken
+  officialUpload: false
+  scene: world
+  note: 韩国快嘴和美国 chopper 的对射，两人轮流上高速段落。
+  sources:
+    - { title: 'xportsnews – 아웃사이더, 美래퍼 트위스타와 세기의 속사포 랩 배틀（2015）', url: 'https://www.xportsnews.com/article/540238' }
 - id: jian-jiang
   title: 健将
   artists: [pharaoh]

@@ -2,7 +2,7 @@
 export const SITE = {
   name: 'CHOP/',
   fullName: 'CHOP/ 快嘴档案馆',
-  description: '快速说唱资料库：中国快嘴专区与世界 chopper 地图，人物、曲目、历史、语速数据，每条都附来源。',
+  description: '快速说唱资料库：中国快嘴专区与世界 chop 地图，人物、曲目、历史、语速数据，每条都附来源。',
 };
 
 export const NAV = [

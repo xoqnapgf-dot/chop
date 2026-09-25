@@ -3,7 +3,7 @@
   name: 美国
   en: United States
   geo: [39.5, -95.5]
-  summary: Chopper 的发源地。1990 年代初从中西部兴起，Tech N9ne 的 Strange Music 把它做成了系列企划；如今 YouTube 上的 SPS 社区还在把语速往上推。
+  summary: Chop 的发源地。1990 年代初从中西部兴起，Tech N9ne 的 Strange Music 把它做成了系列企划；如今 YouTube 上的 SPS 社区还在把语速往上推。
   mentions: [Krizz Kaliko, Yelawolf, D-Loc, JL B.Hood, Dayton Family]
   sources:
     - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
@@ -35,7 +35,7 @@
   name: 菲律宾
   en: Philippines
   geo: [12.9, 121.8]
-  summary: Gloc-9 以"快速流动的 chopper 唱腔"成为菲律宾最成功的说唱歌手之一。
+  summary: Gloc-9 以"快速流动的 chop 唱腔"成为菲律宾最成功的说唱歌手之一。
   sources:
     - { title: 'Wikipedia – Gloc-9', url: 'https://en.wikipedia.org/wiki/Gloc-9' }
 - id: dk
