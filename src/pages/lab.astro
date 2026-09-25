@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '@/layouts/Base.astro';
 import SpeedChart from '@/components/SpeedChart.astro';
+import SpeedRules from '@/components/SpeedRules.astro';
 import { url } from '@/lib/url';
 import { displayName } from '@/lib/labels';
 
@@ -28,12 +29,25 @@ const subdivisions = [
     <p class="mt-5 max-w-2xl text-lg text-ink-2">快嘴的"快"其实是算术：BPM 决定一拍多长，细分决定一拍切几刀。在这里亲耳听一下，再测测你自己。</p>
   </section>
 
+  <!-- ============ 测速规则 ============ -->
+  <section id="rules" class="container-x mt-12 scroll-mt-24">
+    <p class="eyebrow">01 · How speed is measured</p>
+    <h2 class="mt-3 text-3xl font-semibold md:text-5xl">测速规则：一个数字要过几道关</h2>
+    <p class="mt-4 max-w-3xl text-ink-2">
+      海外测速圈怎么算"每秒几个音节"、什么歌能算、什么情况直接除名。内容整理自 NahDah Vebb 2023 版榜单的三份公开文档。
+    </p>
+    <p class="mt-4 max-w-3xl rounded-xl border-l-4 border-[var(--style-fast)] bg-surface-2 px-4 py-3 text-sm text-ink-2">
+      <strong class="text-ink">先说清楚：SPS 只量速度，不等于 chop。</strong>SPS 榜单比的是 1 秒爆发有多快；chop 还要看每个音节是不是真的词、切分和 flow 好不好、能不能现场唱出来。所以榜单名次不代表谁是更好的 chopper。<a href={url('learn/what-is-chop/')} class="link-u text-ink">快嘴 ≠ Chop →</a>
+    </p>
+    <div class="mt-8"><SpeedRules /></div>
+  </section>
+
   <!-- ============ 节拍细分器 ============ -->
   <section class="container-x mt-12">
     <div id="metro" class="card overflow-hidden" data-refs={JSON.stringify(refs)}>
       <div class="grid gap-0 lg:grid-cols-[1fr_380px]">
         <div class="p-6 md:p-10">
-          <p class="eyebrow">01 · Subdivision metronome</p>
+          <p class="eyebrow">02 · Subdivision metronome</p>
           <h2 class="mt-3 text-2xl font-semibold md:text-3xl">节拍细分器</h2>
 
           <div class="mt-8">
@@ -94,7 +108,7 @@ const subdivisions = [
   <!-- ============ 语速计算器 ============ -->
   <section class="container-x mt-10">
     <div id="calc" class="card p-6 md:p-10" data-refs={JSON.stringify(refs)}>
-      <p class="eyebrow">02 · Speed calculator</p>
+      <p class="eyebrow">03 · Speed calculator</p>
       <h2 class="mt-3 text-2xl font-semibold md:text-3xl">语速计算器</h2>
       <p class="mt-3 max-w-2xl text-ink-2">贴一段歌词，按下计时器从第一个字开始念，念完再按一下。中文和韩文按字计，英文按音节估算。</p>
 
@@ -134,7 +148,7 @@ const subdivisions = [
   <!-- ============ 数据 ============ -->
   <section class="container-x mt-10">
     <div class="card p-6 md:p-10">
-      <p class="eyebrow">03 · Records</p>
+      <p class="eyebrow">04 · Records</p>
       <h2 class="mb-8 mt-3 text-2xl font-semibold md:text-3xl">已收录的速度数据</h2>
       <SpeedChart />
       <p class="mt-6 text-sm text-ink-3">口径说明见 <a class="link-u text-ink" href={url('learn/measuring-speed/')}>语速怎么测？</a></p>

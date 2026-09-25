@@ -1,18 +1,19 @@
 ---
 /**
- * 轻量 YouTube 播放器：先只显示本地缩略图，点击才加载 iframe。
- * 页面不会因为 YouTube 打不开而卡住，也不会一进页面就加载几 MB 的播放器。
+ * 轻量播放器：先只显示本地缩略图，点击才加载 iframe。
+ * 点击时先探测 YouTube 能不能连上：能连就播 YouTube；连不上（国内通常如此）就播 B 站，
+ * 没有 B 站视频就用网易云外链播放器，都没有才给搜索入口。
  */
 import { Image } from 'astro:assets';
 import { trackThumb } from '@/lib/media';
 
-interface Props { id: string; title: string; channel?: string; official?: boolean }
-const { id, title, channel, official } = Astro.props;
+interface Props { id: string; title: string; channel?: string; official?: boolean; bilibili?: string; netease?: number }
+const { id, title, channel, official, bilibili, netease } = Astro.props;
 const thumb = trackThumb(id);
 const q = encodeURIComponent(title);
 ---
 
-<div class="lite-yt group relative aspect-video overflow-hidden rounded-2xl border border-line bg-black" data-id={id} data-title={title}>
+<div class="lite-yt group relative aspect-video overflow-hidden rounded-2xl border border-line bg-black" data-id={id} data-title={title} data-bv={bilibili} data-ne={netease}>
   {thumb && <Image src={thumb} alt="" widths={[480, 800, 1280]} sizes="(min-width: 1024px) 720px, 100vw" class="size-full object-cover opacity-90 transition duration-500 group-hover:scale-[1.02] group-hover:opacity-100" />}
   <button type="button" class="play absolute inset-0 grid place-items-center" aria-label={`播放：${title}`}>
     <span class="grid size-16 place-items-center rounded-full bg-accent text-accent-ink shadow-2xl transition group-hover:scale-110">
@@ -25,10 +26,23 @@ const q = encodeURIComponent(title);
   </div>
 </div>
 <p class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-ink-3">
-  <span>打不开 YouTube？</span>
-  <a class="link-u hover:text-ink" href={`https://search.bilibili.com/all?keyword=${q}`} target="_blank" rel="noopener">在 B 站搜 ↗</a>
-  <a class="link-u hover:text-ink" href={`https://music.163.com/#/search/m/?s=${q}`} target="_blank" rel="noopener">在网易云搜 ↗</a>
-  <a class="link-u hover:text-ink" href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener">YouTube 原链接 ↗</a>
+  {
+    bilibili ? (
+      <a class="link-u hover:text-ink" href={`https://www.bilibili.com/video/${bilibili}/`} target="_blank" rel="noopener">B 站 ↗</a>
+    ) : (
+      <a class="link-u hover:text-ink" href={`https://search.bilibili.com/all?keyword=${q}`} target="_blank" rel="noopener">在 B 站搜 ↗</a>
+    )
+  }
+  {
+    netease ? (
+      <a class="link-u hover:text-ink" href={`https://music.163.com/#/song?id=${netease}`} target="_blank" rel="noopener">网易云 ↗</a>
+    ) : (
+      <a class="link-u hover:text-ink" href={`https://music.163.com/#/search/m/?s=${q}`} target="_blank" rel="noopener">在网易云搜 ↗</a>
+    )
+  }
+  <a class="link-u hover:text-ink" href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener">YouTube ↗</a>
+  {/* YouTube 和国内平台优先；B 站、网易云都没有时，才给 Spotify */}
+  {!bilibili && !netease && <a class="link-u hover:text-ink" href={`https://open.spotify.com/search/${q}`} target="_blank" rel="noopener">在 Spotify 搜 ↗</a>}
 </p>
 
 <script>
@@ -48,7 +62,32 @@ const q = encodeURIComponent(title);
     btn?.addEventListener('click', async () => {
       btn.disabled = true;
       btn.querySelector('span')?.classList.add('animate-pulse');
+      const frame = (src: string, title: string, cls = 'absolute inset-0 size-full') => {
+        const f = document.createElement('iframe');
+        f.src = src;
+        f.title = title;
+        f.allow = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
+        f.allowFullscreen = true;
+        f.referrerPolicy = 'no-referrer-when-downgrade';
+        f.className = cls;
+        return f;
+      };
       if (!(await probe())) {
+        const bv = el.dataset.bv;
+        const ne = el.dataset.ne;
+        if (bv) {
+          // YouTube 连不上：直接播 B 站
+          el.replaceChildren(frame(`https://player.bilibili.com/player.html?bvid=${bv}&autoplay=1&danmaku=0&high_quality=1`, el.dataset.title ?? ''));
+          return;
+        }
+        if (ne) {
+          // 没有 B 站视频：网易云外链播放器（只有音频，会员歌曲可能放不了）
+          const wrap = document.createElement('div');
+          wrap.className = 'absolute inset-0 grid place-items-center bg-black/85 p-4';
+          wrap.append(frame(`https://music.163.com/outchain/player?type=2&id=${ne}&auto=1&height=66`, el.dataset.title ?? '', 'h-[86px] w-full max-w-[420px] rounded-xl'));
+          btn.replaceWith(wrap);
+          return;
+        }
         const q = encodeURIComponent(el.dataset.title ?? '');
         const box = document.createElement('div');
         box.className = 'absolute inset-0 grid place-items-center bg-black/80 p-6 text-center text-sm text-white';

@@ -27,7 +27,7 @@ const scenes = Object.keys(SCENE) as (keyof typeof SCENE)[];
       {
         withArtists.map(({ t, artists }) => (
           <article id={t.id} class="track scroll-mt-24" data-scene={t.data.scene} data-starter={t.data.starter ? '1' : undefined}>
-            <LiteYouTube id={t.data.youtube} title={`${t.data.title} ${t.data.credit}`} channel={t.data.youtubeChannel} official={t.data.officialUpload} />
+            <LiteYouTube id={t.data.youtube} title={`${t.data.title} ${t.data.credit}`} channel={t.data.youtubeChannel} official={t.data.officialUpload} bilibili={t.data.bilibili} netease={t.data.netease} />
             <div class="mt-5 flex flex-wrap items-center gap-2">
               <span class="chip"><span class="size-1.5 rounded-full" style={`background:${SCENE[t.data.scene].color}`} />{SCENE[t.data.scene].name}</span>
               {t.data.starter && <span class="chip">路人入门</span>}

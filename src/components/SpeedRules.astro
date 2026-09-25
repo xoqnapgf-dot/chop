@@ -1,0 +1,258 @@
+---
+/**
+ * 测速规则：把 NahDah Vebb《Top 150 Fastest Rappers》（2023）三份文档里的方法、规则和问答
+ * 做成一眼能看懂的卡片 + 折叠问答。数字都来自原文档。
+ */
+import { url } from '@/lib/url';
+
+const DOCS = [
+  ['视频', 'https://www.youtube.com/watch?v=4SjqPAqjsWo'],
+  ['方法 FAQ', 'https://docs.google.com/document/d/1zPWDPfnmmfRIuuskCmTMeTlWTjY9uc9NQ2nM3MU-mCU'],
+  ['除名说明', 'https://docs.google.com/document/d/1DfcPmT5YCWYwDRP-uyFMEthi9n7ctGRsK2C3QxiFJrA'],
+  ['150 条逐条测算', 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA'],
+];
+
+const excluded = [
+  ['Aktibar', '《KILL 7》几乎肯定加速：加速后 S、K 这类辅音会变得很短'],
+  ['Branx', '为上榜专门做了一首歌，但制作和音质没达标'],
+  ['DJ Tubet', '最快的几段质量明显不足'],
+  ['Don Xperto', '永久除名：长期加速，被指出并承认后仍然继续'],
+  ['El Chojin', '最快 15.72 来自纪录挑战，不算歌'],
+  ['Foofa', '只有韩国榜单视频里的低质量音频，没有原曲'],
+  ['Frigidz', '13.85 刚好够线，但歌曲质量不够'],
+  ['Leach', '最快的《Immense》被认为加速'],
+  ['MC Rice', '本人要求不用未发行的那段 verse（16.02）'],
+  ['Mizury Mize', 'UC6 那段圈里普遍认为加速了'],
+  ['Rebel XD', '上一版第 1 名；速度只出现在纪录挑战里'],
+  ['Rimaru', '最快的《Casa De Copii》被判定加速'],
+];
+const swapped = [
+  ['kVr', '本人不想用 Illest Choppers 2（19.86），改用 Speed Demons 2，慢了 3.72'],
+  ['MGK of ARMR4', 'Paslangin 4（16.19）音质不达标，本人也不满意'],
+  ['Outsider', '纪录挑战不算，改用最快的正式歌曲《주인공》，14.95'],
+  ['Sri Rascol', '《Killambomb Intro》几层人声没对齐、没法核实，改用《AYM》'],
+];
+
+const faq = [
+  ['为什么数音节，不数单词？', '音节是说话的基本单位，长度大致可比；按单词算，单词长的语言会吃亏。只听不看歌词，没公开歌词的 rapper 也能测。有歌词时仍会对照，不把录音杂音多算成音节。'],
+  ['为什么不用 10 秒平均？', '13–14 SPS 以上的爆发很少能持续 3–4 秒以上，10 秒里难免混进慢段、停顿或别的 take。CDTVProductions 用 10 秒，"Is Eminem really a Rap God" 系列用 15 秒，都会把峰值稀释掉。这个榜比的是纯速度，不是耐力。'],
+  ['为什么不能短于 1 秒？', '15 ÷ 1.000 和 14 ÷ 0.933 都约等于 15，但后者实际只唱了 14 个音节。窗口短于 1 秒，除以小数会把数字放大，算出来的就不再是"每秒唱了几个"。'],
+  ['片段从哪剪到哪？', '团队把首尾剪到最短，只要音节数还说得通。也有人从第一个音节的开头剪到最后一个音节的结尾，这样会稍慢一点，但也许更合理。'],
+  ['这样测就准了吗？', '不绝对。几毫秒就能让结果变一截，不同的人很难听得完全一样，所以结果是团队共同认可的，有误差。比如 Crucified 自称《Onion Chopper》是 22 SPS，团队"非常接近但没能核实"，最后写的是 22/1.043 ≈ 21.09。'],
+  ['谁算"像样的"rapper？', '看四样：圈内认可度；投入（发过一定数量的歌，最好有 EP、mixtape 或专辑）；经验（不在拍上、录得潦草的不算）；质量（录音室水准）。'],
+  ['为什么不收吉尼斯纪录？', '清唱片段放进视频会打乱节奏，录音质量也往往更差；更重要的是，想把"快嘴"这个名头留给在自己作品里真的唱得快的人。Outsider、Twista 因此都改用正式歌曲；Rebel XD 从上一版第 1 名直接落榜。'],
+  ['视频里的秒表和 "Tb" 是什么？', '秒表只是提示爆发从哪开始，不是片段的准确时长。Tb 是 tiebreaker（平局）：两人在同样长的时间里唱了同样多的音节，谁把速度保持得更久，谁排前面。'],
+];
+---
+
+<div class="rules">
+  <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <!-- 1 公式 -->
+    <article class="rule card p-6">
+      <span class="num">01</span>
+      <h3 class="mt-2 text-xl font-semibold">一条算式</h3>
+      <p class="mt-2 text-sm text-ink-2">每秒音节数 = 唱出的音节数 ÷ 秒数。每个数字都要写出算式，别人才能核对。</p>
+      <div class="viz mt-5 font-mono">
+        <span class="text-2xl text-accent-text">22</span><span class="mx-1.5 text-ink-3">÷</span><span class="text-2xl">1.043</span><span class="mx-1.5 text-ink-3">=</span><span class="text-2xl font-semibold">21.09</span>
+        <p class="mt-1 text-[11px] text-ink-3">Crucified《Onion Chopper》· 2023 榜第 1</p>
+      </div>
+    </article>
+
+    <!-- 2 唱出来的音节 -->
+    <article class="rule card p-6">
+      <span class="num">02</span>
+      <h3 class="mt-2 text-xl font-semibold">数唱出来的，不数写出来的</h3>
+      <p class="mt-2 text-sm text-ink-2">同一个词，唱法不同，音节数就不同。要听，不能只看歌词。</p>
+      <div class="viz mt-5 grid gap-2 font-mono text-sm">
+        <p><span class="text-ink-3">fire →</span> <span class="syl">fah</span> <span class="ml-1 text-xs text-ink-3">1 个</span></p>
+        <p><span class="text-ink-3">fire →</span> <span class="syl">fi</span><span class="syl">yah</span> <span class="ml-1 text-xs text-ink-3">2 个</span></p>
+      </div>
+    </article>
+
+    <!-- 3 不短于 1 秒 -->
+    <article class="rule card p-6">
+      <span class="num">03</span>
+      <h3 class="mt-2 text-xl font-semibold">窗口不短于 1 秒</h3>
+      <p class="mt-2 text-sm text-ink-2">两个结果都是 15，但只有上面那个真的唱了 15 个音节。</p>
+      <div class="viz mt-5 grid gap-3 font-mono text-xs">
+        <div>
+          <p class="dots" style="--n:15">{Array.from({ length: 15 }, () => <i class="on" />)}</p>
+          <p class="mt-1"><span class="text-good">✓</span> 15 ÷ 1.000 = 15</p>
+        </div>
+        <div>
+          <p class="dots" style="--n:15">{Array.from({ length: 15 }, (_, i) => <i class:list={{ on: i < 14 }} />)}</p>
+          <p class="mt-1"><span class="text-critical">✗</span> 14 ÷ 0.933 ≈ 15 <span class="text-ink-3">（被小数放大）</span></p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4 不用 10 秒 -->
+    <article class="rule card p-6">
+      <span class="num">04</span>
+      <h3 class="mt-2 text-xl font-semibold">比峰值，不比 10 秒平均</h3>
+      <p class="mt-2 text-sm text-ink-2">同样 10 秒 130 个音节：一个全程 13，一个峰值 16、其余放慢。10 秒平均看不出区别。</p>
+      <div class="viz mt-5 grid gap-2 text-[11px] text-ink-3">
+        <div class="wave" style="--a:13;--b:13;--c:13"><i /><i /><i /><i /><i /><i /><i /><i /><i /><i /></div>
+        <p>全程稳定 13</p>
+        <div class="wave peak"><i style="--h:10" /><i style="--h:11" /><i style="--h:16" /><i style="--h:16" /><i style="--h:16" /><i style="--h:12" /><i style="--h:11" /><i style="--h:13" /><i style="--h:12" /><i style="--h:13" /></div>
+        <p>峰值 16 · 1 秒窗口能抓到它</p>
+      </div>
+    </article>
+
+    <!-- 5 只收录音室歌曲 -->
+    <article class="rule card p-6">
+      <span class="num">05</span>
+      <h3 class="mt-2 text-xl font-semibold">只算正式的录音室歌曲</h3>
+      <p class="mt-2 text-sm text-ink-2">想把"快嘴"的名头留给在自己作品里真唱得快的人。</p>
+      <div class="viz mt-5 flex flex-wrap gap-2 text-xs">
+        <span class="tag bad">清唱 ✗</span>
+        <span class="tag bad">现场 spit ✗</span>
+        <span class="tag bad">视频 freestyle ✗</span>
+        <span class="tag bad">吉尼斯挑战 ✗</span>
+        <span class="tag good">录音室歌曲 / verse ✓</span>
+      </div>
+    </article>
+
+    <!-- 6 加速除名 -->
+    <article class="rule card p-6" style="--rc:var(--critical)">
+      <span class="num">06</span>
+      <h3 class="mt-2 text-xl font-semibold">加速、拼接：整个人除名</h3>
+      <p class="mt-2 text-sm text-ink-2">最快那首被发现或高度怀疑加速，或把补录的句子拼成"一口气"，其他正常的歌也不算，以后不再上榜。</p>
+      <div class="viz mt-5 text-xs text-ink-3">
+        <p>怎么听出来：加速后，<strong class="text-ink">S、K</strong> 这类辅音会变得异常短促。</p>
+        <p class="mt-1">2023 版因此除名：Aktibar、Don Xperto、Leach、Mizury Mize、Rimaru</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="mt-4 grid gap-4 lg:grid-cols-2">
+    <details class="card group p-6" open>
+      <summary class="flex cursor-pointer list-none items-center justify-between gap-4">
+        <span class="text-lg font-semibold">谁被除名、为什么</span>
+        <span class="chev text-ink-3">⌄</span>
+      </summary>
+      <p class="mt-4 eyebrow">整个人不上榜</p>
+      <ul class="mt-2 grid gap-1.5 text-sm">
+        {excluded.map(([n, r]) => (
+          <li class="grid grid-cols-[7.5rem_1fr] gap-3"><span class="font-semibold">{n}</span><span class="text-ink-2">{r}</span></li>
+        ))}
+      </ul>
+      <p class="mt-5 eyebrow">人在榜上，换了歌</p>
+      <ul class="mt-2 grid gap-1.5 text-sm">
+        {swapped.map(([n, r]) => (
+          <li class="grid grid-cols-[7.5rem_1fr] gap-3"><span class="font-semibold">{n}</span><span class="text-ink-2">{r}</span></li>
+        ))}
+      </ul>
+    </details>
+
+    <div class="card p-6">
+      <p class="text-lg font-semibold">问答</p>
+      <div class="mt-3 divide-y divide-line">
+        {faq.map(([q, a]) => (
+          <details class="qa py-3">
+            <summary class="flex cursor-pointer list-none items-start justify-between gap-4 text-sm font-semibold">
+              {q}
+              <span class="chev shrink-0 text-ink-3">⌄</span>
+            </summary>
+            <p class="mt-2 text-sm leading-relaxed text-ink-2">{a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-4 rounded-2xl border border-line bg-surface-2 p-5 text-xs leading-relaxed text-ink-3">
+    <p>
+      <strong class="text-ink">出处：</strong>NahDah Vebb《Top 150 Fastest Rappers》（2022 年 7 月重做，2023 年 1 月 30 日发布），美洲一派的测速圈。他早期的榜单错误多、有凭想象给的数字，自己已把 2017、2021 版标成 outdated；这一版起才系统化：450 人数据库、每条附 1 秒片段录音和音节拆分、复查三遍。本站复算了 150 条，只有 1 条算式对不上。这是 2023 年的版本，之后的新纪录不在里面。
+    </p>
+    <p class="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+      {DOCS.map(([t, u]) => <a href={u} target="_blank" rel="noopener nofollow" class="link-u hover:text-ink">{t} ↗</a>)}
+      <a href={url('world/#sps')} class="link-u text-ink">看榜单前 12 名 →</a>
+    </p>
+  </div>
+</div>
+
+<style>
+  .rule {
+    position: relative;
+    border-top: 3px solid var(--rc, var(--accent));
+  }
+  .num {
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    color: var(--rc, var(--accent-text));
+  }
+  .viz {
+    border-top: 1px dashed var(--line);
+    padding-top: 1rem;
+  }
+  .syl {
+    display: inline-block;
+    margin-right: 0.25rem;
+    padding: 0.05rem 0.45rem;
+    border-radius: 999px;
+    background: color-mix(in oklab, var(--accent) 22%, transparent);
+    color: var(--ink);
+  }
+  .dots {
+    display: grid;
+    grid-template-columns: repeat(var(--n), 1fr);
+    gap: 3px;
+    max-width: 16rem;
+  }
+  .dots i {
+    aspect-ratio: 1;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+  }
+  .dots i.on {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+  .wave {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 2.4rem;
+  }
+  .wave i {
+    flex: 1;
+    height: calc(var(--h, 13) / 16 * 100%);
+    border-radius: 3px 3px 0 0;
+    background: color-mix(in oklab, var(--accent) 45%, var(--line));
+  }
+  .wave.peak i[style*='--h:16'] {
+    background: var(--accent);
+  }
+  .tag {
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    padding: 0.2rem 0.65rem;
+  }
+  .tag.bad {
+    color: var(--ink-3);
+    text-decoration: line-through;
+    text-decoration-color: color-mix(in oklab, var(--critical) 70%, transparent);
+  }
+  .tag.good {
+    border-color: color-mix(in oklab, var(--accent) 60%, transparent);
+    color: var(--accent-text);
+    font-weight: 600;
+  }
+  .text-good {
+    color: var(--good);
+  }
+  .text-critical {
+    color: var(--critical);
+  }
+  .chev {
+    transition: transform 0.2s ease;
+  }
+  details[open] > summary .chev {
+    transform: rotate(180deg);
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+</style>

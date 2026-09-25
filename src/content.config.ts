@@ -102,6 +102,10 @@ const tracks = defineCollection({
     album: z.string().optional(),
     youtube: z.string(), // 视频 ID
     youtubeChannel: z.string(), // 上传频道名
+    /** 国内能看的 B 站视频（BV 号），YouTube 打不开时直接播这个 */
+    bilibili: z.string().regex(/^BV[0-9A-Za-z]{10}$/).optional(),
+    /** 网易云音乐歌曲 ID */
+    netease: z.number().int().optional(),
     officialUpload: z.boolean(),
     note: z.string(),
     confidence: confidence.default('verified'),
