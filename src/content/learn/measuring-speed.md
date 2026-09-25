@@ -9,6 +9,10 @@ sources:
   - { title: 'Wikipedia – Outsider (rapper)', url: 'https://en.wikipedia.org/wiki/Outsider_(rapper)' }
   - { title: '万达 – 南征北战献唱《长城》推广曲（饕餮）', url: 'https://www.wanda.cn/2016/2016latest_1209/34181.html' }
   - { title: 'SPS and Chopper Rap Wiki – Rules', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Rules' }
+  - { title: 'YouTube – NahDah Vebb：[2023] Top 150 Fastest Rappers in the World', url: 'https://www.youtube.com/watch?v=4SjqPAqjsWo' }
+  - { title: 'NahDah Vebb – 测速方法 FAQ', url: 'https://docs.google.com/document/d/1zPWDPfnmmfRIuuskCmTMeTlWTjY9uc9NQ2nM3MU-mCU' }
+  - { title: 'NahDah Vebb – 除名说明', url: 'https://docs.google.com/document/d/1DfcPmT5YCWYwDRP-uyFMEthi9n7ctGRsK2C3QxiFJrA' }
+  - { title: 'NahDah Vebb – 150 条逐条测算', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
   - { title: 'SPS and Chopper Rap Wiki – Crucified', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Crucified' }
   - { title: 'SPS and Chopper Rap Wiki – Infinite choppers 1', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Infinite_choppers_1' }
   - { title: '新浪 – 赵辰龙公开回应（2022-04-01）', url: 'https://k.sina.cn/article_1163858357_v455f11b5019012ps5.html' }
@@ -43,6 +47,19 @@ sources:
 5. **不下模糊结论**：规则里写明，不清楚的时候不要说某人是"最快的"，要写清具体数值和算式。
 
 这些都是本站同意的做法，也是本站给数据标可信度的原因。
+
+## NahDah 的 Top 150：美洲一派的规则
+
+NahDah Vebb 在 YouTube 上做"最快说唱歌手 Top 150"榜单，属于美洲一派的测速圈。他早期的榜单错误很多，也有凭想象给的数字；2022 年 7 月重做、2023 年 1 月发布的版本开始系统化，附了三份公开文档：方法说明、除名名单，以及 150 条逐条测算（每条都有 1 秒片段录音和音节拆分）。规则里值得记住的几条：
+
+1. **数"唱出来的"音节，不数"写出来的"**：同一个 fire，可以唱成一个音节（fah），也可以唱成两个（fi-yah），要听实际怎么唱。
+2. **窗口不短于 1 秒**：15 ÷ 1.000 = 15 SPS，14 ÷ 0.933 也等于 15 SPS，但后者实际只唱了 14 个音节。短于 1 秒，算出来的就不是"每秒唱了几个"，而是"唱得有多密"。
+3. **不用 10 秒窗口**：13–14 SPS 以上的爆发很少能持续 3–4 秒，10 秒窗口会被慢段、停顿和别的 take 稀释。同样是 10 秒 130 个音节，一个人可能全程 13，另一个人可能峰值 16、其余时间放慢。
+4. **只收正式录音室歌曲**：清唱、现场、吉尼斯挑战都不算。所以 Outsider 以前靠纪录挑战排得很高，2023 版换成了他最快的正式歌曲《주인공》，14.95 SPS；Rebel XD 从上一版的第 1 名变成落榜，因为他的速度只出现在纪录挑战里。
+5. **加速、拼接一律除名**：最快那首被发现或高度怀疑加速，或者把补录的句子拼成"一口气"，这个人就整体除名，其他正常的歌也不算。
+6. **承认误差**：零点几秒就能改变名次，所以榜单写明结果是"相对的"。Crucified 自称《Onion Chopper》是 22 SPS，NahDah 团队"非常接近但没能核实"，最后写的是 22 个音节 / 1.043 秒 ≈ 21.09。
+
+本站复算了这 150 条，只有 1 条算式对不上。榜单本身只比 1 秒爆发，和 SPS wiki 一样，**只说明有多快，不说明谁是更好的 chopper**。
 
 ## 中文的例子：变调和加速
 

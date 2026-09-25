@@ -78,6 +78,19 @@ speed:
     note: 2017 年一位计算者的误算，后来被 SPS 社区推翻，但至今还有人引用。
     sources:
       - { title: 'SPS and Chopper Rap Wiki – Crucified', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Crucified' }
+  - value: 21.09
+    unit: syl/s
+    label: '《Onion Chopper》爆发 · NahDah 2023 榜第 1 名'
+    kind: measured
+    window: burst
+    syllables: 22
+    seconds: 1.043
+    confidence: pending
+    note: '他本人说这段是 22 SPS；NahDah 团队"非常接近但没能核实"，测得 1.043 秒 22 个音节。'
+    sources:
+      - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+      - { title: 'YouTube – NahDah Vebb：[2023] Top 150 Fastest Rappers in the World', url: 'https://www.youtube.com/watch?v=4SjqPAqjsWo' }
+      - { title: 'NahDah Vebb – 测速方法 FAQ（Onion Chopper 一节）', url: 'https://docs.google.com/document/d/1zPWDPfnmmfRIuuskCmTMeTlWTjY9uc9NQ2nM3MU-mCU' }
 sources:
   - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }
   - { title: 'SPS and Chopper Rap Wiki – Crucified', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Crucified' }

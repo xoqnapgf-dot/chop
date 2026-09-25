@@ -34,6 +34,19 @@ speed:
     note: 和本人词条的 16 冲突，缺少一手测量资料，暂不能作为纪录引用。
     sources:
       - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
+  - value: 14.95
+    unit: syl/s
+    label: '《주인공》（Hero）爆发 · NahDah 2023 榜第 54 名'
+    kind: measured
+    window: burst
+    syllables: 16
+    seconds: 1.07
+    confidence: pending
+    note: '以前的榜单把他的纪录挑战算作歌曲，所以排得更高；2023 版不收纪录挑战，改用他最快的正式歌曲《주인공》。'
+    sources:
+      - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+      - { title: 'YouTube – NahDah Vebb：[2023] Top 150 Fastest Rappers in the World', url: 'https://www.youtube.com/watch?v=4SjqPAqjsWo' }
+      - { title: 'NahDah Vebb – 2023 榜除名与替换说明（Outsider 一节）', url: 'https://docs.google.com/document/d/1DfcPmT5YCWYwDRP-uyFMEthi9n7ctGRsK2C3QxiFJrA' }
 sources:
   - { title: 'Wikipedia – Outsider (rapper)', url: 'https://en.wikipedia.org/wiki/Outsider_(rapper)' }
   - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
