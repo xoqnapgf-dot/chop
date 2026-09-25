@@ -84,7 +84,7 @@ const profiled = new Map(artists.map((a) => [a.data.name.toLowerCase(), a.id]));
                 <strong class="text-ink">本站的对照结果：</strong>用"音节数 ÷ 秒数"复算了表里全部 {cypher.data.entries.length} 条，和 wiki 写的数值全部一致。数字本身来自社区单一来源，所以整体标为"待核实"。
               </p>
               <p class="mt-3 text-xs text-ink-3">
-                表中是参与者公开使用的艺名。这个圈子里有不少未成年的创作者，本站不收录任何人的年龄、真名或联系方式。
+                表中是参与者公开使用的艺名。
               </p>
               <p class="mt-3 flex flex-wrap gap-x-4 text-xs">
                 {cypher.data.sources.map((s) => <a href={s.url} target="_blank" rel="noopener nofollow" class="link-u text-ink-3 hover:text-ink">{s.title} ↗</a>)}
