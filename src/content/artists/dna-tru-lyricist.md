@@ -31,6 +31,8 @@ speed:
 sources:
   - { title: 'YouTube – DNA Tru Lyricist 官方频道（简介："rappin over 20 years"）', url: 'https://www.youtube.com/@DNATruLyricist' }
   - { title: 'Bandcamp – DNA Tru Lyricist（简介：David G. Phelps，来自得州泰勒）', url: 'https://dnatrulyricist.bandcamp.com/' }
+  - { title: 'Genius – DNA Tru Lyricist 艺人页（AKA Tru Ripsta，影响来源，专辑列表）', url: 'https://genius.com/artists/Dna-tru-lyricist' }
+  - { title: 'Genius – Lightspeed Chopper 3（2015-04-13，歌词与 Song Bio）', url: 'https://genius.com/Dna-tru-lyricist-lightspeed-chopper-3-lyrics' }
   - { title: 'YouTube – DNA Tru Lyricist - Your Energy feat Crucified（简介写明 Tyler, TX）', url: 'https://www.youtube.com/watch?v=qJsQmhnQrHo' }
   - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
   - { title: 'YouTube – DNA vs Twisted Insane "No Mercy Rap Showdown"（2013，第一回合）', url: 'https://www.youtube.com/watch?v=2dclINd3A1s' }
@@ -42,21 +44,27 @@ sources:
   - { title: '网易云音乐 – The Lightspeed Chopper Mixtape', url: 'https://music.163.com/#/song?id=1832667523' }
 ---
 
-DNA Tru Lyricist 本名 David G. Phelps，来自美国得克萨斯州东部的**泰勒（Tyler）**。他 2009 年开通 YouTube 频道，频道简介里写着自己"说唱了二十多年"。2015 年他在评论区说，DNA 这个名字已经用了 16 年；他翻出来的一些早年作品还是卡带年代录的，那时他大概 16 岁。
+DNA Tru Lyricist 本名 David G. Phelps，来自美国得克萨斯州东部的**泰勒（Tyler）**，早年用过 **Tru Ripsta** 这个名字。Genius 上记录的第一首歌是 2005 年的《Throwed in tha Game》。他 2009 年开通 YouTube 频道，频道简介里写着自己"说唱了二十多年"。2015 年他在评论区说，DNA 这个名字已经用了 16 年；他翻出来的一些早年作品还是卡带年代录的，那时他大概 16 岁。
+
+他在 Genius 简介里列出的偶像是 Tech N9ne、Bone Thugs-n-Harmony、Twista、Eminem、K-Rino、Z-RO、Rittz 和 Brotha Lynch Hung，基本就是一份中西部和南部 chopper 的名单。
 
 ## 老资历，影响大于名气
 
-在地下 chop 圈里，DNA 属于**老资历**：出道早、作品多、坚持得久，和一大批地下 chopper 合作过，也自己组织和发行 cypher，很多幕后工作都有他。论知名度，他比不上 Crucified、Twisted Insane 这些名字，但在圈内的影响和分量很重。
+在地下 chop 圈里，DNA 属于**老资历**：出道早、作品多、坚持得久，和一大批地下 chopper 合作过，也自己组织和发行 cypher，很多幕后工作都有他。
+
+他非常高产。Genius 上能看到的专辑就有《The Lightspeed Chopper Mixtape》（2016）、《Book of the Wreck》（2018）、《Tru》（2019）、《Lyricist Never Die》（2022）、《Warlock》（2025）、《Metaphysics》（2025）、《Ripgutology 6》（2026）等，他在《Hate Me Now》里还把近几年的专辑名一口气唱了一遍。
+
+论知名度，他比不上 Crucified、Twisted Insane 这些名字，他自己在《Lightspeed Chopper 3》里就唱过：粉丝连 Twisted Insane 的四分之一都没有，但每一段 verse 的赞都比踩多。在圈内，他的影响和分量很重。
 
 ## Lightspeed Chopper：他的招牌系列
 
 **Lightspeed Chopper**（光速 chopper）既是他的歌名，也是他给自己的称号。这个系列从第 1 首做到第 4 首，后来收进了 mixtape《**The Lightspeed Chopper Mixtape**》，同一张里还收了他在 Undaground Choppers 2、3、4 里的段落。
 
-其中《**Lightspeed Chopper 3**》是他最快的歌：NahDah 2023 年的《Top 150 Fastest Rappers》把他排在**第 9 名**，1.070 秒 19 个音节，约 **17.76 SPS**。这份榜单只收正式录音室歌曲，发现加速就除名。Genius 上的社区备注也是约 17.7，两处说法一致。
+其中《**Lightspeed Chopper 3**》（2015 年 4 月发行）是他最快的歌。第二段主歌开头他就唱：受够了总有人问他的 SPS 是多少。NahDah 2023 年的《Top 150 Fastest Rappers》把他排在**第 9 名**，1.070 秒 19 个音节，约 **17.76 SPS**。这份榜单只收正式录音室歌曲，发现加速就除名。Genius 上的社区备注也是约 17.7，两处说法一致。
 
 ## Undaground Choppers 的常客
 
-DJ Lil Sprite（Sprite Beatz）主导的 **Undaground Choppers** 是地下 chopper 的招牌 cypher 系列，维基百科 Chopper 词条也提到了它。DNA 是这个系列的常客，UC2、3、4、6、8 都有他。
+DJ Lil Sprite（Sprite Beatz）主导的 **Undaground Choppers** 是地下 chopper 的招牌 cypher 系列，维基百科 Chopper 词条也提到了它。DNA 是这个系列的常客：Genius 上他参与的有 UC2、3、4、5、6、8、10，另外还有 MC Rice 的《Illest Choppers 2》。
 
 UC8 发布后，他专门录了一期视频回应大家对他这段的评论和打分，标题就叫"UC8 VIDEO, REVIEW, and RESPONSE"。评论区里有听众把 UC8 的三大看点列为 DNA、SplytSecond 和 Crucified。
 
@@ -68,7 +76,7 @@ UC8 发布后，他专门录了一期视频回应大家对他这段的评论和�
 
 ## 合作和交锋
 
-- **和 Leach 多次合作**：《Darkside Remix》（2015，ft. LEACH、YUNGREVIVAL）、《Darkside of the Moon》（ft. Vulvus & Leach），以及多人 cypher《**Tru Cipher**》（2023，ft. Leach、Nokturnal、Fluenci、Swift Homicide、DOWN6）。他在 Tru Cipher 的评论区说，Leach 是"史上最好的之一"，这首歌本来都不打算发，是 Nokturnal 说服了他。
+- **和 Leach 多次合作**：《Darkside Remix》（2015，ft. LEACH、YUNGREVIVAL）、《Darkside of the Moon》（ft. Vulvus & Leach）、《Chopper Homiez》（2019 年专辑《Tru》，ft. Big Loony、Fifth Elley、Fluenci & Leach）、《Nova Returns》（2025 年专辑《Warlock》），以及多人 cypher《**Tru Cipher**》（2023，ft. Leach、Nokturnal、Fluenci、Swift Homicide、DOWN6）。他在 Tru Cipher 的评论区说，Leach 是"史上最好的之一"，这首歌本来都不打算发，是 Nokturnal 说服了他。
 - **和 Crucified 合作**：《Your Energy》（feat. Crucified），收在 2026 年的专辑《Loosh Farm》里。
 - **diss Rebel XD**：2015 年的《Rebel XD DISS》，简介写的是"Rebel XD 好像觉得自己无人能敌？是时候让他看看，他离作词的巅峰还差得远"。
 - **和 K-Fix 有合作，也有交锋**：他们合作过《Nightbreed》，DNA 后来又发了《Darkside 2 "K-Fix DISS"》。
@@ -78,4 +86,4 @@ UC8 发布后，他专门录了一期视频回应大家对他这段的评论和�
 
 DNA 的名字就是他的立场：**Tru Lyricist**，真正的作词人。他更在意多重韵、词组和完整的歌词结构，这和本站"快 ≠ Chop"的观点一致：速度只是 chop 的表象。
 
-> 以上视频、简介和评论都来自他本人的 YouTube 频道，本站逐条核对过。邮箱、电话、家人等私人信息不收录。
+> 视频、简介和评论来自他本人的 YouTube 频道，本站逐条核对过；专辑、歌词和早年经历来自 Genius。邮箱、电话、家人等私人信息不收录。
