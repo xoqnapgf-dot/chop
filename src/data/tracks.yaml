@@ -316,12 +316,11 @@
   youtube: 9ExsVjLenjs
   youtubeChannel: William Wang
   officialUpload: false
-  note: 电影《长城》推广曲，常被宣传为"最快华语歌""332 BPM"。但伴奏只有 83 BPM，332 = 83 × 4；而且赵辰龙说过自己的快嘴是逐字录制拼接的。这个说法有争议。
+  note: 电影《长城》推广曲，常被宣传为"最快华语歌""332 BPM"。但伴奏只有 83 BPM，332 = 83 × 4，换算下来并没有宣传的那么快。这个说法有争议。
   confidence: disputed
   sources:
     - { title: '万达 – 南征北战献唱《长城》推广曲', url: 'https://www.wanda.cn/2016/2016latest_1209/34181.html' }
     - { title: '百度百科 – 饕餮（南征北战）', url: 'https://baike.baidu.com/item/%E9%A5%95%E9%A4%AE/20269071' }
-    - { title: '新浪 – 赵辰龙公开回应（2022-04-01）', url: 'https://k.sina.cn/article_1163858357_v455f11b5019012ps5.html' }
 - id: upuan
   title: Upuan
   artists: [gloc-9]
