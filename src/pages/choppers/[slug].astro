@@ -119,7 +119,7 @@ const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生
             <p class="eyebrow mb-5">代表作</p>
             <h2 class="mb-1 text-2xl font-semibold">{lead.data.title}</h2>
             <p class="mb-5 text-sm text-ink-3">{lead.data.credit}{lead.data.year && ` · ${lead.data.year}`}{lead.data.album && ` · ${lead.data.album}`}</p>
-            <LiteYouTube id={lead.data.youtube} title={`${lead.data.title} ${lead.data.credit}`} channel={lead.data.youtubeChannel} official={lead.data.officialUpload} />
+            <LiteYouTube id={lead.data.youtube} title={`${lead.data.title} ${lead.data.credit}`} channel={lead.data.youtubeChannel} official={lead.data.officialUpload} bilibili={lead.data.bilibili} netease={lead.data.netease} />
             <p class="mt-4 text-ink-2">{lead.data.note}</p>
 
             {moreTracks.length > 0 && (

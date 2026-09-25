@@ -18,6 +18,7 @@ const tracks = (await getCollection('tracks', (t) => t.data.scene === 'world')).
 const events = (await getCollection('timeline', (e) => e.data.scene === 'world')).sort((a, b) => a.data.year - b.data.year);
 const wwc = tracks.find((t) => t.id === 'worldwide-choppers');
 const cypher = (await getCollection('cyphers')).find((c) => c.id === 'infinite-choppers-1');
+const cypherTrack = tracks.find((t) => t.data.youtube === cypher?.data.youtube);
 const cypherMax = cypher ? Math.ceil(Math.max(...cypher.data.entries.map((e) => e.sps)) / 5) * 5 : 25;
 // 本站建档的人物，表格里可以直接链过去
 const profiled = new Map(artists.map((a) => [a.data.name.toLowerCase(), a.id]));
@@ -87,7 +88,7 @@ const ND = {
 
         <div class="grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
           <div>
-            <LiteYouTube id={cypher.data.youtube} title={`${cypher.data.host} - ${cypher.data.title}`} channel={cypher.data.host} official />
+            <LiteYouTube id={cypher.data.youtube} title={`${cypher.data.host} - ${cypher.data.title}`} channel={cypher.data.host} official bilibili={cypherTrack?.data.bilibili} netease={cypherTrack?.data.netease} />
             <div class="card mt-5 p-5 text-sm leading-relaxed text-ink-2">
               <p class="font-semibold text-ink">{cypher.data.host} – {cypher.data.title}</p>
               <p class="mt-2">{cypher.data.note}</p>
@@ -148,6 +149,7 @@ const ND = {
               <strong class="text-ink">本站的对照结果：</strong>150 条全部用"音节数 ÷ 秒数"复算过，只有第 118 名 MZ 一条对不上（写 13.90，算式是 13.79）。榜上没有中国 rapper。这是 2023 年的版本，之后的新纪录不在里面。
             </p>
             <p class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs">
+              <a href={url('lab/#rules')} class="link-u font-semibold text-ink">看完整测速规则 →</a>
               <a href={ND.video} target="_blank" rel="noopener nofollow" class="link-u text-ink-3 hover:text-ink">YouTube 视频 ↗</a>
               {ND.docs.map(([t, u]) => <a href={u} target="_blank" rel="noopener nofollow" class="link-u text-ink-3 hover:text-ink">{t} ↗</a>)}
             </p>
