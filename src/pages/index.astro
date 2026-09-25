@@ -6,42 +6,47 @@ import TrackCard from '@/components/TrackCard.astro';
 import SpeedChart from '@/components/SpeedChart.astro';
 import SectionHeading from '@/components/SectionHeading.astro';
 import Marquee from '@/components/Marquee.astro';
+import Globe from '@/components/Globe.astro';
+import Avatar from '@/components/Avatar.astro';
 import { url } from '@/lib/url';
-import { LANE, displayName } from '@/lib/labels';
+import { STYLE, SCENE, displayName } from '@/lib/labels';
 
 const artists = await getCollection('artists');
 const tracks = await getCollection('tracks');
 const timeline = (await getCollection('timeline')).sort((a, b) => a.data.year - b.data.year);
+const regions = (await getCollection('regions')).sort((a, b) => a.data.order - b.data.order);
 
-const featured = artists.filter((a) => a.data.featured).sort((a, b) => a.data.activeSince - b.data.activeSince);
-const homeTracks = ['worldwide-choppers', 'godzilla', 'look-at-me-now', 'jian-jiang', 'holocaust', 'june-27th']
+const cn = artists.filter((a) => a.data.country === 'CN');
+const world = artists.filter((a) => a.data.country !== 'CN');
+const bySince = (a: (typeof artists)[number], b: (typeof artists)[number]) => (a.data.activeSince ?? 9999) - (b.data.activeSince ?? 9999);
+const featuredWorld = world.filter((a) => a.data.featured).sort(bySince).slice(0, 4);
+const homeTracks = ['worldwide-choppers', 'speed-no1', 'godzilla', 'walking-dead-2018-cypher', 'holocaust', 'yikouqi']
   .map((id) => tracks.find((t) => t.id === id))
   .filter((t) => t !== undefined);
 
 const sourceCount = new Set(
   [...artists.flatMap((a) => a.data.sources), ...tracks.flatMap((t) => t.data.sources), ...timeline.flatMap((t) => t.data.sources)].map((s) => s.url),
 ).size;
-const countries = new Set(artists.map((a) => a.data.country)).size;
-
 const stats = [
-  { n: artists.length, label: '位人物' },
+  { n: cn.length, label: '位中国快嘴' },
+  { n: world.length, label: '位世界 chopper' },
   { n: tracks.length, label: '首曲目' },
-  { n: countries, label: '个国家' },
   { n: sourceCount, label: '条独立来源' },
 ];
 
 // 首页右侧"步进器"的几档速度（音节/秒）
 const presets = [
   { label: 'Twista 1992', v: 10.87 },
-  { label: 'Godzilla', v: 10.65 },
+  { label: '光光 Speed #1', v: 8.27 },
   { label: '90 BPM 16 分', v: 6 },
 ];
 
-const lanes = [
-  { key: 'chopper', title: 'Chopper', zh: '快嘴', desc: '把音节剁碎：在一拍里塞进更多音节，同时咬字清楚、押韵密集。', href: 'learn/chopper/', count: artists.filter((a) => a.data.lane.includes('chopper')).length },
-  { key: 'screw', title: 'Chopped & Screwed', zh: '降速切拍', desc: '把整首歌放慢到 60–70 BPM，再跳拍、重复、骤停，重新剪出结构。', href: 'learn/chopped-and-screwed/', count: artists.filter((a) => a.data.lane.includes('screw')).length },
-  { key: 'sample', title: 'Sample Chop', zh: '切采样', desc: '把一段旧唱片切成碎片，放到打击垫上重新演奏成新的歌。', href: 'learn/sample-chop/', count: artists.filter((a) => a.data.lane.includes('sample')).length },
+const tiers = [
+  { key: 'track', eg: 'Eminem · 谢帝 · 那吾克热', text: '某首歌、某一段很快，但这个人整体不以快著称。' },
+  { key: 'fast', eg: '法老 · 杨和苏 · 光光 · 贝贝', text: '语速和咬字清晰度就是他的主要标签。' },
+  { key: 'chopper', eg: 'Twista · Tech N9ne · Bone Thugs', text: '整首、长期地"切"音节：一拍塞多个音节、flow 多变、押韵密集。' },
 ] as const;
+const styleCount = (k: string) => artists.filter((a) => a.data.style === k).length;
 ---
 
 <Base>
@@ -50,16 +55,16 @@ const lanes = [
     <div class="hero-glow" aria-hidden="true"></div>
     <div class="container-x relative grid items-center gap-12 pb-16 pt-14 lg:grid-cols-[1.15fr_1fr] lg:pb-24 lg:pt-24">
       <div>
-        <p class="eyebrow">Chopper · Chopped &amp; Screwed · Sample Chop</p>
+        <p class="eyebrow">Chopper · 快嘴 · 中国区 &amp; 世界</p>
         <h1 class="mt-6 text-[clamp(3rem,9vw,7.2rem)] font-bold leading-[1.02]">
           把音节<br /><span class="chop-word">剁碎</span><span class="text-accent-text">。</span>
         </h1>
         <p class="mt-7 max-w-xl text-lg leading-relaxed text-ink-2">
-          一个关于 <strong class="text-ink">chop</strong> 的档案馆：世界各地的快嘴说唱者、改变节奏的 DJ、切采样的制作人。每个数字都附来源，每条说法都标可信度。
+          一个只讲<strong class="text-ink">快速说唱</strong>的档案馆：从美国中西部的 chopper，到南京、成都、西安、乌鲁木齐的中文快嘴。每个数字都附来源，每个人都标清楚是"快歌""快嘴"还是"Chopper"。
         </p>
         <div class="mt-9 flex flex-wrap gap-3">
-          <a href={url('choppers/')} class="btn btn-accent">进入人物库 →</a>
-          <a href={url('lab/')} class="btn btn-ghost">去实验室听"快"有多快</a>
+          <a href={url('china/')} class="btn btn-accent">进入中国区 →</a>
+          <a href={url('world/')} class="btn btn-ghost">看世界快嘴地图</a>
         </div>
         <dl class="mt-12 grid max-w-xl grid-cols-2 gap-6 border-t border-line pt-6 sm:grid-cols-4">
           {
@@ -81,12 +86,12 @@ const lanes = [
             <p class="eyebrow">Syllables / second</p>
             <p class="mt-2 font-display text-5xl font-semibold tabular-nums sm:text-6xl"><span class="seq-rate">{presets[0].v}</span></p>
           </div>
-          <span class="seq-live chip"><span class="size-1.5 animate-pulse rounded-full bg-hot"></span>LIVE</span>
+          <span class="chip"><span class="size-1.5 animate-pulse rounded-full bg-hot"></span>LIVE</span>
         </div>
         <div class="seq-grid mt-6 grid grid-cols-8 gap-1.5 sm:gap-2" aria-hidden="true">
           {Array.from({ length: 32 }, (_, i) => <span class:list={['cell', { beat: i % 8 === 0 }]} />)}
         </div>
-        <p class="mt-4 text-xs text-ink-3">每个格子是一个音节。亮起的速度就是真实的每秒音节数。</p>
+        <p class="mt-4 text-xs text-ink-3">每个格子是一个音节，亮起的速度就是真实的每秒音节数。</p>
         <div class="mt-5 flex flex-wrap gap-2" role="radiogroup" aria-label="选择速度">
           {
             presets.map((p, i) => (
@@ -99,61 +104,81 @@ const lanes = [
       </div>
     </div>
 
-    <Marquee
-      class="border-y border-line py-5 font-display text-3xl font-semibold text-ink-3 md:text-5xl"
-      items={artists.map((a) => displayName(a.data))}
-    />
+    <Marquee class="border-y border-line py-5 font-display text-3xl font-semibold text-ink-3 md:text-5xl" items={artists.map((a) => displayName(a.data))} />
   </section>
 
-  <!-- ============ 三种 CHOP ============ -->
+  <!-- ============ 快 ≠ Chopper ============ -->
   <section class="container-x mt-28">
-    <SectionHeading index="01" eyebrow="What is chop" title="一个词，三种音乐" href="learn/what-is-chop/" linkLabel="读入门文章" />
-    <div class="grid gap-4 md:grid-cols-3">
+    <SectionHeading index="01" eyebrow="Fast ≠ Chopper" title="快，不等于 Chopper" href="learn/what-is-chop/" linkLabel="读完整解释">
+      <p class="mt-4 max-w-2xl text-ink-2">中文圈常把"快嘴"和"chopper"混着说。本站把每个人分成三层，只有找到可靠来源的才标 Chopper。</p>
+    </SectionHeading>
+    <ol class="tiers grid gap-4 md:grid-cols-3">
       {
-        lanes.map((l, i) => (
-          <a href={url(l.href)} class="lane-card group card relative overflow-hidden p-6" style={`--lc:${LANE[l.key].color}`}>
-            <div class="lane-art mb-8 h-24" aria-hidden="true" data-kind={l.key}>
-              {l.key === 'chopper' && Array.from({ length: 28 }, (_, j) => <i style={`--h:${0.25 + Math.abs(Math.sin(j * 1.7)) * 0.75}`} />)}
-              {l.key === 'screw' && (
-                <svg viewBox="0 0 300 96" preserveAspectRatio="none" class="size-full">
-                  <path d="M0 48 C 40 8, 80 8, 120 48 S 200 88, 240 48 S 290 20, 300 30" fill="none" stroke="var(--lc)" stroke-width="3" />
-                  <path d="M0 58 C 40 18, 80 18, 120 58 S 200 98, 240 58 S 290 30, 300 40" fill="none" stroke="var(--lc)" stroke-width="1.5" opacity=".45" />
-                </svg>
-              )}
-              {l.key === 'sample' && Array.from({ length: 8 }, (_, j) => <b style={`--o:${[3, 0, 6, 1, 7, 2, 5, 4][j]}`} />)}
+        tiers.map((t, i) => (
+          <li class="tier card relative overflow-hidden p-6" style={`--sc:${STYLE[t.key].color};--lvl:${i + 1}`}>
+            <div class="tier-bars mb-8 flex h-16 items-end gap-[3px]" aria-hidden="true">
+              {Array.from({ length: 24 }, (_, j) => (
+                <i style={`--h:${0.2 + Math.abs(Math.sin(j * (0.9 + i * 0.55))) * (0.35 + i * 0.3)}`} />
+              ))}
             </div>
-            <p class="eyebrow">{String(i + 1).padStart(2, '0')} · {l.zh}</p>
-            <h3 class="mt-2 text-2xl font-semibold">{l.title}</h3>
-            <p class="mt-3 text-sm leading-relaxed text-ink-2">{l.desc}</p>
-            <p class="mt-6 flex items-center justify-between text-sm">
-              <span class="text-ink-3">{l.count ? `收录 ${l.count} 位` : "专题建设中"}</span>
-              <span class="transition group-hover:translate-x-1" style="color:var(--lc)">了解 →</span>
-            </p>
-          </a>
+            <p class="eyebrow">Level {i + 1}</p>
+            <h3 class="mt-2 text-3xl font-semibold" style="color:var(--sc)">{STYLE[t.key].name}</h3>
+            <p class="mt-3 text-sm leading-relaxed text-ink-2">{t.text}</p>
+            <p class="mt-5 text-xs text-ink-3">例：{t.eg}</p>
+            <p class="mt-1 text-xs text-ink-3">本站收录 {styleCount(t.key)} 位</p>
+          </li>
         ))
       }
-    </div>
+    </ol>
   </section>
 
-  <!-- ============ 精选人物 ============ -->
+  <!-- ============ 两个入口 ============ -->
+  <section class="container-x mt-28 grid gap-4 lg:grid-cols-2">
+    <a href={url('china/')} class="zone zone-china group relative overflow-hidden rounded-[28px] p-7 sm:p-10">
+      <div class="zone-faces" aria-hidden="true">
+        {cn.slice(0, 6).map((a) => <Avatar id={a.id} data={a.data} widths={[160]} sizes="80px" class="face size-16 overflow-hidden rounded-2xl object-cover sm:size-20" />)}
+      </div>
+      <p class="eyebrow relative !text-white/70">China · 中国区</p>
+      <h2 class="relative mt-3 text-4xl font-bold text-white sm:text-6xl">中国快嘴</h2>
+      <p class="relative mt-4 max-w-md text-white/80">
+        按地区看：{regions.map((r) => r.data.name).join(' · ')}。从 2008 年的《Speed #1》到综艺舞台。
+      </p>
+      <span class="relative mt-8 inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-black transition group-hover:gap-3">进入中国区 →</span>
+    </a>
+    <a href={url('world/')} class="zone zone-world group relative overflow-hidden rounded-[28px] p-7 sm:p-10">
+      <div class="zone-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+      <p class="eyebrow relative !text-accent-ink/70">World · 世界</p>
+      <h2 class="relative mt-3 text-4xl font-bold text-accent-ink sm:text-6xl">世界 Chopper</h2>
+      <p class="relative mt-4 max-w-md text-accent-ink/80">从美国中西部到土耳其、韩国、菲律宾。在地球上看 chopper 是怎么传开的。</p>
+      <span class="relative mt-8 inline-flex items-center gap-2 rounded-full bg-accent-ink px-5 py-2.5 text-sm font-semibold text-accent transition group-hover:gap-3">打开地球 →</span>
+    </a>
+  </section>
+
+  <!-- ============ 世界地图 ============ -->
   <section class="container-x mt-32">
-    <SectionHeading index="02" eyebrow="Choppers" title="从芝加哥到海宁" href="choppers/" linkLabel="全部人物" />
+    <SectionHeading index="02" eyebrow="World map" title="世界快嘴地图" href="world/" linkLabel="世界区" />
+    <Globe initial="us" />
+  </section>
+
+  <!-- ============ 世界人物 ============ -->
+  <section class="container-x mt-32">
+    <SectionHeading index="03" eyebrow="Choppers" title="世界 Chopper" href="choppers/?scene=world" linkLabel="全部世界人物" />
     <div class="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
-      {featured.slice(0, 8).map((a) => <ArtistCard artist={a} />)}
+      {featuredWorld.map((a) => <ArtistCard artist={a} />)}
     </div>
   </section>
 
   <!-- ============ 速度榜 ============ -->
   <section class="container-x mt-32">
-    <SectionHeading index="03" eyebrow="Speed board" title="谁最快？先看数据口径" href="learn/measuring-speed/" linkLabel="数据怎么测">
-      <p class="mt-4 max-w-2xl text-ink-2">官方认证、第三方测算、传闻说法混在一起比较没有意义。这里每一根条都标了可信度，鼠标移上去能看到口径和来源数量。</p>
+    <SectionHeading index="04" eyebrow="Speed board" title="语速榜：先看口径" href="learn/measuring-speed/" linkLabel="数据怎么测">
+      <p class="mt-4 max-w-2xl text-ink-2">官方认证、第三方测算、传闻混在一起比没有意义，这里每一根条都标了可信度。记住：这张榜只比"快"，不代表谁是 chopper。</p>
     </SectionHeading>
     <div class="card p-5 sm:p-8"><SpeedChart /></div>
   </section>
 
   <!-- ============ 曲目 ============ -->
   <section class="container-x mt-32">
-    <SectionHeading index="04" eyebrow="Tracks" title="必听曲目" href="tracks/" linkLabel="曲目库" />
+    <SectionHeading index="05" eyebrow="Tracks" title="必听曲目" href="tracks/" linkLabel="曲目库" />
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {homeTracks.map((t) => <div class="flex"><TrackCard track={t} /></div>)}
     </div>
@@ -162,13 +187,16 @@ const lanes = [
   <!-- ============ 时间线预览 ============ -->
   <section class="mt-32">
     <div class="container-x">
-      <SectionHeading index="05" eyebrow="Timeline" title="四十年，越来越快" href="timeline/" linkLabel="完整时间线" />
+      <SectionHeading index="06" eyebrow="Timeline" title="四十年，越来越快" href="timeline/" linkLabel="完整时间线" />
     </div>
     <div class="tl-scroll container-x flex snap-x gap-4 overflow-x-auto pb-6">
       {
         timeline.map((e) => (
-          <a href={url(`timeline/#${e.id}`)} class="tl-item card group flex w-64 shrink-0 snap-start flex-col p-5 transition hover:border-line-strong" style={`--lc:${LANE[e.data.lane].color}`}>
-            <span class="font-display text-4xl font-semibold tabular-nums" style="color:var(--lc)">{e.data.year}</span>
+          <a href={url(`timeline/#${e.id}`)} class="card group flex w-64 shrink-0 snap-start flex-col p-5 transition hover:border-line-strong" style={`--lc:${SCENE[e.data.scene].color}`}>
+            <span class="flex items-baseline justify-between">
+              <span class="font-display text-4xl font-semibold tabular-nums" style="color:var(--lc)">{e.data.year}</span>
+              <span class="eyebrow">{SCENE[e.data.scene].name}</span>
+            </span>
             <span class="mt-3 font-semibold">{e.data.title}</span>
             <span class="mt-2 line-clamp-3 text-sm text-ink-3">{e.data.body}</span>
           </a>
@@ -182,7 +210,7 @@ const lanes = [
     <div class="cta relative overflow-hidden rounded-[28px] p-8 sm:p-14">
       <p class="eyebrow !text-accent-ink/70">Speed lab</p>
       <h2 class="mt-3 max-w-2xl text-3xl font-semibold text-accent-ink sm:text-5xl">你每秒能吐几个字？</h2>
-      <p class="mt-4 max-w-xl text-accent-ink/80">贴一段歌词，按下计时器念一遍，看看你和 Twista 1992 年的吉尼斯纪录差多少。</p>
+      <p class="mt-4 max-w-xl text-accent-ink/80">贴一段歌词，按下计时器念一遍，看看你和光光的《Speed #1》、Twista 的吉尼斯纪录差多少。</p>
       <div class="mt-8 flex flex-wrap gap-3">
         <a href={url('lab/')} class="btn bg-accent-ink text-accent hover:opacity-90">去速度实验室</a>
         <a href={url('learn/measuring-speed/')} class="btn border border-accent-ink/30 text-accent-ink hover:border-accent-ink">语速怎么算</a>
@@ -202,7 +230,7 @@ const lanes = [
     background: radial-gradient(closest-side, color-mix(in oklab, var(--accent) 16%, transparent), transparent);
     pointer-events: none;
   }
-  /* "剁碎"：一道斜刀痕切过文字（用背景色的细条盖住，悬停时刀痕滑过） */
+  /* "剁碎"：一道斜刀痕切过文字 */
   .chop-word {
     position: relative;
     display: inline-block;
@@ -221,8 +249,10 @@ const lanes = [
     transform: rotate(-9deg);
     transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
   }
-  .hero:hover .chop-word::after {
-    transform: rotate(-9deg) translateY(-0.18em);
+  @media (hover: hover) {
+    .hero:hover .chop-word::after {
+      transform: rotate(-9deg) translateY(-0.18em);
+    }
   }
 
   /* 步进器 */
@@ -250,58 +280,90 @@ const lanes = [
     border-color: var(--accent);
   }
 
-  /* 三种 chop 的小图 */
-  .lane-card {
-    transition:
-      transform 0.35s ease,
-      border-color 0.3s ease;
+  /* 三层 */
+  .tier {
+    border-top: 3px solid var(--sc);
   }
-  @media (hover: hover) {
-    .lane-card:hover {
-      transform: translateY(-3px);
-      border-color: color-mix(in oklab, var(--lc) 50%, var(--line));
-    }
-  }
-  .lane-art[data-kind='chopper'] {
-    display: flex;
-    align-items: center;
-    gap: 3px;
-  }
-  .lane-art[data-kind='chopper'] i {
+  .tier-bars i {
     flex: 1;
     height: calc(var(--h) * 100%);
-    background: var(--lc);
-    border-radius: 3px;
-    transform-origin: center;
-    transition: transform 0.3s ease;
+    border-radius: 2px;
+    background: color-mix(in oklab, var(--sc) 80%, transparent);
   }
-  @media (hover: hover) {
-    .lane-card:hover .lane-art i {
-      animation: bar 0.35s ease-in-out infinite alternate;
-    }
+
+  /* 两个入口 */
+  .zone {
+    min-height: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    isolation: isolate;
   }
-  .lane-art[data-kind='chopper'] i:nth-child(odd) {
-    animation-delay: -0.17s;
+  .zone-china {
+    background:
+      radial-gradient(90% 80% at 85% 10%, color-mix(in oklab, var(--scene-china) 70%, #000), transparent 70%),
+      linear-gradient(160deg, #3a0d0a, #120606 70%);
   }
-  @keyframes bar {
-    to {
-      transform: scaleY(0.4);
-    }
-  }
-  .lane-art[data-kind='sample'] {
+  .zone-faces {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 4px;
-    align-items: stretch;
+    grid-template-columns: repeat(3, auto);
+    gap: 0.5rem;
+    transform: rotate(6deg);
+    opacity: 0.9;
   }
-  .lane-art[data-kind='sample'] b {
-    border-radius: 6px;
-    background: color-mix(in oklab, var(--lc) calc(35% + var(--o) * 9%), transparent);
-    transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+  .zone-faces :global(.face) {
+    box-shadow: 0 10px 30px rgb(0 0 0 / 0.4);
+  }
+  .zone-faces :global(.face:nth-child(even)) {
+    transform: translateY(1.25rem);
+  }
+  /* 手机上头像缩小放在右上角，卡片加高，给标题留出位置 */
+  @media (max-width: 639px) {
+    .zone-china {
+      min-height: 27rem;
+    }
+    .zone-faces {
+      top: 1rem;
+      right: 1rem;
+      transform: rotate(6deg) scale(0.78);
+      transform-origin: top right;
+    }
+  }
+  .zone-world {
+    background:
+      radial-gradient(120% 140% at 100% 0%, color-mix(in oklab, var(--accent) 60%, white) 0%, transparent 60%),
+      var(--accent);
+  }
+  .zone-rings {
+    position: absolute;
+    top: -30%;
+    right: -20%;
+    width: 80%;
+    aspect-ratio: 1;
+  }
+  .zone-rings i {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1.5px solid rgb(12 12 13 / 0.18);
+  }
+  .zone-rings i:nth-child(2) {
+    inset: 14%;
+    border-style: dashed;
+  }
+  .zone-rings i:nth-child(3) {
+    inset: 30%;
+    background: repeating-radial-gradient(circle, rgb(12 12 13 / 0.22) 0 2px, transparent 2px 9px);
   }
   @media (hover: hover) {
-    .lane-card:hover .lane-art[data-kind='sample'] b {
-      transform: translateY(calc((var(--o) - 3.5) * 5px));
+    .zone {
+      transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+    .zone:hover {
+      transform: translateY(-4px);
     }
   }
 

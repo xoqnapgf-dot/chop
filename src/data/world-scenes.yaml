@@ -1,0 +1,56 @@
+# 地球上的场景标记。国家中心点坐标取大致位置，只作为标记，不代表边界。
+- id: us
+  name: 美国
+  en: United States
+  geo: [39.5, -95.5]
+  summary: Chopper 的发源地。1990 年代初从中西部兴起，Tech N9ne 的 Strange Music 把它做成了系列企划。
+  mentions: [Krizz Kaliko, Yelawolf, D-Loc, JL B.Hood, Dayton Family]
+  sources:
+    - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
+    - { title: 'Wikipedia – Worldwide Choppers', url: 'https://en.wikipedia.org/wiki/Worldwide_Choppers' }
+- id: cn
+  name: 中国
+  en: China
+  geo: [34.5, 108.9]
+  summary: 中文圈更常说"快嘴"。从南京 D-Evil、活死人到综艺舞台，地区场景各有特色。
+  link: china/
+  sources:
+    - { title: '网易 – 谁才是中文说唱圈第一快嘴？（2018）', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }
+- id: kr
+  name: 韩国
+  en: South Korea
+  geo: [36.5, 127.8]
+  summary: 维基百科 Chopper 词条把 Outsider 列为韩国代表，他的语速数字在网上流传着好几个版本。
+  sources:
+    - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
+- id: tr
+  name: 土耳其
+  en: Türkiye
+  geo: [39.0, 35.2]
+  summary: Ceza 被称为土耳其最快的说唱者，在 Worldwide Choppers 里贡献了唯一的土耳其语段落。
+  sources:
+    - { title: 'Wikipedia – Ceza', url: 'https://en.wikipedia.org/wiki/Ceza' }
+- id: ph
+  name: 菲律宾
+  en: Philippines
+  geo: [12.9, 121.8]
+  summary: Gloc-9 以"快速流动的 chopper 唱腔"成为菲律宾最成功的说唱歌手之一。
+  sources:
+    - { title: 'Wikipedia – Gloc-9', url: 'https://en.wikipedia.org/wiki/Gloc-9' }
+- id: dk
+  name: 丹麦
+  en: Denmark
+  geo: [56.2, 9.5]
+  summary: 来自奥胡斯的 U$O 参与了 Worldwide Choppers，歌里有丹麦语段落。
+  mentions: [U$O]
+  sources:
+    - { title: 'Wikipedia – Worldwide Choppers', url: 'https://en.wikipedia.org/wiki/Worldwide_Choppers' }
+    - { title: 'Wikipedia – USO (rapper)', url: 'https://en.wikipedia.org/wiki/U$O' }
+- id: de
+  name: 德国
+  en: Germany
+  geo: [51.2, 10.4]
+  summary: 维基百科 Chopper 词条列出的德语代表有 Samy Deluxe、Kollegah、DCVDNS。本站暂未建档。
+  mentions: [Samy Deluxe, Kollegah, DCVDNS]
+  sources:
+    - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }

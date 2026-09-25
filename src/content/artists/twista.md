@@ -6,8 +6,10 @@ country: US
 city: 芝加哥 Chicago
 region: 美国中西部
 activeSince: 1991
+style: chopper
+styleNote: Chopper 风格的开创者之一，维基百科 Chopper 词条把他列为中西部代表。
+geo: [41.88, -87.63]
 born: '1973-11-27'
-lane: [chopper]
 tags: [中西部, 吉尼斯纪录, 先驱]
 featured: true
 youtube: { channelId: UCLSuQaxk_Lxw8nWjhIFvQwg, handle: '@TwistaTv', kind: official }

@@ -7,8 +7,10 @@ country: KR
 city: 首尔 Seoul
 region: 韩国
 activeSince: 2004
+style: chopper
+styleNote: 维基百科 Chopper 词条把他列为韩国代表。
+geo: [37.57, 126.98]
 born: '1983-03-21'
-lane: [chopper]
 tags: [韩语, 速度争议]
 youtube: { channelId: UCXpx9zg20meHet5vc-w2Zaw, handle: '@outsiderworld0321', kind: official }
 related: [ceza, twista]

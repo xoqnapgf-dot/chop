@@ -1,0 +1,184 @@
+---
+/**
+ * 世界快嘴地图：点阵地球 + 国家/场景面板。
+ * 地球脚本在进入视口时才加载（动态 import），加载前显示同尺寸的占位，避免布局跳动。
+ */
+import { getCollection } from 'astro:content';
+import Avatar from './Avatar.astro';
+import StyleChip from './StyleChip.astro';
+import { displayName } from '@/lib/labels';
+import { url } from '@/lib/url';
+
+interface Props { initial?: string }
+const { initial = 'us' } = Astro.props;
+
+const scenes = (await getCollection('scenes')).sort((a, b) => (a.id === 'us' ? -1 : b.id === 'us' ? 1 : a.id === 'cn' ? -1 : b.id === 'cn' ? 1 : 0));
+const artists = await getCollection('artists');
+
+const markers = [
+  ...scenes.map((s) => ({ id: s.id, name: s.data.name, lat: s.data.geo[0], lon: s.data.geo[1], kind: 'scene', tone: s.id === 'cn' ? 'china' : 'world' })),
+  ...artists
+    .filter((a) => a.data.geo)
+    .map((a) => ({ id: `city:${a.id}`, name: displayName(a.data), lat: a.data.geo![0], lon: a.data.geo![1], kind: 'city', tone: a.data.country === 'CN' ? 'china' : 'world' })),
+];
+// Worldwide Choppers（2011）：从 Tech N9ne 的堪萨斯城连到其他参与者的城市
+const KC: [number, number] = [39.1, -94.58];
+const arcs = [
+  [41.88, -87.63], // 芝加哥 Twista
+  [40.65, -73.95], // 纽约 Busta Rhymes
+  [32.72, -117.16], // 圣地亚哥 Twisted Insane
+  [41.01, 28.98], // 伊斯坦布尔 Ceza
+  [56.16, 10.2], // 奥胡斯 U$O
+].map((to) => ({ from: KC, to }));
+
+const countryOf: Record<string, string> = { us: 'US', cn: 'CN', kr: 'KR', tr: 'TR', ph: 'PH' };
+const panels = scenes.map((s) => ({
+  scene: s,
+  people: artists.filter((a) => a.data.country === countryOf[s.id]).sort((a, b) => (a.data.activeSince ?? 9999) - (b.data.activeSince ?? 9999)),
+}));
+---
+
+<section class="globe-block" data-initial={initial}>
+  <div class="grid items-start gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-12">
+    <div class="relative">
+      <div class="globe-stage relative mx-auto aspect-square w-full max-w-[640px]">
+        <div class="globe-placeholder absolute inset-[8%] rounded-full" aria-hidden="true"></div>
+        <canvas class="globe-canvas absolute inset-0 size-full touch-none" aria-label="世界快嘴地图：拖动旋转，点击标记查看当地情况" role="img"></canvas>
+        <script type="application/json" class="globe-data" set:html={JSON.stringify({ markers, arcs })} />
+      </div>
+      <p class="mt-2 text-center text-xs text-ink-3">拖动旋转 · 点击发光的标记 · 虚线是 2011 年 Worldwide Choppers 的合作连线</p>
+    </div>
+
+    <div class="min-w-0">
+      <div class="scene-tabs -mx-4 flex gap-2 overflow-x-auto px-4 pb-2 lg:mx-0 lg:flex-wrap lg:overflow-visible lg:px-0" role="tablist" aria-label="选择国家或地区">
+        {
+          scenes.map((s) => (
+            <button type="button" role="tab" class="scene-tab chip shrink-0 cursor-pointer" data-scene={s.id} aria-selected={s.id === initial ? 'true' : 'false'} aria-controls={`scene-${s.id}`}>
+              <span class="size-1.5 rounded-full" style={`background:var(${s.id === 'cn' ? '--scene-china' : '--scene-world'})`} />
+              {s.data.name}
+            </button>
+          ))
+        }
+      </div>
+
+      {
+        panels.map(({ scene: s, people }) => (
+          <article id={`scene-${s.id}`} role="tabpanel" class="scene-panel card mt-4 p-5 sm:p-6" data-scene={s.id} hidden={s.id !== initial}>
+            <p class="eyebrow">{s.data.en}</p>
+            <h3 class="mt-2 text-2xl font-semibold sm:text-3xl">{s.data.name}</h3>
+            <p class="mt-3 leading-relaxed text-ink-2">{s.data.summary}</p>
+
+            {people.length > 0 && (
+              <ul class="mt-5 grid grid-cols-1 gap-2">
+                {people.slice(0, 6).map((a) => (
+                  <li>
+                    <a href={url(`choppers/${a.id}/`)} class="group flex items-center gap-3 rounded-xl border border-line p-2 pr-3 transition hover:border-line-strong">
+                      <Avatar id={a.id} data={a.data} widths={[96]} sizes="44px" class="size-11 shrink-0 overflow-hidden rounded-lg object-cover" />
+                      <span class="min-w-0 flex-1">
+                        <span class="block truncate font-semibold">{displayName(a.data)}</span>
+                        <span class="block truncate text-xs text-ink-3">{a.data.city}</span>
+                      </span>
+                      <StyleChip style={a.data.style} />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {people.length > 6 && <p class="mt-2 text-xs text-ink-3">还有 {people.length - 6} 位</p>}
+
+            {s.data.mentions.length > 0 && (
+              <p class="mt-4 text-sm text-ink-3">
+                来源中提到、本站暂未建档：<span class="text-ink-2">{s.data.mentions.join('、')}</span>
+              </p>
+            )}
+
+            <div class="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2">
+              {s.data.link && (
+                <a href={url(s.data.link)} class="btn btn-accent text-sm">
+                  进入中国区 →
+                </a>
+              )}
+              {s.data.sources.map((src, i) => (
+                <a href={src.url} target="_blank" rel="noopener nofollow" class="link-u text-xs text-ink-3 hover:text-ink">
+                  来源 {i + 1} ↗
+                </a>
+              ))}
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .globe-placeholder {
+    background: radial-gradient(circle at 35% 30%, color-mix(in oklab, var(--ink) 8%, transparent), transparent 70%);
+    box-shadow: 0 0 80px color-mix(in oklab, var(--accent) 12%, transparent);
+    transition: opacity 0.6s ease;
+  }
+  .globe-block.is-ready .globe-placeholder {
+    opacity: 0;
+  }
+  .globe-canvas {
+    cursor: grab;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+  .globe-block.is-ready .globe-canvas {
+    opacity: 1;
+  }
+  .globe-canvas:active {
+    cursor: grabbing;
+  }
+  .scene-tab[aria-selected='true'] {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+  .scene-tabs {
+    scrollbar-width: none;
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.globe-block').forEach((block) => {
+    const canvas = block.querySelector<HTMLCanvasElement>('.globe-canvas')!;
+    const data = JSON.parse(block.querySelector('.globe-data')!.textContent!);
+    const tabs = [...block.querySelectorAll<HTMLButtonElement>('.scene-tab')];
+    const panels = [...block.querySelectorAll<HTMLElement>('.scene-panel')];
+    let api: { select: (id: string) => void } | undefined;
+
+    const show = (id: string) => {
+      tabs.forEach((t) => t.setAttribute('aria-selected', String(t.dataset.scene === id)));
+      panels.forEach((p) => (p.hidden = p.dataset.scene !== id));
+      tabs.find((t) => t.dataset.scene === id)?.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'smooth' });
+    };
+    tabs.forEach((t) =>
+      t.addEventListener('click', () => {
+        show(t.dataset.scene!);
+        api?.select(t.dataset.scene!);
+      }),
+    );
+
+    // 进入视口附近才加载地球脚本
+    const io = new IntersectionObserver(
+      async ([e]) => {
+        if (!e.isIntersecting) return;
+        io.disconnect();
+        const { mountGlobe } = await import('@/scripts/globe');
+        const initial = data.markers.find((m: { id: string }) => m.id === block.dataset.initial);
+        api = mountGlobe(canvas, {
+          markers: data.markers,
+          arcs: data.arcs,
+          start: initial ? [initial.lon, initial.lat * 0.8] : undefined,
+          onSelect: (id) => show(id),
+        });
+        api.select(block.dataset.initial!);
+        block.classList.add('is-ready');
+      },
+      { rootMargin: '300px 0px' },
+    );
+    io.observe(block);
+  });
+</script>

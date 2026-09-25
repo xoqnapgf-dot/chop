@@ -1,16 +1,19 @@
 ---
-import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
-import { artistPhoto, artistColor } from '@/lib/media';
-import { COUNTRY } from '@/lib/labels';
+import Avatar from './Avatar.astro';
+import StyleChip from './StyleChip.astro';
+import { artistColor } from '@/lib/media';
+import { COUNTRY, displayName } from '@/lib/labels';
 import { url } from '@/lib/url';
 
-interface Props { artist: CollectionEntry<'artists'>; size?: 'md' | 'lg'; eager?: boolean }
-const { artist, size = 'md', eager = false } = Astro.props;
+interface Props { artist: CollectionEntry<'artists'>; eager?: boolean }
+const { artist, eager = false } = Astro.props;
 const { data, id } = artist;
-const photo = artistPhoto(id);
 const color = artistColor(id);
-const country = COUNTRY[data.country];
+const isCN = data.country === 'CN';
+const title = displayName(data);
+const sub = isCN ? data.name : data.nameZh;
+const place = isCN ? (data.city === '未公开' ? '所在地未公开' : `${data.region} · ${data.city}`) : COUNTRY[data.country].name;
 ---
 
 <a
@@ -18,38 +21,25 @@ const country = COUNTRY[data.country];
   class="artist-card group relative block overflow-hidden rounded-[22px] border border-line bg-surface"
   style={`--ac:${color}`}
   data-country={data.country}
-  data-lane={data.lane.join(' ')}
-  data-name={`${data.name} ${data.nameZh ?? ''} ${data.realName ?? ''} ${data.city} ${data.tags.join(' ')}`.toLowerCase()}
-  data-year={data.activeSince}
+  data-scene={isCN ? 'china' : 'world'}
+  data-style={data.style}
+  data-name={`${data.name} ${data.nameZh ?? ''} ${data.realName ?? ''} ${data.city} ${data.region} ${data.tags.join(' ')}`.toLowerCase()}
 >
-  <div class:list={['relative overflow-hidden', size === 'lg' ? 'aspect-[4/5]' : 'aspect-square']}>
-    {
-      photo ? (
-        <Image
-          src={photo}
-          alt={`${data.nameZh ?? data.name} 的照片`}
-          widths={[320, 480, 720]}
-          sizes="(min-width: 1024px) 300px, (min-width: 640px) 45vw, 90vw"
-          loading={eager ? 'eager' : 'lazy'}
-          class="size-full object-cover transition duration-700 ease-out group-hover:scale-[1.04]"
-        />
-      ) : (
-        <div class="grid size-full place-items-center bg-surface-2 font-display text-6xl text-ink-3">{data.name[0]}</div>
-      )
-    }
+  <div class="relative aspect-square overflow-hidden">
+    <Avatar id={id} data={data} eager={eager} sizes="(min-width: 1024px) 300px, 50vw" class="size-full object-cover transition duration-700 ease-out group-hover:scale-[1.04]" />
     <div class="shade absolute inset-0"></div>
-    <div class="absolute left-3 top-3 flex gap-1.5">
-      <span class="chip !border-white/15 !bg-black/55 !text-white">{country.name}</span>
+    <div class="absolute left-3 top-3 flex flex-wrap gap-1.5">
+      <StyleChip style={data.style} onDark />
     </div>
-    <div class="absolute inset-x-0 bottom-0 p-4 text-white">
-      <p class="font-mono text-[11px] tracking-widest text-white/65">EST. {data.activeSince}</p>
-      <h3 class="mt-1 text-base font-semibold leading-tight sm:text-xl md:text-2xl">{data.name}</h3>
-      {data.nameZh && <p class="text-sm text-white/75">{data.nameZh}</p>}
+    <div class="absolute inset-x-0 bottom-0 p-3 text-white sm:p-4">
+      <p class="truncate font-mono text-[10px] tracking-widest text-white/70 sm:text-[11px]">{place}</p>
+      <h3 class="mt-1 text-base font-semibold leading-tight sm:text-xl md:text-2xl">{title}</h3>
+      {sub && <p class="truncate text-xs text-white/75 sm:text-sm">{sub}</p>}
     </div>
   </div>
   <div class="flex items-start justify-between gap-3 p-3 sm:p-4">
     <p class="line-clamp-2 text-xs leading-relaxed text-ink-2 sm:text-sm">{data.tagline}</p>
-    <span class="mt-0.5 hidden size-8 shrink-0 sm:grid place-items-center rounded-full border border-line text-ink-3 transition group-hover:border-transparent group-hover:bg-accent group-hover:text-accent-ink">→</span>
+    <span class="mt-0.5 hidden size-8 shrink-0 place-items-center rounded-full border border-line text-ink-3 transition group-hover:border-transparent group-hover:bg-accent group-hover:text-accent-ink sm:grid">→</span>
   </div>
 </a>
 
@@ -68,6 +58,6 @@ const country = COUNTRY[data.country];
     }
   }
   .shade {
-    background: linear-gradient(180deg, rgb(0 0 0 / 0.25) 0%, transparent 25%, transparent 38%, rgb(0 0 0 / 0.88) 100%);
+    background: linear-gradient(180deg, rgb(0 0 0 / 0.3) 0%, transparent 25%, transparent 40%, rgb(0 0 0 / 0.88) 100%);
   }
 </style>

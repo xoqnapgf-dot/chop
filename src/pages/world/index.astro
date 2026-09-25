@@ -1,0 +1,100 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '@/layouts/Base.astro';
+import ArtistCard from '@/components/ArtistCard.astro';
+import TrackCard from '@/components/TrackCard.astro';
+import SpeedChart from '@/components/SpeedChart.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
+import Globe from '@/components/Globe.astro';
+import Confidence from '@/components/Confidence.astro';
+
+const artists = (await getCollection('artists', (a) => a.data.country !== 'CN')).sort(
+  (a, b) => (a.data.activeSince ?? 9999) - (b.data.activeSince ?? 9999),
+);
+const tracks = (await getCollection('tracks', (t) => t.data.scene === 'world')).sort((a, b) => (a.data.year ?? 0) - (b.data.year ?? 0));
+const events = (await getCollection('timeline', (e) => e.data.scene === 'world')).sort((a, b) => a.data.year - b.data.year);
+const wwc = tracks.find((t) => t.id === 'worldwide-choppers');
+---
+
+<Base title="世界" description="世界 chopper 地图：从美国中西部到土耳其、韩国、菲律宾，在点阵地球上看 chopper 如何传播。">
+  <section class="world-hero relative overflow-hidden border-b border-line">
+    <div class="container-x relative pb-10 pt-16 md:pt-24">
+      <p class="eyebrow !text-accent-text">World · 世界</p>
+      <h1 class="mt-5 text-[clamp(3rem,10vw,7.5rem)] font-bold leading-[0.95]">世界 <span class="text-accent-text">Chopper</span></h1>
+      <p class="mt-6 max-w-2xl text-lg leading-relaxed text-ink-2">
+        Chopper 1990 年代初在美国中西部兴起，后来被 Tech N9ne 做成跨国企划。拖动下面的地球，看看它传到了哪里。
+      </p>
+    </div>
+  </section>
+
+  <section class="container-x pt-14">
+    <Globe initial="us" />
+  </section>
+
+  {
+    wwc && (
+      <section class="container-x pt-28">
+        <SectionHeading index="01" eyebrow="Worldwide Choppers" title="一首歌，三种语言" />
+        <div class="grid items-start gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
+          <div class="flex">
+            <TrackCard track={wwc} />
+          </div>
+          <div class="card p-6 sm:p-8">
+            <p class="leading-relaxed text-ink-2">
+              2011 年，Tech N9ne 在专辑 <em>All 6's and 7's</em> 里召集了美国、土耳其和丹麦的 chopper，完成了 "Worldwide Choppers"。歌词里有<strong class="text-ink">英语、丹麦语和土耳其语</strong>，录音分别在堪萨斯城、芝加哥、纽约、加州、土耳其和丹麦完成。
+            </p>
+            <p class="mt-4 leading-relaxed text-ink-2">地球上的虚线，就是从堪萨斯城连向其他参与者城市的合作线。</p>
+            <p class="mt-4 text-sm"><a class="link-u text-ink-3 hover:text-ink" href="https://en.wikipedia.org/wiki/Worldwide_Choppers" target="_blank" rel="noopener nofollow">Wikipedia – Worldwide Choppers ↗</a></p>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <section class="container-x pt-28">
+    <SectionHeading index="02" eyebrow="People" title="世界人物" href="choppers/?scene=world" linkLabel="在人物库里筛选" />
+    <div class="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+      {artists.map((a) => <ArtistCard artist={a} />)}
+    </div>
+  </section>
+
+  <section class="container-x pt-28">
+    <SectionHeading index="03" eyebrow="Speed" title="世界语速数据" href="learn/measuring-speed/" linkLabel="数据怎么测" />
+    <div class="card p-5 sm:p-8"><SpeedChart scene="world" /></div>
+  </section>
+
+  <section class="container-x pt-28">
+    <SectionHeading index="04" eyebrow="Tracks" title="世界曲目" href="tracks/?scene=world" linkLabel="曲目库" />
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {tracks.map((t) => <div class="flex"><TrackCard track={t} /></div>)}
+    </div>
+  </section>
+
+  <section class="container-x pt-28">
+    <SectionHeading index="05" eyebrow="History" title="世界 Chopper 时间线" href="timeline/?scene=world" linkLabel="完整时间线" />
+    <ol class="grid gap-3">
+      {
+        events.map((e) => (
+          <li class="grid grid-cols-[5.25rem_minmax(0,1fr)] gap-3 sm:grid-cols-[6rem_minmax(0,1fr)] sm:gap-4">
+            <span class="font-display text-2xl font-semibold tabular-nums text-accent-text sm:text-3xl">{e.data.year}</span>
+            <div class="card p-4 sm:p-5">
+              <p class="flex flex-wrap items-center gap-2 font-semibold">
+                {e.data.title}
+                {e.data.confidence !== 'verified' && <Confidence level={e.data.confidence} />}
+              </p>
+              <p class="mt-1.5 text-sm leading-relaxed text-ink-2">{e.data.body}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+</Base>
+
+<style>
+  .world-hero {
+    background:
+      radial-gradient(70% 90% at 100% 0%, color-mix(in oklab, var(--accent) 16%, transparent), transparent 70%),
+      var(--bg);
+  }
+</style>

@@ -2,38 +2,14 @@
   year: 1980
   title: 《New Rap Language》
   body: Treacherous Three 录下 "New Rap Language"，Kool Moe Dee 被视为快嘴说唱最早的开创者之一。
-  lane: chopper
+  scene: world
   sources:
     - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
-- id: 1983-screw-starts
-  year: 1983
-  title: DJ Screw 开始打碟
-  body: 12 岁的 Robert Davis Jr. 开始碰唱机，这就是后来的 DJ Screw。
-  lane: screw
-  artist: dj-screw
-  sources:
-    - { title: 'Wikipedia – DJ Screw', url: 'https://en.wikipedia.org/wiki/DJ_Screw' }
-- id: 1988-mpc60
-  year: 1988
-  title: Akai MPC60 上市
-  body: Roger Linn 设计的 MPC60 在 1988 年底推出，16 个打击垫加上方便的切片功能，让"切采样"成为嘻哈制作的核心手法。
-  lane: sample
-  sources:
-    - { title: 'Wikipedia – Akai MPC', url: 'https://en.wikipedia.org/wiki/Akai_MPC' }
-    - { title: 'Sound On Sound – Akai MPC60 Revisited', url: 'https://www.soundonsound.com/music-business/akai-mpc60-revisited' }
-- id: 1990-screw-slows
-  year: 1990
-  title: 降速混音诞生
-  body: DJ Screw 开始把唱片大幅降速降调，1991 至 1992 年间这成了他的主业。Chopped & Screwed 由此成形。
-  lane: screw
-  artist: dj-screw
-  sources:
-    - { title: 'Wikipedia – DJ Screw', url: 'https://en.wikipedia.org/wiki/DJ_Screw' }
 - id: 1992-twista-guinness
   year: 1992
   title: 吉尼斯最快说唱者
   body: Twista 55 秒 598 个音节（约 10.87 音节/秒），被吉尼斯认证为最快的英语说唱者。
-  lane: chopper
+  scene: world
   artist: twista
   sources:
     - { title: 'Wikipedia – Twista', url: 'https://en.wikipedia.org/wiki/Twista' }
@@ -41,7 +17,7 @@
   year: 1994
   title: Creepin on ah Come Up
   body: Bone Thugs-n-Harmony 的首张 EP 打进 Billboard 200 第 12 名，中西部快嘴开始进入全国视野。
-  lane: chopper
+  scene: world
   artist: bone-thugs-n-harmony
   sources:
     - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
@@ -49,40 +25,23 @@
   year: 1995
   title: E. 1999 Eternal 登顶
   body: Bone Thugs-n-Harmony 的专辑拿下 Billboard 200 第 1 名。
-  lane: chopper
+  scene: world
   artist: bone-thugs-n-harmony
   sources:
     - { title: 'Wikipedia – Bone Thugs-n-Harmony', url: 'https://en.wikipedia.org/wiki/Bone_Thugs-n-Harmony' }
-- id: 1996-june-27th
-  year: 1996
-  title: June 27th
-  body: DJ Screw 与 Screwed Up Click 录下 35 分钟的即兴混音带，成为他最畅销的作品。
-  lane: screw
-  artist: dj-screw
-  sources:
-    - { title: 'Texas Monthly', url: 'https://www.texasmonthly.com/culture/dj-screw-june-27-anniversary/' }
 - id: 1999-strange-music
   year: 1999
   title: Strange Music 成立
   body: Tech N9ne 与 Travis O'Guin 在堪萨斯城创立独立厂牌 Strange Music，后来成了 chopper 的大本营。
-  lane: chopper
+  scene: world
   artist: tech-n9ne
   sources:
     - { title: 'Wikipedia – Tech N9ne', url: 'https://en.wikipedia.org/wiki/Tech_N9ne' }
-- id: 2000-screw-dies
-  year: 2000
-  title: DJ Screw 去世
-  body: 11 月 16 日，DJ Screw 在休斯顿去世，年仅 29 岁。他的混音带随后通过 Napster 等 P2P 网络传遍全国。
-  lane: screw
-  artist: dj-screw
-  sources:
-    - { title: 'Wikipedia – DJ Screw', url: 'https://en.wikipedia.org/wiki/DJ_Screw' }
-    - { title: 'Wikipedia – Chopped and screwed', url: 'https://en.wikipedia.org/wiki/Chopped_and_screwed' }
 - id: 2004-slow-jamz
   year: 2004
   title: Slow Jamz 登顶
   body: Twista、Kanye West、Jamie Foxx 合作的 "Slow Jamz" 拿下排行榜冠军，快嘴进入流行主流。
-  lane: chopper
+  scene: world
   artist: twista
   sources:
     - { title: 'Wikipedia – Twista', url: 'https://en.wikipedia.org/wiki/Twista' }
@@ -90,7 +49,7 @@
   year: 2005
   title: 幼稚园杀手出现
   body: 一个用变调人声、真实身份不明的快嘴出现在中文网络上。
-  lane: chopper
+  scene: china
   artist: kindergarten-killer
   confidence: pending
   sources:
@@ -99,15 +58,15 @@
   year: 2009
   title: 외톨이（Loner）
   body: Outsider 的 Maestro 专辑主打歌，在 Mnet、Melon 双榜登顶超过五周。
-  lane: chopper
+  scene: world
   artist: outsider
   sources:
     - { title: 'Wikipedia – Outsider (rapper)', url: 'https://en.wikipedia.org/wiki/Outsider_(rapper)' }
 - id: 2011-wwc
   year: 2011
   title: Worldwide Choppers
-  body: Tech N9ne 召集美国、土耳其、丹麦的 chopper，用三种语言完成快嘴"世界杯"。
-  lane: chopper
+  body: Tech N9ne 召集美国、土耳其、丹麦的 chopper，用英语、丹麦语、土耳其语完成这首跨国合作。
+  scene: world
   artist: tech-n9ne
   sources:
     - { title: 'Wikipedia – Worldwide Choppers', url: 'https://en.wikipedia.org/wiki/Worldwide_Choppers' }
@@ -115,7 +74,7 @@
   year: 2013
   title: Rap God
   body: Eminem 6 分 03 秒 1,560 个单词，拿下吉尼斯"单曲单词数最多"。
-  lane: chopper
+  scene: world
   artist: eminem
   sources:
     - { title: 'Wikipedia – Rap God', url: 'https://en.wikipedia.org/wiki/Rap_God' }
@@ -123,7 +82,7 @@
   year: 2015
   title: Speedom (WWC2)
   body: Worldwide Choppers 续作，Tech N9ne、Eminem、Krizz Kaliko 同台。
-  lane: chopper
+  scene: world
   artist: tech-n9ne
   sources:
     - { title: 'Strange Music', url: 'https://www.strangemusicinc.com/2015/04/tech-n9ne/breaking-tech-n9ne-confirms-speedom-wwc2-feat-krizz-kaliko-and-eminem' }
@@ -131,7 +90,7 @@
   year: 2016
   title: 活死人成立
   body: 法老创立说唱厂牌"活死人"。
-  lane: chopper
+  scene: china
   artist: pharaoh
   sources:
     - { title: '维基百科 – 法老 (歌手)', url: 'https://zh.wikipedia.org/zh-cn/%E6%B3%95%E8%80%81_(%E6%AD%8C%E6%89%8B)' }
@@ -139,7 +98,7 @@
   year: 2020
   title: Godzilla
   body: Eminem 第三段主歌 31 秒 224 个单词，约 10.65 音节/秒，刷新个人纪录。
-  lane: chopper
+  scene: world
   artist: eminem
   sources:
     - { title: 'Wikipedia – Godzilla (Eminem song)', url: 'https://en.wikipedia.org/wiki/Godzilla_(Eminem_song)' }
@@ -147,7 +106,83 @@
   year: 2022
   title: 健将mixtape
   body: 法老与小精灵在 10 月 11 日（法老三十岁生日）发行《健将mixtape》，同名曲成为中文快嘴的新标杆。
-  lane: chopper
+  scene: china
   artist: pharaoh
   sources:
     - { title: '百度百科 – 健将mixtape', url: 'https://baike.baidu.com/item/%E5%81%A5%E5%B0%86mixtape/62070166' }
+- id: 2003-d-evil
+  year: 2003
+  title: 光光加入 D-Evil
+  body: 南京说唱团体 D-Evil 迎来光光，这是中文快嘴早期最重要的地下团体之一。
+  scene: china
+  artist: guang-guang
+  sources:
+    - { title: '新浪 – MC光光/南京 D-Evil 十二年前的《Speed No1》', url: 'https://k.sina.cn/article_1163858357_m455f11b503300mplv.html' }
+- id: 2008-speed-no1
+  year: 2008
+  title: '《Speed #1》'
+  body: 'D-Evil 在 1 月 1 日发行 mixtape《王者之路》，光光的《Speed #1》把快嘴和弹舌推到极致，网友测算约 8.27 字/秒。'
+  scene: china
+  artist: guang-guang
+  sources:
+    - { title: '豆瓣 – 王者之路', url: 'https://m.douban.com/music/subject/3700917/' }
+    - { title: '网易 – 谁才是中文说唱圈第一快嘴？', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }
+- id: 2009-kk-album
+  year: 2009
+  title: 《虚构的肖像》
+  body: 幼稚园杀手的专辑，常被看作他从 diss 转向写社会现实和内心世界的转折点。
+  scene: china
+  artist: kindergarten-killer
+  confidence: pending
+  sources:
+    - { title: '豆瓣小组 – 幼稚园杀手 简介（2010）', url: 'https://www.douban.com/group/topic/14768861/' }
+- id: 2014-xie-di
+  year: 2014
+  title: 方言说唱上电视
+  body: 谢帝在《中国好歌曲》第一季唱《老子明天不上班》，进入全国总决赛四强，四川话说唱第一次被大量路人听到。
+  scene: china
+  artist: xie-di
+  sources:
+    - { title: '维基百科 – 谢帝', url: 'https://zh.wikipedia.org/zh-cn/%E8%B0%A2%E5%B8%9D' }
+- id: 2016-taotie
+  year: 2016
+  title: "“最快华语歌”之争"
+  body: 南征北战为电影《长城》发布《饕餮》，宣传为"332 BPM 的最快华语歌"。但伴奏是 83 BPM，332 只是 83 × 4，这个说法口径不清。
+  scene: china
+  confidence: disputed
+  sources:
+    - { title: '万达 – 南征北战献唱《长城》推广曲', url: 'https://www.wanda.cn/2016/2016latest_1209/34181.html' }
+- id: 2017-rap-of-china
+  year: 2017
+  title: 《中国有嘻哈》
+  body: 6 月 24 日在爱奇艺开播，说唱第一次成为全民话题。GAI 与 PG One 并列冠军，新疆的艾福杰尼获季军。
+  scene: china
+  artist: after-journey
+  sources:
+    - { title: '维基百科 – 中国有嘻哈', url: 'https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E5%9B%BD%E6%9C%89%E5%98%BB%E5%93%88' }
+    - { title: '嘻哈中国 – 三年前的今天，《中国有嘻哈》开播', url: 'https://www.xihachina.com/51574.html' }
+- id: 2018-erzi-wawa
+  year: 2018
+  title: 《儿子娃娃》
+  body: 更名后的《中国新说唱》里，那吾克热凭《儿子娃娃》拿下节目第一个"3 Pass"，最终获亚军；冠军是同样来自新疆的艾热。
+  scene: china
+  artist: nawukere
+  sources:
+    - { title: '维基百科 – 那吾克热·玉素甫江', url: 'https://zh.wikipedia.org/zh-cn/%E9%82%A3%E5%90%BE%E5%85%8B%E7%83%AD%C2%B7%E7%8E%89%E7%B4%A0%E7%94%AB%E6%B1%9F' }
+    - { title: '新浪 – 艾热夺冠 那吾克热获亚军', url: 'http://doc.sina.cn/?id=comos%3Afxeuwws1542869' }
+- id: 2018-all-that
+  year: 2018
+  title: All That Records
+  body: 10 月，AR刘夫阳获得 DNV 音乐集团投资，成立说唱厂牌 All That Records。
+  scene: china
+  artist: ar-liu-fuyang
+  sources:
+    - { title: '红网 – AR刘夫阳成立说唱厂牌', url: 'https://ent.rednet.cn/c/2018/10/22/4755942.htm' }
+- id: 2019-keyng
+  year: 2019
+  title: 杨和苏夺冠
+  body: 以快嘴和弹舌著称的杨和苏拿下《中国新说唱》2019 总冠军，之后又连拿《中国说唱巅峰对决》2022、2023 两季冠军。
+  scene: china
+  artist: yang-he-su
+  sources:
+    - { title: '维基百科 – 杨和苏', url: 'https://zh.wikipedia.org/zh-cn/%E6%9D%A8%E5%92%8C%E8%8B%8F' }

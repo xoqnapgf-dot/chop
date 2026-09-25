@@ -1,0 +1,326 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '@/layouts/Base.astro';
+import ArtistCard from '@/components/ArtistCard.astro';
+import TrackCard from '@/components/TrackCard.astro';
+import SpeedChart from '@/components/SpeedChart.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
+import StyleChip from '@/components/StyleChip.astro';
+import Avatar from '@/components/Avatar.astro';
+import Confidence from '@/components/Confidence.astro';
+import { url } from '@/lib/url';
+import { STYLE, displayName } from '@/lib/labels';
+import { mdLite } from '@/lib/md';
+
+const regions = (await getCollection('regions')).sort((a, b) => a.data.order - b.data.order);
+const artists = (await getCollection('artists', (a) => a.data.country === 'CN')).sort(
+  (a, b) => (a.data.activeSince ?? 9999) - (b.data.activeSince ?? 9999),
+);
+const tracks = await getCollection('tracks', (t) => t.data.scene === 'china');
+const starters = tracks.filter((t) => t.data.starter);
+const deepCuts = ['speed-no1', 'walking-dead-2018-cypher', 'erzi-wawa', 'jian-jiang', 'tru-master', 'yayun-ge']
+  .map((id) => tracks.find((t) => t.id === id))
+  .filter((t) => t !== undefined);
+const events = (await getCollection('timeline', (e) => e.data.scene === 'china')).sort((a, b) => a.data.year - b.data.year);
+
+const inRegion = (name: string) => artists.filter((a) => a.data.region === name);
+const firstYear = events[0]?.data.year;
+const countStyle = (k: string) => artists.filter((a) => a.data.style === k).length;
+
+const toc = [
+  ['styles', '先分清'],
+  ['regions', '地区'],
+  ['people', '人物'],
+  ['start', '入门'],
+  ['speed', '语速'],
+  ['history', '时间线'],
+];
+---
+
+<Base title="中国区" description="中文快嘴专区：按地区看川渝、新疆、西安、华东、华南的快嘴与快歌，附路人入门曲目、语速解析和时间线。">
+  <!-- ============ 开头 ============ -->
+  <section class="cn-hero relative border-b border-line">
+    <div class="cn-hero-top relative overflow-hidden">
+    <div class="cn-hero-bg" aria-hidden="true">
+      <span>快</span><span>嘴</span>
+    </div>
+    <div class="container-x relative pb-14 pt-16 md:pb-20 md:pt-24">
+      <p class="eyebrow !text-china">China · 中国区</p>
+      <h1 class="mt-5 text-[clamp(3.2rem,11vw,8rem)] font-bold leading-[0.95]">中国<span class="text-china">快嘴</span></h1>
+      <p class="mt-6 max-w-2xl text-lg leading-relaxed text-ink-2">
+        从南京 D-Evil 的地下 mixtape，到活死人的硬核快嘴，再到选秀舞台上的"机枪快嘴"。这里按<strong class="text-ink">地区</strong>讲中文快嘴，写给说唱歌手，也写给第一次听的路人。
+      </p>
+      <dl class="mt-10 grid max-w-2xl grid-cols-2 gap-6 sm:grid-cols-4">
+        <div><dd class="font-display text-3xl font-semibold tabular-nums">{artists.length}</dd><dt class="mt-1 text-xs text-ink-3">位人物</dt></div>
+        <div><dd class="font-display text-3xl font-semibold tabular-nums">{regions.length}</dd><dt class="mt-1 text-xs text-ink-3">个地区</dt></div>
+        <div><dd class="font-display text-3xl font-semibold tabular-nums">{tracks.length}</dd><dt class="mt-1 text-xs text-ink-3">首曲目</dt></div>
+        <div><dd class="font-display text-3xl font-semibold tabular-nums">{firstYear}</dd><dt class="mt-1 text-xs text-ink-3">最早记录</dt></div>
+      </dl>
+    </div>
+    </div>
+    <nav class="cn-toc sticky top-16 z-20 border-t border-line" aria-label="本页目录" data-pagefind-ignore>
+      <div class="container-x flex gap-1 overflow-x-auto py-2.5">
+        {toc.map(([id, label]) => <a href={`#${id}`} class="toc-link shrink-0 rounded-full px-3.5 py-1.5 text-sm text-ink-2 hover:text-ink" data-target={id}>{label}</a>)}
+      </div>
+    </nav>
+  </section>
+
+  <!-- ============ 先分清 ============ -->
+  <section id="styles" class="container-x scroll-mt-32 pt-20">
+    <SectionHeading index="01" eyebrow="Fast ≠ Chopper" title="先分清：快歌、快嘴、Chopper">
+      <p class="mt-4 max-w-3xl text-ink-2">
+        中文里"快嘴"是通俗说法，常被拿来翻译 chopper。但在圈内讨论里两者是分开的：会唱快的人很多，真正以 chopping 为核心风格的人很少，有的快嘴歌手自己也不玩 chop。所以本站给每个人都标了一个层级，<strong class="text-ink">只有找到可靠来源才标 Chopper</strong>。
+      </p>
+    </SectionHeading>
+    <div class="grid gap-4 md:grid-cols-3">
+      {
+        (['track', 'fast', 'chopper'] as const).map((k) => (
+          <div class="card p-6" style={`border-top:3px solid ${STYLE[k].color}`}>
+            <div class="flex items-center justify-between">
+              <StyleChip style={k} size="md" />
+              <span class="font-display text-3xl font-semibold tabular-nums">{countStyle(k)}</span>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed text-ink-2">{STYLE[k].desc}。</p>
+            <p class="mt-3 text-xs text-ink-3">
+              {k === 'chopper'
+                ? '中国区目前没有人物标为 Chopper：不是说国内没有，而是还没找到站得住的来源。'
+                : artists.filter((a) => a.data.style === k).map((a) => displayName(a.data)).join('、')}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+    <p class="mt-4 text-sm"><a href={url('learn/what-is-chop/')} class="link-u text-ink-2 hover:text-ink">完整解释：快嘴 ≠ Chopper →</a></p>
+  </section>
+
+  <!-- ============ 地区 ============ -->
+  <section id="regions" class="container-x scroll-mt-32 pt-28">
+    <SectionHeading index="02" eyebrow="Regions" title="按地区看">
+      <p class="mt-4 max-w-3xl text-ink-2">每个地区的说唱气质不一样：川渝重方言和律动，西安重 Battle，华东出了最早的一批硬核快嘴。下面每一块都附了来源。</p>
+    </SectionHeading>
+
+    <div class="region-chips -mx-4 mb-8 flex gap-2 overflow-x-auto px-4 md:mx-0 md:flex-wrap md:px-0" data-pagefind-ignore>
+      {regions.map((r) => <a href={`#r-${r.id}`} class="chip shrink-0 hover:border-line-strong">{r.data.name}<span class="text-ink-3">{inRegion(r.data.name).length}</span></a>)}
+    </div>
+
+    <div class="grid grid-cols-1 gap-6">
+      {
+        regions.map((r, i) => {
+          const people = inRegion(r.data.name);
+          return (
+            <article id={`r-${r.id}`} class="region card scroll-mt-32 overflow-hidden">
+              <div class="grid lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+                <header class="region-head relative p-6 sm:p-8">
+                  <span class="region-no font-display" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+                  <p class="eyebrow relative">{r.data.en}</p>
+                  <h3 class="relative mt-2 text-5xl font-bold sm:text-6xl">{r.data.name}</h3>
+                  {r.data.cities.length > 0 && (
+                    <ul class="relative mt-5 flex flex-wrap gap-2">
+                      {r.data.cities.map((c) => (
+                        <li class="chip">
+                          <span class="size-1.5 rounded-full bg-china" />
+                          {c.name}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  <p class="relative mt-6 text-lg leading-relaxed text-ink">{r.data.summary}</p>
+
+                  {people.length > 0 && (
+                    <ul class="relative mt-6 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                      {people.map((a) => (
+                        <li>
+                          <a href={url(`choppers/${a.id}/`)} class="group flex items-center gap-3 rounded-xl border border-line bg-surface p-2 pr-3 transition hover:border-line-strong">
+                            <Avatar id={a.id} data={a.data} widths={[96]} sizes="48px" class="size-12 shrink-0 overflow-hidden rounded-lg object-cover" />
+                            <span class="min-w-0 flex-1">
+                              <span class="block truncate font-semibold">{displayName(a.data)}</span>
+                              <span class="block truncate text-xs text-ink-3">{a.data.city === '未公开' ? '所在地未公开' : a.data.city}</span>
+                            </span>
+                            <StyleChip style={a.data.style} />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </header>
+                <div class="region-body border-t border-line p-6 sm:p-8 lg:border-l lg:border-t-0">
+                  <div class="prose-chop" set:html={mdLite(r.data.body)} />
+                  {r.data.sources.length > 0 && (
+                    <p class="mt-6 flex flex-wrap gap-x-4 gap-y-1 text-xs">
+                      {r.data.sources.map((s) => (
+                        <a href={s.url} target="_blank" rel="noopener nofollow" class="link-u text-ink-3 hover:text-ink">
+                          {s.title} ↗
+                        </a>
+                      ))}
+                    </p>
+                  )}
+                </div>
+              </div>
+            </article>
+          );
+        })
+      }
+    </div>
+  </section>
+
+  <!-- ============ 人物 ============ -->
+  <section id="people" class="container-x scroll-mt-32 pt-28">
+    <SectionHeading index="03" eyebrow="People" title="全部中国区人物" href="choppers/?scene=china" linkLabel="在人物库里筛选" />
+    <div class="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+      {artists.map((a) => <ArtistCard artist={a} />)}
+    </div>
+  </section>
+
+  <!-- ============ 入门 ============ -->
+  <section id="start" class="container-x scroll-mt-32 pt-28">
+    <SectionHeading index="04" eyebrow="Start here" title="路人入门：从这几首开始">
+      <p class="mt-4 max-w-3xl text-ink-2">
+        先说明：下面前两首是<strong class="text-ink">流行歌里的快段落</strong>，周杰伦和南征北战都不是快嘴说唱歌手。放在这里，是因为它们是很多路人第一次意识到"中文也能唱这么快"的歌。真正的快嘴作品在后面。
+      </p>
+    </SectionHeading>
+    <div class="grid gap-4 md:grid-cols-2">
+      {starters.map((t) => <div class="flex"><TrackCard track={t} /></div>)}
+    </div>
+    <h3 class="mb-5 mt-14 text-xl font-semibold">然后听这些：说唱圈里的快嘴</h3>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {deepCuts.map((t) => <div class="flex"><TrackCard track={t} /></div>)}
+    </div>
+  </section>
+
+  <!-- ============ 语速 ============ -->
+  <section id="speed" class="container-x scroll-mt-32 pt-28">
+    <SectionHeading index="05" eyebrow="Speed" title="中文快嘴怎么算快" href="lab/" linkLabel="自己测一下" />
+    <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]">
+      <div class="card p-6 sm:p-8">
+        <p class="eyebrow">单位</p>
+        <p class="mt-3 font-display text-2xl font-semibold">字 / 秒</p>
+        <p class="mt-3 leading-relaxed text-ink-2">汉字基本是一字一音节，所以中文快嘴按"字/秒"算，可以和英文的"音节/秒"粗略对比。</p>
+
+        <div class="calc mt-8 rounded-2xl border border-line bg-surface-2 p-5">
+          <div class="flex items-center justify-between gap-2">
+            <p class="font-semibold">案例：《饕餮》"332 BPM"</p>
+            <Confidence level="disputed" />
+          </div>
+          <p class="mt-3 text-sm text-ink-2">南征北战的《饕餮》（2016）常被宣传为"332 BPM 的最快华语歌"。拆开看：</p>
+          <ol class="mt-4 grid gap-2 font-mono text-sm">
+            <li class="flex justify-between gap-4"><span class="text-ink-3">伴奏速度</span><span>83 BPM</span></li>
+            <li class="flex justify-between gap-4"><span class="text-ink-3">332 ÷ 83</span><span>= 4（每拍切 4 份）</span></li>
+            <li class="flex justify-between gap-4"><span class="text-ink-3">每秒音数</span><span>83 ÷ 60 × 4 ≈ 5.5</span></li>
+          </ol>
+          <p class="mt-4 text-sm text-ink-2">也就是说，"332"只是 16 分音符的写法。换算成每秒约 5.5 个音，比光光《Speed #1》的约 8.27 字/秒慢不少。所以"最快华语歌"这个说法口径不清，本站标为有争议。</p>
+        </div>
+      </div>
+      <div class="card p-6 sm:p-8">
+        <p class="eyebrow mb-6">中国区语速数据</p>
+        <SpeedChart scene="china" />
+        <p class="mt-4 text-xs text-ink-3">这些数字大多来自网络测算，本站都标了可信度。再强调一次：这张榜只比"快"，不代表谁是 chopper。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 时间线 ============ -->
+  <section id="history" class="container-x scroll-mt-32 pt-28">
+    <SectionHeading index="06" eyebrow="History" title="中国快嘴时间线" href="timeline/?scene=china" linkLabel="完整时间线" />
+    <ol class="cn-tl relative grid gap-3">
+      {
+        events.map((e) => (
+          <li class="grid grid-cols-[5.25rem_minmax(0,1fr)] gap-3 sm:grid-cols-[6rem_minmax(0,1fr)] sm:gap-4">
+            <span class="font-display text-2xl font-semibold tabular-nums text-china sm:text-3xl">{e.data.year}</span>
+            <div class="card p-4 sm:p-5">
+              <p class="flex flex-wrap items-center gap-2 font-semibold">
+                {e.data.title}
+                {e.data.confidence !== 'verified' && <Confidence level={e.data.confidence} />}
+              </p>
+              <p class="mt-1.5 text-sm leading-relaxed text-ink-2">{e.data.body}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+</Base>
+
+<style>
+  .cn-hero {
+    background:
+      radial-gradient(70% 90% at 100% 0%, color-mix(in oklab, var(--scene-china) 22%, transparent), transparent 70%),
+      var(--bg);
+  }
+  .cn-hero-bg {
+    position: absolute;
+    right: 2vw;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(7rem, 22vw, 17rem);
+    line-height: 0.85;
+    color: transparent;
+    -webkit-text-stroke: 1.5px color-mix(in oklab, var(--scene-china) 40%, transparent);
+    pointer-events: none;
+    user-select: none;
+  }
+  .cn-hero-bg span:nth-child(2) {
+    transform: translateX(-0.35em);
+  }
+  @media (max-width: 767px) {
+    .cn-hero-bg {
+      opacity: 0.22;
+    }
+  }
+  .cn-toc {
+    background: var(--bg);
+  }
+  .cn-toc > div {
+    scrollbar-width: none;
+  }
+  .toc-link.is-current {
+    background: var(--ink);
+    color: var(--bg);
+  }
+  .region-chips {
+    scrollbar-width: none;
+  }
+  .region-head {
+    background: radial-gradient(90% 70% at 0% 0%, color-mix(in oklab, var(--scene-china) 12%, transparent), transparent 70%);
+  }
+  .region-no {
+    position: absolute;
+    right: 1.25rem;
+    top: 0.5rem;
+    font-size: clamp(4rem, 12vw, 7rem);
+    font-weight: 800;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 1px color-mix(in oklab, var(--scene-china) 45%, transparent);
+  }
+  .region-body :global(ul) {
+    margin-top: 0.8em;
+  }
+</style>
+
+<script>
+  // 目录跟随滚动高亮
+  const links = [...document.querySelectorAll<HTMLAnchorElement>('.toc-link')];
+  const byId = new Map(links.map((a) => [a.dataset.target, a]));
+  const io = new IntersectionObserver(
+    (entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        links.forEach((a) => a.classList.remove('is-current'));
+        const cur = byId.get(e.target.id);
+        cur?.classList.add('is-current');
+        // 只横向滚动目录条本身，不牵动整页
+        const bar = cur?.parentElement;
+        if (cur && bar) bar.scrollTo({ left: cur.offsetLeft - bar.clientWidth / 2 + cur.clientWidth / 2, behavior: 'smooth' });
+      }
+    },
+    { rootMargin: '-45% 0px -50% 0px' },
+  );
+  byId.forEach((_, id) => {
+    const el = id && document.getElementById(id);
+    if (el) io.observe(el);
+  });
+</script>

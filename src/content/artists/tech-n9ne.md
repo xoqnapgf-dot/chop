@@ -6,8 +6,10 @@ country: US
 city: 堪萨斯城 Kansas City
 region: 美国中西部
 activeSince: 1991
+style: chopper
+styleNote: 把 chopper 做成系列企划（Worldwide Choppers），维基百科称他在 1990 年代末让 chopper 风格流行起来。
+geo: [39.1, -94.58]
 born: '1971-11-08'
-lane: [chopper]
 tags: [中西部, 厂牌主理人, Worldwide Choppers]
 featured: true
 youtube: { channelId: UCJdoPEnnkvS744DCD_12scQ, handle: '@therealtechn9ne', kind: official }

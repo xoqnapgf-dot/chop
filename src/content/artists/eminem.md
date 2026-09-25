@@ -6,8 +6,10 @@ country: US
 city: 底特律 Detroit
 region: 美国中西部
 activeSince: 1988
+style: track
+styleNote: 风格多面，不是纯 chopper；因《Rap God》《Godzilla》等作品里的高速段落常被拿来比较语速。维基百科 Chopper 词条也把他列入中西部。
+geo: [42.33, -83.05]
 born: '1972-10-17'
-lane: [chopper]
 tags: [中西部, 吉尼斯纪录, 主流]
 featured: true
 youtube: { channelId: UCfM3zsQsOnfWNUppiycmBuw, handle: '@eminem', kind: official }

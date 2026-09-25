@@ -23,11 +23,16 @@ export function artistBanner(slug: string): ImageMetadata | undefined {
 }
 
 export function artistMedia(slug: string) {
-  return (media.artists as Record<string, { channelUrl: string; kind: string; color: string; fetchedAt: string }>)[slug];
+  return (media.artists as Record<string, { channelUrl: string | null; kind: string; color: string; fetchedAt: string }>)[slug];
 }
 
+/** 人物主色：有照片取照片主色；没有照片按 slug 在色板里取（稳定、且不同人不同色） */
+const PALETTE = ['#ff4b3e', '#ff8a4c', '#c6f432', '#82a8ff', '#b98cff', '#2ee6c5'];
 export function artistColor(slug: string): string {
-  return artistMedia(slug)?.color ?? '#c6f432';
+  const c = artistMedia(slug)?.color;
+  if (c && artistPhoto(slug)) return c;
+  const hash = [...slug].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) >>> 0, 7);
+  return PALETTE[hash % PALETTE.length];
 }
 
 export function trackThumb(videoId: string): ImageMetadata | undefined {

@@ -3,11 +3,11 @@ title: 语速怎么测？本站的数据口径
 kicker: 方法论
 summary: 为什么网上的"每秒几个音节"经常对不上，以及本站怎么处理这些数字。
 order: 5
-lane: general
 sources:
   - { title: 'Wikipedia – Rap God', url: 'https://en.wikipedia.org/wiki/Rap_God' }
   - { title: 'Wikipedia – Godzilla (Eminem song)', url: 'https://en.wikipedia.org/wiki/Godzilla_(Eminem_song)' }
   - { title: 'Wikipedia – Outsider (rapper)', url: 'https://en.wikipedia.org/wiki/Outsider_(rapper)' }
+  - { title: '万达 – 南征北战献唱《长城》推广曲（饕餮）', url: 'https://www.wanda.cn/2016/2016latest_1209/34181.html' }
 ---
 
 ## 公式
@@ -24,6 +24,7 @@ sources:
 | **计时起止点不同** | 从第一个音节算起，还是从小节线算起 |
 | **四舍五入** | Rap God 最快段落：157 ÷ 16.45 ≈ 9.54，另一处引用写 9.6 |
 | **来源本身冲突** | Outsider：一个词条写"超过 16"，另一个写"21" |
+| **单位混用** | 南征北战《饕餮》宣传为"332 BPM"，但伴奏是 83 BPM，332 = 83 × 4，只是把每拍切成 4 份；换成每秒约 5.5 个音，并不算特别快 |
 | **认证类别取消** | 吉尼斯后来取消了"最快说唱者"类别，Twista 1992 年的纪录成了历史纪录 |
 
 ## 本站的四级标签

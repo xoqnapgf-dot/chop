@@ -1,0 +1,91 @@
+# 中国区按地区分组。人物通过 artists 里的 region 字段归到这里（name 要一致）。
+- id: chuanyu
+  name: 川渝
+  en: Sichuan & Chongqing
+  order: 1
+  cities:
+    - { name: 成都, geo: [30.66, 104.07] }
+    - { name: 重庆, geo: [29.56, 106.55] }
+  summary: 方言说唱的大本营。成都的说唱会馆和海尔兄弟把 Trap 和四川话揉在一起，节奏慵懒，但也出了杨和苏这样的快嘴。
+  body: |
+    成都被界面新闻形容为"慵懒陷阱，造梦之城"。代表厂牌是**说唱会馆**（CDC），代表人物有海尔兄弟（Higher Brothers）、马思唯、谢帝等。海尔兄弟 2017 年参加摩登天空的巡演，2018 年去日本巡演。
+
+    这里的主流是 **Trap + 川渝方言**，重在律动和松弛感，不以语速取胜。所以本站收录的川渝人物里，谢帝标为"快歌"，只有以快嘴和弹舌著称的杨和苏标为"快嘴"。
+  sources:
+    - { title: '界面新闻 – 城市嘻哈地图：成都、西安四座城十年沉浮', url: 'https://m.jiemian.com/article/2436116.html' }
+    - { title: '维基百科 – 谢帝', url: 'https://zh.wikipedia.org/zh-cn/%E8%B0%A2%E5%B8%9D' }
+- id: xinjiang
+  name: 新疆
+  en: Xinjiang
+  order: 2
+  cities:
+    - { name: 乌鲁木齐, geo: [43.83, 87.62] }
+    - { name: 库尔勒, geo: [41.73, 86.17] }
+  summary: 选秀舞台上最亮眼的地区之一：艾福杰尼、那吾克热、艾热都来自这里。
+  body: |
+    界面新闻把新疆说唱的气质概括为"温情、责任感"，并引用当地从业者的话："新疆天生就有适合说唱的土壤，少数民族天生的能歌善舞。"代表人物有艾热、马俊、那吾克热、黄旭，2012 年前后的钢铁麦克比赛是一个重要节点。
+
+    在综艺时代，新疆说唱者的成绩非常亮眼：2017 年《中国有嘻哈》艾福杰尼获季军；2018 年《中国新说唱》冠亚军是艾热和那吾克热。那吾克热的《儿子娃娃》里的高速段落被形容为"机枪快嘴"，但就整体风格而言，这两位本站都标为"快歌"而不是"快嘴"。
+  sources:
+    - { title: '界面新闻 – 城市嘻哈地图', url: 'https://m.jiemian.com/article/2436116.html' }
+    - { title: '界面新闻 – 黄旭、艾福杰尼：新疆土壤所赋予的音乐天赋', url: 'https://www.jiemian.com/article/2403663.html' }
+    - { title: '新浪 – 艾热夺冠 那吾克热获亚军', url: 'http://doc.sina.cn/?id=comos%3Afxeuwws1542869' }
+- id: xian
+  name: 西安
+  en: Xi'an
+  order: 3
+  cities:
+    - { name: 西安, geo: [34.34, 108.94] }
+  summary: "“永远年轻，永远地下”。红花会的大本营，Battle 文化浓厚，出了贝贝这样的超强快嘴。"
+  body: |
+    界面新闻给西安的标题是"永远年轻，永远地下"。代表厂牌是**红花会（HNBMC）**和 NOUS，代表人物有 MC僵尸、派克特、MC干爆你等。古城的酒吧街和 livehouse 撑起了很浓的现场文化，2017 年冬天的"地下八英里"Battle 也在这里留下名场面。
+
+    Battle 文化对语速和押韵的要求很高，红花会的**贝贝**就是 Battle MC 出身，外号"超强快嘴""押韵狂魔"。
+  sources:
+    - { title: '界面新闻 – 城市嘻哈地图', url: 'https://m.jiemian.com/article/2436116.html' }
+    - { title: '嘻哈中国 – "李京泽"成为了"贝贝"后……', url: 'https://www.xihachina.com/15379.html' }
+- id: huadong
+  name: 华东
+  en: East China
+  order: 4
+  cities:
+    - { name: 南京, geo: [32.06, 118.80] }
+    - { name: 合肥, geo: [31.82, 117.23] }
+    - { name: 海宁, geo: [30.51, 120.68] }
+  summary: '中文快嘴的"硬核"一脉：从南京 D-Evil 的《Speed #1》，到法老创立的活死人。'
+  body: |
+    如果只看**快嘴**这条线，华东的分量很重：
+    - **南京**：2003 年光光加入说唱团体 D-Evil，2008 年的《Speed #1》被称为中文说唱早期最快的作品。
+    - **海宁**：法老 1992 年生于浙江海宁，2016 年创立**活死人**。活死人以硬核、技术流著称，杨和苏、小安迪等快嘴都曾是成员。
+    - **合肥**：小安迪来自合肥，他和同乡成员组成"深蓝儿童"，在活死人时期被称为"快嘴的专家"。
+  sources:
+    - { title: '新浪 – MC光光/南京 D-Evil 十二年前的《Speed No1》', url: 'https://k.sina.cn/article_1163858357_m455f11b503300mplv.html' }
+    - { title: '维基百科 – 法老 (歌手)', url: 'https://zh.wikipedia.org/zh-cn/%E6%B3%95%E8%80%81_(%E6%AD%8C%E6%89%8B)' }
+    - { title: '知乎 – 小安迪的深蓝儿童退出活死人厂牌', url: 'https://zhuanlan.zhihu.com/p/55226303' }
+- id: huanan
+  name: 华南
+  en: South China
+  order: 5
+  cities:
+    - { name: 广州, geo: [23.13, 113.26] }
+  summary: 技术派的据点。AR刘夫阳在广州成立 All That Records，以多层押韵和清晰快速的吐字著称。
+  body: |
+    本站目前收录的华南人物是 **AR刘夫阳**。2018 年 10 月，他获得 DNV 音乐集团投资，成立说唱厂牌 All That Records。厂牌的风格覆盖 Hardcore Rap、Trap、Boom Bap 等。
+
+    AR 的招牌是"押韵会藏在你看不见的地方"的多层嵌套，加上快速清晰的吐字。
+  sources:
+    - { title: '红网 – AR刘夫阳成立说唱厂牌 All That Records', url: 'https://ent.rednet.cn/c/2018/10/22/4755942.htm' }
+    - { title: '网易 – 谁才是中文说唱圈第一快嘴？（2018）', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }
+- id: wangluo
+  name: 网络
+  en: The Internet
+  order: 6
+  cities: []
+  summary: 论坛和下载站时代的"无地域"快嘴。幼稚园杀手的真实身份和所在城市至今没有定论。
+  body: |
+    2000 年代中期，很多中文说唱是在论坛、贴吧和下载站里传播的，听众不知道作者是谁、在哪儿。
+
+    **幼稚园杀手**就是那个时代的代表：2005 年左右出现，变调人声，语速快、咬字清楚，甚至被质疑"是后期加速做出来的"。他的真实身份至今没有被本人或可靠来源证实，所以本站不给他标城市。
+  sources:
+    - { title: '豆瓣小组 – 幼稚园杀手 简介（2010）', url: 'https://www.douban.com/group/topic/14768861/' }
+    - { title: '网易 – 谁才是中文说唱圈第一快嘴？（2018）', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }

@@ -6,8 +6,10 @@ country: US
 city: 圣地亚哥 San Diego
 region: 美国西岸
 activeSince: 1996
+style: chopper
+styleNote: 维基百科称他以 chopper 风格演唱。
+geo: [32.72, -117.16]
 born: '1983-09-22'
-lane: [chopper]
 tags: [西岸, 恐怖核, 独立厂牌]
 youtube: { channelId: UC9LwwugiYd69YLGsIJOb32A, handle: '@THEREALTWISTEDINSANE', kind: official }
 related: [tech-n9ne, twista]
