@@ -23,7 +23,7 @@ export function artistBanner(slug: string): ImageMetadata | undefined {
 }
 
 export function artistMedia(slug: string) {
-  return (media.artists as Record<string, { channelUrl: string | null; kind: string; color: string; fetchedAt: string }>)[slug];
+  return (media.artists as Record<string, { channelUrl?: string | null; kind?: string; color: string; fetchedAt: string; photo?: { site: string; url: string; name: string } }>)[slug];
 }
 
 /** 人物主色：有照片取照片主色；没有照片按 slug 在色板里取（稳定、且不同人不同色） */

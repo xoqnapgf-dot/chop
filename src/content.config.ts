@@ -58,6 +58,18 @@ const artists = defineCollection({
       .optional(),
     /** 频道头像不是本人时，用官方视频截图当人物照（由 scripts/fetch-youtube.mjs 生成 portrait.jpg） */
     portrait: z.object({ video: z.string(), focusX: z.number().min(0).max(1).default(0.5) }).optional(),
+    /** 没有合适的 YouTube 图时，从网易云音乐歌手页取图（avatar 头像 / cover 封面），裁成正方形存为 photo.jpg */
+    photoSource: z
+      .object({
+        site: z.literal('netease'),
+        id: z.number().int(),
+        image: z.enum(['avatar', 'cover']),
+        focusX: z.number().min(0).max(1).default(0.5),
+        focusY: z.number().min(0).max(1).default(0.5),
+        /** >1 表示放大裁切（取更小的正方形） */
+        zoom: z.number().min(1).max(4).default(1),
+      })
+      .optional(),
     /** 频道横幅只是宣传文字图时设为 false */
     useBanner: z.boolean().default(true),
     related: z.array(reference('artists')).default([]),

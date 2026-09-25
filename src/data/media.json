@@ -60,8 +60,13 @@
       "avatar": "https://yt3.googleusercontent.com/299eF0GDYmugGu6dxdNxC7HePmX0xLiBLZo5teEncSbGNwhqW_1yaBshN0PqHbIqu66JHwH-=s800-c-k-c0x00ffffff-no-rj",
       "banner": "https://yt3.googleusercontent.com/yWmvRUUQ4iiAaZ1v5MUNTdApqcf5lbeBdf2vE_5k8zHo3FBOtWIRzIEfSGqEI0xHRzrszVJd=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
       "hasBanner": false,
-      "color": "#a88818",
-      "fetchedAt": "2026-09-25"
+      "color": "#181818",
+      "fetchedAt": "2026-09-25",
+      "photo": {
+        "site": "网易云音乐歌手页",
+        "url": "https://music.163.com/#/artist?id=865007",
+        "name": "法老"
+      }
     },
     "tech-n9ne": {
       "channelUrl": "https://www.youtube.com/channel/UCJdoPEnnkvS744DCD_12scQ",
@@ -139,6 +144,33 @@
       "banner": null,
       "hasBanner": false,
       "color": "#381808",
+      "fetchedAt": "2026-09-25"
+    },
+    "bei-bei": {
+      "photo": {
+        "site": "网易云音乐歌手页",
+        "url": "https://music.163.com/#/artist?id=51957057",
+        "name": "ljz329"
+      },
+      "color": "#080808",
+      "fetchedAt": "2026-09-25"
+    },
+    "guang-guang": {
+      "photo": {
+        "site": "网易云音乐歌手页",
+        "url": "https://music.163.com/#/artist?id=187903",
+        "name": "Mc光光"
+      },
+      "color": "#683818",
+      "fetchedAt": "2026-09-25"
+    },
+    "lil-andy": {
+      "photo": {
+        "site": "网易云音乐歌手页",
+        "url": "https://music.163.com/#/artist?id=12099063",
+        "name": "小安迪LilAndyKillThemAll"
+      },
+      "color": "#080808",
       "fetchedAt": "2026-09-25"
     }
   },

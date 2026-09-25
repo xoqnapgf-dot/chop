@@ -94,9 +94,37 @@ for (const f of (await fs.readdir(artistsDir)).filter((f) => f.endsWith('.md')))
       console.warn(`✗ ${slug} portrait: ${e.message}`);
     }
   }
+  // 网易云音乐歌手页的头像/封面（本人官方主页的图）
+  const photoPath = path.join(dir, 'photo.jpg');
+  if (fm.photoSource?.site === 'netease' && (force || !(await exists(photoPath)))) {
+    try {
+      const ps = fm.photoSource;
+      const res = await fetch(`https://music.163.com/api/artist/head/info/get?id=${ps.id}`, { headers: { ...UA, referer: 'https://music.163.com/' } });
+      const artist = (await res.json())?.data?.artist;
+      const src = (ps.image === 'cover' ? artist?.cover : artist?.avatar)?.replace(/^http:/, 'https:');
+      if (!src) throw new Error('网易云没有这张图');
+      const buf = Buffer.from(await (await fetch(src, { headers: UA })).arrayBuffer());
+      const { width, height } = await sharp(buf).metadata();
+      const side = Math.round(Math.min(width, height) / (ps.zoom ?? 1));
+      const left = Math.max(0, Math.min(width - side, Math.round((ps.focusX ?? 0.5) * width - side / 2)));
+      const top = Math.max(0, Math.min(height - side, Math.round((ps.focusY ?? 0.5) * height - side / 2)));
+      await fs.mkdir(dir, { recursive: true });
+      await sharp(buf).extract({ left, top, width: side, height: side }).resize(800, 800, { withoutEnlargement: true }).jpeg({ quality: 88, mozjpeg: true }).toFile(photoPath);
+      media.artists[slug] = {
+        ...(media.artists[slug] ?? {}),
+        photo: { site: '网易云音乐歌手页', url: `https://music.163.com/#/artist?id=${ps.id}`, name: artist.name },
+        color: await dominant(photoPath),
+        fetchedAt: new Date().toISOString().slice(0, 10),
+      };
+      console.log(`✓ ${slug} photo ← 网易云 ${artist.name} (${ps.image})`);
+    } catch (e) {
+      console.warn(`✗ ${slug} photo: ${e.message}`);
+    }
+  }
+
   // 没有频道、只有视频截图的人物：只记录截图来源和主色
   if (!fm.youtube?.channelId) {
-    if (fm.portrait?.video && (await exists(portraitPath)) && (force || !media.artists[slug])) {
+    if (fm.portrait?.video && (await exists(portraitPath)) && (force || !media.artists[slug]?.color)) {
       media.artists[slug] = {
         channelUrl: null,
         kind: 'video',
@@ -124,7 +152,8 @@ for (const f of (await fs.readdir(artistsDir)).filter((f) => f.endsWith('.md')))
       avatar: avatar,
       banner: banner ?? null,
       hasBanner,
-      color: await dominant((await exists(portraitPath)) ? portraitPath : avatarPath),
+      color: await dominant((await exists(photoPath)) ? photoPath : (await exists(portraitPath)) ? portraitPath : avatarPath),
+      ...(media.artists[slug]?.photo ? { photo: media.artists[slug].photo } : {}),
       fetchedAt: new Date().toISOString().slice(0, 10),
     };
     console.log(`✓ ${slug}${hasBanner ? ' (+banner)' : ''}`);
