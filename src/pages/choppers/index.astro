@@ -29,7 +29,7 @@ const lanes = [...new Set(artists.flatMap((a) => a.data.lane))];
         </div>
         <div class="flex flex-wrap gap-2" role="group" aria-label="按国家筛选">
           <button class="f-btn chip" data-filter="country" data-value="" aria-pressed="true">全球</button>
-          {countries.map((c) => <button class="f-btn chip" data-filter="country" data-value={c} aria-pressed="false">{COUNTRY[c].flag} {COUNTRY[c].name}</button>)}
+          {countries.map((c) => <button class="f-btn chip" data-filter="country" data-value={c} aria-pressed="false">{COUNTRY[c].name}</button>)}
         </div>
       </div>
     </div>
@@ -45,8 +45,6 @@ const lanes = [...new Set(artists.flatMap((a) => a.data.lane))];
 <style>
   .filters {
     background: color-mix(in oklab, var(--bg) 85%, transparent);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
   }
   .f-btn {
     cursor: pointer;
@@ -114,5 +112,5 @@ const lanes = [...new Set(artists.flatMap((a) => a.data.lane))];
     };
     apply();
   }
-  document.addEventListener('astro:page-load', initFilters);
+  initFilters();
 </script>

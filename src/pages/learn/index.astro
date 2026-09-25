@@ -16,8 +16,8 @@ const articles = (await getCollection('learn')).sort((a, b) => a.data.order - b.
     <ol class="mt-14 grid gap-4">
       {
         articles.map((a, i) => (
-          <li data-reveal style={`--delay:${i * 60}ms`}>
-            <a href={url(`learn/${a.id}/`)} class="learn-row group card grid items-center gap-4 p-6 transition hover:border-line-strong md:grid-cols-[5rem_1fr_auto] md:gap-8 md:p-8">
+          <li>
+            <a href={url(`learn/${a.id}/`)} class="learn-row group card grid items-center gap-4 p-6 transition hover:border-line-strong md:grid-cols-[6.5rem_1fr_auto] md:gap-8 md:p-8">
               <span class="font-display text-5xl font-semibold text-ink-3 transition group-hover:text-accent-text">{String(i + 1).padStart(2, '0')}</span>
               <span>
                 <span class="flex flex-wrap items-center gap-2">

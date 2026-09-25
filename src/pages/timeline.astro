@@ -34,7 +34,7 @@ const decades = [...new Set(events.map((e) => Math.floor(e.data.year / 10) * 10)
                   <span class="font-display text-6xl font-bold text-ink-3/40 md:text-8xl">{Math.floor(e.data.year / 10) * 10}s</span>
                 </li>
               )}
-              <li id={e.id} class:list={["event relative scroll-mt-32 pb-10", i % 2 ? "right" : "left"]} style={`--lc:${LANE[e.data.lane].color}`} data-reveal>
+              <li id={e.id} class:list={["event relative scroll-mt-32 pb-10", i % 2 ? "right" : "left"]} style={`--lc:${LANE[e.data.lane].color}`}>
                 <span class="dot" aria-hidden="true" />
                 <div class="card ev-card p-5 md:p-6">
                   <div class="flex items-start gap-4">
@@ -70,8 +70,6 @@ const decades = [...new Set(events.map((e) => Math.floor(e.data.year / 10) * 10)
 <style>
   .decades {
     background: color-mix(in oklab, var(--bg) 85%, transparent);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
   }
   .tl {
     --x: 11px;

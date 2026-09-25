@@ -370,10 +370,7 @@ const subdivisions = [
     };
     document.addEventListener('keydown', onKey);
     // 离开页面时停掉声音
-    document.addEventListener('astro:before-swap', () => {
-      stop();
-      document.removeEventListener('keydown', onKey);
-    }, { once: true });
+    window.addEventListener('pagehide', stop);
 
     render();
   }
@@ -438,8 +435,6 @@ const subdivisions = [
     update();
   }
 
-  document.addEventListener('astro:page-load', () => {
-    initMetro();
-    initCalc();
-  });
+  initMetro();
+  initCalc();
 </script>

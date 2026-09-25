@@ -16,13 +16,44 @@ const row = [...items, ...items];
 </div>
 
 <style>
-  .marquee {
-    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  /* 两侧渐隐用覆盖层实现（比 mask-image 便宜） */
+  .marquee::before,
+  .marquee::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 12%;
+    z-index: 1;
+    pointer-events: none;
+  }
+  .marquee::before {
+    left: 0;
+    background: linear-gradient(90deg, var(--bg), transparent);
+  }
+  .marquee::after {
+    right: 0;
+    background: linear-gradient(-90deg, var(--bg), transparent);
+  }
+  .marquee > div {
+    will-change: transform;
+  }
+  .marquee.is-paused > div {
+    animation-play-state: paused;
   }
   .direction-reverse {
     animation-direction: reverse;
   }
-  .marquee:hover > div {
-    animation-play-state: paused;
+  @media (hover: hover) {
+    .marquee:hover > div {
+      animation-play-state: paused;
+    }
   }
 </style>
+
+<script>
+  // 不在屏幕里时暂停滚动，省电也减少合成开销
+  document.querySelectorAll<HTMLElement>('.marquee').forEach((el) => {
+    new IntersectionObserver(([e]) => el.classList.toggle('is-paused', !e.isIntersecting)).observe(el);
+  });
+</script>

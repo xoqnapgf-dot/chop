@@ -71,5 +71,5 @@ const lanes = [...new Set(tracks.map((t) => t.data.lane))];
       };
     });
   }
-  document.addEventListener('astro:page-load', initTrackFilter);
+  initTrackFilter();
 </script>
