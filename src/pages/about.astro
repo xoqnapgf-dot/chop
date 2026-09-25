@@ -2,7 +2,6 @@
 import Base from '@/layouts/Base.astro';
 import Confidence from '@/components/Confidence.astro';
 import { CONFIDENCE, type Confidence as C } from '@/lib/labels';
-import { SITE } from '@/lib/site';
 ---
 
 <Base title="关于与版权" description="CHOP/ 的资料来源、可信度标准和图片版权说明。">
@@ -33,12 +32,12 @@ import { SITE } from '@/lib/site';
       <ul>
         <li>人物图片取自艺人本人或厂牌的<strong>官方 YouTube 频道</strong>（头像、横幅），或官方视频的截图。每个人物页底部都写明了具体来源和抓取日期。</li>
         <li>部分中文艺人只有 YouTube 自动生成的 Topic 频道，图片是专辑封面，会在页面上注明。</li>
-        <li>图片版权归原作者所有，本站仅用于介绍和评论。如果你是版权方并希望撤下，请 <a href={`${SITE.repo}/issues/new`}>提交 Issue</a>，我们会尽快处理。</li>
+        <li>图片版权归原作者所有，本站仅用于介绍和评论。</li>
         <li>视频只嵌入 YouTube 播放器，本站不存储任何音频或视频文件。</li>
       </ul>
 
       <h2>技术</h2>
-      <p>静态网站，由 Astro 构建、部署在 GitHub Pages。所有资料都是仓库里的 Markdown 和 YAML 文件，任何人都可以通过 Pull Request 修改。</p>
+      <p>纯静态网站，由 Astro 构建。</p>
     </div>
   </section>
 </Base>

@@ -5,7 +5,7 @@ import { url } from '@/lib/url';
 ---
 
 <footer class="mt-32 border-t border-line">
-  <div class="container-x grid gap-10 py-14 md:grid-cols-[1.4fr_1fr_1fr]">
+  <div class="container-x grid gap-10 py-14 md:grid-cols-[1.4fr_1fr]">
     <div class="max-w-sm">
       <a href={url()} class="text-2xl"><Logo /></a>
       <p class="mt-4 text-sm leading-relaxed text-ink-3">{SITE.description}</p>
@@ -15,13 +15,6 @@ import { url } from '@/lib/url';
       <ul class="grid grid-cols-2 gap-2 text-sm">
         {NAV.map((n) => <li><a class="link-u text-ink-2 hover:text-ink" href={url(n.href)}>{n.label}</a></li>)}
         <li><a class="link-u text-ink-2 hover:text-ink" href={url('about/')}>关于与版权</a></li>
-      </ul>
-    </div>
-    <div>
-      <p class="eyebrow mb-4">参与</p>
-      <ul class="grid gap-2 text-sm">
-        <li><a class="link-u text-ink-2 hover:text-ink" href={`${SITE.repo}/issues/new/choose`} target="_blank" rel="noopener">投稿 / 纠错 ↗</a></li>
-        <li><a class="link-u text-ink-2 hover:text-ink" href={SITE.repo} target="_blank" rel="noopener">GitHub 仓库 ↗</a></li>
       </ul>
     </div>
   </div>

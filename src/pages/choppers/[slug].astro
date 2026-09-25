@@ -6,7 +6,6 @@ import LaneChip from '@/components/LaneChip.astro';
 import Confidence from '@/components/Confidence.astro';
 import Sources from '@/components/Sources.astro';
 import LiteYouTube from '@/components/LiteYouTube.astro';
-import Comments from '@/components/Comments.astro';
 import { artistPhoto, artistBanner, artistColor, artistMedia } from '@/lib/media';
 import { COUNTRY, SPEED_KIND, UNIT, LANE } from '@/lib/labels';
 import { url } from '@/lib/url';
@@ -154,11 +153,6 @@ const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生
               ，抓取于 {media.fetchedAt}。版权归原作者所有。
             </p>
           )}
-        </section>
-
-        <section class="mt-16">
-          <p class="eyebrow mb-5">讨论</p>
-          <Comments term={`artist:${id}`} />
         </section>
       </div>
 
