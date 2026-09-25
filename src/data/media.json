@@ -442,6 +442,26 @@
       "video": "https://www.youtube.com/watch?v=2wGRpq1w1co",
       "size": "maxresdefault",
       "color": "#080808"
+    },
+    "gou-pa-hei": {
+      "video": "https://www.youtube.com/watch?v=SnnfyUL-YCI",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "rap-soldier": {
+      "video": "https://www.youtube.com/watch?v=uKVbnXBaV7c",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "si-ge-gou-bi": {
+      "video": "https://www.youtube.com/watch?v=3UPRQXX94hA",
+      "size": "maxresdefault",
+      "color": "#38c8e8"
+    },
+    "shi-phage": {
+      "video": "https://www.youtube.com/watch?v=C4I1MJzmnnA",
+      "size": "hqdefault",
+      "color": "#080808"
     }
   }
 }

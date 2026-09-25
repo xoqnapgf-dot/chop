@@ -236,7 +236,7 @@
   netease: 1303079913
   youtubeChannel: ZHONG.TV
   officialUpload: false
-  note: 活死人全员 cypher，小安迪的快嘴段落常被拿出来讨论。
+  note: 活死人全员 cypher，小安迪的快嘴段落常被拿出来讨论。五里亭亭长把它排在"小安迪最快的五首歌"第 2：15 字 / 1.2 秒 ≈ 12.5 字/秒。
   sources:
     - { title: '网易 – 谁才是中文说唱圈第一快嘴？（2018）', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }
 - id: erzi-wawa
@@ -631,3 +631,64 @@
   note: DNA 召集的地下 chopper cypher，Leach 和 DOWN6 都在。
   sources:
     - { title: 'YouTube – Tru Cipher（DNA 本人频道）', url: 'https://www.youtube.com/watch?v=2wGRpq1w1co' }
+- id: gou-pa-hei
+  title: 狗怕黑
+  artists: [lil-andy]
+  credit: 深蓝儿童（小安迪、Oxy 氧气哥、YLevoled 龚子建）
+  year: 2019
+  album: 宅の死（OTAKU DEATH）
+  youtube: SnnfyUL-YCI
+  bilibili: BV12a4y1a75W
+  netease: 1396946038
+  youtubeChannel: GumBrass 666 Underground Lab TV
+  officialUpload: false
+  scene: china
+  note: 五里亭亭长排的"小安迪最快的五首歌"第 1：14 字 / 1.11 秒 ≈ 12.6 字/秒。
+  confidence: pending
+  sources:
+    - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
+- id: rap-soldier
+  title: Rap Soldier
+  artists: [lil-andy]
+  credit: 瘦恒 SoulHan feat. 小安迪
+  year: 2017
+  album: 季前赛
+  youtube: uKVbnXBaV7c
+  netease: 507533098
+  youtubeChannel: 嘻哈音乐分享NR
+  officialUpload: false
+  scene: china
+  note: 五里亭亭长排的"小安迪最快的五首歌"第 3：12 字 / 0.99 秒 ≈ 12.1 字/秒（窗口不满 1 秒，但超过一般要求的 0.7 秒）。
+  confidence: pending
+  sources:
+    - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
+- id: si-ge-gou-bi
+  title: 四哥购币
+  artists: [lil-andy]
+  credit: 深蓝儿童（小安迪、Oxy 氧气哥、YLevoled 龚子建）/ 百川
+  year: 2019
+  youtube: 3UPRQXX94hA
+  bilibili: BV1Rq4y1o7wE
+  netease: 1377740458
+  youtubeChannel: LIOUBE
+  officialUpload: false
+  scene: china
+  note: 五里亭亭长排的"小安迪最快的五首歌"第 4：17 字 / 1.45 秒 ≈ 11.7 字/秒。
+  confidence: pending
+  sources:
+    - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
+- id: shi-phage
+  title: 噬 Phage
+  artists: [lil-andy]
+  credit: 深蓝儿童（小安迪、Oxy 氧气哥、YLevoled 龚子建）feat. Foreign Hype & Tyrant Xenos
+  year: 2019
+  album: 宅の死（OTAKU DEATH）
+  youtube: C4I1MJzmnnA
+  netease: 1384203756
+  youtubeChannel: TYRANT XENOS
+  officialUpload: true
+  scene: china
+  note: 五里亭亭长排的"小安迪最快的五首歌"第 5：19 字 / 1.83 秒 ≈ 10.4 字/秒。YouTube 链接来自合作方 Tyrant Xenos 的频道。
+  confidence: pending
+  sources:
+    - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }

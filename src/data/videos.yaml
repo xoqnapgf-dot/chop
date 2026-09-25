@@ -159,3 +159,32 @@
   kind: howto
   scene: china
   note: '快嘴怎么唱的思路分享，适合想自己练的人。'
+- id: BV1gZ4y1P7J3
+  platform: bilibili
+  title: '全球rapper语速排行榜（2021）'
+  author: '五里亭亭长'
+  date: '2021-03-05'
+  duration: '14:21'
+  cover: 'https://i0.hdslb.com/bfs/archive/f4cc64bedf7b1b6902db19882e8b0fec658c5d5f.jpg'
+  kind: speed
+  scene: world
+  note: '中文圈做的全球排行：0.1–0.2 倍速逐音节听，排除含弹舌音的歌，置顶评论公开反驳 Power Up 28.9、Nihilist 32.8 这类谣言。'
+- id: BV11x411L79b
+  platform: bilibili
+  title: '世界最快速說唱歌手排行榜2017（截止到2017/9）'
+  author: 'Fatality丶九头龙'
+  date: '2017-11-18'
+  cover: 'https://i.ytimg.com/vi/bdR0N0R3jYU/hqdefault.jpg'
+  kind: speed
+  scene: world
+  note: 'NahDah 早期榜单的中文搬运。数字后来被证明虚高，但它让很多中国听众第一次认识 chop 和 SPS，直接影响了 2018 年中国第二代 chopper 的出现。'
+- id: BV1hT411d7aa
+  platform: bilibili
+  title: '【最新】世界最快说唱歌手排行Top150（2023）快嘴说唱排行榜'
+  author: 'Fatality丶九头龙'
+  date: '2023-02-04'
+  duration: '30:00'
+  cover: 'https://i0.hdslb.com/bfs/archive/abaec15ea9539d34177cb4d6f316c86b3d4f145a.jpg'
+  kind: speed
+  scene: world
+  note: 'NahDah 2023 版榜单的 B 站搬运，国内打不开 YouTube 时可以看这个。'

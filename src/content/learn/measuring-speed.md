@@ -13,6 +13,8 @@ sources:
   - { title: 'NahDah Vebb – 测速方法 FAQ', url: 'https://docs.google.com/document/d/1zPWDPfnmmfRIuuskCmTMeTlWTjY9uc9NQ2nM3MU-mCU' }
   - { title: 'NahDah Vebb – 除名说明', url: 'https://docs.google.com/document/d/1DfcPmT5YCWYwDRP-uyFMEthi9n7ctGRsK2C3QxiFJrA' }
   - { title: 'NahDah Vebb – 150 条逐条测算', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+  - { title: 'B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017（NahDah 2017 版搬运）', url: 'https://www.bilibili.com/video/BV11x411L79b/' }
+  - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
   - { title: 'SPS and Chopper Rap Wiki – Crucified', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Crucified' }
   - { title: 'SPS and Chopper Rap Wiki – Infinite choppers 1', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Infinite_choppers_1' }
   - { title: '新浪 – 赵辰龙公开回应（2022-04-01）', url: 'https://k.sina.cn/article_1163858357_v455f11b5019012ps5.html' }
@@ -62,6 +64,19 @@ NahDah Vebb 在 YouTube 上做"最快说唱歌手 Top 150"榜单，属于美洲�
 本站复算了这 150 条，只有 1 条算式对不上。榜单本身只比 1 秒爆发，和 SPS wiki 一样，**只说明有多快，不说明谁是更好的 chopper**：SPS 不等于 chop。
 
 完整的规则、除名名单和问答，做成了卡片放在[速度实验室](../../lab/#rules)。
+
+## 早期的数字为什么虚高
+
+同一批人，早年榜单上的数字和后来系统复测的结果差了一大截：
+
+| 说法 | 早期 | 后来 |
+|---|---|---|
+| Crucified 最快 | 《Power Up》28.3（NahDah 2017 版，经 B 站搬运流传）；另有 28.9 的说法 | 《Onion Chopper》22 / 1.043 ≈ 21.09（NahDah 2023 版） |
+| Sabotahe | 27.4（NahDah 2017 版） | 《Paslangin 5》22 / 1.047 ≈ 21.01（NahDah 2023 版） |
+
+原因主要有三个：窗口太短（不满 1 秒就除）、把弹舌音算成音节、没有逐音节放慢核对。NahDah 本人后来把 2017、2021 版都标成了 outdated。中文圈里，B 站 UP 主五里亭亭长 2021 年做全球排行时，用 0.1–0.2 倍速逐个音节听，排除含弹舌音的歌，还在置顶评论里专门反驳了 Power Up 28.9、Nihilist 32.8 这两个流传最广的数字。
+
+不过早期榜单也有它的历史意义：2017 年那版被搬到 B 站后，让很多中国听众第一次认识了 chop 和 SPS。
 
 ## 中文的例子：变调和加速
 

@@ -224,3 +224,28 @@
     - { title: 'B站 – 小安迪直播点评《Chinese Choppers》', url: 'https://www.bilibili.com/video/BV1S2j36tERu/' }
     - { title: 'B站 – Chinese Choppers Cypher 翻唱（标注原唱 Wilbdawater）', url: 'https://www.bilibili.com/video/BV1ZpLg6wEBR/' }
     - { title: 'YouTube – Chinese Choppers Cypher 赛文凯、ChaChe verse 翻唱', url: 'https://www.youtube.com/watch?v=YgBjK6V_nzI' }
+- id: 2017-nahdah-bilibili
+  year: 2017
+  title: NahDah 的榜单被搬到 B 站
+  body: B 站 UP 主 Fatality丶九头龙 搬运了 NahDah 的 2017 年《Top 150 Fastest Rappers》。榜单的数字后来被证明虚高（比如把 Crucified 的《Power Up》写成 28.3 SPS），但这个视频让很多中国听众第一次认识了 chop 和 SPS。
+  scene: china
+  confidence: disputed
+  sources:
+    - { title: 'B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017（截止到2017/9）', url: 'https://www.bilibili.com/video/BV11x411L79b/' }
+    - { title: 'YouTube – NahDah Vebb：[outdated] The Top 150 Fastest Rappers | 2017', url: 'https://www.youtube.com/watch?v=bdR0N0R3jYU' }
+- id: 2018-china-chop-circle
+  year: 2018
+  title: 中国第二代 chop 圈组建
+  body: 受这类搬运视频的影响，一批专门练 chop 的中国新人出现了。2018 年，煦航把他们组织起来，组建了中国的 chop 圈。这一代承上启下，是中国的第二代 chopper；2022 年以后入圈的是第三代。
+  scene: china
+  sources:
+    - { title: '本站站长煦航（圈子组建者）亲述', url: 'https://xoqnapgf-dot.github.io/chop/about/' }
+    - { title: 'B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017', url: 'https://www.bilibili.com/video/BV11x411L79b/' }
+- id: 2021-wulitingtingzhang
+  year: 2021
+  title: 中文圈自己测速
+  body: B 站 UP 主五里亭亭长接连发布《语速最快的七位中文rapper》和《全球rapper语速排行榜》，用 0.1–0.2 倍速逐个音节听、排除含弹舌音的歌，并在置顶评论里反驳 Power Up 28.9、Nihilist 32.8 这类流传多年的数字。
+  scene: china
+  sources:
+    - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
+    - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
