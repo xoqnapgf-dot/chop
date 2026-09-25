@@ -18,6 +18,7 @@ speed:
     unit: syl/s
     label: 2013 年吉尼斯挑战：49 秒 949 个音节
     kind: claimed
+    by: 'Rap Wiki'
     window: long
     syllables: 949
     seconds: 49
@@ -29,6 +30,7 @@ speed:
     unit: syl/s
     label: 2014 年现场视频：46 秒 799 个音节
     kind: measured
+    by: '本人现场视频'
     window: long
     syllables: 799
     seconds: 46
@@ -41,6 +43,7 @@ speed:
     unit: syl/s
     label: Infinite Choppers 等 4 首的最快爆发
     kind: measured
+    by: 'SPS wiki'
     window: burst
     syllables: 21
     seconds: 1
@@ -53,6 +56,7 @@ speed:
     unit: syl/s
     label: 《Surprise》视频标题的自称
     kind: claimed
+    by: '本人自称'
     window: burst
     confidence: disputed
     note: 他自己上传的视频标题写着"24.9 SYLLABLES PER SECOND"，但 SPS 社区测出来是 21。
@@ -63,6 +67,7 @@ speed:
     unit: syl/s
     label: 《Power Up》爆发（SPS wiki 的说法）
     kind: measured
+    by: 'SPS wiki'
     window: burst
     confidence: disputed
     note: SPS wiki 说约 2023 年由 SPS 团队确认为 18 SPS 整；Rap Wiki 则写爆发是 19 SPS。两个来源不一致。
@@ -73,6 +78,7 @@ speed:
     unit: syl/s
     label: 《Power Up》流传的旧数值
     kind: measured
+    by: 'SPS wiki'
     window: burst
     confidence: debunked
     note: 2017 年一位计算者的误算，后来被 SPS 社区推翻，但至今还有人引用。NahDah 2017 版榜单写的是 28.3；B 站 UP 主五里亭亭长 2021 年也专门辟谣过 28.9。
@@ -81,8 +87,9 @@ speed:
       - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021，置顶评论辟谣 28.9）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
   - value: 21.09
     unit: syl/s
-    label: '《Onion Chopper》爆发 · NahDah 2023 榜第 1 名'
+    label: '《Onion Chopper》爆发 · 第 1 名'
     kind: measured
+    by: 'NahDah 2023'
     window: burst
     syllables: 22
     seconds: 1.043

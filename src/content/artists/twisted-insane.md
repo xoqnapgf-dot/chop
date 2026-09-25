@@ -16,8 +16,9 @@ related: [tech-n9ne, twista, crucified, dna-tru-lyricist]
 speed:
   - value: 15.24
     unit: syl/s
-    label: '《Dome Split》爆发 · NahDah 2023 榜第 32 名'
+    label: '《Dome Split》爆发 · 第 32 名'
     kind: measured
+    by: 'NahDah 2023'
     window: burst
     syllables: 16
     seconds: 1.05

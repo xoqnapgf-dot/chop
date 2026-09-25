@@ -17,6 +17,7 @@ speed:
     unit: char/s
     label: '《Speed #1》第二段主歌'
     kind: measured
+    by: '网易 2018 盘点'
     window: long
     confidence: pending
     note: 网友测算，两篇网络文章都引用了这个数，但没有说明测算方法。
