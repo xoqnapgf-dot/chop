@@ -395,3 +395,213 @@
   note: 为回应"后期加速"的质疑而录的现场视频：46 秒 799 个音节，平均约 17.37。
   sources:
     - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }
+- id: new-rap-language
+  title: The New Rap Language
+  credit: Spoonie Gee & The Treacherous Three
+  year: 1980
+  youtube: JlTvgyUBTRs
+  netease: 26755887
+  youtubeChannel: HipHopKlaZZiX
+  officialUpload: false
+  scene: world
+  note: 维基百科 Chopper 词条说，这是第一首把高速说唱录成唱片的歌，Kool Moe Dee 在歌里被称为快嘴的"创始人"。
+  sources:
+    - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
+- id: midwest-choppers
+  title: Midwest Choppers
+  artists: [tech-n9ne]
+  credit: Tech N9ne feat. D-Loc, Dalima & Krizz Kaliko
+  year: 2007
+  album: Misery Loves Kompany
+  youtube: 0LKFW3AdGCA
+  netease: 3765466
+  youtubeChannel: Strange Music Inc
+  officialUpload: true
+  scene: world
+  note: Tech N9ne 的 chopper 系列第一首。维基百科说，"chopper"这个叫法正是因为这个系列才流行起来。
+  sources:
+    - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
+- id: midwest-choppers-2
+  title: Midwest Choppers 2
+  artists: [tech-n9ne]
+  credit: Tech N9ne feat. K-Dean & Krayzie Bone
+  year: 2009
+  album: Sickology 101
+  youtube: FVa4X29vGNY
+  netease: 19449918
+  youtubeChannel: Strange Music Inc
+  officialUpload: true
+  scene: world
+  note: 系列第二首，请来了 Bone Thugs-n-Harmony 的 Krayzie Bone。之后才是 2011 年的 Worldwide Choppers。
+  sources:
+    - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
+- id: german-choppers
+  title: German Choppers
+  credit: DCVDNS feat. Tamas
+  youtube: Z-E2yzcpP3k
+  netease: 27767133
+  youtubeChannel: DCVDNS
+  officialUpload: true
+  scene: world
+  note: 德语 chopper 的代表曲目，维基百科举它说明 Tech N9ne 的"Choppers"命名方式传到了别的国家。
+  sources:
+    - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
+- id: thron
+  title: Thron
+  artists: [twisted-insane]
+  credit: ShimmyMC feat. Twisted Insane & Wrekonize
+  youtube: oi7uBcKKDxg
+  youtubeChannel: ShimmyMC
+  officialUpload: true
+  scene: world
+  note: 德国 chopper ShimmyMC 请来美国的 Twisted Insane 和 Wrekonize，维基百科 Chopper 词条点名的跨国合作。
+  sources:
+    - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
+- id: dome-split
+  title: Dome Split
+  artists: [twisted-insane]
+  credit: Twisted Insane
+  youtube: nUpVSFRUfO0
+  youtubeChannel: TwistedInsaneVEVO
+  officialUpload: true
+  scene: world
+  note: NahDah 2023 榜里 Twisted Insane 最快的歌：1.050 秒 16 个音节，约 15.24 SPS，第 32 名。
+  confidence: pending
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+- id: idol
+  title: Idol
+  artists: [tech-n9ne]
+  credit: Hollywood Undead feat. Tech N9ne
+  youtube: v5gLMpiDv28
+  bilibili: BV1rgrRBbEf7
+  netease: 1465030798
+  youtubeChannel: Hollywood Undead
+  officialUpload: true
+  scene: world
+  note: NahDah 2023 榜里 Tech N9ne 最快的一段：1.067 秒 15 个音节，约 14.06 SPS，第 101 名。
+  confidence: pending
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+- id: hold-up
+  title: Hold Up
+  artists: [twista]
+  credit: Diamond D feat. Twista, A-F-R-O & Dillon
+  youtube: 8dSA6xcICNk
+  netease: 1362129795
+  youtubeChannel: DiamondDDITCVEVO
+  officialUpload: true
+  scene: world
+  note: NahDah 2023 榜里 Twista 最快的一段：1.091 秒 15 个音节，约 13.75 SPS，第 137 名。
+  confidence: pending
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+- id: onion-chopper
+  title: Onion Chopper
+  artists: [crucified, twisted-insane]
+  credit: Ruffian Rugged & Dumanoid feat. Twisted Insane, Kurşun, Sabotahe, Crucified & Fate
+  youtube: 8T-HVOvWbqQ
+  netease: 2017089392
+  youtubeChannel: Ruffian Rugged
+  officialUpload: true
+  scene: world
+  note: NahDah 2023 榜第 1 名来自这首里 Crucified 的段落：1.043 秒 22 个音节，约 21.09 SPS。他本人说是 22 SPS，NahDah 团队"非常接近但没能核实"。
+  confidence: pending
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'NahDah Vebb – 测速方法 FAQ（Onion Chopper 一节）', url: 'https://docs.google.com/document/d/1zPWDPfnmmfRIuuskCmTMeTlWTjY9uc9NQ2nM3MU-mCU' }
+- id: mousha
+  title: 谋杀
+  artists: [kindergarten-killer]
+  credit: 幼稚园杀手
+  album: 蒲公英
+  youtube: SKhipQqpjOg
+  bilibili: BV14E411u7y6
+  netease: 183328
+  youtubeChannel: 楷傑
+  officialUpload: false
+  scene: china
+  note: 常被称为幼稚园杀手巅峰时期的快嘴代表作，B 站搬运版近 87 万播放，标题写着"语速极快，但完全可以听清"。
+  confidence: pending
+  sources:
+    - { title: 'B站 – 幼稚园杀手巅峰时期歌曲《谋杀》', url: 'https://www.bilibili.com/video/BV14E411u7y6/' }
+    - { title: 'B站 – 【韵脚检查】谋杀 - 幼稚园杀手', url: 'https://www.bilibili.com/video/BV1b93x6pEpR/' }
+- id: shengli
+  title: 胜利
+  artists: [kindergarten-killer]
+  credit: 幼稚园杀手 feat. 凤凰鸣
+  year: 2008
+  youtube: _dG2XMMZC9g
+  bilibili: BV1kx411E7KE
+  netease: 1920622872
+  youtubeChannel: 驁三春
+  officialUpload: false
+  scene: china
+  note: 和凤凰鸣的合作。有韵脚检查视频称这是幼稚园杀手"局部语速最快的一首"，最快处 1 秒约 16–17 字（吞字算法不同）。
+  confidence: pending
+  sources:
+    - { title: 'StreetVoice – 胜利 Feat. 凤凰鸣（幼稚园杀手官方账号）', url: 'https://streetvoice.com/kindagartenkilla/songs/62788/' }
+    - { title: 'B站 – 【韵脚检查】幼杀局部语速最快的一首歌：胜利', url: 'https://www.bilibili.com/video/BV1EqZAYtEnJ/' }
+- id: hbuf
+  title: H.B.U.F
+  artists: [bei-bei]
+  credit: DZ / 贝贝 / Cola
+  year: 2017
+  youtube: NNgd5M7vvqk
+  bilibili: BV1dx411s7RZ
+  youtubeChannel: 说唱食粮
+  officialUpload: false
+  scene: china
+  note: 南京和西安的合作。有韵脚检查视频称贝贝这段"平均一秒十二字"，也有人称这是贝贝"历史第二快"的快嘴。
+  confidence: pending
+  sources:
+    - { title: 'B站 – 【韵脚检查】平均一秒十二字！《H.B.U.F》贝贝 part', url: 'https://www.bilibili.com/video/BV1j44y1s7Ui/' }
+    - { title: 'B站 – H.B.U.F 贝贝历史第二快嘴【韵脚检查】', url: 'https://www.bilibili.com/video/BV1S2ADesELP/' }
+- id: hnbmc-2018-cypher
+  title: HNBMC 2018 Cypher
+  artists: [bei-bei]
+  credit: 红花会（MAI、丁飞、DP、毕冉、啊之、贝贝、PG One、弹壳）
+  year: 2018
+  youtube: 2tQONu1Gi2Y
+  bilibili: BV13zypBcEQd
+  youtubeChannel: FirePanda
+  officialUpload: true
+  scene: china
+  note: 红花会全员 cypher，贝贝那段常被称为他"生涯最快的 verse"。
+  confidence: pending
+  sources:
+    - { title: 'B站 – 【韵脚检查】红花会2018cypher 贝贝 part：贝贝生涯最快verse', url: 'https://www.bilibili.com/video/BV1L9LBzREF1/' }
+    - { title: '维基百科 – 弹壳Danko（2018 年随红花会发布 HNBMC 2018 CYPHER）', url: 'https://zh.wikipedia.org/zh-cn/%E5%BC%B9%E5%A3%B3Danko' }
+- id: sleep-read-love
+  title: Sleep, Read, Love
+  artists: [yang-he-su]
+  credit: 杨和苏 KeyNG
+  year: 2018
+  album: Sleep, Read, Love
+  youtube: jD6MDh49MIY
+  bilibili: BV1YW411o7HK
+  netease: 1293905047
+  youtubeChannel: 514 POP Music（《中国新说唱》2019 舞台版）
+  officialUpload: false
+  scene: china
+  note: 杨和苏早期的快嘴作品，2019 年他在《中国新说唱》复活赛上重唱，被称为"极致快嘴王者归来"。B 站链接是 2018 年原版。
+  confidence: pending
+  sources:
+    - { title: 'B站 – 复活成功 杨和苏极致快嘴王者归来《Sleep Read Love》', url: 'https://www.bilibili.com/video/BV1Jc411376N/' }
+    - { title: '网易云音乐 – Sleep, Read, Love', url: 'https://music.163.com/#/song?id=1293905047' }
+- id: nightkidz
+  title: NIGHTKIDZ 夜之子
+  artists: [guang-guang]
+  credit: 侃迪 kandi / AA / Rapeter / MC光光
+  year: 2025
+  youtube: 1cOcmUPC5ec
+  bilibili: BV1u2e1zEEJk
+  netease: 2735951115
+  youtubeChannel: 网易云音乐官方频道
+  officialUpload: true
+  scene: china
+  note: 光光出道二十多年后的快嘴段落，韵脚检查视频的评价是"光光快嘴依旧爽的起飞"。
+  confidence: pending
+  sources:
+    - { title: 'B站 – 【韵脚检查】NIGHTKIDZ夜之子', url: 'https://www.bilibili.com/video/BV1u2e1zEEJk/' }
+    - { title: 'B站 – 【韵脚检查】光光快嘴依旧爽的起飞！NIGHTKIDZ夜之子', url: 'https://www.bilibili.com/video/BV1tPh1zKEVi/' }

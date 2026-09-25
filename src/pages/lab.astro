@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '@/layouts/Base.astro';
 import SpeedChart from '@/components/SpeedChart.astro';
 import SpeedRules from '@/components/SpeedRules.astro';
+import VideoShelf from '@/components/VideoShelf.astro';
 import { url } from '@/lib/url';
 import { displayName } from '@/lib/labels';
 
@@ -40,6 +41,10 @@ const subdivisions = [
       <strong class="text-ink">先说清楚：SPS 只量速度，不等于 chop。</strong>SPS 榜单比的是 1 秒爆发有多快；chop 还要看每个音节是不是真的词、切分和 flow 好不好、能不能现场唱出来。所以榜单名次不代表谁是更好的 chopper。<a href={url('learn/what-is-chop/')} class="link-u text-ink">快嘴 ≠ Chop →</a>
     </p>
     <div class="mt-8"><SpeedRules /></div>
+
+    <h3 class="mt-14 text-2xl font-semibold">测速视频</h3>
+    <p class="mt-2 max-w-3xl text-sm text-ink-3">别人是怎么测的：中文和海外的测速视频。数字是作者自测，口径不一，可以对照上面的规则看。<a href={url('tracks/#videos')} class="link-u text-ink">推荐合集和教学 →</a></p>
+    <div class="mt-6"><VideoShelf kinds={['speed']} /></div>
   </section>
 
   <!-- ============ 节拍细分器 ============ -->

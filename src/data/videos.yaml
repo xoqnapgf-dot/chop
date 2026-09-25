@@ -1,0 +1,161 @@
+# 测速视频、推荐合集、教学。kind: speed 测速 / picks 推荐 / howto 教学；cover 是封面原图地址，构建前由 scripts/fetch-youtube.mjs 下载到本站
+# 视频里的数字是作者自测，本站没有逐条复核
+- id: BV1rN411X75u
+  platform: bilibili
+  title: '语速最快的七位中文rapper'
+  author: '五里亭亭长'
+  date: '2021-02-18'
+  duration: '4:11'
+  cover: 'https://i0.hdslb.com/bfs/archive/24880ebefaa900ec902cdbd6b3ac10d215c80411.jpg'
+  kind: speed
+  scene: china
+  note: '作者说"都是选最快的部分慢慢算的"，播放超过 100 万，是流传最广的中文快嘴语速排行之一。'
+- id: BV18N4y1B7vG
+  platform: bilibili
+  title: '中文rapper一秒钟最快能说几个字？全网最准确的中文说唱歌曲快嘴语速测量！'
+  author: '壸囗瀑布汨汨奔流'
+  date: '2023-12-30'
+  duration: '12:0'
+  cover: 'https://i0.hdslb.com/bfs/archive/11ceb976faae5fc71dd2ff12f35555f4891e9b96.jpg'
+  kind: speed
+  scene: china
+  note: '按一秒最多能说几个字来比，覆盖多位中文 rapper。'
+- id: BV1NK4y1n7X4
+  platform: bilibili
+  title: '幼稚园杀手最快的五首歌'
+  author: '五里亭亭长'
+  date: '2021-03-08'
+  duration: '1:31'
+  cover: 'https://i2.hdslb.com/bfs/archive/c9e424b8ea28d81961228d760f3e986cb0ed7bfa.jpg'
+  kind: speed
+  scene: china
+  note: '用测算数据回应"幼杀都是加速器"的说法。'
+- id: BV1Zf4y1a73W
+  platform: bilibili
+  title: '幼稚园杀手的快嘴究竟有多快-全网最全语速测试'
+  author: '石狐九和'
+  date: '2021-05-16'
+  duration: '11:29'
+  cover: 'https://i1.hdslb.com/bfs/archive/6f27007afd863a8fcf8f89f638849e73dd4aa2df.jpg'
+  kind: speed
+  scene: china
+  note: '作者说明用的是"掐头去尾测速法"，"全倒是全，不一定准"。'
+- id: BV1nb4y1Q7XA
+  platform: bilibili
+  title: '小安迪最快的五首歌【精确排行】'
+  author: '五里亭亭长'
+  date: '2021-03-15'
+  duration: '1:6'
+  cover: 'https://i2.hdslb.com/bfs/archive/23cfcfeb9f8f305747f7c1d24dff700ad2d4591b.jpg'
+  kind: speed
+  scene: china
+  note: '小安迪五首快歌的精确排行。'
+- id: BV1WP4y1z74a
+  platform: bilibili
+  title: 'AR刘夫阳的炫技快嘴有多快？快嘴测速素材库AR特辑'
+  author: '石狐九和'
+  date: '2023-01-21'
+  duration: '8:40'
+  cover: 'https://i0.hdslb.com/bfs/archive/699c7d3d8acdc93e01a6fd8e6b1cc5722bb5f2f3.jpg'
+  kind: speed
+  scene: china
+  note: '"快嘴测速素材库"系列的 AR 特辑。'
+- id: BV1b1421r7Qh
+  platform: bilibili
+  title: '快嘴测速素材库 - 第二十二期'
+  author: '石狐九和'
+  date: '2024-06-17'
+  duration: '3:11'
+  cover: 'https://i1.hdslb.com/bfs/archive/d770c67f6c9a1ecdb2e09f99f073cda2a25e555b.jpg'
+  kind: speed
+  scene: china
+  note: '"快嘴测速素材库"系列的一期，这个系列已经做了二十多期。'
+- id: '4SjqPAqjsWo'
+  platform: youtube
+  title: '[2023] Top 150 Fastest Rappers in the World | Most Accurate'
+  author: NahDah Vebb
+  date: '2023-01-30'
+  cover: 'https://i.ytimg.com/vi/4SjqPAqjsWo/hqdefault.jpg'
+  kind: speed
+  scene: world
+  note: '本站世界区用的榜单：150 人每人一段 1 秒片段，附三份公开文档。'
+- id: BV138BCBKEDT
+  platform: bilibili
+  title: '2025年 Crucified最快的 50段verse [最精确]'
+  author: '-Irozaka-'
+  date: '2025-12-27'
+  duration: '10:1'
+  cover: 'https://i2.hdslb.com/bfs/archive/e96ad3b56bad278fc6ead2312b514791f767b4c7.jpg'
+  kind: speed
+  scene: world
+  note: 'Crucified 最快的 50 段 verse。'
+- id: BV1L1421y793
+  platform: bilibili
+  title: 'Crucified最快的十首歌'
+  author: '五里亭亭长'
+  date: '2024-06-05'
+  duration: '3:0'
+  cover: 'https://i1.hdslb.com/bfs/archive/da1cf8bc054e936b07a168234d12b474c5af3a65.jpg'
+  kind: speed
+  scene: world
+  note: 'Crucified 最快的十首歌。'
+- id: BV1vt411V7Ka
+  platform: bilibili
+  title: '『说唱搬运』Top.15  Interchopper的15个Fastest Chop Verses'
+  author: '森敬文'
+  date: '2019-07-13'
+  duration: '6:7'
+  cover: 'https://i0.hdslb.com/bfs/archive/768705d6f990e4b53be4dd94503cf029ad441d8e.jpg'
+  kind: speed
+  scene: world
+  note: '搬运：Interchopper 的 15 段最快 verse（Interchopper 是 NahDah 2023 榜第 5 名）。'
+- id: BV1e7411Z7s8
+  platform: bilibili
+  title: '众神归位  中文说唱快嘴“集装箱”                快嘴炫技集锦'
+  author: '凋谢r'
+  date: '2020-03-17'
+  duration: '23:18'
+  cover: 'https://i0.hdslb.com/bfs/archive/166ef893d22d6b9685166d11dbdfec783a09738c.jpg'
+  kind: picks
+  scene: china
+  note: '中文说唱快嘴炫技集锦，二十多分钟。'
+- id: BV1Tp4y1L7yy
+  platform: bilibili
+  title: 'DOWN6 - INFINITE CHOPPERS'
+  author: 'GumBrass恐核速说频道'
+  date: '2023-07-29'
+  duration: '17:57'
+  cover: 'https://i0.hdslb.com/bfs/archive/b611bbef9271422fb2c6d139a0a005f00ebc4a2a.png'
+  kind: picks
+  scene: world
+  note: 'DOWN6 的 18 人 chopper cypher 全程，本站世界区有逐人测算表。'
+- id: BV1gF411K7Kk
+  platform: bilibili
+  title: '【Chopper图签】美国加利福尼亚州扭曲错乱Twisted Insane作品精选'
+  author: 'GumBrass恐核速说频道'
+  date: '2022-07-21'
+  duration: '65:35'
+  cover: 'https://i2.hdslb.com/bfs/archive/6d1fa48941335a727cd0b642f4c519c048704e2e.png'
+  kind: picks
+  scene: world
+  note: 'Twisted Insane 作品精选，一个多小时。'
+- id: BV1wt411P79m
+  platform: bilibili
+  title: '[韵脚解析]姆爷居然比他略逊一筹？语速和押韵的巅峰 Speedom - Tech N9ne/Eminem/Kaliko'
+  author: '葩葩葩趴'
+  date: '2019-07-26'
+  duration: '5:15'
+  cover: 'https://i0.hdslb.com/bfs/archive/3e4bfb2b133a3b2e7b02605aac856e441d4d73c7.jpg'
+  kind: picks
+  scene: world
+  note: '《Speedom》韵脚解析，带中文字幕。'
+- id: BV1eA4m137Fk
+  platform: bilibili
+  title: '快嘴应该怎么唱？分享个思路给你'
+  author: '卜熹关'
+  date: '2024-02-20'
+  duration: '1:31'
+  cover: 'https://i0.hdslb.com/bfs/archive/d5b6074c4069b1dccda3d305185fce96f37de017.jpg'
+  kind: howto
+  scene: china
+  note: '快嘴怎么唱的思路分享，适合想自己练的人。'

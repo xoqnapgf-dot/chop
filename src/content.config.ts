@@ -199,4 +199,21 @@ const collabs = defineCollection({
     .refine((d) => d.netease !== undefined || d.source !== undefined, { message: '需要 netease 或 source 之一' }),
 });
 
-export const collections = { artists, tracks, timeline, learn, regions, scenes, cyphers, collabs };
+/** 测速视频、推荐合集、教学（链接到 B 站 / YouTube，封面存在本站） */
+const videos = defineCollection({
+  loader: file('src/data/videos.yaml'),
+  schema: z.object({
+    platform: z.enum(['bilibili', 'youtube']),
+    title: z.string(),
+    author: z.string(),
+    date: z.string(),
+    duration: z.string().optional(),
+    /** 封面原图地址，由 scripts/fetch-youtube.mjs 下载到 src/assets/videos/ */
+    cover: z.url(),
+    kind: z.enum(['speed', 'picks', 'howto']),
+    scene: z.enum(['china', 'world']),
+    note: z.string(),
+  }),
+});
+
+export const collections = { artists, tracks, timeline, learn, regions, scenes, cyphers, collabs, videos };
