@@ -530,7 +530,7 @@
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
 - id: onion-chopper
   title: Onion Chopper
-  artists: [crucified, twisted-insane]
+  artists: [crucified, twisted-insane, sabotahe]
   credit: Ruffian Rugged & Dumanoid feat. Twisted Insane, Kurşun, Sabotahe, Crucified & Fate
   youtube: 8T-HVOvWbqQ
   netease: 2017089392
@@ -542,6 +542,35 @@
   sources:
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
     - { title: 'NahDah Vebb – 测速方法 FAQ（Onion Chopper 一节）', url: 'https://docs.google.com/document/d/1zPWDPfnmmfRIuuskCmTMeTlWTjY9uc9NQ2nM3MU-mCU' }
+- id: kill-5
+  title: Kill 5（Paslangin 5）
+  artists: [sabotahe]
+  credit: Aktibar x Sabotahe x Global Choppers
+  scene: world
+  year: 2020
+  youtube: A-5WcCb6PjU
+  bilibili: BV16f4y1p7ia
+  youtubeChannel: Aktibar Official
+  officialUpload: true
+  note: 'Aktibar 的 Kill 系列第五部，他加禄语叫 Paslangin。Sabotahe 这段是 NahDah 2023 榜第 2 名：1.047 秒 22 个音节 ≈ 21.01；TrollatorBR 单独测是 20.71。B 站链接是他本人发的这段 verse。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'YouTube – TrollatorBR："TOP 20" Sabotahe Fastest Verses (2026)', url: 'https://www.youtube.com/watch?v=iL9P__qKZOs' }
+- id: korona
+  title: Korona（加长版）
+  artists: [sabotahe]
+  credit: Sparo ft. Lucky9, SaintBrown, Sabotahe, Respero 等
+  scene: world
+  year: 2016
+  album: Anak ng Rap
+  youtube: xHbVEC3zJnI
+  youtubeChannel: HoodlumRecordsOfficial
+  officialUpload: true
+  note: 'NahDah 2017 版第 1 名就来自这首里 Sabotahe 的段落，当时写的是 34 ÷ 1.24 ≈ 27.4；后来五里亭亭长测是 16.7，TrollatorBR 测是 17.32。'
+  confidence: disputed
+  sources:
+    - { title: 'B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017（NahDah 2017 版搬运）', url: 'https://www.bilibili.com/video/BV11x411L79b/' }
+    - { title: 'YouTube – TrollatorBR："TOP 20" Sabotahe Fastest Verses (2026)', url: 'https://www.youtube.com/watch?v=iL9P__qKZOs' }
 - id: mousha
   title: 谋杀
   artists: [kindergarten-killer]

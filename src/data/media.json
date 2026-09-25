@@ -208,6 +208,15 @@
       "hasBanner": false,
       "color": "#f8f8f8",
       "fetchedAt": "2026-09-25"
+    },
+    "sabotahe": {
+      "channelUrl": "https://www.youtube.com/channel/UCuIrJbsoT4OXS64QvP8FHEQ",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/yDIyywsJPy1v4CY0M6N0N-SI-CeOLMeE0m610B10tggGQpHd9kAcPEfkgdV4qVyvQOhGRKhX49Q=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/QA-hLC_fyYtxZQ2Zjv1b6wZIKNo-XD5U8jgy1LzCUNPIKJMfyehIh_9ebhhIasNEbAn-0AKBXPc=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-25"
     }
   },
   "tracks": {
@@ -490,6 +499,16 @@
       "video": "https://www.youtube.com/watch?v=1WFS34VWsYY",
       "size": "hqdefault",
       "color": "#080808"
+    },
+    "kill-5": {
+      "video": "https://www.youtube.com/watch?v=A-5WcCb6PjU",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "korona": {
+      "video": "https://www.youtube.com/watch?v=xHbVEC3zJnI",
+      "size": "maxresdefault",
+      "color": "#f8f8f8"
     }
   }
 }
