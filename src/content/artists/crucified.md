@@ -23,7 +23,7 @@ speed:
     syllables: 949
     seconds: 49
     confidence: pending
-    note: 据 Rap Wiki 记载，Bizzy Bone 为他作证；半年后吉尼斯关闭了"最快说唱"类别，所以没有正式成绩。
+    note: '据 Rap Wiki 记载，Bizzy Bone 为他作证；半年后吉尼斯关闭了"最快说唱"类别，所以没有正式成绩。音节数是挑战自报的，没有第三方逐音节数过；NahDah 等榜单按规则不收纪录挑战。'
     sources:
       - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }
   - value: 17.37
@@ -35,7 +35,7 @@ speed:
     syllables: 799
     seconds: 46
     confidence: pending
-    note: 为回应"后期加速"的质疑录的现场视频，其中最快的部分超过 19 SPS。
+    note: '为回应"后期加速"的质疑录的现场视频，其中最快的部分超过 19 SPS。799 这个数是视频标题自报的，没有第三方逐音节数过。'
     sources:
       - { title: 'YouTube – Crucified spits 799 syllables in 46 seconds', url: 'https://www.youtube.com/watch?v=UazJea9uaDc' }
       - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }
@@ -48,10 +48,11 @@ speed:
     syllables: 21
     seconds: 1
     confidence: pending
-    note: SPS 社区的测算（1 秒 21 个音节）。
+    note: 'SPS 社区的测算（1 秒 21 个音节，计算：Wedere）。第二份只找到 SPS 圈测算者 devrimfastrap 在 THE CREM 测速短视频下的留言"其实是 21"，没有完整算式，所以还标待核实。'
     sources:
       - { title: 'SPS and Chopper Rap Wiki – Crucified', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Crucified' }
       - { title: 'SPS and Chopper Rap Wiki – Infinite choppers 1（计算：Wedere）', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Infinite_choppers_1' }
+      - { title: 'YouTube – THE CREM：How fast is crucified infinite choppers?（评论区有测算）', url: 'https://www.youtube.com/shorts/YjtNzArCKmU' }
   - value: 24.9
     unit: syl/s
     label: 《Surprise》视频标题的自称
@@ -70,10 +71,11 @@ speed:
     by: 'SPS wiki'
     window: burst
     confidence: disputed
-    note: SPS wiki 说约 2023 年由 SPS 团队确认为 18 SPS 整；Rap Wiki 则写爆发是 19 SPS。两个来源不一致。
+    note: 'SPS wiki 说约 2023 年由 SPS 团队确认为 18 SPS 整；Rap Wiki 写爆发是 19 SPS；五里亭亭长 2021 测的是 1.66 秒 28 个音节 ≈ 16.9（窗口更长）。三处都在 17–19 之间，远低于流传的 28.9，但具体数字不一致。'
     sources:
       - { title: 'SPS and Chopper Rap Wiki – Crucified', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Crucified' }
       - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }
+      - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
   - value: 28.9
     unit: syl/s
     label: 《Power Up》流传的旧数值
@@ -93,8 +95,8 @@ speed:
     window: burst
     syllables: 22
     seconds: 1.043
-    confidence: pending
-    note: '他本人说这段是 22 SPS；NahDah 团队"非常接近但没能核实"，测得 1.043 秒 22 个音节。'
+    confidence: verified
+    note: '他本人说这段是 22 SPS；NahDah 团队"非常接近但没能核实"，测得 1.043 秒 22 个音节 ≈ 21.09。两边都在 21–22 之间，SPS wiki 也说他有 4 首歌到了 21 整。'
     sources:
       - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
       - { title: 'YouTube – NahDah Vebb：[2023] Top 150 Fastest Rappers in the World', url: 'https://www.youtube.com/watch?v=4SjqPAqjsWo' }

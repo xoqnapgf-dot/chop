@@ -37,10 +37,12 @@ speed:
     syllables: 15
     seconds: 1.091
     confidence: pending
-    note: '1.091 秒 15 个音节。只算正式录音室歌曲，所以没用他 1992 年的吉尼斯挑战。'
+    note: '1.091 秒 15 个音节。只算正式录音室歌曲，所以没用他 1992 年的吉尼斯挑战。《Hold Up》这一段目前只找到 NahDah 一家的测算；另两份榜单选的是别的歌：NahDah 2021 版《Come Again》1.039 秒 14 个音节 ≈ 13.47，五里亭亭长 2021《Mista Tung》1.76 秒 21 个音节 ≈ 11.9（窗口更长）。三份都把他的峰值放在 12–14 之间。'
     sources:
       - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
       - { title: 'YouTube – NahDah Vebb：[2023] Top 150 Fastest Rappers in the World', url: 'https://www.youtube.com/watch?v=4SjqPAqjsWo' }
+      - { title: 'B站 – NahDah Vebb：Top 150 Fastest Rappers 2021（转载，每条都有算式）', url: 'https://www.bilibili.com/video/BV1Av4y1Z7d7/' }
+      - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
 sources:
   - { title: 'Wikipedia – Twista', url: 'https://en.wikipedia.org/wiki/Twista' }
   - { title: 'Red Bull – Twista tells the history of speed rapping', url: 'https://www.redbull.com/us-en/twista-chopping-history-interview' }

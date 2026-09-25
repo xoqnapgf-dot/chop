@@ -17,6 +17,19 @@ youtube: { channelId: UCJ-fTowMuQF7d69K68A7Ujw, kind: topic }
 photoSource: { site: netease, id: 865007, image: cover, focusX: 0.49, focusY: 0.6, zoom: 1.65 }
 related: [yang-he-su, lil-andy, kindergarten-killer]
 speed:
+  - value: 11.86
+    unit: char/s
+    label: 《超主宰》最快一段
+    kind: measured
+    by: '五里亭亭长 2021'
+    window: burst
+    syllables: 14
+    seconds: 1.18
+    confidence: verified
+    note: '五里亭亭长把它排在中文第 4。石狐九和 2021 年单独测过这首更长的一段：4.08 秒 46 个字 ≈ 11.27，窗口更长、数字略低，两份测算吻合。'
+    sources:
+      - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
+      - { title: 'B站 – 石狐九和：中文快嘴top10（新编）（2021）', url: 'https://www.bilibili.com/video/BV1bh411v7d7/' }
   - value: 10
     unit: char/s
     label: 《健将》中一段 5 秒快嘴（峰值）

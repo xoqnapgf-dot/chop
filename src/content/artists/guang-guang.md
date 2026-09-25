@@ -20,10 +20,11 @@ speed:
     by: '网易 2018 盘点'
     window: long
     confidence: pending
-    note: 网友测算，两篇网络文章都引用了这个数，但没有说明测算方法。
+    note: '网友测算，两篇网络文章都引用了这个数，但都没说明测算方法。五里亭亭长 2021 测同一首最快的一段是 1.8 秒 20 个字 ≈ 11.1，窗口短得多，不能直接比。'
     sources:
       - { title: '网易 – 谁才是中文说唱圈第一快嘴？（2018）', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }
       - { title: '新浪 – MC光光/南京 D-Evil 十二年前的《Speed No1》', url: 'https://k.sina.cn/article_1163858357_m455f11b503300mplv.html' }
+      - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
 sources:
   - { title: '新浪 – MC光光/南京 D-Evil 十二年前的《Speed No1》', url: 'https://k.sina.cn/article_1163858357_m455f11b503300mplv.html' }
   - { title: '网易 – 谁才是中文说唱圈第一快嘴？（2018）', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }

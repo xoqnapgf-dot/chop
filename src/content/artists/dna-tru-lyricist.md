@@ -24,11 +24,13 @@ speed:
     window: burst
     syllables: 19
     seconds: 1.07
-    confidence: pending
-    note: '1.070 秒 19 个音节。Genius 上的社区备注也是约 17.7 SPS，两处说法一致。'
+    confidence: disputed
+    note: '1.070 秒 19 个音节，这是 NahDah 最新的测法，Genius 上的社区备注也写约 17.7。但 NahDah 自己 2021 版测同一首是 1.045 秒 17 个音节 ≈ 16.26；五里亭亭长 2021 取 1.49 秒 21 个音节 ≈ 14.1（窗口更长）。三份榜单都认定这是他最快的歌，只是音节数没对上，所以标"有争议"，按 NahDah 的规则以 2023 版为准。'
     sources:
       - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
       - { title: 'YouTube – DNA - Lightspeed Chopper 3（本人频道）', url: 'https://www.youtube.com/watch?v=_glMTGtNnPI' }
+      - { title: 'B站 – NahDah Vebb：Top 150 Fastest Rappers 2021（转载，每条都有算式）', url: 'https://www.bilibili.com/video/BV1Av4y1Z7d7/' }
+      - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
 sources:
   - { title: 'YouTube – DNA Tru Lyricist 官方频道（简介："rappin over 20 years"）', url: 'https://www.youtube.com/@DNATruLyricist' }
   - { title: 'Bandcamp – DNA Tru Lyricist（简介：David G. Phelps，来自得州泰勒）', url: 'https://dnatrulyricist.bandcamp.com/' }
@@ -61,7 +63,7 @@ DNA Tru Lyricist 本名 David G. Phelps，来自美国得克萨斯州东部的**
 
 **Lightspeed Chopper**（光速 chopper）既是他的歌名，也是他给自己的称号。这个系列从第 1 首做到第 4 首，后来收进了 mixtape《**The Lightspeed Chopper Mixtape**》，同一张里还收了他在 Undaground Choppers 2、3、4 里的段落。
 
-其中《**Lightspeed Chopper 3**》（2015 年 4 月发行）是他最快的歌。第二段主歌开头他就唱：受够了总有人问他的 SPS 是多少。NahDah 2023 年的《Top 150 Fastest Rappers》把他排在**第 9 名**，1.070 秒 19 个音节，约 **17.76 SPS**。这份榜单只收正式录音室歌曲，发现加速就除名。Genius 上的社区备注也是约 17.7，两处说法一致。
+其中《**Lightspeed Chopper 3**》（2015 年 4 月发行）是他最快的歌。第二段主歌开头他就唱：受够了总有人问他的 SPS 是多少。NahDah 2023 年的《Top 150 Fastest Rappers》把他排在**第 9 名**，1.070 秒 19 个音节，约 **17.76 SPS**。这份榜单只收正式录音室歌曲，发现加速就除名，Genius 上的社区备注也写约 17.7。不过 NahDah 自己 2021 版测同一首是 1.045 秒 17 个音节（约 16.26），五里亭亭长 2021 年的全球榜也把这首列为他最快的歌。几份榜单都认这首，只是音节数差了两个，所以本站把这个数标为"有争议"。
 
 ## Undaground Choppers 的常客
 

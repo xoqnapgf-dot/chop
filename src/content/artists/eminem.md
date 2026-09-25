@@ -18,37 +18,47 @@ related: [tech-n9ne]
 speed:
   - value: 10.65
     unit: syl/s
-    label: Godzilla（2020）第三段主歌：31 秒 224 个单词
+    label: Godzilla（2020）第三段主歌末尾：31 秒 330 个音节
     kind: measured
-    by: '维基百科'
+    by: 'Genius'
     window: long
+    syllables: 330
     seconds: 31
     confidence: verified
+    note: 'Genius 数出 224 个单词、330 个音节，330 ÷ 31 ≈ 10.65；维基百科和 Maxim 等媒体引用的都是这组数字。网上另有"30 秒 229 个单词、339 个音节、11.3"的转述，找不到 Genius 原文对应。'
     sources:
+      - { title: 'Genius – Eminem''s "Godzilla" Verse Is Faster Than "Rap God" & "Majesty"（2020-01-23）', url: 'https://genius.com/a/eminem-s-godzilla-verse-is-faster-than-rap-god-majesty' }
+      - { title: 'Maxim – Eminem Breaks World Speed Record With "Godzilla" Verse（转述 Genius 的三组数字）', url: 'https://www.maxim.com/entertainment/eminems-godzilla-breaks-world-speed-record-2020-1/' }
       - { title: 'Wikipedia – Godzilla (Eminem song)', url: 'https://en.wikipedia.org/wiki/Godzilla_(Eminem_song)' }
   - value: 10.3
     unit: syl/s
-    label: Majesty（2018）
+    label: Majesty（2018）：12 秒 123 个音节
     kind: measured
-    by: '维基百科'
-    window: unknown
-    confidence: pending
-    note: 目前只看到 Godzilla 词条里的对比数字，还缺独立来源。
+    by: 'Genius'
+    window: short
+    syllables: 123
+    seconds: 12
+    confidence: verified
+    note: 'Genius 同一篇文章给出的数：12 秒 123 个音节（85 个单词），123 ÷ 12 ≈ 10.25，四舍五入写作 10.3。'
     sources:
+      - { title: 'Genius – Eminem''s "Godzilla" Verse Is Faster Than "Rap God" & "Majesty"（2020-01-23）', url: 'https://genius.com/a/eminem-s-godzilla-verse-is-faster-than-rap-god-majesty' }
+      - { title: 'Maxim – Eminem Breaks World Speed Record With "Godzilla" Verse（转述 Genius 的三组数字）', url: 'https://www.maxim.com/entertainment/eminems-godzilla-breaks-world-speed-record-2020-1/' }
+      - { title: 'Highsnobiety – Eminem''s "Godzilla" May Have Just Smashed a Huge World Record', url: 'https://www.highsnobiety.com/p/eminem-godzilla-fastest-rap-world-record/' }
       - { title: 'Wikipedia – Godzilla (Eminem song)', url: 'https://en.wikipedia.org/wiki/Godzilla_(Eminem_song)' }
-  - value: 9.54
+  - value: 9.63
     unit: syl/s
-    label: Rap God（2013）最快段落：16.45 秒 157 个音节
+    label: Rap God（2013）最快段落：16.3 秒 157 个音节
     kind: measured
-    by: '维基百科'
+    by: 'Genius'
     window: long
     syllables: 157
-    seconds: 16.45
-    confidence: disputed
-    note: 157 ÷ 16.45 ≈ 9.54，但 Godzilla 词条引用的是 9.6，两处口径不一致。
+    seconds: 16.3
+    confidence: verified
+    note: '157 ÷ 16.3 ≈ 9.63，Genius 写作 9.6。维基百科 Rap God 词条把时长记成 16.45 秒（≈ 9.54），音节数一样，只是计时差了 0.15 秒。'
     sources:
+      - { title: 'Genius – Eminem''s "Godzilla" Verse Is Faster Than "Rap God" & "Majesty"（2020-01-23）', url: 'https://genius.com/a/eminem-s-godzilla-verse-is-faster-than-rap-god-majesty' }
+      - { title: 'Maxim – Eminem Breaks World Speed Record With "Godzilla" Verse（转述 Genius 的三组数字）', url: 'https://www.maxim.com/entertainment/eminems-godzilla-breaks-world-speed-record-2020-1/' }
       - { title: 'Wikipedia – Rap God', url: 'https://en.wikipedia.org/wiki/Rap_God' }
-      - { title: 'Wikipedia – Godzilla (Eminem song)', url: 'https://en.wikipedia.org/wiki/Godzilla_(Eminem_song)' }
 sources:
   - { title: 'Wikipedia – Eminem', url: 'https://en.wikipedia.org/wiki/Eminem' }
   - { title: 'Wikipedia – Rap God', url: 'https://en.wikipedia.org/wiki/Rap_God' }

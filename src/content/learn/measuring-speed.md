@@ -16,6 +16,8 @@ sources:
   - { title: 'B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017（NahDah 2017 版搬运）', url: 'https://www.bilibili.com/video/BV11x411L79b/' }
   - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
   - { title: 'NahDah Vebb – 2021 版榜单曲目文档（[outdated] Top 150, 2021）', url: 'https://docs.google.com/document/d/1UpOgX1BNIrPTK4F1JwibltfDSiVjJMLcQFbbmueJvUs' }
+  - { title: 'B站 – NahDah Vebb：Top 150 Fastest Rappers 2021（转载，每条都有算式）', url: 'https://www.bilibili.com/video/BV1Av4y1Z7d7/' }
+  - { title: 'Genius – Eminem''s "Godzilla" Verse Is Faster Than "Rap God" & "Majesty"（2020）', url: 'https://genius.com/a/eminem-s-godzilla-verse-is-faster-than-rap-god-majesty' }
   - { title: 'SPS and Chopper Rap Wiki – Crucified', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Crucified' }
   - { title: 'SPS and Chopper Rap Wiki – Infinite choppers 1', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Infinite_choppers_1' }
   - { title: '新浪 – 赵辰龙公开回应（2022-04-01）', url: 'https://k.sina.cn/article_1163858357_v455f11b5019012ps5.html' }
@@ -86,16 +88,18 @@ NahDah Vebb 在 YouTube 上做"最快说唱歌手 Top 150"榜单，属于美洲�
 
 ### 中段：前后差不多
 
-拿 NahDah 的 2021 版和 2023 版逐人对比，很多人用的是**同一首歌**，名次也相近：
+拿 NahDah 的 2021 版和 2023 版逐人对比，很多人用的是**同一首歌**，两次各自计时，数字几乎一样：
 
 | 人物 | 歌 | 2021 版 | 2023 版 |
 |---|---|---|---|
-| DNA Tru Lyricist | Lightspeed Chopper 3 | 第 11 | 第 9（17.76） |
-| Twisted Insane | Dome Split | 第 14 | 第 32（15.24） |
-| K-Fix | Our Time | 第 15 | 第 22（15.60） |
-| Watsky | GOAT Fast Rap | 第 18 | 第 24（15.47） |
-| SPLXT | Undaground Choppers 3 | 第 17 | 第 26（15.34） |
-| Kardiyak | Illest Choppers 4 | 第 19 | 第 28（15.28） |
+| Twisted Insane | Dome Split | 第 14 · 16 ÷ 1.032 ≈ 15.50 | 第 32 · 16 ÷ 1.050 ≈ 15.24 |
+| K-Fix | Our Time | 第 15 · 16 ÷ 1.038 ≈ 15.44 | 第 22 · 15.60 |
+| Watsky | GOAT Fast Rap | 第 18 · 16 ÷ 1.040 ≈ 15.38 | 第 24 · 15.47 |
+| SPLXT | Undaground Choppers 3 | 第 17 · 16 ÷ 1.039 ≈ 15.39 | 第 26 · 15.34 |
+| Kardiyak | Illest Choppers 4 | 第 19 · 16 ÷ 1.051 ≈ 15.22 | 第 28 · 15.28 |
+| DNA Tru Lyricist | Lightspeed Chopper 3 | 第 11 · 17 ÷ 1.045 ≈ 16.26 | 第 9 · 19 ÷ 1.070 ≈ 17.76 |
+
+前五行两次都数出 16 个音节，差距都在 0.3 以内；DNA 这首是例外，2023 版多数出了 2 个音节。
 
 名次有些往后挪，主要是因为 2023 版收进了更多新人、新歌，不是这些人的数字变了。2021 到 2023 的大变动几乎都来自**规则**：纪录挑战不再算（Rebel XD 从第 1 落榜，Outsider 从第 13 掉到第 54）、加速的被除名（Mizury Mize、Leach，Interchopper 换歌），以及新歌上榜（Crucified 的《Onion Chopper》、Idylll 的《Tha Shade》）。
 
@@ -115,7 +119,7 @@ NahDah Vebb 在 YouTube 上做"最快说唱歌手 Top 150"榜单，属于美洲�
 |---|---|
 | **窗口不同** | 1 秒爆发 vs 5 秒短段 vs 整段平均（见上文） |
 | **计时起止点不同** | 从第一个音节算起，还是从小节线算起 |
-| **四舍五入** | Rap God 最快段落：157 ÷ 16.45 ≈ 9.54，另一处引用写 9.6 |
+| **计时差一点** | Rap God 最快段落 157 个音节：Genius 计 16.3 秒（≈ 9.6），维基百科 Rap God 词条计 16.45 秒（≈ 9.54） |
 | **来源本身冲突** | Outsider：一个词条写"超过 16"，另一个写"21" |
 | **单位混用** | 南征北战《饕餮》宣传为"332 BPM"，但伴奏是 83 BPM，332 = 83 × 4，只是把每拍切成 4 份；换成每秒约 5.5 个音，并不算特别快 |
 | **认证类别取消** | 吉尼斯后来取消了"最快说唱者"类别，Twista 1992 年的纪录成了历史纪录 |
