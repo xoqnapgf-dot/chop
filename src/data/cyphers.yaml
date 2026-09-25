@@ -1,0 +1,30 @@
+# chopper cypher 的逐人测算。数据来自社区 wiki，只收录艺名和公开作品里的数据，不收录个人信息。
+- id: infinite-choppers-1
+  title: Infinite Choppers
+  host: DOWN6
+  youtube: EBLVVhPbv3Y
+  note: 全长约 17 分 57 秒，18 位参与者。wiki 记载由 Kal Paseo 混音、母带和制作，测算者是 Wedere。每人取 1 秒左右的爆发段落。
+  calculator: Wedere
+  window: burst
+  entries:
+    - { name: 'Kal paseo', sps: 21.13, syllables: 22, seconds: 1.041 }
+    - { name: 'Crucified', sps: 21, syllables: 21, seconds: 1.000 }
+    - { name: 'Ezeq', sps: 20.31, syllables: 22, seconds: 1.083 }
+    - { name: 'The jackal', sps: 20.04, syllables: 21, seconds: 1.048 }
+    - { name: 'LEECHY!', sps: 16, syllables: 16, seconds: 1.000 }
+    - { name: 'Wedere', sps: 15.22, syllables: 16, seconds: 1.051 }
+    - { name: 'Branx The King', sps: 15, syllables: 15, seconds: 1.000 }
+    - { name: 'DOWN6', sps: 15, syllables: 15, seconds: 1.000 }
+    - { name: 'Tokumei', sps: 15, syllables: 15, seconds: 1.000 }
+    - { name: 'SPLXT', sps: 15, syllables: 15, seconds: 1.000 }
+    - { name: 'Affra', sps: 14.22, syllables: 15, seconds: 1.055 }
+    - { name: '919SLUM', sps: 14, syllables: 14, seconds: 1.000 }
+    - { name: 'Lil Bustola', sps: 13.56, syllables: 17, seconds: 1.254 }
+    - { name: 'Trollator', sps: 13.51, syllables: 14, seconds: 1.036 }
+    - { name: 'Dvagoh', sps: 13.44, syllables: 14, seconds: 1.042 }
+    - { name: 'AceThaGoblin', sps: 12.70, syllables: 16, seconds: 1.260 }
+    - { name: 'Sapo Reflexivo', sps: 10.36, syllables: 12, seconds: 1.158 }
+    - { name: 'HXLLXW VII', sps: 10.19, syllables: 11, seconds: 1.079 }
+  sources:
+    - { title: 'SPS and Chopper Rap Wiki – Infinite choppers 1', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Infinite_choppers_1' }
+    - { title: 'YouTube – DOWN6 - INFINITE CHOPPERS', url: 'https://www.youtube.com/watch?v=EBLVVhPbv3Y' }

@@ -7,6 +7,8 @@ import SpeedChart from '@/components/SpeedChart.astro';
 import SectionHeading from '@/components/SectionHeading.astro';
 import Globe from '@/components/Globe.astro';
 import Confidence from '@/components/Confidence.astro';
+import LiteYouTube from '@/components/LiteYouTube.astro';
+import { url } from '@/lib/url';
 
 const artists = (await getCollection('artists', (a) => a.data.country !== 'CN')).sort(
   (a, b) => (a.data.activeSince ?? 9999) - (b.data.activeSince ?? 9999),
@@ -14,6 +16,10 @@ const artists = (await getCollection('artists', (a) => a.data.country !== 'CN'))
 const tracks = (await getCollection('tracks', (t) => t.data.scene === 'world')).sort((a, b) => (a.data.year ?? 0) - (b.data.year ?? 0));
 const events = (await getCollection('timeline', (e) => e.data.scene === 'world')).sort((a, b) => a.data.year - b.data.year);
 const wwc = tracks.find((t) => t.id === 'worldwide-choppers');
+const cypher = (await getCollection('cyphers')).find((c) => c.id === 'infinite-choppers-1');
+const cypherMax = cypher ? Math.ceil(Math.max(...cypher.data.entries.map((e) => e.sps)) / 5) * 5 : 25;
+// 本站建档的人物，表格里可以直接链过去
+const profiled = new Map(artists.map((a) => [a.data.name.toLowerCase(), a.id]));
 ---
 
 <Base title="世界" description="世界 chopper 地图：从美国中西部到土耳其、韩国、菲律宾，在点阵地球上看 chopper 如何传播。">
@@ -51,27 +57,87 @@ const wwc = tracks.find((t) => t.id === 'worldwide-choppers');
     )
   }
 
+  {
+    cypher && (
+      <section id="sps" class="container-x scroll-mt-24 pt-28">
+        <SectionHeading index="02" eyebrow="SPS community" title="SPS 社区：把语速算到小数点后三位">
+          <p class="mt-4 max-w-3xl text-ink-2">
+            SPS 是 syllables per second（每秒音节数）。海外有一群 chopper 专门在 YouTube 和 Discord 上做"测速"：取 1 秒左右的爆发段落，写出"音节数 / 秒数"的算式，发现剪辑拼接就作废，算错了会公开更正。
+          </p>
+        </SectionHeading>
+
+        <div class="grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
+          <div>
+            <LiteYouTube id={cypher.data.youtube} title={`${cypher.data.host} - ${cypher.data.title}`} channel={cypher.data.host} official />
+            <div class="card mt-5 p-5 text-sm leading-relaxed text-ink-2">
+              <p class="font-semibold text-ink">{cypher.data.host} – {cypher.data.title}</p>
+              <p class="mt-2">{cypher.data.note}</p>
+              <p class="mt-3 rounded-xl border border-line bg-surface-2 p-3 text-xs">
+                <strong class="text-ink">本站的对照结果：</strong>用"音节数 ÷ 秒数"复算了表里全部 {cypher.data.entries.length} 条，和 wiki 写的数值全部一致。数字本身来自社区单一来源，所以整体标为"待核实"。
+              </p>
+              <p class="mt-3 text-xs text-ink-3">
+                这个社区里有不少未成年的创作者，本站只引用公开作品里的艺名和测速数据，不收录任何人的年龄、真名或联系方式。
+              </p>
+              <p class="mt-3 flex flex-wrap gap-x-4 text-xs">
+                {cypher.data.sources.map((s) => <a href={s.url} target="_blank" rel="noopener nofollow" class="link-u text-ink-3 hover:text-ink">{s.title} ↗</a>)}
+              </p>
+            </div>
+          </div>
+
+          <div class="card p-5 sm:p-6">
+            <div class="flex items-center justify-between gap-3">
+              <p class="eyebrow">逐人爆发速度 · 测算：{cypher.data.calculator}</p>
+              <Confidence level="pending" />
+            </div>
+            <ol class="cy-list mt-4 grid gap-1.5">
+              {cypher.data.entries.map((e, i) => {
+                const slug = profiled.get(e.name.toLowerCase());
+                return (
+                  <li class="cy-row grid items-center gap-3" style={`--w:${(e.sps / cypherMax) * 100}%;--i:${i}`}>
+                    <span class="font-mono text-xs tabular-nums text-ink-3">{String(i + 1).padStart(2, '0')}</span>
+                    <span class="min-w-0">
+                      <span class="flex items-baseline justify-between gap-2">
+                        {slug ? (
+                          <a href={url(`choppers/${slug}/`)} class="truncate text-sm font-semibold text-accent-text link-u">{e.name} →</a>
+                        ) : (
+                          <span class="truncate text-sm font-semibold">{e.name}</span>
+                        )}
+                        <span class="shrink-0 font-mono text-[11px] text-ink-3">{e.syllables}/{e.seconds.toFixed(3)}</span>
+                      </span>
+                      <span class="cy-bar mt-1 block h-1.5 rounded-full" />
+                    </span>
+                    <span class="text-right font-mono text-sm tabular-nums">{e.sps}</span>
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
   <section class="container-x pt-28">
-    <SectionHeading index="02" eyebrow="People" title="世界人物" href="choppers/?scene=world" linkLabel="在人物库里筛选" />
+    <SectionHeading index="03" eyebrow="People" title="世界人物" href="choppers/?scene=world" linkLabel="在人物库里筛选" />
     <div class="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
       {artists.map((a) => <ArtistCard artist={a} />)}
     </div>
   </section>
 
   <section class="container-x pt-28">
-    <SectionHeading index="03" eyebrow="Speed" title="世界语速数据" href="learn/measuring-speed/" linkLabel="数据怎么测" />
+    <SectionHeading index="04" eyebrow="Speed" title="世界语速数据" href="learn/measuring-speed/" linkLabel="数据怎么测" />
     <div class="card p-5 sm:p-8"><SpeedChart scene="world" /></div>
   </section>
 
   <section class="container-x pt-28">
-    <SectionHeading index="04" eyebrow="Tracks" title="世界曲目" href="tracks/?scene=world" linkLabel="曲目库" />
+    <SectionHeading index="05" eyebrow="Tracks" title="世界曲目" href="tracks/?scene=world" linkLabel="曲目库" />
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {tracks.map((t) => <div class="flex"><TrackCard track={t} /></div>)}
     </div>
   </section>
 
   <section class="container-x pt-28">
-    <SectionHeading index="05" eyebrow="History" title="世界 Chopper 时间线" href="timeline/?scene=world" linkLabel="完整时间线" />
+    <SectionHeading index="06" eyebrow="History" title="世界 Chopper 时间线" href="timeline/?scene=world" linkLabel="完整时间线" />
     <ol class="grid gap-3">
       {
         events.map((e) => (
@@ -96,5 +162,11 @@ const wwc = tracks.find((t) => t.id === 'worldwide-choppers');
     background:
       radial-gradient(70% 90% at 100% 0%, color-mix(in oklab, var(--accent) 16%, transparent), transparent 70%),
       var(--bg);
+  }
+  .cy-row {
+    grid-template-columns: 1.5rem minmax(0, 1fr) 3rem;
+  }
+  .cy-bar {
+    background: linear-gradient(90deg, var(--accent) var(--w), var(--line) var(--w));
   }
 </style>

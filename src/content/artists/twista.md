@@ -19,6 +19,9 @@ speed:
     unit: syl/s
     label: 1992 吉尼斯认证：55 秒 598 个音节
     kind: official
+    window: long
+    syllables: 598
+    seconds: 55
     confidence: verified
     note: 598 ÷ 55 ≈ 10.87。吉尼斯后来取消了这个类别，所以它是历史纪录，不是现行纪录。
     sources:

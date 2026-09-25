@@ -172,6 +172,15 @@
       },
       "color": "#080808",
       "fetchedAt": "2026-09-25"
+    },
+    "crucified": {
+      "channelUrl": "https://www.youtube.com/channel/UCWISfBZB_1rmvUb3FcFVjBg",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_kBYx1qMLVDn8c8-JXwbeJgRGdrVuvwct_SzMN3pJEGLg=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/X0IxzEj9uJxc5uDod1LC1w7MH1PX3hKNlRMC_olWSPN-OZ0lcLKcrfXN8gk4-dIq1Zh28_Db=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-25"
     }
   },
   "tracks": {
@@ -299,6 +308,21 @@
       "video": "https://www.youtube.com/watch?v=yvWVfYwpMD0",
       "size": "maxresdefault",
       "color": "#181818"
+    },
+    "infinite-choppers": {
+      "video": "https://www.youtube.com/watch?v=EBLVVhPbv3Y",
+      "size": "sddefault",
+      "color": "#080808"
+    },
+    "power-up": {
+      "video": "https://www.youtube.com/watch?v=y0J3LJBohWQ",
+      "size": "sddefault",
+      "color": "#080808"
+    },
+    "that-music": {
+      "video": "https://www.youtube.com/watch?v=iFrZqDMb884",
+      "size": "sddefault",
+      "color": "#080808"
     }
   }
 }

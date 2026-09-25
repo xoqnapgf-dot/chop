@@ -1,22 +1,27 @@
 ---
 /**
- * 语速对比图：每条说法一根横条，颜色表示可信度（配图标和文字，不单靠颜色）。
+ * 语速对比图：按"测量窗口"分组，同一组内才可以直接比较。
+ * 每条一根横条，颜色表示可信度（配图标和文字，不单靠颜色）；非"已证实"加斜线纹理。
  * 竖向参考线是 90 BPM 下 16 分音符 / 16 分三连音 / 32 分音符对应的每秒音符数。
  */
 import { getCollection } from 'astro:content';
-import { CONFIDENCE, SPEED_KIND, UNIT, displayName } from '@/lib/labels';
+import { CONFIDENCE, SPEED_KIND, UNIT, WINDOW, displayName, type SpeedWindow } from '@/lib/labels';
 import { url } from '@/lib/url';
 
-interface Props { limit?: number; compact?: boolean; scene?: 'china' | 'world' }
-const { limit, compact = false, scene } = Astro.props;
+interface Props { scene?: 'china' | 'world' }
+const { scene } = Astro.props;
 
 const artists = (await getCollection('artists')).filter((a) => !scene || (scene === 'china') === (a.data.country === 'CN'));
-let rows = artists
+const rows = artists
   .flatMap((a) => a.data.speed.map((s) => ({ ...s, artist: displayName(a.data), slug: a.id })))
   .sort((a, b) => b.value - a.value);
-if (limit) rows = rows.slice(0, limit);
 
-const max = Math.ceil(Math.max(...rows.map((r) => r.value)) / 5) * 5;
+const groups = (Object.keys(WINDOW) as SpeedWindow[])
+  .sort((a, b) => WINDOW[a].order - WINDOW[b].order)
+  .map((w) => ({ w, rows: rows.filter((r) => r.window === w) }))
+  .filter((g) => g.rows.length > 0);
+
+const max = Math.max(5, Math.ceil(Math.max(...rows.map((r) => r.value), 0) / 5) * 5);
 const ticks = Array.from({ length: max / 5 + 1 }, (_, i) => i * 5);
 const guides = [
   { v: 6, label: '16 分' },
@@ -24,12 +29,15 @@ const guides = [
   { v: 12, label: '32 分' },
 ];
 const pct = (v: number) => `${(v / max) * 100}%`;
+const formula = (r: (typeof rows)[number]) =>
+  r.syllables && r.seconds ? `${r.syllables} ÷ ${r.seconds} ≈ ${(r.syllables / r.seconds).toFixed(2)}` : r.seconds ? `测量时长 ${r.seconds} 秒` : '';
+let i = 0;
 ---
 
 <figure class="speed-chart">
   <figcaption class="mb-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-ink-3">
     <span>单位：每秒音节数（中文按字/秒近似）</span>
-    {(['verified', 'disputed', 'pending'] as const).map((k) => (
+    {(['verified', 'disputed', 'pending', 'debunked'] as const).filter((k) => rows.some((r) => r.confidence === k)).map((k) => (
       <span class="inline-flex items-center gap-1.5">
         <span class="grid size-3.5 place-items-center rounded-full text-[9px] font-bold text-bg" style={`background:${CONFIDENCE[k].color}`}>{CONFIDENCE[k].icon}</span>
         {CONFIDENCE[k].label}
@@ -38,47 +46,62 @@ const pct = (v: number) => `${(v / max) * 100}%`;
     <span class="inline-flex items-center gap-1.5"><span class="h-3 border-l border-dashed border-ink-3"></span>90 BPM 参考线</span>
   </figcaption>
 
-  <div class="relative">
-    <!-- 参考线 -->
-    <div class="pointer-events-none absolute inset-y-0 hidden sm:block" style="left:var(--label-w);right:calc(3.5rem + 1rem)" aria-hidden="true">
-      {guides.map((g) => (
-        <div class="absolute inset-y-0 border-l border-dashed border-line-strong" style={`left:${pct(g.v)}`}>
-          <span class="absolute -top-5 -translate-x-1/2 whitespace-nowrap font-mono text-[10px] text-ink-3">{g.label} {g.v}</span>
-        </div>
-      ))}
-    </div>
+  <p class="mb-6 rounded-xl border border-line bg-surface-2 px-4 py-3 text-xs leading-relaxed text-ink-2">
+    <strong class="text-ink">只比同一组。</strong>1 秒的爆发速度和几十秒的平均速度不是一回事：同一个人，爆发可以是平均的两倍。所以下面按测量窗口分组，跨组比较没有意义。
+  </p>
 
-    <ol class="relative grid gap-3 pt-2">
-      {rows.map((r, i) => {
-        const c = CONFIDENCE[r.confidence];
-        return (
-          <li class="row group grid items-center gap-x-4 gap-y-1.5" style={`--c:${c.color};--i:${i}`}>
-            <a href={url(`choppers/${r.slug}/`)} class="min-w-0">
-              <span class="block truncate text-sm font-semibold text-ink group-hover:text-accent-text">{r.artist}</span>
-              {!compact && <span class="block truncate text-xs text-ink-3">{r.label}</span>}
-            </a>
-            <div class="track relative h-7">
-              <div class="bar absolute inset-y-0 left-0 rounded-r-[4px]" style={`width:${pct(r.value)}`} data-conf={r.confidence}></div>
-              <div class="tip pointer-events-none absolute bottom-full left-0 z-10 mb-2 w-72 max-w-[80vw] rounded-xl border border-line bg-surface p-3 text-xs opacity-0 shadow-xl transition group-hover:opacity-100 group-focus-within:opacity-100">
-                <p class="font-semibold text-ink">{r.artist} · {r.value} {UNIT[r.unit]}</p>
-                <p class="mt-1 text-ink-2">{r.label}</p>
-                <p class="mt-1 text-ink-3">{SPEED_KIND[r.kind]} · {c.label} · {r.sources.length} 个来源</p>
-                {r.note && <p class="mt-1.5 text-ink-2">{r.note}</p>}
+  {
+    groups.map((g) => (
+      <section class="group-block mt-6 first-of-type:mt-0">
+        <header class="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+          <h4 class="font-display text-base font-semibold">{WINDOW[g.w].name}</h4>
+          <span class="text-xs text-ink-3">{WINDOW[g.w].desc}</span>
+        </header>
+        <div class="relative">
+          <div class="pointer-events-none absolute inset-y-0 hidden sm:block" style="left:var(--label-w);right:calc(3.5rem + 1rem)" aria-hidden="true">
+            {guides.map((gd) => (
+              <div class="absolute inset-y-0 border-l border-dashed border-line-strong" style={`left:${pct(gd.v)}`}>
+                <span class="absolute -top-4 -translate-x-1/2 whitespace-nowrap font-mono text-[10px] text-ink-3">{gd.label}</span>
               </div>
-            </div>
-            <span class="flex items-center justify-end gap-1.5 font-mono text-sm tabular-nums text-ink">
-              <span class="grid size-3.5 place-items-center rounded-full text-[9px] font-bold text-bg" style={`background:${c.color}`} title={c.label}>{c.icon}</span>
-              {r.value}
-            </span>
-          </li>
-        );
-      })}
-    </ol>
+            ))}
+          </div>
+          <ol class="relative grid gap-3 pt-2">
+            {g.rows.map((r) => {
+              const c = CONFIDENCE[r.confidence];
+              const f = formula(r);
+              const n = i++;
+              return (
+                <li class="row group grid items-center gap-x-4 gap-y-1.5" style={`--c:${c.color};--i:${n}`}>
+                  <a href={url(`choppers/${r.slug}/`)} class="min-w-0">
+                    <span class="block truncate text-sm font-semibold text-ink group-hover:text-accent-text">{r.artist}</span>
+                    <span class="block truncate text-xs text-ink-3">{r.label}</span>
+                  </a>
+                  <div class="track relative h-7">
+                    <div class="bar absolute inset-y-0 left-0 rounded-r-[4px]" style={`width:${pct(r.value)}`} data-conf={r.confidence} />
+                    <div class="tip pointer-events-none absolute bottom-full left-0 z-10 mb-2 w-72 max-w-[80vw] rounded-xl border border-line bg-surface p-3 text-xs opacity-0 shadow-xl transition group-hover:opacity-100 group-focus-within:opacity-100">
+                      <p class="font-semibold text-ink">{r.artist} · {r.value} {UNIT[r.unit]}</p>
+                      <p class="mt-1 text-ink-2">{r.label}</p>
+                      {f && <p class="mt-1 font-mono text-ink-2">{f}</p>}
+                      <p class="mt-1 text-ink-3">{WINDOW[r.window].name} · {SPEED_KIND[r.kind]} · {c.label} · {r.sources.length} 个来源</p>
+                      {r.note && <p class="mt-1.5 text-ink-2">{r.note}</p>}
+                    </div>
+                  </div>
+                  <span class="flex items-center justify-end gap-1.5 font-mono text-sm tabular-nums text-ink">
+                    <span class="grid size-3.5 place-items-center rounded-full text-[9px] font-bold text-bg" style={`background:${c.color}`} title={c.label}>{c.icon}</span>
+                    <span class:list={{ 'line-through opacity-60': r.confidence === 'debunked' }}>{r.value}</span>
+                  </span>
+                </li>
+              );
+            })}
+          </ol>
+        </div>
+      </section>
+    ))
+  }
 
-    <div class="axis mt-3 hidden font-mono text-[10px] text-ink-3 sm:block" aria-hidden="true">
-      <div class="relative h-4">
-        {ticks.map((t) => <span class="absolute -translate-x-1/2" style={`left:${pct(t)}`}>{t}</span>)}
-      </div>
+  <div class="axis mt-3 hidden font-mono text-[10px] text-ink-3 sm:block" aria-hidden="true">
+    <div class="relative h-4">
+      {ticks.map((t) => <span class="absolute -translate-x-1/2" style={`left:${pct(t)}`}>{t}</span>)}
     </div>
   </div>
 
@@ -86,15 +109,17 @@ const pct = (v: number) => `${(v / max) * 100}%`;
     <summary class="cursor-pointer text-ink-3 hover:text-ink">查看数据表</summary>
     <div class="mt-3 overflow-x-auto">
       <table class="w-full text-left text-xs">
-        <thead class="text-ink-3"><tr><th class="py-2 pr-4">人物</th><th class="pr-4">说法</th><th class="pr-4">数值</th><th class="pr-4">类型</th><th>可信度</th></tr></thead>
+        <thead class="text-ink-3"><tr><th class="py-2 pr-4">人物</th><th class="pr-4">说法</th><th class="pr-4">数值</th><th class="pr-4">窗口</th><th class="pr-4">算式</th><th class="pr-4">类型</th><th>可信度</th></tr></thead>
         <tbody>
-          {rows.map((r) => (
+          {groups.flatMap((g) => g.rows).map((r) => (
             <tr class="border-t border-line">
               <td class="py-2 pr-4 text-ink">{r.artist}</td>
               <td class="pr-4 text-ink-2">{r.label}</td>
-              <td class="pr-4 font-mono">{r.value} {UNIT[r.unit]}</td>
-              <td class="pr-4 text-ink-2">{SPEED_KIND[r.kind]}</td>
-              <td>{CONFIDENCE[r.confidence].label}</td>
+              <td class="pr-4 font-mono whitespace-nowrap">{r.value} {UNIT[r.unit]}</td>
+              <td class="pr-4 whitespace-nowrap">{WINDOW[r.window].name}</td>
+              <td class="pr-4 font-mono text-ink-2 whitespace-nowrap">{formula(r) || '—'}</td>
+              <td class="pr-4 text-ink-2 whitespace-nowrap">{SPEED_KIND[r.kind]}</td>
+              <td class="whitespace-nowrap">{CONFIDENCE[r.confidence].label}</td>
             </tr>
           ))}
         </tbody>
@@ -108,7 +133,7 @@ const pct = (v: number) => `${(v / max) * 100}%`;
     --label-w: 0px;
   }
   .row {
-    grid-template-columns: 1fr 3.5rem;
+    grid-template-columns: minmax(0, 1fr) 3.5rem;
   }
   .row > a {
     grid-column: 1 / -1;
@@ -118,7 +143,7 @@ const pct = (v: number) => `${(v / max) * 100}%`;
       --label-w: calc(13rem + 1rem);
     }
     .row {
-      grid-template-columns: 13rem 1fr 3.5rem;
+      grid-template-columns: 13rem minmax(0, 1fr) 3.5rem;
     }
     .row > a {
       grid-column: auto;
@@ -128,6 +153,13 @@ const pct = (v: number) => `${(v / max) * 100}%`;
       margin-right: calc(3.5rem + 1rem);
     }
   }
+  .group-block + .group-block {
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+  }
+  .group-block header + div {
+    padding-top: 0.75rem;
+  }
   .track {
     background: linear-gradient(90deg, var(--surface-2), transparent);
     border-radius: 4px;
@@ -136,11 +168,14 @@ const pct = (v: number) => `${(v / max) * 100}%`;
     background: var(--c);
     transform-origin: left;
     animation: grow 1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
-    animation-delay: calc(var(--i) * 60ms);
+    animation-delay: calc(var(--i) * 50ms);
   }
   /* 非"已证实"的数据加斜线纹理，色弱和打印时也能区分 */
   .bar:not([data-conf='verified']) {
     background: repeating-linear-gradient(135deg, var(--c) 0 6px, color-mix(in oklab, var(--c) 55%, transparent) 6px 10px);
+  }
+  .bar[data-conf='debunked'] {
+    opacity: 0.55;
   }
   @keyframes grow {
     from {
