@@ -225,7 +225,7 @@
 - id: 2017-nahdah-bilibili
   year: 2017
   title: NahDah 的榜单被搬到 B 站
-  body: B 站 UP 主 Fatality丶九头龙 搬运了 NahDah 的 2017 年《Top 150 Fastest Rappers》。榜单的数字后来被证明虚高（比如把 Crucified 的《Power Up》写成 28.3 SPS），但这个视频让很多中国听众第一次认识了 chop 和 SPS。
+  body: B 站 UP 主 Fatality丶九头龙 搬运了 NahDah 的 2017 年《Top 150 Fastest Rappers》。榜单的数字后来被证明虚高（前三名 Sabotahe 27.4、The Jackal 26.5、Crucified 25.3，到 NahDah 2023 版分别是 21.01、15.27、21.09），但这个视频让很多中国听众第一次认识了 chop 和 SPS。
   scene: china
   sources:
     - { title: 'B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017（截止到2017/9）', url: 'https://www.bilibili.com/video/BV11x411L79b/' }

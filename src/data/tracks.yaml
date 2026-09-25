@@ -123,7 +123,7 @@
   title: Slow Jamz
   artists: [twista]
   credit: Twista ft. Kanye West & Jamie Foxx
-  year: 2004
+  year: 2003
   album: Kamikaze
   youtube: jI-w4gvkCkQ
   bilibili: BV1124y1U768
@@ -131,7 +131,7 @@
   youtubeChannel: TWISTA
   officialUpload: true
   scene: world
-  note: 快嘴也能拿冠军单曲：Twista 的主流代表作。
+  note: 快嘴也能拿冠军单曲：Twista 的主流代表作。2003 年 11 月作为单曲发行，2004 年 2 月登上 Billboard Hot 100 第一，同年收进专辑《Kamikaze》。
   sources:
     - { title: 'Wikipedia – Twista', url: 'https://en.wikipedia.org/wiki/Twista' }
     - { title: 'Wikipedia – Slow Jamz', url: 'https://en.wikipedia.org/wiki/Slow_Jamz' }
@@ -334,6 +334,20 @@
   note: 'SPS 社区最有代表性的 chopper cypher 之一，2023 年 7 月首发，全长约 18 分钟，网易云署名 18 位参与者，SPS wiki 上有逐人的测算表。'
   sources:
     - { title: 'SPS and Chopper Rap Wiki – Infinite choppers 1', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Infinite_choppers_1' }
+- id: uno
+  title: Uno
+  artists: [don-xperto]
+  credit: Don Xperto
+  scene: world
+  year: 2008
+  youtube: 1WFS34VWsYY
+  youtubeChannel: Don Xperto
+  officialUpload: true
+  note: '他自称"世界上最快的歌"的成名作：简介说 2007 年录好，2008 年 10 月上传，靠它上了墨西哥的电视节目。NahDah 2017 版按这首把他排在第 5（约 24.1 SPS），后来因为他的歌长期加速，把他永久除名。'
+  confidence: disputed
+  sources:
+    - { title: 'SoundCloud – donxperto（本人简介）', url: 'https://soundcloud.com/donxperto' }
+    - { title: 'NahDah Vebb – 2023 榜除名说明（Don Xperto 一节）', url: 'https://docs.google.com/document/d/1DfcPmT5YCWYwDRP-uyFMEthi9n7ctGRsK2C3QxiFJrA' }
 - id: power-up
   title: Power Up
   artists: [crucified]
