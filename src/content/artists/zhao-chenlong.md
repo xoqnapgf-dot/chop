@@ -19,12 +19,16 @@ sources:
   - { title: '网易 – 自爆身份？幼稚园杀手就是赵辰龙？？（2021-06-26）', url: 'https://www.163.com/dy/article/GDEPBML10512SDU4.html' }
   - { title: '搜狐 – 赵辰龙再发声（2024-11-29）', url: 'https://m.sohu.com/a/831671863_121956424/' }
   - { title: 'B站 – 赵辰龙直播中演示幸存者联盟的各种声音，表示不是变速器', url: 'https://www.bilibili.com/video/BV19Y4y1t7fw/' }
-  - { title: 'B站 – 山东卫视《超强音浪》南征北战《醉人》（赵辰龙快嘴段落）', url: 'https://www.bilibili.com/video/BV1vW411r7nh/' }
+  - { title: 'B站 – 山东卫视《超强音浪》南征北战醉人（赵辰龙）10 秒快嘴', url: 'https://www.bilibili.com/video/BV1vW411r7nh/' }
+  - { title: 'B站 – 南征北战醉人嘴有多快，《饕餮》快嘴部分 0.25 倍和两倍效果（2019）', url: 'https://www.bilibili.com/video/BV1Vb411h7kH/' }
+  - { title: 'B站 – 不愧是赵辰龙！用"金属风暴语速"的 rap 来缓解上台前的压力（南征北战访谈片段，2019）', url: 'https://www.bilibili.com/video/BV1UJ411R7Ew/' }
+  - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021，收了他的《饕餮》现场版）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
+  - { title: 'B站 – 嘻笑堂：醉人赵辰龙又发歌了！（2019）', url: 'https://www.bilibili.com/video/BV1DJ41167c8/' }
 ---
 
 赵辰龙来自广西桂林，是瑶族。他是 2012 年 10 月 1 日出道的组合**南征北战**（NZBZ）的成员，在组合里负责音乐制作和作词。
 
-他以**快嘴**和**多变的声线**出名。有网络资料称，电影《长城》推广曲 《**饕餮**》（2016）里的快嘴段落就是他唱的。不过这一点本站还没找到官方说明，暂标待核实。
+他在圈里也叫**醉人**，以**快嘴**和**多变的声线**出名。电影《长城》推广曲《**饕餮**》（2016）里的快嘴段落就是他唱的：官方发行只署组合名，但 B 站上的慢放分析、南征北战的访谈片段都把这段快嘴归到他名下，五里亭亭长 2021 年的中文语速排行也收了他唱的《饕餮》现场版。
 
 ## "一个字一个字拼接"是玩笑
 

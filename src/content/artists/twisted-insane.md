@@ -39,4 +39,4 @@ Twisted Insane 的风格受 Bone Thugs-n-Harmony、Twista、Busta Rhymes 影响�
 
 他参与的 "Worldwide Choppers"（2011）在 Bubbling Under Hot 100 排到第 4 名，是他商业上最成功的一次。代表专辑有 *Shoot for the Face*（2006）和 *Voodoo*（2015）。
 
-他也和德州的地下 chopper Crucified 合作过，比如 2012 年的《Wicked》。
+他也和德州的地下 chopper Crucified 合作过，比如 2011 年的《Wicked》。

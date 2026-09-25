@@ -109,7 +109,7 @@ sources:
 
 Crucified 来自美国得克萨斯州的新布朗费尔斯，1987 年生。他从 2004 年开始发歌，唱了二十多年，频道名里的 830 是当地的电话区号。
 
-他不算主流，但和老一辈 chopper 有实打实的交集：和 Bone Thugs-n-Harmony 的 **Bizzy Bone** 合作了《**Still We Breathe**》（2012），和 **Twisted Insane** 合作了《**Wicked**》（2012），还和 Three 6 Mafia 的 Lord Infamous 合作过。
+他不算主流，但和老一辈 chopper 有实打实的交集：和 Bone Thugs-n-Harmony 的 **Bizzy Bone** 合作了《**Still We Breathe**》，和 **Twisted Insane** 合作了《**Wicked**》（两首都是 2011 年先在 YouTube 发布、2012 年收进专辑《The Birth of Tragedy》），还和 Three 6 Mafia 的 Lord Infamous 合作过。
 
 ## 吉尼斯挑战
 

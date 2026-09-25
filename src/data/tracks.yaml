@@ -205,10 +205,12 @@
   youtubeChannel: 驁三春
   officialUpload: false
   scene: china
-  note: 常被列为幼稚园杀手的代表作，发行年份待核实。
+  year: 2008
+  note: '常被列为幼稚园杀手最快的歌之一。知乎专栏《幼稚园杀手：论diss，在座各位都是垃圾》称它是 2008 年的作品，歌里 diss 了茶米；本站打不开原文逐字核对，能查到最早的公开上传是 2017 年的歌词视频，所以年份仍标待核实。'
   confidence: pending
   sources:
     - { title: '百度百科 – 幼稚园杀手', url: 'https://baike.baidu.com/item/%E5%B9%BC%E7%A8%9A%E5%9B%AD%E6%9D%80%E6%89%8B/1475883' }
+    - { title: '知乎 – 幼稚园杀手：论diss，在座各位都是垃圾', url: 'https://zhuanlan.zhihu.com/p/36553979' }
 - id: speed-no1
   title: 'Speed #1'
   artists: [guang-guang]
@@ -217,14 +219,16 @@
   year: 2008
   album: 王者之路（D-Evil）
   youtube: IVms7d51BX8
+  netease: 28302050
   bilibili: BV1LJ411H7NX
   youtubeChannel: good music
   officialUpload: false
-  note: 中文说唱早期的快嘴标杆，网友测算第二段主歌约 8.27 字/秒。
+  note: '中文说唱早期的快嘴标杆。网易云收在 D-Evil 的专辑《王者之路》（2008）里，曲名写作 speed；2020 年的回顾文章也说它是"十二年前"的歌。网友测算第二段主歌约 8.27 字/秒，但没有说明方法，所以仍标待核实。'
   confidence: pending
   sources:
     - { title: '新浪 – MC光光/南京 D-Evil 十二年前的《Speed No1》', url: 'https://k.sina.cn/article_1163858357_m455f11b503300mplv.html' }
     - { title: '网易 – 谁才是中文说唱圈第一快嘴？（2018）', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }
+    - { title: '网易云音乐 – D-Evil《王者之路》（2008）：speed', url: 'https://music.163.com/#/song?id=28302050' }
 - id: walking-dead-2018-cypher
   title: 活死人 2018 Cypher
   artists: [yang-he-su, pharaoh, lil-andy]
@@ -260,6 +264,7 @@
   artists: [ar-liu-fuyang]
   credit: AR刘夫阳
   scene: china
+  year: 2019
   youtube: OWv9qodxUrY
   bilibili: BV17i4y1g7QQ
   netease: 1319854361
@@ -268,11 +273,13 @@
   note: 顾名思义，一首押韵技巧的展示。
   sources:
     - { title: '网易 – 谁才是中文说唱圈第一快嘴？（2018）', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }
+    - { title: '网易云音乐 – AR刘夫阳《校园寓言故事》（2019）：押韵歌', url: 'https://music.163.com/#/song?id=1319854361' }
 - id: tru-master
   title: Tru Master (Remix)
   artists: [bei-bei]
   credit: 贝贝 feat. 马思唯
   scene: china
+  year: 2015
   youtube: I8LmgyLfjDE
   bilibili: BV1Lw411E7WJ
   youtubeChannel: HHH FOREVER Fans Channel
@@ -280,10 +287,11 @@
   note: 西安红花会与成都说唱会馆的合作。
   sources:
     - { title: '豆瓣 HMC – Tru Master (Remix)', url: 'https://site.douban.com/Hip-HopMusicClub/widget/notes/18634931/note/526533723/' }
+    - { title: '豆瓣 – HMC 中文新歌推荐：《Tru Master(Remix)》贝贝 feat. 马思唯（2015-11-27）', url: 'https://site.douban.com/Hip-HopMusicClub/widget/notes/18634931/note/526533723/' }
 - id: taotie
   title: 饕餮
   artists: [zhao-chenlong]
-  credit: 南征北战（快嘴段落据网络资料由赵辰龙演唱）
+  credit: 南征北战（快嘴段落由赵辰龙演唱）
   scene: china
   starter: true
   year: 2016
@@ -302,27 +310,28 @@
   artists: [gloc-9]
   credit: Gloc-9 feat. Jeazell Grutas
   scene: world
-  year: 2010
+  year: 2009
   youtube: yvWVfYwpMD0
   bilibili: BV1AJ411H7o6
   netease: 1302063965
   youtubeChannel: Gloc -9
   officialUpload: true
-  note: Gloc-9 最有名的作品之一，官方 MV 播放量近 8000 万。
+  note: 'Gloc-9 最有名的作品之一，2009 年 6 月作为专辑《Matrikula》的首支单曲发行，官方 MV 播放量近 8000 万。'
   sources:
     - { title: 'Wikipedia – Gloc-9', url: 'https://en.wikipedia.org/wiki/Gloc-9' }
+    - { title: 'Wikipedia – Upuan（2009 年 6 月 22 日发行）', url: 'https://en.wikipedia.org/wiki/Upuan' }
 - id: infinite-choppers
   title: Infinite Choppers
   artists: [crucified]
   credit: DOWN6 ft. Crucified, SPLXT, AceThaGoblin, Kal Paseo, LEECHY! 等 18 人
   scene: world
+  year: 2023
   youtube: EBLVVhPbv3Y
   bilibili: BV1Tp4y1L7yy
   netease: 2068386494
   youtubeChannel: DOWN6
   officialUpload: true
-  note: SPS 社区最有代表性的 chopper cypher 之一，全长约 18 分钟，18 位参与者，wiki 上有逐人的测算表。
-  confidence: pending
+  note: 'SPS 社区最有代表性的 chopper cypher 之一，2023 年 7 月首发，全长约 18 分钟，网易云署名 18 位参与者，SPS wiki 上有逐人的测算表。'
   sources:
     - { title: 'SPS and Chopper Rap Wiki – Infinite choppers 1', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Infinite_choppers_1' }
 - id: power-up
@@ -360,29 +369,33 @@
   artists: [crucified, bone-thugs-n-harmony]
   credit: Crucified ft. Bizzy Bone（Bone Thugs-n-Harmony）
   scene: world
-  year: 2012
+  year: 2011
   album: The Birth of Tragedy
   youtube: aRJ7NY_-UBw
   netease: 1391430750
   youtubeChannel: crucified830
   officialUpload: true
-  note: 地下 chopper 和 chopper 先驱 Bone Thugs-n-Harmony 成员的合作。
+  note: '2011 年 5 月先在他的 YouTube 频道发布，2012 年 11 月收进专辑《The Birth of Tragedy》。地下 chopper 和 chopper 先驱 Bone Thugs-n-Harmony 成员的合作。'
   sources:
     - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }
+    - { title: 'YouTube – Crucified 本人频道（2011 年 5 月 17 日上传）', url: 'https://www.youtube.com/watch?v=aRJ7NY_-UBw' }
+    - { title: 'Discogs – Crucified – The Birth of Tragedy（2012）', url: 'https://www.discogs.com/master/1211457-Crucified-The-Birth-of-Tragedy' }
 - id: wicked
   title: Wicked
   artists: [crucified, twisted-insane]
   credit: Crucified ft. Twisted Insane
   scene: world
-  year: 2012
+  year: 2011
   album: The Birth of Tragedy
   youtube: SoHpqUvSGQE
   netease: 1391430748
   youtubeChannel: crucified830
   officialUpload: true
-  note: Twisted Insane 还出现在 Crucified 的另外两首歌里。
+  note: '2011 年 5 月先在他的 YouTube 频道发布，2012 年 11 月收进专辑《The Birth of Tragedy》。Twisted Insane 还出现在 Crucified 的另外两首歌里。'
   sources:
     - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }
+    - { title: 'YouTube – Crucified 本人频道（2011 年 5 月 17 日上传）', url: 'https://www.youtube.com/watch?v=SoHpqUvSGQE' }
+    - { title: 'Discogs – Crucified – The Birth of Tragedy（2012）', url: 'https://www.discogs.com/master/1211457-Crucified-The-Birth-of-Tragedy' }
 - id: live-799
   title: 799 syllables in 46 seconds（现场）
   artists: [crucified]
@@ -443,9 +456,11 @@
   youtubeChannel: DCVDNS
   officialUpload: true
   scene: world
+  year: 2013
   note: 德语 chopper 的代表曲目，维基百科举它说明 Tech N9ne 的"Choppers"命名方式传到了别的国家。
   sources:
     - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
+    - { title: '网易云音乐 – DCVDNS《D.W.I.S (Premium Edition)》（2013）', url: 'https://music.163.com/#/song?id=27767133' }
 - id: thron
   title: Thron
   artists: [twisted-insane]
@@ -454,6 +469,7 @@
   youtubeChannel: ShimmyMC
   officialUpload: true
   scene: world
+  year: 2017
   note: 德国 chopper ShimmyMC 请来美国的 Twisted Insane 和 Wrekonize，维基百科 Chopper 词条点名的跨国合作。
   sources:
     - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
@@ -465,10 +481,11 @@
   youtubeChannel: TwistedInsaneVEVO
   officialUpload: true
   scene: world
-  note: NahDah 2023 榜里 Twisted Insane 最快的歌：1.050 秒 16 个音节，约 15.24 SPS，第 32 名。
-  confidence: pending
+  note: 'Twisted Insane 最快的歌：NahDah 2023 版 1.050 秒 16 个音节 ≈ 15.24（第 32 名），2021 版 1.032 秒 16 个音节 ≈ 15.50。发行年份没法确定：最早的上传在 2011 年 4 月，上传者说是他早年 mixtape 里的歌，但说不清是哪一张。'
   sources:
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'B站 – NahDah Vebb：Top 150 Fastest Rappers 2021（转载，每条都有算式）', url: 'https://www.bilibili.com/video/BV1Av4y1Z7d7/' }
+    - { title: 'YouTube – DruDDown5150：Twisted insane-Dome Split（2011 年 4 月上传，"Old shit"）', url: 'https://www.youtube.com/watch?v=j2P6kajmMsU' }
 - id: idol
   title: Idol
   artists: [tech-n9ne]
@@ -479,8 +496,8 @@
   youtubeChannel: Hollywood Undead
   officialUpload: true
   scene: world
-  note: NahDah 2023 榜里 Tech N9ne 最快的一段：1.067 秒 15 个音节，约 14.06 SPS，第 101 名。
-  confidence: pending
+  year: 2020
+  note: 'NahDah 2023 榜里 Tech N9ne 最快的一段：1.067 秒 15 个音节，约 14.06 SPS，第 101 名。另一位测算者 zombifiedangel 测同一段是 14.85。'
   sources:
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
 - id: hold-up
@@ -492,7 +509,8 @@
   youtubeChannel: DiamondDDITCVEVO
   officialUpload: true
   scene: world
-  note: NahDah 2023 榜里 Twista 最快的一段：1.091 秒 15 个音节，约 13.75 SPS，第 137 名。
+  year: 2019
+  note: 'NahDah 2023 榜里 Twista 最快的一段：1.091 秒 15 个音节，约 13.75 SPS，第 137 名。这一段目前只找到 NahDah 一家的测算。'
   confidence: pending
   sources:
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
@@ -505,8 +523,8 @@
   youtubeChannel: Ruffian Rugged
   officialUpload: true
   scene: world
+  year: 2023
   note: NahDah 2023 榜第 1 名来自这首里 Crucified 的段落：1.043 秒 22 个音节，约 21.09 SPS。他本人说是 22 SPS，NahDah 团队"非常接近但没能核实"。
-  confidence: pending
   sources:
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
     - { title: 'NahDah Vebb – 测速方法 FAQ（Onion Chopper 一节）', url: 'https://docs.google.com/document/d/1zPWDPfnmmfRIuuskCmTMeTlWTjY9uc9NQ2nM3MU-mCU' }
@@ -521,11 +539,12 @@
   youtubeChannel: 楷傑
   officialUpload: false
   scene: china
-  note: 常被称为幼稚园杀手巅峰时期的快嘴代表作，B 站搬运版近 87 万播放，标题写着"语速极快，但完全可以听清"。
-  confidence: pending
+  year: 2010
+  note: '幼稚园杀手巅峰时期的快嘴代表作，收在 2010 年的专辑《蒲公英》里（那一年他连发了四张专辑）。B 站搬运版近 87 万播放，标题写着"语速极快，但完全可以听清"。'
   sources:
     - { title: 'B站 – 幼稚园杀手巅峰时期歌曲《谋杀》', url: 'https://www.bilibili.com/video/BV14E411u7y6/' }
     - { title: 'B站 – 【韵脚检查】谋杀 - 幼稚园杀手', url: 'https://www.bilibili.com/video/BV1b93x6pEpR/' }
+    - { title: '网易云音乐 – 幼稚园杀手《蒲公英》（2010）：谋杀', url: 'https://music.163.com/#/song?id=183328' }
 - id: shengli
   title: 胜利
   artists: [kindergarten-killer]
@@ -537,11 +556,13 @@
   youtubeChannel: 驁三春
   officialUpload: false
   scene: china
-  note: 和凤凰鸣的合作。有韵脚检查视频称这是幼稚园杀手"局部语速最快的一首"，最快处 1 秒约 16–17 字（吞字算法不同）。
-  confidence: pending
+  note: '和凤凰鸣的合作（2008）。两位 UP 主分别测过最快的一句：五里亭亭长 1.27 秒 21 个字 ≈ 16.5，石狐九和 1.16 秒 19 个字 ≈ 16.4，韵脚检查视频也数出 16–17 个字（吞字算法不同）。幼稚园杀手的人声变过调，本站不把这些数字计入纪录。'
   sources:
     - { title: 'StreetVoice – 胜利 Feat. 凤凰鸣（幼稚园杀手官方账号）', url: 'https://streetvoice.com/kindagartenkilla/songs/62788/' }
     - { title: 'B站 – 【韵脚检查】幼杀局部语速最快的一首歌：胜利', url: 'https://www.bilibili.com/video/BV1EqZAYtEnJ/' }
+    - { title: 'B站 – 五里亭亭长：幼稚园杀手最快的五首歌（2021）', url: 'https://www.bilibili.com/video/BV1NK4y1n7X4/' }
+    - { title: 'B站 – 石狐九和：幼稚园杀手的快嘴究竟有多快（2021）', url: 'https://www.bilibili.com/video/BV1Zf4y1a73W/' }
+    - { title: 'B站 – 【中国说唱传奇】幼稚园杀手-胜利ft. 凤凰鸣2008', url: 'https://www.bilibili.com/video/BV1jN411Q7b5/' }
 - id: hbuf
   title: H.B.U.F
   artists: [bei-bei]
@@ -553,10 +574,10 @@
   officialUpload: false
   scene: china
   note: 南京和西安的合作。有韵脚检查视频称贝贝这段"平均一秒十二字"，也有人称这是贝贝"历史第二快"的快嘴。
-  confidence: pending
   sources:
     - { title: 'B站 – 【韵脚检查】平均一秒十二字！《H.B.U.F》贝贝 part', url: 'https://www.bilibili.com/video/BV1j44y1s7Ui/' }
     - { title: 'B站 – H.B.U.F 贝贝历史第二快嘴【韵脚检查】', url: 'https://www.bilibili.com/video/BV1S2ADesELP/' }
+    - { title: 'B站 – DZ/贝贝/COLA《H.B.U.F》（2017 年 9 月上传）', url: 'https://www.bilibili.com/video/BV1dx411s7RZ/' }
 - id: hnbmc-2018-cypher
   title: HNBMC 2018 Cypher
   artists: [bei-bei]
@@ -568,7 +589,6 @@
   officialUpload: true
   scene: china
   note: 红花会全员 cypher，贝贝那段常被称为他"生涯最快的 verse"。
-  confidence: pending
   sources:
     - { title: 'B站 – 【韵脚检查】红花会2018cypher 贝贝 part：贝贝生涯最快verse', url: 'https://www.bilibili.com/video/BV1L9LBzREF1/' }
     - { title: '维基百科 – 弹壳Danko（2018 年随红花会发布 HNBMC 2018 CYPHER）', url: 'https://zh.wikipedia.org/zh-cn/%E5%BC%B9%E5%A3%B3Danko' }
@@ -585,7 +605,6 @@
   officialUpload: false
   scene: china
   note: 杨和苏早期的快嘴作品，2019 年他在《中国新说唱》复活赛上重唱，被称为"极致快嘴王者归来"。B 站链接是 2018 年原版。
-  confidence: pending
   sources:
     - { title: 'B站 – 复活成功 杨和苏极致快嘴王者归来《Sleep Read Love》', url: 'https://www.bilibili.com/video/BV1Jc411376N/' }
     - { title: '网易云音乐 – Sleep, Read, Love', url: 'https://music.163.com/#/song?id=1293905047' }
@@ -601,7 +620,6 @@
   officialUpload: true
   scene: china
   note: 光光出道二十多年后的快嘴段落，韵脚检查视频的评价是"光光快嘴依旧爽的起飞"。
-  confidence: pending
   sources:
     - { title: 'B站 – 【韵脚检查】NIGHTKIDZ夜之子', url: 'https://www.bilibili.com/video/BV1u2e1zEEJk/' }
     - { title: 'B站 – 【韵脚检查】光光快嘴依旧爽的起飞！NIGHTKIDZ夜之子', url: 'https://www.bilibili.com/video/BV1tPh1zKEVi/' }
@@ -616,10 +634,14 @@
   youtubeChannel: DNA Tru Lyricist
   officialUpload: true
   scene: world
-  note: DNA 最快的歌，也是他招牌系列的第三首：NahDah 2023 榜第 9 名，1.070 秒 19 个音节，约 17.76 SPS。
-  confidence: pending
+  year: 2015
+  note: 'DNA 最快的歌，也是他招牌系列的第三首（2015 年 4 月发行）。NahDah 2021、2023 和五里亭亭长 2021 三份榜单都选了这首，但音节数没对上：NahDah 2023 版 1.070 秒 19 个 ≈ 17.76，2021 版 1.045 秒 17 个 ≈ 16.26。'
+  confidence: disputed
   sources:
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'B站 – NahDah Vebb：Top 150 Fastest Rappers 2021（转载，每条都有算式）', url: 'https://www.bilibili.com/video/BV1Av4y1Z7d7/' }
+    - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
+    - { title: 'YouTube – DNA - Lightspeed Chopper 3（本人频道，2015-04-13）', url: 'https://www.youtube.com/watch?v=_glMTGtNnPI' }
 - id: tru-cipher
   title: Tru Cipher
   artists: [dna-tru-lyricist]
@@ -628,6 +650,7 @@
   youtubeChannel: DNA Tru Lyricist
   officialUpload: true
   scene: world
+  year: 2023
   note: DNA 召集的地下 chopper cypher，Leach 和 DOWN6 都在。
   sources:
     - { title: 'YouTube – Tru Cipher（DNA 本人频道）', url: 'https://www.youtube.com/watch?v=2wGRpq1w1co' }
@@ -643,10 +666,10 @@
   youtubeChannel: GumBrass 666 Underground Lab TV
   officialUpload: false
   scene: china
-  note: 五里亭亭长排的"小安迪最快的五首歌"第 1：14 字 / 1.11 秒 ≈ 12.6 字/秒。
-  confidence: pending
+  note: '五里亭亭长排的"小安迪最快的五首歌"第 1：14 字 / 1.11 秒 ≈ 12.6 字/秒。石狐九和单独测同一句是 14 字 / 1.16 秒 ≈ 12.07。'
   sources:
     - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
+    - { title: 'B站 – 石狐九和：中文快嘴top10（新编）（2021）', url: 'https://www.bilibili.com/video/BV1bh411v7d7/' }
 - id: rap-soldier
   title: Rap Soldier
   artists: [lil-andy]
@@ -658,7 +681,7 @@
   youtubeChannel: 嘻哈音乐分享NR
   officialUpload: false
   scene: china
-  note: 五里亭亭长排的"小安迪最快的五首歌"第 3：12 字 / 0.99 秒 ≈ 12.1 字/秒（窗口不满 1 秒，但超过一般要求的 0.7 秒）。
+  note: '五里亭亭长排的"小安迪最快的五首歌"第 3：12 字 / 0.99 秒 ≈ 12.1 字/秒（窗口不满 1 秒，但超过一般要求的 0.7 秒）。目前只找到五里亭亭长一家的测算。'
   confidence: pending
   sources:
     - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
@@ -673,7 +696,7 @@
   youtubeChannel: LIOUBE
   officialUpload: false
   scene: china
-  note: 五里亭亭长排的"小安迪最快的五首歌"第 4：17 字 / 1.45 秒 ≈ 11.7 字/秒。
+  note: '五里亭亭长排的"小安迪最快的五首歌"第 4：17 字 / 1.45 秒 ≈ 11.7 字/秒。目前只找到五里亭亭长一家的测算。'
   confidence: pending
   sources:
     - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
@@ -688,7 +711,7 @@
   youtubeChannel: TYRANT XENOS
   officialUpload: true
   scene: china
-  note: 五里亭亭长排的"小安迪最快的五首歌"第 5：19 字 / 1.83 秒 ≈ 10.4 字/秒。YouTube 链接来自合作方 Tyrant Xenos 的频道。
+  note: '五里亭亭长排的"小安迪最快的五首歌"第 5：19 字 / 1.83 秒 ≈ 10.4 字/秒。YouTube 链接来自合作方 Tyrant Xenos 的频道。目前只找到五里亭亭长一家的测算。'
   confidence: pending
   sources:
     - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
@@ -701,8 +724,9 @@
   youtubeChannel: Dj Lil Sprite
   officialUpload: true
   scene: world
-  note: DJ Lil Sprite 的招牌 cypher 系列第七部。Interchopper 这段约 16.00 SPS（16 / 1.000），是 SPS 社区认可的他的三段正常 verse 之一。
-  confidence: pending
+  note: 'DJ Lil Sprite 的招牌 cypher 系列第七部（2017）。Genius 记载 Interchopper 这段约 16.00 SPS（16 / 1.000），说是 SPS 社区认可的他三段正常 verse 之一；SPS wiki 则认为他几乎所有作品都加速了。'
+  confidence: disputed
   sources:
     - { title: 'Genius – Interchopper 艺人页', url: 'https://genius.com/artists/Interchopper' }
     - { title: 'Wikipedia – Chopper (rap)（提到 Undaground Choppers 系列）', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
+    - { title: 'SPS and Chopper Rap Wiki – Interchopper', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Interchopper' }
