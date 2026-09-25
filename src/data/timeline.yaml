@@ -212,3 +212,14 @@
   confidence: pending
   sources:
     - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }
+- id: 2026-chinese-choppers
+  year: 2026
+  title: Chinese Choppers Cypher
+  body: 一群中文 chopper 合作的 cypher，参与者有赛文凯、ChaChe、Willbe、青藤 CyanVine、JMS 等；很快出现了大量翻唱，小安迪也在直播里点评过这首歌。
+  scene: china
+  artist: lil-andy
+  confidence: pending
+  sources:
+    - { title: 'B站 – 小安迪直播点评《Chinese Choppers》', url: 'https://www.bilibili.com/video/BV1S2j36tERu/' }
+    - { title: 'B站 – Chinese Choppers Cypher 翻唱（标注原唱 Wilbdawater）', url: 'https://www.bilibili.com/video/BV1ZpLg6wEBR/' }
+    - { title: 'YouTube – Chinese Choppers Cypher 赛文凯、ChaChe verse 翻唱', url: 'https://www.youtube.com/watch?v=YgBjK6V_nzI' }
