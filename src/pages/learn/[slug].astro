@@ -107,5 +107,5 @@ const toc = headings.filter((h) => h.depth === 2);
     );
     document.querySelectorAll('.prose-chop h2[id]').forEach((h) => io.observe(h));
   }
-  document.addEventListener('astro:page-load', initToc);
+  initToc();
 </script>

@@ -1,6 +1,5 @@
 ---
 import '@/styles/global.css';
-import { ClientRouter } from 'astro:transitions';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
 import { SITE } from '@/lib/site';
@@ -29,7 +28,8 @@ const ogImage = image ? new URL(image, Astro.site).href : undefined;
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />
     <link rel="sitemap" href={url('sitemap-index.xml')} />
-    <meta name="theme-color" content="#09090b" />
+    <meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f3f2ec" media="(prefers-color-scheme: light)" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={SITE.fullName} />
     <meta property="og:title" content={fullTitle} />
@@ -41,25 +41,16 @@ const ogImage = image ? new URL(image, Astro.site).href : undefined;
     <!-- 首帧前确定主题，避免闪烁 -->
     <script is:inline>
       (function () {
-        function pick() {
-          try {
-            var saved = localStorage.getItem('theme');
-            if (saved === 'light' || saved === 'dark') return saved;
-          } catch (e) {}
-          return matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-        }
-        window.__applyTheme = function (doc) {
-          (doc || document).documentElement.dataset.theme = pick();
-        };
-        window.__applyTheme();
-        document.addEventListener('astro:before-swap', function (e) {
-          window.__applyTheme(e.newDocument);
-        });
+        var t;
+        try {
+          t = localStorage.getItem('theme');
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.dataset.theme = t;
       })();
     </script>
-    <ClientRouter />
   </head>
-  <body class="grain">
+  <body>
     <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] btn btn-accent">跳到正文</a>
     <Header />
     <main id="main" {...indexable ? { 'data-pagefind-body': '' } : {}}>
@@ -67,28 +58,5 @@ const ogImage = image ? new URL(image, Astro.site).href : undefined;
     </main>
     <Footer />
 
-    <script>
-      // 滚动进入视口时淡入
-      function initReveal() {
-        const els = document.querySelectorAll<HTMLElement>('[data-reveal]:not(.is-in)');
-        if (!('IntersectionObserver' in window)) {
-          els.forEach((el) => el.classList.add('is-in'));
-          return;
-        }
-        const io = new IntersectionObserver(
-          (entries) => {
-            for (const e of entries) {
-              if (e.isIntersecting) {
-                e.target.classList.add('is-in');
-                io.unobserve(e.target);
-              }
-            }
-          },
-          { rootMargin: '0px 0px -8% 0px', threshold: 0.05 },
-        );
-        els.forEach((el) => io.observe(el));
-      }
-      document.addEventListener('astro:page-load', initReveal);
-    </script>
   </body>
 </html>

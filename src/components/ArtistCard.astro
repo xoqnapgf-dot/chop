@@ -32,7 +32,6 @@ const country = COUNTRY[data.country];
           sizes="(min-width: 1024px) 300px, (min-width: 640px) 45vw, 90vw"
           loading={eager ? 'eager' : 'lazy'}
           class="size-full object-cover transition duration-700 ease-out group-hover:scale-[1.04]"
-          transition:name={`photo-${id}`}
         />
       ) : (
         <div class="grid size-full place-items-center bg-surface-2 font-display text-6xl text-ink-3">{data.name[0]}</div>
@@ -40,11 +39,11 @@ const country = COUNTRY[data.country];
     }
     <div class="shade absolute inset-0"></div>
     <div class="absolute left-3 top-3 flex gap-1.5">
-      <span class="chip !border-white/15 !bg-black/45 !text-white backdrop-blur">{country.flag} {country.name}</span>
+      <span class="chip !border-white/15 !bg-black/55 !text-white">{country.name}</span>
     </div>
     <div class="absolute inset-x-0 bottom-0 p-4 text-white">
       <p class="font-mono text-[11px] tracking-widest text-white/65">EST. {data.activeSince}</p>
-      <h3 class="mt-1 text-base font-semibold leading-tight sm:text-xl md:text-2xl" transition:name={`name-${id}`}>{data.name}</h3>
+      <h3 class="mt-1 text-base font-semibold leading-tight sm:text-xl md:text-2xl">{data.name}</h3>
       {data.nameZh && <p class="text-sm text-white/75">{data.nameZh}</p>}
     </div>
   </div>
@@ -61,12 +60,14 @@ const country = COUNTRY[data.country];
       box-shadow 0.4s ease,
       border-color 0.3s ease;
   }
-  .artist-card:hover {
-    transform: translateY(-4px);
-    border-color: color-mix(in oklab, var(--ac) 45%, var(--line));
-    box-shadow: 0 24px 50px -24px color-mix(in oklab, var(--ac) 70%, transparent);
+  @media (hover: hover) {
+    .artist-card:hover {
+      transform: translateY(-4px);
+      border-color: color-mix(in oklab, var(--ac) 45%, var(--line));
+      box-shadow: 0 24px 50px -24px color-mix(in oklab, var(--ac) 70%, transparent);
+    }
   }
   .shade {
-    background: linear-gradient(180deg, transparent 45%, rgb(0 0 0 / 0.78));
+    background: linear-gradient(180deg, rgb(0 0 0 / 0.25) 0%, transparent 25%, transparent 38%, rgb(0 0 0 / 0.88) 100%);
   }
 </style>

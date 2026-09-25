@@ -53,7 +53,7 @@ const fmt = (d: string) => {
 
 const facts = [
   data.realName && ['本名', data.realName],
-  ['地区', `${country.flag} ${data.city} · ${data.region}`],
+  ['地区', data.city === '未公开' ? `${data.region}（城市未公开）` : `${data.city} · ${data.region}`],
   ['出道', `${data.activeSince} 年`],
   data.born && ['出生', `${fmt(data.born)}${data.died ? '' : `（${age(data.born)} 岁）`}`],
   data.died && data.born && ['去世', `${fmt(data.died)}（${age(data.born, data.died)} 岁）`],
@@ -69,8 +69,6 @@ const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生
       <div class="absolute inset-0" aria-hidden="true">
         {banner ? (
           <Image src={banner} alt="" widths={[800, 1400, 2120]} sizes="100vw" class="size-full object-cover opacity-45" loading="eager" />
-        ) : photo ? (
-          <Image src={photo} alt="" widths={[400]} class="size-full scale-125 object-cover opacity-40 blur-3xl" loading="eager" />
         ) : null}
         <div class="hero-shade absolute inset-0"></div>
       </div>
@@ -78,16 +76,16 @@ const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生
       <div class="container-x relative grid gap-8 pb-12 pt-10 md:grid-cols-[minmax(0,300px)_1fr] md:items-end md:gap-12 md:pb-16 md:pt-24">
         <div class="photo-frame relative w-48 overflow-hidden rounded-[26px] border border-white/10 sm:w-60 md:w-full">
           {photo && (
-            <Image src={photo} alt={`${data.nameZh ?? data.name} 的照片`} widths={[300, 600]} sizes="300px" class="aspect-square w-full object-cover" loading="eager" transition:name={`photo-${id}`} />
+            <Image src={photo} alt={`${data.nameZh ?? data.name} 的照片`} widths={[300, 600]} sizes="300px" class="aspect-square w-full object-cover" loading="eager" />
           )}
         </div>
-        <div>
+        <div class="min-w-0">
           <a href={url('choppers/')} class="eyebrow link-u hover:text-ink">← 人物库</a>
           <div class="mt-4 flex flex-wrap gap-2">
             {data.lane.map((l) => <LaneChip lane={l} />)}
-            <span class="chip">{country.flag} {country.name}</span>
+            <span class="chip">{country.name}</span>
           </div>
-          <h1 class="mt-4 text-5xl font-bold leading-[0.95] md:text-7xl" transition:name={`name-${id}`}>{data.name}</h1>
+          <h1 class="mt-4 text-[clamp(2.2rem,10vw,4.5rem)] font-bold leading-[1] [overflow-wrap:anywhere]">{data.name}</h1>
           {data.nameZh && <p class="mt-2 font-display text-2xl text-ink-2 md:text-3xl">{data.nameZh}</p>}
           <p class="mt-5 max-w-2xl text-lg leading-relaxed text-ink-2">{data.tagline}</p>
           <div class="mt-6 flex flex-wrap gap-2">
@@ -257,6 +255,7 @@ const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生
   .hero-shade {
     background:
       radial-gradient(80% 90% at 15% 100%, color-mix(in oklab, var(--ac) 35%, transparent), transparent 70%),
+      radial-gradient(60% 80% at 90% 0%, color-mix(in oklab, var(--ac) 22%, transparent), transparent 70%),
       linear-gradient(180deg, color-mix(in oklab, var(--bg) 35%, transparent) 0%, var(--bg) 100%);
   }
   .photo-frame {

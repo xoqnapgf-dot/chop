@@ -21,7 +21,7 @@ const q = encodeURIComponent(title);
   </button>
   <div class="pointer-events-none absolute inset-x-0 top-0 flex items-center justify-between gap-2 bg-gradient-to-b from-black/70 to-transparent p-3 text-xs text-white/85">
     <span class="truncate">{channel}</span>
-    {official !== undefined && <span class="shrink-0 rounded-full bg-black/50 px-2 py-0.5 backdrop-blur">{official ? '官方上传' : '非官方上传'}</span>}
+    {official !== undefined && <span class="shrink-0 rounded-full bg-black/50 px-2 py-0.5">{official ? '官方上传' : '非官方上传'}</span>}
   </div>
 </div>
 <p class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-ink-3">
@@ -32,19 +32,42 @@ const q = encodeURIComponent(title);
 </p>
 
 <script>
-  function initLite() {
-    document.querySelectorAll<HTMLElement>('.lite-yt:not([data-ready])').forEach((el) => {
-      el.dataset.ready = '1';
-      el.querySelector('.play')?.addEventListener('click', () => {
-        const iframe = document.createElement('iframe');
-        iframe.src = `https://www.youtube-nocookie.com/embed/${el.dataset.id}?autoplay=1&rel=0`;
-        iframe.title = el.dataset.title ?? '';
-        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-        iframe.allowFullscreen = true;
-        iframe.className = 'absolute inset-0 size-full';
-        el.replaceChildren(iframe);
-      });
+  // 先探测 YouTube 能否访问（国内通常不行），能访问才加载播放器，否则给出替代入口
+  let reachable: Promise<boolean> | undefined;
+  const probe = () =>
+    (reachable ??= Promise.race([
+      fetch('https://www.youtube-nocookie.com/favicon.ico', { mode: 'no-cors', cache: 'no-store' }).then(
+        () => true,
+        () => false,
+      ),
+      new Promise<boolean>((r) => setTimeout(() => r(false), 4000)),
+    ]));
+
+  document.querySelectorAll<HTMLElement>('.lite-yt').forEach((el) => {
+    const btn = el.querySelector<HTMLButtonElement>('.play');
+    btn?.addEventListener('click', async () => {
+      btn.disabled = true;
+      btn.querySelector('span')?.classList.add('animate-pulse');
+      if (!(await probe())) {
+        const q = encodeURIComponent(el.dataset.title ?? '');
+        const box = document.createElement('div');
+        box.className = 'absolute inset-0 grid place-items-center bg-black/80 p-6 text-center text-sm text-white';
+        box.innerHTML = `<div><p class="font-semibold">当前网络无法连接 YouTube</p>
+          <p class="mt-2 text-white/70">可以换个平台听：</p>
+          <p class="mt-4 flex flex-wrap justify-center gap-2">
+            <a class="rounded-full bg-white px-4 py-2 font-semibold text-black" href="https://search.bilibili.com/all?keyword=${q}" target="_blank" rel="noopener">B 站搜索</a>
+            <a class="rounded-full bg-white px-4 py-2 font-semibold text-black" href="https://music.163.com/#/search/m/?s=${q}" target="_blank" rel="noopener">网易云搜索</a>
+          </p></div>`;
+        btn.replaceWith(box);
+        return;
+      }
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${el.dataset.id}?autoplay=1&rel=0`;
+      iframe.title = el.dataset.title ?? '';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      iframe.className = 'absolute inset-0 size-full';
+      el.replaceChildren(iframe);
     });
-  }
-  document.addEventListener('astro:page-load', initLite);
+  });
 </script>

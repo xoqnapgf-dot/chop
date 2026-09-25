@@ -3,7 +3,7 @@ import { url } from '@/lib/url';
 interface Props { eyebrow: string; title: string; href?: string; linkLabel?: string; index?: string }
 const { eyebrow, title, href, linkLabel = '查看全部', index } = Astro.props;
 ---
-<div class="mb-10 flex flex-wrap items-end justify-between gap-4" data-reveal>
+<div class="mb-10 flex flex-wrap items-end justify-between gap-4">
   <div>
     <p class="eyebrow mb-3 flex items-center gap-3">
       {index && <span class="text-accent-text">{index}</span>}
