@@ -1,0 +1,268 @@
+---
+/**
+ * 合作网络：收录人物之间的合作曲（署名以网易云为准）。
+ * 上面是关系图（线越粗合作越多，悬停/聚焦某人只看他的线），下面按"两人一组"列出歌曲。
+ */
+import { getCollection } from 'astro:content';
+import Avatar from './Avatar.astro';
+import { collabPairs, collabHref, collabYear } from '@/lib/collabs';
+import { displayName } from '@/lib/labels';
+import { url } from '@/lib/url';
+
+const { all, pairs } = await collabPairs();
+const people = new Map((await getCollection('artists')).map((a) => [a.id, a]));
+
+// 节点顺序：从合作最多的人开始，每次接上和上一个人合作最多的人，让相邻节点尽量是合作者，减少交叉
+const weight = (x: string, y: string) => pairs.find((p) => (p.a === x && p.b === y) || (p.a === y && p.b === x))?.songs.length ?? 0;
+const degree = new Map<string, number>();
+for (const p of pairs) {
+  degree.set(p.a, (degree.get(p.a) ?? 0) + p.songs.length);
+  degree.set(p.b, (degree.get(p.b) ?? 0) + p.songs.length);
+}
+const rest = [...degree.keys()].sort((x, y) => degree.get(y)! - degree.get(x)!);
+const order = [rest.shift()!];
+while (rest.length) {
+  const last = order[order.length - 1];
+  rest.sort((x, y) => weight(last, y) - weight(last, x) || degree.get(y)! - degree.get(x)!);
+  order.push(rest.shift()!);
+}
+const R = 38;
+const pos = new Map(
+  order.map((id, i) => {
+    const t = -Math.PI / 2 + (i / order.length) * Math.PI * 2;
+    return [id, { x: 50 + R * Math.cos(t), y: 50 + R * Math.sin(t) }];
+  }),
+);
+const neighbors = Object.fromEntries(order.map((id) => [id, pairs.filter((p) => p.a === id || p.b === id).map((p) => (p.a === id ? p.b : p.a))]));
+const name = (id: string) => displayName(people.get(id)!.data);
+const SHOW = 5;
+const TOP = 6;
+---
+
+<div class="collab" data-net data-neighbors={JSON.stringify(neighbors)}>
+  <div class="grid items-center gap-10 lg:grid-cols-[minmax(0,560px)_1fr]">
+    <div class="net relative mx-auto aspect-square w-full max-w-[560px]">
+      <svg viewBox="0 0 100 100" class="absolute inset-0 size-full overflow-visible" aria-hidden="true">
+        <circle cx="50" cy="50" r={R} class="ring" />
+        {
+          pairs.map((p) => {
+            const a = pos.get(p.a)!;
+            const b = pos.get(p.b)!;
+            // 往圆心方向弯一点，线多的时候不糊成一团
+            const mx = (a.x + b.x) / 2;
+            const my = (a.y + b.y) / 2;
+            const cx = mx + (50 - mx) * 0.35;
+            const cy = my + (50 - my) * 0.35;
+            return <path d={`M${a.x},${a.y} Q${cx},${cy} ${b.x},${b.y}`} class="edge" data-edge={`${p.a}|${p.b}`} style={`--w:${0.9 + p.songs.length * 0.75}px`} />;
+          })
+        }
+      </svg>
+      {
+        order.map((id) => {
+          const p = pos.get(id)!;
+          const a = people.get(id)!;
+          return (
+            <a href={url(`choppers/${id}/`)} class="node absolute flex flex-col items-center" style={`left:${p.x}%;top:${p.y}%`} data-node={id}>
+              <Avatar id={id} data={a.data} widths={[120]} sizes="64px" class="face size-11 overflow-hidden rounded-full object-cover sm:size-16" />
+              <span class="label mt-1.5 whitespace-nowrap rounded-full px-2 py-0.5 text-[11px] font-semibold sm:text-xs">{name(id)}</span>
+            </a>
+          );
+        })
+      }
+    </div>
+    <div>
+      <p class="max-w-md text-ink-2">
+        线越粗，两人合作的歌越多。把鼠标移到一个人身上，只看他的合作线；点头像进人物页。
+      </p>
+      <dl class="mt-8 grid max-w-md grid-cols-3 gap-4">
+        <div><dd class="font-display text-3xl font-semibold tabular-nums">{all.length}</dd><dt class="mt-1 text-xs text-ink-3">首合作曲</dt></div>
+        <div><dd class="font-display text-3xl font-semibold tabular-nums">{pairs.length}</dd><dt class="mt-1 text-xs text-ink-3">对合作关系</dt></div>
+        <div><dd class="font-display text-3xl font-semibold tabular-nums">{order.length}</dd><dt class="mt-1 text-xs text-ink-3">位人物</dt></div>
+      </dl>
+      <p class="mt-8 max-w-md text-xs leading-relaxed text-ink-3">
+        只统计本站收录人物之间的合作，署名以网易云音乐为准，去掉了伴奏版和 skit。cypher 里同时出现的人也算合作。
+      </p>
+    </div>
+  </div>
+
+  <ul class="mt-14 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+    {
+      pairs.slice(0, TOP).map((p) => (
+        <li class="pair card p-5" data-pair={`${p.a}|${p.b}`}>
+          <div class="flex items-center gap-3">
+            <span class="flex -space-x-2">
+              {[p.a, p.b].map((id) => (
+                <Avatar id={id} data={people.get(id)!.data} widths={[80]} sizes="36px" class="size-9 overflow-hidden rounded-full object-cover ring-2 ring-[var(--surface)]" />
+              ))}
+            </span>
+            <p class="min-w-0 flex-1 font-semibold leading-tight">
+              <a href={url(`choppers/${p.a}/`)} class="link-u">{name(p.a)}</a>
+              <span class="mx-1 text-ink-3">×</span>
+              <a href={url(`choppers/${p.b}/`)} class="link-u">{name(p.b)}</a>
+            </p>
+            <span class="shrink-0 font-mono text-sm text-accent-text">{p.songs.length} 首</span>
+          </div>
+          <ul class="mt-4 grid gap-2 text-sm">
+            {p.songs.slice(0, SHOW).map((c) => (
+              <li class="flex gap-3">
+                <span class="w-10 shrink-0 font-mono text-xs leading-5 text-ink-3">{collabYear(c)}</span>
+                <span class="min-w-0">
+                  <a href={collabHref(c)} target="_blank" rel="noopener nofollow" class="link-u text-ink">{c.data.title} ↗</a>
+                  <span class="block truncate text-xs text-ink-3">《{c.data.album}》</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+          {p.songs.length > SHOW && (
+            <details class="mt-2 text-sm">
+              <summary class="cursor-pointer text-xs text-ink-3 hover:text-ink">再看 {p.songs.length - SHOW} 首</summary>
+              <ul class="mt-2 grid gap-2">
+                {p.songs.slice(SHOW).map((c) => (
+                  <li class="flex gap-3">
+                    <span class="w-10 shrink-0 font-mono text-xs leading-5 text-ink-3">{collabYear(c)}</span>
+                    <span class="min-w-0">
+                      <a href={collabHref(c)} target="_blank" rel="noopener nofollow" class="link-u text-ink">{c.data.title} ↗</a>
+                      <span class="block truncate text-xs text-ink-3">《{c.data.album}》</span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+  {
+    pairs.length > TOP && (
+      <details class="more mt-4">
+        <summary class="btn btn-ghost mx-auto w-fit cursor-pointer list-none">再看 {pairs.length - TOP} 对合作</summary>
+        <ul class="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {pairs.slice(TOP).map((p) => (
+        <li class="pair card p-5" data-pair={`${p.a}|${p.b}`}>
+          <div class="flex items-center gap-3">
+            <span class="flex -space-x-2">
+              {[p.a, p.b].map((id) => (
+                <Avatar id={id} data={people.get(id)!.data} widths={[80]} sizes="36px" class="size-9 overflow-hidden rounded-full object-cover ring-2 ring-[var(--surface)]" />
+              ))}
+            </span>
+            <p class="min-w-0 flex-1 font-semibold leading-tight">
+              <a href={url(`choppers/${p.a}/`)} class="link-u">{name(p.a)}</a>
+              <span class="mx-1 text-ink-3">×</span>
+              <a href={url(`choppers/${p.b}/`)} class="link-u">{name(p.b)}</a>
+            </p>
+            <span class="shrink-0 font-mono text-sm text-accent-text">{p.songs.length} 首</span>
+          </div>
+          <ul class="mt-4 grid gap-2 text-sm">
+            {p.songs.slice(0, SHOW).map((c) => (
+              <li class="flex gap-3">
+                <span class="w-10 shrink-0 font-mono text-xs leading-5 text-ink-3">{collabYear(c)}</span>
+                <span class="min-w-0">
+                  <a href={collabHref(c)} target="_blank" rel="noopener nofollow" class="link-u text-ink">{c.data.title} ↗</a>
+                  <span class="block truncate text-xs text-ink-3">《{c.data.album}》</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+          {p.songs.length > SHOW && (
+            <details class="mt-2 text-sm">
+              <summary class="cursor-pointer text-xs text-ink-3 hover:text-ink">再看 {p.songs.length - SHOW} 首</summary>
+              <ul class="mt-2 grid gap-2">
+                {p.songs.slice(SHOW).map((c) => (
+                  <li class="flex gap-3">
+                    <span class="w-10 shrink-0 font-mono text-xs leading-5 text-ink-3">{collabYear(c)}</span>
+                    <span class="min-w-0">
+                      <a href={collabHref(c)} target="_blank" rel="noopener nofollow" class="link-u text-ink">{c.data.title} ↗</a>
+                      <span class="block truncate text-xs text-ink-3">《{c.data.album}》</span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
+        </li>
+      ))}
+        </ul>
+      </details>
+    )
+  }
+</div>
+
+<style>
+  .more[open] > summary {
+    display: none;
+  }
+  .more > summary::-webkit-details-marker {
+    display: none;
+  }
+  .ring {
+    fill: none;
+    stroke: var(--line);
+    stroke-width: 0.25;
+    stroke-dasharray: 0.6 1.2;
+  }
+  .edge {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: var(--w);
+    vector-effect: non-scaling-stroke;
+    stroke-linecap: round;
+    opacity: 0.55;
+    transition: opacity 0.2s ease;
+  }
+  .node {
+    transform: translate(-50%, -22px);
+    transition: opacity 0.2s ease;
+  }
+  @media (min-width: 640px) {
+    .node {
+      transform: translate(-50%, -32px);
+    }
+  }
+  .node :global(.face) {
+    box-shadow:
+      0 0 0 2px var(--bg),
+      0 0 0 3px color-mix(in oklab, var(--accent) 60%, transparent);
+    transition: transform 0.2s ease;
+  }
+  .node .label {
+    background: color-mix(in oklab, var(--bg) 85%, transparent);
+    color: var(--ink);
+  }
+  .node:hover :global(.face),
+  .node:focus-visible :global(.face) {
+    transform: scale(1.08);
+  }
+  [data-focus] .edge {
+    opacity: 0.08;
+  }
+  [data-focus] .edge.on {
+    opacity: 1;
+  }
+  [data-focus] .node:not(.on) {
+    opacity: 0.35;
+  }
+</style>
+
+<script>
+  for (const net of document.querySelectorAll<HTMLElement>('[data-net]')) {
+    const nb: Record<string, string[]> = JSON.parse(net.dataset.neighbors || '{}');
+    const edges = net.querySelectorAll<SVGPathElement>('[data-edge]');
+    const nodes = net.querySelectorAll<HTMLElement>('[data-node]');
+    const focus = (id: string | null) => {
+      if (!id) {
+        delete net.dataset.focus;
+        return;
+      }
+      net.dataset.focus = id;
+      edges.forEach((e) => e.classList.toggle('on', e.dataset.edge!.split('|').includes(id)));
+      nodes.forEach((n) => n.classList.toggle('on', n.dataset.node === id || nb[id]?.includes(n.dataset.node!)));
+    };
+    nodes.forEach((n) => {
+      n.addEventListener('pointerenter', () => focus(n.dataset.node!));
+      n.addEventListener('pointerleave', () => focus(null));
+      n.addEventListener('focus', () => focus(n.dataset.node!));
+      n.addEventListener('blur', () => focus(null));
+    });
+  }
+</script>

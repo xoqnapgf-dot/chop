@@ -177,4 +177,22 @@ const cyphers = defineCollection({
   }),
 });
 
-export const collections = { artists, tracks, timeline, learn, regions, scenes, cyphers };
+/** 收录人物之间的合作曲（署名以网易云音乐为准） */
+const collabs = defineCollection({
+  loader: file('src/data/collabs.yaml'),
+  schema: z
+    .object({
+      title: z.string(),
+      artists: z.array(reference('artists')).min(2),
+      credit: z.string(),
+      date: z.string(),
+      album: z.string(),
+      /** 网易云歌曲 ID */
+      netease: z.number().int().optional(),
+      /** 网易云查不到时的出处 */
+      source: source.optional(),
+    })
+    .refine((d) => d.netease !== undefined || d.source !== undefined, { message: '需要 netease 或 source 之一' }),
+});
+
+export const collections = { artists, tracks, timeline, learn, regions, scenes, cyphers, collabs };
