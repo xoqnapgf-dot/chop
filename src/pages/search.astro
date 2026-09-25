@@ -1,0 +1,78 @@
+---
+import Base from '@/layouts/Base.astro';
+import { url } from '@/lib/url';
+---
+
+<Base title="搜索" indexable={false}>
+  <section class="container-x pt-14 md:pt-20">
+    <p class="eyebrow">Search</p>
+    <h1 class="mt-4 text-5xl font-bold md:text-7xl">搜索</h1>
+    <div id="search" class="mt-10 max-w-3xl" data-bundle={url('pagefind/')}></div>
+    <noscript><p class="mt-6 text-ink-3">搜索需要开启 JavaScript。</p></noscript>
+    <p id="search-dev" class="mt-6 hidden max-w-3xl text-sm text-ink-3">开发模式下没有搜索索引，运行 <code>npm run build</code> 后用 <code>npm run preview</code> 查看。</p>
+  </section>
+</Base>
+
+<style is:global>
+  #search {
+    --pagefind-ui-scale: 1;
+    --pagefind-ui-primary: var(--accent-text);
+    --pagefind-ui-text: var(--ink);
+    --pagefind-ui-background: var(--surface);
+    --pagefind-ui-border: var(--line);
+    --pagefind-ui-tag: var(--surface-2);
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 14px;
+    --pagefind-ui-font: var(--font-sans);
+  }
+  #search .pagefind-ui__result-link {
+    color: var(--ink);
+  }
+  #search mark {
+    background: var(--accent);
+    color: var(--accent-ink);
+    border-radius: 3px;
+    padding: 0 2px;
+  }
+</style>
+
+<script>
+  async function initSearch() {
+    const el = document.getElementById('search');
+    if (!el || el.dataset.ready) return;
+    el.dataset.ready = '1';
+    const bundle = el.dataset.bundle!;
+    try {
+      const css = document.createElement('link');
+      css.rel = 'stylesheet';
+      css.href = `${bundle}pagefind-ui.css`;
+      document.head.appendChild(css);
+      await new Promise<void>((resolve, reject) => {
+        const s = document.createElement('script');
+        s.src = `${bundle}pagefind-ui.js`;
+        s.onload = () => resolve();
+        s.onerror = () => reject(new Error('no index'));
+        document.head.appendChild(s);
+      });
+      // @ts-expect-error Pagefind UI 由上面的脚本挂到 window
+      new window.PagefindUI({
+        element: '#search',
+        showSubResults: true,
+        showImages: false,
+        autofocus: true,
+        translations: { placeholder: '搜索人物、曲目、文章…', zero_results: '没有找到 "[SEARCH_TERM]"', many_results: '找到 [COUNT] 条结果', one_result: '找到 1 条结果', load_more: '加载更多' },
+      });
+      const q = new URLSearchParams(location.search).get('q');
+      if (q) {
+        const input = el.querySelector<HTMLInputElement>('input');
+        if (input) {
+          input.value = q;
+          input.dispatchEvent(new Event('input'));
+        }
+      }
+    } catch {
+      document.getElementById('search-dev')?.classList.remove('hidden');
+    }
+  }
+  document.addEventListener('astro:page-load', initSearch);
+</script>

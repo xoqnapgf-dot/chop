@@ -1,0 +1,60 @@
+---
+/** 讨论区：配置好 GISCUS 后显示 Giscus，否则显示占位卡片 */
+import { GISCUS, SITE } from '@/lib/site';
+interface Props { term?: string }
+const { term } = Astro.props;
+const ready = GISCUS.repoId && GISCUS.categoryId;
+---
+
+<section class="comments" aria-label="讨论">
+  {
+    ready ? (
+      <div
+        class="giscus-mount"
+        data-repo={GISCUS.repo}
+        data-repo-id={GISCUS.repoId}
+        data-category={GISCUS.category}
+        data-category-id={GISCUS.categoryId}
+        data-term={term}
+      />
+    ) : (
+      <div class="card flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p class="font-display text-lg">讨论区即将开放</p>
+          <p class="mt-1 text-sm text-ink-3">在那之前，纠错、补充资料、推荐 chopper 都可以直接在 GitHub 提 Issue。</p>
+        </div>
+        <a class="btn btn-ghost shrink-0" href={`${SITE.repo}/issues/new/choose`} target="_blank" rel="noopener">去 GitHub 留言 ↗</a>
+      </div>
+    )
+  }
+</section>
+
+<script>
+  function mountGiscus() {
+    document.querySelectorAll<HTMLElement>('.giscus-mount:not([data-mounted])').forEach((el) => {
+      el.dataset.mounted = '1';
+      const s = document.createElement('script');
+      s.src = 'https://giscus.app/client.js';
+      s.async = true;
+      s.crossOrigin = 'anonymous';
+      const d = el.dataset;
+      const attrs: Record<string, string> = {
+        'data-repo': d.repo!,
+        'data-repo-id': d.repoId!,
+        'data-category': d.category!,
+        'data-category-id': d.categoryId!,
+        'data-mapping': d.term ? 'specific' : 'pathname',
+        'data-term': d.term ?? '',
+        'data-reactions-enabled': '1',
+        'data-emit-metadata': '0',
+        'data-input-position': 'top',
+        'data-theme': document.documentElement.dataset.theme === 'light' ? 'light' : 'dark_dimmed',
+        'data-lang': 'zh-CN',
+        'data-loading': 'lazy',
+      };
+      for (const [k, v] of Object.entries(attrs)) s.setAttribute(k, v);
+      el.appendChild(s);
+    });
+  }
+  document.addEventListener('astro:page-load', mountGiscus);
+</script>

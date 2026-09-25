@@ -1,0 +1,150 @@
+---
+/**
+ * 语速对比图：每条说法一根横条，颜色表示可信度（配图标和文字，不单靠颜色）。
+ * 竖向参考线是 90 BPM 下 16 分音符 / 16 分三连音 / 32 分音符对应的每秒音符数。
+ */
+import { getCollection } from 'astro:content';
+import { CONFIDENCE, SPEED_KIND, UNIT, displayName } from '@/lib/labels';
+import { url } from '@/lib/url';
+
+interface Props { limit?: number; compact?: boolean }
+const { limit, compact = false } = Astro.props;
+
+const artists = await getCollection('artists');
+let rows = artists
+  .flatMap((a) => a.data.speed.map((s) => ({ ...s, artist: displayName(a.data), slug: a.id })))
+  .sort((a, b) => b.value - a.value);
+if (limit) rows = rows.slice(0, limit);
+
+const max = Math.ceil(Math.max(...rows.map((r) => r.value)) / 5) * 5;
+const ticks = Array.from({ length: max / 5 + 1 }, (_, i) => i * 5);
+const guides = [
+  { v: 6, label: '16 分' },
+  { v: 9, label: '三连音' },
+  { v: 12, label: '32 分' },
+];
+const pct = (v: number) => `${(v / max) * 100}%`;
+---
+
+<figure class="speed-chart">
+  <figcaption class="mb-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-ink-3">
+    <span>单位：每秒音节数（中文按字/秒近似）</span>
+    {(['verified', 'disputed', 'pending'] as const).map((k) => (
+      <span class="inline-flex items-center gap-1.5">
+        <span class="grid size-3.5 place-items-center rounded-full text-[9px] font-bold text-bg" style={`background:${CONFIDENCE[k].color}`}>{CONFIDENCE[k].icon}</span>
+        {CONFIDENCE[k].label}
+      </span>
+    ))}
+    <span class="inline-flex items-center gap-1.5"><span class="h-3 border-l border-dashed border-ink-3"></span>90 BPM 参考线</span>
+  </figcaption>
+
+  <div class="relative">
+    <!-- 参考线 -->
+    <div class="pointer-events-none absolute inset-y-0 hidden sm:block" style="left:var(--label-w);right:calc(3.5rem + 1rem)" aria-hidden="true">
+      {guides.map((g) => (
+        <div class="absolute inset-y-0 border-l border-dashed border-line-strong" style={`left:${pct(g.v)}`}>
+          <span class="absolute -top-5 -translate-x-1/2 whitespace-nowrap font-mono text-[10px] text-ink-3">{g.label} {g.v}</span>
+        </div>
+      ))}
+    </div>
+
+    <ol class="relative grid gap-3 pt-2">
+      {rows.map((r, i) => {
+        const c = CONFIDENCE[r.confidence];
+        return (
+          <li class="row group grid items-center gap-x-4 gap-y-1.5" style={`--c:${c.color};--i:${i}`}>
+            <a href={url(`choppers/${r.slug}/`)} class="min-w-0">
+              <span class="block truncate text-sm font-semibold text-ink group-hover:text-accent-text">{r.artist}</span>
+              {!compact && <span class="block truncate text-xs text-ink-3">{r.label}</span>}
+            </a>
+            <div class="track relative h-7">
+              <div class="bar absolute inset-y-0 left-0 rounded-r-[4px]" style={`width:${pct(r.value)}`} data-conf={r.confidence}></div>
+              <div class="tip pointer-events-none absolute bottom-full left-0 z-10 mb-2 w-72 max-w-[80vw] rounded-xl border border-line bg-surface p-3 text-xs opacity-0 shadow-xl transition group-hover:opacity-100 group-focus-within:opacity-100">
+                <p class="font-semibold text-ink">{r.artist} · {r.value} {UNIT[r.unit]}</p>
+                <p class="mt-1 text-ink-2">{r.label}</p>
+                <p class="mt-1 text-ink-3">{SPEED_KIND[r.kind]} · {c.label} · {r.sources.length} 个来源</p>
+                {r.note && <p class="mt-1.5 text-ink-2">{r.note}</p>}
+              </div>
+            </div>
+            <span class="flex items-center justify-end gap-1.5 font-mono text-sm tabular-nums text-ink">
+              <span class="grid size-3.5 place-items-center rounded-full text-[9px] font-bold text-bg" style={`background:${c.color}`} title={c.label}>{c.icon}</span>
+              {r.value}
+            </span>
+          </li>
+        );
+      })}
+    </ol>
+
+    <div class="axis mt-3 hidden font-mono text-[10px] text-ink-3 sm:block" aria-hidden="true">
+      <div class="relative h-4">
+        {ticks.map((t) => <span class="absolute -translate-x-1/2" style={`left:${pct(t)}`}>{t}</span>)}
+      </div>
+    </div>
+  </div>
+
+  <details class="mt-6 text-sm">
+    <summary class="cursor-pointer text-ink-3 hover:text-ink">查看数据表</summary>
+    <div class="mt-3 overflow-x-auto">
+      <table class="w-full text-left text-xs">
+        <thead class="text-ink-3"><tr><th class="py-2 pr-4">人物</th><th class="pr-4">说法</th><th class="pr-4">数值</th><th class="pr-4">类型</th><th>可信度</th></tr></thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr class="border-t border-line">
+              <td class="py-2 pr-4 text-ink">{r.artist}</td>
+              <td class="pr-4 text-ink-2">{r.label}</td>
+              <td class="pr-4 font-mono">{r.value} {UNIT[r.unit]}</td>
+              <td class="pr-4 text-ink-2">{SPEED_KIND[r.kind]}</td>
+              <td>{CONFIDENCE[r.confidence].label}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </details>
+</figure>
+
+<style>
+  .speed-chart {
+    --label-w: 0px;
+  }
+  .row {
+    grid-template-columns: 1fr 3.5rem;
+  }
+  .row > a {
+    grid-column: 1 / -1;
+  }
+  @media (min-width: 640px) {
+    .speed-chart {
+      --label-w: calc(13rem + 1rem);
+    }
+    .row {
+      grid-template-columns: 13rem 1fr 3.5rem;
+    }
+    .row > a {
+      grid-column: auto;
+    }
+    .axis {
+      margin-left: var(--label-w);
+      margin-right: calc(3.5rem + 1rem);
+    }
+  }
+  .track {
+    background: linear-gradient(90deg, var(--surface-2), transparent);
+    border-radius: 4px;
+  }
+  .bar {
+    background: var(--c);
+    transform-origin: left;
+    animation: grow 1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    animation-delay: calc(var(--i) * 60ms);
+  }
+  /* 非"已证实"的数据加斜线纹理，色弱和打印时也能区分 */
+  .bar:not([data-conf='verified']) {
+    background: repeating-linear-gradient(135deg, var(--c) 0 6px, color-mix(in oklab, var(--c) 55%, transparent) 6px 10px);
+  }
+  @keyframes grow {
+    from {
+      transform: scaleX(0);
+    }
+  }
+</style>

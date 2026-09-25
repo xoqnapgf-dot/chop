@@ -1,0 +1,94 @@
+---
+import '@/styles/global.css';
+import { ClientRouter } from 'astro:transitions';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import { SITE } from '@/lib/site';
+import { url } from '@/lib/url';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  /** 不参与站内搜索索引的页面（如 404、搜索页）设为 false */
+  indexable?: boolean;
+}
+const { title, description = SITE.description, image, indexable = true } = Astro.props;
+const fullTitle = title ? `${title} · ${SITE.fullName}` : `${SITE.fullName} — Chopper 快嘴说唱资料库`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = image ? new URL(image, Astro.site).href : undefined;
+---
+
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />
+    <link rel="sitemap" href={url('sitemap-index.xml')} />
+    <meta name="theme-color" content="#09090b" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.fullName} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+    {!indexable && <meta name="robots" content="noindex" />}
+
+    <!-- 首帧前确定主题，避免闪烁 -->
+    <script is:inline>
+      (function () {
+        function pick() {
+          try {
+            var saved = localStorage.getItem('theme');
+            if (saved === 'light' || saved === 'dark') return saved;
+          } catch (e) {}
+          return matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        window.__applyTheme = function (doc) {
+          (doc || document).documentElement.dataset.theme = pick();
+        };
+        window.__applyTheme();
+        document.addEventListener('astro:before-swap', function (e) {
+          window.__applyTheme(e.newDocument);
+        });
+      })();
+    </script>
+    <ClientRouter />
+  </head>
+  <body class="grain">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] btn btn-accent">跳到正文</a>
+    <Header />
+    <main id="main" {...indexable ? { 'data-pagefind-body': '' } : {}}>
+      <slot />
+    </main>
+    <Footer />
+
+    <script>
+      // 滚动进入视口时淡入
+      function initReveal() {
+        const els = document.querySelectorAll<HTMLElement>('[data-reveal]:not(.is-in)');
+        if (!('IntersectionObserver' in window)) {
+          els.forEach((el) => el.classList.add('is-in'));
+          return;
+        }
+        const io = new IntersectionObserver(
+          (entries) => {
+            for (const e of entries) {
+              if (e.isIntersecting) {
+                e.target.classList.add('is-in');
+                io.unobserve(e.target);
+              }
+            }
+          },
+          { rootMargin: '0px 0px -8% 0px', threshold: 0.05 },
+        );
+        els.forEach((el) => io.observe(el));
+      }
+      document.addEventListener('astro:page-load', initReveal);
+    </script>
+  </body>
+</html>

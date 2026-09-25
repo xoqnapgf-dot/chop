@@ -1,0 +1,28 @@
+---
+/** 无限滚动的文字带 */
+interface Props { items: string[]; reverse?: boolean; class?: string }
+const { items, reverse = false, class: cls = '' } = Astro.props;
+const row = [...items, ...items];
+---
+<div class:list={['marquee relative overflow-hidden', cls]} aria-hidden="true">
+  <div class:list={['flex w-max animate-marquee gap-10 whitespace-nowrap', { 'direction-reverse': reverse }]}>
+    {row.map((t) => (
+      <span class="flex items-center gap-10">
+        {t}
+        <span class="text-accent-text">✦</span>
+      </span>
+    ))}
+  </div>
+</div>
+
+<style>
+  .marquee {
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  }
+  .direction-reverse {
+    animation-direction: reverse;
+  }
+  .marquee:hover > div {
+    animation-play-state: paused;
+  }
+</style>

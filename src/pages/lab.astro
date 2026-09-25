@@ -1,0 +1,445 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '@/layouts/Base.astro';
+import SpeedChart from '@/components/SpeedChart.astro';
+import { url } from '@/lib/url';
+import { displayName } from '@/lib/labels';
+
+const artists = await getCollection('artists');
+// 只拿"已证实"的数据做对比基准
+const refs = artists
+  .flatMap((a) => a.data.speed.filter((s) => s.confidence === 'verified').map((s) => ({ name: displayName(a.data), label: s.label, v: s.value })))
+  .sort((a, b) => b.v - a.v);
+
+const subdivisions = [
+  { n: 1, label: '4 分', hint: '每拍 1 个' },
+  { n: 2, label: '8 分', hint: '每拍 2 个' },
+  { n: 3, label: '8 分三连', hint: '每拍 3 个' },
+  { n: 4, label: '16 分', hint: '每拍 4 个' },
+  { n: 6, label: '16 分三连', hint: '每拍 6 个' },
+  { n: 8, label: '32 分', hint: '每拍 8 个' },
+];
+---
+
+<Base title="速度实验室" description="亲耳听听每秒 6、9、12 个音节是什么感觉，再算算你自己的语速。">
+  <section class="container-x pt-14 md:pt-20">
+    <p class="eyebrow">Lab</p>
+    <h1 class="mt-4 text-5xl font-bold md:text-7xl">速度实验室</h1>
+    <p class="mt-5 max-w-2xl text-lg text-ink-2">快嘴的"快"其实是算术：BPM 决定一拍多长，细分决定一拍切几刀。在这里亲耳听一下，再测测你自己。</p>
+  </section>
+
+  <!-- ============ 节拍细分器 ============ -->
+  <section class="container-x mt-12">
+    <div id="metro" class="card overflow-hidden" data-refs={JSON.stringify(refs)}>
+      <div class="grid gap-0 lg:grid-cols-[1fr_380px]">
+        <div class="p-6 md:p-10">
+          <p class="eyebrow">01 · Subdivision metronome</p>
+          <h2 class="mt-3 text-2xl font-semibold md:text-3xl">节拍细分器</h2>
+
+          <div class="mt-8">
+            <div class="flex items-end justify-between">
+              <label for="bpm" class="text-sm text-ink-2">速度 BPM</label>
+              <output id="bpm-out" class="font-display text-4xl font-semibold tabular-nums">90</output>
+            </div>
+            <input id="bpm" type="range" min="50" max="200" value="90" step="1" class="range mt-3 w-full" />
+            <div class="mt-1 flex justify-between font-mono text-[10px] text-ink-3"><span>50</span><span>125</span><span>200</span></div>
+          </div>
+
+          <fieldset class="mt-8">
+            <legend class="mb-3 text-sm text-ink-2">每拍切几刀</legend>
+            <div class="grid grid-cols-3 gap-2 sm:grid-cols-6">
+              {
+                subdivisions.map((s) => (
+                  <label class="sub">
+                    <input type="radio" name="sub" value={s.n} checked={s.n === 6} class="sr-only" />
+                    <span class="block font-semibold">{s.label}</span>
+                    <span class="block text-[11px] text-ink-3">{s.hint}</span>
+                  </label>
+                ))
+              }
+            </div>
+          </fieldset>
+
+          <div id="steps" class="steps mt-8 grid grid-cols-4 gap-2" aria-hidden="true"></div>
+
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <button id="play" type="button" class="btn btn-accent min-w-32 justify-center">
+              <svg class="i-play size-4" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg>
+              <svg class="i-stop hidden size-4" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+              <span>播放</span>
+            </button>
+            <label class="flex cursor-pointer items-center gap-2 text-sm text-ink-2">
+              <input id="accent" type="checkbox" checked class="size-4 accent-[var(--accent)]" />
+              重拍加重
+            </label>
+            <span class="text-xs text-ink-3">快捷键：空格 播放/停止</span>
+          </div>
+        </div>
+
+        <div class="result border-t border-line bg-surface-2 p-6 md:p-10 lg:border-l lg:border-t-0">
+          <p class="eyebrow">每秒音符数</p>
+          <p class="mt-2 font-display text-7xl font-semibold tabular-nums"><span id="rate">9.00</span></p>
+          <p id="formula" class="mt-3 font-mono text-sm text-ink-2">90 ÷ 60 × 6 = 9.00</p>
+          <p class="mt-1 text-xs text-ink-3">每秒音符数 = BPM ÷ 60 × 每拍音符数</p>
+
+          <div class="mt-8">
+            <p class="eyebrow mb-3">和已证实的纪录比</p>
+            <ul id="compare" class="grid gap-3"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 语速计算器 ============ -->
+  <section class="container-x mt-10">
+    <div id="calc" class="card p-6 md:p-10" data-refs={JSON.stringify(refs)}>
+      <p class="eyebrow">02 · Speed calculator</p>
+      <h2 class="mt-3 text-2xl font-semibold md:text-3xl">语速计算器</h2>
+      <p class="mt-3 max-w-2xl text-ink-2">贴一段歌词，按下计时器从第一个字开始念，念完再按一下。中文和韩文按字计，英文按音节估算。</p>
+
+      <div class="mt-8 grid gap-8 lg:grid-cols-[1fr_340px]">
+        <div>
+          <label for="lyrics" class="sr-only">歌词</label>
+          <textarea id="lyrics" rows="8" class="w-full resize-y rounded-2xl border border-line bg-surface-2 p-4 leading-relaxed outline-none transition placeholder:text-ink-3 focus:border-line-strong" placeholder="在这里粘贴歌词…">把音节剁碎，一口气念完这一段，看看你每秒能吐几个字</textarea>
+          <div class="mt-3 flex flex-wrap gap-x-5 gap-y-1 font-mono text-xs text-ink-3">
+            <span>汉字 <b id="c-han" class="text-ink">0</b></span>
+            <span>韩文 <b id="c-hangul" class="text-ink">0</b></span>
+            <span>英文音节 ≈ <b id="c-en" class="text-ink">0</b></span>
+          </div>
+        </div>
+
+        <div class="grid content-start gap-4">
+          <div class="rounded-2xl border border-line bg-surface-2 p-5">
+            <p class="eyebrow">音节总数</p>
+            <p class="mt-1 font-display text-4xl font-semibold tabular-nums" id="syl">0</p>
+          </div>
+          <div class="rounded-2xl border border-line bg-surface-2 p-5">
+            <div class="flex items-center justify-between">
+              <label for="secs" class="eyebrow">用时（秒）</label>
+              <button id="timer" type="button" class="chip cursor-pointer hover:border-line-strong">● 开始计时</button>
+            </div>
+            <input id="secs" type="number" min="0.1" step="0.01" value="3" inputmode="decimal" class="mt-2 w-full bg-transparent font-display text-4xl font-semibold tabular-nums outline-none" />
+          </div>
+          <div class="rounded-2xl bg-accent p-5 text-accent-ink">
+            <p class="font-mono text-[11px] uppercase tracking-widest opacity-70">你的语速</p>
+            <p class="mt-1 font-display text-5xl font-semibold tabular-nums"><span id="you">0</span><span class="ml-2 font-sans text-sm font-normal">音节/秒</span></p>
+            <p id="you-note" class="mt-2 text-sm opacity-80"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 数据 ============ -->
+  <section class="container-x mt-10">
+    <div class="card p-6 md:p-10">
+      <p class="eyebrow">03 · Records</p>
+      <h2 class="mb-8 mt-3 text-2xl font-semibold md:text-3xl">已收录的速度数据</h2>
+      <SpeedChart />
+      <p class="mt-6 text-sm text-ink-3">口径说明见 <a class="link-u text-ink" href={url('learn/measuring-speed/')}>语速怎么测？</a></p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .range {
+    appearance: none;
+    height: 6px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--accent) var(--p, 27%), var(--line) var(--p, 27%));
+    outline: none;
+  }
+  .range::-webkit-slider-thumb {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    background: var(--ink);
+    border: 4px solid var(--bg);
+    box-shadow: 0 0 0 1px var(--line-strong);
+    cursor: grab;
+  }
+  .range::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 999px;
+    background: var(--ink);
+    border: 4px solid var(--bg);
+    cursor: grab;
+  }
+  .sub {
+    cursor: pointer;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 0.6rem 0.7rem;
+    font-size: 0.85rem;
+    transition: all 0.15s ease;
+  }
+  .sub:hover {
+    border-color: var(--line-strong);
+  }
+  .sub:has(input:checked) {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+  .sub:has(input:checked) span + span {
+    color: color-mix(in oklab, var(--bg) 70%, transparent);
+  }
+  .sub:has(input:focus-visible) {
+    outline: 2px solid var(--accent-text);
+    outline-offset: 2px;
+  }
+  .steps :global(.beat) {
+    display: flex;
+    gap: 3px;
+    padding: 6px;
+    border-radius: 12px;
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+  }
+  .steps :global(.beat i) {
+    flex: 1;
+    height: 44px;
+    border-radius: 6px;
+    background: var(--line);
+    transition: background 0.2s ease;
+  }
+  .steps :global(.beat i.on) {
+    background: var(--accent);
+    transition: none;
+  }
+  .steps :global(.beat i:first-child) {
+    background: var(--line-strong);
+  }
+  .steps :global(.beat i.on:first-child) {
+    background: var(--hot);
+  }
+  #play.is-on .i-play {
+    display: none;
+  }
+  #play.is-on .i-stop {
+    display: block;
+  }
+  :global(#compare .bar) {
+    height: 6px;
+    border-radius: 999px;
+    background: var(--line);
+    overflow: hidden;
+  }
+  :global(#compare .bar > span) {
+    display: block;
+    height: 100%;
+    background: var(--accent-text);
+    border-radius: 999px;
+    transition: width 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  #timer.is-on {
+    background: var(--hot);
+    color: #fff;
+    border-color: var(--hot);
+  }
+</style>
+
+<script>
+  type Ref = { name: string; label: string; v: number };
+
+  // ---------------- 节拍细分器 ----------------
+  let ctx: AudioContext | undefined;
+  let timer = 0;
+  let raf = 0;
+
+  function initMetro() {
+    const root = document.getElementById('metro');
+    if (!root) return;
+    const refs: Ref[] = JSON.parse(root.dataset.refs!);
+    const bpmEl = root.querySelector<HTMLInputElement>('#bpm')!;
+    const bpmOut = root.querySelector('#bpm-out')!;
+    const rateEl = root.querySelector('#rate')!;
+    const formula = root.querySelector('#formula')!;
+    const compare = root.querySelector('#compare')!;
+    const steps = root.querySelector('#steps')!;
+    const playBtn = root.querySelector<HTMLButtonElement>('#play')!;
+    const accentEl = root.querySelector<HTMLInputElement>('#accent')!;
+
+    let bpm = Number(bpmEl.value);
+    let sub = Number(root.querySelector<HTMLInputElement>('input[name=sub]:checked')!.value);
+    let playing = false;
+    let nextTime = 0;
+    let stepIdx = 0;
+    const queue: { idx: number; time: number }[] = [];
+
+    const render = () => {
+      const rate = (bpm / 60) * sub;
+      bpmOut.textContent = String(bpm);
+      bpmEl.style.setProperty('--p', `${((bpm - 50) / 150) * 100}%`);
+      rateEl.textContent = rate.toFixed(2);
+      formula.textContent = `${bpm} ÷ 60 × ${sub} = ${rate.toFixed(2)}`;
+      steps.innerHTML = Array.from({ length: 4 }, () => `<div class="beat">${'<i></i>'.repeat(sub)}</div>`).join('');
+      compare.innerHTML = refs
+        .map((r) => {
+          const pct = Math.min(100, (rate / r.v) * 100);
+          return `<li><div class="flex justify-between text-sm"><span class="text-ink">${r.name}</span><span class="font-mono tabular-nums text-ink-2">${Math.round((rate / r.v) * 100)}%</span></div>
+          <p class="mb-1.5 text-xs text-ink-3">${r.label} · ${r.v}</p><div class="bar"><span style="width:${pct}%"></span></div></li>`;
+        })
+        .join('');
+    };
+
+    const click = (time: number, strong: boolean) => {
+      const osc = ctx!.createOscillator();
+      const gain = ctx!.createGain();
+      osc.frequency.value = strong ? 1600 : 900;
+      gain.gain.setValueAtTime(strong && accentEl.checked ? 0.5 : 0.22, time);
+      gain.gain.exponentialRampToValueAtTime(0.0001, time + 0.035);
+      osc.connect(gain).connect(ctx!.destination);
+      osc.start(time);
+      osc.stop(time + 0.04);
+    };
+
+    // 标准的"提前排程"写法：定时器每 25ms 往后排 100ms 的声音，避免抖动
+    const schedule = () => {
+      const interval = 60 / bpm / sub;
+      while (nextTime < ctx!.currentTime + 0.1) {
+        click(nextTime, stepIdx % sub === 0);
+        queue.push({ idx: stepIdx, time: nextTime });
+        nextTime += interval;
+        stepIdx = (stepIdx + 1) % (sub * 4);
+      }
+    };
+
+    const draw = () => {
+      raf = requestAnimationFrame(draw);
+      let cur: number | undefined;
+      while (queue.length && queue[0].time <= ctx!.currentTime) cur = queue.shift()!.idx;
+      if (cur === undefined) return;
+      const cells = steps.querySelectorAll('i');
+      cells.forEach((c) => c.classList.remove('on'));
+      cells[cur]?.classList.add('on');
+    };
+
+    const stop = () => {
+      playing = false;
+      clearInterval(timer);
+      cancelAnimationFrame(raf);
+      queue.length = 0;
+      playBtn.classList.remove('is-on');
+      playBtn.querySelector('span')!.textContent = '播放';
+      steps.querySelectorAll('i').forEach((c) => c.classList.remove('on'));
+    };
+
+    const start = async () => {
+      ctx ??= new AudioContext();
+      await ctx.resume();
+      playing = true;
+      stepIdx = 0;
+      nextTime = ctx.currentTime + 0.06;
+      timer = window.setInterval(schedule, 25);
+      draw();
+      playBtn.classList.add('is-on');
+      playBtn.querySelector('span')!.textContent = '停止';
+    };
+
+    const restartIfPlaying = () => {
+      render();
+      if (playing) {
+        stop();
+        start();
+      }
+    };
+
+    bpmEl.oninput = () => {
+      bpm = Number(bpmEl.value);
+      render();
+    };
+    bpmEl.onchange = restartIfPlaying;
+    root.querySelectorAll<HTMLInputElement>('input[name=sub]').forEach((r) => {
+      r.onchange = () => {
+        sub = Number(r.value);
+        restartIfPlaying();
+      };
+    });
+    playBtn.onclick = () => (playing ? stop() : start());
+
+    const onKey = (e: KeyboardEvent) => {
+      const t = e.target as HTMLElement;
+      if (e.code === 'Space' && !/INPUT|TEXTAREA|BUTTON/.test(t.tagName)) {
+        e.preventDefault();
+        playing ? stop() : start();
+      }
+    };
+    document.addEventListener('keydown', onKey);
+    // 离开页面时停掉声音
+    document.addEventListener('astro:before-swap', () => {
+      stop();
+      document.removeEventListener('keydown', onKey);
+    }, { once: true });
+
+    render();
+  }
+
+  // ---------------- 语速计算器 ----------------
+  /** 英文音节粗估：按元音组计数，去掉词尾不发音的 e */
+  function enSyllables(word: string) {
+    const w = word.toLowerCase().replace(/[^a-z]/g, '');
+    if (!w) return 0;
+    if (w.length <= 3) return 1;
+    const trimmed = w.replace(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/, '').replace(/^y/, '');
+    return Math.max(1, (trimmed.match(/[aeiouy]{1,2}/g) ?? []).length);
+  }
+
+  function initCalc() {
+    const root = document.getElementById('calc');
+    if (!root) return;
+    const refs: Ref[] = JSON.parse(root.dataset.refs!);
+    const lyrics = root.querySelector<HTMLTextAreaElement>('#lyrics')!;
+    const secs = root.querySelector<HTMLInputElement>('#secs')!;
+    const timerBtn = root.querySelector<HTMLButtonElement>('#timer')!;
+    const $ = (id: string) => root.querySelector(`#${id}`)!;
+    let t0 = 0;
+    let tick = 0;
+
+    const update = () => {
+      const text = lyrics.value;
+      const han = (text.match(/\p{Script=Han}/gu) ?? []).length;
+      const hangul = (text.match(/\p{Script=Hangul}/gu) ?? []).length;
+      const en = (text.match(/[A-Za-z']+/g) ?? []).reduce((n, w) => n + enSyllables(w), 0);
+      const total = han + hangul + en;
+      const s = Number(secs.value);
+      const rate = s > 0 ? total / s : 0;
+      $('c-han').textContent = String(han);
+      $('c-hangul').textContent = String(hangul);
+      $('c-en').textContent = String(en);
+      $('syl').textContent = String(total);
+      $('you').textContent = rate.toFixed(2);
+      const top = refs[0];
+      $('you-note').textContent = top && rate > 0
+        ? `是 ${top.name}（${top.label.split('：')[0]}）的 ${Math.round((rate / top.v) * 100)}%；在 90 BPM 上约等于每拍 ${(rate / 1.5).toFixed(1)} 个音节。`
+        : '';
+    };
+
+    timerBtn.onclick = () => {
+      if (!t0) {
+        t0 = performance.now();
+        timerBtn.classList.add('is-on');
+        timerBtn.textContent = '■ 停止';
+        tick = window.setInterval(() => (secs.value = ((performance.now() - t0) / 1000).toFixed(2)), 50);
+      } else {
+        clearInterval(tick);
+        secs.value = ((performance.now() - t0) / 1000).toFixed(2);
+        t0 = 0;
+        timerBtn.classList.remove('is-on');
+        timerBtn.textContent = '● 开始计时';
+        update();
+      }
+    };
+    lyrics.oninput = update;
+    secs.oninput = update;
+    update();
+  }
+
+  document.addEventListener('astro:page-load', () => {
+    initMetro();
+    initCalc();
+  });
+</script>

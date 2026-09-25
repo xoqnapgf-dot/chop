@@ -1,0 +1,265 @@
+---
+import { getCollection, getEntries, render, type CollectionEntry } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '@/layouts/Base.astro';
+import LaneChip from '@/components/LaneChip.astro';
+import Confidence from '@/components/Confidence.astro';
+import Sources from '@/components/Sources.astro';
+import LiteYouTube from '@/components/LiteYouTube.astro';
+import Comments from '@/components/Comments.astro';
+import { artistPhoto, artistBanner, artistColor, artistMedia } from '@/lib/media';
+import { COUNTRY, SPEED_KIND, UNIT, LANE } from '@/lib/labels';
+import { url } from '@/lib/url';
+
+export async function getStaticPaths() {
+  const artists = (await getCollection('artists')).sort((a, b) => a.data.activeSince - b.data.activeSince);
+  return artists.map((artist, i) => ({
+    params: { slug: artist.id },
+    props: { artist, prev: artists[i - 1], next: artists[i + 1] },
+  }));
+}
+
+interface Props {
+  artist: CollectionEntry<'artists'>;
+  prev?: CollectionEntry<'artists'>;
+  next?: CollectionEntry<'artists'>;
+}
+const { artist, prev, next } = Astro.props;
+const { data, id } = artist;
+const { Content } = await render(artist);
+
+const photo = artistPhoto(id);
+const banner = data.useBanner ? artistBanner(id) : undefined;
+const color = artistColor(id);
+const media = artistMedia(id);
+const country = COUNTRY[data.country];
+const related = data.related.length ? await getEntries(data.related) : [];
+
+const tracks = (await getCollection('tracks', (t) => t.data.artists.some((a) => a.id === id))).sort((a, b) => (b.data.year ?? 0) - (a.data.year ?? 0));
+const [lead, ...moreTracks] = tracks;
+const events = (await getCollection('timeline', (e) => e.data.artist?.id === id)).sort((a, b) => a.data.year - b.data.year);
+
+const age = (born: string, until?: string) => {
+  const b = new Date(born);
+  const u = until ? new Date(until) : new Date();
+  let y = u.getFullYear() - b.getFullYear();
+  if (u.getMonth() < b.getMonth() || (u.getMonth() === b.getMonth() && u.getDate() < b.getDate())) y--;
+  return y;
+};
+const fmt = (d: string) => {
+  const [y, m, dd] = d.split('-');
+  return `${y} 年 ${Number(m)} 月 ${Number(dd)} 日`;
+};
+
+const facts = [
+  data.realName && ['本名', data.realName],
+  ['地区', `${country.flag} ${data.city} · ${data.region}`],
+  ['出道', `${data.activeSince} 年`],
+  data.born && ['出生', `${fmt(data.born)}${data.died ? '' : `（${age(data.born)} 岁）`}`],
+  data.died && data.born && ['去世', `${fmt(data.died)}（${age(data.born, data.died)} 岁）`],
+].filter(Boolean) as [string, string][];
+
+const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生成的 Topic 频道', label: '厂牌频道' };
+---
+
+<Base title={data.nameZh ? `${data.nameZh} ${data.name}` : data.name} description={data.tagline} image={photo?.src}>
+  <article style={`--ac:${color}`}>
+    <!-- ============ 人物头图 ============ -->
+    <header class="relative overflow-hidden border-b border-line">
+      <div class="absolute inset-0" aria-hidden="true">
+        {banner ? (
+          <Image src={banner} alt="" widths={[800, 1400, 2120]} sizes="100vw" class="size-full object-cover opacity-45" loading="eager" />
+        ) : photo ? (
+          <Image src={photo} alt="" widths={[400]} class="size-full scale-125 object-cover opacity-40 blur-3xl" loading="eager" />
+        ) : null}
+        <div class="hero-shade absolute inset-0"></div>
+      </div>
+
+      <div class="container-x relative grid gap-8 pb-12 pt-10 md:grid-cols-[minmax(0,300px)_1fr] md:items-end md:gap-12 md:pb-16 md:pt-24">
+        <div class="photo-frame relative w-48 overflow-hidden rounded-[26px] border border-white/10 sm:w-60 md:w-full">
+          {photo && (
+            <Image src={photo} alt={`${data.nameZh ?? data.name} 的照片`} widths={[300, 600]} sizes="300px" class="aspect-square w-full object-cover" loading="eager" transition:name={`photo-${id}`} />
+          )}
+        </div>
+        <div>
+          <a href={url('choppers/')} class="eyebrow link-u hover:text-ink">← 人物库</a>
+          <div class="mt-4 flex flex-wrap gap-2">
+            {data.lane.map((l) => <LaneChip lane={l} />)}
+            <span class="chip">{country.flag} {country.name}</span>
+          </div>
+          <h1 class="mt-4 text-5xl font-bold leading-[0.95] md:text-7xl" transition:name={`name-${id}`}>{data.name}</h1>
+          {data.nameZh && <p class="mt-2 font-display text-2xl text-ink-2 md:text-3xl">{data.nameZh}</p>}
+          <p class="mt-5 max-w-2xl text-lg leading-relaxed text-ink-2">{data.tagline}</p>
+          <div class="mt-6 flex flex-wrap gap-2">
+            {data.tags.map((t) => <a href={url(`choppers/?q=${encodeURIComponent(t)}`)} class="chip hover:border-line-strong">#{t}</a>)}
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ 正文 ============ -->
+    <div class="container-x mt-14 grid gap-14 lg:grid-cols-[minmax(0,1fr)_340px]">
+      <div class="min-w-0">
+        <section>
+          <p class="eyebrow mb-5">简介</p>
+          <div class="prose-chop"><Content /></div>
+        </section>
+
+        {lead && (
+          <section class="mt-16">
+            <p class="eyebrow mb-5">代表作</p>
+            <h2 class="mb-1 text-2xl font-semibold">{lead.data.title}</h2>
+            <p class="mb-5 text-sm text-ink-3">{lead.data.credit}{lead.data.year && ` · ${lead.data.year}`}{lead.data.album && ` · ${lead.data.album}`}</p>
+            <LiteYouTube id={lead.data.youtube} title={`${lead.data.title} ${lead.data.credit}`} channel={lead.data.youtubeChannel} official={lead.data.officialUpload} />
+            <p class="mt-4 text-ink-2">{lead.data.note}</p>
+
+            {moreTracks.length > 0 && (
+              <ul class="mt-8 grid gap-2">
+                {moreTracks.map((t) => (
+                  <li>
+                    <a href={url(`tracks/#${t.id}`)} class="group flex items-center gap-4 rounded-xl border border-line p-3 transition hover:border-line-strong">
+                      <span class="font-mono text-sm tabular-nums text-ink-3">{t.data.year ?? '—'}</span>
+                      <span class="flex-1 font-semibold">{t.data.title}</span>
+                      <span class="hidden text-sm text-ink-3 sm:block">{t.data.credit}</span>
+                      <span class="text-ink-3 transition group-hover:translate-x-0.5 group-hover:text-ink">→</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </section>
+        )}
+
+        {events.length > 0 && (
+          <section class="mt-16">
+            <p class="eyebrow mb-5">大事记</p>
+            <ol class="relative ml-2 grid gap-6 border-l border-line pl-6">
+              {events.map((e) => (
+                <li class="relative">
+                  <span class="absolute -left-[31px] top-1.5 size-2.5 rounded-full border-2 border-bg" style={`background:${LANE[e.data.lane].color}`}></span>
+                  <p class="font-mono text-sm text-ink-3">{e.data.year}</p>
+                  <p class="mt-1 font-semibold">{e.data.title}</p>
+                  <p class="mt-1 text-sm text-ink-2">{e.data.body}</p>
+                </li>
+              ))}
+            </ol>
+          </section>
+        )}
+
+        <section class="mt-16 border-t border-line pt-10">
+          <Sources sources={data.sources} />
+          {media && (
+            <p class="mt-6 text-xs text-ink-3">
+              图片来源：
+              <a class="link-u hover:text-ink" href={media.channelUrl} target="_blank" rel="noopener">{data.youtube?.handle ?? data.name} · {channelLabel[media.kind as keyof typeof channelLabel]} ↗</a>
+              {data.portrait && <>；人物照截取自官方视频 <a class="link-u hover:text-ink" href={`https://www.youtube.com/watch?v=${data.portrait.video}`} target="_blank" rel="noopener">{data.portrait.video} ↗</a></>}
+              ，抓取于 {media.fetchedAt}。版权归原作者所有。
+            </p>
+          )}
+        </section>
+
+        <section class="mt-16">
+          <p class="eyebrow mb-5">讨论</p>
+          <Comments term={`artist:${id}`} />
+        </section>
+      </div>
+
+      <!-- ============ 侧栏 ============ -->
+      <aside class="grid content-start gap-6 lg:sticky lg:top-24 lg:self-start">
+        <div class="card p-5">
+          <p class="eyebrow mb-4">档案</p>
+          <dl class="grid gap-3 text-sm">
+            {facts.map(([k, v]) => (
+              <div class="grid grid-cols-[4rem_1fr] gap-3">
+                <dt class="text-ink-3">{k}</dt>
+                <dd class="text-ink">{v}</dd>
+              </div>
+            ))}
+          </dl>
+          {data.youtube && (
+            <a href={`https://www.youtube.com/channel/${data.youtube.channelId}`} target="_blank" rel="noopener" class="btn btn-ghost mt-5 w-full justify-center text-sm">
+              <svg viewBox="0 0 24 24" class="size-4" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+              YouTube 频道
+            </a>
+          )}
+        </div>
+
+        {data.speed.length > 0 && (
+          <div class="card p-5">
+            <p class="eyebrow mb-4">速度数据</p>
+            <ul class="grid gap-4">
+              {data.speed.map((s) => (
+                <li class="rounded-xl border border-line bg-surface-2 p-4">
+                  <div class="flex items-start justify-between gap-2">
+                    <p class="font-display text-3xl font-semibold tabular-nums">
+                      {s.value}
+                      <span class="ml-1 font-sans text-xs font-normal text-ink-3">{UNIT[s.unit]}</span>
+                    </p>
+                    <Confidence level={s.confidence} />
+                  </div>
+                  <p class="mt-2 text-sm text-ink">{s.label}</p>
+                  <p class="mt-1 text-xs text-ink-3">{SPEED_KIND[s.kind]}</p>
+                  {s.note && <p class="mt-2 text-xs leading-relaxed text-ink-2">{s.note}</p>}
+                  <p class="mt-2 flex flex-wrap gap-x-3 text-xs">
+                    {s.sources.map((src, i) => <a href={src.url} target="_blank" rel="noopener nofollow" class="link-u text-ink-3 hover:text-ink">来源 {i + 1} ↗</a>)}
+                  </p>
+                </li>
+              ))}
+            </ul>
+            <a href={url('learn/measuring-speed/')} class="mt-4 inline-block text-xs text-ink-3 link-u hover:text-ink">这些数字怎么来的？</a>
+          </div>
+        )}
+
+        {related.length > 0 && (
+          <div class="card p-5">
+            <p class="eyebrow mb-4">相关人物</p>
+            <ul class="grid gap-2">
+              {related.map((r) => {
+                const p = artistPhoto(r.id);
+                return (
+                  <li>
+                    <a href={url(`choppers/${r.id}/`)} class="group flex items-center gap-3 rounded-xl p-1.5 transition hover:bg-surface-2">
+                      {p && <Image src={p} alt="" widths={[96]} sizes="48px" class="size-11 rounded-lg object-cover" />}
+                      <span class="min-w-0 flex-1">
+                        <span class="block truncate font-semibold">{r.data.name}</span>
+                        <span class="block truncate text-xs text-ink-3">{r.data.nameZh ?? r.data.city}</span>
+                      </span>
+                      <span class="text-ink-3 group-hover:text-ink">→</span>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
+      </aside>
+    </div>
+
+    <!-- ============ 上一位 / 下一位 ============ -->
+    <nav class="container-x mt-20 grid gap-4 sm:grid-cols-2" aria-label="浏览其他人物">
+      {prev ? (
+        <a href={url(`choppers/${prev.id}/`)} class="card group p-5 transition hover:border-line-strong">
+          <span class="eyebrow">← 上一位</span>
+          <span class="mt-2 block font-display text-xl">{prev.data.name}</span>
+        </a>
+      ) : <span />}
+      {next && (
+        <a href={url(`choppers/${next.id}/`)} class="card group p-5 text-right transition hover:border-line-strong">
+          <span class="eyebrow">下一位 →</span>
+          <span class="mt-2 block font-display text-xl">{next.data.name}</span>
+        </a>
+      )}
+    </nav>
+  </article>
+</Base>
+
+<style>
+  .hero-shade {
+    background:
+      radial-gradient(80% 90% at 15% 100%, color-mix(in oklab, var(--ac) 35%, transparent), transparent 70%),
+      linear-gradient(180deg, color-mix(in oklab, var(--bg) 35%, transparent) 0%, var(--bg) 100%);
+  }
+  .photo-frame {
+    box-shadow: 0 40px 80px -30px color-mix(in oklab, var(--ac) 80%, transparent);
+  }
+</style>

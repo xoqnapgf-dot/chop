@@ -1,0 +1,26 @@
+---
+import { CONFIDENCE, type Confidence } from '@/lib/labels';
+interface Props { level: Confidence; size?: 'sm' | 'md' }
+const { level, size = 'sm' } = Astro.props;
+const c = CONFIDENCE[level];
+---
+<span
+  class:list={['conf inline-flex items-center gap-1.5 rounded-full border font-medium whitespace-nowrap', size === 'sm' ? 'px-2 py-0.5 text-[11px]' : 'px-2.5 py-1 text-xs']}
+  style={`--c:${c.color}`}
+  title={c.desc}
+>
+  <span class="grid size-3.5 place-items-center rounded-full text-[9px] font-bold leading-none" aria-hidden="true">{c.icon}</span>
+  {c.label}
+</span>
+
+<style>
+  .conf {
+    color: var(--c);
+    border-color: color-mix(in oklab, var(--c) 40%, transparent);
+    background: color-mix(in oklab, var(--c) 10%, transparent);
+  }
+  .conf > span {
+    background: var(--c);
+    color: var(--bg);
+  }
+</style>

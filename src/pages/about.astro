@@ -1,0 +1,44 @@
+---
+import Base from '@/layouts/Base.astro';
+import Confidence from '@/components/Confidence.astro';
+import { CONFIDENCE, type Confidence as C } from '@/lib/labels';
+import { SITE } from '@/lib/site';
+---
+
+<Base title="关于与版权" description="CHOP/ 的资料来源、可信度标准和图片版权说明。">
+  <section class="container-x pt-14 md:pt-20">
+    <p class="eyebrow">About</p>
+    <h1 class="mt-4 text-5xl font-bold md:text-7xl">关于 CHOP/</h1>
+
+    <div class="prose-chop mt-10 max-w-3xl">
+      <p>CHOP/ 是一个非商业的粉丝资料库，整理 <strong>Chopper 快嘴说唱</strong>、<strong>Chopped &amp; Screwed</strong> 和 <strong>Sample Chop 切采样</strong>相关的人物、曲目和历史。</p>
+
+      <h2>资料怎么来的</h2>
+      <p>每条事实都附出处。我们优先引用：有引用规范的百科、权威媒体报道、艺人和厂牌的官方渠道，其次才是乐评、论坛整理。不同来源冲突时，会并列说法并标注"有争议"。</p>
+
+      <h2>可信度标签</h2>
+    </div>
+
+    <ul class="mt-6 grid max-w-3xl gap-3 sm:grid-cols-2">
+      {(Object.keys(CONFIDENCE) as C[]).map((k) => (
+        <li class="card flex items-start gap-3 p-4">
+          <Confidence level={k} size="md" />
+          <span class="text-sm text-ink-2">{CONFIDENCE[k].desc}</span>
+        </li>
+      ))}
+    </ul>
+
+    <div class="prose-chop mt-10 max-w-3xl">
+      <h2>图片与视频</h2>
+      <ul>
+        <li>人物图片取自艺人本人或厂牌的<strong>官方 YouTube 频道</strong>（头像、横幅），或官方视频的截图。每个人物页底部都写明了具体来源和抓取日期。</li>
+        <li>部分中文艺人只有 YouTube 自动生成的 Topic 频道，图片是专辑封面，会在页面上注明。</li>
+        <li>图片版权归原作者所有，本站仅用于介绍和评论。如果你是版权方并希望撤下，请 <a href={`${SITE.repo}/issues/new`}>提交 Issue</a>，我们会尽快处理。</li>
+        <li>视频只嵌入 YouTube 播放器，本站不存储任何音频或视频文件。</li>
+      </ul>
+
+      <h2>技术</h2>
+      <p>静态网站，由 Astro 构建、部署在 GitHub Pages。所有资料都是仓库里的 Markdown 和 YAML 文件，任何人都可以通过 Pull Request 修改。</p>
+    </div>
+  </section>
+</Base>

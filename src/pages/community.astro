@@ -1,0 +1,51 @@
+---
+import Base from '@/layouts/Base.astro';
+import Comments from '@/components/Comments.astro';
+import { SITE } from '@/lib/site';
+import { url } from '@/lib/url';
+
+const ways = [
+  { title: '推荐 chopper', desc: '告诉我们一个还没收录的快嘴、DJ 或制作人。附上官方频道或作品链接更好。', href: `${SITE.repo}/issues/new?template=artist.yml`, cta: '提交人物' },
+  { title: '纠正数据', desc: '年份、速度、身份信息有误？请附上能证明的来源，我们核实后更新。', href: `${SITE.repo}/issues/new?template=correction.yml`, cta: '提交纠错' },
+  { title: '补充曲目', desc: '推荐一首代表作，最好是官方上传的视频链接。', href: `${SITE.repo}/issues/new?template=track.yml`, cta: '提交曲目' },
+];
+---
+
+<Base title="讨论" description="推荐人物、纠正数据、补充曲目，参与 CHOP/ 档案馆的共建。">
+  <section class="container-x pt-14 md:pt-20">
+    <p class="eyebrow">Community</p>
+    <h1 class="mt-4 text-5xl font-bold md:text-7xl">一起补全这份档案</h1>
+    <p class="mt-5 max-w-2xl text-lg text-ink-2">这里的每一条资料都需要来源。你的一条链接，可能就能把一个"待核实"变成"已证实"。</p>
+
+    <div class="mt-12 grid gap-4 md:grid-cols-3">
+      {
+        ways.map((w, i) => (
+          <a href={w.href} target="_blank" rel="noopener" class="card group flex flex-col p-6 transition hover:border-line-strong" data-reveal style={`--delay:${i * 80}ms`}>
+            <span class="font-display text-5xl font-semibold text-ink-3 group-hover:text-accent-text">0{i + 1}</span>
+            <span class="mt-6 font-display text-xl font-semibold">{w.title}</span>
+            <span class="mt-2 flex-1 text-sm leading-relaxed text-ink-2">{w.desc}</span>
+            <span class="mt-6 text-sm font-semibold">{w.cta} ↗</span>
+          </a>
+        ))
+      }
+    </div>
+
+    <div class="mt-16 grid gap-10 lg:grid-cols-[1fr_320px]">
+      <div>
+        <p class="eyebrow mb-5">综合讨论</p>
+        <Comments term="community" />
+      </div>
+      <aside class="card h-fit p-6">
+        <p class="eyebrow mb-4">收录标准</p>
+        <ul class="grid gap-3 text-sm text-ink-2">
+          <li>✓ 每条事实至少一个可访问的来源</li>
+          <li>✓ 速度等数字尽量有两个独立来源</li>
+          <li>✓ 来源冲突时标"有争议"，并列出双方说法</li>
+          <li>✗ 不收录未经证实的真实身份、私人信息</li>
+          <li>✗ 不上传未授权的完整音频</li>
+        </ul>
+        <a href={url('about/')} class="mt-5 inline-block text-sm link-u">完整说明 →</a>
+      </aside>
+    </div>
+  </section>
+</Base>

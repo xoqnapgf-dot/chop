@@ -1,0 +1,180 @@
+{
+  "artists": {
+    "bone-thugs-n-harmony": {
+      "channelUrl": "https://www.youtube.com/channel/UCjSkdzVdUS1crC89RI2cNWw",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/VX-Jx2IVIy4j6ldeeKx95Z35RDSgeh6Fi166ql4LKW2wGDmffM0o6oQxzb2WyA1tnj1Og0Zj=s800-c-k-c0x00ffffff-no-rj",
+      "banner": null,
+      "hasBanner": false,
+      "color": "#282828",
+      "fetchedAt": "2026-09-25"
+    },
+    "busta-rhymes": {
+      "channelUrl": "https://www.youtube.com/channel/UCCWKLP04ZkaVpxb6l5BKZOw",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/3DRE_Bsc5sJR0lbQMqaXubqXFCm37FGYhlhV3Ejs70mFnYcCKg1aBbF2dPmLYHsu6-RHeLXiVw=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/1QYAhRCvIsaSxC4Ln0K0o8e84S5BeWBdYKVbnKEoSX2Paf8cISYOd1tOYg-e4WPYxTZ0b07DcQ=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#f8f8f8",
+      "fetchedAt": "2026-09-25"
+    },
+    "ceza": {
+      "channelUrl": "https://www.youtube.com/channel/UCJuok0XMLXfVoDUA-FLWXSQ",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/TVOnx6X5SZxrIDPfKdHPTufVQIOcpfJ5wgiyi7kpch4XBvqNs3pglC3vC6I5stvQl9bQTGTLxA=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/SbTUENvO3gLUFQ7dkuQitK6C_UYSdOP0NVbnpllgDLbFprg1vs9h7BjND_VaoWX9pfk3aOeGxtY=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-25"
+    },
+    "dj-screw": {
+      "channelUrl": "https://www.youtube.com/channel/UCd6jaVwTjqnws2OEYQ5njHA",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/OC4UZC5z__lTX2SXuwOLSrzN2rjid_gGDSFuaUpNC7cfLu22scCqSBditrzYH203Jm6hzbUMJg=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/U8oWbDCP6VNchsIgKFYtgngkbWSaP5mdQ7sMuG_d0G8YSq0rlDNWRBjrZGa3e0G-SbAyEyjxLw=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#887848",
+      "fetchedAt": "2026-09-25"
+    },
+    "eminem": {
+      "channelUrl": "https://www.youtube.com/channel/UCfM3zsQsOnfWNUppiycmBuw",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/fYB3KuH8P5jyoReOqbDRyHQJjfKsPj-BYDcJb1XANiEpo6bhCf6LXpsNxE9_fvefub9S1hCkldU=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/89Yb5Jg0PAS7g0UEKR-tUPNPzk6U23muxfBqeS3tOTx4wTtFcJXZZJWQ_CQhJthqPOfsAOefOg=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-25"
+    },
+    "kindergarten-killer": {
+      "channelUrl": "https://www.youtube.com/channel/UCDibK9D0Qh6sGZJEGm5r0tA",
+      "kind": "topic",
+      "avatar": "https://yt3.googleusercontent.com/Hp2EZMoZnValwzCGZFVmpoky7UTSM8KZGtsrwJtC-ovvl7fnuNatNWGcEYJuQ0C2FvMx_BVW_Q=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/GWgCP5636kf79wPa7awoeS5XivspYoo47XOwGeq_9BcfWIFgq90SphdAUJ5FjUul6h9tzIlmQUA=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": false,
+      "color": "#080808",
+      "fetchedAt": "2026-09-25"
+    },
+    "outsider": {
+      "channelUrl": "https://www.youtube.com/channel/UCXpx9zg20meHet5vc-w2Zaw",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/LVFbkPWkZRFGdLTqR7bD_aI-tFdbUJia8dW3NAsWk8cLFhb3QasKOdcNfcsKctNLg2ljGRaLJw=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/vlBZuAVjagniF81SMu5Kyg8QoujnSoTuYnuzP9r6uMM9JiGYnZ5uqNaO124hvMQKjMgWi_ZXfw=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#a8c8d8",
+      "fetchedAt": "2026-09-25"
+    },
+    "pharaoh": {
+      "channelUrl": "https://www.youtube.com/channel/UCJ-fTowMuQF7d69K68A7Ujw",
+      "kind": "topic",
+      "avatar": "https://yt3.googleusercontent.com/299eF0GDYmugGu6dxdNxC7HePmX0xLiBLZo5teEncSbGNwhqW_1yaBshN0PqHbIqu66JHwH-=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/yWmvRUUQ4iiAaZ1v5MUNTdApqcf5lbeBdf2vE_5k8zHo3FBOtWIRzIEfSGqEI0xHRzrszVJd=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": false,
+      "color": "#a88818",
+      "fetchedAt": "2026-09-25"
+    },
+    "tech-n9ne": {
+      "channelUrl": "https://www.youtube.com/channel/UCJdoPEnnkvS744DCD_12scQ",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/97Ehvwv4IEyVVwqFzau9r1VOjCTUat9NEN8TIdrMPuoi4Q65RNV22zEDaAmf2mys77XK9TlTTQ=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/PmfRvKFUE_TSI64iiXvqq-Q-GgM8PnQ7eLjJ4lOvp8bGzeA_WPcKdLYK5JZK0fCndkwVmxiLDQ=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#f81838",
+      "fetchedAt": "2026-09-25"
+    },
+    "twista": {
+      "channelUrl": "https://www.youtube.com/channel/UCLSuQaxk_Lxw8nWjhIFvQwg",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/W6_WeEecN38Pe3Pye7Vv8lhZjz34p-CeBdQmp83KVDMjxpiXpijlsayq2_7xhiiDJ9i7Ky8j=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/s7AOUNlH5adkIVM9ltRR0XGlELtqAavQ91i_qfWt2cxWJsoCQ7ea8Jts-owMOfhT0K3MBrLMqA=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#e8e8e8",
+      "fetchedAt": "2026-09-25"
+    },
+    "twisted-insane": {
+      "channelUrl": "https://www.youtube.com/channel/UC9LwwugiYd69YLGsIJOb32A",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_mCHnxH-p4iEK30yHXj1ZqndmSyjBfUyMzkGnPFpcajXw=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/9jHhAK3Dh0URzTrmigmxXMX4isDK05gBozTlOYrh_DGwzIQs7LUeNqJPsyAzZGa-YLv1txoM=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-25"
+    }
+  },
+  "tracks": {
+    "worldwide-choppers": {
+      "video": "https://www.youtube.com/watch?v=0GhbkrOg9gA",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "speedom": {
+      "video": "https://www.youtube.com/watch?v=_FBwVRNOL70",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "rap-god": {
+      "video": "https://www.youtube.com/watch?v=XbGs_qK2PQA",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "godzilla": {
+      "video": "https://www.youtube.com/watch?v=r_0JjYUe5jo",
+      "size": "maxresdefault",
+      "color": "#98a8a8"
+    },
+    "look-at-me-now": {
+      "video": "https://www.youtube.com/watch?v=8gyLR4NfMiI",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "gimme-some-more": {
+      "video": "https://www.youtube.com/watch?v=un3NkWnHl9Q",
+      "size": "maxresdefault",
+      "color": "#f8f8f8"
+    },
+    "break-ya-neck": {
+      "video": "https://www.youtube.com/watch?v=W7FfCJb8JZQ",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "tha-crossroads": {
+      "video": "https://www.youtube.com/watch?v=VMYAEHE2GrM",
+      "size": "hqdefault",
+      "color": "#080808"
+    },
+    "slow-jamz": {
+      "video": "https://www.youtube.com/watch?v=jI-w4gvkCkQ",
+      "size": "hqdefault",
+      "color": "#080808"
+    },
+    "holocaust": {
+      "video": "https://www.youtube.com/watch?v=UiyxPIvB89Q",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "loner": {
+      "video": "https://www.youtube.com/watch?v=yROjTblMPag",
+      "size": "hqdefault",
+      "color": "#080808"
+    },
+    "jian-jiang": {
+      "video": "https://www.youtube.com/watch?v=xdzGifKhW6U",
+      "size": "maxresdefault",
+      "color": "#e8e8e8"
+    },
+    "wo-xiang-part2": {
+      "video": "https://www.youtube.com/watch?v=bX5clSB_x0A",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "mao-wang": {
+      "video": "https://www.youtube.com/watch?v=K7cg85ZOOEo",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "june-27th": {
+      "video": "https://www.youtube.com/watch?v=DZeu29nOwjw",
+      "size": "hqdefault",
+      "color": "#181818"
+    }
+  }
+}

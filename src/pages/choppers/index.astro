@@ -1,0 +1,118 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '@/layouts/Base.astro';
+import ArtistCard from '@/components/ArtistCard.astro';
+import { COUNTRY, LANE } from '@/lib/labels';
+
+const artists = (await getCollection('artists')).sort((a, b) => a.data.activeSince - b.data.activeSince);
+const countries = [...new Set(artists.map((a) => a.data.country))];
+const lanes = [...new Set(artists.flatMap((a) => a.data.lane))];
+---
+
+<Base title="人物" description="世界各地的 chopper 快嘴说唱者、Chopped & Screwed DJ 和切采样制作人。">
+  <section class="container-x pt-14 md:pt-20">
+    <p class="eyebrow">Choppers · {artists.length}</p>
+    <h1 class="mt-4 text-5xl font-bold md:text-7xl">人物库</h1>
+    <p class="mt-5 max-w-2xl text-lg text-ink-2">按出道年份排列。人物照片来自本人或厂牌的官方 YouTube 频道。</p>
+
+    <!-- 筛选栏 -->
+    <div class="filters sticky top-16 z-30 -mx-4 mt-10 border-y border-line px-4 py-4 md:mx-0 md:rounded-2xl md:border md:px-5" data-pagefind-ignore>
+      <div class="flex flex-col gap-3 lg:flex-row lg:items-center">
+        <label class="relative flex-1">
+          <span class="sr-only">搜索人物</span>
+          <svg class="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-ink-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" type="search" placeholder="名字、城市、标签…" autocomplete="off" class="w-full rounded-full border border-line bg-surface py-2.5 pl-10 pr-4 text-sm outline-none transition placeholder:text-ink-3 focus:border-line-strong" />
+        </label>
+        <div class="flex flex-wrap gap-2" role="group" aria-label="按类别筛选">
+          <button class="f-btn chip" data-filter="lane" data-value="" aria-pressed="true">全部</button>
+          {lanes.map((l) => <button class="f-btn chip" data-filter="lane" data-value={l} aria-pressed="false">{LANE[l].short}</button>)}
+        </div>
+        <div class="flex flex-wrap gap-2" role="group" aria-label="按国家筛选">
+          <button class="f-btn chip" data-filter="country" data-value="" aria-pressed="true">全球</button>
+          {countries.map((c) => <button class="f-btn chip" data-filter="country" data-value={c} aria-pressed="false">{COUNTRY[c].flag} {COUNTRY[c].name}</button>)}
+        </div>
+      </div>
+    </div>
+
+    <p class="mt-6 text-sm text-ink-3" aria-live="polite"><span id="count">{artists.length}</span> 位</p>
+    <div id="grid" class="mt-4 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+      {artists.map((a, i) => <ArtistCard artist={a} eager={i < 4} />)}
+    </div>
+    <p id="empty" class="hidden py-24 text-center text-ink-3">没有匹配的人物。换个关键词试试？</p>
+  </section>
+</Base>
+
+<style>
+  .filters {
+    background: color-mix(in oklab, var(--bg) 85%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .f-btn {
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .f-btn:hover {
+    border-color: var(--line-strong);
+    color: var(--ink);
+  }
+  .f-btn[aria-pressed='true'] {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+</style>
+
+<script>
+  function initFilters() {
+    const grid = document.getElementById('grid');
+    if (!grid) return;
+    const cards = [...grid.querySelectorAll<HTMLElement>('.artist-card')];
+    const q = document.getElementById('q') as HTMLInputElement;
+    const count = document.getElementById('count')!;
+    const empty = document.getElementById('empty')!;
+    const state = { lane: '', country: '', text: '' };
+
+    // 从网址读取筛选条件，方便分享
+    const params = new URLSearchParams(location.search);
+    state.lane = params.get('lane') ?? '';
+    state.country = params.get('country') ?? '';
+    state.text = params.get('q') ?? '';
+    q.value = state.text;
+
+    const apply = () => {
+      let n = 0;
+      for (const c of cards) {
+        const ok =
+          (!state.lane || c.dataset.lane!.split(' ').includes(state.lane)) &&
+          (!state.country || c.dataset.country === state.country) &&
+          (!state.text || c.dataset.name!.includes(state.text.toLowerCase()));
+        c.style.display = ok ? '' : 'none';
+        if (ok) n++;
+      }
+      count.textContent = String(n);
+      empty.classList.toggle('hidden', n > 0);
+      document.querySelectorAll<HTMLButtonElement>('.f-btn').forEach((b) => {
+        b.setAttribute('aria-pressed', String(state[b.dataset.filter as 'lane' | 'country'] === b.dataset.value));
+      });
+      const p = new URLSearchParams();
+      if (state.lane) p.set('lane', state.lane);
+      if (state.country) p.set('country', state.country);
+      if (state.text) p.set('q', state.text);
+      history.replaceState(history.state, '', p.size ? `?${p}` : location.pathname);
+    };
+
+    document.querySelectorAll<HTMLButtonElement>('.f-btn').forEach((b) => {
+      b.onclick = () => {
+        state[b.dataset.filter as 'lane' | 'country'] = b.dataset.value ?? '';
+        apply();
+      };
+    });
+    q.oninput = () => {
+      state.text = q.value.trim();
+      apply();
+    };
+    apply();
+  }
+  document.addEventListener('astro:page-load', initFilters);
+</script>

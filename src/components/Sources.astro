@@ -1,0 +1,21 @@
+---
+interface Props { sources: { title: string; url: string }[]; title?: string }
+const { sources, title = '来源' } = Astro.props;
+const host = (u: string) => new URL(u).hostname.replace(/^www\./, '');
+---
+<div class="sources">
+  <p class="eyebrow mb-3">{title} · {sources.length}</p>
+  <ol class="grid gap-2">
+    {
+      sources.map((s, i) => (
+        <li class="flex gap-3 text-sm">
+          <span class="font-mono text-ink-3">[{i + 1}]</span>
+          <a href={s.url} target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1">
+            <span class="link-u text-ink-2 group-hover:text-ink">{s.title}</span>
+            <span class="ml-2 font-mono text-[11px] text-ink-3">{host(s.url)} ↗</span>
+          </a>
+        </li>
+      ))
+    }
+  </ol>
+</div>

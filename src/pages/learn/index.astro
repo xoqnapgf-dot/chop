@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '@/layouts/Base.astro';
+import LaneChip from '@/components/LaneChip.astro';
+import { url } from '@/lib/url';
+
+const articles = (await getCollection('learn')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Base title="百科" description="Chopper、Chopped & Screwed、Sample Chop 的入门与专题文章。">
+  <section class="container-x pt-14 md:pt-20">
+    <p class="eyebrow">Learn · {articles.length} 篇</p>
+    <h1 class="mt-4 text-5xl font-bold md:text-7xl">百科</h1>
+    <p class="mt-5 max-w-2xl text-lg text-ink-2">从"chop 到底指什么"开始，到快嘴的节奏原理和数据口径。</p>
+
+    <ol class="mt-14 grid gap-4">
+      {
+        articles.map((a, i) => (
+          <li data-reveal style={`--delay:${i * 60}ms`}>
+            <a href={url(`learn/${a.id}/`)} class="learn-row group card grid items-center gap-4 p-6 transition hover:border-line-strong md:grid-cols-[5rem_1fr_auto] md:gap-8 md:p-8">
+              <span class="font-display text-5xl font-semibold text-ink-3 transition group-hover:text-accent-text">{String(i + 1).padStart(2, '0')}</span>
+              <span>
+                <span class="flex flex-wrap items-center gap-2">
+                  <span class="eyebrow">{a.data.kicker}</span>
+                  <LaneChip lane={a.data.lane} short />
+                </span>
+                <span class="mt-2 block font-display text-2xl font-semibold md:text-3xl">{a.data.title}</span>
+                <span class="mt-2 block text-ink-2">{a.data.summary}</span>
+              </span>
+              <span class="hidden size-12 place-items-center rounded-full border border-line text-xl transition group-hover:border-transparent group-hover:bg-accent group-hover:text-accent-ink md:grid">→</span>
+            </a>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+</Base>
