@@ -1,0 +1,37 @@
+---
+/** 字标：CHOP/ 加一组跳动的音节条 */
+interface Props { class?: string }
+const { class: cls = '' } = Astro.props;
+---
+<span class:list={['inline-flex items-center gap-2 font-display font-bold tracking-tight', cls]}>
+  <span class="logo-bars" aria-hidden="true">
+    {[0.45, 0.8, 1, 0.65, 0.3].map((h, i) => <i style={`--h:${h};--i:${i}`} />)}
+  </span>
+  <span>CHOP<span class="text-accent-text">/</span></span>
+</span>
+
+<style>
+  .logo-bars {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    height: 1.1em;
+  }
+  .logo-bars i {
+    display: block;
+    width: 3px;
+    height: calc(var(--h) * 100%);
+    border-radius: 2px;
+    background: var(--accent);
+    transform-origin: center;
+  }
+  :global(a:hover) .logo-bars i {
+    animation: bar 0.42s ease-in-out infinite alternate;
+    animation-delay: calc(var(--i) * -0.09s);
+  }
+  @keyframes bar {
+    to {
+      transform: scaleY(0.35);
+    }
+  }
+</style>

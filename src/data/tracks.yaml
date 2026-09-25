@@ -1,0 +1,198 @@
+# 曲目库。youtube 是视频 ID；officialUpload 表示是否来自艺人/厂牌/官方媒体频道。
+- id: worldwide-choppers
+  title: Worldwide Choppers
+  artists: [tech-n9ne, busta-rhymes, twista, twisted-insane, ceza]
+  credit: Tech N9ne ft. Busta Rhymes, Ceza, D-Loc, JL B.Hood, Twista, Twisted Insane, U$O, Yelawolf
+  year: 2011
+  album: All 6's and 7's
+  youtube: 0GhbkrOg9gA
+  youtubeChannel: Strange Music Inc
+  officialUpload: true
+  lane: chopper
+  note: 九位 chopper、三种语言（英语、丹麦语、土耳其语），公认的快嘴"世界杯"。
+  sources:
+    - { title: 'Wikipedia – Worldwide Choppers', url: 'https://en.wikipedia.org/wiki/Worldwide_Choppers' }
+- id: speedom
+  title: Speedom (WWC2)
+  artists: [tech-n9ne, eminem]
+  credit: Tech N9ne ft. Eminem & Krizz Kaliko
+  year: 2015
+  album: Special Effects
+  youtube: _FBwVRNOL70
+  youtubeChannel: Strange Music Inc
+  officialUpload: true
+  lane: chopper
+  note: Worldwide Choppers 的续作，Tech N9ne 与 Eminem 的正面交锋。
+  sources:
+    - { title: 'Strange Music – Speedom 官宣', url: 'https://www.strangemusicinc.com/2015/04/tech-n9ne/breaking-tech-n9ne-confirms-speedom-wwc2-feat-krizz-kaliko-and-eminem' }
+    - { title: 'Wikipedia – Special Effects', url: 'https://en.wikipedia.org/wiki/Special_Effects_(album)' }
+- id: rap-god
+  title: Rap God
+  artists: [eminem]
+  credit: Eminem
+  year: 2013
+  album: The Marshall Mathers LP 2
+  youtube: XbGs_qK2PQA
+  youtubeChannel: EminemMusic
+  officialUpload: true
+  lane: chopper
+  note: 吉尼斯"单曲单词数最多"：6 分 03 秒 1,560 个单词。
+  sources:
+    - { title: 'Wikipedia – Rap God', url: 'https://en.wikipedia.org/wiki/Rap_God' }
+- id: godzilla
+  title: Godzilla
+  artists: [eminem]
+  credit: Eminem ft. Juice WRLD
+  year: 2020
+  album: Music to Be Murdered By
+  youtube: r_0JjYUe5jo
+  youtubeChannel: Lyrical Lemonade
+  officialUpload: true
+  lane: chopper
+  note: 第三段主歌 31 秒 224 个单词，约 10.65 音节/秒，Eminem 个人最快。
+  sources:
+    - { title: 'Wikipedia – Godzilla (Eminem song)', url: 'https://en.wikipedia.org/wiki/Godzilla_(Eminem_song)' }
+- id: look-at-me-now
+  title: Look at Me Now
+  artists: [busta-rhymes]
+  credit: Chris Brown ft. Lil Wayne & Busta Rhymes
+  year: 2011
+  album: F.A.M.E.
+  youtube: 8gyLR4NfMiI
+  youtubeChannel: Chris Brown
+  officialUpload: true
+  lane: chopper
+  note: Busta Rhymes 的客串段落，是无数人的快嘴启蒙。
+  sources:
+    - { title: 'Wikipedia – Look at Me Now', url: 'https://en.wikipedia.org/wiki/Look_at_Me_Now_(Chris_Brown_song)' }
+- id: gimme-some-more
+  title: Gimme Some More
+  artists: [busta-rhymes]
+  credit: Busta Rhymes
+  year: 1998
+  album: 'E.L.E. (Extinction Level Event): The Final World Front'
+  youtube: un3NkWnHl9Q
+  youtubeChannel: Busta Rhymes
+  officialUpload: true
+  lane: chopper
+  note: 弦乐采样自电影《惊魂记》（Psycho）配乐。
+  sources:
+    - { title: 'Wikipedia – Gimme Some More', url: 'https://en.wikipedia.org/wiki/Gimme_Some_More' }
+- id: break-ya-neck
+  title: Break Ya Neck
+  artists: [busta-rhymes]
+  credit: Busta Rhymes
+  year: 2001
+  album: Genesis
+  youtube: W7FfCJb8JZQ
+  youtubeChannel: Busta Rhymes
+  officialUpload: true
+  lane: chopper
+  note: 插值了 Red Hot Chili Peppers 的 "Give It Away"。
+  sources:
+    - { title: 'Wikipedia – Break Ya Neck', url: 'https://en.wikipedia.org/wiki/Break_Ya_Neck' }
+- id: tha-crossroads
+  title: Tha Crossroads
+  artists: [bone-thugs-n-harmony]
+  credit: Bone Thugs-n-Harmony
+  year: 1996
+  album: E. 1999 Eternal
+  youtube: VMYAEHE2GrM
+  youtubeChannel: Bone Thugs-N-Harmony
+  officialUpload: true
+  lane: chopper
+  note: 连续 8 周 Billboard Hot 100 冠军，1997 年格莱美获奖。专辑原版发行于 1995 年。
+  sources:
+    - { title: 'Wikipedia – Bone Thugs-n-Harmony', url: 'https://en.wikipedia.org/wiki/Bone_Thugs-n-Harmony' }
+- id: slow-jamz
+  title: Slow Jamz
+  artists: [twista]
+  credit: Twista ft. Kanye West & Jamie Foxx
+  year: 2004
+  album: Kamikaze
+  youtube: jI-w4gvkCkQ
+  youtubeChannel: TWISTA
+  officialUpload: true
+  lane: chopper
+  note: 快嘴也能拿冠军单曲：Twista 的主流代表作。
+  sources:
+    - { title: 'Wikipedia – Twista', url: 'https://en.wikipedia.org/wiki/Twista' }
+    - { title: 'Wikipedia – Slow Jamz', url: 'https://en.wikipedia.org/wiki/Slow_Jamz' }
+- id: holocaust
+  title: Holocaust
+  artists: [ceza]
+  credit: Ceza
+  year: 2004
+  album: Rapstar
+  youtube: UiyxPIvB89Q
+  youtubeChannel: CEZA
+  officialUpload: true
+  lane: chopper
+  note: 土耳其快嘴的标杆曲目。
+  sources:
+    - { title: 'Wikipedia – Ceza', url: 'https://en.wikipedia.org/wiki/Ceza' }
+    - { title: 'Last.fm – Holocaust', url: 'https://www.last.fm/music/Ceza/_/Holocaust' }
+- id: loner
+  title: 외톨이 (Loner)
+  artists: [outsider]
+  credit: Outsider
+  year: 2009
+  album: Maestro
+  youtube: yROjTblMPag
+  youtubeChannel: PONYCANYON KOREA
+  officialUpload: false
+  lane: chopper
+  note: 在 Mnet、Melon 两榜登顶超过五周。
+  sources:
+    - { title: 'Wikipedia – Outsider (rapper)', url: 'https://en.wikipedia.org/wiki/Outsider_(rapper)' }
+- id: jian-jiang
+  title: 健将
+  artists: [pharaoh]
+  credit: 法老 / 小精灵
+  year: 2022
+  album: 健将mixtape
+  youtube: xdzGifKhW6U
+  youtubeChannel: Bagel Music
+  officialUpload: false
+  lane: chopper
+  note: 2022 年 10 月 11 日发行，正好是法老三十岁生日。有第三方测算称其中一段 5 秒快嘴约 10 字/秒。
+  sources:
+    - { title: '网易云音乐 – 健将', url: 'https://music.163.com/song?id=1988565273' }
+    - { title: '百度百科 – 健将mixtape', url: 'https://baike.baidu.com/item/%E5%81%A5%E5%B0%86mixtape/62070166' }
+- id: wo-xiang-part2
+  title: 我想part2
+  artists: [pharaoh]
+  credit: 法老
+  year: 2018
+  youtube: bX5clSB_x0A
+  youtubeChannel: LIOUBE
+  officialUpload: false
+  lane: chopper
+  note: 法老的代表作之一。
+  sources:
+    - { title: '维基百科 – 法老 (歌手)', url: 'https://zh.wikipedia.org/zh-cn/%E6%B3%95%E8%80%81_(%E6%AD%8C%E6%89%8B)' }
+- id: mao-wang
+  title: 猫王
+  artists: [kindergarten-killer]
+  credit: 幼稚园杀手
+  youtube: K7cg85ZOOEo
+  youtubeChannel: 驁三春
+  officialUpload: false
+  lane: chopper
+  note: 常被列为幼稚园杀手的代表作，发行年份待核实。
+  confidence: pending
+  sources:
+    - { title: '百度百科 – 幼稚园杀手', url: 'https://baike.baidu.com/item/%E5%B9%BC%E7%A8%9A%E5%9B%AD%E6%9D%80%E6%89%8B/1475883' }
+- id: june-27th
+  title: June 27th
+  artists: [dj-screw]
+  credit: DJ Screw & Screwed Up Click
+  year: 1996
+  youtube: DZeu29nOwjw
+  youtubeChannel: dtown333
+  officialUpload: false
+  lane: screw
+  note: 1996 年 6 月 27 日录制的 35 分钟即兴混音带，DJ Screw 最畅销的一盘，如今是休斯顿的"非官方节日"。
+  sources:
+    - { title: 'Texas Monthly – June 27th Is Still a Slow-Mo Masterpiece', url: 'https://www.texasmonthly.com/culture/dj-screw-june-27-anniversary/' }
+    - { title: 'KUTX – DJ Screw lays down the June 27th Freestyle', url: 'https://kutx.org/this-week-in-texas-music-history/dj-screw-lays-down-the-june-27th-freestyle/' }

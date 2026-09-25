@@ -1,0 +1,50 @@
+---
+/**
+ * 轻量 YouTube 播放器：先只显示本地缩略图，点击才加载 iframe。
+ * 页面不会因为 YouTube 打不开而卡住，也不会一进页面就加载几 MB 的播放器。
+ */
+import { Image } from 'astro:assets';
+import { trackThumb } from '@/lib/media';
+
+interface Props { id: string; title: string; channel?: string; official?: boolean }
+const { id, title, channel, official } = Astro.props;
+const thumb = trackThumb(id);
+const q = encodeURIComponent(title);
+---
+
+<div class="lite-yt group relative aspect-video overflow-hidden rounded-2xl border border-line bg-black" data-id={id} data-title={title}>
+  {thumb && <Image src={thumb} alt="" widths={[480, 800, 1280]} sizes="(min-width: 1024px) 720px, 100vw" class="size-full object-cover opacity-90 transition duration-500 group-hover:scale-[1.02] group-hover:opacity-100" />}
+  <button type="button" class="play absolute inset-0 grid place-items-center" aria-label={`播放：${title}`}>
+    <span class="grid size-16 place-items-center rounded-full bg-accent text-accent-ink shadow-2xl transition group-hover:scale-110">
+      <svg viewBox="0 0 24 24" class="ml-1 size-7" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg>
+    </span>
+  </button>
+  <div class="pointer-events-none absolute inset-x-0 top-0 flex items-center justify-between gap-2 bg-gradient-to-b from-black/70 to-transparent p-3 text-xs text-white/85">
+    <span class="truncate">{channel}</span>
+    {official !== undefined && <span class="shrink-0 rounded-full bg-black/50 px-2 py-0.5 backdrop-blur">{official ? '官方上传' : '非官方上传'}</span>}
+  </div>
+</div>
+<p class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-ink-3">
+  <span>打不开 YouTube？</span>
+  <a class="link-u hover:text-ink" href={`https://search.bilibili.com/all?keyword=${q}`} target="_blank" rel="noopener">在 B 站搜 ↗</a>
+  <a class="link-u hover:text-ink" href={`https://music.163.com/#/search/m/?s=${q}`} target="_blank" rel="noopener">在网易云搜 ↗</a>
+  <a class="link-u hover:text-ink" href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener">YouTube 原链接 ↗</a>
+</p>
+
+<script>
+  function initLite() {
+    document.querySelectorAll<HTMLElement>('.lite-yt:not([data-ready])').forEach((el) => {
+      el.dataset.ready = '1';
+      el.querySelector('.play')?.addEventListener('click', () => {
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube-nocookie.com/embed/${el.dataset.id}?autoplay=1&rel=0`;
+        iframe.title = el.dataset.title ?? '';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+        iframe.className = 'absolute inset-0 size-full';
+        el.replaceChildren(iframe);
+      });
+    });
+  }
+  document.addEventListener('astro:page-load', initLite);
+</script>

@@ -1,0 +1,24 @@
+name: 推荐人物
+description: 推荐一位还没收录的 chopper / DJ / 制作人
+title: '[人物] '
+labels: [投稿, 人物]
+body:
+  - type: input
+    id: name
+    attributes: { label: 艺名, placeholder: 例如 Twista / 法老 }
+    validations: { required: true }
+  - type: input
+    id: youtube
+    attributes: { label: 官方 YouTube 频道链接, description: 用来抓取人物图片，没有可以留空 }
+  - type: dropdown
+    id: lane
+    attributes: { label: 类别, options: [Chopper 快嘴, Chopped & Screwed, Sample Chop 切采样] }
+    validations: { required: true }
+  - type: textarea
+    id: why
+    attributes: { label: 推荐理由和代表作 }
+    validations: { required: true }
+  - type: textarea
+    id: sources
+    attributes: { label: 来源链接, description: 百科、采访、官方账号等，每行一个 }
+    validations: { required: true }

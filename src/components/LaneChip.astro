@@ -1,0 +1,10 @@
+---
+import { LANE } from '@/lib/labels';
+interface Props { lane: keyof typeof LANE; short?: boolean }
+const { lane, short = false } = Astro.props;
+const l = LANE[lane];
+---
+<span class="chip" style={`--lc:${l.color}`}>
+  <span class="size-1.5 rounded-full" style="background:var(--lc)" aria-hidden="true"></span>
+  {short ? l.short : l.name}
+</span>

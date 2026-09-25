@@ -1,0 +1,133 @@
+---
+import Logo from './Logo.astro';
+import ThemeToggle from './ThemeToggle.astro';
+import { NAV } from '@/lib/site';
+import { url } from '@/lib/url';
+
+const path = Astro.url.pathname;
+const isActive = (href: string) => path.startsWith(url(href));
+---
+
+<header class="site-header sticky top-0 z-50" transition:persist>
+  <div class="container-x flex h-16 items-center gap-6">
+    <a href={url()} class="text-lg" aria-label="CHOP/ 首页"><Logo /></a>
+
+    <nav class="hidden flex-1 md:block" aria-label="主导航">
+      <ul class="flex items-center gap-1">
+        {
+          NAV.map((n) => (
+            <li>
+              <a
+                href={url(n.href)}
+                class:list={['nav-link rounded-full px-3 py-1.5 text-sm text-ink-2 transition hover:text-ink', { 'is-active': isActive(n.href) }]}
+                data-nav={n.href}
+              >
+                {n.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <div class="ml-auto flex items-center gap-2 md:ml-0">
+      <a
+        href={url('search/')}
+        class="hidden items-center gap-2 rounded-full border border-line px-3 py-1.5 text-sm text-ink-3 transition hover:border-line-strong hover:text-ink sm:inline-flex"
+      >
+        <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        搜索
+        <kbd class="font-mono text-[10px] text-ink-3">/</kbd>
+      </a>
+      <ThemeToggle />
+      <button
+        type="button"
+        class="menu-btn grid size-9 place-items-center rounded-full border border-line md:hidden"
+        aria-label="打开菜单"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+      >
+        <svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <nav id="mobile-nav" class="mobile-nav md:hidden" aria-label="移动端导航" hidden>
+    <ul class="container-x grid gap-1 pb-5 pt-2">
+      {
+        NAV.map((n) => (
+          <li>
+            <a href={url(n.href)} class="flex items-baseline justify-between rounded-xl px-3 py-3 text-lg font-display" data-nav={n.href}>
+              {n.label}
+              <span class="eyebrow">{n.en}</span>
+            </a>
+          </li>
+        ))
+      }
+      <li>
+        <a href={url('search/')} class="flex items-baseline justify-between rounded-xl px-3 py-3 text-lg font-display">
+          搜索 <span class="eyebrow">Search</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    background: color-mix(in oklab, var(--bg) 78%, transparent);
+    backdrop-filter: blur(14px) saturate(1.4);
+    -webkit-backdrop-filter: blur(14px) saturate(1.4);
+    border-bottom: 1px solid color-mix(in oklab, var(--line) 70%, transparent);
+  }
+  .nav-link.is-active {
+    color: var(--ink);
+    background: var(--surface-2);
+    box-shadow: inset 0 0 0 1px var(--line);
+  }
+  .mobile-nav a:hover {
+    background: var(--surface-2);
+  }
+</style>
+
+<script>
+  import { url } from '@/lib/url';
+
+  // 头部是 transition:persist 的，换页后需要手动更新高亮
+  function syncActive() {
+    const path = location.pathname;
+    document.querySelectorAll<HTMLAnchorElement>('[data-nav]').forEach((a) => {
+      a.classList.toggle('is-active', path.startsWith(url(a.dataset.nav!)));
+    });
+    const nav = document.getElementById('mobile-nav');
+    const btn = document.querySelector<HTMLButtonElement>('.menu-btn');
+    if (nav && btn) {
+      nav.hidden = true;
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  function initHeader() {
+    const btn = document.querySelector<HTMLButtonElement>('.menu-btn');
+    const nav = document.getElementById('mobile-nav');
+    if (btn && nav && !btn.dataset.bound) {
+      btn.dataset.bound = '1';
+      btn.addEventListener('click', () => {
+        nav.hidden = !nav.hidden;
+        btn.setAttribute('aria-expanded', String(!nav.hidden));
+      });
+    }
+    syncActive();
+  }
+
+  // 按 "/" 打开搜索
+  document.addEventListener('keydown', (e) => {
+    const t = e.target as HTMLElement;
+    if (e.key === '/' && !/INPUT|TEXTAREA|SELECT/.test(t.tagName) && !t.isContentEditable) {
+      e.preventDefault();
+      location.href = url('search/');
+    }
+  });
+
+  document.addEventListener('astro:page-load', initHeader);
+</script>

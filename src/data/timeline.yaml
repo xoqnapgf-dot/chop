@@ -1,0 +1,153 @@
+- id: 1980-new-rap-language
+  year: 1980
+  title: 《New Rap Language》
+  body: Treacherous Three 录下 "New Rap Language"，Kool Moe Dee 被视为快嘴说唱最早的开创者之一。
+  lane: chopper
+  sources:
+    - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
+- id: 1983-screw-starts
+  year: 1983
+  title: DJ Screw 开始打碟
+  body: 12 岁的 Robert Davis Jr. 开始碰唱机，这就是后来的 DJ Screw。
+  lane: screw
+  artist: dj-screw
+  sources:
+    - { title: 'Wikipedia – DJ Screw', url: 'https://en.wikipedia.org/wiki/DJ_Screw' }
+- id: 1988-mpc60
+  year: 1988
+  title: Akai MPC60 上市
+  body: Roger Linn 设计的 MPC60 在 1988 年底推出，16 个打击垫加上方便的切片功能，让"切采样"成为嘻哈制作的核心手法。
+  lane: sample
+  sources:
+    - { title: 'Wikipedia – Akai MPC', url: 'https://en.wikipedia.org/wiki/Akai_MPC' }
+    - { title: 'Sound On Sound – Akai MPC60 Revisited', url: 'https://www.soundonsound.com/music-business/akai-mpc60-revisited' }
+- id: 1990-screw-slows
+  year: 1990
+  title: 降速混音诞生
+  body: DJ Screw 开始把唱片大幅降速降调，1991 至 1992 年间这成了他的主业。Chopped & Screwed 由此成形。
+  lane: screw
+  artist: dj-screw
+  sources:
+    - { title: 'Wikipedia – DJ Screw', url: 'https://en.wikipedia.org/wiki/DJ_Screw' }
+- id: 1992-twista-guinness
+  year: 1992
+  title: 吉尼斯最快说唱者
+  body: Twista 55 秒 598 个音节（约 10.87 音节/秒），被吉尼斯认证为最快的英语说唱者。
+  lane: chopper
+  artist: twista
+  sources:
+    - { title: 'Wikipedia – Twista', url: 'https://en.wikipedia.org/wiki/Twista' }
+- id: 1994-creepin
+  year: 1994
+  title: Creepin on ah Come Up
+  body: Bone Thugs-n-Harmony 的首张 EP 打进 Billboard 200 第 12 名，中西部快嘴开始进入全国视野。
+  lane: chopper
+  artist: bone-thugs-n-harmony
+  sources:
+    - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
+- id: 1995-e1999
+  year: 1995
+  title: E. 1999 Eternal 登顶
+  body: Bone Thugs-n-Harmony 的专辑拿下 Billboard 200 第 1 名。
+  lane: chopper
+  artist: bone-thugs-n-harmony
+  sources:
+    - { title: 'Wikipedia – Bone Thugs-n-Harmony', url: 'https://en.wikipedia.org/wiki/Bone_Thugs-n-Harmony' }
+- id: 1996-june-27th
+  year: 1996
+  title: June 27th
+  body: DJ Screw 与 Screwed Up Click 录下 35 分钟的即兴混音带，成为他最畅销的作品。
+  lane: screw
+  artist: dj-screw
+  sources:
+    - { title: 'Texas Monthly', url: 'https://www.texasmonthly.com/culture/dj-screw-june-27-anniversary/' }
+- id: 1999-strange-music
+  year: 1999
+  title: Strange Music 成立
+  body: Tech N9ne 与 Travis O'Guin 在堪萨斯城创立独立厂牌 Strange Music，后来成了 chopper 的大本营。
+  lane: chopper
+  artist: tech-n9ne
+  sources:
+    - { title: 'Wikipedia – Tech N9ne', url: 'https://en.wikipedia.org/wiki/Tech_N9ne' }
+- id: 2000-screw-dies
+  year: 2000
+  title: DJ Screw 去世
+  body: 11 月 16 日，DJ Screw 在休斯顿去世，年仅 29 岁。他的混音带随后通过 Napster 等 P2P 网络传遍全国。
+  lane: screw
+  artist: dj-screw
+  sources:
+    - { title: 'Wikipedia – DJ Screw', url: 'https://en.wikipedia.org/wiki/DJ_Screw' }
+    - { title: 'Wikipedia – Chopped and screwed', url: 'https://en.wikipedia.org/wiki/Chopped_and_screwed' }
+- id: 2004-slow-jamz
+  year: 2004
+  title: Slow Jamz 登顶
+  body: Twista、Kanye West、Jamie Foxx 合作的 "Slow Jamz" 拿下排行榜冠军，快嘴进入流行主流。
+  lane: chopper
+  artist: twista
+  sources:
+    - { title: 'Wikipedia – Twista', url: 'https://en.wikipedia.org/wiki/Twista' }
+- id: 2005-kk
+  year: 2005
+  title: 幼稚园杀手出现
+  body: 一个用变调人声、真实身份不明的快嘴出现在中文网络上。
+  lane: chopper
+  artist: kindergarten-killer
+  confidence: pending
+  sources:
+    - { title: '豆瓣小组 – 幼稚园杀手 简介', url: 'https://www.douban.com/group/topic/14768861/' }
+- id: 2009-loner
+  year: 2009
+  title: 외톨이（Loner）
+  body: Outsider 的 Maestro 专辑主打歌，在 Mnet、Melon 双榜登顶超过五周。
+  lane: chopper
+  artist: outsider
+  sources:
+    - { title: 'Wikipedia – Outsider (rapper)', url: 'https://en.wikipedia.org/wiki/Outsider_(rapper)' }
+- id: 2011-wwc
+  year: 2011
+  title: Worldwide Choppers
+  body: Tech N9ne 召集美国、土耳其、丹麦的 chopper，用三种语言完成快嘴"世界杯"。
+  lane: chopper
+  artist: tech-n9ne
+  sources:
+    - { title: 'Wikipedia – Worldwide Choppers', url: 'https://en.wikipedia.org/wiki/Worldwide_Choppers' }
+- id: 2013-rap-god
+  year: 2013
+  title: Rap God
+  body: Eminem 6 分 03 秒 1,560 个单词，拿下吉尼斯"单曲单词数最多"。
+  lane: chopper
+  artist: eminem
+  sources:
+    - { title: 'Wikipedia – Rap God', url: 'https://en.wikipedia.org/wiki/Rap_God' }
+- id: 2015-speedom
+  year: 2015
+  title: Speedom (WWC2)
+  body: Worldwide Choppers 续作，Tech N9ne、Eminem、Krizz Kaliko 同台。
+  lane: chopper
+  artist: tech-n9ne
+  sources:
+    - { title: 'Strange Music', url: 'https://www.strangemusicinc.com/2015/04/tech-n9ne/breaking-tech-n9ne-confirms-speedom-wwc2-feat-krizz-kaliko-and-eminem' }
+- id: 2016-huosiren
+  year: 2016
+  title: 活死人成立
+  body: 法老创立说唱厂牌"活死人"。
+  lane: chopper
+  artist: pharaoh
+  sources:
+    - { title: '维基百科 – 法老 (歌手)', url: 'https://zh.wikipedia.org/zh-cn/%E6%B3%95%E8%80%81_(%E6%AD%8C%E6%89%8B)' }
+- id: 2020-godzilla
+  year: 2020
+  title: Godzilla
+  body: Eminem 第三段主歌 31 秒 224 个单词，约 10.65 音节/秒，刷新个人纪录。
+  lane: chopper
+  artist: eminem
+  sources:
+    - { title: 'Wikipedia – Godzilla (Eminem song)', url: 'https://en.wikipedia.org/wiki/Godzilla_(Eminem_song)' }
+- id: 2022-jianjiang
+  year: 2022
+  title: 健将mixtape
+  body: 法老与小精灵在 10 月 11 日（法老三十岁生日）发行《健将mixtape》，同名曲成为中文快嘴的新标杆。
+  lane: chopper
+  artist: pharaoh
+  sources:
+    - { title: '百度百科 – 健将mixtape', url: 'https://baike.baidu.com/item/%E5%81%A5%E5%B0%86mixtape/62070166' }

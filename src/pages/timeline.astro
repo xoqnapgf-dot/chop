@@ -1,0 +1,139 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '@/layouts/Base.astro';
+import Confidence from '@/components/Confidence.astro';
+import { LANE, displayName } from '@/lib/labels';
+import { artistPhoto } from '@/lib/media';
+import { url } from '@/lib/url';
+
+const events = (await getCollection('timeline')).sort((a, b) => a.data.year - b.data.year);
+const rows = await Promise.all(events.map(async (e) => ({ e, artist: e.data.artist ? await getEntry(e.data.artist) : undefined })));
+const decades = [...new Set(events.map((e) => Math.floor(e.data.year / 10) * 10))];
+---
+
+<Base title="时间线" description="从 1980 年到今天，chopper 快嘴、Chopped & Screwed 和切采样的大事记。">
+  <section class="container-x pt-14 md:pt-20">
+    <p class="eyebrow">Timeline · {events[0].data.year}–{events.at(-1)!.data.year}</p>
+    <h1 class="mt-4 text-5xl font-bold md:text-7xl">时间线</h1>
+    <p class="mt-5 max-w-2xl text-lg text-ink-2">三条线并行：<span style="color:var(--lane-chopper)">快嘴</span>、<span style="color:var(--lane-screw)">Chopped &amp; Screwed</span>、<span style="color:var(--lane-sample)">切采样</span>。</p>
+
+    <nav class="decades sticky top-16 z-20 -mx-4 mt-10 flex gap-2 overflow-x-auto border-y border-line px-4 py-3 md:mx-0" aria-label="按年代跳转" data-pagefind-ignore>
+      {decades.map((d) => <a href={`#d${d}`} class="chip shrink-0 font-mono hover:border-line-strong">{d}s</a>)}
+    </nav>
+
+    <ol class="tl relative mt-12">
+      {
+        rows.map(({ e, artist }, i) => {
+          const firstOfDecade = i === 0 || Math.floor(rows[i - 1].e.data.year / 10) !== Math.floor(e.data.year / 10);
+          const photo = artist ? artistPhoto(artist.id) : undefined;
+          return (
+            <>
+              {firstOfDecade && (
+                <li id={`d${Math.floor(e.data.year / 10) * 10}`} class="decade relative scroll-mt-32 py-6">
+                  <span class="font-display text-6xl font-bold text-ink-3/40 md:text-8xl">{Math.floor(e.data.year / 10) * 10}s</span>
+                </li>
+              )}
+              <li id={e.id} class:list={["event relative scroll-mt-32 pb-10", i % 2 ? "right" : "left"]} style={`--lc:${LANE[e.data.lane].color}`} data-reveal>
+                <span class="dot" aria-hidden="true" />
+                <div class="card ev-card p-5 md:p-6">
+                  <div class="flex items-start gap-4">
+                    <div class="min-w-0 flex-1">
+                      <p class="flex flex-wrap items-center gap-3">
+                        <span class="font-display text-3xl font-semibold tabular-nums" style="color:var(--lc)">{e.data.year}</span>
+                        <span class="eyebrow">{LANE[e.data.lane].short}</span>
+                        {e.data.confidence !== 'verified' && <Confidence level={e.data.confidence} />}
+                      </p>
+                      <h2 class="mt-2 text-xl font-semibold">{e.data.title}</h2>
+                      <p class="mt-2 text-ink-2">{e.data.body}</p>
+                    </div>
+                    {photo && artist && (
+                      <a href={url(`choppers/${artist.id}/`)} class="shrink-0" aria-label={artist.data.name}>
+                        <Image src={photo} alt="" widths={[128]} sizes="64px" class="size-14 rounded-xl object-cover md:size-16" />
+                      </a>
+                    )}
+                  </div>
+                  <p class="mt-4 flex flex-wrap gap-x-3 text-xs">
+                    {artist && <a href={url(`choppers/${artist.id}/`)} class="link-u text-ink hover:text-accent-text">{displayName(artist.data)} →</a>}
+                    {e.data.sources.map((s, j) => <a href={s.url} target="_blank" rel="noopener nofollow" class="link-u text-ink-3 hover:text-ink">来源 {j + 1} ↗</a>)}
+                  </p>
+                </div>
+              </li>
+            </>
+          );
+        })
+      }
+    </ol>
+  </section>
+</Base>
+
+<style>
+  .decades {
+    background: color-mix(in oklab, var(--bg) 85%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .tl {
+    --x: 11px;
+  }
+  .tl::before {
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(var(--line-strong), var(--line) 90%, transparent);
+  }
+  .event,
+  .decade {
+    padding-left: calc(var(--x) * 2 + 20px);
+  }
+  .dot {
+    position: absolute;
+    left: calc(var(--x) - 6px);
+    top: 30px;
+    width: 13px;
+    height: 13px;
+    border-radius: 999px;
+    background: var(--lc);
+    box-shadow: 0 0 0 4px var(--bg), 0 0 18px var(--lc);
+  }
+  .ev-card {
+    transition: border-color 0.3s ease;
+  }
+  .event:target .ev-card,
+  .ev-card:hover {
+    border-color: color-mix(in oklab, var(--lc) 55%, var(--line));
+  }
+
+  /* 桌面端：左右交错 */
+  @media (min-width: 900px) {
+    .tl {
+      --x: 50%;
+    }
+    .event,
+    .decade {
+      padding-left: 0;
+      width: 50%;
+    }
+    .decade {
+      width: 100%;
+      text-align: center;
+    }
+    .event.left {
+      padding-right: 48px;
+    }
+    .event.right {
+      margin-left: 50%;
+      padding-left: 48px;
+    }
+    .event.left .dot {
+      left: auto;
+      right: -6.5px;
+    }
+    .event.right .dot {
+      left: -6.5px;
+    }
+  }
+</style>

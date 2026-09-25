@@ -1,0 +1,75 @@
+---
+import { getCollection, getEntries } from 'astro:content';
+import Base from '@/layouts/Base.astro';
+import LiteYouTube from '@/components/LiteYouTube.astro';
+import LaneChip from '@/components/LaneChip.astro';
+import Confidence from '@/components/Confidence.astro';
+import { url } from '@/lib/url';
+import { LANE, displayName } from '@/lib/labels';
+
+const tracks = (await getCollection('tracks')).sort((a, b) => (a.data.year ?? 9999) - (b.data.year ?? 9999));
+const withArtists = await Promise.all(tracks.map(async (t) => ({ t, artists: await getEntries(t.data.artists) })));
+const lanes = [...new Set(tracks.map((t) => t.data.lane))];
+---
+
+<Base title="曲目" description="Chopper 快嘴和 Chopped & Screwed 的代表曲目，附官方视频和来源。">
+  <section class="container-x pt-14 md:pt-20">
+    <p class="eyebrow">Tracks · {tracks.length}</p>
+    <h1 class="mt-4 text-5xl font-bold md:text-7xl">曲目库</h1>
+    <p class="mt-5 max-w-2xl text-lg text-ink-2">按年份排列。点击封面在页面内播放；优先收录艺人或厂牌官方上传的视频，非官方上传的会注明。</p>
+
+    <div class="mt-8 flex flex-wrap gap-2" role="group" aria-label="按类别筛选" data-pagefind-ignore>
+      <button class="t-btn chip cursor-pointer" data-value="" aria-pressed="true">全部</button>
+      {lanes.map((l) => <button class="t-btn chip cursor-pointer" data-value={l} aria-pressed="false">{LANE[l].name}</button>)}
+    </div>
+
+    <div class="mt-10 grid gap-x-8 gap-y-16 lg:grid-cols-2">
+      {
+        withArtists.map(({ t, artists }) => (
+          <article id={t.id} class="track scroll-mt-24" data-lane={t.data.lane}>
+            <LiteYouTube id={t.data.youtube} title={`${t.data.title} ${t.data.credit}`} channel={t.data.youtubeChannel} official={t.data.officialUpload} />
+            <div class="mt-5 flex flex-wrap items-center gap-2">
+              <LaneChip lane={t.data.lane} short />
+              <span class="chip font-mono">{t.data.year ?? '年份待考'}</span>
+              {t.data.confidence !== 'verified' && <Confidence level={t.data.confidence} />}
+            </div>
+            <h2 class="mt-3 text-2xl font-semibold">
+              <a href={`#${t.id}`} class="hover:text-accent-text">{t.data.title}</a>
+            </h2>
+            <p class="mt-1 text-sm text-ink-3">{t.data.credit}{t.data.album && ` · 专辑 ${t.data.album}`}</p>
+            <p class="mt-3 text-ink-2">{t.data.note}</p>
+            <div class="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+              {artists.map((a) => <a href={url(`choppers/${a.id}/`)} class="link-u text-ink hover:text-accent-text">{displayName(a.data)} →</a>)}
+              <span class="text-ink-3">·</span>
+              {t.data.sources.map((s, i) => <a href={s.url} target="_blank" rel="noopener nofollow" class="link-u text-xs text-ink-3 hover:text-ink">来源 {i + 1} ↗</a>)}
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+</Base>
+
+<style>
+  .t-btn[aria-pressed='true'] {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+</style>
+
+<script>
+  function initTrackFilter() {
+    const btns = document.querySelectorAll<HTMLButtonElement>('.t-btn');
+    btns.forEach((b) => {
+      b.onclick = () => {
+        const v = b.dataset.value;
+        btns.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+        document.querySelectorAll<HTMLElement>('article.track').forEach((el) => {
+          el.style.display = !v || el.dataset.lane === v ? '' : 'none';
+        });
+      };
+    });
+  }
+  document.addEventListener('astro:page-load', initTrackFilter);
+</script>

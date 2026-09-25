@@ -1,0 +1,21 @@
+name: 纠错
+description: 页面上的资料或数据有误
+title: '[纠错] '
+labels: [纠错]
+body:
+  - type: input
+    id: page
+    attributes: { label: 页面链接 }
+    validations: { required: true }
+  - type: textarea
+    id: wrong
+    attributes: { label: 哪里不对 }
+    validations: { required: true }
+  - type: textarea
+    id: right
+    attributes: { label: 正确的应该是 }
+    validations: { required: true }
+  - type: textarea
+    id: sources
+    attributes: { label: 来源链接, description: 能证明你说法的资料，每行一个 }
+    validations: { required: true }
