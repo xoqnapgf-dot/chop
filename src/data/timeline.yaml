@@ -187,3 +187,20 @@
   artist: yang-he-su
   sources:
     - { title: '维基百科 – 杨和苏', url: 'https://zh.wikipedia.org/zh-cn/%E6%9D%A8%E5%92%8C%E8%8B%8F' }
+- id: 2013-crucified-guinness
+  year: 2013
+  title: 最后一次吉尼斯挑战
+  body: 9 月 13 日，德州的 Crucified 以 49 秒 949 个音节（平均 19.37）冲击吉尼斯"最快说唱"纪录，Bizzy Bone 作证。半年后吉尼斯关闭了这个类别。
+  scene: world
+  artist: crucified
+  confidence: pending
+  sources:
+    - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }
+- id: 2024-one-second
+  year: 2024
+  title: "“只比 1 秒”之争"
+  body: 据 Rap Wiki 记载，一群想自称"最快"的人试图改写纪录规则，只比 1 秒爆发。圈内把刚入圈、只追速度、含糊吐字甚至夸大测算的新人小孩叫作"SPS kid"。
+  scene: world
+  confidence: pending
+  sources:
+    - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }

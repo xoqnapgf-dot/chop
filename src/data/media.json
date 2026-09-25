@@ -323,6 +323,21 @@
       "video": "https://www.youtube.com/watch?v=iFrZqDMb884",
       "size": "sddefault",
       "color": "#080808"
+    },
+    "still-we-breathe": {
+      "video": "https://www.youtube.com/watch?v=aRJ7NY_-UBw",
+      "size": "sddefault",
+      "color": "#080808"
+    },
+    "wicked": {
+      "video": "https://www.youtube.com/watch?v=SoHpqUvSGQE",
+      "size": "sddefault",
+      "color": "#080808"
+    },
+    "live-799": {
+      "video": "https://www.youtube.com/watch?v=UazJea9uaDc",
+      "size": "maxresdefault",
+      "color": "#080808"
     }
   }
 }

@@ -339,21 +339,63 @@
   artists: [crucified]
   credit: Crucified
   scene: world
+  year: 2017
+  album: Water to Wine
   youtube: y0J3LJBohWQ
   youtubeChannel: crucified830
   officialUpload: true
-  note: 曾被误算成 28.9 SPS 并广泛流传，SPS 团队后来更正为 18 SPS。
+  note: 曾被误算成 28.9 SPS 并广泛流传；更正值 SPS wiki 说 18、Rap Wiki 说 19。Rap Wiki 认为这首真正的看点是一分钟九百多个音节的持续速度。
   confidence: disputed
   sources:
     - { title: 'SPS and Chopper Rap Wiki – Crucified', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Crucified' }
 - id: that-music
   title: That Music
   artists: [crucified]
-  credit: Crucified
+  credit: Crucified ft. Playa Rob
   scene: world
+  year: 2012
+  album: Sing to the Morning Light
   youtube: iFrZqDMb884
   youtubeChannel: crucified830
   officialUpload: true
   note: Crucified 播放量最高的歌，据 wiki 记载到 2026 年约 270 万播放。
   sources:
     - { title: 'SPS and Chopper Rap Wiki – Crucified', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Crucified' }
+- id: still-we-breathe
+  title: Still We Breathe
+  artists: [crucified, bone-thugs-n-harmony]
+  credit: Crucified ft. Bizzy Bone（Bone Thugs-n-Harmony）
+  scene: world
+  year: 2012
+  album: The Birth of Tragedy
+  youtube: aRJ7NY_-UBw
+  youtubeChannel: crucified830
+  officialUpload: true
+  note: 地下 chopper 和 chopper 先驱 Bone Thugs-n-Harmony 成员的合作。
+  sources:
+    - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }
+- id: wicked
+  title: Wicked
+  artists: [crucified, twisted-insane]
+  credit: Crucified ft. Twisted Insane
+  scene: world
+  year: 2012
+  album: The Birth of Tragedy
+  youtube: SoHpqUvSGQE
+  youtubeChannel: crucified830
+  officialUpload: true
+  note: Twisted Insane 还出现在 Crucified 的另外两首歌里。
+  sources:
+    - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }
+- id: live-799
+  title: 799 syllables in 46 seconds（现场）
+  artists: [crucified]
+  credit: Crucified
+  scene: world
+  year: 2014
+  youtube: UazJea9uaDc
+  youtubeChannel: crucified830
+  officialUpload: true
+  note: 为回应"后期加速"的质疑而录的现场视频：46 秒 799 个音节，平均约 17.37。
+  sources:
+    - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }

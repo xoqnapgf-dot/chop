@@ -60,11 +60,19 @@ const profiled = new Map(artists.map((a) => [a.data.name.toLowerCase(), a.id]));
   {
     cypher && (
       <section id="sps" class="container-x scroll-mt-24 pt-28">
-        <SectionHeading index="02" eyebrow="SPS community" title="SPS 社区：把语速算到小数点后三位">
+        <SectionHeading index="02" eyebrow="SPS & the 1-second race" title="SPS：只比 1 秒的速度竞赛">
           <p class="mt-4 max-w-3xl text-ink-2">
-            SPS 是 syllables per second（每秒音节数）。海外有一群 chopper 专门在 YouTube 和 Discord 上做"测速"：取 1 秒左右的爆发段落，写出"音节数 / 秒数"的算式，发现剪辑拼接就作废，算错了会公开更正。
+            SPS 是 syllables per second（每秒音节数）。海外有一个圈子专门在 YouTube 和 Discord 上"测速"：截取 1 秒左右的爆发段落，写出"音节数 / 秒数"的算式。它让数字变得可以核对，但也催生了只追数字的风气。
           </p>
         </SectionHeading>
+
+        <div class="card mb-6 grid gap-4 p-5 sm:grid-cols-[auto_1fr] sm:items-start sm:gap-6 sm:p-6" style="border-left:3px solid var(--style-fast)">
+          <p class="font-display text-2xl font-semibold whitespace-nowrap" style="color:var(--style-fast)">"SPS kid"</p>
+          <div class="text-sm leading-relaxed text-ink-2">
+            <p>圈内的贬义说法，专指<strong class="text-ink">刚入圈、只追求速度</strong>的新人小孩：为了多塞音节而含糊吐字、甚至胡乱发音；靠剪辑拼接、后期加速堆数字；只挑最快的 1 秒来算，甚至夸大测算结果。Rap Wiki 写道，"网上的小孩只想找最快的那一秒"；2024 年还有人试图把纪录规则改成只比 1 秒爆发。</p>
+            <p class="mt-2">所以下面这张表<strong class="text-ink">只能说明 1 秒爆发有多快</strong>，不能说明谁是更好的 chopper。判断 chopper，还要看每个音节是不是真的词、flow 好不好、能不能现场唱出来。<a href={url('learn/what-is-chop/')} class="link-u text-ink">快嘴 ≠ Chopper →</a></p>
+          </div>
+        </div>
 
         <div class="grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
           <div>
@@ -76,7 +84,7 @@ const profiled = new Map(artists.map((a) => [a.data.name.toLowerCase(), a.id]));
                 <strong class="text-ink">本站的对照结果：</strong>用"音节数 ÷ 秒数"复算了表里全部 {cypher.data.entries.length} 条，和 wiki 写的数值全部一致。数字本身来自社区单一来源，所以整体标为"待核实"。
               </p>
               <p class="mt-3 text-xs text-ink-3">
-                这个社区里有不少未成年的创作者，本站只引用公开作品里的艺名和测速数据，不收录任何人的年龄、真名或联系方式。
+                表中是参与者公开使用的艺名。这个圈子里有不少未成年的创作者，本站不收录任何人的年龄、真名或联系方式。
               </p>
               <p class="mt-3 flex flex-wrap gap-x-4 text-xs">
                 {cypher.data.sources.map((s) => <a href={s.url} target="_blank" rel="noopener nofollow" class="link-u text-ink-3 hover:text-ink">{s.title} ↗</a>)}
