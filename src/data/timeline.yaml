@@ -236,11 +236,8 @@
 - id: 2018-china-chop-circle
   year: 2018
   title: 中国第二代 chop 圈组建
-  body: 受这类搬运视频的影响，一批专门练 chop 的中国新人出现了。2018 年，煦航把他们组织起来，组建了中国的 chop 圈。这一代承上启下，是中国的第二代 chopper；2022 年以后入圈的是第三代。
+  body: 受 NahDah 榜单搬运视频的影响，一批专门练 chop 的中国新人出现了。2018 年，煦航把他们组织起来，组建了中国的 chop 圈。这一代承上启下，是中国的第二代 chopper；2022 年以后入圈的是第三代。
   scene: china
-  sources:
-    - { title: '本站站长煦航（圈子组建者）亲述', url: 'https://xoqnapgf-dot.github.io/chop/about/' }
-    - { title: 'B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017', url: 'https://www.bilibili.com/video/BV11x411L79b/' }
 - id: 2021-wulitingtingzhang
   year: 2021
   title: 中文圈自己测速

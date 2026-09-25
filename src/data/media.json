@@ -190,6 +190,15 @@
       "hasBanner": true,
       "color": "#080808",
       "fetchedAt": "2026-09-25"
+    },
+    "interchopper": {
+      "channelUrl": "https://www.youtube.com/channel/UCmYuEGJ6CKaPVERYTsrHggQ",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_nbnboJ-FQml3cVoLJzgannTn-2gAyU9zmdFmtnQrm9Nos=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/9-G2_3L0O6AJMi9tzihHOVNXY3kYo6a4LuJOhRh6dwGKrizTRDTZc__jQOKhIx7kX-1VVVq1=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-25"
     }
   },
   "tracks": {
@@ -461,6 +470,11 @@
     "shi-phage": {
       "video": "https://www.youtube.com/watch?v=C4I1MJzmnnA",
       "size": "hqdefault",
+      "color": "#080808"
+    },
+    "undaground-choppers-7": {
+      "video": "https://www.youtube.com/watch?v=gFsss9gLLOU",
+      "size": "maxresdefault",
       "color": "#080808"
     }
   }

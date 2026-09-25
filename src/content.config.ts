@@ -39,7 +39,7 @@ const artists = defineCollection({
     nameZh: z.string().optional(),
     realName: z.string().optional(),
     tagline: z.string(),
-    country: z.enum(['US', 'KR', 'TR', 'CN', 'PH']),
+    country: z.enum(['US', 'KR', 'TR', 'CN', 'PH', 'GE']),
     city: z.string(),
     /** 分组用的地区名，中国区按这个分组（如"川渝"） */
     region: z.string(),
@@ -122,7 +122,8 @@ const timeline = defineCollection({
     scene: z.enum(['china', 'world']),
     artist: reference('artists').optional(),
     confidence: confidence.default('verified'),
-    sources: z.array(source).min(1),
+    /** 圈内亲历的事可以不附链接 */
+    sources: z.array(source).default([]),
   }),
 });
 
