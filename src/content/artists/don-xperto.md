@@ -12,7 +12,7 @@ styleNote: 以"世界最快说唱"自我宣传的西语快嘴，本站没找到�
 tags: [墨西哥, 西班牙语, 加速, 已除名, 早期影响]
 youtube: { channelId: UC4vk-DPHJUOl03lUdukK2FQ, handle: '@donxperto', kind: official }
 useBanner: false
-related: [crucified, interchopper]
+related: [crucified, interchopper, sabotahe]
 speed:
   - value: 24.1
     unit: syl/s
