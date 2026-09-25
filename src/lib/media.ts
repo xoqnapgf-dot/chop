@@ -4,6 +4,7 @@ import media from '@/data/media.json';
 type Mod = { default: ImageMetadata };
 const artistImgs = import.meta.glob<Mod>('/src/assets/artists/*/*.{jpg,jpeg,png,webp}', { eager: true });
 const trackImgs = import.meta.glob<Mod>('/src/assets/tracks/*.jpg', { eager: true });
+const videoImgs = import.meta.glob<Mod>('/src/assets/videos/*.jpg', { eager: true });
 
 function find(slug: string, name: string) {
   const hit = Object.entries(artistImgs).find(([p]) => p.startsWith(`/src/assets/artists/${slug}/${name}.`));
@@ -33,6 +34,11 @@ export function artistColor(slug: string): string {
   if (c && artistPhoto(slug)) return c;
   const hash = [...slug].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) >>> 0, 7);
   return PALETTE[hash % PALETTE.length];
+}
+
+/** 测速/推荐视频的本地封面 */
+export function videoCover(id: string): ImageMetadata | undefined {
+  return videoImgs[`/src/assets/videos/${id}.jpg`]?.default;
 }
 
 export function trackThumb(videoId: string): ImageMetadata | undefined {

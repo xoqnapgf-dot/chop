@@ -348,6 +348,81 @@
       "video": "https://www.youtube.com/watch?v=xLl8fKxKiho",
       "size": "maxresdefault",
       "color": "#f8f8f8"
+    },
+    "new-rap-language": {
+      "video": "https://www.youtube.com/watch?v=JlTvgyUBTRs",
+      "size": "hqdefault",
+      "color": "#080808"
+    },
+    "midwest-choppers": {
+      "video": "https://www.youtube.com/watch?v=0LKFW3AdGCA",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "midwest-choppers-2": {
+      "video": "https://www.youtube.com/watch?v=FVa4X29vGNY",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "german-choppers": {
+      "video": "https://www.youtube.com/watch?v=Z-E2yzcpP3k",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "thron": {
+      "video": "https://www.youtube.com/watch?v=oi7uBcKKDxg",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "dome-split": {
+      "video": "https://www.youtube.com/watch?v=nUpVSFRUfO0",
+      "size": "hqdefault",
+      "color": "#080808"
+    },
+    "idol": {
+      "video": "https://www.youtube.com/watch?v=v5gLMpiDv28",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "hold-up": {
+      "video": "https://www.youtube.com/watch?v=8dSA6xcICNk",
+      "size": "maxresdefault",
+      "color": "#f8f8f8"
+    },
+    "onion-chopper": {
+      "video": "https://www.youtube.com/watch?v=8T-HVOvWbqQ",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "mousha": {
+      "video": "https://www.youtube.com/watch?v=SKhipQqpjOg",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "shengli": {
+      "video": "https://www.youtube.com/watch?v=_dG2XMMZC9g",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "hbuf": {
+      "video": "https://www.youtube.com/watch?v=NNgd5M7vvqk",
+      "size": "sddefault",
+      "color": "#282828"
+    },
+    "hnbmc-2018-cypher": {
+      "video": "https://www.youtube.com/watch?v=2tQONu1Gi2Y",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "sleep-read-love": {
+      "video": "https://www.youtube.com/watch?v=jD6MDh49MIY",
+      "size": "maxresdefault",
+      "color": "#381818"
+    },
+    "nightkidz": {
+      "video": "https://www.youtube.com/watch?v=1cOcmUPC5ec",
+      "size": "sddefault",
+      "color": "#080808"
     }
   }
 }

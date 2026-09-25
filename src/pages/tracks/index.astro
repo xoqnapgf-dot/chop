@@ -3,6 +3,7 @@ import { getCollection, getEntries } from 'astro:content';
 import Base from '@/layouts/Base.astro';
 import LiteYouTube from '@/components/LiteYouTube.astro';
 import Confidence from '@/components/Confidence.astro';
+import VideoShelf from '@/components/VideoShelf.astro';
 import { url } from '@/lib/url';
 import { SCENE, displayName } from '@/lib/labels';
 
@@ -48,6 +49,13 @@ const scenes = Object.keys(SCENE) as (keyof typeof SCENE)[];
         ))
       }
     </div>
+  </section>
+
+  <section id="videos" class="container-x scroll-mt-24 pt-24">
+    <p class="eyebrow">Videos</p>
+    <h2 class="mt-3 text-3xl font-semibold md:text-5xl">测速、推荐和教学视频</h2>
+    <p class="mt-4 max-w-3xl text-ink-2">B 站和 YouTube 上值得看的快嘴视频：语速测算、作品合集、怎么练。视频里的数字是作者自己测的，口径不一，本站没有逐条复核，只作参考。</p>
+    <div class="mt-8"><VideoShelf /></div>
   </section>
 </Base>
 

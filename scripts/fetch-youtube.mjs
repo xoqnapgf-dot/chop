@@ -180,5 +180,22 @@ for (const t of tracks) {
   }
 }
 
+// ---------- 视频封面（B 站 / YouTube）----------
+const videos = yaml.load(await fs.readFile(path.join(root, 'src/data/videos.yaml'), 'utf8')) ?? [];
+for (const v of videos) {
+  const dest = path.join(root, 'src/assets/videos', `${v.id}.jpg`);
+  if (!force && (await exists(dest))) continue;
+  try {
+    // B 站封面要带 Referer，否则可能被拒
+    const res = await fetch(v.cover, { headers: { ...UA, referer: 'https://www.bilibili.com/' } });
+    if (!res.ok) throw new Error(`${res.status}`);
+    await fs.mkdir(path.dirname(dest), { recursive: true });
+    await sharp(Buffer.from(await res.arrayBuffer())).resize({ width: 640, height: 360, fit: 'cover' }).jpeg({ quality: 84, mozjpeg: true }).toFile(dest);
+    console.log(`✓ video ${v.id}`);
+  } catch (e) {
+    console.warn(`✗ video ${v.id}: ${e.message}`);
+  }
+}
+
 await fs.writeFile(mediaFile, JSON.stringify(media, null, 2) + '\n');
 console.log('media.json 已更新');
