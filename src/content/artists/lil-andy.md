@@ -20,10 +20,11 @@ speed:
     window: burst
     syllables: 14
     seconds: 1.11
-    confidence: pending
-    note: '深蓝儿童《宅の死》（2019）。测的是"说唱动力火车票不打折拉满几个"这一句。'
+    confidence: verified
+    note: '深蓝儿童《宅の死》（2019）。测的是"说唱动力火车票不打折拉满几个"这一句。石狐九和 2021 年单独测过同一句：1.16 秒 14 个字 ≈ 12.07，字数一样，计时只差 0.05 秒。'
     sources:
       - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
+      - { title: 'B站 – 石狐九和：中文快嘴top10（新编）（2021）', url: 'https://www.bilibili.com/video/BV1bh411v7d7/' }
   - value: 12.5
     unit: char/s
     label: '《活死人 2018 Cypher》最快一段 · 排第 2'
@@ -69,9 +70,10 @@ speed:
     syllables: 19
     seconds: 1.83
     confidence: pending
-    note: '深蓝儿童《宅の死》（2019）。'
+    note: '深蓝儿童《宅の死》（2019）。五里亭亭长更早的《语速最快的七位中文rapper》也测过这首：1.85 秒 18 个字 ≈ 9.7，和这次差一个字。'
     sources:
       - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
+      - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
 sources:
   - { title: '知乎 – 小安迪，靠作品说话的"活死人"', url: 'https://zhuanlan.zhihu.com/p/42062345' }
   - { title: '知乎 – 小安迪的深蓝儿童退出活死人厂牌', url: 'https://zhuanlan.zhihu.com/p/55226303' }
@@ -103,7 +105,7 @@ B 站 UP 主五里亭亭长 2021 年做过一期"小安迪最快的五首歌"，
 | 4 | 《四哥购币》 | 17 ÷ 1.45 | 11.7 |
 | 5 | 《噬》 | 19 ÷ 1.83 | 10.4 |
 
-本站复算过，算式都对。这是单个 UP 主的测算，所以标为待核实。
+本站复算过，算式都对。《狗怕黑》那一句石狐九和也单独测过（1.16 秒 14 个字 ≈ 12.07），字数一样、计时只差 0.05 秒，所以标为已证实；其余四首目前只找到五里亭亭长一家的测算，标为待核实。
 
 ## 深蓝儿童
 

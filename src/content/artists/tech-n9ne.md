@@ -23,11 +23,13 @@ speed:
     window: burst
     syllables: 15
     seconds: 1.067
-    confidence: pending
-    note: '1.067 秒 15 个音节。'
+    confidence: verified
+    note: '1.067 秒 15 个音节。另一位测算者 zombifiedangel 2025 年测同一段是 14.85，视频评论区还有人测出 14.10，都在 14–15 之间。NahDah 2021 版用的是另一首《Welcome to the Midwest》（1.039 秒 14 个音节 ≈ 13.47）。'
     sources:
       - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
       - { title: 'YouTube – NahDah Vebb：[2023] Top 150 Fastest Rappers in the World', url: 'https://www.youtube.com/watch?v=4SjqPAqjsWo' }
+      - { title: 'YouTube – zombifiedangel：Hollywood Undead - Idol (feat. Tech N9ne) 14.85 sps（2025）', url: 'https://www.youtube.com/shorts/Ex8G1frAKzE' }
+      - { title: 'B站 – NahDah Vebb：Top 150 Fastest Rappers 2021（转载，每条都有算式）', url: 'https://www.bilibili.com/video/BV1Av4y1Z7d7/' }
 sources:
   - { title: 'Wikipedia – Tech N9ne', url: 'https://en.wikipedia.org/wiki/Tech_N9ne' }
   - { title: 'Wikipedia – Worldwide Choppers', url: 'https://en.wikipedia.org/wiki/Worldwide_Choppers' }

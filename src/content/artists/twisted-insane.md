@@ -22,11 +22,13 @@ speed:
     window: burst
     syllables: 16
     seconds: 1.05
-    confidence: pending
-    note: '1.050 秒 16 个音节。'
+    confidence: verified
+    note: '1.050 秒 16 个音节。NahDah 2021 版单独测过同一首：1.032 秒 16 个音节 ≈ 15.50，音节数一样，只差 0.26。五里亭亭长 2021 选的是另一首《Brainsick 1.0》（0.84 秒 11 个音节 ≈ 13.1），不和这段直接比。'
     sources:
       - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
       - { title: 'YouTube – NahDah Vebb：[2023] Top 150 Fastest Rappers in the World', url: 'https://www.youtube.com/watch?v=4SjqPAqjsWo' }
+      - { title: 'B站 – NahDah Vebb：Top 150 Fastest Rappers 2021（转载，每条都有算式）', url: 'https://www.bilibili.com/video/BV1Av4y1Z7d7/' }
+      - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
 sources:
   - { title: 'Wikipedia – Twisted Insane', url: 'https://en.wikipedia.org/wiki/Twisted_Insane' }
   - { title: 'Wikipedia – Worldwide Choppers', url: 'https://en.wikipedia.org/wiki/Worldwide_Choppers' }

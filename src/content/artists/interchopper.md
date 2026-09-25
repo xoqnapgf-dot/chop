@@ -23,11 +23,12 @@ speed:
     window: burst
     syllables: 20
     seconds: 1.062
-    confidence: pending
-    note: Genius 记载 SPS 社区认可的三首之一；SPS wiki 则认为他"几乎所有作品"都加速了，两个来源说法不一。
+    confidence: disputed
+    note: 'Genius 记载 SPS 社区认可的三首之一；但 SPS wiki 认为他"几乎所有作品"都加速了，两个来源说法相反，所以标"有争议"。五里亭亭长 2021 测这首是 1.35 秒 22 个音节 ≈ 16.3（窗口更长）。'
     sources:
       - { title: 'Genius – Interchopper 艺人页', url: 'https://genius.com/artists/Interchopper' }
       - { title: 'SPS and Chopper Rap Wiki – Interchopper', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Interchopper' }
+      - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
   - value: 16
     unit: syl/s
     label: 《Undaground Choppers 7》爆发
@@ -36,8 +37,8 @@ speed:
     window: burst
     syllables: 16
     seconds: 1.0
-    confidence: pending
-    note: Genius 记载 SPS 社区认可的三首之一。
+    confidence: disputed
+    note: 'Genius 记载 SPS 社区认可的三首之一；但 SPS wiki 认为他"几乎所有作品"都加速了，两个来源说法相反，所以标"有争议"。'
     sources:
       - { title: 'Genius – Interchopper 艺人页', url: 'https://genius.com/artists/Interchopper' }
   - value: 15.69
@@ -48,8 +49,8 @@ speed:
     window: burst
     syllables: 16
     seconds: 1.02
-    confidence: pending
-    note: Genius 记载 SPS 社区认可的三首之一。2017 年他在牛津布鲁克斯大学的舞台上现场唱过这段。
+    confidence: disputed
+    note: 'Genius 记载 SPS 社区认可的三首之一；但 SPS wiki 认为他"几乎所有作品"都加速了，两个来源说法相反，所以标"有争议"。2017 年他在牛津布鲁克斯大学的舞台上现场唱过这段。'
     sources:
       - { title: 'Genius – Interchopper 艺人页', url: 'https://genius.com/artists/Interchopper' }
   - value: 20.1
