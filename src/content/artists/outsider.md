@@ -7,8 +7,9 @@ country: KR
 city: 首尔 Seoul
 region: 韩国
 activeSince: 2004
-style: chopper
-styleNote: 维基百科 Chopper 词条把他列为韩国代表。
+style: fast
+styleNote: 严格来说是快嘴：以速射说唱（속사포）著称。维基百科 Chopper 词条把他列为韩国代表。
+nearChop: 2015 年和 Twista 合作《Star Warz》，两人互相对射快段落；速度和强度都接近 chopper。
 geo: [37.57, 126.98]
 born: '1983-03-21'
 tags: [韩语, 速度争议]
@@ -36,8 +37,11 @@ speed:
 sources:
   - { title: 'Wikipedia – Outsider (rapper)', url: 'https://en.wikipedia.org/wiki/Outsider_(rapper)' }
   - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
+  - { title: 'xportsnews – 아웃사이더, 美래퍼 트위스타와 세기의 속사포 랩 배틀（2015）', url: 'https://www.xportsnews.com/article/540238' }
 ---
 
 Outsider 本名申玉哲，2007 年发行首张专辑 *Soliloquist*。2009 年的专辑 *Maestro* 让他爆红，主打歌 **〈외톨이（Loner）〉** 在 Mnet 和 Melon 两个音乐榜同时停留榜首超过五周。
+
+2015 年 1 月 8 日，他和美国 chopper **Twista** 合作发行《**Star Warz**》（별들의 전쟁），整首歌是两人你来我往的速射段落，韩国媒体称之为"世纪速射说唱对决"。
 
 他的语速数字在网上流传很多个版本（16、21……），本站把这类数字统一标成**有争议**，等找到一手测量资料再更新。

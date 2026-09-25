@@ -26,6 +26,7 @@ const events = (await getCollection('timeline', (e) => e.data.scene === 'china')
 const inRegion = (name: string) => artists.filter((a) => a.data.region === name);
 const firstYear = events[0]?.data.year;
 const countStyle = (k: string) => artists.filter((a) => a.data.style === k).length;
+const nearChop = artists.filter((a) => a.data.nearChop);
 
 const toc = [
   ['styles', '先分清'],
@@ -67,9 +68,9 @@ const toc = [
 
   <!-- ============ 先分清 ============ -->
   <section id="styles" class="container-x scroll-mt-32 pt-20">
-    <SectionHeading index="01" eyebrow="Fast ≠ Chopper" title="先分清：快歌、快嘴、Chopper">
+    <SectionHeading index="01" eyebrow="Fast ≠ Chop" title="先分清：快歌、快嘴、Chop">
       <p class="mt-4 max-w-3xl text-ink-2">
-        中文里"快嘴"是通俗说法，常被拿来翻译 chopper。但在圈内讨论里两者是分开的：会唱快的人很多，真正以 chopping 为核心风格的人很少，有的快嘴歌手自己也不玩 chop。所以本站给每个人都标了一个层级，<strong class="text-ink">只有找到可靠来源才标 Chopper</strong>。
+        中文里"快嘴"是通俗说法，常被拿来翻译 chop。但在圈内讨论里两者是分开的：chop 是一种风格，唱 chop 的人才叫 chopper。会唱快的人很多，真正以 chop 为核心风格的人很少，有的快嘴歌手自己也不玩 chop。所以本站给每个人都标了一个层级，<strong class="text-ink">只有找到可靠来源才标 Chopper</strong>。
       </p>
     </SectionHeading>
     <div class="grid gap-4 md:grid-cols-3">
@@ -77,20 +78,19 @@ const toc = [
         (['track', 'fast', 'chopper'] as const).map((k) => (
           <div class="card p-6" style={`border-top:3px solid ${STYLE[k].color}`}>
             <div class="flex items-center justify-between">
-              <StyleChip style={k} size="md" />
+              <StyleChip style={k} size="md" level />
               <span class="font-display text-3xl font-semibold tabular-nums">{countStyle(k)}</span>
             </div>
             <p class="mt-4 text-sm leading-relaxed text-ink-2">{STYLE[k].desc}。</p>
             <p class="mt-3 text-xs text-ink-3">
-              {k === 'chopper'
-                ? '中国区目前没有人物标为 Chopper：不是说国内没有，而是还没找到站得住的来源。'
-                : artists.filter((a) => a.data.style === k).map((a) => displayName(a.data)).join('、')}
+              {artists.filter((a) => a.data.style === k).map((a) => displayName(a.data)).join('、')}
+              {k === 'fast' && nearChop.length > 0 && <span class="mt-2 block">其中接近 chop 的：{nearChop.map((a) => displayName(a.data)).join('、')}</span>}
             </p>
           </div>
         ))
       }
     </div>
-    <p class="mt-4 text-sm"><a href={url('learn/what-is-chop/')} class="link-u text-ink-2 hover:text-ink">完整解释：快嘴 ≠ Chopper →</a></p>
+    <p class="mt-4 text-sm"><a href={url('learn/what-is-chop/')} class="link-u text-ink-2 hover:text-ink">完整解释：快嘴 ≠ Chop →</a></p>
   </section>
 
   <!-- ============ 地区 ============ -->

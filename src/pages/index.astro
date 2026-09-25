@@ -29,7 +29,7 @@ const sourceCount = new Set(
 ).size;
 const stats = [
   { n: cn.length, label: '位中国快嘴' },
-  { n: world.length, label: '位世界 chopper' },
+  { n: world.length, label: '位世界人物' },
   { n: tracks.length, label: '首曲目' },
   { n: sourceCount, label: '条独立来源' },
 ];
@@ -44,7 +44,7 @@ const presets = [
 const tiers = [
   { key: 'track', eg: 'Eminem · 谢帝 · 那吾克热', text: '某首歌、某一段很快，但这个人整体不以快著称。' },
   { key: 'fast', eg: '法老 · 杨和苏 · 光光 · 贝贝', text: '语速和咬字清晰度就是他的主要标签。' },
-  { key: 'chopper', eg: 'Twista · Tech N9ne · Bone Thugs', text: '整首、长期地"切"音节：一拍塞多个音节、flow 多变、押韵密集。' },
+  { key: 'chopper', eg: 'Twista · Tech N9ne · 小安迪', text: '整首、长期地"切"音节：一拍塞多个音节、flow 多变、押韵密集。' },
 ] as const;
 const styleCount = (k: string) => artists.filter((a) => a.data.style === k).length;
 ---
@@ -55,7 +55,7 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
     <div class="hero-glow" aria-hidden="true"></div>
     <div class="container-x relative grid items-center gap-12 pb-16 pt-14 lg:grid-cols-[1.15fr_1fr] lg:pb-24 lg:pt-24">
       <div>
-        <p class="eyebrow">Chopper · 快嘴 · 中国区 &amp; 世界</p>
+        <p class="eyebrow">Chop · 快嘴 · 中国区 &amp; 世界</p>
         <h1 class="mt-6 text-[clamp(3rem,9vw,7.2rem)] font-bold leading-[1.02]">
           把音节<br /><span class="chop-word">剁碎</span><span class="text-accent-text">。</span>
         </h1>
@@ -64,7 +64,7 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
         </p>
         <div class="mt-9 flex flex-wrap gap-3">
           <a href={url('china/')} class="btn btn-accent">进入中国区 →</a>
-          <a href={url('world/')} class="btn btn-ghost">看世界快嘴地图</a>
+          <a href={url('world/')} class="btn btn-ghost">看世界 Chop 地图</a>
         </div>
         <dl class="mt-12 grid max-w-xl grid-cols-2 gap-6 border-t border-line pt-6 sm:grid-cols-4">
           {
@@ -107,10 +107,10 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
     <Marquee class="border-y border-line py-5 font-display text-3xl font-semibold text-ink-3 md:text-5xl" items={artists.map((a) => displayName(a.data))} />
   </section>
 
-  <!-- ============ 快 ≠ Chopper ============ -->
+  <!-- ============ 快 ≠ Chop ============ -->
   <section class="container-x mt-28">
-    <SectionHeading index="01" eyebrow="Fast ≠ Chopper" title="快，不等于 Chopper" href="learn/what-is-chop/" linkLabel="读完整解释">
-      <p class="mt-4 max-w-2xl text-ink-2">中文圈常把"快嘴"和"chopper"混着说。本站把每个人分成三层，只有找到可靠来源的才标 Chopper。刚入圈、只追速度、含糊乱吐音节的新人小孩，圈内叫"SPS kid"。</p>
+    <SectionHeading index="01" eyebrow="Fast ≠ Chop" title="快，不等于 Chop" href="learn/what-is-chop/" linkLabel="读完整解释">
+      <p class="mt-4 max-w-2xl text-ink-2">中文圈常把"快嘴"和"chop"混着说。Chop 是一种风格，唱 chop 的人才叫 chopper。本站按风格分成三层，只有找到可靠来源的才标 Chopper。刚入圈、只追速度、含糊乱吐音节的新人小孩，圈内叫"SPS kid"。</p>
     </SectionHeading>
     <ol class="tiers grid gap-4 md:grid-cols-3">
       {
@@ -122,7 +122,7 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
               ))}
             </div>
             <p class="eyebrow">Level {i + 1}</p>
-            <h3 class="mt-2 text-3xl font-semibold" style="color:var(--sc)">{STYLE[t.key].name}</h3>
+            <h3 class="mt-2 text-3xl font-semibold" style="color:var(--sc)">{STYLE[t.key].level}</h3>
             <p class="mt-3 text-sm leading-relaxed text-ink-2">{t.text}</p>
             <p class="mt-5 text-xs text-ink-3">例：{t.eg}</p>
             <p class="mt-1 text-xs text-ink-3">本站收录 {styleCount(t.key)} 位</p>
@@ -148,21 +148,21 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
     <a href={url('world/')} class="zone zone-world group relative overflow-hidden rounded-[28px] p-7 sm:p-10">
       <div class="zone-rings" aria-hidden="true"><i></i><i></i><i></i></div>
       <p class="eyebrow relative !text-accent-ink/70">World · 世界</p>
-      <h2 class="relative mt-3 text-4xl font-bold text-accent-ink sm:text-6xl">世界 Chopper</h2>
-      <p class="relative mt-4 max-w-md text-accent-ink/80">从美国中西部到土耳其、韩国、菲律宾。在地球上看 chopper 是怎么传开的。</p>
+      <h2 class="relative mt-3 text-4xl font-bold text-accent-ink sm:text-6xl">世界 Chop</h2>
+      <p class="relative mt-4 max-w-md text-accent-ink/80">从美国中西部到土耳其、韩国、菲律宾。在地球上看 chop 是怎么传开的。</p>
       <span class="relative mt-8 inline-flex items-center gap-2 rounded-full bg-accent-ink px-5 py-2.5 text-sm font-semibold text-accent transition group-hover:gap-3">打开地球 →</span>
     </a>
   </section>
 
   <!-- ============ 世界地图 ============ -->
   <section class="container-x mt-32">
-    <SectionHeading index="02" eyebrow="World map" title="世界快嘴地图" href="world/" linkLabel="世界区" />
+    <SectionHeading index="02" eyebrow="World map" title="世界 Chop 地图" href="world/" linkLabel="世界区" />
     <Globe initial="us" />
   </section>
 
   <!-- ============ 世界人物 ============ -->
   <section class="container-x mt-32">
-    <SectionHeading index="03" eyebrow="Choppers" title="世界 Chopper" href="choppers/?scene=world" linkLabel="全部世界人物" />
+    <SectionHeading index="03" eyebrow="People" title="世界人物" href="choppers/?scene=world" linkLabel="全部世界人物" />
     <div class="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
       {featuredWorld.map((a) => <ArtistCard artist={a} />)}
     </div>

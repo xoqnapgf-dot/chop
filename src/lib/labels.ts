@@ -6,11 +6,14 @@ export const COUNTRY: Record<string, { name: string }> = {
   PH: { name: '菲律宾' },
 };
 
-/** 风格标签：快 ≠ Chopper */
+/**
+ * 风格层级（快 ≠ Chop）：chop 是风格，chopper 是唱 chop 的人。
+ * name = 贴在人物上的标签；level = 讲"三个层次"时用的风格名
+ */
 export const STYLE = {
-  chopper: { name: 'Chopper', short: 'Chopper', color: 'var(--style-chopper)', desc: '有来源称其为 chopper，或长期整首使用 chopping 技巧' },
-  fast: { name: '快嘴', short: '快嘴', color: 'var(--style-fast)', desc: '以语速、咬字清晰度为主要标签' },
-  track: { name: '快歌', short: '快歌', color: 'var(--style-track)', desc: '因个别快歌或快段落出圈，本人不以快著称' },
+  chopper: { name: 'Chopper', level: 'Chop', short: 'Chopper', color: 'var(--style-chopper)', desc: '长期、整首地唱 chop；有可靠来源称其为 chopper' },
+  fast: { name: '快嘴', level: '快嘴', short: '快嘴', color: 'var(--style-fast)', desc: '以语速、咬字清晰度为主要标签' },
+  track: { name: '快歌', level: '快歌', short: '快歌', color: 'var(--style-track)', desc: '因个别快歌或快段落出圈，本人不以快著称' },
 } as const;
 export type Style = keyof typeof STYLE;
 

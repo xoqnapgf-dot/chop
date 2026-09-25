@@ -1,5 +1,5 @@
 ---
-title: Chopper 的起源：从美国中西部到全世界
+title: Chop 的起源：从美国中西部到全世界
 kicker: 世界
 summary: 定义、起源、代表人物，以及"快"到底是怎么做出来的。
 order: 2
@@ -12,14 +12,14 @@ sources:
 
 ## 定义
 
-Chopper 是一种强调**发音速度**的说唱风格。它的特点不只是"快"，而是在原本放一个音节的位置塞进好几个音节，同时保持清晰的咬字、多变的 flow 和大量押韵。和"快嘴"的区别见[快嘴 ≠ Chopper](../what-is-chop/)。
+Chop 是一种强调**发音速度**的说唱风格，唱 chop 的说唱歌手叫 chopper。它的特点不只是"快"，而是在原本放一个音节的位置塞进好几个音节，同时保持清晰的咬字、多变的 flow 和大量押韵。和"快嘴"的区别见[快嘴 ≠ Chop](../what-is-chop/)。
 
 ## 起源
 
 - **1980 年**：Treacherous Three 的 "New Rap Language"，Kool Moe Dee 被视为快嘴的早期开创者。
 - **1990 年代初**：美国中西部的 Dayton Family、Twista 等人带起了快嘴风格。
 - **1990 年代中期**：克利夫兰的 Bone Thugs-n-Harmony 和芝加哥的 Twista 获奖、上榜，风格开始流行。
-- **1990 年代末到 2010 年代**：Tech N9ne 通过 Strange Music 和 *Worldwide Choppers* 系列把 chopper 推向全世界。
+- **1990 年代末到 2010 年代**：Tech N9ne 通过 Strange Music 和 *Worldwide Choppers* 系列把 chop 推向全世界。
 
 ## "快"是怎么算出来的
 

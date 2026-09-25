@@ -189,7 +189,13 @@ const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生
           <p class="eyebrow mb-3">风格判定</p>
           <StyleChip style={data.style} size="md" />
           <p class="mt-3 text-sm leading-relaxed text-ink-2">{data.styleNote}</p>
-          <a href={url('learn/what-is-chop/')} class="mt-3 inline-block text-xs text-ink-3 link-u hover:text-ink">快歌、快嘴、Chopper 有什么区别？</a>
+          {data.nearChop && (
+            <div class="mt-4 rounded-xl border border-dashed p-3" style="border-color:color-mix(in oklab, var(--style-chopper) 55%, transparent)">
+              <p class="text-xs font-semibold" style="color:var(--style-chopper)">接近 Chop</p>
+              <p class="mt-1 text-sm leading-relaxed text-ink-2">{data.nearChop}</p>
+            </div>
+          )}
+          <a href={url('learn/what-is-chop/')} class="mt-3 inline-block text-xs text-ink-3 link-u hover:text-ink">快歌、快嘴、Chop 有什么区别？</a>
         </div>
 
         <div class="card p-5">

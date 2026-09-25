@@ -27,7 +27,7 @@ export function artistMedia(slug: string) {
 }
 
 /** 人物主色：有照片取照片主色；没有照片按 slug 在色板里取（稳定、且不同人不同色） */
-const PALETTE = ['#ff4b3e', '#ff8a4c', '#c6f432', '#82a8ff', '#b98cff', '#2ee6c5'];
+const PALETTE = ['#e5322d', '#e8b84a', '#c9772f', '#a8231d', '#d9a441', '#8c2f22'];
 export function artistColor(slug: string): string {
   const c = artistMedia(slug)?.color;
   if (c && artistPhoto(slug)) return c;

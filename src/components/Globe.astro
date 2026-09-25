@@ -1,6 +1,6 @@
 ---
 /**
- * 世界快嘴地图：点阵地球 + 国家/场景面板。
+ * 世界 Chop 地图：点阵地球 + 国家/场景面板。
  * 地球脚本在进入视口时才加载（动态 import），加载前显示同尺寸的占位，避免布局跳动。
  */
 import { getCollection } from 'astro:content';
@@ -43,7 +43,7 @@ const panels = scenes.map((s) => ({
     <div class="relative">
       <div class="globe-stage relative mx-auto aspect-square w-full max-w-[640px]">
         <div class="globe-placeholder absolute inset-[8%] rounded-full" aria-hidden="true"></div>
-        <canvas class="globe-canvas absolute inset-0 size-full touch-none" aria-label="世界快嘴地图：拖动旋转，点击标记查看当地情况" role="img"></canvas>
+        <canvas class="globe-canvas absolute inset-0 size-full touch-none" aria-label="世界 Chop 地图：拖动旋转，点击标记查看当地情况" role="img"></canvas>
         <script type="application/json" class="globe-data" set:html={JSON.stringify({ markers, arcs })} />
       </div>
       <p class="mt-2 text-center text-xs text-ink-3">拖动旋转 · 点击发光的标记 · 虚线是 2011 年 Worldwide Choppers 的合作连线</p>

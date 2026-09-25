@@ -1,7 +1,7 @@
 ---
-title: 快嘴 ≠ Chopper：先把概念分清
+title: 快嘴 ≠ Chop：先把概念分清
 kicker: 入门
-summary: 语速快不等于 chopper。快歌、快嘴、Chopper 是三个层次；刚入圈、只追速度的新人小孩，圈内叫"SPS kid"。
+summary: 语速快不等于 chop。chop 是风格，唱 chop 的人叫 chopper；快歌、快嘴、Chop 是三个层次；刚入圈、只追速度的新人小孩，圈内叫"SPS kid"。
 order: 1
 sources:
   - { title: '知乎 – chopping 在说唱中是什么风格？', url: 'https://www.zhihu.com/question/295864036' }
@@ -13,17 +13,17 @@ sources:
 
 ## 一句话版本
 
-**快嘴**讲的是速度；**Chopper** 讲的是一整套"切"音节的技术和风格。快是 chopper 的表象，但快本身不等于 chopper。
+**快嘴**讲的是速度；**Chop** 讲的是一整套"切"音节的技术和风格，唱 chop 的人才叫 **chopper**。快是 chop 的表象，但快本身不等于 chop。
 
 ## 三个层次
 
-| 标签 | 意思 | 例子 |
+| 层次 | 意思 | 例子 |
 |---|---|---|
 | **快歌** | 某首歌、某一段很快，但这个人整体不以快著称 | Eminem、谢帝、那吾克热 |
 | **快嘴** | 以语速、咬字清晰度为主要标签 | 法老、杨和苏、光光、贝贝 |
-| **Chopper** | 有来源称其为 chopper，或长期、整首地使用 chopping 技巧 | Twista、Tech N9ne、Bone Thugs-n-Harmony |
+| **Chop** | 长期、整首地"切"音节；有可靠来源称其为 chopper 的人才归这一层 | Twista、Tech N9ne、Bone Thugs-n-Harmony、小安迪 |
 
-## Chopper 除了快，还有什么
+## Chop 除了快，还有什么
 
 1. **把一个音节的位置塞进两三四个音节**：这是"切"（chop）的本意，也是"快"的来源。
 2. **Flow 多变、难以预测**：高速里不断变换节奏型，而不是一路平推。
@@ -41,7 +41,7 @@ SPS 是 syllables per second（每秒音节数）。海外 chopper 圈里有个�
 
 公开资料里也能看到这种现象：Rap Wiki 写道，"网上的小孩只想找最快的那一秒"；2024 年还有一群想自称"最快"的人试图改写纪录规则，只比 1 秒爆发。SPS 社区的 wiki 里，也有人被描述为"前 SPS kid"，或者被说在某个阶段"最像 SPS kid：只顾押韵和打爆发"。
 
-所以 SPS kid 和 chopper 正好是两个方向：**chopper 快，而且每个音节都是词、有 flow、能现场唱出来**；SPS kid 只剩一个数字。这也是本站坚持"快 ≠ Chopper"的原因。
+所以 SPS kid 和 chopper 正好是两个方向：**chopper 快，而且每个音节都是词、有 flow、能现场唱出来**；SPS kid 只剩一个数字。这也是本站坚持"快 ≠ Chop"的原因。
 
 一个对照的例子：德州的 [Crucified](../../choppers/crucified/) 被质疑"加速"和"乱吐字"后，录了一段现场视频（46 秒 799 个音节），并公开了歌词，证明自己每个音节都是词。
 
@@ -49,7 +49,7 @@ SPS 是 syllables per second（每秒音节数）。海外 chopper 圈里有个�
 
 中文里"快嘴"是通俗说法，很多文章会把 chopper 直接翻成快嘴。但在圈内讨论里，两者是分开的：会唱快的人很多，真正以 chopping 为核心风格的人很少。有些唱快嘴的人，本身也未必在玩 chop。
 
-所以本站的做法是：**只有找到可靠来源的，才标 Chopper**。目前中国区没有人物被标为 Chopper，这不代表国内没有，只是还没找到能站得住的来源。欢迎在资料更新后回来看。
+所以本站的做法是：**只有找到可靠来源的，才标 Chopper**。目前中国区标为 Chopper 的是**小安迪**。像**赵辰龙**这样有争议、但可以算半个 chop 的人，本站标"快嘴"，再加一个"接近 Chop"的说明；韩国的 **Outsider** 也是这样处理：严格说是快嘴，但和 chopper 合作过，速度和强度都接近。
 
 ## 速度怎么比
 
