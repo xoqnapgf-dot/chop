@@ -151,7 +151,15 @@ const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生
 
         <section class="mt-16 border-t border-line pt-10">
           <Sources sources={data.sources} />
-          {media ? (
+          {media?.photo ? (
+            <p class="mt-6 text-xs text-ink-3">
+              图片来源：
+              <a class="link-u hover:text-ink" href={media.photo.url} target="_blank" rel="noopener">
+                {media.photo.site}「{media.photo.name}」 ↗
+              </a>
+              ，抓取于 {media.fetchedAt}。版权归原作者所有。
+            </p>
+          ) : media ? (
             <p class="mt-6 text-xs text-ink-3">
               图片来源：
               {media.channelUrl && (

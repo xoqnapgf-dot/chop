@@ -14,6 +14,7 @@ born: '1992-10-11'
 tags: [中文, 活死人, 技术流]
 featured: true
 youtube: { channelId: UCJ-fTowMuQF7d69K68A7Ujw, kind: topic }
+photoSource: { site: netease, id: 865007, image: cover, focusX: 0.49, focusY: 0.6, zoom: 1.65 }
 related: [yang-he-su, lil-andy, kindergarten-killer]
 speed:
   - value: 10

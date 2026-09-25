@@ -10,6 +10,7 @@ style: fast
 styleNote: '早期以快嘴和弹舌出名，《Speed #1》是中文快嘴的早期标杆。'
 geo: [32.06, 118.80]
 tags: [D-Evil, 弹舌, 地下]
+photoSource: { site: netease, id: 187903, image: avatar }
 related: [kindergarten-killer]
 speed:
   - value: 8.27
