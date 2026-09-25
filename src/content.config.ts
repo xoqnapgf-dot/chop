@@ -21,7 +21,7 @@ const speedClaim = z.object({
   kind: z.enum(['official', 'measured', 'claimed']), // 官方认证 / 第三方测算 / 自称或传闻
   /**
    * 测量窗口：不同窗口的数字不能直接比
-   * burst = 爆发（约 1–2 秒，SPS 社区常用）；short = 短段（3–15 秒）；long = 整段平均（15 秒以上）；unknown = 口径不明
+   * burst = 爆发（约 0.7–2 秒，SPS 社区常用；满 1 秒含金量最高）；short = 短段（3–15 秒）；long = 整段平均（15 秒以上）；unknown = 口径不明
    */
   window: z.enum(['burst', 'short', 'long', 'unknown']),
   /** 有的话填上，页面会显示算式 */
