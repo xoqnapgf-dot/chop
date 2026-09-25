@@ -692,3 +692,17 @@
   confidence: pending
   sources:
     - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
+- id: undaground-choppers-7
+  title: Undaground Choppers 7
+  artists: [interchopper]
+  credit: DJ Lil Sprite（多人 chopper cypher，含 Interchopper）
+  year: 2017
+  youtube: gFsss9gLLOU
+  youtubeChannel: Dj Lil Sprite
+  officialUpload: true
+  scene: world
+  note: DJ Lil Sprite 的招牌 cypher 系列第七部。Interchopper 这段约 16.00 SPS（16 / 1.000），是 SPS 社区认可的他的三段正常 verse 之一。
+  confidence: pending
+  sources:
+    - { title: 'Genius – Interchopper 艺人页', url: 'https://genius.com/artists/Interchopper' }
+    - { title: 'Wikipedia – Chopper (rap)（提到 Undaground Choppers 系列）', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }

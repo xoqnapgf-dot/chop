@@ -4,6 +4,7 @@ export const COUNTRY: Record<string, { name: string }> = {
   TR: { name: '土耳其' },
   CN: { name: '中国' },
   PH: { name: '菲律宾' },
+  GE: { name: '格鲁吉亚' },
 };
 
 /**

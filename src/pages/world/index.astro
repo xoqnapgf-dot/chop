@@ -175,7 +175,7 @@ const ND = {
                         ) : (
                           <span class="truncate text-sm font-semibold">{e.name}</span>
                         )}
-                        <a href={e.url} target="_blank" rel="noopener nofollow" class="min-w-0 truncate font-mono text-[11px] text-ink-3 hover:text-ink" title={e.song}>{e.syllables}/{e.seconds.toFixed(3)} · {e.song}</a>
+                        <a href={e.url} target="_blank" rel="noopener nofollow" class="min-w-0 truncate font-mono text-[11px] text-ink-3 hover:text-ink" title={e.song}>{e.syllables}/{e.seconds.toFixed(3)} · {e.song}{'flag' in e && e.flag && <span class="ml-1 font-sans text-[color:var(--critical)]">· {e.flag}</span>}</a>
                       </span>
                       <span class="cy-bar mt-1 block h-1.5 rounded-full" />
                     </span>
