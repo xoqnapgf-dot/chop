@@ -155,7 +155,7 @@
 - id: 2016-taotie
   year: 2016
   title: "“最快华语歌”之争"
-  body: 南征北战为电影《长城》发布《饕餮》，宣传为"332 BPM 的最快华语歌"。但伴奏是 83 BPM，332 只是 83 × 4；据网络资料，快嘴段落由赵辰龙演唱，而他说过自己的快嘴是逐字录制拼接的。
+  body: 南征北战为电影《长城》发布《饕餮》，宣传为"332 BPM 的最快华语歌"。但伴奏是 83 BPM，332 只是 83 × 4，这个说法口径不清。据网络资料，快嘴段落由赵辰龙演唱。
   scene: china
   artist: zhao-chenlong
   confidence: disputed
@@ -215,7 +215,7 @@
 - id: 2026-chinese-choppers
   year: 2026
   title: Chinese Choppers Cypher
-  body: 一群中文 chopper 合作的 cypher，参与者有赛文凯、ChaChe、Willbe、青藤 CyanVine、JMS 等；很快出现了大量翻唱，小安迪也在直播里点评过这首歌。
+  body: 中国第二代 chop 圈的新生代 chopper 合作的 cypher，参与者有赛文凯、ChaChe、Willbe、青藤 CyanVine、JMS 等；很快出现了大量翻唱，小安迪也在直播里点评过这首歌。
   scene: china
   artist: lil-andy
   confidence: pending
