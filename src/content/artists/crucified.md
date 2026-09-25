@@ -12,7 +12,7 @@ styleNote: Rap Wiki 明确称他为 chopper；和 Bone Thugs-n-Harmony 的 Bizzy
 geo: [29.70, -98.12]
 tags: [德州, 地下, 现场验证]
 youtube: { channelId: UCWISfBZB_1rmvUb3FcFVjBg, handle: '@crucified830', kind: official }
-related: [bone-thugs-n-harmony, twisted-insane, tech-n9ne]
+related: [bone-thugs-n-harmony, twisted-insane, tech-n9ne, dna-tru-lyricist]
 speed:
   - value: 19.37
     unit: syl/s

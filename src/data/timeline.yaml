@@ -78,6 +78,15 @@
   artist: eminem
   sources:
     - { title: 'Wikipedia – Rap God', url: 'https://en.wikipedia.org/wiki/Rap_God' }
+- id: 2013-dna-vs-twisted-insane
+  year: 2013
+  title: DNA vs Twisted Insane
+  body: 得州的地下 chopper DNA Tru Lyricist 开始在频道上做《DNA vs Twisted Insane》系列，把两人的歌轮流对比，到 2015 年做了五回合，最后一回合改叫"友好竞争"。
+  scene: world
+  artist: dna-tru-lyricist
+  sources:
+    - { title: 'YouTube – DNA vs Twisted Insane "No Mercy Rap Showdown"（2013）', url: 'https://www.youtube.com/watch?v=2dclINd3A1s' }
+    - { title: 'YouTube – DNA vs Twisted Insane - Round 5 "Friendly Competition"（2015）', url: 'https://www.youtube.com/watch?v=j5-NuEpCvgE' }
 - id: 2015-star-warz
   year: 2015
   title: Star Warz
