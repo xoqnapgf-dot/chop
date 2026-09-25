@@ -56,13 +56,3 @@ scripts/fetch-youtube.mjs  从 YouTube 抓取人物图片和视频缩略图
 2. 推送到 `main` 分支会自动构建并部署到 `https://xoqnapgf-dot.github.io/chop/`。
 
 绑定自定义域名时，改 `astro.config.mjs` 里的 `site`，并把 `base` 改成 `'/'`。
-
-## 开启讨论区
-
-讨论区用 [Giscus](https://giscus.app)（基于 GitHub Discussions）：
-
-1. 仓库 Settings → General → Features 勾选 **Discussions**；
-2. 安装 [giscus app](https://github.com/apps/giscus) 到本仓库；
-3. 在 giscus.app 选好仓库，把生成的 `repoId`、`categoryId` 填进 `src/lib/site.ts` 的 `GISCUS`。
-
-没填之前，页面会显示引导去 GitHub Issue 的占位卡片。

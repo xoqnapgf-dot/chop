@@ -3,7 +3,6 @@ import { getCollection, render, type CollectionEntry } from 'astro:content';
 import Base from '@/layouts/Base.astro';
 import LaneChip from '@/components/LaneChip.astro';
 import Sources from '@/components/Sources.astro';
-import Comments from '@/components/Comments.astro';
 import { url } from '@/lib/url';
 
 export async function getStaticPaths() {
@@ -70,11 +69,6 @@ const toc = headings.filter((h) => h.depth === 2);
         </a>
       )}
     </nav>
-
-    <section class="mt-16 max-w-3xl">
-      <p class="eyebrow mb-5">讨论</p>
-      <Comments term={`learn:${entry.id}`} />
-    </section>
   </article>
 </Base>
 
