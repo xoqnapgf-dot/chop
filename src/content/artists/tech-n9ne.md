@@ -14,6 +14,19 @@ tags: [中西部, 厂牌主理人, Worldwide Choppers]
 featured: true
 youtube: { channelId: UCJdoPEnnkvS744DCD_12scQ, handle: '@therealtechn9ne', kind: official }
 related: [twista, twisted-insane, eminem, busta-rhymes, ceza]
+speed:
+  - value: 14.06
+    unit: syl/s
+    label: '《Idol》爆发 · NahDah 2023 榜第 101 名'
+    kind: measured
+    window: burst
+    syllables: 15
+    seconds: 1.067
+    confidence: pending
+    note: '1.067 秒 15 个音节。'
+    sources:
+      - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+      - { title: 'YouTube – NahDah Vebb：[2023] Top 150 Fastest Rappers in the World', url: 'https://www.youtube.com/watch?v=4SjqPAqjsWo' }
 sources:
   - { title: 'Wikipedia – Tech N9ne', url: 'https://en.wikipedia.org/wiki/Tech_N9ne' }
   - { title: 'Wikipedia – Worldwide Choppers', url: 'https://en.wikipedia.org/wiki/Worldwide_Choppers' }

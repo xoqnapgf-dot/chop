@@ -27,6 +27,18 @@ speed:
     sources:
       - { title: 'Wikipedia – Twista', url: 'https://en.wikipedia.org/wiki/Twista' }
       - { title: 'HipHopHero – How Twista broke the record', url: 'https://hiphophero.com/twista-record-worlds-fastest-rapper/' }
+  - value: 13.75
+    unit: syl/s
+    label: '《Hold Up》爆发 · NahDah 2023 榜第 137 名'
+    kind: measured
+    window: burst
+    syllables: 15
+    seconds: 1.091
+    confidence: pending
+    note: '1.091 秒 15 个音节。只算正式录音室歌曲，所以没用他 1992 年的吉尼斯挑战。'
+    sources:
+      - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+      - { title: 'YouTube – NahDah Vebb：[2023] Top 150 Fastest Rappers in the World', url: 'https://www.youtube.com/watch?v=4SjqPAqjsWo' }
 sources:
   - { title: 'Wikipedia – Twista', url: 'https://en.wikipedia.org/wiki/Twista' }
   - { title: 'Red Bull – Twista tells the history of speed rapping', url: 'https://www.redbull.com/us-en/twista-chopping-history-interview' }
