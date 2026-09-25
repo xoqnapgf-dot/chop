@@ -51,9 +51,9 @@
   body: 一个用变调人声、真实身份不明的快嘴出现在中文网络上。
   scene: china
   artist: kindergarten-killer
-  confidence: pending
   sources:
     - { title: '豆瓣小组 – 幼稚园杀手 简介', url: 'https://www.douban.com/group/topic/14768861/' }
+    - { title: '豆瓣 – A-JING：幼稚园杀手 DISS 2011 MIXTAPE（简介，2011-10-05）', url: 'https://site.douban.com/widget/notes/4223495/note/176086511/' }
 - id: 2009-loner
   year: 2009
   title: 외톨이（Loner）
@@ -147,16 +147,16 @@
 - id: 2009-kk-album
   year: 2009
   title: 《虚构的肖像》
-  body: 幼稚园杀手的专辑，常被看作他从 diss 转向写社会现实和内心世界的转折点。
+  body: '2009 年 9 月 11 日发行的首张个人街头专辑。他从 2008 年起不再以 diss 为主，转向写生活、社会现实和内心世界，这张专辑是转型后的第一张完整作品，伴奏由凤凰鸣/南征北战的醉人制作。'
   scene: china
   artist: kindergarten-killer
-  confidence: pending
   sources:
     - { title: '豆瓣小组 – 幼稚园杀手 简介（2010）', url: 'https://www.douban.com/group/topic/14768861/' }
+    - { title: '豆瓣 – A-JING：幼稚园杀手 DISS 2011 MIXTAPE（简介，2011-10-05）', url: 'https://site.douban.com/widget/notes/4223495/note/176086511/' }
 - id: 2016-taotie
   year: 2016
   title: "“最快华语歌”之争"
-  body: 南征北战为电影《长城》发布《饕餮》，宣传为"332 BPM 的最快华语歌"。但伴奏是 83 BPM，332 只是 83 × 4，这个说法口径不清。据网络资料，快嘴段落由赵辰龙演唱。
+  body: 南征北战为电影《长城》发布《饕餮》，宣传为"332 BPM 的最快华语歌"。但伴奏是 83 BPM，332 只是 83 × 4，这个说法口径不清。快嘴段落由组合里的赵辰龙演唱。
   scene: china
   artist: zhao-chenlong
   confidence: disputed
@@ -210,7 +210,6 @@
   title: "“只比 1 秒”之争"
   body: 据 Rap Wiki 记载，一群想自称"最快"的人试图改写纪录规则，只比 1 秒爆发。圈内把刚入圈、只追速度、含糊吐字甚至夸大测算的新人小孩叫作"SPS kid"。
   scene: world
-  confidence: pending
   sources:
     - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }
 - id: 2026-chinese-choppers
@@ -219,7 +218,6 @@
   body: 中国第三代 chopper（2022 年之后入圈的新生代）合作的 cypher。2018 年组建的中国 chop 圈是承上启下的第二代，这一代是在它之后成长起来的。参与者有赛文凯、ChaChe、Willbe、青藤 CyanVine、JMS 等；很快出现了大量翻唱，小安迪也在直播里点评过这首歌。
   scene: china
   artist: lil-andy
-  confidence: pending
   sources:
     - { title: 'B站 – 小安迪直播点评《Chinese Choppers》', url: 'https://www.bilibili.com/video/BV1S2j36tERu/' }
     - { title: 'B站 – Chinese Choppers Cypher 翻唱（标注原唱 Wilbdawater）', url: 'https://www.bilibili.com/video/BV1ZpLg6wEBR/' }
@@ -229,7 +227,6 @@
   title: NahDah 的榜单被搬到 B 站
   body: B 站 UP 主 Fatality丶九头龙 搬运了 NahDah 的 2017 年《Top 150 Fastest Rappers》。榜单的数字后来被证明虚高（比如把 Crucified 的《Power Up》写成 28.3 SPS），但这个视频让很多中国听众第一次认识了 chop 和 SPS。
   scene: china
-  confidence: disputed
   sources:
     - { title: 'B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017（截止到2017/9）', url: 'https://www.bilibili.com/video/BV11x411L79b/' }
     - { title: 'YouTube – NahDah Vebb：[outdated] The Top 150 Fastest Rappers | 2017', url: 'https://www.youtube.com/watch?v=bdR0N0R3jYU' }
