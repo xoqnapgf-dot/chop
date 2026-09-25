@@ -17,8 +17,9 @@ related: [twista, twisted-insane, eminem, busta-rhymes, ceza]
 speed:
   - value: 14.06
     unit: syl/s
-    label: '《Idol》爆发 · NahDah 2023 榜第 101 名'
+    label: '《Idol》爆发 · 第 101 名'
     kind: measured
+    by: 'NahDah 2023'
     window: burst
     syllables: 15
     seconds: 1.067

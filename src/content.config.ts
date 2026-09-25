@@ -19,6 +19,8 @@ const speedClaim = z.object({
   unit: z.enum(['syl/s', 'char/s', 'word/s']).default('syl/s'),
   label: z.string(), // 例如 "Godzilla 第三段主歌"
   kind: z.enum(['official', 'measured', 'claimed']), // 官方认证 / 第三方测算 / 自称或传闻
+  /** 出自哪份榜单或哪个测算方，不同榜单的歌、剪法和规则不同，页面上会标出来 */
+  by: z.string(),
   /**
    * 测量窗口：不同窗口的数字不能直接比
    * burst = 爆发（约 0.7–2 秒，SPS 社区常用；满 1 秒含金量最高）；short = 短段（3–15 秒）；long = 整段平均（15 秒以上）；unknown = 口径不明

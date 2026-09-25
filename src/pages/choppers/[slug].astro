@@ -262,7 +262,7 @@ const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生
                     <Confidence level={s.confidence} />
                   </div>
                   <p class="mt-2 text-sm text-ink">{s.label}</p>
-                  <p class="mt-1 text-xs text-ink-3">{WINDOW[s.window].name} · {SPEED_KIND[s.kind]}</p>
+                  <p class="mt-1 text-xs text-ink-3">出处：{s.by} · {WINDOW[s.window].name} · {SPEED_KIND[s.kind]}</p>
                   {s.syllables && s.seconds && <p class="mt-1 font-mono text-xs text-ink-2">{s.syllables} ÷ {s.seconds} ≈ {(s.syllables / s.seconds).toFixed(2)}</p>}
                   {s.note && <p class="mt-2 text-xs leading-relaxed text-ink-2">{s.note}</p>}
                   <p class="mt-2 flex flex-wrap gap-x-3 text-xs">

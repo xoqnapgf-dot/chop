@@ -14,8 +14,9 @@ related: [pharaoh, yang-he-su, kindergarten-killer]
 speed:
   - value: 12.6
     unit: char/s
-    label: '《狗怕黑》最快一段 · 五里亭亭长排行第 1'
+    label: '《狗怕黑》最快一段 · 排第 1'
     kind: measured
+    by: '五里亭亭长 2021'
     window: burst
     syllables: 14
     seconds: 1.11
@@ -25,8 +26,9 @@ speed:
       - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
   - value: 12.5
     unit: char/s
-    label: '《活死人 2018 Cypher》最快一段 · 五里亭亭长排行第 2'
+    label: '《活死人 2018 Cypher》最快一段 · 排第 2'
     kind: measured
+    by: '五里亭亭长 2021'
     window: burst
     syllables: 15
     seconds: 1.2
@@ -36,8 +38,9 @@ speed:
       - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
   - value: 12.1
     unit: char/s
-    label: '《Rap Soldier》最快一段 · 五里亭亭长排行第 3'
+    label: '《Rap Soldier》最快一段 · 排第 3'
     kind: measured
+    by: '五里亭亭长 2021'
     window: burst
     syllables: 12
     seconds: 0.99
@@ -47,8 +50,9 @@ speed:
       - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
   - value: 11.7
     unit: char/s
-    label: '《四哥购币》最快一段 · 五里亭亭长排行第 4'
+    label: '《四哥购币》最快一段 · 排第 4'
     kind: measured
+    by: '五里亭亭长 2021'
     window: burst
     syllables: 17
     seconds: 1.45
@@ -58,8 +62,9 @@ speed:
       - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
   - value: 10.4
     unit: char/s
-    label: '《噬》最快一段 · 五里亭亭长排行第 5'
+    label: '《噬》最快一段 · 排第 5'
     kind: measured
+    by: '五里亭亭长 2021'
     window: burst
     syllables: 19
     seconds: 1.83

@@ -19,6 +19,7 @@ speed:
     unit: syl/s
     label: 1992 吉尼斯认证：55 秒 598 个音节
     kind: official
+    by: '吉尼斯'
     window: long
     syllables: 598
     seconds: 55
@@ -29,8 +30,9 @@ speed:
       - { title: 'HipHopHero – How Twista broke the record', url: 'https://hiphophero.com/twista-record-worlds-fastest-rapper/' }
   - value: 13.75
     unit: syl/s
-    label: '《Hold Up》爆发 · NahDah 2023 榜第 137 名'
+    label: '《Hold Up》爆发 · 第 137 名'
     kind: measured
+    by: 'NahDah 2023'
     window: burst
     syllables: 15
     seconds: 1.091

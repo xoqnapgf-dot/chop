@@ -15,6 +15,7 @@ sources:
   - { title: 'NahDah Vebb – 150 条逐条测算', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
   - { title: 'B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017（NahDah 2017 版搬运）', url: 'https://www.bilibili.com/video/BV11x411L79b/' }
   - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
+  - { title: 'NahDah Vebb – 2021 版榜单曲目文档（[outdated] Top 150, 2021）', url: 'https://docs.google.com/document/d/1UpOgX1BNIrPTK4F1JwibltfDSiVjJMLcQFbbmueJvUs' }
   - { title: 'SPS and Chopper Rap Wiki – Crucified', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Crucified' }
   - { title: 'SPS and Chopper Rap Wiki – Infinite choppers 1', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Infinite_choppers_1' }
   - { title: '新浪 – 赵辰龙公开回应（2022-04-01）', url: 'https://k.sina.cn/article_1163858357_v455f11b5019012ps5.html' }
@@ -67,7 +68,9 @@ NahDah Vebb 在 YouTube 上做"最快说唱歌手 Top 150"榜单，属于美洲�
 
 ## 早期的数字为什么虚高
 
-同一批人，早年榜单上的数字和后来系统复测的结果差了一大截：
+先说结论：**虚高主要集中在最顶端的那几个极端数字**，比如 27、28、30 以上这种。大多数中段的数字，还有近几年的测算，不同榜单之间其实差得不多。
+
+### 顶端：差了一大截
 
 | 说法 | 早期 | 后来 |
 |---|---|---|
@@ -80,6 +83,21 @@ NahDah Vebb 在 YouTube 上做"最快说唱歌手 Top 150"榜单，属于美洲�
 2. **窗口太短**：不满 1 秒就除，小数会把结果放大。
 3. **把弹舌音算成音节**。
 4. **没有放慢核对**：后来的做法是放到 0.1–0.2 倍速，逐个音节确认。
+
+### 中段：前后差不多
+
+拿 NahDah 的 2021 版和 2023 版逐人对比，很多人用的是**同一首歌**，名次也相近：
+
+| 人物 | 歌 | 2021 版 | 2023 版 |
+|---|---|---|---|
+| DNA Tru Lyricist | Lightspeed Chopper 3 | 第 11 | 第 9（17.76） |
+| Twisted Insane | Dome Split | 第 14 | 第 32（15.24） |
+| K-Fix | Our Time | 第 15 | 第 22（15.60） |
+| Watsky | GOAT Fast Rap | 第 18 | 第 24（15.47） |
+| SPLXT | Undaground Choppers 3 | 第 17 | 第 26（15.34） |
+| Kardiyak | Illest Choppers 4 | 第 19 | 第 28（15.28） |
+
+名次有些往后挪，主要是因为 2023 版收进了更多新人、新歌，不是这些人的数字变了。2021 到 2023 的大变动几乎都来自**规则**：纪录挑战不再算（Rebel XD 从第 1 落榜，Outsider 从第 13 掉到第 54）、加速的被除名（Mizury Mize、Leach，Interchopper 换歌），以及新歌上榜（Crucified 的《Onion Chopper》、Idylll 的《Tha Shade》）。
 
 方法跟上以后，准确度才上来。NahDah 本人后来把 2017、2021 版都标成了 outdated。中文圈里，B 站 UP 主五里亭亭长 2021 年做全球排行时，用 0.1–0.2 倍速逐个音节听，排除含弹舌音的歌，还在置顶评论里专门反驳了 Power Up 28.9、Nihilist 32.8 这两个流传最广的数字。
 

@@ -18,8 +18,9 @@ related: [twisted-insane, crucified, tech-n9ne]
 speed:
   - value: 17.76
     unit: syl/s
-    label: '《Lightspeed Chopper 3》爆发 · NahDah 2023 榜第 9 名'
+    label: '《Lightspeed Chopper 3》爆发 · 第 9 名'
     kind: measured
+    by: 'NahDah 2023'
     window: burst
     syllables: 19
     seconds: 1.07

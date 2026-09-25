@@ -19,6 +19,7 @@ speed:
     unit: syl/s
     label: 《Syllabic War》爆发
     kind: measured
+    by: 'Genius'
     window: burst
     syllables: 20
     seconds: 1.062
@@ -31,6 +32,7 @@ speed:
     unit: syl/s
     label: 《Undaground Choppers 7》爆发
     kind: measured
+    by: 'Genius'
     window: burst
     syllables: 16
     seconds: 1.0
@@ -42,6 +44,7 @@ speed:
     unit: syl/s
     label: 《Undaground Choppers 4》爆发
     kind: measured
+    by: 'Genius'
     window: burst
     syllables: 16
     seconds: 1.02
@@ -51,8 +54,9 @@ speed:
       - { title: 'Genius – Interchopper 艺人页', url: 'https://genius.com/artists/Interchopper' }
   - value: 20.1
     unit: syl/s
-    label: 《Illest Choppers》爆发 · NahDah 2023 榜第 5 名
+    label: 《Illest Choppers》爆发 · 第 5 名
     kind: measured
+    by: 'NahDah 2023'
     window: burst
     syllables: 21
     seconds: 1.045
@@ -65,6 +69,7 @@ speed:
     unit: syl/s
     label: 《Undaground Choppers 5》爆发
     kind: measured
+    by: 'Genius'
     window: burst
     confidence: debunked
     note: 早年流传最广的数字，当年引发了"是人还是机器"的讨论；据 Genius 记载，SPS 社区的"SPS Council"把音频过滤检查后，认定这段加速了。

@@ -21,6 +21,7 @@ speed:
     unit: char/s
     label: 《健将》中一段 5 秒快嘴（峰值）
     kind: measured
+    by: '买购网盘点'
     window: short
     seconds: 5
     confidence: pending
