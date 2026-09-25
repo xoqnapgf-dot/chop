@@ -605,3 +605,29 @@
   sources:
     - { title: 'B站 – 【韵脚检查】NIGHTKIDZ夜之子', url: 'https://www.bilibili.com/video/BV1u2e1zEEJk/' }
     - { title: 'B站 – 【韵脚检查】光光快嘴依旧爽的起飞！NIGHTKIDZ夜之子', url: 'https://www.bilibili.com/video/BV1tPh1zKEVi/' }
+- id: lightspeed-chopper-3
+  title: Lightspeed Chopper 3
+  artists: [dna-tru-lyricist]
+  credit: DNA Tru Lyricist
+  album: The Lightspeed Chopper Mixtape
+  youtube: _glMTGtNnPI
+  bilibili: BV19E41187kw
+  netease: 1832667523
+  youtubeChannel: DNA Tru Lyricist
+  officialUpload: true
+  scene: world
+  note: DNA 最快的歌，也是他招牌系列的第三首：NahDah 2023 榜第 9 名，1.070 秒 19 个音节，约 17.76 SPS。
+  confidence: pending
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+- id: tru-cipher
+  title: Tru Cipher
+  artists: [dna-tru-lyricist]
+  credit: DNA Tru Lyricist feat. Leach, Nokturnal, Fluenci, Swift Homicide, DOWN6
+  youtube: 2wGRpq1w1co
+  youtubeChannel: DNA Tru Lyricist
+  officialUpload: true
+  scene: world
+  note: DNA 召集的地下 chopper cypher，Leach 和 DOWN6 都在。
+  sources:
+    - { title: 'YouTube – Tru Cipher（DNA 本人频道）', url: 'https://www.youtube.com/watch?v=2wGRpq1w1co' }

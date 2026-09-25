@@ -181,6 +181,15 @@
       "hasBanner": true,
       "color": "#080808",
       "fetchedAt": "2026-09-25"
+    },
+    "dna-tru-lyricist": {
+      "channelUrl": "https://www.youtube.com/channel/UC6LR4i6MOui4XnPVQX_FqVQ",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/UtcY6-Kv-OLV0bGvZ3CYa2bCVU3ogKiJR-65lH8clbwBlS1VUCWm-kM_7ecUOM9EMlbWu0nV=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/3GFdgkfMm2fJSABgCXPUur2abFx8kCp5eor8VAcQDBtlKgx24TUFU0Hb1TbOBLDuXJho2HoHsQ=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-25"
     }
   },
   "tracks": {
@@ -422,6 +431,16 @@
     "nightkidz": {
       "video": "https://www.youtube.com/watch?v=1cOcmUPC5ec",
       "size": "sddefault",
+      "color": "#080808"
+    },
+    "lightspeed-chopper-3": {
+      "video": "https://www.youtube.com/watch?v=_glMTGtNnPI",
+      "size": "sddefault",
+      "color": "#080808"
+    },
+    "tru-cipher": {
+      "video": "https://www.youtube.com/watch?v=2wGRpq1w1co",
+      "size": "maxresdefault",
       "color": "#080808"
     }
   }
