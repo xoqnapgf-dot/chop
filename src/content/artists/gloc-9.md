@@ -3,8 +3,8 @@ name: Gloc-9
 realName: Aristotle Condenuevo Pollisco
 tagline: 菲律宾最成功的说唱歌手之一，以"快速流动的 chop 唱腔"著称。
 country: PH
-city: 黎刹省 Binangonan
-region: 菲律宾
+city: 黎刹省
+region: 东南亚
 activeSince: 1992
 style: chopper
 styleNote: 维基百科称他以"快速流动的 chop 唱腔"著称，Chopper 词条也把他列为菲律宾代表。

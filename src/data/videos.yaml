@@ -78,7 +78,7 @@
   cover: 'https://i.ytimg.com/vi/4SjqPAqjsWo/hqdefault.jpg'
   kind: speed
   scene: world
-  note: '本站世界区用的榜单：150 人每人一段 1 秒片段，附三份公开文档。'
+  note: '世界区用的榜单：150 人每人一段 1 秒片段，附三份公开文档。'
 - id: BV138BCBKEDT
   platform: bilibili
   title: '2025年 Crucified最快的 50段verse [最精确]'
@@ -128,7 +128,7 @@
   cover: 'https://i0.hdslb.com/bfs/archive/b611bbef9271422fb2c6d139a0a005f00ebc4a2a.png'
   kind: picks
   scene: world
-  note: 'DOWN6 的 18 人 chopper cypher 全程，本站世界区有逐人测算表。'
+  note: 'DOWN6 的 18 人 chopper cypher 全程，世界区有逐人测算表。'
 - id: BV1gF411K7Kk
   platform: bilibili
   title: '【Chopper图签】美国加利福尼亚州扭曲错乱Twisted Insane作品精选'
@@ -188,3 +188,33 @@
   kind: speed
   scene: world
   note: 'NahDah 2023 版榜单的 B 站搬运，国内打不开 YouTube 时可以看这个。'
+- id: BV14R4y177Jn
+  platform: bilibili
+  title: '中文说唱快嘴测速素材库-第十九期'
+  author: '石狐九和'
+  date: '2022-02-11'
+  duration: '5:27'
+  cover: 'https://i2.hdslb.com/bfs/archive/5f58667ee52aabde1b02f5547023636586bbc5b6.jpg'
+  kind: speed
+  scene: china
+  note: '《快嘴测速素材库》系列的一期，这期的名单是"光、早安、小酷、小安迪、王铁柱、校长、AK、幼稚园杀手、巴迪斯、SAI文凯"。系列从 2021 年做到 2024 年。'
+- id: BV1492ZBsET9
+  platform: bilibili
+  title: '【chop测速】DOWN6 语速最快的前20段 (2025)'
+  author: 'Messiar_80'
+  date: '2025-12-07'
+  duration: '7:11'
+  cover: 'https://i0.hdslb.com/bfs/archive/9651363100a8af8d66e688ba6a89280ffbbe61c4.jpg'
+  kind: speed
+  scene: world
+  note: '把 DOWN6 最快的 20 段 verse 按速度排出来。'
+- id: BV1y8BUB6Ezq
+  platform: bilibili
+  title: '如何计算SPS（2025）'
+  author: '喜欢chop的艾拉'
+  date: '2025-12-25'
+  duration: '19:31'
+  cover: 'https://i0.hdslb.com/bfs/archive/ee5017c0cd19811a0e2c40c6eb1d575f43714281.jpg'
+  kind: howto
+  scene: world
+  note: 'SPS 圈 Wedere 的测算教程《How to CALCULATE SPS (2025)》，中文翻译搬运。'

@@ -75,7 +75,7 @@ Yung Revival 是英国的地下 chopper。他的频道简介写着"来自英国�
 | 2026 | 《Vintage Flow》《Dimension Jump》 | DNA 的歌，ft. Yung Revival |
 | 2026 | 《Fire Breathers》 | DNA 专辑《Loosh Farm》的附赠曲，ft. Leach、Yung Revival，三人再次同曲 |
 
-他回归后还提到过一首《NOVA Returns》，ft. 他、DNA、Asa Jake、KillHollow 和 Leach，但本站没找到这首现在能播放的版本。
+他回归后还在评论区宣传过一首《NOVA Returns》，ft. 他、DNA、Asa Jake、KillHollow 和 Leach。
 
 ## 出现得少：2013–2018，然后沉寂
 
@@ -101,5 +101,3 @@ Yung Revival 是英国的地下 chopper。他的频道简介写着"来自英国�
 ## 在中文圈
 
 NahDah 2017 版被 B 站 UP 主 Fatality丶九头龙搬运时，他排在第 13 名。2021 年有人把《Tie The Noose》搬到了 B 站。YouTube 频道 GumBrass 666 Underground Lab TV 2024 年整理过一个他的"散佚作品"合集，说明里写，这几首是他们 2018–2021 年间传到网易云音乐和 B 站的。
-
-> 国籍来自他本人频道的简介和 DNA 的视频标题；作品和日期来自他本人、DNA、Crucified 等人的官方上传，以及网易云音乐的发行信息。真名、城市、家人等私人信息不收录。

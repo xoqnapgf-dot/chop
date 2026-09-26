@@ -4,10 +4,10 @@ nameZh: AR刘夫阳
 realName: 刘夫阳
 tagline: 以多层嵌套押韵和清晰快速的吐字著称的技术派，All That Records 主理人。
 country: CN
-city: 广州
+city: 广东 广州
 region: 华南
 style: fast
-styleNote: 以技术型说唱、多层押韵和快速清晰的吐字著称；本站没找到称他为 chopper 的可靠来源，所以标"快嘴"。
+styleNote: 以技术型说唱、多层押韵和快速清晰的吐字著称；但不以 chop 为核心风格，所以标"快嘴"。
 geo: [23.13, 113.26]
 born: '1994-10-27'
 tags: [技术流, 押韵, 厂牌主理人]

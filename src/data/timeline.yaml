@@ -8,7 +8,7 @@
 - id: 1992-twista-guinness
   year: 1992
   title: 吉尼斯最快说唱者
-  body: Twista 55 秒 598 个音节（约 10.87 音节/秒），被吉尼斯认证为最快的英语说唱者。
+  body: Twista 55 秒 598 个音节（约 10.87 音节/秒），被吉尼斯认证为最快的英语说唱者。这个纪录 1998 年被芝加哥的 Rebel XD 打破，之后又几经易手。
   scene: world
   artist: twista
   sources:
@@ -132,7 +132,7 @@
 - id: 2022-jianjiang
   year: 2022
   title: 健将mixtape
-  body: 法老与小精灵在 10 月 11 日（法老三十岁生日）发行《健将mixtape》，同名曲成为中文快嘴的新标杆。
+  body: 法老与小精灵在 10 月 11 日（法老生日当天）发行《健将mixtape》，同名曲成为中文快嘴的新标杆。
   scene: china
   artist: pharaoh
   sources:
@@ -207,10 +207,19 @@
   artist: yang-he-su
   sources:
     - { title: '维基百科 – 杨和苏', url: 'https://zh.wikipedia.org/zh-cn/%E6%9D%A8%E5%92%8C%E8%8B%8F' }
+- id: 2008-guinness-last
+  year: 2008
+  title: 吉尼斯最后一次认证"最快说唱"
+  body: 年初，Rebel XD 42.2 秒 852 个音节（约 20.2/秒）的纪录收进吉尼斯；12 月 23 日，西班牙的 El Chojin 在电视上 60 秒唱了 921 个音节（约 15.4/秒），按"一分钟"口径成为新的纪录保持者。平均速度比 Rebel XD 慢，却因为计时口径改了而上位，这也是这个纪录后来说法混乱的根源。此后吉尼斯再没有认证过新的"最快说唱"。
+  scene: world
+  sources:
+    - { title: 'Wikipedia – El Chojin', url: 'https://en.wikipedia.org/wiki/El_Chojin' }
+    - { title: 'YouTube – Rebel XD rapping 20 syllables per second（本人频道，2008-02-07）', url: 'https://www.youtube.com/watch?v=wlPAuYItZm0' }
+    - { title: 'REVOLT – Hip Hop Guinness World Records', url: 'https://www.revolt.tv/article/impressive-hip-hop-guinness-world-records' }
 - id: 2013-crucified-guinness
   year: 2013
-  title: 最后一次吉尼斯挑战
-  body: 9 月 13 日，德州的 Crucified 以 49 秒 949 个音节（平均 19.37）冲击吉尼斯"最快说唱"纪录，Bizzy Bone 作证。半年后吉尼斯关闭了这个类别。
+  title: Crucified 的吉尼斯挑战
+  body: 9 月 13 日，德州的 Crucified 以 49 秒 949 个音节（平均 19.37）冲击吉尼斯"最快说唱"纪录，Bizzy Bone 作证，但没有得到认证。据 Rap Wiki，半年后吉尼斯关闭了这个类别。
   scene: world
   artist: crucified
   confidence: pending
@@ -226,7 +235,7 @@
 - id: 2026-chinese-choppers
   year: 2026
   title: Chinese Choppers Cypher
-  body: 中国第三代 chopper（2022 年之后入圈的新生代）合作的 cypher。2018 年组建的中国 chop 圈是承上启下的第二代，这一代是在它之后成长起来的。参与者有赛文凯、ChaChe、Willbe、青藤 CyanVine、JMS 等；很快出现了大量翻唱。小安迪在直播里完整听了一遍，说这是真正的 chop，参与者"基本都很专业"，"比想象中好太多了"，速度和切分玩得比东南亚的 chop 还狠；他逐段点评，有的段落夸到"可以发给 Tech N9ne 听"，也批评了部分段落 flow 太大众、录音质量差、大家音色都偏一个方向。他建议这批人把歌往 YouTube 等海外平台发，主动去联系 Strange Music 等厂牌里的歌手合作。（据直播录音的 AI 听写整理，不是逐字原话。）
+  body: 中国新一批 chopper 合作的 cypher，参与者有赛文凯、ChaChe、Willbe、青藤 CyanVine、JMS 等；很快出现了大量翻唱。小安迪在直播里完整听了一遍，说这是真正的 chop，参与者"基本都很专业"，"比想象中好太多了"，速度和切分玩得比东南亚的 chop 还狠；他逐段点评，有的段落夸到"可以发给 Tech N9ne 听"，也批评了部分段落 flow 太大众、录音质量差、大家音色都偏一个方向。他建议这批人把歌往 YouTube 等海外平台发，主动去联系 Strange Music 等厂牌里的歌手合作。
   scene: china
   artist: lil-andy
   sources:
@@ -244,13 +253,18 @@
 - id: 2018-china-chop-circle
   year: 2018
   title: 中国第二代 chop 圈组建
-  body: 受 NahDah 榜单搬运视频的影响，一批专门练 chop 的中国新人出现了。2018 年，煦航把他们组织起来，组建了中国的 chop 圈。这一代承上启下，是中国的第二代 chopper；2022 年以后入圈的是第三代。
+  body: 受 NahDah 榜单搬运视频的影响，一批专门练 chop 的中国新人出现了。2018 年，煦航把他们组织起来，组建了中国的 chop 圈。这一批人被看作中国的第二代 chopper。
   scene: china
-- id: 2021-wulitingtingzhang
+- id: 2021-cn-speed-measuring
   year: 2021
   title: 中文圈自己测速
-  body: B 站 UP 主五里亭亭长接连发布《语速最快的七位中文rapper》和《全球rapper语速排行榜》，用 0.1–0.2 倍速逐个音节听、排除含弹舌音的歌，并在置顶评论里反驳 Power Up 28.9、Nihilist 32.8 这类流传多年的数字。
+  body: 2021 年前后，B 站上开始有人系统地测快嘴。五里亭亭长发布《语速最快的七位中文rapper》和《全球rapper语速排行榜》，用 0.1–0.2 倍速逐个音节听，并在置顶评论里反驳 Power Up 28.9、Nihilist 32.8 这类流传多年的数字；石狐九和做了幼稚园杀手的全套语速测试，又开了《中文说唱快嘴测速素材库》系列，一期一期给中文快嘴段落留档，一直做到 2024 年。之后圈里还有人翻译了 SPS 圈的测算教程（喜欢chop的艾拉，2025），也有人专门做国外 chopper 的测速（Messiar_80 的"chop 测速"，2025）。几家的口径不完全一样，同一句常常差一两个字或几十毫秒。
   scene: china
   sources:
     - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
     - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
+    - { title: 'B站 – 石狐九和：幼稚园杀手的快嘴究竟有多快-全网最全语速测试（2021）', url: 'https://www.bilibili.com/video/BV1Zf4y1a73W/' }
+    - { title: 'B站 – 石狐九和：中文说唱快嘴测速素材库-第十九期（2022）', url: 'https://www.bilibili.com/video/BV14R4y177Jn/' }
+    - { title: 'B站 – 石狐九和：快嘴测速素材库 - 第二十一期（2024）', url: 'https://www.bilibili.com/video/BV13M4m1d7UX/' }
+    - { title: 'B站 – 喜欢chop的艾拉：如何计算SPS（2025，译自 Wedere）', url: 'https://www.bilibili.com/video/BV1y8BUB6Ezq/' }
+    - { title: 'B站 – Messiar_80：【chop测速】DOWN6 语速最快的前20段（2025）', url: 'https://www.bilibili.com/video/BV1492ZBsET9/' }

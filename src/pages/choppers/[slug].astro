@@ -8,7 +8,7 @@ import Confidence from '@/components/Confidence.astro';
 import Sources from '@/components/Sources.astro';
 import LiteYouTube from '@/components/LiteYouTube.astro';
 import { artistPhoto, artistBanner, artistColor, artistMedia } from '@/lib/media';
-import { COUNTRY, SPEED_KIND, UNIT, SCENE, STYLE, WINDOW, displayName } from '@/lib/labels';
+import { COUNTRY, SPEED_KIND, UNIT, SCENE, STYLE, WINDOW, displayName, placeLabel } from '@/lib/labels';
 import { url } from '@/lib/url';
 import { collabPairs, collabHref, collabYear } from '@/lib/collabs';
 
@@ -52,13 +52,6 @@ const partners = await Promise.all(
     .map(async (p) => ({ ...p, other: (await getEntries([{ collection: 'artists', id: p.a === id ? p.b : p.a }]))[0] })),
 );
 
-const age = (born: string, until?: string) => {
-  const b = new Date(born);
-  const u = until ? new Date(until) : new Date();
-  let y = u.getFullYear() - b.getFullYear();
-  if (u.getMonth() < b.getMonth() || (u.getMonth() === b.getMonth() && u.getDate() < b.getDate())) y--;
-  return y;
-};
 const fmt = (d: string) => {
   const [y, m, dd] = d.split('-');
   return `${y} 年 ${Number(m)} 月 ${Number(dd)} 日`;
@@ -66,10 +59,10 @@ const fmt = (d: string) => {
 
 const facts = [
   data.realName && ['本名', data.realName],
-  ['地区', data.city === '未公开' ? '未公开' : `${data.city} · ${data.region}`],
+  ['地区', placeLabel(data)],
   data.activeSince && ['出道', `${data.activeSince} 年`],
-  data.born && ['出生', `${fmt(data.born)}${data.died ? '' : `（${age(data.born)} 岁）`}`],
-  data.died && data.born && ['去世', `${fmt(data.died)}（${age(data.born, data.died)} 岁）`],
+  data.born && ['出生', fmt(data.born)],
+  data.died && ['去世', fmt(data.died)],
 ].filter(Boolean) as [string, string][];
 
 const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生成的 Topic 频道', label: '厂牌频道' };
@@ -285,7 +278,7 @@ const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生
                     <Avatar id={r.id} data={r.data} widths={[96]} sizes="44px" class="size-11 shrink-0 overflow-hidden rounded-lg object-cover" />
                     <span class="min-w-0 flex-1">
                       <span class="block truncate font-semibold">{displayName(r.data)}</span>
-                      <span class="block truncate text-xs text-ink-3">{r.data.city === '未公开' ? '所在地未公开' : r.data.city}</span>
+                      <span class="block truncate text-xs text-ink-3">{placeLabel(r.data)}</span>
                     </span>
                     <StyleChip style={r.data.style} />
                   </a>

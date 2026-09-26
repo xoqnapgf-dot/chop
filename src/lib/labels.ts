@@ -56,6 +56,14 @@ export const UNIT = {
 } as const;
 
 /** 展示用名字：中文艺人用中文名，其他用艺名 */
+/** 所在地统一写法：中国区"省 城市"，其他"国家 州/省 城市"；没有可靠来源的写"所在地未公开"（国外的至少写国家） */
+export function placeLabel(a: { country: string; city: string }): string {
+  const known = a.city !== '未公开';
+  if (a.country === 'CN') return known ? a.city : '所在地未公开';
+  const c = COUNTRY[a.country].name;
+  return known && a.city !== c ? `${c} ${a.city}` : c;
+}
+
 export function displayName(a: { name: string; nameZh?: string; country: string }): string {
   return a.country === 'CN' && a.nameZh ? a.nameZh : a.name;
 }

@@ -2,8 +2,8 @@
 name: Bone Thugs-n-Harmony
 tagline: 把快嘴和和声揉在一起的克利夫兰五人组，chop 风格的开创者之一。
 country: US
-city: 克利夫兰 Cleveland
-region: 美国中西部
+city: 俄亥俄州 克利夫兰
+region: 北美
 activeSince: 1991
 style: chopper
 styleNote: 维基百科称其"帮助开创了 chop 风格"。

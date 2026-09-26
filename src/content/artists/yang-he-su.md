@@ -4,11 +4,11 @@ nameZh: 杨和苏
 realName: 杨和苏
 tagline: 快嘴加弹舌的成都说唱者，《中国新说唱》与《中国说唱巅峰对决》的多届冠军。
 country: CN
-city: 成都
+city: 四川 成都
 region: 川渝
 activeSince: 2016
 style: fast
-styleNote: 多个来源把快嘴和弹舌列为他的标志性技术；本站没找到称他为 chopper 的可靠来源，所以标"快嘴"。
+styleNote: 多个来源把快嘴和弹舌列为他的标志性技术；但不以 chop 为核心风格，所以标"快嘴"。
 geo: [30.66, 104.07]
 born: '1995-07-28'
 tags: [活死人, 弹舌, 综艺冠军]

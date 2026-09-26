@@ -3,7 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import Avatar from './Avatar.astro';
 import StyleChip from './StyleChip.astro';
 import { artistColor } from '@/lib/media';
-import { COUNTRY, displayName } from '@/lib/labels';
+import { displayName, placeLabel } from '@/lib/labels';
 import { url } from '@/lib/url';
 
 interface Props { artist: CollectionEntry<'artists'>; eager?: boolean }
@@ -13,7 +13,7 @@ const color = artistColor(id);
 const isCN = data.country === 'CN';
 const title = displayName(data);
 const sub = isCN ? data.name : data.nameZh;
-const place = isCN ? (data.city === '未公开' ? '所在地未公开' : `${data.region} · ${data.city}`) : COUNTRY[data.country].name;
+const place = placeLabel(data);
 ---
 
 <a

@@ -15,6 +15,7 @@ sources:
   - { title: 'NahDah Vebb – 150 条逐条测算', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
   - { title: 'B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017（NahDah 2017 版搬运）', url: 'https://www.bilibili.com/video/BV11x411L79b/' }
   - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
+  - { title: 'B站 – 石狐九和：中文说唱快嘴测速素材库-第十九期（2022）', url: 'https://www.bilibili.com/video/BV14R4y177Jn/' }
   - { title: 'NahDah Vebb – 2021 版榜单曲目文档（[outdated] Top 150, 2021）', url: 'https://docs.google.com/document/d/1UpOgX1BNIrPTK4F1JwibltfDSiVjJMLcQFbbmueJvUs' }
   - { title: 'B站 – NahDah Vebb：Top 150 Fastest Rappers 2021（转载，每条都有算式）', url: 'https://www.bilibili.com/video/BV1Av4y1Z7d7/' }
   - { title: 'Genius – Eminem''s "Godzilla" Verse Is Faster Than "Rap God" & "Majesty"（2020）', url: 'https://genius.com/a/eminem-s-godzilla-verse-is-faster-than-rap-god-majesty' }
@@ -104,7 +105,7 @@ NahDah Vebb 在 YouTube 上做"最快说唱歌手 Top 150"榜单，属于美洲�
 
 名次有些往后挪，主要是因为 2023 版收进了更多新人、新歌，不是这些人的数字变了。2021 到 2023 的大变动几乎都来自**规则**：纪录挑战不再算（Rebel XD 从第 1 落榜，Outsider 从第 13 掉到第 54）、加速的被除名（Mizury Mize、Leach，Interchopper 换歌），以及新歌上榜（Crucified 的《Onion Chopper》、Idylll 的《Tha Shade》）。
 
-方法跟上以后，准确度才上来。NahDah 本人后来把 2017、2021 版都标成了 outdated。中文圈里，B 站 UP 主五里亭亭长 2021 年做全球排行时，用 0.1–0.2 倍速逐个音节听，排除含弹舌音的歌，还在置顶评论里专门反驳了 Power Up 28.9、Nihilist 32.8 这两个流传最广的数字。
+方法跟上以后，准确度才上来。NahDah 本人后来把 2017、2021 版都标成了 outdated。中文圈里，2021 年前后 B 站开始有人系统地测：五里亭亭长做全球排行时，用 0.1–0.2 倍速逐个音节听，排除含弹舌音的歌，还在置顶评论里专门反驳了 Power Up 28.9、Nihilist 32.8 这两个流传最广的数字；石狐九和的《中文说唱快嘴测速素材库》从 2021 年做到 2024 年，给大量中文快嘴段落留了档。
 
 不过早期榜单也有它的历史意义：2017 年那版被搬到 B 站后，让很多中国听众第一次认识了 chop 和 SPS。
 
@@ -123,7 +124,7 @@ NahDah Vebb 在 YouTube 上做"最快说唱歌手 Top 150"榜单，属于美洲�
 | **计时差一点** | Rap God 最快段落 157 个音节：Genius 计 16.3 秒（≈ 9.6），维基百科 Rap God 词条计 16.45 秒（≈ 9.54） |
 | **来源本身冲突** | Outsider：一个词条写"超过 16"，另一个写"21" |
 | **拿 BPM 当语速** | 《饕餮》宣传写"演唱速度 332 BPM"，但 BPM 只是节拍，不是字数。实际要数字：快嘴段 128 字，赵辰龙在山东卫视现场 10 秒唱完，约 12.8 字/秒 |
-| **认证类别取消** | 吉尼斯后来取消了"最快说唱者"类别，Twista 1992 年的纪录成了历史纪录 |
+| **拿过时的纪录当现行纪录** | Twista 1992 年的吉尼斯纪录 1998 年就被打破；吉尼斯 2008 年以后不再认证新的"最快说唱"，详见《吉尼斯"最快说唱"纪录：谁真的拿过》 |
 
 ## 本站的四级标签
 

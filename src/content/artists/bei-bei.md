@@ -4,7 +4,7 @@ nameZh: 贝贝
 realName: 李京泽
 tagline: 西安红花会的 Battle MC，外号"超强快嘴"和"押韵狂魔"。
 country: CN
-city: 西安
+city: 陕西 西安
 region: 西安
 style: fast
 styleNote: Battle MC 出身，以子弹般的语速和大词汇量著称，外号"超强快嘴"。
