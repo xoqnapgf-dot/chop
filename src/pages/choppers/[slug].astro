@@ -63,11 +63,11 @@ const ND24_ALIAS: Record<string, string> = { '6fbh': 'kvr' };
 const nd24Row = nd24.find((r) => (ND24_ALIAS[r.rapper.toLowerCase()] ?? r.rapper.toLowerCase()) === id || r.rapper.toLowerCase() === data.name.toLowerCase());
 const nd24Rank = nd24Row ? nd24.indexOf(nd24Row) + 1 : 0;
 
-// 不显示出生日期（能直接推出年龄）
 const facts = [
   data.realName && ['本名', data.realName],
   ['地区', placeLabel(data)],
   data.activeSince && ['出道', `${data.activeSince} 年`],
+  data.born && ['出生', fmt(data.born)],
   data.died && ['去世', fmt(data.died)],
   nd24Row && ['2024 每国最快', `${nd24Row.nameZh}的代表 · ${nd24Row.sps.toFixed(2)}（《${nd24Row.song}》，${nd24Rank} / ${nd24.length}）`],
 ].filter(Boolean) as [string, string][];
