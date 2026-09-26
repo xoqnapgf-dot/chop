@@ -530,7 +530,7 @@
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
 - id: onion-chopper
   title: Onion Chopper
-  artists: [crucified, twisted-insane, sabotahe]
+  artists: [ruffian-rugged, crucified, twisted-insane, sabotahe]
   credit: Ruffian Rugged & Dumanoid feat. Twisted Insane, Kurşun, Sabotahe, Crucified & Fate
   youtube: 8T-HVOvWbqQ
   netease: 2017089392
@@ -542,6 +542,58 @@
   sources:
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
     - { title: 'NahDah Vebb – 测速方法 FAQ（Onion Chopper 一节）', url: 'https://docs.google.com/document/d/1zPWDPfnmmfRIuuskCmTMeTlWTjY9uc9NQ2nM3MU-mCU' }
+- id: mocca
+  title: Mocca
+  artists: [ruffian-rugged]
+  credit: Ruffian Rugged (Prod. by Fireclath)
+  youtube: anDMZHlq8TQ
+  youtubeChannel: Def Ill aka Ruffian Rugged
+  officialUpload: true
+  scene: world
+  year: 2022
+  confidence: disputed
+  note: 'Ruffian Rugged 最快的一段：1.059 秒 22 个音节 ≈ 20.77，NahDah 2023 版第 4 名。但那一秒几乎是"macchiato"一个词重复六遍，SPS wiki 因此不算这段。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'SPS and Chopper Rap Wiki – Def ill (Aka Ruffian rugged)', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Def_ill_(Aka_Ruffian_rugged)' }
+- id: tha-shade
+  title: Tha Shade
+  artists: [idylll]
+  credit: Idylll x Kal Paseo
+  youtube: _v6-zQ2FKS0
+  youtubeChannel: Idylll
+  officialUpload: true
+  scene: world
+  year: 2022
+  note: 'Idylll 和 Kal Paseo 自写自产的合作。Idylll 那段 1 秒整 21 个音节，NahDah 2023 版第 3 名；SPS wiki 测是 20.51。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'SPS and Chopper Rap Wiki – IDYLLL', url: 'https://sps-and-chopper-rap.fandom.com/wiki/IDYLLL' }
+- id: infinite-choppers-2
+  title: Infinite Choppers 2
+  artists: [idylll, ruffian-rugged]
+  credit: DOWN6 feat. Hurracane, Idylll, Asa Jake, Al Zabran, Tokumei, Troll, Dumanoid & Ruffian Rugged, Bloody Ruckus, dvagoh, Kal Paseo 等
+  youtube: n2SmW1OREcA
+  youtubeChannel: DOWN6
+  officialUpload: true
+  scene: world
+  year: 2024
+  note: 'DOWN6 牵头、做了九到十个月的 chopper cypher。Idylll 那段在 SPS 圈测到 22 以上（画面写 23.41，后来重算为 22.40，SPS wiki 最终写 22.73）；Dumanoid 和 Ruffian Rugged 合唱一段，Ruffian 那部分 SPS wiki 测为 20.11。'
+  sources:
+    - { title: 'YouTube – DOWN6 - INFINITE CHOPPERS 2（2024-06-19）', url: 'https://www.youtube.com/watch?v=n2SmW1OREcA' }
+    - { title: 'SPS and Chopper Rap Wiki – IDYLLL', url: 'https://sps-and-chopper-rap.fandom.com/wiki/IDYLLL' }
+- id: freezetyler
+  title: FreeZeTyler
+  artists: [shad]
+  credit: Shad
+  youtube: Q6c32Z-Pbq4
+  youtubeChannel: blaqsea（重传）
+  officialUpload: false
+  scene: world
+  note: 'Shad 最快的一段：1 秒整 20 个音节，TrollatorBR、BruCalcs、NahDah 2021 和 2023 版都测出 20。原视频所在的 Saving Tracks 频道已转为私享，这里是 2026 年的重传；发行年份没查到，只能确定在 2020 年 6 月以前。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'YouTube – TrollatorBR：Shad - FreeZeTyler (Cálculo)（2020）', url: 'https://www.youtube.com/watch?v=dguRJ4Ir8tA' }
 - id: kill-5
   title: Kill 5（Paslangin 5）
   artists: [sabotahe]

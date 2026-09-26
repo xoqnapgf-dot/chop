@@ -54,7 +54,7 @@ const ND = {
       <section class="container-x pt-28">
         <SectionHeading index="01" eyebrow="Worldwide Choppers" title="一首歌，三种语言" />
         <div class="grid items-start gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
-          <div class="flex">
+          <div class="flex min-w-0">
             <TrackCard track={wwc} />
           </div>
           <div class="card p-6 sm:p-8">
@@ -205,7 +205,7 @@ const ND = {
   <section class="container-x pt-28">
     <SectionHeading index="05" eyebrow="Tracks" title="世界曲目" href="tracks/?scene=world" linkLabel="曲目库" />
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {tracks.map((t) => <div class="flex"><TrackCard track={t} /></div>)}
+      {tracks.map((t) => <div class="flex min-w-0"><TrackCard track={t} /></div>)}
     </div>
   </section>
 

@@ -82,6 +82,24 @@
   sources:
     - { title: 'YouTube – YUNG REVIVAL OFFICIAL（本人频道）', url: 'https://www.youtube.com/@YUNGREVIVALOFFICIAL' }
     - { title: 'YouTube – DNA - Yung Revival Shout Out "From the UK"（2015）', url: 'https://www.youtube.com/watch?v=vkvL1z3_Li0' }
+- id: at
+  name: 奥地利
+  en: Austria
+  geo: [47.5, 14.5]
+  summary: 林茨的 Ruffian Rugged（Def Ill）是奥地利资深的双倍速 rapper，2019 年挤进 Undaground Choppers 10，又和匈牙利的 Dumanoid 牵头做了《Onion Chopper》，NahDah 2023 版第 4。同一首里还有奥地利的 Fate。
+  mentions: [Fate]
+  sources:
+    - { title: 'Wikipedia（德语）– Def Ill', url: 'https://de.wikipedia.org/wiki/Def_Ill' }
+    - { title: 'YouTube – Ruffian & Dumanoid - Onion Chopper（2023）', url: 'https://www.youtube.com/watch?v=8T-HVOvWbqQ' }
+- id: br
+  name: 巴西
+  en: Brazil
+  geo: [-14.2, -51.9]
+  summary: 葡萄牙语的 speed flow 圈有自己的测速频道（TrollatorBR、BruCalcs）。Shad 的《FreeZeTyler》1 秒 20 个音节，是巴西公认的最快，NahDah 2021 版第 2、2023 版第 6。
+  mentions: [MC Igu, TrollatorBR]
+  sources:
+    - { title: 'YouTube – TrollatorBR："TOP 50" Rappers Mais Rápidos do Brasil（2021）', url: 'https://www.youtube.com/watch?v=Bn8BQsxuif0' }
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
 - id: dk
   name: 丹麦
   en: Denmark

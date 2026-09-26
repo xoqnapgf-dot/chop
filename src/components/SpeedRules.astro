@@ -34,15 +34,55 @@ const swapped = [
 ];
 
 const faq = [
-  ['为什么数音节，不数单词？', '音节是说话的基本单位，长度大致可比；按单词算，单词长的语言会吃亏。只听不看歌词，没公开歌词的 rapper 也能测。有歌词时仍会对照，不把录音杂音多算成音节。'],
-  ['为什么不用 10 秒平均？', '13–14 SPS 以上的爆发很少能持续 3–4 秒以上，10 秒里难免混进慢段、停顿或别的 take。CDTVProductions 用 10 秒，"Is Eminem really a Rap God" 系列用 15 秒，都会把峰值稀释掉。这个榜比的是纯速度，不是耐力。'],
-  ['窗口要多长？', '圈里一般要求至少 0.7 秒；太短的片段，几个弹舌音就能把数字抬上去，容易不被认可。满 1 秒不是公认标准，但含金量最高，NahDah 的榜就要求满 1 秒：15 ÷ 1.000 和 14 ÷ 0.933 都约等于 15，但后者实际只唱了 14 个音节，除以小数会把数字放大。'],
-  ['片段从哪剪到哪？', '团队把首尾剪到最短，只要音节数还说得通。也有人从第一个音节的开头剪到最后一个音节的结尾，这样会稍慢一点，但也许更合理。'],
-  ['这样测就准了吗？', '不绝对。几毫秒就能让结果变一截，不同的人很难听得完全一样，所以结果是团队共同认可的，有误差。比如 Crucified 自称《Onion Chopper》是 22 SPS，团队"非常接近但没能核实"，最后写的是 22/1.043 ≈ 21.09。'],
-  ['谁算"像样的"rapper？', '看四样：圈内认可度；投入（发过一定数量的歌，最好有 EP、mixtape 或专辑）；经验（不在拍上、录得潦草的不算）；质量（录音室水准）。'],
-  ['为什么不收吉尼斯纪录？', '清唱片段放进视频会打乱节奏，录音质量也往往更差；更重要的是，想把"快嘴"这个名头留给在自己作品里真的唱得快的人。Outsider、Twista 因此都改用正式歌曲；Rebel XD 从上一版第 1 名直接落榜，他的纪录挑战里还有大量无意义的弹舌音，圈内也有人批评过（DNA Tru Lyricist 2015 年专门发过《Rebel XD DISS》；也有说法称 Twisted Insane 在 Facebook 上喷过）。'],
-  ['视频里的秒表和 "Tb" 是什么？', '秒表只是提示爆发从哪开始，不是片段的准确时长。Tb 是 tiebreaker（平局）：两人在同样长的时间里唱了同样多的音节，谁把速度保持得更久，谁排前面。'],
-];
+  {
+    q: '为什么数音节，不数单词？',
+    short: '音节长度差不多，单词长短差很多。',
+    viz: 'syllable',
+    a: '音节是说话的基本单位，长度大致可比；按单词算，单词长的语言会吃亏。只听不看歌词，没公开歌词的 rapper 也能测。有歌词时仍会对照，不把录音杂音多算成音节。',
+  },
+  {
+    q: '为什么不用 10 秒平均？',
+    short: '10 秒里混进慢段，峰值就被稀释了。',
+    viz: 'average',
+    a: '13–14 SPS 以上的爆发很少能持续 3–4 秒以上，10 秒里难免混进慢段、停顿或别的 take。CDTVProductions 用 10 秒，"Is Eminem really a Rap God" 系列用 15 秒，都会把峰值稀释掉。这个榜比的是纯速度，不是耐力。',
+  },
+  {
+    q: '窗口要多长？',
+    short: '至少 0.7 秒；满 1 秒含金量最高。',
+    viz: 'ruler',
+    a: '圈里一般要求至少 0.7 秒；太短的片段，几个弹舌音就能把数字抬上去，容易不被认可。满 1 秒不是公认标准，但含金量最高，NahDah 的榜就要求满 1 秒：15 ÷ 1.000 和 14 ÷ 0.933 都约等于 15，但后者实际只唱了 14 个音节，除以小数会把数字放大。',
+  },
+  {
+    q: '片段从哪剪到哪？',
+    short: '首尾剪到最短，音节数还得说得通。',
+    viz: 'cut',
+    a: '团队把首尾剪到最短，只要音节数还说得通。也有人从第一个音节的开头剪到最后一个音节的结尾，这样会稍慢一点，但也许更合理。',
+  },
+  {
+    q: '这样测就准了吗？',
+    short: '几毫秒就能差一截，结果是团队共同认可的。',
+    viz: 'error',
+    a: '不绝对。几毫秒就能让结果变一截，不同的人很难听得完全一样，所以结果是团队共同认可的，有误差。比如 Crucified 自称《Onion Chopper》是 22 SPS，团队"非常接近但没能核实"，最后写的是 22/1.043 ≈ 21.09。',
+  },
+  {
+    q: '谁算"像样的"rapper？',
+    short: '认可度、投入、经验、质量，四样都看。',
+    viz: 'four',
+    a: '看四样：圈内认可度；投入（发过一定数量的歌，最好有 EP、mixtape 或专辑）；经验（不在拍上、录得潦草的不算）；质量（录音室水准）。',
+  },
+  {
+    q: '为什么不收吉尼斯纪录？',
+    short: '纪录挑战不是歌，而且吉尼斯的纪录本身就很乱。',
+    viz: 'guinness',
+    a: '清唱片段放进视频会打乱节奏，录音质量也往往更差；更重要的是，想把"快嘴"这个名头留给在自己作品里真的唱得快的人。Outsider、Twista 因此都改用正式歌曲；Rebel XD 从上一版第 1 名直接落榜，他的纪录挑战里还有大量无意义的弹舌音，圈内也有人批评过（DNA Tru Lyricist 2015 年专门发过《Rebel XD DISS》）。',
+  },
+  {
+    q: '视频里的秒表和 "Tb" 是什么？',
+    short: 'Tb = 平局时，谁保持得更久谁在前。',
+    viz: 'tb',
+    a: '秒表只是提示爆发从哪开始，不是片段的准确时长。Tb 是 tiebreaker（平局）：两人在同样长的时间里唱了同样多的音节，谁把速度保持得更久，谁排前面。',
+  },
+] as const;
 ---
 
 <div class="rules">
@@ -125,45 +165,111 @@ const faq = [
     </article>
   </div>
 
-  <div class="mt-4 grid gap-4 lg:grid-cols-2">
-    <details class="card group p-6" open>
-      <summary class="flex cursor-pointer list-none items-center justify-between gap-4">
-        <span class="text-lg font-semibold">谁被除名、为什么</span>
-        <span class="chev text-ink-3">⌄</span>
-      </summary>
-      <p class="mt-4 eyebrow">整个人不上榜</p>
-      <ul class="mt-2 grid gap-1.5 text-sm">
-        {excluded.map(([n, r]) => (
-          <li class="grid grid-cols-[7.5rem_1fr] gap-3"><span class="font-semibold">{n}</span><span class="text-ink-2">{r}</span></li>
-        ))}
-      </ul>
-      <p class="mt-5 eyebrow">人在榜上，换了歌</p>
-      <ul class="mt-2 grid gap-1.5 text-sm">
-        {swapped.map(([n, r]) => (
-          <li class="grid grid-cols-[7.5rem_1fr] gap-3"><span class="font-semibold">{n}</span><span class="text-ink-2">{r}</span></li>
-        ))}
-      </ul>
-    </details>
-
-    <div class="card p-6">
-      <p class="text-lg font-semibold">问答</p>
-      <div class="mt-3 divide-y divide-line">
-        {faq.map(([q, a]) => (
-          <details class="qa py-3">
-            <summary class="flex cursor-pointer list-none items-start justify-between gap-4 text-sm font-semibold">
-              {q}
-              <span class="chev shrink-0 text-ink-3">⌄</span>
-            </summary>
-            <p class="mt-2 text-sm leading-relaxed text-ink-2">{a}</p>
-          </details>
-        ))}
+  <details class="card group mt-4 p-6" open>
+    <summary class="flex cursor-pointer list-none items-center justify-between gap-4">
+      <span class="text-lg font-semibold">谁被除名、为什么</span>
+      <span class="chev text-ink-3">⌄</span>
+    </summary>
+    <div class="grid gap-x-10 lg:grid-cols-2">
+      <div>
+        <p class="mt-4 eyebrow">整个人不上榜</p>
+        <ul class="mt-2 grid gap-1.5 text-sm">
+          {excluded.map(([n, r]) => (
+            <li class="grid grid-cols-[7.5rem_1fr] gap-3"><span class="font-semibold">{n}</span><span class="text-ink-2">{r}</span></li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <p class="mt-4 eyebrow">人在榜上，换了歌</p>
+        <ul class="mt-2 grid gap-1.5 text-sm">
+          {swapped.map(([n, r]) => (
+            <li class="grid grid-cols-[7.5rem_1fr] gap-3"><span class="font-semibold">{n}</span><span class="text-ink-2">{r}</span></li>
+          ))}
+        </ul>
       </div>
     </div>
+  </details>
+
+  <h3 class="mt-10 text-2xl font-semibold">问答</h3>
+  <div class="mt-4 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+    {faq.map((f, i) => (
+      <article class="qa card flex flex-col p-5">
+        <span class="qn">Q{i + 1}</span>
+        <h4 class="mt-1 font-semibold leading-snug">{f.q}</h4>
+        <p class="mt-1.5 text-sm font-medium text-accent-text">{f.short}</p>
+        <div class="viz mt-4 text-xs">
+          {f.viz === 'syllable' && (
+            <div class="grid gap-2 font-mono">
+              <p><span class="text-ink-3">1 个词 →</span> <span class="syl">un</span><span class="syl">be</span><span class="syl">liev</span><span class="syl">a</span><span class="syl">ble</span></p>
+              <p><span class="text-ink-3">2 个字 →</span> <span class="syl">快</span><span class="syl">嘴</span></p>
+              <p class="text-ink-3">按词算：1 比 2；按音节算：5 比 2</p>
+            </div>
+          )}
+          {f.viz === 'average' && (
+            <div class="grid gap-2">
+              <div class="hbar"><span>1 秒爆发</span><i style="--w:100%" /><b>16</b></div>
+              <div class="hbar dim"><span>10 秒平均</span><i style="--w:81%" /><b>13</b></div>
+              <p class="text-ink-3">同一段歌，窗口一拉长，数字就掉下来</p>
+            </div>
+          )}
+          {f.viz === 'ruler' && (
+            <div>
+              <div class="ruler">
+                <i class="zone" />
+                <i class="mark" style="--x:70%"><span>0.7 秒<br />最低</span></i>
+                <i class="mark hard" style="--x:100%"><span>1 秒<br />NahDah</span></i>
+              </div>
+              <p class="mt-9 text-ink-3">太短的片段，几个弹舌音就能凑出高数字</p>
+            </div>
+          )}
+          {f.viz === 'cut' && (
+            <div class="grid gap-2 font-mono">
+              <p class="cut"><i /><i /><b><i class="on" /><i class="on" /><i class="on" /><i class="on" /><i class="on" /><i class="on" /></b><i /><i /></p>
+              <p class="text-ink-3">括号里 = 被计时的那一段；首尾剪到最短，稍松一点也有人认</p>
+            </div>
+          )}
+          {f.viz === 'error' && (
+            <div class="grid gap-1.5 font-mono">
+              <p><span class="text-ink-3 line-through">自称 22</span> → 22 ÷ 1.043 = <strong class="text-ink">21.09</strong></p>
+              <p class="text-ink-3">差 10 毫秒会怎样：</p>
+              <p>21 ÷ 1.000 = 21.00</p>
+              <p>21 ÷ 1.010 = 20.79</p>
+            </div>
+          )}
+          {f.viz === 'four' && (
+            <div class="grid grid-cols-2 gap-2">
+              <span class="tag good">认可度</span>
+              <span class="tag good">投入</span>
+              <span class="tag good">经验</span>
+              <span class="tag good">质量</span>
+            </div>
+          )}
+          {f.viz === 'guinness' && (
+            <div class="grid gap-2">
+              <p class="flex flex-wrap gap-1.5"><span class="tag bad">清唱</span><span class="tag bad">纪录挑战</span><span class="tag good">录音室歌曲 ✓</span></p>
+              <p class="text-ink-3">吉尼斯"最快说唱"换过 5 次人、口径改过，2008 年后不再认证</p>
+              <a href={url('learn/guinness/')} class="link-u text-ink">吉尼斯纪录的来龙去脉 →</a>
+            </div>
+          )}
+          {f.viz === 'tb' && (
+            <div class="grid gap-2">
+              <div class="hbar"><span>A</span><i style="--w:100%" /><b>1.4 秒</b></div>
+              <div class="hbar dim"><span>B</span><i style="--w:72%" /><b>1.0 秒</b></div>
+              <p class="text-ink-3">都是 1 秒 20 个音节，A 保持得更久，排前面</p>
+            </div>
+          )}
+        </div>
+        <details class="mt-auto pt-4">
+          <summary class="flex cursor-pointer list-none items-center gap-1 text-xs text-ink-3 hover:text-ink">细节 <span class="chev">⌄</span></summary>
+          <p class="mt-2 text-sm leading-relaxed text-ink-2">{f.a}</p>
+        </details>
+      </article>
+    ))}
   </div>
 
   <div class="mt-4 rounded-2xl border border-line bg-surface-2 p-5 text-xs leading-relaxed text-ink-3">
     <p>
-      <strong class="text-ink">出处：</strong>NahDah Vebb《Top 150 Fastest Rappers》（2022 年 7 月重做，2023 年 1 月 30 日发布），美洲一派的测速圈。他早期的榜单错误多、有凭想象给的数字，自己已把 2017、2021 版标成 outdated；这一版起才系统化：450 人数据库、每条附 1 秒片段录音和音节拆分、复查三遍。本站复算了 150 条，只有 1 条算式对不上。这是 2023 年的版本，之后的新纪录不在里面。
+      <strong class="text-ink">出处：</strong>NahDah Vebb《Top 150 Fastest Rappers》（2022 年 7 月重做，2023 年 1 月 30 日发布），美洲一派的测速圈。他早期的榜单错误多、有凭想象给的数字，自己已把 2017、2021 版标成 outdated；这一版起才系统化：450 人数据库、每条附 1 秒片段录音和音节拆分、复查三遍。150 条都用"音节数 ÷ 秒数"复算过，只有 1 条算式对不上。这是 2023 年的版本，之后的新纪录不在里面。
     </p>
     <p class="mt-2 flex flex-wrap gap-x-4 gap-y-1">
       {DOCS.map(([t, u]) => <a href={u} target="_blank" rel="noopener nofollow" class="link-u hover:text-ink">{t} ↗</a>)}
@@ -245,6 +351,95 @@ const faq = [
   }
   .text-critical {
     color: var(--critical);
+  }
+  .qa {
+    border-top: 3px solid color-mix(in oklab, var(--accent) 55%, transparent);
+  }
+  .qn {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    color: var(--accent-text);
+  }
+  .hbar {
+    display: grid;
+    grid-template-columns: 4.5rem 1fr auto;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .hbar span {
+    color: var(--ink-3);
+  }
+  .hbar i {
+    display: block;
+    height: 0.6rem;
+    width: var(--w);
+    border-radius: 999px;
+    background: var(--accent);
+  }
+  .hbar.dim i {
+    background: color-mix(in oklab, var(--accent) 40%, var(--line));
+  }
+  .hbar b {
+    font-family: var(--font-mono);
+    color: var(--ink);
+  }
+  .ruler {
+    position: relative;
+    height: 0.6rem;
+    border-radius: 999px;
+    background: var(--line);
+  }
+  .ruler .zone {
+    position: absolute;
+    inset: 0 0 0 70%;
+    border-radius: 0 999px 999px 0;
+    background: var(--accent);
+  }
+  .ruler .mark {
+    position: absolute;
+    left: var(--x);
+    top: -0.2rem;
+    height: 1rem;
+    border-left: 2px solid var(--ink-3);
+  }
+  .ruler .mark.hard {
+    border-color: var(--ink);
+  }
+  .ruler .mark span {
+    position: absolute;
+    top: 1.15rem;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-align: center;
+    color: var(--ink-3);
+    line-height: 1.2;
+  }
+  .ruler .mark.hard span {
+    transform: translateX(-85%);
+    color: var(--ink);
+  }
+  .cut {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .cut i {
+    display: block;
+    width: 0.9rem;
+    height: 1.2rem;
+    border-radius: 3px;
+    background: var(--line);
+  }
+  .cut i.on {
+    background: var(--accent);
+  }
+  .cut b {
+    display: flex;
+    gap: 3px;
+    padding: 3px;
+    border: 2px solid var(--ink);
+    border-radius: 6px;
   }
   .chev {
     transition: transform 0.2s ease;
