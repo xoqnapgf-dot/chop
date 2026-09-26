@@ -235,6 +235,24 @@
       },
       "color": "#c8d8c8",
       "fetchedAt": "2026-09-26"
+    },
+    "leach": {
+      "channelUrl": "https://www.youtube.com/channel/UCeUa8BcunaWIXB_8FKklgig",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k831P3eJHYeZR2BzbcvmsiYr78Xv7cHgO2ZoA5TbqSqA=s800-c-k-c0x00ffffff-no-rj",
+      "banner": null,
+      "hasBanner": false,
+      "color": "#080808",
+      "fetchedAt": "2026-09-26"
+    },
+    "yung-revival": {
+      "channelUrl": "https://www.youtube.com/channel/UCVOrD9x7bgO_dCbqhiVq-dw",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/hx_pmDdOyaKJMYQtUJmHzLNE9J107hiP5wcwZWIlOQQAs1MKiXanYMxHQ72ErA5C2mMQJmrfiQ=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/SNtjjZEzfE8iNCKQK64LDsAnSqph-kMXWlIfp8m42MqIG1T5O2GgHh6f8xIUUxejRK83uKUtkw=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#282838",
+      "fetchedAt": "2026-09-26"
     }
   },
   "tracks": {
@@ -527,6 +545,16 @@
       "video": "https://www.youtube.com/watch?v=xHbVEC3zJnI",
       "size": "maxresdefault",
       "color": "#f8f8f8"
+    },
+    "tie-the-noose": {
+      "video": "https://www.youtube.com/watch?v=egCYAK2VzFQ",
+      "size": "sddefault",
+      "color": "#080808"
+    },
+    "i-saw-red": {
+      "video": "https://www.youtube.com/watch?v=cOos94buutU",
+      "size": "maxresdefault",
+      "color": "#080808"
     }
   }
 }

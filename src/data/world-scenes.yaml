@@ -66,6 +66,22 @@
   sources:
     - { title: 'YouTube – The Jackal Rapper（本人频道）', url: 'https://www.youtube.com/@TheJackalRapper' }
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+- id: ca
+  name: 加拿大
+  en: Canada
+  geo: [56.1, -106.3]
+  summary: Leach 来自这里，2013 年就和 DNA、Yung Revival 合唱了《Tie The Noose》，此后一直是 DNA 最常合作的 chopper 之一。NahDah 2017、2021 版都把他排进前 10，2023 版因加速嫌疑除名。
+  sources:
+    - { title: 'Bandcamp – DNA Tru Lyricist：The Evolution（2013）', url: 'https://dnatrulyricist.bandcamp.com/album/the-evolution' }
+    - { title: 'NahDah Vebb – 2023 榜除名说明', url: 'https://docs.google.com/document/d/1DfcPmT5YCWYwDRP-uyFMEthi9n7ctGRsK2C3QxiFJrA' }
+- id: gb
+  name: 英国
+  en: United Kingdom
+  geo: [54.0, -2.4]
+  summary: Yung Revival 来自这里。他 2013 年和 DNA、Leach 合唱《Tie The Noose》，NahDah 2017 版第 13；沉寂多年后 2025 年回归，又和 DNA、Leach、Crucified 等人合作了一连串新歌。
+  sources:
+    - { title: 'YouTube – YUNG REVIVAL OFFICIAL（本人频道）', url: 'https://www.youtube.com/@YUNGREVIVALOFFICIAL' }
+    - { title: 'YouTube – DNA - Yung Revival Shout Out "From the UK"（2015）', url: 'https://www.youtube.com/watch?v=vkvL1z3_Li0' }
 - id: dk
   name: 丹麦
   en: Denmark
