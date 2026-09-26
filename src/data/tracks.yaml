@@ -683,9 +683,36 @@
     - { title: 'B站 – NahDah Vebb：Top 150 Fastest Rappers 2021（转载，每条都有算式）', url: 'https://www.bilibili.com/video/BV1Av4y1Z7d7/' }
     - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
     - { title: 'YouTube – DNA - Lightspeed Chopper 3（本人频道，2015-04-13）', url: 'https://www.youtube.com/watch?v=_glMTGtNnPI' }
+- id: tie-the-noose
+  title: Tie The Noose
+  artists: [dna-tru-lyricist, leach, yung-revival]
+  credit: DNA ft. LEACH, Yung Revival
+  album: The Evolution
+  youtube: egCYAK2VzFQ
+  bilibili: BV1NZ4y1F786
+  youtubeChannel: DNA Tru Lyricist
+  officialUpload: true
+  scene: world
+  year: 2013
+  note: 'DNA、Leach、Yung Revival 三人最早的合唱之一，收在 DNA 2013 年 2 月的专辑《The Evolution》里，同年 3 月上传 YouTube；这里放的是 2015 年修掉断音的重传版。Yung Revival 在 2:35 左右有一段带弹舌的瞬间爆发，是评论区最常点名的地方。'
+  sources:
+    - { title: 'Bandcamp – DNA Tru Lyricist：The Evolution（2013-02-01）', url: 'https://dnatrulyricist.bandcamp.com/album/the-evolution' }
+    - { title: 'YouTube – DNA - Tie the Noose ft. LEACH, YUNG REVIVAL.（2013-03-27）', url: 'https://www.youtube.com/watch?v=mDs-83PVs_A' }
+- id: i-saw-red
+  title: I Saw Red
+  artists: [yung-revival, crucified, twisted-insane, dna-tru-lyricist, leach]
+  credit: Yung Revival, Crucified, Twisted Insane, Asa Jake, DNA, DOWN6, Leach, R-Syke, Micsteam
+  youtube: cOos94buutU
+  youtubeChannel: DNA Tru Lyricist
+  officialUpload: true
+  scene: world
+  year: 2025
+  note: 'Yung Revival 2025 年回归后牵头的 chopper 合作曲，在 DNA 的频道首发。他唱第一段，Leach 在 2:40 左右。几位老牌 chopper 这次都没刻意拼速度，评论区有人说"每个人的能量都一样，没人冲过头"。'
+  sources:
+    - { title: 'YouTube – I SAW RED（DNA 频道，2025-06-07）', url: 'https://www.youtube.com/watch?v=cOos94buutU' }
 - id: tru-cipher
   title: Tru Cipher
-  artists: [dna-tru-lyricist]
+  artists: [dna-tru-lyricist, leach]
   credit: DNA Tru Lyricist feat. Leach, Nokturnal, Fluenci, Swift Homicide, DOWN6
   youtube: 2wGRpq1w1co
   youtubeChannel: DNA Tru Lyricist

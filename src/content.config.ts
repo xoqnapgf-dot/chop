@@ -41,7 +41,7 @@ const artists = defineCollection({
     nameZh: z.string().optional(),
     realName: z.string().optional(),
     tagline: z.string(),
-    country: z.enum(['US', 'KR', 'TR', 'CN', 'PH', 'GE', 'MX', 'AU']),
+    country: z.enum(['US', 'KR', 'TR', 'CN', 'PH', 'GE', 'MX', 'AU', 'CA', 'GB']),
     city: z.string(),
     /** 分组用的地区名，中国区按这个分组（如"川渝"） */
     region: z.string(),

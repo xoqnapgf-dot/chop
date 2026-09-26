@@ -7,6 +7,8 @@ export const COUNTRY: Record<string, { name: string }> = {
   GE: { name: '格鲁吉亚' },
   MX: { name: '墨西哥' },
   AU: { name: '澳大利亚' },
+  CA: { name: '加拿大' },
+  GB: { name: '英国' },
 };
 
 /**

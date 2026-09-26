@@ -14,7 +14,7 @@ youtube: { channelId: UC6LR4i6MOui4XnPVQX_FqVQ, handle: '@DNATruLyricist', kind:
 # 频道头像是 logo、横幅是话筒素材，都不是本人；人物照取自本人频道《The Life of DNA -Episode 2-》的缩略图
 portrait: { video: hbpM9jC3zvI, focusX: 0.31 }
 useBanner: false
-related: [twisted-insane, crucified, tech-n9ne]
+related: [leach, yung-revival, twisted-insane, crucified]
 speed:
   - value: 17.76
     unit: syl/s
@@ -30,7 +30,6 @@ speed:
       - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
       - { title: 'YouTube – DNA - Lightspeed Chopper 3（本人频道）', url: 'https://www.youtube.com/watch?v=_glMTGtNnPI' }
       - { title: 'B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017（NahDah 2017 版搬运）', url: 'https://www.bilibili.com/video/BV11x411L79b/' }
-      - { title: 'B站 – NahDah Vebb：Top 150 Fastest Rappers 2021（转载，每条都有算式）', url: 'https://www.bilibili.com/video/BV1Av4y1Z7d7/' }
       - { title: 'B站 – NahDah Vebb：Top 150 Fastest Rappers 2021（转载，每条都有算式）', url: 'https://www.bilibili.com/video/BV1Av4y1Z7d7/' }
       - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
 sources:
@@ -48,7 +47,10 @@ sources:
   - { title: 'YouTube – Tru Cipher ft. DNA, Leach, Nokturnal, Fluenci, Swift Homicide, DOWN6（2023）', url: 'https://www.youtube.com/watch?v=2wGRpq1w1co' }
   - { title: 'YouTube – DNA Tru Lyricist and Leach: Talk About RAP :)（本人频道，2021-03-25）', url: 'https://www.youtube.com/watch?v=llc2rYpbcjU' }
   - { title: 'YouTube – DNA Tru Lyricist - The Multiple Killing Spree (235 Multiples)（2021-03-11）', url: 'https://www.youtube.com/watch?v=LcbUhyPmths' }
-  - { title: 'YouTube – DNA - Tie The Noose ft LEACH, Yung Revival（2015）', url: 'https://www.youtube.com/watch?v=egCYAK2VzFQ' }
+  - { title: 'Bandcamp – The Evolution（2013-02-01，收录 Tie The Noose）', url: 'https://dnatrulyricist.bandcamp.com/album/the-evolution' }
+  - { title: 'YouTube – DNA - Tie the Noose ft. LEACH, YUNG REVIVAL.（2013-03-27）', url: 'https://www.youtube.com/watch?v=mDs-83PVs_A' }
+  - { title: 'YouTube – DNA - Tie The Noose ft LEACH, Yung Revival "re-uploaded"（2015-08-20）', url: 'https://www.youtube.com/watch?v=egCYAK2VzFQ' }
+  - { title: '网易云音乐 – Fire Breathers (feat. Leach & Yung Revival)（Loosh Farm，2026）', url: 'https://music.163.com/#/song?id=3422596966' }
   - { title: 'YouTube – DNA Tru Lyricist - Hypnotized ft. Leach（2020）', url: 'https://www.youtube.com/watch?v=BPTL5kQ_Z-4' }
   - { title: '网易云音乐 – The Lightspeed Chopper Mixtape', url: 'https://music.163.com/#/song?id=1832667523' }
 ---
@@ -87,7 +89,7 @@ UC8 发布后，他专门录了一期视频回应大家对他这段的评论和�
 
 ## 合作和交锋
 
-- **和 Leach 多次合作**：《Tie The Noose》（2015，ft. LEACH、Yung Revival）、《Darkside Remix》（2015，ft. LEACH、YUNGREVIVAL）、《Hypnotized》（2020，ft. Leach）、《Darkside of the Moon》（ft. Vulvus & Leach）、《Chopper Homiez》（2019 年专辑《Tru》，ft. Big Loony、Fifth Elley、Fluenci & Leach）、《Nova Returns》（2025 年专辑《Warlock》），以及多人 cypher《**Tru Cipher**》（2023，ft. Leach、Nokturnal、Fluenci、Swift Homicide、DOWN6）。他在 Tru Cipher 的评论区说，Leach 是"史上最好的之一"，这首歌本来都不打算发，是 Nokturnal 说服了他。
+- **和 Leach、Yung Revival 的长期合作**：三人最晚 2013 年初就合作了，《Tie The Noose》（ft. LEACH、Yung Revival）收在 DNA 2013 年 2 月的专辑《The Evolution》里，同年 3 月上传 YouTube，2015 年又重传过一版。此后有《Darkside Remix》（2015，ft. LEACH、YUNGREVIVAL）、《Chopper Homiez》（2018 年发布视频，收进 2019 年专辑《Tru》，ft. Big Loony、Fifth Elley、Fluenci & Leach）、《Hypnotized》（2020，ft. Leach）、《Darkside of the Moon》（ft. Vulvus & Leach）、多人 cypher《**Tru Cipher**》（2023，ft. Leach、Nokturnal、Fluenci、Swift Homicide、DOWN6）、《Nova Returns》（2025 年专辑《Warlock》）。Yung Revival 2025 年回归后，三人又一起上了《I Saw Red》（2025），DNA 2026 年的专辑《Loosh Farm》里还有三人同曲的《Fire Breathers》。DNA 在 Tru Cipher 的评论区说，Leach 是"史上最好的之一"，这首歌本来都不打算发，是 Nokturnal 说服了他。
 - **和 Crucified 合作**：《Your Energy》（feat. Crucified），收在 2026 年的专辑《Loosh Farm》里。
 - **diss Rebel XD**：2015 年的《Rebel XD DISS》，简介写的是"Rebel XD 好像觉得自己无人能敌？是时候让他看看，他离作词的巅峰还差得远"。
 - **和 K-Fix 有合作，也有交锋**：他们合作过《Nightbreed》，DNA 后来又发了《Darkside 2 "K-Fix DISS"》。
