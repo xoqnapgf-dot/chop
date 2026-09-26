@@ -24,6 +24,13 @@ const articles = (await getCollection('learn')).sort((a, b) => a.data.order - b.
                 </span>
                 <span class="mt-2 block font-display text-2xl font-semibold md:text-3xl">{a.data.title}</span>
                 <span class="mt-2 block text-ink-2">{a.data.summary}</span>
+                {a.data.keyPoints.length > 0 && (
+                  <span class="mt-4 grid gap-1.5 text-sm text-ink-2">
+                    {a.data.keyPoints.map((k) => (
+                      <span class="flex gap-2"><span class="mt-[0.55em] size-1.5 shrink-0 rounded-full bg-accent" />{k}</span>
+                    ))}
+                  </span>
+                )}
               </span>
               <span class="hidden size-12 place-items-center rounded-full border border-line text-xl transition group-hover:border-transparent group-hover:bg-accent group-hover:text-accent-ink md:grid">→</span>
             </a>

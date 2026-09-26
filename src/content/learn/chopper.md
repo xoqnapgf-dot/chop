@@ -3,6 +3,11 @@ title: Chop 的起源：从美国中西部到全世界
 kicker: 世界
 summary: 定义、起源、代表人物，以及"快"到底是怎么做出来的。
 order: 2
+keyPoints:
+  - 'Chop 起源于美国，中西部的 Twista、Bone Thugs-n-Harmony、Tech N9ne 把它带火。'
+  - '"快"来自把一拍切得更细：同样 90 BPM，16 分三连音就是每秒 9 个音符。'
+  - 'BPM 只是伴奏的节拍，不是说唱速度；有多快要数实际唱出来的音节。'
+figure: origins
 sources:
   - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
   - { title: 'Red Bull – Twista tells the history of speed rapping', url: 'https://www.redbull.com/us-en/twista-chopping-history-interview' }

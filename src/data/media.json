@@ -280,6 +280,48 @@
       "hasBanner": true,
       "color": "#686868",
       "fetchedAt": "2026-09-26"
+    },
+    "down6": {
+      "channelUrl": "https://www.youtube.com/channel/UCmlIXfUWtnJsfSmJmDMwrgA",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/kz7Cv1hPsynhaG1-y6--SNnz0FJlGJV9ip6heuaPg6pua32mHHoxf9US05FHJVSYXp2Iy44L=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/9bN-NfF2C9HGctHZqMRCMVSRjNVkpdHiWcQmv2Sn1Lxfc4PsJccJKP1mNMkyWBrlJ1qNrDXB=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#f8f8f8",
+      "fetchedAt": "2026-09-26"
+    },
+    "dumanoid": {
+      "channelUrl": "https://www.youtube.com/channel/UCJgkq29JRQA7M5igUvrY-3g",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/B5JBCcb5YJST6x4DvoPxj9BZnjYb4S6gp-X9-1n5zERP6oMnO-cHZDZeDlenBwE8z_n56yYU=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/8zdYPVVwOvql0X71OimzJhdVExWbgxa6IHZCLmzi8YuHkp_pKhWyXgMAI46Z7B48nyGznMiWDEg=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-26"
+    },
+    "kal-paseo": {
+      "channelUrl": "https://www.youtube.com/channel/UC6ea7LYa3kJt3zhR4SXky1A",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/w7K5HGfKeovfBm0iodRpYx9ypzrnuAQAW7kDkovkGiBitic80ATrdwKsdUKSyd6pQcYISq0Rxw=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/1nmGcG_xn1SHomg9RZgv3bzxF_a_A4mnHsgEzPr352Hhfv-aAiPvC9edVOeYP4itqjPkZf2m=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-26"
+    },
+    "skrima": {
+      "channelUrl": null,
+      "kind": "video",
+      "color": "#181818",
+      "fetchedAt": "2026-09-26"
+    },
+    "sri-rascol": {
+      "channelUrl": "https://www.youtube.com/channel/UCLIUv83pZTYiCNq9L-AyaUw",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/7kn5mpurgrn8dqgpTKWMxAhFCwrYReaRPfvi5Axv60AEWivtF2pnBbGlKq4rwXCGcN4zMTnW=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/U8jvPTTPluF--7Ng2TprWJ-A55UaGA1LniNg1UMrgP83KozdpUbH05chdmjsKwaNwmqQRDOr=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-26"
     }
   },
   "tracks": {
@@ -602,6 +644,31 @@
       "video": "https://www.youtube.com/watch?v=Q6c32Z-Pbq4",
       "size": "maxresdefault",
       "color": "#080808"
+    },
+    "united-choppers-4": {
+      "video": "https://www.youtube.com/watch?v=bH2omrq8iew",
+      "size": "hqdefault",
+      "color": "#080808"
+    },
+    "landfill": {
+      "video": "https://www.youtube.com/watch?v=Zz9A3-0WHls",
+      "size": "sddefault",
+      "color": "#080808"
+    },
+    "sumaladumala": {
+      "video": "https://www.youtube.com/watch?v=CSXxzJvQLEM",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "aym": {
+      "video": "https://www.youtube.com/watch?v=y0lsTWi7wC0",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "skrima-16-bars": {
+      "video": "https://www.youtube.com/watch?v=LZWht6glpKY",
+      "size": "maxresdefault",
+      "color": "#181818"
     }
   }
 }

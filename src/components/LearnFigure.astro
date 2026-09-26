@@ -1,0 +1,263 @@
+---
+/**
+ * 百科文章开头的示意图。数字都来自对应文章正文，改文章时记得同步。
+ */
+import { url } from '@/lib/url';
+
+interface Props { kind: 'tiers' | 'origins' | 'windows' | 'guinness' }
+const { kind } = Astro.props;
+
+const tiers = [
+  { name: '快歌', level: 1, text: '某首、某段很快，人不以快著称', eg: 'Eminem · 谢帝 · 那吾克热' },
+  { name: '快嘴', level: 2, text: '语速和咬字是主要标签', eg: '法老 · 杨和苏 · 光光 · 贝贝' },
+  { name: 'Chop', level: 3, text: '长期、整首地切音节，flow 多变、押韵密', eg: 'Twista · Tech N9ne · 小安迪' },
+];
+
+const origins = [
+  { y: '1980', t: '《New Rap Language》', d: 'Kool Moe Dee 被视为快嘴开创者' },
+  { y: '1992', t: 'Twista 吉尼斯', d: '55 秒 598 个音节' },
+  { y: '1995', t: 'Bone Thugs 登顶', d: '《E. 1999 Eternal》Billboard 200 第 1' },
+  { y: '1999', t: 'Strange Music', d: 'Tech N9ne 在堪萨斯城创立' },
+  { y: '2011', t: '《Worldwide Choppers》', d: '美国、土耳其、丹麦同台' },
+  { y: '2013', t: 'Undaground Choppers', d: '地下 chopper cypher 系列开始' },
+];
+
+// 同一种"快"，窗口越长数字越低
+const windows = [
+  { name: '爆发', sec: 1, len: '1 秒', v: '21', unit: 'SPS', eg: 'Crucified《Infinite Choppers》21 ÷ 1.000' },
+  { name: '短段', sec: 5, len: '5 秒', v: '≈10', unit: '字/秒', eg: '法老《健将》一段 5 秒的快嘴' },
+  { name: '整段', sec: 55, len: '55 秒', v: '10.87', unit: 'SPS', eg: 'Twista 1992 年吉尼斯 598 ÷ 55' },
+];
+
+const guinness = [
+  { y: '1992', who: 'Twista', v: 10.87, ok: true },
+  { y: '1998', who: 'Rebel XD', v: 12.5, ok: true },
+  { y: '2005', who: 'NoClue', v: 14.1, ok: true },
+  { y: '2008', who: 'Rebel XD', v: 20.2, ok: true },
+  { y: '2008.12', who: 'El Chojin', v: 15.4, ok: true },
+  { y: '2013', who: 'Crucified', v: 19.37, ok: false },
+];
+const gMax = 21;
+---
+
+<figure class="lf card p-5 sm:p-7">
+  {
+    kind === 'tiers' && (
+      <div>
+        <figcaption class="lf-cap">三个层次：越往上，越看整首、长期的"切"</figcaption>
+        <ol class="mt-5 grid gap-2.5">
+          {[...tiers].reverse().map((t) => (
+            <li class="tier" style={`--lv:${t.level}`}>
+              <span class="tier-name">{t.name}</span>
+              <span class="min-w-0">
+                <span class="block text-sm text-ink">{t.text}</span>
+                <span class="block truncate text-xs text-ink-3">{t.eg}</span>
+              </span>
+              <span class="meter" aria-label={`切音节程度 ${t.level}/3`}>
+                {[1, 2, 3].map((n) => <i class:list={{ on: n <= t.level }} />)}
+              </span>
+            </li>
+          ))}
+        </ol>
+        <p class="mt-4 text-xs text-ink-3">右边的格子 = 切音节的程度。只追数字、不管咬字的"SPS kid"不在这三层里。</p>
+      </div>
+    )
+  }
+  {
+    kind === 'origins' && (
+      <div>
+        <figcaption class="lf-cap">从美国中西部到全世界</figcaption>
+        <ol class="road mt-6">
+          {origins.map((o) => (
+            <li>
+              <span class="dot" />
+              <span class="font-mono text-xs text-accent-text">{o.y}</span>
+              <span class="mt-1 block text-sm font-semibold text-ink">{o.t}</span>
+              <span class="block text-xs text-ink-3">{o.d}</span>
+            </li>
+          ))}
+        </ol>
+        <a href={url('timeline/?scene=world')} class="link-u mt-5 inline-block text-xs text-ink-3 hover:text-ink">完整时间线 →</a>
+      </div>
+    )
+  }
+  {
+    kind === 'windows' && (
+      <div>
+        <figcaption class="lf-cap">同样是"快"，窗口一长，数字就掉</figcaption>
+        <div class="mt-5 grid gap-4">
+          {windows.map((w) => (
+            <div class="win">
+              <span class="text-sm font-semibold text-ink">{w.name}</span>
+              <span class="track" title={`${w.name}：${w.len}`}>
+                <i style={`--w:${Math.max(2.5, (w.sec / 55) * 100)}%`} />
+                <b>{w.len}</b>
+              </span>
+              <span class="text-right font-mono text-ink"><strong class="text-lg">{w.v}</strong> <span class="text-xs text-ink-3">{w.unit}</span></span>
+              <span class="col-span-full -mt-2 text-xs text-ink-3 sm:col-start-2">{w.eg}</span>
+            </div>
+          ))}
+        </div>
+        <p class="mt-4 text-xs text-ink-3">条的长度 = 计时窗口（按 55 秒等比例）。只有同一种窗口里的数字才能直接比。</p>
+      </div>
+    )
+  }
+  {
+    kind === 'guinness' && (
+      <div>
+        <figcaption class="lf-cap">吉尼斯"最快说唱"：每秒音节数</figcaption>
+        <p class="mt-2 flex flex-wrap gap-4 text-xs text-ink-3">
+          <span class="inline-flex items-center gap-1.5"><i class="key ok" />吉尼斯认证</span>
+          <span class="inline-flex items-center gap-1.5"><i class="key no" />没有认证</span>
+        </p>
+        <div class="mt-4 grid gap-2.5">
+          {guinness.map((g) => (
+            <div class="gbar" title={`${g.y} ${g.who}：${g.v} 音节/秒${g.ok ? '' : '（未认证）'}`}>
+              <span class="font-mono text-xs text-ink-3">{g.y}</span>
+              <span class="truncate text-sm text-ink">{g.who}</span>
+              <span class="bar"><i class:list={{ no: !g.ok }} style={`--w:${(g.v / gMax) * 100}%`} /></span>
+              <span class="text-right font-mono text-sm text-ink">{g.v}</span>
+            </div>
+          ))}
+        </div>
+        <p class="mt-4 text-xs text-ink-3">El Chojin 平均比 Rebel XD 慢，却因为改成"一分钟"口径成了新的纪录保持者。</p>
+      </div>
+    )
+  }
+</figure>
+
+<style>
+  .lf {
+    border-top: 3px solid var(--accent);
+  }
+  .lf-cap {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  /* 三个层次 */
+  .tier {
+    display: grid;
+    grid-template-columns: 4.2rem minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.7rem 0.9rem;
+    border-radius: 14px;
+    border: 1px solid var(--line);
+    background: color-mix(in oklab, var(--accent) calc(var(--lv) * 7%), var(--surface));
+    margin-left: calc((3 - var(--lv)) * 0.9rem);
+  }
+  .tier-name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--ink);
+  }
+  .meter {
+    display: flex;
+    gap: 3px;
+  }
+  .meter i {
+    width: 0.55rem;
+    height: 1.1rem;
+    border-radius: 3px;
+    background: var(--line);
+  }
+  .meter i.on {
+    background: var(--accent);
+  }
+  /* 起源时间轴：手机竖排，平板以上横排 */
+  .road {
+    display: grid;
+    gap: 1rem;
+    border-left: 2px solid var(--line);
+    padding-left: 1.1rem;
+  }
+  .road li {
+    position: relative;
+  }
+  .road .dot {
+    position: absolute;
+    left: calc(-1.1rem - 6px);
+    top: 0.3rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: var(--accent);
+    box-shadow: 0 0 0 3px var(--surface);
+  }
+  @media (min-width: 768px) {
+    .road {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      border-left: 0;
+      border-top: 2px solid var(--line);
+      padding-left: 0;
+      padding-top: 1.1rem;
+    }
+    .road .dot {
+      left: 0;
+      top: calc(-1.1rem - 6px);
+    }
+  }
+  /* 窗口 */
+  .win {
+    display: grid;
+    grid-template-columns: 3rem minmax(0, 1fr) 5.5rem;
+    align-items: center;
+    gap: 0.4rem 0.8rem;
+  }
+  .track {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 1.2rem;
+  }
+  .track i {
+    display: block;
+    height: 0.7rem;
+    width: var(--w);
+    border-radius: 999px;
+    background: var(--accent);
+  }
+  .track b {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--ink-3);
+    white-space: nowrap;
+  }
+  /* 吉尼斯条形图 */
+  .gbar {
+    display: grid;
+    grid-template-columns: 3.6rem 6.5rem minmax(0, 1fr) 2.8rem;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  @media (max-width: 480px) {
+    .gbar {
+      grid-template-columns: 3.2rem 5.2rem minmax(0, 1fr) 2.6rem;
+      gap: 0.4rem;
+    }
+  }
+  .bar i,
+  .key {
+    display: block;
+    height: 0.75rem;
+    border-radius: 0 4px 4px 0;
+    background: var(--accent);
+  }
+  .bar i {
+    width: var(--w);
+  }
+  .bar i.no,
+  .key.no {
+    background: repeating-linear-gradient(135deg, transparent 0 3px, color-mix(in oklab, var(--accent) 55%, transparent) 3px 5px);
+    border: 1.5px solid var(--accent);
+  }
+  .key {
+    width: 1.2rem;
+    border-radius: 3px;
+  }
+</style>

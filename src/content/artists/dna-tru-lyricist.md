@@ -51,6 +51,7 @@ sources:
   - { title: 'YouTube – DNA - Tie the Noose ft. LEACH, YUNG REVIVAL.（2013-03-27）', url: 'https://www.youtube.com/watch?v=mDs-83PVs_A' }
   - { title: 'YouTube – DNA - Tie The Noose ft LEACH, Yung Revival "re-uploaded"（2015-08-20）', url: 'https://www.youtube.com/watch?v=egCYAK2VzFQ' }
   - { title: '网易云音乐 – Fire Breathers (feat. Leach & Yung Revival)（Loosh Farm，2026）', url: 'https://music.163.com/#/song?id=3422596966' }
+  - { title: 'YouTube – KAL - DNA FAKE LYRICIST FT. DOWN6（2023-08-08）', url: 'https://www.youtube.com/watch?v=DVJQTxsq-1g' }
   - { title: 'YouTube – DNA Tru Lyricist - Hypnotized ft. Leach（2020）', url: 'https://www.youtube.com/watch?v=BPTL5kQ_Z-4' }
   - { title: '网易云音乐 – The Lightspeed Chopper Mixtape', url: 'https://music.163.com/#/song?id=1832667523' }
 ---
@@ -92,6 +93,7 @@ UC8 发布后，他专门录了一期视频回应大家对他这段的评论和�
 - **和 Leach、Yung Revival 的长期合作**：三人最晚 2013 年初就合作了，《Tie The Noose》（ft. LEACH、Yung Revival）收在 DNA 2013 年 2 月的专辑《The Evolution》里，同年 3 月上传 YouTube，2015 年又重传过一版。此后有《Darkside Remix》（2015，ft. LEACH、YUNGREVIVAL）、《Chopper Homiez》（2018 年发布视频，收进 2019 年专辑《Tru》，ft. Big Loony、Fifth Elley、Fluenci & Leach）、《Hypnotized》（2020，ft. Leach）、《Darkside of the Moon》（ft. Vulvus & Leach）、多人 cypher《**Tru Cipher**》（2023，ft. Leach、Nokturnal、Fluenci、Swift Homicide、DOWN6）、《Nova Returns》（2025 年专辑《Warlock》）。Yung Revival 2025 年回归后，三人又一起上了《I Saw Red》（2025），DNA 2026 年的专辑《Loosh Farm》里还有三人同曲的《Fire Breathers》。DNA 在 Tru Cipher 的评论区说，Leach 是"史上最好的之一"，这首歌本来都不打算发，是 Nokturnal 说服了他。
 - **和 Crucified 合作**：《Your Energy》（feat. Crucified），收在 2026 年的专辑《Loosh Farm》里。
 - **diss Rebel XD**：2015 年的《Rebel XD DISS》，简介写的是"Rebel XD 好像觉得自己无人能敌？是时候让他看看，他离作词的巅峰还差得远"。
+- **被 Kal Paseo、DOWN6 diss**：2023 年 8 月，Kal Paseo 发了《DNA Fake Lyricist》（ft. DOWN6），标题直接冲着他的名字来。DOWN6 两个月前刚上过他的《Tru Cipher》，2025 年又和他一起出现在 Yung Revival 的《I Saw Red》《Confessions Of A Killer》里。
 - **和 K-Fix 有合作，也有交锋**：他们合作过《Nightbreed》，DNA 后来又发了《Darkside 2 "K-Fix DISS"》。
 - **冲 Funk Volume 喊话**：2015 年他发过《Funk Volume Response "You're Not The Dopest"》，对象是 Hopsin 所在的厂牌 Funk Volume。
 

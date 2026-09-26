@@ -322,7 +322,7 @@
     - { title: 'Wikipedia – Upuan（2009 年 6 月 22 日发行）', url: 'https://en.wikipedia.org/wiki/Upuan' }
 - id: infinite-choppers
   title: Infinite Choppers
-  artists: [crucified, the-jackal]
+  artists: [down6, kal-paseo, crucified, the-jackal]
   credit: DOWN6 ft. Crucified, SPLXT, AceThaGoblin, Kal Paseo, LEECHY! 等 18 人
   scene: world
   year: 2023
@@ -530,7 +530,7 @@
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
 - id: onion-chopper
   title: Onion Chopper
-  artists: [ruffian-rugged, crucified, twisted-insane, sabotahe]
+  artists: [ruffian-rugged, dumanoid, crucified, twisted-insane, sabotahe]
   credit: Ruffian Rugged & Dumanoid feat. Twisted Insane, Kurşun, Sabotahe, Crucified & Fate
   youtube: 8T-HVOvWbqQ
   netease: 2017089392
@@ -571,7 +571,7 @@
     - { title: 'SPS and Chopper Rap Wiki – IDYLLL', url: 'https://sps-and-chopper-rap.fandom.com/wiki/IDYLLL' }
 - id: infinite-choppers-2
   title: Infinite Choppers 2
-  artists: [idylll, ruffian-rugged]
+  artists: [down6, idylll, ruffian-rugged, dumanoid, kal-paseo]
   credit: DOWN6 feat. Hurracane, Idylll, Asa Jake, Al Zabran, Tokumei, Troll, Dumanoid & Ruffian Rugged, Bloody Ruckus, dvagoh, Kal Paseo 等
   youtube: n2SmW1OREcA
   youtubeChannel: DOWN6
@@ -594,6 +594,71 @@
   sources:
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
     - { title: 'YouTube – TrollatorBR：Shad - FreeZeTyler (Cálculo)（2020）', url: 'https://www.youtube.com/watch?v=dguRJ4Ir8tA' }
+- id: united-choppers-4
+  title: United Choppers 4
+  artists: [down6, leach]
+  credit: J Battle ft. LFiers, Leach, Coutz, Eclip$e, DOWN6, Luck Da Gynx, Almighty, New Blood
+  youtube: bH2omrq8iew
+  youtubeChannel: J Battle Vidz
+  officialUpload: true
+  scene: world
+  year: 2022
+  note: 'J Battle 召集的 chopper cypher，参与者来自美国、加拿大、奥地利、澳大利亚。压轴的 DOWN6 那段 1 秒整 20 个音节，NahDah 2023 版第 7 名。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+- id: landfill
+  title: LANDFILL
+  artists: [down6]
+  credit: DOWN6（prod. 919slum）
+  album: Burial
+  youtube: Zz9A3-0WHls
+  youtubeChannel: DOWN6
+  officialUpload: true
+  scene: world
+  year: 2025
+  confidence: pending
+  note: 'SPS wiki 记为 DOWN6 最快的一段：1.065 秒 23 个音节 ≈ 21.60。评论区有人说"没见过谁能把这种速度保持这么久"。'
+  sources:
+    - { title: 'SPS and Chopper Rap Wiki – DOWN6', url: 'https://sps-and-chopper-rap.fandom.com/wiki/DOWN6' }
+- id: sumaladumala
+  title: Sumaladumala
+  artists: [ruffian-rugged, dumanoid, kal-paseo, the-jackal]
+  credit: Ruffian Rugged ft. The Jackal, Dumanoid & Kal Paseo
+  youtube: CSXxzJvQLEM
+  youtubeChannel: Def Ill aka Ruffian Rugged
+  officialUpload: true
+  scene: world
+  year: 2024
+  note: '化用了 JJ Fad 的老歌《Supersonic》里那句"A sama lama lama……"（Eminem 在《Rap God》里也用过）。Dumanoid 那段测到 22 ÷ 1.008 ≈ 21.83，但他本人觉得偷懒了，不算数。'
+  sources:
+    - { title: 'SPS and Chopper Rap Wiki – Dumanoid', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Dumanoid' }
+    - { title: 'YouTube – Ruffian Rugged - SUMALADUMALA（2024-04-11）', url: 'https://www.youtube.com/watch?v=CSXxzJvQLEM' }
+- id: aym
+  title: AYM
+  artists: [sri-rascol]
+  credit: ADK x Sri Rascol
+  youtube: y0lsTWi7wC0
+  youtubeChannel: Rap Machines
+  officialUpload: true
+  scene: world
+  year: 2016
+  confidence: pending
+  note: '马来西亚泰米尔语说唱组合 Rap Machines 的 MV。Sri Rascol 的高速段落 1.023 秒 18 个音节 ≈ 17.60，NahDah 2023 版第 11 名；泰米尔语音节是按听感数的。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+- id: skrima-16-bars
+  title: 16 Bars Challenge
+  artists: [skrima]
+  credit: Skrima（Olympia Thugs Crew）
+  youtube: LZWht6glpKY
+  youtubeChannel: Olympia Thugs Crew
+  officialUpload: true
+  scene: world
+  year: 2015
+  confidence: pending
+  note: '菲律宾 2015 年前后流行的"16 小节挑战"。Skrima 这段 1.042 秒 18 个音节 ≈ 17.27，NahDah 2023 版第 12 名；他加禄语音节是按听感数的。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
 - id: kill-5
   title: Kill 5（Paslangin 5）
   artists: [sabotahe]
