@@ -1,0 +1,1952 @@
+[
+  {
+    "country": "United States",
+    "code": "US",
+    "nameZh": "美国",
+    "rapper": "Idylll",
+    "sps": 23.41,
+    "syllables": 24,
+    "seconds": 1.025,
+    "song": "Infinite Choppers 2"
+  },
+  {
+    "country": "Hungary",
+    "code": "HU",
+    "nameZh": "匈牙利",
+    "rapper": "Dumanoid",
+    "sps": 21.83,
+    "syllables": 22,
+    "seconds": 1.008,
+    "song": "SUMALADUMALA"
+  },
+  {
+    "country": "Brazil",
+    "code": "BR",
+    "nameZh": "巴西",
+    "rapper": "eze",
+    "sps": 20.19,
+    "syllables": 21,
+    "seconds": 1.04,
+    "song": "Aang"
+  },
+  {
+    "country": "Austria",
+    "code": "AT",
+    "nameZh": "奥地利",
+    "rapper": "Ruffian Rugged",
+    "sps": 20.11,
+    "syllables": 21,
+    "seconds": 1.044,
+    "song": "Infinite Choppers 2"
+  },
+  {
+    "country": "Australia",
+    "code": "AU",
+    "nameZh": "澳大利亚",
+    "rapper": "The Jackal",
+    "sps": 20.04,
+    "syllables": 21,
+    "seconds": 1.048,
+    "song": "Infinite Choppers"
+  },
+  {
+    "country": "Philippines",
+    "code": "PH",
+    "nameZh": "菲律宾",
+    "rapper": "Sabotahe",
+    "sps": 19.1,
+    "syllables": 20,
+    "seconds": 1.047,
+    "song": "LAPUK III"
+  },
+  {
+    "country": "Algeria",
+    "code": "DZ",
+    "nameZh": "阿尔及利亚",
+    "rapper": "Criminel AR",
+    "sps": 17,
+    "syllables": 17,
+    "seconds": 1,
+    "song": "[unknown song]"
+  },
+  {
+    "country": "Italy",
+    "code": "IT",
+    "nameZh": "意大利",
+    "rapper": "Wedere",
+    "sps": 17,
+    "syllables": 17,
+    "seconds": 1,
+    "song": "SHADOWS"
+  },
+  {
+    "country": "Poland",
+    "code": "PL",
+    "nameZh": "波兰",
+    "rapper": "6FBH",
+    "sps": 16.41,
+    "syllables": 17,
+    "seconds": 1.036,
+    "song": "FOLLOW MY EYES"
+  },
+  {
+    "country": "Malaysia",
+    "code": "MY",
+    "nameZh": "马来西亚",
+    "rapper": "Sri Rascol",
+    "sps": 16.33,
+    "syllables": 17,
+    "seconds": 1.041,
+    "song": "AYM"
+  },
+  {
+    "country": "Finland",
+    "code": "FI",
+    "nameZh": "芬兰",
+    "rapper": "HeureCa",
+    "sps": 16.27,
+    "syllables": 18,
+    "seconds": 1.106,
+    "song": "Onion Chopper Remix"
+  },
+  {
+    "country": "Nigeria",
+    "code": "NG",
+    "nameZh": "尼日利亚",
+    "rapper": "AybeeWon",
+    "sps": 16.13,
+    "syllables": 18,
+    "seconds": 1.116,
+    "song": "Ride Fast Or Die"
+  },
+  {
+    "country": "Argentina",
+    "code": "AR",
+    "nameZh": "阿根廷",
+    "rapper": "PayaZoO",
+    "sps": 16.1,
+    "syllables": 17,
+    "seconds": 1.056,
+    "song": "SPEEDOM REMIX"
+  },
+  {
+    "country": "South Africa",
+    "code": "ZA",
+    "nameZh": "南非",
+    "rapper": "Tuffo Da Bulletman",
+    "sps": 16.02,
+    "syllables": 17,
+    "seconds": 1.061,
+    "song": "200 Bars"
+  },
+  {
+    "country": "Myanmar",
+    "code": "MM",
+    "nameZh": "缅甸",
+    "rapper": "FX",
+    "sps": 16,
+    "syllables": 16,
+    "seconds": 1,
+    "song": "Ultimatum"
+  },
+  {
+    "country": "Sweden",
+    "code": "SE",
+    "nameZh": "瑞典",
+    "rapper": "SEM/A/NTIC",
+    "sps": 16,
+    "syllables": 16,
+    "seconds": 1,
+    "song": "666 FREESTYLE"
+  },
+  {
+    "country": "United Kingdom",
+    "code": "GB",
+    "nameZh": "英国",
+    "rapper": "Asa",
+    "sps": 16,
+    "syllables": 16,
+    "seconds": 1,
+    "song": "BAD JUJU REMIX"
+  },
+  {
+    "country": "Japan",
+    "code": "JP",
+    "nameZh": "日本",
+    "rapper": "SOS",
+    "sps": 15.87,
+    "syllables": 16,
+    "seconds": 1.008,
+    "song": "Monster"
+  },
+  {
+    "country": "Türkiye",
+    "code": "TR",
+    "nameZh": "土耳其",
+    "rapper": "Kardiyak",
+    "sps": 15.7,
+    "syllables": 16,
+    "seconds": 1.019,
+    "song": "Illest Choppers 4"
+  },
+  {
+    "country": "Israel",
+    "code": "IL",
+    "nameZh": "以色列",
+    "rapper": "Hoodyman",
+    "sps": 15.63,
+    "syllables": 16,
+    "seconds": 1.024,
+    "song": "חדר מסתובב"
+  },
+  {
+    "country": "Spain",
+    "code": "ES",
+    "nameZh": "西班牙",
+    "rapper": "BTA",
+    "sps": 15.5,
+    "syllables": 16,
+    "seconds": 1.032,
+    "song": "BTA x Shooter"
+  },
+  {
+    "country": "China",
+    "code": "CN",
+    "nameZh": "中国",
+    "rapper": "MUSHMACH",
+    "sps": 15.47,
+    "syllables": 16,
+    "seconds": 1.034,
+    "song": "ON THE BIBLE REMIX",
+    "includes": [
+      {
+        "nameZh": "中国台湾",
+        "rapper": "王力宏（Wang Leehom）",
+        "sps": 13.02,
+        "syllables": 14,
+        "seconds": 1.075,
+        "song": "天赐的声音 现场表演"
+      }
+    ]
+  },
+  {
+    "country": "India",
+    "code": "IN",
+    "nameZh": "印度",
+    "rapper": "Shriiek",
+    "sps": 15.45,
+    "syllables": 18,
+    "seconds": 1.165,
+    "song": "NoCapChallenge"
+  },
+  {
+    "country": "Kuwait",
+    "code": "KW",
+    "nameZh": "科威特",
+    "rapper": "Vortex",
+    "sps": 15.3,
+    "syllables": 16,
+    "seconds": 1.046,
+    "song": "GAZRA"
+  },
+  {
+    "country": "Mexico",
+    "code": "MX",
+    "nameZh": "墨西哥",
+    "rapper": "Roylets",
+    "sps": 15.24,
+    "syllables": 16,
+    "seconds": 1.05,
+    "song": "Roylets vs Zomber"
+  },
+  {
+    "country": "South Korea",
+    "code": "KR",
+    "nameZh": "韩国",
+    "rapper": "Outsider",
+    "sps": 15.24,
+    "syllables": 16,
+    "seconds": 1.05,
+    "song": "주인공"
+  },
+  {
+    "country": "Albania",
+    "code": "AL",
+    "nameZh": "阿尔巴尼亚",
+    "rapper": "Bomba",
+    "sps": 15.21,
+    "syllables": 17,
+    "seconds": 1.118,
+    "song": "TWT"
+  },
+  {
+    "country": "Iran",
+    "code": "IR",
+    "nameZh": "伊朗",
+    "rapper": "Ario",
+    "sps": 15.17,
+    "syllables": 16,
+    "seconds": 1.055,
+    "song": "Conflict"
+  },
+  {
+    "country": "Canada",
+    "code": "CA",
+    "nameZh": "加拿大",
+    "rapper": "Coutz",
+    "sps": 15.01,
+    "syllables": 16,
+    "seconds": 1.066,
+    "song": "Weapons of Mass Destruction"
+  },
+  {
+    "country": "Netherlands",
+    "code": "NL",
+    "nameZh": "荷兰",
+    "rapper": "ChocoVD",
+    "sps": 15,
+    "syllables": 15,
+    "seconds": 1,
+    "song": "Money Wil Ik Hebben"
+  },
+  {
+    "country": "Russia",
+    "code": "RU",
+    "nameZh": "俄罗斯",
+    "rapper": "Faraway",
+    "sps": 15,
+    "syllables": 15,
+    "seconds": 1,
+    "song": "Unknown Cypher 5"
+  },
+  {
+    "country": "Sierra Leone",
+    "code": "SL",
+    "nameZh": "塞拉利昂",
+    "rapper": "Speedo'o",
+    "sps": 15,
+    "syllables": 15,
+    "seconds": 1,
+    "song": "Warning"
+  },
+  {
+    "country": "Jamaica",
+    "code": "JM",
+    "nameZh": "牙买加",
+    "rapper": "Papa San",
+    "sps": 14.91,
+    "syllables": 15,
+    "seconds": 1.006,
+    "song": "Step Up"
+  },
+  {
+    "country": "Indonesia",
+    "code": "ID",
+    "nameZh": "印度尼西亚",
+    "rapper": "Rocket Alif",
+    "sps": 14.84,
+    "syllables": 16,
+    "seconds": 1.078,
+    "song": "RISE UP"
+  },
+  {
+    "country": "Azerbaijan",
+    "code": "AZ",
+    "nameZh": "阿塞拜疆",
+    "rapper": "Dost",
+    "sps": 14.79,
+    "syllables": 16,
+    "seconds": 1.082,
+    "song": "1st Class"
+  },
+  {
+    "country": "Greece",
+    "code": "GR",
+    "nameZh": "希腊",
+    "rapper": "Domino",
+    "sps": 14.76,
+    "syllables": 15,
+    "seconds": 1.016,
+    "song": "Forgot About Domino"
+  },
+  {
+    "country": "Nepal",
+    "code": "NP",
+    "nameZh": "尼泊尔",
+    "rapper": "Nawaj Ansari",
+    "sps": 14.71,
+    "syllables": 15,
+    "seconds": 1.02,
+    "song": "Flow Fiesta"
+  },
+  {
+    "country": "Pakistan",
+    "code": "PK",
+    "nameZh": "巴基斯坦",
+    "rapper": "CHEN-K",
+    "sps": 14.71,
+    "syllables": 15,
+    "seconds": 1.02,
+    "song": "RAFTAAR"
+  },
+  {
+    "country": "Egypt",
+    "code": "EG",
+    "nameZh": "埃及",
+    "rapper": "Bele",
+    "sps": 14.66,
+    "syllables": 15,
+    "seconds": 1.023,
+    "song": "Arnold Ft. Bele"
+  },
+  {
+    "country": "Saudi Arabia",
+    "code": "SA",
+    "nameZh": "沙特阿拉伯",
+    "rapper": "Dragonfire",
+    "sps": 14.58,
+    "syllables": 15,
+    "seconds": 1.029,
+    "song": "Realrappers Blood Killaz 5"
+  },
+  {
+    "country": "Switzerland",
+    "code": "CH",
+    "nameZh": "瑞士",
+    "rapper": "Vas Angelov",
+    "sps": 14.45,
+    "syllables": 15,
+    "seconds": 1.038,
+    "song": "Fast Lane"
+  },
+  {
+    "country": "Zimbabwe",
+    "code": "ZW",
+    "nameZh": "津巴布韦",
+    "rapper": "Mudiwa Flint",
+    "sps": 14.42,
+    "syllables": 15,
+    "seconds": 1.04,
+    "song": "Fastest Hip Hop Rapper in Zimbabwe"
+  },
+  {
+    "country": "Ukraine",
+    "code": "UA",
+    "nameZh": "乌克兰",
+    "rapper": "Артем Лоік",
+    "sps": 14.3,
+    "syllables": 15,
+    "seconds": 1.049,
+    "song": "Перша"
+  },
+  {
+    "country": "Liberia",
+    "code": "LR",
+    "nameZh": "利比里亚",
+    "rapper": "Don Cu-Z",
+    "sps": 14.26,
+    "syllables": 15,
+    "seconds": 1.052,
+    "song": "Keepin' It Psycho"
+  },
+  {
+    "country": "Palestine",
+    "code": "PS",
+    "nameZh": "巴勒斯坦领土",
+    "rapper": "MoKaF7a",
+    "sps": 14.19,
+    "syllables": 15,
+    "seconds": 1.057,
+    "song": "الناطق الرسمي"
+  },
+  {
+    "country": "Syria",
+    "code": "SY",
+    "nameZh": "叙利亚",
+    "rapper": "Volcano MC",
+    "sps": 14.08,
+    "syllables": 15,
+    "seconds": 1.065,
+    "song": "Volocosha"
+  },
+  {
+    "country": "Tonga",
+    "code": "TO",
+    "nameZh": "汤加",
+    "rapper": "NoXx",
+    "sps": 14.08,
+    "syllables": 15,
+    "seconds": 1.065,
+    "song": "Gospel Verse to Cant Hold Us"
+  },
+  {
+    "country": "Portugal",
+    "code": "PT",
+    "nameZh": "葡萄牙",
+    "rapper": "Young",
+    "sps": 14.02,
+    "syllables": 15,
+    "seconds": 1.07,
+    "song": "Vocês Falam"
+  },
+  {
+    "country": "Senegal",
+    "code": "SN",
+    "nameZh": "塞内加尔",
+    "rapper": "Kheuss Da Supa Lyrical",
+    "sps": 14.02,
+    "syllables": 15,
+    "seconds": 1.07,
+    "song": "DÉMON FREESTYLE #2"
+  },
+  {
+    "country": "Chile",
+    "code": "CL",
+    "nameZh": "智利",
+    "rapper": "Ayzak",
+    "sps": 14.01,
+    "syllables": 15,
+    "seconds": 1.071,
+    "song": "Ambiciones"
+  },
+  {
+    "country": "Cameroon",
+    "code": "CM",
+    "nameZh": "喀麦隆",
+    "rapper": "Mel Species",
+    "sps": 14,
+    "syllables": 14,
+    "seconds": 1,
+    "song": "African Fastest Rapper 2018"
+  },
+  {
+    "country": "Eritrea",
+    "code": "ER",
+    "nameZh": "厄立特里亚",
+    "rapper": "Aman Talke",
+    "sps": 14,
+    "syllables": 14,
+    "seconds": 1,
+    "song": "ቦሎ"
+  },
+  {
+    "country": "France",
+    "code": "FX",
+    "nameZh": "法国",
+    "rapper": "MC Rice",
+    "sps": 14,
+    "syllables": 14,
+    "seconds": 1,
+    "song": "#UC10CHALLENGE"
+  },
+  {
+    "country": "Morocco",
+    "code": "MA",
+    "nameZh": "摩洛哥",
+    "rapper": "Mol Mic",
+    "sps": 14,
+    "syllables": 14,
+    "seconds": 1,
+    "song": "Mbappe"
+  },
+  {
+    "country": "Romania",
+    "code": "RO",
+    "nameZh": "罗马尼亚",
+    "rapper": "NELI THGOD",
+    "sps": 14,
+    "syllables": 14,
+    "seconds": 1,
+    "song": "Lumea Mea Din Cap"
+  },
+  {
+    "country": "Slovakia",
+    "code": "SK",
+    "nameZh": "斯洛伐克",
+    "rapper": "Bitman",
+    "sps": 14,
+    "syllables": 14,
+    "seconds": 1,
+    "song": "Definition of Rep"
+  },
+  {
+    "country": "Sri Lanka",
+    "code": "LK",
+    "nameZh": "斯里兰卡",
+    "rapper": "Chrish Vix",
+    "sps": 14,
+    "syllables": 14,
+    "seconds": 1,
+    "song": "Api Wage"
+  },
+  {
+    "country": "Cabo Verde",
+    "code": "CV",
+    "nameZh": "佛得角",
+    "rapper": "Mayou",
+    "sps": 13.83,
+    "syllables": 16,
+    "seconds": 1.157,
+    "song": "#777"
+  },
+  {
+    "country": "Latvia",
+    "code": "LV",
+    "nameZh": "拉脱维亚",
+    "rapper": "DragN",
+    "sps": 13.82,
+    "syllables": 14,
+    "seconds": 1.013,
+    "song": "Жребий брошен"
+  },
+  {
+    "country": "Serbia",
+    "code": "YU",
+    "nameZh": "塞尔维亚",
+    "rapper": "MIC-MC",
+    "sps": 13.82,
+    "syllables": 14,
+    "seconds": 1.013,
+    "song": "GOD MODE"
+  },
+  {
+    "country": "Yemen",
+    "code": "YE",
+    "nameZh": "也门",
+    "rapper": "Legend Killer",
+    "sps": 13.77,
+    "syllables": 14,
+    "seconds": 1.017,
+    "song": "مين قلك تسطى ؟"
+  },
+  {
+    "country": "Germany",
+    "code": "DE",
+    "nameZh": "德国",
+    "rapper": "Sun Diego",
+    "sps": 13.74,
+    "syllables": 14,
+    "seconds": 1.019,
+    "song": "Apocalyptic Infinity"
+  },
+  {
+    "country": "Norway",
+    "code": "NO",
+    "nameZh": "挪威",
+    "rapper": "Skarre R",
+    "sps": 13.73,
+    "syllables": 14,
+    "seconds": 1.02,
+    "song": "Rap God Remix"
+  },
+  {
+    "country": "Belgium",
+    "code": "BE",
+    "nameZh": "比利时",
+    "rapper": "J.Thomas",
+    "sps": 13.71,
+    "syllables": 14,
+    "seconds": 1.021,
+    "song": "You Don't Know"
+  },
+  {
+    "country": "Zambia",
+    "code": "ZM",
+    "nameZh": "赞比亚",
+    "rapper": "Slim Cheyz Yangu",
+    "sps": 13.67,
+    "syllables": 14,
+    "seconds": 1.024,
+    "song": "[unknown song]"
+  },
+  {
+    "country": "Uruguay",
+    "code": "UY",
+    "nameZh": "乌拉圭",
+    "rapper": "Politologo del Rap",
+    "sps": 13.61,
+    "syllables": 14,
+    "seconds": 1.029,
+    "song": "El Politólogo del Rap #2"
+  },
+  {
+    "country": "Venezuela",
+    "code": "VE",
+    "nameZh": "委内瑞拉",
+    "rapper": "ML DEL TIME",
+    "sps": 13.61,
+    "syllables": 14,
+    "seconds": 1.029,
+    "song": "FRIKY REMIX"
+  },
+  {
+    "country": "Qatar",
+    "code": "QA",
+    "nameZh": "卡塔尔",
+    "rapper": "DRAC",
+    "sps": 13.6,
+    "syllables": 15,
+    "seconds": 1.103,
+    "song": "عوافي"
+  },
+  {
+    "country": "Suriname",
+    "code": "SR",
+    "nameZh": "苏里南",
+    "rapper": "Keizer",
+    "sps": 13.59,
+    "syllables": 14,
+    "seconds": 1.03,
+    "song": "Laat Maar Zitten"
+  },
+  {
+    "country": "Mongolia",
+    "code": "MN",
+    "nameZh": "蒙古",
+    "rapper": "BW",
+    "sps": 13.54,
+    "syllables": 14,
+    "seconds": 1.034,
+    "song": "Project #1"
+  },
+  {
+    "country": "Thailand",
+    "code": "TH",
+    "nameZh": "泰国",
+    "rapper": "FRIGIDZ",
+    "sps": 13.53,
+    "syllables": 14,
+    "seconds": 1.035,
+    "song": "FReeSTyle II"
+  },
+  {
+    "country": "Lithuania",
+    "code": "LT",
+    "nameZh": "立陶宛",
+    "rapper": "Pijus Opera",
+    "sps": 13.51,
+    "syllables": 14,
+    "seconds": 1.036,
+    "song": "5,27 žodžiai per sekundę"
+  },
+  {
+    "country": "Kazakhstan",
+    "code": "KZ",
+    "nameZh": "哈萨克斯坦",
+    "rapper": "Assetyans",
+    "sps": 13.47,
+    "syllables": 14,
+    "seconds": 1.039,
+    "song": "Дабл тайм"
+  },
+  {
+    "country": "Samoa",
+    "code": "WS",
+    "nameZh": "萨摩亚",
+    "rapper": "Sketch",
+    "sps": 13.45,
+    "syllables": 14,
+    "seconds": 1.041,
+    "song": "Jam Remix"
+  },
+  {
+    "country": "Bangladesh",
+    "code": "BD",
+    "nameZh": "孟加拉国",
+    "rapper": "Pollob Vai",
+    "sps": 13.41,
+    "syllables": 14,
+    "seconds": 1.044,
+    "song": "Speedster"
+  },
+  {
+    "country": "Turkmenistan",
+    "code": "TM",
+    "nameZh": "土库曼斯坦",
+    "rapper": "Emin Rasen",
+    "sps": 13.4,
+    "syllables": 14,
+    "seconds": 1.045,
+    "song": "Başla"
+  },
+  {
+    "country": "Ghana",
+    "code": "GH",
+    "nameZh": "加纳",
+    "rapper": "Secure Pabene",
+    "sps": 13.38,
+    "syllables": 15,
+    "seconds": 1.121,
+    "song": "Krom Aye Hu"
+  },
+  {
+    "country": "Guatemala",
+    "code": "GT",
+    "nameZh": "危地马拉",
+    "rapper": "Ritmodelia",
+    "sps": 13.36,
+    "syllables": 14,
+    "seconds": 1.048,
+    "song": "CENTRO AMERICA CYPHER"
+  },
+  {
+    "country": "Ecuador",
+    "code": "EC",
+    "nameZh": "厄瓜多尔",
+    "rapper": "JKR",
+    "sps": 13.35,
+    "syllables": 15,
+    "seconds": 1.124,
+    "song": "TEMPLE"
+  },
+  {
+    "country": "Iraq",
+    "code": "IQ",
+    "nameZh": "伊拉克",
+    "rapper": "Tech 2ow",
+    "sps": 13.35,
+    "syllables": 14,
+    "seconds": 1.049,
+    "song": "MASSACRE"
+  },
+  {
+    "country": "Oman",
+    "code": "OM",
+    "nameZh": "阿曼",
+    "rapper": "Mr.Nar-Q",
+    "sps": 13.31,
+    "syllables": 14,
+    "seconds": 1.052,
+    "song": "عوافي"
+  },
+  {
+    "country": "Eswatini",
+    "code": "SZ",
+    "nameZh": "斯威士兰",
+    "rapper": "C2K",
+    "sps": 13.28,
+    "syllables": 14,
+    "seconds": 1.054,
+    "song": "Ned So"
+  },
+  {
+    "country": "Timor-Leste",
+    "code": "TL",
+    "nameZh": "东帝汶",
+    "rapper": "X-313",
+    "sps": 13.28,
+    "syllables": 14,
+    "seconds": 1.054,
+    "song": "Rapper Fuan Fraku?"
+  },
+  {
+    "country": "Ethiopia",
+    "code": "ET",
+    "nameZh": "埃塞俄比亚",
+    "rapper": "Kemi",
+    "sps": 13.27,
+    "syllables": 14,
+    "seconds": 1.055,
+    "song": "Put Your Faith To Work"
+  },
+  {
+    "country": "Colombia",
+    "code": "CO",
+    "nameZh": "哥伦比亚",
+    "rapper": "Kballero",
+    "sps": 13.25,
+    "syllables": 14,
+    "seconds": 1.057,
+    "song": "Killua Zoldyck vs Luck Voltia"
+  },
+  {
+    "country": "Bulgaria",
+    "code": "BG",
+    "nameZh": "保加利亚",
+    "rapper": "CEKTA",
+    "sps": 13.23,
+    "syllables": 14,
+    "seconds": 1.058,
+    "song": "ЛЕШ 2"
+  },
+  {
+    "country": "Tunisia",
+    "code": "TN",
+    "nameZh": "突尼斯",
+    "rapper": "Aveyro Ave",
+    "sps": 13.17,
+    "syllables": 14,
+    "seconds": 1.063,
+    "song": "Freestyle Dra Kifeh"
+  },
+  {
+    "country": "Uganda",
+    "code": "UG",
+    "nameZh": "乌干达",
+    "rapper": "Da Agent",
+    "sps": 13.16,
+    "syllables": 14,
+    "seconds": 1.064,
+    "song": "who is me"
+  },
+  {
+    "country": "Bahrain",
+    "code": "BH",
+    "nameZh": "巴林",
+    "rapper": "Guilty",
+    "sps": 13.15,
+    "syllables": 14,
+    "seconds": 1.065,
+    "song": "UNDERGROUND_CYPHER 2"
+  },
+  {
+    "country": "Tajikistan",
+    "code": "TJ",
+    "nameZh": "塔吉克斯坦",
+    "rapper": "UraGan",
+    "sps": 13.12,
+    "syllables": 14,
+    "seconds": 1.067,
+    "song": "[unknown song]"
+  },
+  {
+    "country": "Uzbekistan",
+    "code": "UZ",
+    "nameZh": "乌兹别克斯坦",
+    "rapper": "Arenger",
+    "sps": 13.07,
+    "syllables": 14,
+    "seconds": 1.071,
+    "song": "FLOW SHOP"
+  },
+  {
+    "country": "Guinea",
+    "code": "GN",
+    "nameZh": "几内亚",
+    "rapper": "Singleton",
+    "sps": 13.06,
+    "syllables": 14,
+    "seconds": 1.072,
+    "song": "No Limit"
+  },
+  {
+    "country": "Burundi",
+    "code": "BI",
+    "nameZh": "布隆迪",
+    "rapper": "JQ",
+    "sps": 13.05,
+    "syllables": 15,
+    "seconds": 1.149,
+    "song": "HEJURU"
+  },
+  {
+    "country": "Singapore",
+    "code": "SG",
+    "nameZh": "新加坡",
+    "rapper": "Automatic RA",
+    "sps": 13.04,
+    "syllables": 14,
+    "seconds": 1.074,
+    "song": "Godspeed"
+  },
+  {
+    "country": "Afghanistan",
+    "code": "AF",
+    "nameZh": "阿富汗",
+    "rapper": "Mahdi C2",
+    "sps": 13.02,
+    "syllables": 14,
+    "seconds": 1.075,
+    "song": "Maradona"
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "code": "BA",
+    "nameZh": "波斯尼亚和黑塞哥维那",
+    "rapper": "BIGGA",
+    "sps": 13.02,
+    "syllables": 14,
+    "seconds": 1.075,
+    "song": "Speed"
+  },
+  {
+    "country": "Cambodia",
+    "code": "KH",
+    "nameZh": "柬埔寨",
+    "rapper": "Devith",
+    "sps": 13,
+    "syllables": 13,
+    "seconds": 1,
+    "song": "Live Fast Die Young"
+  },
+  {
+    "country": "Kenya",
+    "code": "KE",
+    "nameZh": "肯尼亚",
+    "rapper": "elisha elai",
+    "sps": 13,
+    "syllables": 13,
+    "seconds": 1,
+    "song": "PYTHON"
+  },
+  {
+    "country": "Laos",
+    "code": "LA",
+    "nameZh": "老挝",
+    "rapper": "Snake.F",
+    "sps": 13,
+    "syllables": 13,
+    "seconds": 1,
+    "song": "Godzilla Remix"
+  },
+  {
+    "country": "Lebanon",
+    "code": "LB",
+    "nameZh": "黎巴嫩",
+    "rapper": "El Hakam",
+    "sps": 13,
+    "syllables": 13,
+    "seconds": 1,
+    "song": "Level Or Death"
+  },
+  {
+    "country": "Mauritius",
+    "code": "MU",
+    "nameZh": "毛里求斯",
+    "rapper": "Yenla",
+    "sps": 13,
+    "syllables": 13,
+    "seconds": 1,
+    "song": "Freestyle dan P. A Studio"
+  },
+  {
+    "country": "Mozambique",
+    "code": "MZ",
+    "nameZh": "莫桑比克",
+    "rapper": "Big Master C",
+    "sps": 13,
+    "syllables": 13,
+    "seconds": 1,
+    "song": "[unknown song]"
+  },
+  {
+    "country": "Niger",
+    "code": "NE",
+    "nameZh": "尼日尔",
+    "rapper": "Yas D",
+    "sps": 13,
+    "syllables": 13,
+    "seconds": 1,
+    "song": "Bissa Kuma Nessa"
+  },
+  {
+    "country": "Papua New Guinea",
+    "code": "PG",
+    "nameZh": "巴布亚新几内亚",
+    "rapper": "Shouby Reckas",
+    "sps": 13,
+    "syllables": 13,
+    "seconds": 1,
+    "song": "Rise Of Da Chopper"
+  },
+  {
+    "country": "United Arab Emirates",
+    "code": "AE",
+    "nameZh": "阿拉伯联合酋长国",
+    "rapper": "Alonzo",
+    "sps": 13,
+    "syllables": 13,
+    "seconds": 1,
+    "song": "- R1- بطولة ملك راب الخليج - k3z -"
+  },
+  {
+    "country": "Costa Rica",
+    "code": "CR",
+    "nameZh": "哥斯达黎加",
+    "rapper": "D. Carter",
+    "sps": 12.95,
+    "syllables": 13,
+    "seconds": 1.004,
+    "song": "Kenny Bell"
+  },
+  {
+    "country": "Côte d’Ivoire",
+    "code": "CI",
+    "nameZh": "科特迪瓦",
+    "rapper": "JOJO LE BARBU",
+    "sps": 12.85,
+    "syllables": 13,
+    "seconds": 1.012,
+    "song": "Introduction dans le Rap Ivoire"
+  },
+  {
+    "country": "Vietnam",
+    "code": "VN",
+    "nameZh": "越南",
+    "rapper": "Megashock",
+    "sps": 12.81,
+    "syllables": 13,
+    "seconds": 1.015,
+    "song": "Saigon Choppers 2"
+  },
+  {
+    "country": "Denmark",
+    "code": "DK",
+    "nameZh": "丹麦",
+    "rapper": "Mund de Carlo",
+    "sps": 12.8,
+    "syllables": 14,
+    "seconds": 1.094,
+    "song": "Flyver"
+  },
+  {
+    "country": "Angola",
+    "code": "AO",
+    "nameZh": "安哥拉",
+    "rapper": "DiamondOG",
+    "sps": 12.73,
+    "syllables": 14,
+    "seconds": 1.1,
+    "song": "Time and Money"
+  },
+  {
+    "country": "Ireland",
+    "code": "IE",
+    "nameZh": "爱尔兰",
+    "rapper": "Adam Cully",
+    "sps": 12.7,
+    "syllables": 13,
+    "seconds": 1.024,
+    "song": "Three Chances"
+  },
+  {
+    "country": "New Zealand",
+    "code": "NZ",
+    "nameZh": "新西兰",
+    "rapper": "SXMPRA",
+    "sps": 12.68,
+    "syllables": 13,
+    "seconds": 1.025,
+    "song": "NIGHTMARE"
+  },
+  {
+    "country": "Guinea-Bissau",
+    "code": "GW",
+    "nameZh": "几内亚比绍",
+    "rapper": "Nigga Tchunsu",
+    "sps": 12.67,
+    "syllables": 13,
+    "seconds": 1.026,
+    "song": "Djagra"
+  },
+  {
+    "country": "Czechia",
+    "code": "CZ",
+    "nameZh": "捷克",
+    "rapper": "Skippys",
+    "sps": 12.62,
+    "syllables": 14,
+    "seconds": 1.109,
+    "song": "Monster (Godzilla Remix)"
+  },
+  {
+    "country": "Haiti",
+    "code": "HT",
+    "nameZh": "海地",
+    "rapper": "Adamastor Master Speed",
+    "sps": 12.58,
+    "syllables": 13,
+    "seconds": 1.033,
+    "song": "1100 Mots Dans 2 minutes"
+  },
+  {
+    "country": "Armenia",
+    "code": "AM",
+    "nameZh": "亚美尼亚",
+    "rapper": "Emo",
+    "sps": 12.57,
+    "syllables": 13,
+    "seconds": 1.034,
+    "song": "DOGGZ ON TOP"
+  },
+  {
+    "country": "Dominican Republic",
+    "code": "DO",
+    "nameZh": "多米尼加共和国",
+    "rapper": "Kiubbah Malon",
+    "sps": 12.54,
+    "syllables": 13,
+    "seconds": 1.037,
+    "song": "Llamame Kiubbah"
+  },
+  {
+    "country": "Mauritania",
+    "code": "MR",
+    "nameZh": "毛里塔尼亚",
+    "rapper": "Adviser",
+    "sps": 12.52,
+    "syllables": 13,
+    "seconds": 1.038,
+    "song": "Mine Komi Mine"
+  },
+  {
+    "country": "Croatia",
+    "code": "HR",
+    "nameZh": "克罗地亚",
+    "rapper": "Fil Tilen",
+    "sps": 12.51,
+    "syllables": 14,
+    "seconds": 1.119,
+    "song": "Kruna"
+  },
+  {
+    "country": "Georgia",
+    "code": "GE",
+    "nameZh": "格鲁吉亚",
+    "rapper": "SF-x",
+    "sps": 12.48,
+    "syllables": 13,
+    "seconds": 1.042,
+    "song": "სანამ ნამდვილს"
+  },
+  {
+    "country": "Benin",
+    "code": "DY",
+    "nameZh": "贝宁",
+    "rapper": "Black W",
+    "sps": 12.46,
+    "syllables": 13,
+    "seconds": 1.043,
+    "song": "Godzilla Remix"
+  },
+  {
+    "country": "Democratic Republic of the Congo",
+    "code": "CD",
+    "nameZh": "刚果（金）",
+    "rapper": "Pac Mesrimes",
+    "sps": 12.38,
+    "syllables": 13,
+    "seconds": 1.05,
+    "song": "Freestyle 2023"
+  },
+  {
+    "country": "Sudan",
+    "code": "SD",
+    "nameZh": "苏丹",
+    "rapper": "RANA",
+    "sps": 12.36,
+    "syllables": 13,
+    "seconds": 1.052,
+    "song": "Sudan Cypher 2"
+  },
+  {
+    "country": "Djibouti",
+    "code": "DJ",
+    "nameZh": "吉布提",
+    "rapper": "SousouPanda",
+    "sps": 12.31,
+    "syllables": 13,
+    "seconds": 1.056,
+    "song": "I Got Shaan Saxib"
+  },
+  {
+    "country": "Mali",
+    "code": "ML",
+    "nameZh": "马里",
+    "rapper": "Iba One",
+    "sps": 12.31,
+    "syllables": 13,
+    "seconds": 1.056,
+    "song": "NO LIMIT"
+  },
+  {
+    "country": "Kyrgyzstan",
+    "code": "KG",
+    "nameZh": "吉尔吉斯斯坦",
+    "rapper": "Kabaev",
+    "sps": 12.27,
+    "syllables": 14,
+    "seconds": 1.141,
+    "song": "Long Mix"
+  },
+  {
+    "country": "Burkina Faso",
+    "code": "HV",
+    "nameZh": "布基纳法索",
+    "rapper": "DIBEINGUE",
+    "sps": 12.26,
+    "syllables": 13,
+    "seconds": 1.06,
+    "song": "Les Gwè"
+  },
+  {
+    "country": "Tanzania",
+    "code": "TZ",
+    "nameZh": "坦桑尼亚",
+    "rapper": "Quick Rocka",
+    "sps": 12.26,
+    "syllables": 13,
+    "seconds": 1.06,
+    "song": "Bullet"
+  },
+  {
+    "country": "Gabon",
+    "code": "GA",
+    "nameZh": "加蓬",
+    "rapper": "RAFFAL",
+    "sps": 12.21,
+    "syllables": 14,
+    "seconds": 1.147,
+    "song": "BASTILLE"
+  },
+  {
+    "country": "Estonia",
+    "code": "EE",
+    "nameZh": "爱沙尼亚",
+    "rapper": "J.O.C.",
+    "sps": 12.18,
+    "syllables": 13,
+    "seconds": 1.067,
+    "song": "Aeg Ei Peatu"
+  },
+  {
+    "country": "Micronesia (Federated States of)",
+    "code": "FM",
+    "nameZh": "密克罗尼西亚",
+    "rapper": "YB Ricc",
+    "sps": 12.17,
+    "syllables": 18,
+    "seconds": 1.479,
+    "song": "no favors"
+  },
+  {
+    "country": "Peru",
+    "code": "PE",
+    "nameZh": "秘鲁",
+    "rapper": "Dedos",
+    "sps": 12.15,
+    "syllables": 13,
+    "seconds": 1.07,
+    "song": "Levántate"
+  },
+  {
+    "country": "El Salvador",
+    "code": "SV",
+    "nameZh": "萨尔瓦多",
+    "rapper": "Debil Estar",
+    "sps": 12.1,
+    "syllables": 13,
+    "seconds": 1.074,
+    "song": "El Tiro"
+  },
+  {
+    "country": "Malawi",
+    "code": "MW",
+    "nameZh": "马拉维",
+    "rapper": "F-Kiz",
+    "sps": 12.08,
+    "syllables": 13,
+    "seconds": 1.076,
+    "song": "Mpira Ndi Pass"
+  },
+  {
+    "country": "Botswana",
+    "code": "BW",
+    "nameZh": "博茨瓦纳",
+    "rapper": "Ricky J",
+    "sps": 12.07,
+    "syllables": 14,
+    "seconds": 1.16,
+    "song": "Serowe Brand_Anthem"
+  },
+  {
+    "country": "Rwanda",
+    "code": "RW",
+    "nameZh": "卢旺达",
+    "rapper": "Racine",
+    "sps": 12.07,
+    "syllables": 13,
+    "seconds": 1.077,
+    "song": "Nzura"
+  },
+  {
+    "country": "Equatorial Guinea",
+    "code": "GQ",
+    "nameZh": "赤道几内亚",
+    "rapper": "ERE-D",
+    "sps": 12.05,
+    "syllables": 13,
+    "seconds": 1.079,
+    "song": "The New King of Rap Fang"
+  },
+  {
+    "country": "Belarus",
+    "code": "BY",
+    "nameZh": "白俄罗斯",
+    "rapper": "Howly",
+    "sps": 12.03,
+    "syllables": 13,
+    "seconds": 1.081,
+    "song": "ACE CYPHER"
+  },
+  {
+    "country": "Kosovo",
+    "code": "XK",
+    "nameZh": "科索沃地区",
+    "rapper": "BAROOTI",
+    "sps": 12.01,
+    "syllables": 13,
+    "seconds": 1.082,
+    "song": "Fast Flow"
+  },
+  {
+    "country": "Namibia",
+    "code": "NA",
+    "nameZh": "纳米比亚",
+    "rapper": "Sensei",
+    "sps": 12.01,
+    "syllables": 13,
+    "seconds": 1.082,
+    "song": "Face Off FO"
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "code": "AG",
+    "nameZh": "安提瓜和巴布达",
+    "rapper": "biigdog",
+    "sps": 12,
+    "syllables": 12,
+    "seconds": 1,
+    "song": "Oh God"
+  },
+  {
+    "country": "Bhutan",
+    "code": "BT",
+    "nameZh": "不丹",
+    "rapper": "Atsara JWT",
+    "sps": 12,
+    "syllables": 12,
+    "seconds": 1,
+    "song": "SAMURAi"
+  },
+  {
+    "country": "Brunei",
+    "code": "BN",
+    "nameZh": "文莱",
+    "rapper": "VANDALISMA",
+    "sps": 12,
+    "syllables": 12,
+    "seconds": 1,
+    "song": "Langkah Mayat"
+  },
+  {
+    "country": "Central African Republic",
+    "code": "CF",
+    "nameZh": "中非共和国",
+    "rapper": "King Sylva",
+    "sps": 12,
+    "syllables": 12,
+    "seconds": 1,
+    "song": "Ya Soso"
+  },
+  {
+    "country": "Cuba",
+    "code": "CU",
+    "nameZh": "古巴",
+    "rapper": "Al2",
+    "sps": 12,
+    "syllables": 12,
+    "seconds": 1,
+    "song": "Vereda Tropical"
+  },
+  {
+    "country": "Grenada",
+    "code": "GD",
+    "nameZh": "格林纳达",
+    "rapper": "Chad Mitch",
+    "sps": 12,
+    "syllables": 12,
+    "seconds": 1,
+    "song": "Mission of a Rap God"
+  },
+  {
+    "country": "Iceland",
+    "code": "IS",
+    "nameZh": "冰岛",
+    "rapper": "Herra Hnetusmjör",
+    "sps": 12,
+    "syllables": 12,
+    "seconds": 1,
+    "song": "Þetta má"
+  },
+  {
+    "country": "Luxembourg",
+    "code": "LU",
+    "nameZh": "卢森堡",
+    "rapper": "Ace 32",
+    "sps": 12,
+    "syllables": 12,
+    "seconds": 1,
+    "song": "Escape Room"
+  },
+  {
+    "country": "Maldives",
+    "code": "MV",
+    "nameZh": "马尔代夫",
+    "rapper": "Toy",
+    "sps": 12,
+    "syllables": 12,
+    "seconds": 1,
+    "song": "Fasthareege Lashkareen"
+  },
+  {
+    "country": "Panama",
+    "code": "PA",
+    "nameZh": "巴拿马",
+    "rapper": "UFO",
+    "sps": 12,
+    "syllables": 12,
+    "seconds": 1,
+    "song": "UFO RETA AL DOBLE TEMPO"
+  },
+  {
+    "country": "Saint Lucia",
+    "code": "LC",
+    "nameZh": "圣卢西亚",
+    "rapper": "Shepp Dawg",
+    "sps": 12,
+    "syllables": 12,
+    "seconds": 1,
+    "song": "Wildin' Out"
+  },
+  {
+    "country": "San Marino",
+    "code": "SM",
+    "nameZh": "圣马力诺",
+    "rapper": "Mr.Gore",
+    "sps": 12,
+    "syllables": 12,
+    "seconds": 1,
+    "song": "Etere"
+  },
+  {
+    "country": "South Sudan",
+    "code": "SS",
+    "nameZh": "南苏丹",
+    "rapper": "LORD GEE",
+    "sps": 12,
+    "syllables": 12,
+    "seconds": 1,
+    "song": "South Sudan Hip Hop Clinic 2020 ''Cypher Volume Six''"
+  },
+  {
+    "country": "Belize",
+    "code": "BZ",
+    "nameZh": "伯利兹",
+    "rapper": "Jenko Veli",
+    "sps": 11.98,
+    "syllables": 12,
+    "seconds": 1.002,
+    "song": "Pass Da Mic"
+  },
+  {
+    "country": "Chad",
+    "code": "TD",
+    "nameZh": "乍得",
+    "rapper": "Dais'Son",
+    "sps": 11.94,
+    "syllables": 12,
+    "seconds": 1.005,
+    "song": "Ky Dan'C"
+  },
+  {
+    "country": "Vanuatu",
+    "code": "VU",
+    "nameZh": "瓦努阿图",
+    "rapper": "Local Remedy",
+    "sps": 11.83,
+    "syllables": 12,
+    "seconds": 1.014,
+    "song": "Prima"
+  },
+  {
+    "country": "Libya",
+    "code": "LY",
+    "nameZh": "利比亚",
+    "rapper": "NiTrOgEn",
+    "sps": 11.73,
+    "syllables": 12,
+    "seconds": 1.023,
+    "song": "Look In My Flow"
+  },
+  {
+    "country": "Moldova",
+    "code": "MD",
+    "nameZh": "摩尔多瓦",
+    "rapper": "Satoshi",
+    "sps": 11.72,
+    "syllables": 12,
+    "seconds": 1.024,
+    "song": "AVADAKEDAVRA"
+  },
+  {
+    "country": "Kiribati",
+    "code": "KI",
+    "nameZh": "基里巴斯",
+    "rapper": "Elijah L",
+    "sps": 11.71,
+    "syllables": 12,
+    "seconds": 1.025,
+    "song": "IBIKO MA RANNA"
+  },
+  {
+    "country": "Bolivia",
+    "code": "BO",
+    "nameZh": "玻利维亚",
+    "rapper": "Gatto",
+    "sps": 11.66,
+    "syllables": 12,
+    "seconds": 1.029,
+    "song": "Nacidos"
+  },
+  {
+    "country": "Saint Kitts and Nevis",
+    "code": "KN",
+    "nameZh": "圣基茨和尼维斯",
+    "rapper": "N.Richie!",
+    "sps": 11.66,
+    "syllables": 12,
+    "seconds": 1.029,
+    "song": "R I S E"
+  },
+  {
+    "country": "Honduras",
+    "code": "HN",
+    "nameZh": "洪都拉斯",
+    "rapper": "MCGLO",
+    "sps": 11.65,
+    "syllables": 12,
+    "seconds": 1.03,
+    "song": "Se Descontrola"
+  },
+  {
+    "country": "Nauru",
+    "code": "NR",
+    "nameZh": "瑙鲁",
+    "rapper": "Flex Da Rapper",
+    "sps": 11.65,
+    "syllables": 12,
+    "seconds": 1.03,
+    "song": "For The Set"
+  },
+  {
+    "country": "Madagascar",
+    "code": "MG",
+    "nameZh": "马达加斯加",
+    "rapper": "Placide",
+    "sps": 11.63,
+    "syllables": 12,
+    "seconds": 1.032,
+    "song": "ZAY MRAP"
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "code": "TT",
+    "nameZh": "特立尼达和多巴哥",
+    "rapper": "Krazy Kurtastrophy",
+    "sps": 11.61,
+    "syllables": 12,
+    "seconds": 1.034,
+    "song": "Ought To Know"
+  },
+  {
+    "country": "Jordan",
+    "code": "JO",
+    "nameZh": "约旦",
+    "rapper": "Zombie the Legend",
+    "sps": 11.59,
+    "syllables": 14,
+    "seconds": 1.208,
+    "song": "دس فرجيني مستواك"
+  },
+  {
+    "country": "Paraguay",
+    "code": "PY",
+    "nameZh": "巴拉圭",
+    "rapper": "FranFel",
+    "sps": 11.55,
+    "syllables": 12,
+    "seconds": 1.039,
+    "song": "Camino Con Mi Gente"
+  },
+  {
+    "country": "Sao Tome and Principe",
+    "code": "ST",
+    "nameZh": "圣多美和普林西比",
+    "rapper": "Weyda Múmia",
+    "sps": 11.54,
+    "syllables": 12,
+    "seconds": 1.04,
+    "song": "Olha Para Cima"
+  },
+  {
+    "country": "Togo",
+    "code": "TG",
+    "nameZh": "多哥",
+    "rapper": "Mr Kurones",
+    "sps": 11.53,
+    "syllables": 12,
+    "seconds": 1.041,
+    "song": "Togo Finest"
+  },
+  {
+    "country": "Nicaragua",
+    "code": "NI",
+    "nameZh": "尼加拉瓜",
+    "rapper": "Bryl",
+    "sps": 11.43,
+    "syllables": 12,
+    "seconds": 1.05,
+    "song": "Me Encantas Tu"
+  },
+  {
+    "country": "Guyana",
+    "code": "GY",
+    "nameZh": "圭亚那",
+    "rapper": "Esan Benzy",
+    "sps": 11.42,
+    "syllables": 12,
+    "seconds": 1.051,
+    "song": "All The Way Up (Guyanese Version)"
+  },
+  {
+    "country": "Seychelles",
+    "code": "SC",
+    "nameZh": "塞舌尔",
+    "rapper": "Fastidious",
+    "sps": 11.42,
+    "syllables": 12,
+    "seconds": 1.051,
+    "song": "Rider"
+  },
+  {
+    "country": "Bahamas",
+    "code": "BS",
+    "nameZh": "巴哈马",
+    "rapper": "$peare",
+    "sps": 11.41,
+    "syllables": 12,
+    "seconds": 1.052,
+    "song": "auto"
+  },
+  {
+    "country": "Gambia",
+    "code": "GM",
+    "nameZh": "冈比亚",
+    "rapper": "ADP Billion",
+    "sps": 11.4,
+    "syllables": 12,
+    "seconds": 1.053,
+    "song": "Just Barz"
+  },
+  {
+    "country": "Somalia",
+    "code": "SO",
+    "nameZh": "索马里",
+    "rapper": "Freek",
+    "sps": 11.4,
+    "syllables": 12,
+    "seconds": 1.053,
+    "song": "Wala Kilma"
+  },
+  {
+    "country": "Lesotho",
+    "code": "LS",
+    "nameZh": "莱索托",
+    "rapper": "Skebza D",
+    "sps": 11.35,
+    "syllables": 12,
+    "seconds": 1.057,
+    "song": "Moriski Freestyle"
+  },
+  {
+    "country": "Saint Vincent and the Grenadines",
+    "code": "VC",
+    "nameZh": "圣文森特和格林纳丁斯",
+    "rapper": "G.WISE I.V",
+    "sps": 11.33,
+    "syllables": 12,
+    "seconds": 1.059,
+    "song": "BANG DAT"
+  },
+  {
+    "country": "Monaco",
+    "code": "MC",
+    "nameZh": "摩纳哥",
+    "rapper": "LVLLEVEL",
+    "sps": 11.29,
+    "syllables": 12,
+    "seconds": 1.063,
+    "song": "VOCAL KNBIZ SESSIONS / LVLLEVEL"
+  },
+  {
+    "country": "Republic of the Congo",
+    "code": "CG",
+    "nameZh": "刚果（布）",
+    "rapper": "PROTO MWANBWAL",
+    "sps": 11.29,
+    "syllables": 13,
+    "seconds": 1.151,
+    "song": "Couchez-Vous Remix"
+  },
+  {
+    "country": "Fiji",
+    "code": "FJ",
+    "nameZh": "斐济",
+    "rapper": "Stee Cracker",
+    "sps": 11.27,
+    "syllables": 12,
+    "seconds": 1.065,
+    "song": "28"
+  },
+  {
+    "country": "Malta",
+    "code": "MT",
+    "nameZh": "马耳他",
+    "rapper": "K13",
+    "sps": 11.23,
+    "syllables": 12,
+    "seconds": 1.069,
+    "song": "MALTA TAGHNA"
+  },
+  {
+    "country": "Comoros",
+    "code": "KM",
+    "nameZh": "科摩罗",
+    "rapper": "BAHATA",
+    "sps": 11.16,
+    "syllables": 12,
+    "seconds": 1.075,
+    "song": "BAHATA I"
+  },
+  {
+    "country": "Liechtenstein",
+    "code": "LI",
+    "nameZh": "列支敦士登",
+    "rapper": "Fabian Berry",
+    "sps": 11.11,
+    "syllables": 12,
+    "seconds": 1.08,
+    "song": "MY FLOW IS SICK"
+  },
+  {
+    "country": "North Macedonia",
+    "code": "MK",
+    "nameZh": "北马其顿",
+    "rapper": "Tonyo San",
+    "sps": 11.11,
+    "syllables": 13,
+    "seconds": 1.17,
+    "song": "Fakalavista"
+  },
+  {
+    "country": "Solomon Islands",
+    "code": "SB",
+    "nameZh": "所罗门群岛",
+    "rapper": "Dehvande",
+    "sps": 11.06,
+    "syllables": 12,
+    "seconds": 1.085,
+    "song": "Bongo"
+  },
+  {
+    "country": "Cyprus",
+    "code": "CY",
+    "nameZh": "塞浦路斯",
+    "rapper": "Άγραφος Βίβλος",
+    "sps": 11.05,
+    "syllables": 12,
+    "seconds": 1.086,
+    "song": "ΑΠΟ ΤΟ ΜΗΔΕΝ"
+  },
+  {
+    "country": "Andorra",
+    "code": "AD",
+    "nameZh": "安道尔",
+    "rapper": "MC Jordan",
+    "sps": 11.04,
+    "syllables": 12,
+    "seconds": 1.087,
+    "song": "TORMENTAS DE ARENA"
+  },
+  {
+    "country": "Barbados",
+    "code": "BB",
+    "nameZh": "巴巴多斯",
+    "rapper": "Jah Koda",
+    "sps": 11,
+    "syllables": 11,
+    "seconds": 1,
+    "song": "Overdose"
+  },
+  {
+    "country": "Dominica",
+    "code": "DM",
+    "nameZh": "多米尼克",
+    "rapper": "Fuego Dinero",
+    "sps": 11,
+    "syllables": 11,
+    "seconds": 1,
+    "song": "Living My Best Life"
+  },
+  {
+    "country": "Marshall Islands",
+    "code": "MH",
+    "nameZh": "马绍尔群岛",
+    "rapper": "OneCent",
+    "sps": 11,
+    "syllables": 11,
+    "seconds": 1,
+    "song": "Leddik in Lobat"
+  },
+  {
+    "country": "Montenegro",
+    "code": "ME",
+    "nameZh": "黑山",
+    "rapper": "Nebo",
+    "sps": 11,
+    "syllables": 11,
+    "seconds": 1,
+    "song": "Robot"
+  },
+  {
+    "country": "Slovenia",
+    "code": "SI",
+    "nameZh": "斯洛文尼亚",
+    "rapper": "Amo Socialec",
+    "sps": 11,
+    "syllables": 11,
+    "seconds": 1,
+    "song": "Vse Dol Zdaj"
+  },
+  {
+    "country": "Tuvalu",
+    "code": "TV",
+    "nameZh": "图瓦卢",
+    "rapper": "Eimos",
+    "sps": 11,
+    "syllables": 11,
+    "seconds": 1,
+    "song": "Tagi Au"
+  },
+  {
+    "country": "Palau",
+    "code": "PW",
+    "nameZh": "帕劳",
+    "rapper": "Belias Son",
+    "sps": 10.77,
+    "syllables": 11,
+    "seconds": 1.021,
+    "song": "Kuib ra Elbias"
+  }
+]
