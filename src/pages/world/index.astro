@@ -22,7 +22,7 @@ const cypherTrack = tracks.find((t) => t.data.youtube === cypher?.data.youtube);
 const cypherMax = cypher ? Math.ceil(Math.max(...cypher.data.entries.map((e) => e.sps)) / 5) * 5 : 25;
 // 本站建档的人物，表格里可以直接链过去
 const profiled = new Map(artists.map((a) => [a.data.name.toLowerCase(), a.id]));
-// NahDah Vebb 2023 榜：前 20 名 + 本站收录的人
+// NahDah Vebb 2023 榜：前 30 名 + 本站收录的人
 const ndMax = Math.ceil(Math.max(...nahdah.map((e) => e.sps)) / 5) * 5;
 const ND = {
   video: 'https://www.youtube.com/watch?v=4SjqPAqjsWo',
@@ -158,7 +158,7 @@ const ND = {
 
           <div class="card p-5 sm:p-6">
             <div class="flex items-center justify-between gap-3">
-              <p class="eyebrow">1 秒爆发 · 前 20 名和本站收录的人</p>
+              <p class="eyebrow">1 秒爆发 · 前 30 名和本站收录的人</p>
               <Confidence level="pending" />
             </div>
             <ol class="cy-list nd-list mt-4 grid gap-1.5">

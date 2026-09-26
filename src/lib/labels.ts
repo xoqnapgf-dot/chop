@@ -17,6 +17,7 @@ export const COUNTRY: Record<string, { name: string }> = {
   JP: { name: '日本' },
   FI: { name: '芬兰' },
   ZA: { name: '南非' },
+  KW: { name: '科威特' },
 };
 
 /**

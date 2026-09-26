@@ -28,7 +28,8 @@ const RAD = Math.PI / 180;
 
 export function mountGlobe(canvas: HTMLCanvasElement, opts: Options) {
   const ctx = canvas.getContext('2d', { alpha: true })!;
-  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // 系统开了"减少动态效果"时不停掉动画（地球的动效就是内容），只放慢自转
+  const gentle = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const coarse = matchMedia('(pointer: coarse)').matches;
 
   // ---- 陆地点：预先转成单位向量 ----
@@ -223,7 +224,7 @@ export function mountGlobe(canvas: HTMLCanvasElement, opts: Options) {
       ctx.lineWidth = 1.4;
       ctx.lineCap = 'round';
       ctx.setLineDash([4, 6]);
-      ctx.lineDashOffset = reduceMotion ? 0 : -((now / 40) % 10);
+      ctx.lineDashOffset = -((now / (gentle ? 80 : 40)) % 10);
       ctx.strokeStyle = hexA(colors.world, 0.85);
       for (const pts of arcs) {
         ctx.beginPath();
@@ -250,7 +251,7 @@ export function mountGlobe(canvas: HTMLCanvasElement, opts: Options) {
 
     // 标记
     screen.length = 0;
-    const pulse = reduceMotion ? 0.5 : (now % 2200) / 2200;
+    const pulse = (now % (gentle ? 3600 : 2200)) / (gentle ? 3600 : 2200);
     for (let i = 0; i < opts.markers.length; i++) {
       const m = opts.markers[i];
       const v = markerVec[i];
@@ -339,14 +340,14 @@ export function mountGlobe(canvas: HTMLCanvasElement, opts: Options) {
         vLon *= 0.94;
         vLat *= 0.94;
         moving = true;
-      } else if (!reduceMotion && now - lastInteract > 3500) {
-        lon0 += 0.045; // 自转
+      } else if (now - lastInteract > 3500) {
+        lon0 += gentle ? 0.02 : 0.045; // 自转
         moving = true;
       }
     }
     draw(now);
-    // 有动画（光圈、弧线、自转）就继续；减少动态效果时只在需要时重绘
-    if (running && (moving || !reduceMotion || dragging)) raf = requestAnimationFrame(frame);
+    // 有动画（光圈、弧线、自转）就继续；离开视口时 running 为 false，不再重绘
+    if (running) raf = requestAnimationFrame(frame);
   }
   function start() {
     if (running) return;
@@ -455,7 +456,7 @@ export function mountGlobe(canvas: HTMLCanvasElement, opts: Options) {
     let target = lon;
     while (target - lon0 > 180) target -= 360;
     while (target - lon0 < -180) target += 360;
-    tween = { fromLon: lon0, fromLat: lat0, toLon: target, toLat: clampLat(lat * 0.8), t0: performance.now(), dur: reduceMotion ? 1 : 900 };
+    tween = { fromLon: lon0, fromLat: lat0, toLon: target, toLat: clampLat(lat * 0.8), t0: performance.now(), dur: 900 };
     lastInteract = performance.now();
     if (!running) {
       // 离屏时直接跳过去
