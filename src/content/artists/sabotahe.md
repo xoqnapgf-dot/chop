@@ -55,6 +55,7 @@ sources:
   - { title: 'B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017（NahDah 2017 版搬运）', url: 'https://www.bilibili.com/video/BV11x411L79b/' }
   - { title: 'B站 – 煦航2019：Sabotahe的日常练习（2018）', url: 'https://www.bilibili.com/video/BV1dt411m7UR/' }
   - { title: 'B站 – 五里亭亭长：亚洲第三语速 sabotahe 最快说唱 remix（2020）', url: 'https://www.bilibili.com/video/BV1dK411K7KD/' }
+  - { title: 'B站 – 小安迪直播点评《Chinese Choppers》（2026）', url: 'https://www.bilibili.com/video/BV1S2j36tERu/' }
 ---
 
 Sabotahe 是菲律宾的 chopper，用他加禄语唱。他在 Genius 上的别名是 Carlo of Tencoz，作品署名里写作 Carlo "Sabotahe" De Leon，出自菲律宾地下厂牌 Sandamukal Records。他的频道叫 SABOTAHE RAP VLOG，简介自称"KING OF 5 SPEED RAP"，也就是"五连音之王"。
@@ -87,6 +88,6 @@ Kill 系列由 Aktibar 发起，Iloilo Choppers、Southsyd Souljaz 和 Sabotahe 
 
 ## 和中国圈的关系
 
-NahDah 2017 版被 B 站 UP 主 Fatality丶九头龙搬运过来时，排在第 1 的就是他。2018 年，中国第二代 chop 圈的组建者煦航在 B 站发过他的练习视频；五里亭亭长 2020–2021 年也连着搬运、分析过他的作品，称他是"亚洲第三语速"。
+NahDah 2017 版被 B 站 UP 主 Fatality丶九头龙搬运过来时，排在第 1 的就是他。2018 年，中国第二代 chop 圈的组建者煦航在 B 站发过他的练习视频；五里亭亭长 2020–2021 年也连着搬运、分析过他的作品，称他是"亚洲第三语速"。2026 年小安迪在直播里聊 chop 时，也点名说 Sabotahe 是"东南亚最牛的"。
 
 > 艺名、作品署名和年份来自他本人频道、合作方 Aktibar 与 HoodlumRecords 的官方上传；速度数据分别来自 NahDah 2017 / 2021 / 2023 版和 TrollatorBR。家人、住址等私人信息不收录。

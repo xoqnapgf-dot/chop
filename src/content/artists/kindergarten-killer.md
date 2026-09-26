@@ -8,7 +8,7 @@ city: 未公开
 region: 网络
 activeSince: 2005
 style: fast
-styleNote: 以语速和咬字清晰著称的中文快嘴，早期还因此被质疑"后期加速"。
+styleNote: 以语速和咬字清晰著称的中文快嘴，早期还因此被质疑"后期加速"。和赵辰龙一样是快嘴起家，本人没自认 chopper，圈内也不把他当 chopper 看，所以标"快嘴"。
 tags: [中文, 匿名, 变调人声]
 featured: true
 youtube: { channelId: UCDibK9D0Qh6sGZJEGm5r0tA, kind: topic }
@@ -18,6 +18,7 @@ sources:
   - { title: '嘻哈中国 – 幼稚园杀手的真实身份', url: 'https://www.xihachina.com/7222.html' }
   - { title: '知乎 – 说唱歌手幼稚园杀手到底是谁？', url: 'https://www.zhihu.com/question/341008754' }
   - { title: '网易 – 谁才是中文说唱圈第一快嘴？（2018）', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }
+  - { title: '网易云音乐 – 幼稚园杀手/幸存者联盟《空壳》（2021-09-30）', url: 'https://music.163.com/#/song?id=1882750624' }
   - { title: '新浪 – 幼稚园杀手身份曝光！赵辰龙公开回应（2022-04-01）', url: 'https://k.sina.cn/article_1163858357_v455f11b5019012ps5.html' }
   - { title: '网易 – 自爆身份？幼稚园杀手就是赵辰龙？？（2021-06-26）', url: 'https://www.163.com/dy/article/GDEPBML10512SDU4.html' }
 ---
@@ -33,6 +34,16 @@ sources:
 但赵辰龙本人**多次否认**：2022 年他说"幼稚园杀手也不是我"，2024 年又表示这个标签与他无关。他只承认自己为幼杀做过制作。
 
 所以本站的处理是：**两边分开建档**，身份标为"未证实"，不写入幼稚园杀手的本名一栏。
+
+## 不是"chop 专业户"
+
+幼杀一直以快嘴出名，但他（署名幼稚园杀手 / 幸存者联盟）在 2021 年的《空壳》里专门回应过"每首歌都得有快嘴"的期待：
+
+> 是不是每首歌都要硬生生地来一段快嘴，乌合之众才能够满意
+>
+> 什么时候说过我是 chop 专业户
+
+同一首歌里还有一句："狗屁不通的逻辑，一旦唱过快嘴，那余生的 flow 都不能慢啦。"快嘴对他来说是技术之一，不是唯一的招牌。他是快嘴起家的，但和 chop 有区别，自己没自认是 chopper，听众也一直只叫他"快嘴"。
 
 ## 变声的争议
 

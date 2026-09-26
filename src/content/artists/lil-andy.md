@@ -81,6 +81,11 @@ sources:
   - { title: '知乎 – 能安利一下你们的rapper吗？（丶凛冽时雨 的回答，称其为国内最优秀的一批 chop 风格 rapper）', url: 'https://www.zhihu.com/question/477782137/answer/2054535259' }
   - { title: '网易 – 谁才是中文说唱圈第一快嘴？（2018）', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }
   - { title: '网易云音乐 – 小安迪LilAndyKillThemAll 歌手页', url: 'https://music.163.com/#/artist?id=12099063' }
+  - { title: '网易云音乐 – Real One（LilAndy，LilG，Dalima）（2016-10-21）', url: 'https://music.163.com/#/song?id=436675058' }
+  - { title: '网易云音乐 – Tech N9ne：Misery（feat. D-Loc、Dalima、Krizz Kaliko，Misery Loves Kompany，2007）', url: 'https://music.163.com/#/song?id=3765471' }
+  - { title: '网易云音乐 – 龚子建 歌手页（深蓝儿童合作作品）', url: 'https://music.163.com/#/artist?id=12157356' }
+  - { title: 'B站 – 小安迪直播点评《Chinese Choppers》（2026）', url: 'https://www.bilibili.com/video/BV1S2j36tERu/' }
+  - { title: 'B站 – 小安迪LilAndyKTA：街头胡聊第 28 集｜南征北战 赵辰龙 尼成（2026-09-24）', url: 'https://www.bilibili.com/video/BV1D7aA6gEYU/' }
 ---
 
 小安迪（Lil Andy）1993 年生，安徽合肥人。17 岁开始创作，早期以 **Battle MC** 身份出名。
@@ -107,6 +112,26 @@ B 站 UP 主五里亭亭长 2021 年做过一期"小安迪最快的五首歌"，
 
 本站复算过，算式都对。《狗怕黑》那一句石狐九和也单独测过（1.16 秒 14 个字 ≈ 12.07），字数一样、计时只差 0.05 秒，所以标为已证实；其余四首目前只找到五里亭亭长一家的测算，标为待核实。
 
+## 《Real One》：他自己说的"唯一一首 chop"
+
+2026 年他在直播里点评《Chinese Choppers》时说，自己整个职业生涯**只做过一首 chop**：2016 年和堪萨斯城的说唱歌手 **Dalima** 合作的那首。网易云上能查到：《**Real One**》，2016 年 10 月 21 日发行，署名 LilAndy、LilG、Dalima，第三段主歌就是 Dalima 的英文 verse。Dalima 是 Tech N9ne 的合作者，2007 年上过 Tech N9ne 专辑 *Misery Loves Kompany* 里的《Misery》。
+
+按他的说法，这次合作是深蓝儿童的**龚子建**一直去联系对方、发了 demo，对方觉得不错才答应的，"一分钱没收"。
+
+## 他怎么看 chop
+
+同一场直播里，他顺带讲了自己对 chop 的理解（直播录音是 AI 听写，下面是按内容整理的要点，不是逐字原话）：
+
+- **chop 不等于快嘴**。快嘴分很多种，Eminem 能唱 chop，但他大部分歌不是 chop。
+- **先看伴奏**。chop 的伴奏一般 BPM 偏慢，这样 16 分、甚至 32 分音符才塞得进去；BPM 本来就很高，32 分就没法玩了。这里说的是给细分音符留空间，不是拿 BPM 算语速。
+- **核心是切分和语速控制**。16 分和 32 分来回切换，一长串之后突然"啪"地收住，他形容像二战电影里 MG42 机枪的那种感觉。
+- **风格极端**。内容一般不炫富，多是黑暗、暴力的题材，国外的 chopper 基本都这样。
+- 他还提到东南亚那边有一批人在玩 chop，其中 **Sabotahe** 是"东南亚最牛的"。
+
+他对《Chinese Choppers》本身的评价，见时间线 2026 年《Chinese Choppers Cypher》一条。
+
 ## 深蓝儿童
 
-他和同样来自合肥的成员组成**深蓝儿童**（成立时间有 2017 年和 2018 年初两种说法），后来因音乐方向不同，大约在 2018 年底到 2019 年初和平退出活死人，转向摇滚等风格。他在网易云音乐的歌手简介里写着自己是“深蓝儿童乐队吉他手、主唱”，以及“说唱已封麦”。
+他和同样来自合肥的 Oxy、龚子建组成**深蓝儿童**（成立时间有 2017 年和 2018 年初两种说法），后来因音乐方向不同，大约在 2018 年底到 2019 年初和平退出活死人，转向摇滚等风格。他在网易云音乐的歌手简介里写着自己是“深蓝儿童乐队吉他手、主唱”，以及“说唱已封麦”。
+
+他现在在 B 站做一档聊天节目《**街头胡聊**》，请说唱圈的人来聊创作和经历；2026 年 9 月的第 28 集请的是南征北战的赵辰龙。
