@@ -322,7 +322,7 @@
     - { title: 'Wikipedia – Upuan（2009 年 6 月 22 日发行）', url: 'https://en.wikipedia.org/wiki/Upuan' }
 - id: infinite-choppers
   title: Infinite Choppers
-  artists: [crucified]
+  artists: [crucified, the-jackal]
   credit: DOWN6 ft. Crucified, SPLXT, AceThaGoblin, Kal Paseo, LEECHY! 等 18 人
   scene: world
   year: 2023
@@ -677,8 +677,7 @@
   officialUpload: true
   scene: world
   year: 2015
-  note: 'DNA 最快的歌，也是他招牌系列的第三首（2015 年 4 月发行）。NahDah 2021、2023 和五里亭亭长 2021 三份榜单都选了这首，但音节数没对上：NahDah 2023 版 1.070 秒 19 个 ≈ 17.76，2021 版 1.045 秒 17 个 ≈ 16.26。'
-  confidence: disputed
+  note: 'DNA 最快的歌，也是他招牌系列的第三首（2015 年 4 月发行）。NahDah 2023 版第 9 名：1.070 秒 19 个音节 ≈ 17.76；2017 版测的也是这首，约 17.7，两版一致。'
   sources:
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
     - { title: 'B站 – NahDah Vebb：Top 150 Fastest Rappers 2021（转载，每条都有算式）', url: 'https://www.bilibili.com/video/BV1Av4y1Z7d7/' }

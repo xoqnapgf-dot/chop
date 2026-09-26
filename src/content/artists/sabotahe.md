@@ -10,7 +10,7 @@ styleNote: 几乎每首歌、每段 verse 都在高速切音节，常年出现�
 tags: [菲律宾, 他加禄语, Kill 系列, Sandamukal Records, 复测后仍顶尖]
 youtube: { channelId: UCuIrJbsoT4OXS64QvP8FHEQ, handle: '@sabotahefastestrapper8318', kind: official }
 useBanner: false
-related: [crucified, twisted-insane, don-xperto]
+related: [crucified, twisted-insane, don-xperto, the-jackal]
 speed:
   - value: 21.01
     unit: syl/s

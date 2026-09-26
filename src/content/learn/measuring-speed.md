@@ -76,7 +76,7 @@ NahDah Vebb 在 YouTube 上做"最快说唱歌手 Top 150"榜单，属于美洲�
 
 | 说法 | 早期 | 后来 |
 |---|---|---|
-| Crucified 最快 | 《Undaground Choppers》37 ÷ 1.46 ≈ 25.3（NahDah 2017 版第 3）；B 站搬运者在简介里补充《Power Up》达到 28.3，后来又流传出 28.9 | 《Onion Chopper》22 / 1.043 ≈ 21.09（NahDah 2023 版） |
+| Crucified 最快 | 《Undaground Choppers》37 ÷ 1.46 ≈ 25.3（NahDah 2017 版第 3）；流传的《Power Up》28.9 早已被推翻 | 《Onion Chopper》22 / 1.043 ≈ 21.09（NahDah 2023 版） |
 | Sabotahe | 《Kargado》34 ÷ 1.24 ≈ 27.4（NahDah 2017 版第 1） | 《Paslangin 5》22 / 1.047 ≈ 21.01（NahDah 2023 版） |
 | The Jackal | 《Discord Choppers》27 ÷ 1.02 ≈ 26.5（NahDah 2017 版第 2） | 《Charlie Sheen Remix》16 ÷ 1.048 ≈ 15.27（NahDah 2023 版第 29） |
 
@@ -100,7 +100,7 @@ NahDah Vebb 在 YouTube 上做"最快说唱歌手 Top 150"榜单，属于美洲�
 | Kardiyak | Illest Choppers 4 | 第 19 · 16 ÷ 1.051 ≈ 15.22 | 第 28 · 15.28 |
 | DNA Tru Lyricist | Lightspeed Chopper 3 | 第 11 · 17 ÷ 1.045 ≈ 16.26 | 第 9 · 19 ÷ 1.070 ≈ 17.76 |
 
-前五行两次都数出 16 个音节，差距都在 0.3 以内；DNA 这首是例外，2023 版多数出了 2 个音节。
+前五行两次都数出 16 个音节，差距都在 0.3 以内。DNA 这首是例外：2021 版少数了 2 个音节，2017 版和 2023 版都是约 17.7。
 
 名次有些往后挪，主要是因为 2023 版收进了更多新人、新歌，不是这些人的数字变了。2021 到 2023 的大变动几乎都来自**规则**：纪录挑战不再算（Rebel XD 从第 1 落榜，Outsider 从第 13 掉到第 54）、加速的被除名（Mizury Mize、Leach，Interchopper 换歌），以及新歌上榜（Crucified 的《Onion Chopper》、Idylll 的《Tha Shade》）。
 

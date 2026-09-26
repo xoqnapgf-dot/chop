@@ -217,6 +217,15 @@
       "hasBanner": true,
       "color": "#080808",
       "fetchedAt": "2026-09-25"
+    },
+    "the-jackal": {
+      "channelUrl": "https://www.youtube.com/channel/UCEKagEPjE0QJCnLG86gOoBQ",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/su5-XA9anvlGcCnDQ6qhoo-ay5GkBJYxQUpv5QkqABJ7BSGStITLIsZMpA42atWUIYD6S3Ryzg=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/uewuhQBK1n-5mamhA99e5Pv-afyxWx33omkXRpXq1irFkSVn7IHx0rCFrYTKvmePhrcVtgRyRw=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#f8f8b8",
+      "fetchedAt": "2026-09-26"
     }
   },
   "tracks": {

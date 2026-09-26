@@ -58,6 +58,14 @@
   sources:
     - { title: 'Genius – Interchopper 艺人页', url: 'https://genius.com/artists/Interchopper' }
     - { title: 'SPS and Chopper Rap Wiki – Interchopper', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Interchopper' }
+- id: au
+  name: 澳大利亚
+  en: Australia
+  geo: [-25.3, 133.8]
+  summary: The Jackal 自称"大洋洲最快"，NahDah 2017 版一度排到第 2；后来的系统测算只有 15 左右，早年的数字基本作废。
+  sources:
+    - { title: 'YouTube – The Jackal Rapper（本人频道）', url: 'https://www.youtube.com/@TheJackalRapper' }
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
 - id: dk
   name: 丹麦
   en: Denmark
