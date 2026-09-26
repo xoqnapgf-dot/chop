@@ -102,8 +102,9 @@ const tracks = defineCollection({
     starter: z.boolean().default(false),
     year: z.number().int().optional(),
     album: z.string().optional(),
-    youtube: z.string(), // 视频 ID
-    youtubeChannel: z.string(), // 上传频道名
+    /** 视频 ID；只在国内平台发行的歌可以没有 */
+    youtube: z.string().optional(),
+    youtubeChannel: z.string().optional(), // 上传频道名
     /** 国内能看的 B 站视频（BV 号），YouTube 打不开时直接播这个 */
     bilibili: z.string().regex(/^BV[0-9A-Za-z]{10}$/).optional(),
     /** 网易云音乐歌曲 ID */
@@ -112,7 +113,7 @@ const tracks = defineCollection({
     note: z.string(),
     confidence: confidence.default('verified'),
     sources: z.array(source).min(1),
-  }),
+  }).refine((d) => d.youtube || d.bilibili || d.netease, { message: '曲目至少要有 YouTube、B 站或网易云其中一个' }),
 });
 
 const timeline = defineCollection({
@@ -123,6 +124,8 @@ const timeline = defineCollection({
     body: z.string(),
     scene: z.enum(['china', 'world']),
     artist: reference('artists').optional(),
+    /** 关联曲目：时间线卡片上显示视频缩略图 */
+    track: reference('tracks').optional(),
     confidence: confidence.default('verified'),
     /** 圈内亲历的事可以不附链接 */
     sources: z.array(source).default([]),

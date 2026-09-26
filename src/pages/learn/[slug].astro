@@ -22,6 +22,7 @@ const minutes = Math.max(1, Math.round((entry.body ?? '').replace(/\s+/g, '').le
 ---
 
 <Base title={entry.data.title} description={entry.data.summary}>
+  <div class="read-progress" aria-hidden="true"><i></i></div>
   <article class="container-x pt-14 md:pt-20">
     <header class="max-w-3xl">
       <a href={url('learn/')} class="eyebrow link-u hover:text-ink">← 百科</a>
@@ -97,6 +98,21 @@ const minutes = Math.max(1, Math.round((entry.body ?? '').replace(/\s+/g, '').le
 </Base>
 
 <style>
+  /* 阅读进度条：贴在顶部导航下面 */
+  .read-progress {
+    position: fixed;
+    inset: 64px 0 auto;
+    z-index: 40;
+    height: 3px;
+    pointer-events: none;
+  }
+  .read-progress i {
+    display: block;
+    height: 100%;
+    width: calc(var(--rp, 0) * 100%);
+    background: linear-gradient(90deg, var(--accent), var(--scene-china));
+    box-shadow: 0 0 10px color-mix(in oklab, var(--accent) 60%, transparent);
+  }
   .toc a.is-current {
     color: var(--ink);
     border-color: var(--accent-text);
@@ -200,4 +216,22 @@ const minutes = Math.max(1, Math.round((entry.body ?? '').replace(/\s+/g, '').le
     document.querySelectorAll('.prose-chop h2[id]').forEach((h) => io.observe(h));
   }
   initToc();
+
+  // 阅读进度
+  {
+    const bar = document.querySelector<HTMLElement>('.read-progress');
+    const body = document.querySelector<HTMLElement>('.prose-chop');
+    if (bar && body) {
+      let t = false;
+      const upd = () => {
+        const r = body.getBoundingClientRect();
+        const total = r.height - innerHeight * 0.6;
+        const p = Math.min(1, Math.max(0, -r.top / Math.max(1, total)));
+        bar.style.setProperty('--rp', p.toFixed(4));
+        t = false;
+      };
+      addEventListener('scroll', () => { if (!t) { t = true; requestAnimationFrame(upd); } }, { passive: true });
+      upd();
+    }
+  }
 </script>

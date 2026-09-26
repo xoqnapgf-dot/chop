@@ -7,9 +7,9 @@
 import { Image } from 'astro:assets';
 import { trackThumb } from '@/lib/media';
 
-interface Props { id: string; title: string; channel?: string; official?: boolean; bilibili?: string; netease?: number }
+interface Props { id?: string; title: string; channel?: string; official?: boolean; bilibili?: string; netease?: number }
 const { id, title, channel, official, bilibili, netease } = Astro.props;
-const thumb = trackThumb(id);
+const thumb = trackThumb(id) ?? (netease ? trackThumb(`ne-${netease}`) : undefined);
 const q = encodeURIComponent(title);
 ---
 
@@ -21,7 +21,7 @@ const q = encodeURIComponent(title);
     </span>
   </button>
   <div class="pointer-events-none absolute inset-x-0 top-0 flex items-center justify-between gap-2 bg-gradient-to-b from-black/70 to-transparent p-3 text-xs text-white/85">
-    <span class="truncate">{channel}</span>
+    <span class="truncate">{channel ?? (id ? '' : netease ? '网易云音乐' : 'B 站')}</span>
     {official !== undefined && <span class="shrink-0 rounded-full bg-black/50 px-2 py-0.5">{official ? '官方上传' : '非官方上传'}</span>}
   </div>
 </div>
@@ -40,7 +40,7 @@ const q = encodeURIComponent(title);
       <a class="link-u hover:text-ink" href={`https://music.163.com/#/search/m/?s=${q}`} target="_blank" rel="noopener">在网易云搜 ↗</a>
     )
   }
-  <a class="link-u hover:text-ink" href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener">YouTube ↗</a>
+  {id && <a class="link-u hover:text-ink" href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener">YouTube ↗</a>}
   {/* YouTube 和国内平台优先；B 站、网易云都没有时，才给 Spotify */}
   {!bilibili && !netease && <a class="link-u hover:text-ink" href={`https://open.spotify.com/search/${q}`} target="_blank" rel="noopener">在 Spotify 搜 ↗</a>}
 </p>
@@ -72,7 +72,8 @@ const q = encodeURIComponent(title);
         f.className = cls;
         return f;
       };
-      if (!(await probe())) {
+      // 没有 YouTube 视频的（只在国内平台发行），直接走 B 站 / 网易云
+      if (!el.dataset.id || !(await probe())) {
         const bv = el.dataset.bv;
         const ne = el.dataset.ne;
         if (bv) {

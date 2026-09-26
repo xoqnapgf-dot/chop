@@ -1,42 +1,218 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '@/layouts/Base.astro';
+import LearnFigure from '@/components/LearnFigure.astro';
 import { url } from '@/lib/url';
 
 const articles = (await getCollection('learn')).sort((a, b) => a.data.order - b.data.order);
+// 粗略阅读时间：中文按每分钟 500 字（和文章页一致）
+const minutesOf = (body = '') => Math.max(1, Math.round(body.replace(/\s+/g, '').length / 500));
+const sectionsOf = (body = '') => (body.match(/^## /gm) ?? []).length;
+
+// 术语速查：定义和《快嘴 ≠ Chop》《语速怎么比》两篇保持一致
+const terms = [
+  { t: '快歌', d: '某首歌、某一段很快，但这个人整体不以快著称。', href: 'learn/what-is-chop/#三个层次' },
+  { t: '快嘴', d: '以语速、咬字清晰度为主要标签的 rapper。', href: 'learn/what-is-chop/#三个层次' },
+  { t: 'Chop', d: '长期、整首地"切"音节的风格：把一个音节的位置塞进两三四个音节。', href: 'learn/what-is-chop/#chop-除了快还有什么' },
+  { t: 'Chopper', d: '唱 chop 的人。有可靠来源这样称呼的，本站才标 Chop。', href: 'learn/chopper/' },
+  { t: 'SPS', d: 'syllables per second，每秒音节数，测语速的通用单位。BPM 是伴奏节拍，不是语速。', href: 'learn/measuring-speed/' },
+  { t: '爆发', d: '1 秒左右的峰值窗口，满 1 秒含金量最高；和整段平均不能直接比。', href: 'learn/measuring-speed/' },
+  { t: 'SPS kid', d: '只追数字、含糊吐字、靠加速的新人，和 chopper 是两个方向。', href: 'learn/what-is-chop/#最极端的一种sps-kid' },
+  { t: '加速', d: '后期把人声调快。NahDah 的规则：最快那首被判加速，这个人整体除名。', href: 'learn/measuring-speed/' },
+];
 ---
 
-<Base title="百科" description="快嘴与 chop 的入门、起源和语速口径。">
+<Base title="百科" description="快嘴与 chop 的入门、起源、语速口径和吉尼斯纪录考据。">
   <section class="container-x pt-14 md:pt-20">
     <p class="eyebrow">Learn · {articles.length} 篇</p>
     <h1 class="mt-4 text-5xl font-bold md:text-7xl">百科</h1>
-    <p class="mt-5 max-w-2xl text-lg text-ink-2">从"快嘴和 chop 有什么区别"开始，到 chop 的起源和语速口径。</p>
+    <p class="mt-5 max-w-2xl text-lg text-ink-2">从"快嘴和 chop 有什么区别"开始，到 chop 的起源、语速怎么比，再到吉尼斯纪录的来龙去脉。按顺序读，大约半小时。</p>
 
-    <ol class="mt-14 grid gap-4">
+    <!-- 阅读路线 -->
+    <ol class="route mt-10 grid gap-2 sm:grid-cols-4" aria-label="阅读路线">
       {
         articles.map((a, i) => (
-          <li>
-            <a href={url(`learn/${a.id}/`)} class="learn-row group card grid items-center gap-4 p-6 transition hover:border-line-strong md:grid-cols-[6.5rem_1fr_auto] md:gap-8 md:p-8">
-              <span class="font-display text-5xl font-semibold text-ink-3 transition group-hover:text-accent-text">{String(i + 1).padStart(2, '0')}</span>
-              <span>
-                <span class="flex flex-wrap items-center gap-2">
-                  <span class="eyebrow">{a.data.kicker}</span>
-                </span>
-                <span class="mt-2 block font-display text-2xl font-semibold md:text-3xl">{a.data.title}</span>
-                <span class="mt-2 block text-ink-2">{a.data.summary}</span>
-                {a.data.keyPoints.length > 0 && (
-                  <span class="mt-4 grid gap-1.5 text-sm text-ink-2">
-                    {a.data.keyPoints.map((k) => (
-                      <span class="flex gap-2"><span class="mt-[0.55em] size-1.5 shrink-0 rounded-full bg-accent" />{k}</span>
-                    ))}
-                  </span>
-                )}
+          <li class="route-step">
+            <a href={url(`learn/${a.id}/`)} class="group flex items-center gap-3 rounded-2xl border border-line bg-surface p-3 transition hover:border-line-strong">
+              <span class="route-n font-display">{i + 1}</span>
+              <span class="min-w-0">
+                <span class="block text-xs text-ink-3">{a.data.kicker}</span>
+                <span class="block truncate text-sm font-semibold group-hover:text-accent-text">{a.data.title.split('：')[0]}</span>
               </span>
-              <span class="hidden size-12 place-items-center rounded-full border border-line text-xl transition group-hover:border-transparent group-hover:bg-accent group-hover:text-accent-ink md:grid">→</span>
             </a>
           </li>
         ))
       }
     </ol>
+
+    <!-- 文章卡片：封面用文章里的示意图 -->
+    <ol class="mt-8 grid gap-5 lg:grid-cols-2">
+      {
+        articles.map((a, i) => (
+          <li class="learn-card card group relative flex flex-col overflow-hidden">
+            {a.data.figure && (
+              <div class="cover relative" aria-hidden="true" inert>
+                <div class="cover-inner">
+                  <LearnFigure kind={a.data.figure} />
+                </div>
+                <span class="cover-n font-display">{String(i + 1).padStart(2, '0')}</span>
+              </div>
+            )}
+            <div class="flex flex-1 flex-col p-6 md:p-7">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="chip">{a.data.kicker}</span>
+                <span class="chip font-mono">{sectionsOf(a.body)} 节</span>
+                <span class="chip font-mono">约 {minutesOf(a.body)} 分钟</span>
+              </div>
+              <h2 class="mt-4 font-display text-2xl font-semibold leading-snug md:text-[1.7rem]">
+                <a href={url(`learn/${a.id}/`)} class="card-link">{a.data.title}</a>
+              </h2>
+              <p class="mt-2 text-ink-2">{a.data.summary}</p>
+              {a.data.keyPoints.length > 0 && (
+                <ol class="mt-4 grid gap-2 text-sm text-ink-2">
+                  {a.data.keyPoints.map((k, j) => (
+                    <li class="flex gap-2.5">
+                      <span class="kp-dot">{j + 1}</span>
+                      <span>{k}</span>
+                    </li>
+                  ))}
+                </ol>
+              )}
+              <span class="mt-auto flex items-center gap-2 pt-5 text-sm font-semibold text-accent-text">
+                开始阅读
+                <span class="transition group-hover:translate-x-1">→</span>
+              </span>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+
+    <!-- 术语速查 -->
+    <section class="mt-16" aria-labelledby="glossary">
+      <p class="eyebrow">Glossary</p>
+      <h2 id="glossary" class="mt-3 text-3xl font-semibold md:text-4xl">术语速查</h2>
+      <p class="mt-3 text-ink-2">站里反复出现的几个词，一句话说清；点进去看完整解释。</p>
+      <dl class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        {
+          terms.map((x) => (
+            <a href={url(x.href)} class="term card group p-5 transition hover:border-line-strong">
+              <dt class="font-display text-xl font-semibold group-hover:text-accent-text">{x.t}</dt>
+              <dd class="mt-2 text-sm leading-relaxed text-ink-2">{x.d}</dd>
+            </a>
+          ))
+        }
+      </dl>
+    </section>
   </section>
 </Base>
+
+<style>
+  .route-n {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-weight: 700;
+  }
+  /* 路线之间的连接线（桌面端横向） */
+  @media (min-width: 640px) {
+    .route-step {
+      position: relative;
+    }
+    .route-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -0.5rem;
+      width: 0.5rem;
+      height: 2px;
+      background: var(--line-strong);
+    }
+  }
+
+  .learn-card {
+    transition:
+      border-color 0.3s ease,
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+  .learn-card:hover {
+    border-color: var(--line-strong);
+    transform: translateY(-3px);
+    box-shadow: 0 24px 48px -30px color-mix(in oklab, var(--accent) 70%, transparent);
+  }
+  /* 整张卡片可点：标题链接的点击区域铺满卡片 */
+  .card-link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+  .card-link:focus-visible {
+    outline: none;
+  }
+  .learn-card:has(.card-link:focus-visible) {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  .cover {
+    height: 210px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--line);
+    background:
+      radial-gradient(120% 90% at 100% 0%, color-mix(in oklab, var(--accent) 16%, transparent), transparent 60%),
+      var(--surface-2);
+  }
+  .cover-inner {
+    transform: scale(0.82);
+    transform-origin: top center;
+    padding: 0.75rem 0.75rem 0;
+    transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .learn-card:hover .cover-inner {
+    transform: scale(0.85) translateY(-6px);
+  }
+  .cover-inner :global(.lf) {
+    box-shadow: 0 18px 40px -28px rgb(0 0 0 / 0.5);
+  }
+  /* 底部渐隐，示意图只露上半截 */
+  .cover::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0;
+    height: 70px;
+    background: linear-gradient(transparent, var(--surface));
+  }
+  .cover-n {
+    position: absolute;
+    right: 1rem;
+    bottom: 0.25rem;
+    z-index: 1;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: color-mix(in oklab, var(--ink) 16%, transparent);
+  }
+  .kp-dot {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 0.1em;
+    border-radius: 999px;
+    background: color-mix(in oklab, var(--accent) 20%, transparent);
+    color: var(--accent-text);
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+  .term {
+    display: block;
+  }
+</style>

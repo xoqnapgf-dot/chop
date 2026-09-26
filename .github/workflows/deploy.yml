@@ -26,6 +26,8 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: npm run build
+      # 把线上当前版本的 CSS / JS 一起带上，浏览器里缓存的旧页面才不会丢样式
+      - run: node scripts/keep-live-assets.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

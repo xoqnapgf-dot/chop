@@ -3,6 +3,7 @@
   title: 《New Rap Language》
   body: Treacherous Three 录下 "New Rap Language"，Kool Moe Dee 被视为快嘴说唱最早的开创者之一。
   scene: world
+  track: new-rap-language
   sources:
     - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
 - id: 1992-twista-guinness
@@ -42,6 +43,7 @@
   title: Slow Jamz 登顶
   body: Twista、Kanye West、Jamie Foxx 合作的 "Slow Jamz" 拿下排行榜冠军，快嘴进入流行主流。
   scene: world
+  track: slow-jamz
   artist: twista
   sources:
     - { title: 'Wikipedia – Twista', url: 'https://en.wikipedia.org/wiki/Twista' }
@@ -67,6 +69,7 @@
   title: Worldwide Choppers
   body: Tech N9ne 召集美国、土耳其、丹麦的 chopper，用英语、丹麦语、土耳其语完成这首跨国合作。
   scene: world
+  track: worldwide-choppers
   artist: tech-n9ne
   sources:
     - { title: 'Wikipedia – Worldwide Choppers', url: 'https://en.wikipedia.org/wiki/Worldwide_Choppers' }
@@ -75,6 +78,7 @@
   title: Rap God
   body: Eminem 6 分 03 秒 1,560 个单词，拿下吉尼斯"单曲单词数最多"。
   scene: world
+  track: rap-god
   artist: eminem
   sources:
     - { title: 'Wikipedia – Rap God', url: 'https://en.wikipedia.org/wiki/Rap_God' }
@@ -92,6 +96,7 @@
   title: 《Tie The Noose》：DNA、Leach、Yung Revival 三人合唱
   body: DNA 在 2013 年 2 月的专辑《The Evolution》里收了这首和加拿大的 Leach、英国的 Yung Revival 的合唱，专辑介绍称 Leach 为"the chopper known as LEACH"。三人此后十几年一直有合作，2026 年 DNA 的专辑《Loosh Farm》里又有三人同曲的《Fire Breathers》。
   scene: world
+  track: tie-the-noose
   artist: leach
   sources:
     - { title: 'Bandcamp – DNA Tru Lyricist：The Evolution（2013-02-01）', url: 'https://dnatrulyricist.bandcamp.com/album/the-evolution' }
@@ -102,6 +107,7 @@
   title: Star Warz
   body: 韩国快嘴 Outsider 和美国 chopper Twista 合作发行《Star Warz》，两人你来我往地对射快段落。
   scene: world
+  track: star-warz
   artist: outsider
   sources:
     - { title: 'xportsnews – 아웃사이더, 美래퍼 트위스타와 세기의 속사포 랩 배틀（2015）', url: 'https://www.xportsnews.com/article/540238' }
@@ -110,6 +116,7 @@
   title: Speedom (WWC2)
   body: Worldwide Choppers 续作，Tech N9ne、Eminem、Krizz Kaliko 同台。
   scene: world
+  track: speedom
   artist: tech-n9ne
   sources:
     - { title: 'Strange Music', url: 'https://www.strangemusicinc.com/2015/04/tech-n9ne/breaking-tech-n9ne-confirms-speedom-wwc2-feat-krizz-kaliko-and-eminem' }
@@ -126,6 +133,7 @@
   title: Godzilla
   body: Eminem 第三段主歌 31 秒 224 个单词，约 10.65 音节/秒，刷新个人纪录。
   scene: world
+  track: godzilla
   artist: eminem
   sources:
     - { title: 'Wikipedia – Godzilla (Eminem song)', url: 'https://en.wikipedia.org/wiki/Godzilla_(Eminem_song)' }
@@ -134,6 +142,7 @@
   title: 健将mixtape
   body: 法老与小精灵在 10 月 11 日（法老生日当天）发行《健将mixtape》，同名曲成为中文快嘴的新标杆。
   scene: china
+  track: jian-jiang
   artist: pharaoh
   sources:
     - { title: '百度百科 – 健将mixtape', url: 'https://baike.baidu.com/item/%E5%81%A5%E5%B0%86mixtape/62070166' }
@@ -150,6 +159,7 @@
   title: '《Speed #1》'
   body: 'D-Evil 在 1 月 1 日发行 mixtape《王者之路》，光光的《Speed #1》把快嘴和弹舌推到极致，网友测算约 8.27 字/秒。'
   scene: china
+  track: speed-no1
   artist: guang-guang
   sources:
     - { title: '豆瓣 – 王者之路', url: 'https://m.douban.com/music/subject/3700917/' }
@@ -168,6 +178,7 @@
   title: 《饕餮》：10 秒 128 字
   body: 南征北战为电影《长城》发布推广曲《饕餮》，快嘴段由组合里的赵辰龙演唱，一共 128 个字。他后来在山东卫视《超强音浪》上现场挑战，10 秒唱完这 128 个字，约 12.8 字/秒。宣传里的"332 BPM"说的是节拍，不是语速。
   scene: china
+  track: taotie
   artist: zhao-chenlong
   sources:
     - { title: '万达 – 南征北战献唱《长城》推广曲', url: 'https://www.wanda.cn/2016/2016latest_1209/34181.html' }
@@ -187,6 +198,7 @@
   title: 《儿子娃娃》
   body: 更名后的《中国新说唱》里，那吾克热凭《儿子娃娃》拿下节目第一个"3 Pass"，最终获亚军；冠军是同样来自新疆的艾热。
   scene: china
+  track: erzi-wawa
   artist: nawukere
   sources:
     - { title: '维基百科 – 那吾克热·玉素甫江', url: 'https://zh.wikipedia.org/zh-cn/%E9%82%A3%E5%90%BE%E5%85%8B%E7%83%AD%C2%B7%E7%8E%89%E7%B4%A0%E7%94%AB%E6%B1%9F' }
@@ -235,10 +247,12 @@
 - id: 2026-chinese-choppers
   year: 2026
   title: Chinese Choppers Cypher
-  body: 中国新一批 chopper 合作的 cypher，参与者有赛文凯、ChaChe、Willbe、青藤 CyanVine、JMS 等；很快出现了大量翻唱。小安迪在直播里完整听了一遍，说这是真正的 chop，参与者"基本都很专业"，"比想象中好太多了"，速度和切分玩得比东南亚的 chop 还狠；他逐段点评，有的段落夸到"可以发给 Tech N9ne 听"，也批评了部分段落 flow 太大众、录音质量差、大家音色都偏一个方向。他建议这批人把歌往 YouTube 等海外平台发，主动去联系 Strange Music 等厂牌里的歌手合作。
+  body: 中国新一批 chopper 的大合唱，夏淳扬发起，2026 年 5 月 9 日上线网易云，全长约 16 分钟，参与者有青藤 CyanVine、JMS、WILLBE、赛文凯、ChaChe 等十几人；很快出现了大量翻唱。小安迪在直播里完整听了一遍，说这是真正的 chop，参与者"基本都很专业"，"比想象中好太多了"，速度和切分玩得比东南亚的 chop 还狠；他逐段点评，有的段落夸到"可以发给 Tech N9ne 听"，也批评了部分段落 flow 太大众、录音质量差、大家音色都偏一个方向。他建议这批人把歌往 YouTube 等海外平台发，主动去联系 Strange Music 等厂牌里的歌手合作。
   scene: china
   artist: lil-andy
+  track: chinese-choppers
   sources:
+    - { title: '网易云音乐 – Chinese Choppers（2026-05-09，夏淳扬发起）', url: 'https://music.163.com/#/song?id=3380166290' }
     - { title: 'B站 – 小安迪直播点评《Chinese Choppers》', url: 'https://www.bilibili.com/video/BV1S2j36tERu/' }
     - { title: 'B站 – Chinese Choppers Cypher 翻唱（标注原唱 Wilbdawater）', url: 'https://www.bilibili.com/video/BV1ZpLg6wEBR/' }
     - { title: 'YouTube – Chinese Choppers Cypher 赛文凯、ChaChe verse 翻唱', url: 'https://www.youtube.com/watch?v=YgBjK6V_nzI' }
@@ -268,3 +282,39 @@
     - { title: 'B站 – 石狐九和：快嘴测速素材库 - 第二十一期（2024）', url: 'https://www.bilibili.com/video/BV13M4m1d7UX/' }
     - { title: 'B站 – 喜欢chop的艾拉：如何计算SPS（2025，译自 Wedere）', url: 'https://www.bilibili.com/video/BV1y8BUB6Ezq/' }
     - { title: 'B站 – Messiar_80：【chop测速】DOWN6 语速最快的前20段（2025）', url: 'https://www.bilibili.com/video/BV1492ZBsET9/' }
+- id: 2015-united-choppers
+  year: 2015
+  title: United Choppers 系列开始
+  body: 密歇根的 J Battle 召集 SplytSecond、波兰的 kVr、Mizury、Kaoz 等人录下第一集《United Choppers》。到 2026 年这个系列出了五集，第二集的简介里给每个人标了国家和城市，从密歇根一直到格鲁吉亚第比利斯。
+  scene: world
+  artist: j-battle
+  track: united-choppers
+  sources:
+    - { title: 'YouTube – United Choppers（J Battle Vidz，2015-06-03）', url: 'https://www.youtube.com/watch?v=2hqSAz4zmsI' }
+    - { title: 'YouTube – United Choppers 2（2016-11-01）', url: 'https://www.youtube.com/watch?v=OhSs0hAsM1k' }
+- id: 2023-nahdah-top150
+  year: 2023
+  title: NahDah 2023 版《Top 150》
+  body: 英国的 NahDah Vebb 团队 2022 年 7 月重新开始整理，建了 450 人的数据库（全部在每秒 12 个音节以上），最终列出 150 人。每一段都附 1 秒左右的片段录音和逐音节拆分，加速过的直接除名。前三名是 Crucified、Sabotahe、Idylll。
+  scene: world
+  sources:
+    - { title: 'YouTube – [2023] Top 150 Fastest Rappers in the World | NahDah Vebb（2023-01-30）', url: 'https://www.youtube.com/watch?v=4SjqPAqjsWo' }
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+- id: 2023-infinite-choppers
+  year: 2023
+  title: Infinite Choppers
+  body: 阿拉巴马的 DOWN6 发起 18 人 cypher，全长约 18 分钟，Crucified、The Jackal、Kal Paseo、SPLXT 等参与。之后每一两年一集，第 2、3 集请来了 Idylll、Ruffian Rugged、Twisted Insane。
+  scene: world
+  artist: down6
+  track: infinite-choppers
+  sources:
+    - { title: 'YouTube – DOWN6 - INFINITE CHOPPERS（2023-07-28）', url: 'https://www.youtube.com/watch?v=EBLVVhPbv3Y' }
+- id: 2024-every-country
+  year: 2024
+  title: 每个国家最快的一位
+  body: NahDah 团队用两年时间，在 194 个国家和地区各找出最快的一段。最快的是美国的 Idylll（《Infinite Choppers 2》，24 ÷ 1.025 ≈ 23.41），其次是匈牙利的 Dumanoid、巴西的 eze、奥地利的 Ruffian Rugged 和澳大利亚的 The Jackal。中国一栏是 MUSHMACH（15.47）。
+  scene: world
+  artist: idylll
+  sources:
+    - { title: 'YouTube – The Fastest Rapper from Every Country in the World | 2024（NahDah Vebb，2024-08-23）', url: 'https://www.youtube.com/watch?v=UbPr2ssbrro' }
+    - { title: 'NahDah Vebb – The Fastest Rapper from Every Country（2024）曲目表', url: 'https://docs.google.com/spreadsheets/d/1q6ccbONUj_yDxAbRCYVqQK5DLmxcQ4I6wlK_zVeaz0o' }
