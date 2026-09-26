@@ -343,7 +343,7 @@
   youtube: 1WFS34VWsYY
   youtubeChannel: Don Xperto
   officialUpload: true
-  note: '他自称"世界上最快的歌"的成名作：简介说 2007 年录好，2008 年 10 月上传，靠它上了墨西哥的电视节目。NahDah 2017 版按这首把他排在第 5（约 24.1 SPS），后来因为他的歌长期加速，把他永久除名。'
+  note: '他自称"世界上最快的歌"的成名作：简介说 2007 年录好，2008 年 10 月上传，靠它上了墨西哥的电视节目。按后来的标准，它只算普通快歌。NahDah 2017 版把他排在第 5，速度来自另一首《Rapido》（约 24.1）；后来因为他的歌长期加速，把他永久除名。'
   confidence: disputed
   sources:
     - { title: 'SoundCloud – donxperto（本人简介）', url: 'https://soundcloud.com/donxperto' }
@@ -566,8 +566,7 @@
   youtube: xHbVEC3zJnI
   youtubeChannel: HoodlumRecordsOfficial
   officialUpload: true
-  note: 'NahDah 2017 版第 1 名就来自这首里 Sabotahe 的段落，当时写的是 34 ÷ 1.24 ≈ 27.4；后来五里亭亭长测是 16.7，TrollatorBR 测是 17.32。'
-  confidence: disputed
+  note: 'Sabotahe 的代表作之一，他那段是全曲最快的。NahDah 2017 版把这首列为他的代表作，但第 1 名的 27.4 算的是另一首《Kargado》。后来单独测这首：五里亭亭长 16.7，TrollatorBR 17.32。'
   sources:
     - { title: 'B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017（NahDah 2017 版搬运）', url: 'https://www.bilibili.com/video/BV11x411L79b/' }
     - { title: 'YouTube – TrollatorBR："TOP 20" Sabotahe Fastest Verses (2026)', url: 'https://www.youtube.com/watch?v=iL9P__qKZOs' }

@@ -25,7 +25,7 @@ speed:
     syllables: 19
     seconds: 1.07
     confidence: disputed
-    note: '1.070 秒 19 个音节，这是 NahDah 最新的测法，Genius 上的社区备注也写约 17.7。但 NahDah 自己 2021 版测同一首是 1.045 秒 17 个音节 ≈ 16.26；五里亭亭长 2021 取 1.49 秒 21 个音节 ≈ 14.1（窗口更长）。三份榜单都认定这是他最快的歌，只是音节数没对上，所以标"有争议"，按 NahDah 的规则以 2023 版为准。'
+    note: '1.070 秒 19 个音节，这是 NahDah 最新的测法，Genius 上的社区备注也写约 17.7。NahDah 2017 版给的也是这首，1.47 秒 26 个音节 ≈ 17.7（Genius 上的 17.7 很可能就出自这里）；但 2021 版测同一首是 1.045 秒 17 个音节 ≈ 16.26；五里亭亭长 2021 取 1.49 秒 21 个音节 ≈ 14.1（窗口更长）。三份榜单都认定这是他最快的歌，只是音节数没对上，所以标"有争议"，按 NahDah 的规则以 2023 版为准。'
     sources:
       - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
       - { title: 'YouTube – DNA - Lightspeed Chopper 3（本人频道）', url: 'https://www.youtube.com/watch?v=_glMTGtNnPI' }
