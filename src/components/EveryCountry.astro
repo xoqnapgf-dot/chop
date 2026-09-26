@@ -1,0 +1,174 @@
+---
+/**
+ * NahDah 团队 2024 年的"每个国家最快的一位"。原表 195 栏；台湾按中国大陆的通行说法并入中国一栏。
+ * 数据来自他们公开的 Google 表格（src/data/nahdah-2024-countries.json，已按速度排序）。
+ */
+import { getCollection } from 'astro:content';
+import rows from '@/data/nahdah-2024-countries.json';
+import { url } from '@/lib/url';
+
+const all = await getCollection('artists');
+const profiled = new Map(all.map((a) => [a.data.name.toLowerCase(), a.id]));
+// 表里用的名字和本站档案名不同的
+const alias: Record<string, string> = { '6fbh': 'kvr' };
+const slugOf = (name: string) => alias[name.toLowerCase()] ?? profiled.get(name.toLowerCase());
+
+const max = rows[0].sps;
+const min = rows.at(-1)!.sps;
+const sorted = rows.map((r) => r.sps).sort((a, b) => a - b);
+const median = (sorted[(sorted.length - 1) >> 1] + sorted[sorted.length >> 1]) / 2;
+const cnRank = rows.findIndex((r) => r.code === 'CN') + 1;
+const cn = rows[cnRank - 1];
+const SHOW = 20;
+const VIDEO = 'https://www.youtube.com/watch?v=UbPr2ssbrro';
+const SHEET = 'https://docs.google.com/spreadsheets/d/1q6ccbONUj_yDxAbRCYVqQK5DLmxcQ4I6wlK_zVeaz0o';
+---
+
+<div class="ec grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.35fr)]">
+  <div class="grid gap-4">
+    <div class="card p-5 text-sm leading-relaxed text-ink-2 sm:p-6">
+      <p class="eyebrow">NahDah Vebb · 2024 年 8 月 23 日</p>
+      <p class="mt-2 text-lg font-semibold text-ink">The Fastest Rapper from Every Country</p>
+      <p class="mt-3">NahDah 和 TrollatorBR、Dvagoh、Wedere、The Jackal、NFM 等十几位研究和测算者一起，在一百九十多个国家和地区<strong class="text-ink">各找出最快的一段</strong>。原表把台湾单列，共 195 栏；本站按中国大陆的通行说法把它并入中国，下面的列表共 {rows.length} 栏。The Jackal 在评论区说，这是"好几年的研究"。</p>
+      <ul class="mt-3 grid gap-1.5">
+        <li>· 看的是<strong class="text-ink">峰值</strong>：1 秒或稍长的窗口，不用 10 秒平均</li>
+        <li>· 每国只选 1 人，和《Top 150》不是一回事，名次不能互相比</li>
+        <li>· 团队自己也说不可能听遍每个国家，欢迎补充更快的</li>
+      </ul>
+      <p class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs">
+        <a href={VIDEO} target="_blank" rel="noopener nofollow" class="link-u text-ink-3 hover:text-ink">YouTube 视频 ↗</a>
+        <a href={SHEET} target="_blank" rel="noopener nofollow" class="link-u text-ink-3 hover:text-ink">完整曲目表 ↗</a>
+      </p>
+    </div>
+
+    <dl class="grid grid-cols-2 gap-3">
+      <div class="card p-4">
+        <dt class="text-xs text-ink-3">最快</dt>
+        <dd class="mt-1 font-display text-2xl font-semibold tabular-nums">{max.toFixed(2)}</dd>
+        <dd class="text-xs text-ink-2">{rows[0].nameZh} · {rows[0].rapper}</dd>
+      </div>
+      <div class="card p-4">
+        <dt class="text-xs text-ink-3">中位数</dt>
+        <dd class="mt-1 font-display text-2xl font-semibold tabular-nums">{median.toFixed(2)}</dd>
+        <dd class="text-xs text-ink-2">一半国家在这个数以下</dd>
+      </div>
+      <div class="card ec-cn p-4">
+        <dt class="text-xs text-ink-3">中国</dt>
+        <dd class="mt-1 font-display text-2xl font-semibold tabular-nums">{cn.sps.toFixed(2)}</dd>
+        <dd class="text-xs text-ink-2">{cn.rapper} · 第 {cnRank} / {rows.length}</dd>
+      </div>
+      <div class="card p-4">
+        <dt class="text-xs text-ink-3">最慢的一栏</dt>
+        <dd class="mt-1 font-display text-2xl font-semibold tabular-nums">{min.toFixed(2)}</dd>
+        <dd class="text-xs text-ink-2">{rows.at(-1)!.nameZh} · {rows.at(-1)!.rapper}</dd>
+      </div>
+    </dl>
+    <p class="text-xs leading-relaxed text-ink-3">中国一栏取最快的一段：MUSHMACH 在《ON THE BIBLE REMIX》里的 15.47；原表另列的中国台湾一栏是王力宏的现场表演片段，13.02。中文圈自己的测速（五里亭亭长、石狐九和等）口径不同，数字不直接对比。</p>
+  </div>
+
+  <div class="card p-4 sm:p-5">
+    <label class="relative block">
+      <span class="sr-only">搜国家或 rapper</span>
+      <svg viewBox="0 0 24 24" class="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-ink-3" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+      <input type="search" class="ec-q w-full rounded-xl border border-line bg-surface-2 py-2.5 pl-9 pr-3 text-sm outline-none focus:border-line-strong" placeholder={`搜国家或 rapper（共 ${rows.length} 个）`} autocomplete="off" />
+    </label>
+    <ol class="ec-list mt-3 grid gap-1" data-show={SHOW}>
+      {
+        rows.map((r, i) => {
+          const slug = slugOf(r.rapper);
+          return (
+            <li
+              class:list={['ec-row', { 'is-cn': r.code === 'CN', 'is-more': i >= SHOW }]}
+              style={`--w:${(r.sps / max) * 100}%`}
+              data-q={`${r.nameZh} ${r.country} ${r.rapper} ${r.song} ${(r.includes ?? []).map((x) => `${x.nameZh} 台湾 taiwan ${x.rapper}`).join(' ')}`.toLowerCase()}
+            >
+              <span class="ec-rank font-mono tabular-nums">{i + 1}</span>
+              <span class="min-w-0">
+                <span class="flex items-baseline gap-2">
+                  <span class="shrink-0 text-sm font-semibold">{r.nameZh}</span>
+                  {slug ? (
+                    <a href={url(`choppers/${slug}/`)} class="link-u min-w-0 truncate text-sm text-accent-text">{r.rapper} →</a>
+                  ) : (
+                    <span class="min-w-0 truncate text-sm text-ink-2">{r.rapper}</span>
+                  )}
+                </span>
+                <span class="block truncate font-mono text-[11px] text-ink-3" title={r.song}>{r.syllables}/{r.seconds.toFixed(3)} · {r.song}</span>
+                <span class="ec-bar mt-1 block h-1 rounded-full" />
+                {r.includes?.map((x) => (
+                  <span class="mt-1 block truncate text-[11px] text-ink-3">含{x.nameZh}：{x.rapper} {x.sps.toFixed(2)}（{x.syllables}/{x.seconds.toFixed(3)} · {x.song}）</span>
+                ))}
+              </span>
+              <span class="text-right font-mono text-sm tabular-nums">{r.sps.toFixed(2)}</span>
+            </li>
+          );
+        })
+      }
+    </ol>
+    <p class="ec-empty mt-3 hidden text-sm text-ink-3">没有找到。</p>
+    <button type="button" class="ec-more btn btn-ghost mt-3 w-full justify-center text-sm">展开全部 {rows.length} 个</button>
+  </div>
+</div>
+
+<style>
+  .ec-row {
+    display: grid;
+    grid-template-columns: 2.1rem minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.6rem;
+  }
+  .ec-row:hover {
+    background: var(--surface-2);
+  }
+  .ec-rank {
+    font-size: 0.75rem;
+    color: var(--ink-3);
+  }
+  .ec-bar {
+    background: linear-gradient(90deg, var(--scene-world) var(--w), color-mix(in oklab, var(--line) 70%, transparent) var(--w));
+  }
+  .ec-row.is-cn .ec-bar {
+    background: linear-gradient(90deg, var(--scene-china) var(--w), color-mix(in oklab, var(--line) 70%, transparent) var(--w));
+  }
+  .ec-row.is-cn {
+    background: color-mix(in oklab, var(--scene-china) 8%, transparent);
+  }
+  .ec-cn {
+    border-color: color-mix(in oklab, var(--scene-china) 45%, var(--line));
+  }
+  /* 默认只露前 20 个 */
+  .ec-list:not(.show-all) .ec-row.is-more {
+    display: none;
+  }
+  .ec-row.is-hidden {
+    display: none !important;
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.ec').forEach((root) => {
+    const list = root.querySelector<HTMLElement>('.ec-list')!;
+    const rowsEl = [...list.querySelectorAll<HTMLElement>('.ec-row')];
+    const more = root.querySelector<HTMLButtonElement>('.ec-more')!;
+    const empty = root.querySelector<HTMLElement>('.ec-empty')!;
+    const q = root.querySelector<HTMLInputElement>('.ec-q')!;
+    more.addEventListener('click', () => {
+      const on = list.classList.toggle('show-all');
+      more.textContent = on ? '收起' : `展开全部 ${rowsEl.length} 个`;
+    });
+    q.addEventListener('input', () => {
+      const v = q.value.trim().toLowerCase();
+      let n = 0;
+      rowsEl.forEach((r) => {
+        const hit = !v || (r.dataset.q ?? '').includes(v);
+        r.classList.toggle('is-hidden', !hit);
+        if (hit) n++;
+      });
+      // 搜索时显示全部匹配结果
+      list.classList.toggle('show-all', !!v || more.textContent === '收起');
+      more.hidden = !!v;
+      empty.classList.toggle('hidden', n > 0);
+    });
+  });
+</script>

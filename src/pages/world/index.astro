@@ -8,6 +8,7 @@ import SectionHeading from '@/components/SectionHeading.astro';
 import Globe from '@/components/Globe.astro';
 import Confidence from '@/components/Confidence.astro';
 import LiteYouTube from '@/components/LiteYouTube.astro';
+import EveryCountry from '@/components/EveryCountry.astro';
 import { url } from '@/lib/url';
 import nahdah from '@/data/nahdah-2023.json';
 
@@ -190,27 +191,32 @@ const ND = {
     )
   }
 
+  <section id="every-country" class="container-x scroll-mt-24 pt-28">
+    <SectionHeading index="03" eyebrow="Every country · 2024" title="每个国家最快的一位" />
+    <EveryCountry />
+  </section>
+
   <section class="container-x pt-28">
-    <SectionHeading index="03" eyebrow="People" title="世界人物" href="choppers/?scene=world" linkLabel="在人物库里筛选" />
+    <SectionHeading index="04" eyebrow="People" title="世界人物" href="choppers/?scene=world" linkLabel="在人物库里筛选" />
     <div class="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
       {artists.map((a) => <ArtistCard artist={a} />)}
     </div>
   </section>
 
   <section class="container-x pt-28">
-    <SectionHeading index="04" eyebrow="Speed" title="世界语速数据" href="learn/measuring-speed/" linkLabel="数据怎么测" />
+    <SectionHeading index="05" eyebrow="Speed" title="世界语速数据" href="learn/measuring-speed/" linkLabel="数据怎么测" />
     <div class="card p-5 sm:p-8"><SpeedChart scene="world" /></div>
   </section>
 
   <section class="container-x pt-28">
-    <SectionHeading index="05" eyebrow="Tracks" title="世界曲目" href="tracks/?scene=world" linkLabel="曲目库" />
+    <SectionHeading index="06" eyebrow="Tracks" title="世界曲目" href="tracks/?scene=world" linkLabel="曲目库" />
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {tracks.map((t) => <div class="flex min-w-0"><TrackCard track={t} /></div>)}
     </div>
   </section>
 
   <section class="container-x pt-28">
-    <SectionHeading index="06" eyebrow="History" title="世界 Chop 时间线" href="timeline/?scene=world" linkLabel="完整时间线" />
+    <SectionHeading index="07" eyebrow="History" title="世界 Chop 时间线" href="timeline/?scene=world" linkLabel="完整时间线" />
     <ol class="grid gap-3">
       {
         events.map((e) => (
