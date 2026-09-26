@@ -35,9 +35,29 @@
   name: 菲律宾
   en: Philippines
   geo: [12.9, 121.8]
-  summary: Gloc-9 以"快速流动的 chop 唱腔"成为菲律宾最成功的说唱歌手之一。
+  summary: Gloc-9 以"快速流动的 chop 唱腔"成为菲律宾最成功的说唱歌手之一；地下 chop 圈的 Sabotahe 是 NahDah 2023 版第 2 名，Aktibar 的 Kill（Paslangin）系列也来自这里。
+  mentions: [Aktibar]
   sources:
     - { title: 'Wikipedia – Gloc-9', url: 'https://en.wikipedia.org/wiki/Gloc-9' }
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+- id: mx
+  name: 墨西哥
+  en: Mexico
+  geo: [23.6, -102.5]
+  summary: 西语快嘴的一个中心。Don Xperto 早年以"世界最快"自我宣传、上过电视，后来因长期加速被 NahDah 永久除名；Big Metra 也曾冲击吉尼斯"最快说唱"纪录。
+  mentions: [Big Metra, Roylets]
+  sources:
+    - { title: 'NahDah Vebb – 2023 榜除名说明（Don Xperto 一节）', url: 'https://docs.google.com/document/d/1DfcPmT5YCWYwDRP-uyFMEthi9n7ctGRsK2C3QxiFJrA' }
+    - { title: 'El Universal – Big Metra va por un récord Guinness', url: 'https://archivo.eluniversal.com.mx/espectaculos/66417.html' }
+    - { title: 'Genius – Don Xperto 艺人页（称 Roylets 为墨西哥第二快）', url: 'https://genius.com/artists/Don-xperto' }
+- id: ge
+  name: 格鲁吉亚
+  en: Georgia
+  geo: [42.3, 43.4]
+  summary: Interchopper 来自这里，是 Undaground Choppers 的常客，一度被认为能稳定超过 20 SPS；后来多数高速作品被判定加速，只有少数几首被 SPS 社区认可。
+  sources:
+    - { title: 'Genius – Interchopper 艺人页', url: 'https://genius.com/artists/Interchopper' }
+    - { title: 'SPS and Chopper Rap Wiki – Interchopper', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Interchopper' }
 - id: dk
   name: 丹麦
   en: Denmark

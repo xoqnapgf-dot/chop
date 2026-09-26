@@ -155,13 +155,14 @@
     - { title: '豆瓣 – A-JING：幼稚园杀手 DISS 2011 MIXTAPE（简介，2011-10-05）', url: 'https://site.douban.com/widget/notes/4223495/note/176086511/' }
 - id: 2016-taotie
   year: 2016
-  title: "“最快华语歌”之争"
-  body: 南征北战为电影《长城》发布《饕餮》，宣传为"332 BPM 的最快华语歌"。但伴奏是 83 BPM，332 只是 83 × 4，这个说法口径不清。快嘴段落由组合里的赵辰龙演唱。
+  title: 《饕餮》：10 秒 128 字
+  body: 南征北战为电影《长城》发布推广曲《饕餮》，快嘴段由组合里的赵辰龙演唱，一共 128 个字。他后来在山东卫视《超强音浪》上现场挑战，10 秒唱完这 128 个字，约 12.8 字/秒。宣传里的"332 BPM"说的是节拍，不是语速。
   scene: china
   artist: zhao-chenlong
-  confidence: disputed
   sources:
     - { title: '万达 – 南征北战献唱《长城》推广曲', url: 'https://www.wanda.cn/2016/2016latest_1209/34181.html' }
+    - { title: 'B站 – 山东卫视《超强音浪》南征北战醉人（赵辰龙）10 秒 128 字《饕餮》快嘴', url: 'https://www.bilibili.com/video/BV1vW411r7nh/' }
+    - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021，《饕餮》现场版 34 字 / 2.58 秒）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
 - id: 2017-rap-of-china
   year: 2017
   title: 《中国有嘻哈》

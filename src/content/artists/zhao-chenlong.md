@@ -8,11 +8,38 @@ city: 桂林
 region: 华南
 activeSince: 2012
 style: fast
-styleNote: 以快嘴和多变的声线著称，电视舞台和直播里都有现场演示。本站还没找到可靠的测速数据，所以暂不标具体语速。
+styleNote: 以快嘴和多变的声线著称，电视舞台和直播里都有现场演示。《饕餮》快嘴段 128 字，他在山东卫视现场 10 秒唱完，约 12.8 字/秒。
 nearChop: 快段落里有明显的切分和变速，可以算半个 chop；但他整体的风格更偏快嘴和声线变化，所以本站主标"快嘴"。
 geo: [25.27, 110.29]
 tags: [南征北战, 制作人, 快嘴]
 related: [kindergarten-killer]
+speed:
+  - value: 12.8
+    unit: char/s
+    label: 《饕餮》快嘴段：山东卫视《超强音浪》现场 10 秒 128 字
+    kind: measured
+    by: '山东卫视《超强音浪》'
+    window: short
+    syllables: 128
+    seconds: 10
+    confidence: verified
+    note: '节目现场挑战 10 秒唱完《饕餮》从"贪得无厌之人"到"保守这片地带"的整段快嘴，屏幕上逐字列出了这 128 个字，挑战成功。网易云歌词里这一段也正好是 128 个字。'
+    sources:
+      - { title: 'B站 – 山东卫视《超强音浪》南征北战醉人（赵辰龙）10 秒 128 字《饕餮》快嘴', url: 'https://www.bilibili.com/video/BV1vW411r7nh/' }
+      - { title: '网易云音乐 – 南征北战《饕餮》歌词', url: 'https://music.163.com/#/song?id=445702397' }
+  - value: 13.18
+    unit: char/s
+    label: 《饕餮》现场版最快一段
+    kind: measured
+    by: '五里亭亭长 2021'
+    window: short
+    syllables: 34
+    seconds: 2.58
+    confidence: verified
+    note: '五里亭亭长把他排在中文第 3。2.58 秒 34 个字，和电视上 10 秒 128 字（平均 12.8）对得上：最快的几秒比整段平均略快一点。'
+    sources:
+      - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
+      - { title: 'B站 – 山东卫视《超强音浪》南征北战醉人（赵辰龙）10 秒 128 字《饕餮》快嘴', url: 'https://www.bilibili.com/video/BV1vW411r7nh/' }
 sources:
   - { title: '维基百科 – 南征北战NZBZ', url: 'https://zh.wikipedia.org/zh-hans/%E5%8D%97%E5%BE%81%E5%8C%97%E6%88%98NZBZ' }
   - { title: '新浪 – 幼稚园杀手身份曝光！赵辰龙公开回应（2022-04-01）', url: 'https://k.sina.cn/article_1163858357_v455f11b5019012ps5.html' }
