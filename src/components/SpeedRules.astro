@@ -259,10 +259,19 @@ const faq = [
             </div>
           )}
         </div>
-        <details class="mt-auto pt-4">
-          <summary class="flex cursor-pointer list-none items-center gap-1 text-xs text-ink-3 hover:text-ink">细节 <span class="chev">⌄</span></summary>
-          <p class="mt-2 text-sm leading-relaxed text-ink-2">{f.a}</p>
-        </details>
+        {/* 细节用弹窗展开，不撑高同一行的其他卡片 */}
+        <button type="button" class="qa-more mt-auto self-start pt-4 text-xs text-ink-3 hover:text-ink" data-dialog={`qa-${i}`}>看细节 →</button>
+        <dialog id={`qa-${i}`} class="qa-dialog" aria-labelledby={`qa-${i}-t`}>
+          <div class="p-6 sm:p-8">
+            <div class="flex items-start justify-between gap-4">
+              <span class="qn">Q{i + 1}</span>
+              <button type="button" class="qa-close grid size-8 shrink-0 place-items-center rounded-full border border-line text-ink-3 hover:text-ink" aria-label="关闭">✕</button>
+            </div>
+            <h4 id={`qa-${i}-t`} class="mt-1 text-xl font-semibold leading-snug text-ink">{f.q}</h4>
+            <p class="mt-2 font-medium text-accent-text">{f.short}</p>
+            <p class="mt-4 leading-relaxed text-ink-2">{f.a}</p>
+          </div>
+        </dialog>
       </article>
     ))}
   </div>
@@ -355,6 +364,22 @@ const faq = [
   .qa {
     border-top: 3px solid color-mix(in oklab, var(--accent) 55%, transparent);
   }
+  .qa-dialog {
+    width: min(36rem, calc(100vw - 2rem));
+    max-height: calc(100dvh - 3rem);
+    margin: auto;
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--accent);
+    border-radius: 22px;
+    background: var(--surface);
+    color: var(--ink);
+    padding: 0;
+    box-shadow: 0 30px 80px -20px rgb(0 0 0 / 0.45);
+  }
+  .qa-dialog::backdrop {
+    background: rgb(0 0 0 / 0.45);
+    backdrop-filter: blur(3px);
+  }
   .qn {
     font-family: var(--font-display);
     font-size: 0.75rem;
@@ -416,7 +441,8 @@ const faq = [
     line-height: 1.2;
   }
   .ruler .mark.hard span {
-    transform: translateX(-85%);
+    transform: translateX(-100%);
+    text-align: right;
     color: var(--ink);
   }
   .cut {
@@ -451,3 +477,16 @@ const faq = [
     display: none;
   }
 </style>
+
+<script>
+  // 问答细节弹窗：点按钮打开，点关闭、按 Esc 或点弹窗外面关闭
+  document.querySelectorAll<HTMLButtonElement>('.qa-more').forEach((btn) => {
+    const dlg = document.getElementById(btn.dataset.dialog ?? '') as HTMLDialogElement | null;
+    if (!dlg) return;
+    btn.addEventListener('click', () => dlg.showModal());
+    dlg.querySelector('.qa-close')?.addEventListener('click', () => dlg.close());
+    dlg.addEventListener('click', (e) => {
+      if (e.target === dlg) dlg.close();
+    });
+  });
+</script>

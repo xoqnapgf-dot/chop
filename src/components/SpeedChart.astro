@@ -199,7 +199,8 @@ let i = 0;
     background: var(--c);
     transform-origin: left;
     animation: grow 1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
-    animation-delay: calc(var(--i) * 50ms);
+    /* 行多时只错开前十几条，后面的不再越等越久 */
+    animation-delay: calc(min(var(--i), 12) * 50ms);
   }
   /* 非"已证实"的数据加斜线纹理，色弱和打印时也能区分 */
   .bar:not([data-conf='verified']) {
