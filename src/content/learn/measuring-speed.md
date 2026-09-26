@@ -76,9 +76,9 @@ NahDah Vebb 在 YouTube 上做"最快说唱歌手 Top 150"榜单，属于美洲�
 
 | 说法 | 早期 | 后来 |
 |---|---|---|
-| Crucified 最快 | 37 ÷ 1.46 ≈ 25.3（NahDah 2017 版第 3，经 B 站搬运流传）；后来《Power Up》又被算成 28.9 | 《Onion Chopper》22 / 1.043 ≈ 21.09（NahDah 2023 版） |
-| Sabotahe | 《Korona》34 ÷ 1.24 ≈ 27.4（NahDah 2017 版第 1） | 《Paslangin 5》22 / 1.047 ≈ 21.01（NahDah 2023 版） |
-| The Jackal | 《Multis》27 ÷ 1.02 ≈ 26.5（NahDah 2017 版第 2） | 《Charlie Sheen Remix》16 ÷ 1.048 ≈ 15.27（NahDah 2023 版第 29） |
+| Crucified 最快 | 《Undaground Choppers》37 ÷ 1.46 ≈ 25.3（NahDah 2017 版第 3）；B 站搬运者在简介里补充《Power Up》达到 28.3，后来又流传出 28.9 | 《Onion Chopper》22 / 1.043 ≈ 21.09（NahDah 2023 版） |
+| Sabotahe | 《Kargado》34 ÷ 1.24 ≈ 27.4（NahDah 2017 版第 1） | 《Paslangin 5》22 / 1.047 ≈ 21.01（NahDah 2023 版） |
+| The Jackal | 《Discord Choppers》27 ÷ 1.02 ≈ 26.5（NahDah 2017 版第 2） | 《Charlie Sheen Remix》16 ÷ 1.048 ≈ 15.27（NahDah 2023 版第 29） |
 
 原因主要有这几个：
 

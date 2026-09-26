@@ -83,7 +83,7 @@ speed:
     by: 'SPS wiki'
     window: burst
     confidence: debunked
-    note: 2017 年一位计算者的误算，后来被 SPS 社区推翻，但至今还有人引用。SPS wiki 说这是 NahDah 2017 年的误算；B 站搬运的 NahDah 2017 版（截至 2017 年 9 月）里他排第 3，写的是 1.46 秒 37 个音节 ≈ 25.3，并没有收《Power Up》。B 站 UP 主五里亭亭长 2021 年也专门辟谣过 28.9。
+    note: 2017 年一位计算者的误算，后来被 SPS 社区推翻，但至今还有人引用。SPS wiki 说这是 NahDah 2017 年的误算；B 站搬运的 NahDah 2017 版（截至 2017 年 9 月）里他排第 3，写的是《Undaground Choppers》1.46 秒 37 个音节 ≈ 25.3，并没有收《Power Up》；搬运者 Fatality丶九头龙在视频简介里补充说，他 10 月的新歌《Power Up》达到了 28.3，打破了 Sabotahe 的 27.4。B 站 UP 主五里亭亭长 2021 年也专门辟谣过 28.9。
     sources:
       - { title: 'SPS and Chopper Rap Wiki – Crucified', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Crucified' }
       - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021，置顶评论辟谣 28.9）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }

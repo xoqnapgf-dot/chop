@@ -29,14 +29,14 @@ speed:
       - { title: 'YouTube – Kill 5 - Aktibar x Sabotahe x Global Choppers（Aktibar 官方，2020-04-02）', url: 'https://www.youtube.com/watch?v=A-5WcCb6PjU' }
   - value: 27.4
     unit: syl/s
-    label: 《Korona》爆发 · NahDah 2017 版第 1 名
+    label: 《Kargado》爆发 · NahDah 2017 版第 1 名
     kind: measured
     by: 'NahDah 2017'
     window: burst
     syllables: 34
     seconds: 1.24
     confidence: debunked
-    note: 'NahDah 2017 版的第 1 名，这份榜后来被 NahDah 自己标成 outdated。后来两家单独测《Korona》：五里亭亭长 2021 是 0.9 秒 15 个音节 ≈ 16.7，TrollatorBR 2026 是 17.32；按后来的方法，他最快的一段也只到 21 左右。'
+    note: 'NahDah 2017 版的第 1 名，这份榜后来被 NahDah 自己标成 outdated。榜上列的代表作是《Korona》和《Mixverse 4》，这个速度来自他最快的《Kargado》。TrollatorBR 2026 年测《Kargado》只有 17.08；按后来的方法，他最快的一段也只到 21 左右。'
     sources:
       - { title: 'B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017（NahDah 2017 版搬运）', url: 'https://www.bilibili.com/video/BV11x411L79b/' }
       - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
@@ -63,7 +63,7 @@ Sabotahe 是菲律宾的 chopper，用他加禄语唱。他在 Genius 上的别�
 
 | 年份 | 作品 | 说明 |
 |---|---|---|
-| 2016 年 5 月 | 《Kargado》（与 Nicolas、Homeryo） | 早期代表作，视频剪辑署名就是他本人 |
+| 2016 年 5 月 | 《Kargado》（与 Nicolas、Homeryo） | 早期代表作，视频剪辑署名就是他本人；NahDah 2017 版给他算速度用的就是这首 |
 | 2016 年 11 月 | 《Korona》加长版（Sparo 牵头） | 收在 HoodlumRecords 的专辑 *Anak ng Rap* 里，他那段是全曲最快的 |
 | 2018 年 11 月 | 《Kill 4》 | Aktibar 的 Kill 系列，他加禄语叫 **Paslangin**（"杀"） |
 | 2020 年 4 月 | 《Kill 5》（Paslangin 5） | 他最快的一段，NahDah 2023 版第 2 名 |
@@ -78,12 +78,12 @@ Kill 系列由 Aktibar 发起，Iloilo Choppers、Southsyd Souljaz 和 Sabotahe 
 
 | 版本 | 歌 | 算式 | 名次 |
 |---|---|---|---|
-| NahDah 2017 | 《Korona》 | 34 ÷ 1.24 ≈ 27.4 | 第 1 |
+| NahDah 2017 | 《Kargado》 | 34 ÷ 1.24 ≈ 27.4 | 第 1 |
 | NahDah 2021 | 《Kill 5》 | 20 ÷ 1.024 ≈ 19.53 | 第 3 |
 | NahDah 2023 | 《Kill 5》 | 22 ÷ 1.047 ≈ 21.01 | 第 2 |
 | TrollatorBR 2026 | 《Kill 5》 | 21 ÷ 1.014 ≈ 20.71 | 他个人最快 20 段的第 1 |
 
-2017 年的 27.4 已经站不住了：五里亭亭长 2021 年测《Korona》只有 0.9 秒 15 个音节（约 16.7），TrollatorBR 测的是 17.32。但《Kill 5》这一段，NahDah 和 TrollatorBR 各自测出来都在 21 左右，是本站为数不多有两家独立测算、结果吻合的 20+ 数字。TrollatorBR 列出的他个人最快 20 段 verse 里，只有《Kill 5》过了 20，其余 19 段都在 17 到 19.2 之间，同样很稳。评论区有人说他是"少数到了 20 SPS 附近还听起来不错的人"。
+2017 年的 27.4 已经站不住了：那个数字来自《Kargado》，TrollatorBR 2026 年测这首只有 17.08；他另一首代表作《Korona》，五里亭亭长 2021 年测是 0.9 秒 15 个音节（约 16.7），TrollatorBR 测是 17.32。但《Kill 5》这一段，NahDah 和 TrollatorBR 各自测出来都在 21 左右，是本站为数不多有两家独立测算、结果吻合的 20+ 数字。TrollatorBR 列出的他个人最快 20 段 verse 里，只有《Kill 5》过了 20，其余 19 段都在 17 到 19.2 之间，同样很稳。评论区有人说他是"少数到了 20 SPS 附近还听起来不错的人"。
 
 ## 和中国圈的关系
 

@@ -16,14 +16,14 @@ related: [crucified, interchopper, sabotahe]
 speed:
   - value: 24.1
     unit: syl/s
-    label: 《Uno》爆发 · NahDah 2017 版第 5 名
+    label: 《Rapido》爆发 · NahDah 2017 版第 5 名
     kind: measured
     by: 'NahDah 2017'
     window: burst
     syllables: 33
     seconds: 1.37
     confidence: debunked
-    note: 'NahDah 2017 版把他排在第 5（前面是 Sabotahe、The Jackal、Crucified、Interchopper）。NahDah 后来说他的歌长期加速，被指出、本人也承认之后仍然继续，所以不再收进任何一版榜单；2021、2023 版都没有他。'
+    note: 'NahDah 2017 版把他排在第 5（前面是 Sabotahe、The Jackal、Crucified、Interchopper）。榜上列的代表作是《Uno》和《Máxima Velocidad》，这个速度来自他最快的《Rapido》。NahDah 后来说他的歌长期加速，被指出、本人也承认之后仍然继续，所以不再收进任何一版榜单；2021、2023 版都没有他。'
     sources:
       - { title: 'B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017（NahDah 2017 版搬运）', url: 'https://www.bilibili.com/video/BV11x411L79b/' }
       - { title: 'NahDah Vebb – 2023 榜除名说明（Don Xperto 一节）', url: 'https://docs.google.com/document/d/1DfcPmT5YCWYwDRP-uyFMEthi9n7ctGRsK2C3QxiFJrA' }
@@ -71,7 +71,7 @@ Don Xperto 本名 Emmanuel Garcia Niño，来自墨西哥哈利斯科州的 Autl
 
 ## 《Uno》和"世界最快"
 
-他的成名作是《**Uno**》：简介里说 2007 年录好，YouTube 上的版本是 2008 年 10 月 21 日上传的，标题就叫"世界上最快的歌"。他自称第一段主歌"每分钟超过 1,012 个音节"，靠这首歌上了 Televisa、Telehit、TV Azteca 等电视台的节目；他自己的频道里至今留着 2011 年上 Televisa 周六综艺《Sabadazo》的片段。2013 年他又重录了一版《Uno》。
+他的成名作是《**Uno**》：简介里说 2007 年录好，YouTube 上的版本是 2008 年 10 月 21 日上传的，标题就叫"世界上最快的歌"。他自称第一段主歌"每分钟超过 1,012 个音节"，靠这首歌上了 Televisa、Telehit、TV Azteca 等电视台的节目；他自己的频道里至今留着 2011 年上 Televisa 周六综艺《Sabadazo》的片段。2013 年他又重录了一版《Uno》。不过按后来的标准，《Uno》只算普通快歌，真正被拿去比速度的是他后来那些标着"26.7""30""35"的视频。
 
 ## 越报越高的数字
 
@@ -88,7 +88,7 @@ Don Xperto 本名 Emmanuel Garcia Niño，来自墨西哥哈利斯科州的 Autl
 
 ## 被 NahDah 永久除名
 
-NahDah 2017 年的《Top 150 Fastest Rappers》把他排在**第 5 名**（《Uno》，1.37 秒 33 个音节，约 24.1）。到了 2023 版，NahDah 在除名说明里专门写了他：
+NahDah 2017 年的《Top 150 Fastest Rappers》把他排在**第 5 名**：1.37 秒 33 个音节，约 24.1，来自他最快的《Rapido》（榜上列的代表作是《Uno》和《Máxima Velocidad》）。到了 2023 版，NahDah 在除名说明里专门写了他：
 
 > "这是一个众所周知的除名。Xperto 不会出现在这份榜单上，以后我的任何榜单也不会有他，因为他的歌长期加速。即使被指出、他本人也承认了，他还是没有停下来。"
 

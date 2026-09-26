@@ -10,8 +10,7 @@ style: chopper
 styleNote: Undaground Choppers 4–8 的常客，频道简介自称"[已退役] 的东欧 chopper"。能认的只有 Syllabic War、UC4、UC7 这几首，其余最快的 verse 被判定加速，本站仍标 Chopper，但数字分开看。
 tags: [格鲁吉亚, 已退役, Undaground Choppers, 加速争议]
 youtube: { channelId: UCmYuEGJ6CKaPVERYTsrHggQ, handle: '@ic8790', kind: official }
-# 频道头像是卡通 logo、横幅是风景图；人物照取自 2017 年牛津现场视频的截图（舞台屏幕显示 Oxford Brookes University）
-portrait: { video: ZSmeH9AD6r8, focusX: 0.5 }
+# 头像用他本人频道的卡通头像（横幅是风景图，不用）
 useBanner: false
 related: [crucified, dna-tru-lyricist]
 speed:
