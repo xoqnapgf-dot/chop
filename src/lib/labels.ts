@@ -13,6 +13,7 @@ export const COUNTRY: Record<string, { name: string }> = {
   BR: { name: '巴西' },
   HU: { name: '匈牙利' },
   MY: { name: '马来西亚' },
+  PL: { name: '波兰' },
 };
 
 /**

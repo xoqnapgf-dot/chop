@@ -117,6 +117,14 @@
   sources:
     - { title: 'YouTube – Rap Machines（Sri Rascol 官方频道）', url: 'https://www.youtube.com/@srirascolofficial' }
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+- id: pl
+  name: 波兰
+  en: Poland
+  geo: [52.0, 19.4]
+  summary: kVr（现在叫 6feetbelowhell）是 2015–2017 年地下 chopper cypher 的常客，United Choppers 1、2 和 Illest Choppers 2 都有他；NahDah 2021 版第 5。
+  sources:
+    - { title: 'YouTube – United Choppers 2（2016，简介写明"kVr-POLAND"）', url: 'https://www.youtube.com/watch?v=OhSs0hAsM1k' }
+    - { title: 'NahDah Vebb – 2021 版榜单曲目文档', url: 'https://docs.google.com/document/d/1UpOgX1BNIrPTK4F1JwibltfDSiVjJMLcQFbbmueJvUs' }
 - id: dk
   name: 丹麦
   en: Denmark
