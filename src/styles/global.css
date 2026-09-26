@@ -273,12 +273,17 @@
     color: var(--ink-2);
     font-size: 0.95rem;
   }
+  .prose-chop .table-wrap {
+    overflow-x: auto;
+  }
   .prose-chop table {
     width: 100%;
     border-collapse: collapse;
     font-size: 0.9rem;
-    display: block;
-    overflow-x: auto;
+  }
+  /* 四列以上的表在手机上挤成窄条：给个最小宽度，放不下就在外框里横向滑 */
+  .prose-chop table:has(th:nth-child(4)) {
+    min-width: 36rem;
   }
   .prose-chop th,
   .prose-chop td {

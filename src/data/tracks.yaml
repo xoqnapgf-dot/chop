@@ -1223,7 +1223,7 @@
     - { title: 'YouTube – SHOWDOWN _ FASTEST RAPPER, AlepHunter raps（2019-09-19）', url: 'https://www.youtube.com/watch?v=CKSaNMTXca4' }
 - id: chinese-choppers
   title: Chinese Choppers
-  artists: [lil-andy]
+  artists: [xia-chunyang, cyanvine]
   credit: 夏淳扬 发起，ft. 青藤 CyanVine、JMS、WILLBE、YKY、zenk、陆字 Lil-3ard、小旭 8ight 2wo 9ine、金鼠儿、芒斯特、ChaChe、赛文凯、CHD、Lil king、Tricky阎 等
   scene: china
   year: 2026
@@ -1235,3 +1235,66 @@
     - { title: 'B站 – 夏淳扬：Chinese choppers cypher coming soon！5.10（2026-04-30 预告）', url: 'https://www.bilibili.com/video/BV1mw9YBzE5o/' }
     - { title: 'B站 – 夏淳扬上传：小安迪直播 re《Chinese Choppers》（2026-06-16）', url: 'https://www.bilibili.com/video/BV1S2j36tERu/' }
     - { title: 'YouTube – 喜欢chop的艾拉：Chinese Choppers Cypher 赛文凯、ChaChe verse 翻唱', url: 'https://www.youtube.com/watch?v=YgBjK6V_nzI' }
+- id: superluminal-choppers-kastelaro
+  title: Superluminal Choppers (Kastelaro Part)
+  artists: [kastelaro]
+  credit: Kastelaro
+  scene: china
+  year: 2021
+  netease: 1836364021
+  officialUpload: true
+  note: 'SLC（Superluminal Choppers）同名 cypher 里 Kastelaro 的段落。cypher 一直没录成，他在 2021 年 4 月 4 日把自己这段单独发了出来。石狐九和的《中文快嘴 top10（新编）》把其中一段排在第 1：2.04 秒 31 个字，约 15.20。'
+  sources:
+    - { title: '网易云音乐 – Superluminal Choppers (Kastelaro Part)（2021-04-04）', url: 'https://music.163.com/song?id=1836364021' }
+    - { title: 'B站 – 石狐九和：中文快嘴top10（新编）（2021-05-19）', url: 'https://www.bilibili.com/video/BV1bh411v7d7/' }
+- id: bilibili-choppers
+  title: Bilibili Choppers
+  artists: [cyanvine, mushmach]
+  credit: 小青藤呐（CyanVine）、GumBrass、Stlicmc、Lil蓝莓、AKA Triple-W、Y Herry、iSwear、Nero·Wander、蘑菇（MUSHMACH）；策划 五里亭亭长、GumBrass
+  scene: china
+  year: 2024
+  bilibili: BV1ym421V7oo
+  youtube: zEv3_o16Nuo
+  youtubeChannel: GumBrass 666 Underground Lab TV
+  officialUpload: true
+  note: 'B 站九位 chopper 的 cypher，2024 年 6 月 23 日发布，约 7 分钟。五里亭亭长负责工程，和 iSwear 一起剪辑，HMBb__ 混音，伴奏来自 DropoutBeats。'
+  sources:
+    - { title: 'B站 – 五里亭亭长：Bilibili Choppers（2024-06-23）', url: 'https://www.bilibili.com/video/BV1ym421V7oo/' }
+    - { title: 'YouTube – GumBrass - Bilibili Choppers（简介列出全部参与者和分工）', url: 'https://www.youtube.com/watch?v=zEv3_o16Nuo' }
+- id: si-hai
+  title: 死骸
+  artists: [xia-chunyang, cyanvine]
+  credit: 夏淳扬、青藤 CyanVine
+  scene: china
+  year: 2025
+  netease: 2752225152
+  officialUpload: true
+  note: '青藤的第一首单曲，2025 年 10 月 2 日上线网易云。青藤把自己那段剪成《中国最快的一段说唱？》发在 B 站，播放过万，置顶评论里解释了"没有使用任何弹舌""这是 chop"。'
+  sources:
+    - { title: '网易云音乐 – 死骸（2025-10-02）', url: 'https://music.163.com/song?id=2752225152' }
+    - { title: 'B站 – 青藤cyanvine：中国最快的一段说唱？（2025-10-04）', url: 'https://www.bilibili.com/video/BV16FxszSE7s/' }
+- id: bilibili-choppers-2
+  title: Bilibili Choppers 2
+  artists: [xia-chunyang, cyanvine]
+  credit: 夏淳扬、Zack-Official、青藤 CyanVine、jms、notboy、74l'votmzreg、ZeroNight 无夜、frk05
+  scene: china
+  year: 2026
+  netease: 3440568361
+  officialUpload: true
+  note: '2024 年《Bilibili Choppers》的续作，2026 年 9 月 23 日上线网易云，约 4 分 44 秒，简介说"有很多国际友人参加"。'
+  sources:
+    - { title: '网易云音乐 – Bilibili Choppers 2（2026-09-23）', url: 'https://music.163.com/song?id=3440568361' }
+- id: undaspeed-solo-1
+  title: Undaspeed Solo1
+  artists: [mushmach]
+  credit: MUSHMACH（Prod. Freeti Beats）
+  scene: china
+  year: 2023
+  youtube: 6OmIbrnQkEE
+  youtubeChannel: GumBrass 666 Underground Lab TV
+  bilibili: BV1CpSBYLEUZ
+  officialUpload: true
+  note: 'MUSHMACH 的 Undaspeed 系列第一首，2023 年 8 月 2 日发布。GumBrass 的频道在简介里介绍他是来自吉林的 boombap rapper，正在努力成为新一代中国 chopper。'
+  sources:
+    - { title: 'YouTube – MUSHMACH - Undaspeed Solo1（2023-08-02）', url: 'https://www.youtube.com/watch?v=6OmIbrnQkEE' }
+    - { title: 'B站 – GumBrass恐核速说频道：MUSHMACH - Undaspeed Solo1', url: 'https://www.bilibili.com/video/BV1CpSBYLEUZ/' }
