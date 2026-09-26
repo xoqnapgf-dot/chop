@@ -322,6 +322,42 @@
       "hasBanner": true,
       "color": "#080808",
       "fetchedAt": "2026-09-26"
+    },
+    "j-battle": {
+      "channelUrl": "https://www.youtube.com/channel/UCMHHVHeJXedYEwfHm-TFf2w",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/oeJjdvGqcVZXMtabdEHaL4l_Swu1RE5b_BOJT8oEb4JFfEGEI9mx21srP_gijURCmReI6GnoWz4=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/CNOWUcccZLIwfYowIF6RnsonUH1jeLy9Om4L3K05ND0FQ1PjNet27wEGNoEx1pLEBiv5rg4oZA=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-26"
+    },
+    "killhollow": {
+      "channelUrl": "https://www.youtube.com/channel/UCcKdQNI-TBjjO5Lqta26PsA",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/K_bESxYnM4lqstR-RNZTP6jKD-K9tJrsrkZNFa2s23lRubEcP1DNuZIJqAwAv1O4lJI0w0wlDw=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/itSZjCwdgMjLRJA6xXU1LLXPC9BX7ydE7pwWxaMN5L5rwnZanCfz4s-AZTr1vFA8GWCvtX-zgg=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#f8f8f8",
+      "fetchedAt": "2026-09-26"
+    },
+    "kvr": {
+      "channelUrl": "https://www.youtube.com/channel/UCnh5USdzh_SS85ARpyJnj9g",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/-VEBSAo9UriVqxPuhvXE5aFSUPzcwcp4WfP6xiM2h_fIxdtNQ3xuHSEIo1YxSzesBCpI_y9O7Rc=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/14aduxKFu5rhx8VVuLcaTuhS9g6n-5RD2PzRXMMFYjLRpVgvEzDsr_cN24GSV2ZNDwgrUfEE=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#f8f8f8",
+      "fetchedAt": "2026-09-26"
+    },
+    "mizury-mize": {
+      "channelUrl": "https://www.youtube.com/channel/UCS-FWTnOxeto0PeFVAPqAYw",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/zftQwq2uNNeQ881oBiqT5E3cQt3hmmIsE3pgO62iihuuA1sXPkGcrDU0zcsb1cxtuzpN9nqZ6w=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/LWhSHVVkDVmAwL_qJLr_l9Bk6vHz2GbBAQAFehtq8IorX_fKOQkzrFn6B9KGnf3w0htEesF65Yo=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#282828",
+      "fetchedAt": "2026-09-26"
     }
   },
   "tracks": {
@@ -669,6 +705,61 @@
       "video": "https://www.youtube.com/watch?v=LZWht6glpKY",
       "size": "maxresdefault",
       "color": "#181818"
+    },
+    "united-choppers": {
+      "video": "https://www.youtube.com/watch?v=2hqSAz4zmsI",
+      "size": "sddefault",
+      "color": "#080808"
+    },
+    "united-choppers-2": {
+      "video": "https://www.youtube.com/watch?v=OhSs0hAsM1k",
+      "size": "sddefault",
+      "color": "#181818"
+    },
+    "united-choppers-3": {
+      "video": "https://www.youtube.com/watch?v=SNcQq9GJKYQ",
+      "size": "hqdefault",
+      "color": "#e8e8e8"
+    },
+    "united-choppers-5": {
+      "video": "https://www.youtube.com/watch?v=AaFFf7IFrPY",
+      "size": "sddefault",
+      "color": "#080808"
+    },
+    "illest-choppers-2": {
+      "video": "https://www.youtube.com/watch?v=L_nDMhnXHLM",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "undaground-choppers-5": {
+      "video": "https://www.youtube.com/watch?v=fNWWcXNwIU0",
+      "size": "hqdefault",
+      "color": "#080808"
+    },
+    "undaground-choppers-6": {
+      "video": "https://www.youtube.com/watch?v=lyH3ikyg6Wk",
+      "size": "hqdefault",
+      "color": "#080808"
+    },
+    "speed-demons-2": {
+      "video": "https://www.youtube.com/watch?v=PNTjoowiFP0",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "bag-of-souls": {
+      "video": "https://www.youtube.com/watch?v=ZKFk2mQDjh8",
+      "size": "sddefault",
+      "color": "#080808"
+    },
+    "getcha-head-cracked": {
+      "video": "https://www.youtube.com/watch?v=XNhyaHSE71Y",
+      "size": "hqdefault",
+      "color": "#080808"
+    },
+    "killin-shit": {
+      "video": "https://www.youtube.com/watch?v=eRzvwgkUFZ8",
+      "size": "maxresdefault",
+      "color": "#080808"
     }
   }
 }

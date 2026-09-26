@@ -10,7 +10,7 @@ styleNote: DNA 2013 年在专辑《The Evolution》的介绍里直接称他为"t
 tags: [加拿大, 地下, 加速争议, Tie The Noose, 和 DNA 长期合作]
 youtube: { channelId: UCeUa8BcunaWIXB_8FKklgig, handle: '@leach7521', kind: official }
 useBanner: false
-related: [dna-tru-lyricist, yung-revival, crucified]
+related: [dna-tru-lyricist, yung-revival, j-battle, kvr]
 speed:
   - value: 17.9
     unit: syl/s

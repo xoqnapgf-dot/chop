@@ -3,16 +3,16 @@ name: Interchopper
 realName: Papuna Abesadze
 tagline: 来自格鲁吉亚、已退役的 chopper：一度被认为能稳定超过 20 SPS，后来多数高速作品被判定加速。
 country: GE
-city: 未公开
+city: 第比利斯
 region: 高加索
-geo: [42.3, 43.36]
+geo: [41.72, 44.79]
 style: chopper
 styleNote: Undaground Choppers 4–8 的常客，频道简介自称"[已退役] 的东欧 chopper"。能认的只有 Syllabic War、UC4、UC7 这几首，其余最快的 verse 被判定加速，仍标 Chopper，但数字分开看。
 tags: [格鲁吉亚, 已退役, Undaground Choppers, 加速争议]
 youtube: { channelId: UCmYuEGJ6CKaPVERYTsrHggQ, handle: '@ic8790', kind: official }
 # 头像用他本人频道的卡通头像（横幅是风景图，不用）
 useBanner: false
-related: [crucified, dna-tru-lyricist]
+related: [crucified, dna-tru-lyricist, mizury-mize, j-battle]
 speed:
   - value: 18.83
     unit: syl/s
@@ -79,6 +79,7 @@ speed:
 sources:
   - { title: 'YouTube – Interchopper 本人频道 @ic8790（简介："[Retired] Chopper from Eastern Europe"）', url: 'https://www.youtube.com/@ic8790' }
   - { title: 'Genius – Interchopper 艺人页', url: 'https://genius.com/artists/Interchopper' }
+  - { title: 'YouTube – United Choppers 2（J Battle Vidz，2016-11-01，简介写明"Interchopper-Tbilisi-GEORGIA"）', url: 'https://www.youtube.com/watch?v=OhSs0hAsM1k' }
   - { title: 'SPS and Chopper Rap Wiki – Interchopper', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Interchopper' }
   - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
   - { title: 'YouTube – Interchopper performing live on Oxford University stage（画面显示为 Oxford Brookes University）', url: 'https://www.youtube.com/watch?v=ZSmeH9AD6r8' }

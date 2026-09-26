@@ -596,7 +596,7 @@
     - { title: 'YouTube – TrollatorBR：Shad - FreeZeTyler (Cálculo)（2020）', url: 'https://www.youtube.com/watch?v=dguRJ4Ir8tA' }
 - id: united-choppers-4
   title: United Choppers 4
-  artists: [down6, leach]
+  artists: [j-battle, down6, leach]
   credit: J Battle ft. LFiers, Leach, Coutz, Eclip$e, DOWN6, Luck Da Gynx, Almighty, New Blood
   youtube: bH2omrq8iew
   youtubeChannel: J Battle Vidz
@@ -915,3 +915,148 @@
     - { title: 'Genius – Interchopper 艺人页', url: 'https://genius.com/artists/Interchopper' }
     - { title: 'Wikipedia – Chopper (rap)（提到 Undaground Choppers 系列）', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
     - { title: 'SPS and Chopper Rap Wiki – Interchopper', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Interchopper' }
+- id: united-choppers
+  title: United Choppers
+  artists: [j-battle, kvr, mizury-mize]
+  credit: J Battle ft. SplytSecond, kVr, Mizury, Eclip$e, Kaoz
+  youtube: 2hqSAz4zmsI
+  youtubeChannel: J Battle Vidz
+  officialUpload: true
+  scene: world
+  year: 2015
+  note: 'J Battle 发起的 chopper cypher 系列第一集。kVr 在评论区留言"我们把这首杀穿了"，很快就有人问什么时候出第二集。'
+  sources:
+    - { title: 'YouTube – United Choppers（J Battle Vidz，2015-06-03）', url: 'https://www.youtube.com/watch?v=2hqSAz4zmsI' }
+- id: united-choppers-2
+  title: United Choppers 2
+  artists: [j-battle, kvr, mizury-mize, interchopper]
+  credit: J Battle ft. Mizury, Eclip$e, kVr, Interchopper, Mizphit, Yung Demon
+  youtube: OhSs0hAsM1k
+  youtubeChannel: J Battle Vidz
+  officialUpload: true
+  scene: world
+  year: 2016
+  note: '简介给每个人标了地区：密歇根、波兰、密苏里、奥地利、亚利桑那、格鲁吉亚第比利斯，伴奏来自加拿大多伦多。J Battle 自己混音，最后写着"UNITED WE STAND"。'
+  sources:
+    - { title: 'YouTube – United Choppers 2（J Battle Vidz，2016-11-01）', url: 'https://www.youtube.com/watch?v=OhSs0hAsM1k' }
+- id: united-choppers-3
+  title: United Choppers 3
+  artists: [j-battle, mizury-mize, leach]
+  credit: J Battle ft. ARW, Mizury, Exodu$, MGK of ARMR4, Eclip$e, Leach, MC Rice
+  youtube: SNcQq9GJKYQ
+  youtubeChannel: J Battle Vidz
+  officialUpload: true
+  scene: world
+  year: 2018
+  note: '8 段 verse，Mizury Mize 唱最后一段。评论区不少人说"Leach 拿下了这首"。'
+  sources:
+    - { title: 'YouTube – United Choppers 3（J Battle Vidz，2018-09-04）', url: 'https://www.youtube.com/watch?v=SNcQq9GJKYQ' }
+- id: united-choppers-5
+  title: United Choppers 5
+  artists: [j-battle, down6, kal-paseo]
+  credit: J Battle ft. DOWN6, New Blood, LFiers, Lil Na8, Kal Paseo, XKNOWLEDGE, Ender, Marco Park$, Coutz
+  youtube: AaFFf7IFrPY
+  youtubeChannel: J Battle Vidz
+  officialUpload: true
+  scene: world
+  year: 2026
+  note: '系列第五集，全长不到三分钟，每人一小段。评论区有人说"不是每首 chopper 歌都得十几分钟长才够硬"，还有人把五集的参与名单整理了出来：J Battle 五集全在。'
+  sources:
+    - { title: 'YouTube – UNITED CHOPPERS 5（J Battle Vidz，2026-03-21）', url: 'https://www.youtube.com/watch?v=AaFFf7IFrPY' }
+- id: illest-choppers-2
+  title: Illest Choppers 2
+  artists: [kvr, killhollow, dumanoid, dna-tru-lyricist]
+  credit: MC Rice ft. LîL hØllÖw, BoneZ, CRhyme, S7ven Da Don, LEECH, Huslah, Kaoz, MSL, DNA, kVR, Chronic Boss, MGK of ARMR4, DNS & Twissler
+  youtube: L_nDMhnXHLM
+  youtubeChannel: YungDro Productions
+  officialUpload: false
+  scene: world
+  year: 2016
+  confidence: disputed
+  note: 'MC Rice 2016 年圣诞节前发的 15 人 cypher。kVr 那段有 19.86，是他最快的一段，NahDah 2021 版第 5 名用的就是它；但他本人对那段不满意，要求 2023 版不要再用。Killhollow（当时叫 LiL hOllOw）和 DNS（Dumanoid）的段落也在里面。'
+  sources:
+    - { title: 'NahDah Vebb – 2023 榜除名说明', url: 'https://docs.google.com/document/d/1DfcPmT5YCWYwDRP-uyFMEthi9n7ctGRsK2C3QxiFJrA' }
+    - { title: 'NahDah Vebb – 2021 版榜单曲目文档', url: 'https://docs.google.com/document/d/1UpOgX1BNIrPTK4F1JwibltfDSiVjJMLcQFbbmueJvUs' }
+    - { title: 'YouTube – MC Rice Presents ILLEST CHOPPERS 2（YungDro Productions，2016-12-20）', url: 'https://www.youtube.com/watch?v=L_nDMhnXHLM' }
+- id: undaground-choppers-5
+  title: Undaground Choppers 5
+  artists: [mizury-mize, interchopper, dna-tru-lyricist]
+  credit: DJ Lil Sprite ft. SplytSecond, K-Fix, Kaoz, Hurricane, Interchopper, Mister Hyde, Mizury Mize, Sensei, DNA
+  youtube: fNWWcXNwIU0
+  youtubeChannel: Dj Lil Sprite
+  officialUpload: true
+  scene: world
+  year: 2016
+  note: 'DJ Lil Sprite 招牌 cypher 系列的第五集。NahDah 2017 版把这首列为 Mizury Mize 的代表作，2021 版第 4 名 Interchopper 用的也是这首。'
+  sources:
+    - { title: 'NahDah Vebb – 2021 版榜单曲目文档', url: 'https://docs.google.com/document/d/1UpOgX1BNIrPTK4F1JwibltfDSiVjJMLcQFbbmueJvUs' }
+    - { title: 'YouTube – Undaground Choppers 5（Dj Lil Sprite，2016-08-10）', url: 'https://www.youtube.com/watch?v=fNWWcXNwIU0' }
+- id: undaground-choppers-6
+  title: Undaground Choppers 6
+  artists: [mizury-mize, killhollow, dna-tru-lyricist, interchopper]
+  credit: DJ Lil Sprite ft. SplytSecond, Big Loony, Hurricane, D-Spillz, Kaoz, Bonez, Mizury Mize, DNA, Interchopper, Lil Hollow, Fenksta, Tonik, Sensei, VBL, K-Fix
+  youtube: lyH3ikyg6Wk
+  youtubeChannel: Dj Lil Sprite
+  officialUpload: true
+  scene: world
+  year: 2017
+  confidence: disputed
+  note: '15 人的 cypher。Mizury Mize 那段 19 ÷ 1.017 ≈ 18.68，NahDah 2021 版第 6，但圈里普遍认为加速了，2023 版把他除名；Killhollow 那段 16 ÷ 1.055 ≈ 15.17，2023 版第 35。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'NahDah Vebb – 2023 榜除名说明', url: 'https://docs.google.com/document/d/1DfcPmT5YCWYwDRP-uyFMEthi9n7ctGRsK2C3QxiFJrA' }
+    - { title: 'NahDah Vebb – 2021 版榜单曲目文档', url: 'https://docs.google.com/document/d/1UpOgX1BNIrPTK4F1JwibltfDSiVjJMLcQFbbmueJvUs' }
+    - { title: 'YouTube – Undaground Choppers 6（Dj Lil Sprite，2017-02-03）', url: 'https://www.youtube.com/watch?v=lyH3ikyg6Wk' }
+- id: speed-demons-2
+  title: Speed Demons 2
+  artists: [kvr]
+  credit: Trash Music ft. Abyss & MSL, Danjor, Big Switch, 4fifth, kVr
+  youtube: PNTjoowiFP0
+  youtubeChannel: Trash Music
+  officialUpload: true
+  scene: world
+  year: 2017
+  note: 'MSL 发起的 chopper 系列第二集。kVr 那段 17 ÷ 1.053 ≈ 16.14，NahDah 2023 版第 14 名；他自己留言说这是他"最好的一次快嘴客串"。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'YouTube – Trash Music Presents: Speed Demons 2（2017-05-30）', url: 'https://www.youtube.com/watch?v=PNTjoowiFP0' }
+- id: bag-of-souls
+  title: Bag Of Souls
+  artists: [killhollow]
+  credit: LiL hOllOw
+  youtube: ZKFk2mQDjh8
+  youtubeChannel: KillhOllOw
+  officialUpload: true
+  scene: world
+  year: 2016
+  confidence: pending
+  note: '听众公认的 Killhollow 最快的一首，NahDah 2017 版第 10 名（21 ÷ 1.06 ≈ 19.8）用的就是它。那一版后来被 NahDah 标成 outdated。'
+  sources:
+    - { title: 'B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017（NahDah 2017 版搬运）', url: 'https://www.bilibili.com/video/BV11x411L79b/' }
+    - { title: 'YouTube – LiL hOllOw - Bag Of Souls (Mastered Version)（2016-03-13）', url: 'https://www.youtube.com/watch?v=ZKFk2mQDjh8' }
+- id: getcha-head-cracked
+  title: Getcha Head Cracked
+  artists: [j-battle]
+  credit: J Battle ft. Playboy Mack（prod. Beat Brothers）
+  youtube: XNhyaHSE71Y
+  youtubeChannel: J Battle Vidz
+  officialUpload: true
+  scene: world
+  year: 2016
+  confidence: pending
+  note: 'J Battle 那段 15 ÷ 1.020 ≈ 14.71，NahDah 2023 版第 71 名；这首没有官方歌词，音节是按听感数的。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'YouTube – J Battle-Getcha Head Cracked ft. Playboy Mack（2016-08-10）', url: 'https://www.youtube.com/watch?v=XNhyaHSE71Y' }
+- id: killin-shit
+  title: Killin' Shit
+  artists: [mizury-mize]
+  credit: Mizury（prod. DJ Lil Sprite）
+  youtube: eRzvwgkUFZ8
+  youtubeChannel: Mizury Mize
+  officialUpload: true
+  scene: world
+  year: 2016
+  note: 'DJ Lil Sprite 办的"Killin'' Shit"征选的第一名。'
+  sources:
+    - { title: 'YouTube – Mizury - Killin'' Shit [1st Place Winner Killing Shit CONTEST]（2016-10-18）', url: 'https://www.youtube.com/watch?v=eRzvwgkUFZ8' }
