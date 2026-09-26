@@ -2,6 +2,7 @@
 import '@/styles/global.css';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
+import BackButton from '@/components/BackButton.astro';
 import { SITE } from '@/lib/site';
 import { url } from '@/lib/url';
 
@@ -57,6 +58,7 @@ const ogImage = image ? new URL(image, Astro.site).href : undefined;
       <slot />
     </main>
     <Footer />
+    <BackButton />
 
     <!-- 返回时保留浏览进度：浏览器自己恢复了就不动，没恢复（部分 App 内置浏览器）才补一次 -->
     <script is:inline>

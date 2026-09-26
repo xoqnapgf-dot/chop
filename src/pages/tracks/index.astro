@@ -1,7 +1,7 @@
 ---
 import { getCollection, getEntries } from 'astro:content';
 import { Image } from 'astro:assets';
-import { trackThumb } from '@/lib/media';
+import { trackCover } from '@/lib/media';
 import Base from '@/layouts/Base.astro';
 import LiteYouTube from '@/components/LiteYouTube.astro';
 import Confidence from '@/components/Confidence.astro';
@@ -30,7 +30,7 @@ const scenes = Object.keys(SCENE) as (keyof typeof SCENE)[];
     <div class="mt-4 grid grid-cols-1 gap-3 md:mt-10 md:gap-x-8 md:gap-y-16 lg:grid-cols-2">
       {
         withArtists.map(({ t, artists }) => {
-          const thumb = trackThumb(t.data.youtube);
+          const thumb = trackCover(t.data);
           return (
           <article id={t.id} class="track min-w-0 scroll-mt-24 max-md:rounded-2xl max-md:border max-md:border-line max-md:bg-surface max-md:p-2" data-scene={t.data.scene} data-starter={t.data.starter ? '1' : undefined}>
             {/* 手机：先只显示一行（缩略图 + 标题），点开再显示播放器和介绍 */}

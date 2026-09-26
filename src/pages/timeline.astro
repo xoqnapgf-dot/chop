@@ -1,23 +1,74 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
+import { Image } from 'astro:assets';
 import Base from '@/layouts/Base.astro';
 import Confidence from '@/components/Confidence.astro';
 import Avatar from '@/components/Avatar.astro';
 import { SCENE, displayName } from '@/lib/labels';
+import { trackCover } from '@/lib/media';
 import { url } from '@/lib/url';
 
 const events = (await getCollection('timeline')).sort((a, b) => a.data.year - b.data.year);
-const rows = await Promise.all(events.map(async (e) => ({ e, artist: e.data.artist ? await getEntry(e.data.artist) : undefined })));
-const decades = [...new Set(events.map((e) => Math.floor(e.data.year / 10) * 10))];
+const rows = await Promise.all(
+  events.map(async (e) => ({
+    e,
+    artist: e.data.artist ? await getEntry(e.data.artist) : undefined,
+    track: e.data.track ? await getEntry(e.data.track) : undefined,
+  })),
+);
+const decadeOf = (y: number) => Math.floor(y / 10) * 10;
+const decades = [...new Set(events.map((e) => decadeOf(e.data.year)))];
+const first = events[0].data.year;
+const last = events.at(-1)!.data.year;
+const span = last - first + 1;
+const count = (scene: 'world' | 'china', d?: number) => events.filter((e) => e.data.scene === scene && (d === undefined || decadeOf(e.data.year) === d)).length;
+
+// 年份密度条：每年一格，世界在上、中国区在下
+const years = Array.from({ length: span }, (_, i) => first + i);
+const byYear = (scene: 'world' | 'china', y: number) => events.filter((e) => e.data.scene === scene && e.data.year === y);
 ---
 
 <Base title="时间线" description="从 1980 年到今天，世界 chopper 与中国快嘴的大事记，左右并行对照。">
   <section class="container-x pt-14 md:pt-20">
-    <p class="eyebrow">Timeline · {events[0].data.year}–{events.at(-1)!.data.year}</p>
+    <p class="eyebrow">Timeline · {first}–{last}</p>
     <h1 class="mt-4 text-5xl font-bold md:text-7xl">时间线</h1>
     <p class="mt-5 max-w-2xl text-lg text-ink-2">两条线并行：左边是<span class="text-accent-text">世界</span>，右边是<span class="text-china">中国区</span>。同一时期两边各发生了什么，一眼就能对照。</p>
 
-    <nav class="decades sticky top-16 z-20 -mx-4 mt-10 flex gap-2 overflow-x-auto border-y border-line px-4 py-3 md:mx-0" aria-label="按年代跳转" data-pagefind-ignore>
+    <dl class="tl-stats mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <div class="card p-4"><dd class="font-display text-3xl font-semibold tabular-nums">{events.length}</dd><dt class="mt-1 text-xs text-ink-3">件大事</dt></div>
+      <div class="card p-4"><dd class="font-display text-3xl font-semibold tabular-nums text-accent-text">{count('world')}</dd><dt class="mt-1 text-xs text-ink-3">世界</dt></div>
+      <div class="card p-4"><dd class="font-display text-3xl font-semibold tabular-nums text-china">{count('china')}</dd><dt class="mt-1 text-xs text-ink-3">中国区</dt></div>
+      <div class="card p-4"><dd class="font-display text-3xl font-semibold tabular-nums">{span}</dd><dt class="mt-1 text-xs text-ink-3">年跨度</dt></div>
+    </dl>
+
+    <!-- 年份密度条：一眼看出哪些年份最热闹，点一下跳过去 -->
+    <figure class="yearbar card mt-4 p-4 sm:p-5" data-pagefind-ignore>
+      <figcaption class="flex flex-wrap items-center justify-between gap-2 text-xs text-ink-3">
+        <span>每个点是一件事，点一下跳过去</span>
+        <span class="flex items-center gap-3">
+          <span class="flex items-center gap-1.5"><i class="yb-dot" style="--c:var(--scene-world)"></i>世界</span>
+          <span class="flex items-center gap-1.5"><i class="yb-dot" style="--c:var(--scene-china)"></i>中国区</span>
+        </span>
+      </figcaption>
+      <div class="yb-grid mt-3" style={`--n:${span}`}>
+        {(['world', 'china'] as const).map((sc) => (
+          <div class="yb-row" data-row={sc}>
+            {years.map((y) => (
+              <span class="yb-col">
+                {byYear(sc, y).map((e) => (
+                  <a href={`#${e.id}`} class="yb-dot" style={`--c:var(${sc === 'china' ? '--scene-china' : '--scene-world'})`} title={`${e.data.year} · ${e.data.title}`} aria-label={`${e.data.year}：${e.data.title}`} />
+                ))}
+              </span>
+            ))}
+          </div>
+        ))}
+        <div class="yb-axis">
+          {years.map((y) => <span class="yb-tick">{y % 10 === 0 ? `’${String(y).slice(2)}` : ''}</span>)}
+        </div>
+      </div>
+    </figure>
+
+    <nav class="decades sticky top-16 z-20 -mx-4 mt-8 flex gap-2 overflow-x-auto border-y border-line px-4 py-3 md:mx-0" aria-label="按年代跳转" data-pagefind-ignore>
       {decades.map((d) => <a href={`#d${d}`} class="chip shrink-0 font-mono hover:border-line-strong">{d}s</a>)}
       <span class="mx-1 w-px shrink-0 bg-line" aria-hidden="true"></span>
       <button class="s-btn chip shrink-0 cursor-pointer" data-value="" aria-pressed="true">全部</button>
@@ -30,41 +81,63 @@ const decades = [...new Set(events.map((e) => Math.floor(e.data.year / 10) * 10)
     </div>
     <ol class="tl relative mt-6">
       {
-        rows.map(({ e, artist }, i) => {
-          const firstOfDecade = i === 0 || Math.floor(rows[i - 1].e.data.year / 10) !== Math.floor(e.data.year / 10);
+        decades.map((d) => {
+          const inDecade = rows.filter(({ e }) => decadeOf(e.data.year) === d);
           return (
-            <>
-              {firstOfDecade && (
-                <li id={`d${Math.floor(e.data.year / 10) * 10}`} class="decade relative scroll-mt-32 py-6">
-                  <span class="font-display text-6xl font-bold text-ink-3/40 md:text-8xl">{Math.floor(e.data.year / 10) * 10}s</span>
-                </li>
-              )}
-              <li id={e.id} class:list={['event relative scroll-mt-32 pb-8', e.data.scene === 'china' ? 'right' : 'left']} data-scene={e.data.scene} style={`--lc:${SCENE[e.data.scene].color}`}>
-                <span class="dot" aria-hidden="true" />
-                <div class="card ev-card p-5 md:p-6">
-                  <div class="flex items-start gap-4">
-                    <div class="min-w-0 flex-1">
-                      <p class="flex flex-wrap items-center gap-3">
-                        <span class="font-display text-3xl font-semibold tabular-nums" style="color:var(--lc)">{e.data.year}</span>
-                        <span class="eyebrow">{SCENE[e.data.scene].name}</span>
-                        {e.data.confidence !== 'verified' && <Confidence level={e.data.confidence} />}
-                      </p>
-                      <h2 class="mt-2 text-xl font-semibold">{e.data.title}</h2>
-                      <p class="mt-2 text-ink-2">{e.data.body}</p>
-                    </div>
-                    {artist && (
-                      <a href={url(`choppers/${artist.id}/`)} class="shrink-0" aria-label={displayName(artist.data)}>
-                        <Avatar id={artist.id} data={artist.data} widths={[128]} sizes="64px" class="size-14 overflow-hidden rounded-xl object-cover md:size-16" />
-                      </a>
-                    )}
-                  </div>
-                  <p class="mt-4 flex flex-wrap gap-x-3 text-xs">
-                    {artist && <a href={url(`choppers/${artist.id}/`)} class="link-u text-ink hover:text-accent-text">{displayName(artist.data)} →</a>}
-                    {e.data.sources.map((s, j) => <a href={s.url} target="_blank" rel="noopener nofollow" class="link-u text-ink-3 hover:text-ink">来源 {j + 1} ↗</a>)}
-                  </p>
-                </div>
-              </li>
-            </>
+            <li id={`d${d}`} class="decade-block scroll-mt-32">
+              <div class="decade relative py-8">
+                <span class="decade-num font-display font-bold">{d}s</span>
+                <span class="decade-meta mt-1 block font-mono text-xs text-ink-3">
+                  <span class="text-accent-text">世界 {count('world', d)}</span> · <span class="text-china">中国区 {count('china', d)}</span>
+                </span>
+              </div>
+              <ol class="dec-events">
+                {inDecade.map(({ e, artist, track }) => {
+                  const thumb = track ? trackCover(track.data) : undefined;
+                  return (
+                    <li id={e.id} class:list={['event relative scroll-mt-32 pb-8', e.data.scene === 'china' ? 'right' : 'left']} data-scene={e.data.scene} style={`--lc:${SCENE[e.data.scene].color}`}>
+                      <span class="dot" aria-hidden="true" />
+                      <div class="card ev-card relative overflow-hidden">
+                        <span class="ev-year-bg font-display" aria-hidden="true">{e.data.year}</span>
+                        {thumb && track && (
+                          <a href={url(`tracks/#${track.id}`)} class="ev-media group relative block aspect-[21/9] overflow-hidden bg-black" aria-label={`${track.data.title}：去曲目库播放`}>
+                            <Image src={thumb} alt={`${track.data.title} 封面`} widths={[480, 720]} sizes="(min-width: 900px) 520px, 92vw" class="size-full object-cover opacity-90 transition duration-700 group-hover:scale-[1.04] group-hover:opacity-100" />
+                            <span class="ev-play absolute bottom-3 left-3 flex max-w-[85%] items-center gap-2 rounded-full bg-black/65 py-1 pl-1 pr-3 text-xs text-white backdrop-blur">
+                              <span class="grid size-6 shrink-0 place-items-center rounded-full bg-accent text-accent-ink">
+                                <svg viewBox="0 0 24 24" class="ml-0.5 size-3" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z" /></svg>
+                              </span>
+                              <span class="truncate">{track.data.title}</span>
+                            </span>
+                          </a>
+                        )}
+                        <div class="relative p-5 md:p-6">
+                          <div class="flex items-start gap-4">
+                            <div class="min-w-0 flex-1">
+                              <p class="flex flex-wrap items-center gap-3">
+                                <span class="font-display text-3xl font-semibold tabular-nums" style="color:var(--lc)">{e.data.year}</span>
+                                <span class="eyebrow">{SCENE[e.data.scene].name}</span>
+                                {e.data.confidence !== 'verified' && <Confidence level={e.data.confidence} />}
+                              </p>
+                              <h2 class="mt-2 text-xl font-semibold">{e.data.title}</h2>
+                              <p class="mt-2 leading-relaxed text-ink-2">{e.data.body}</p>
+                            </div>
+                            {artist && (
+                              <a href={url(`choppers/${artist.id}/`)} class="shrink-0" aria-label={displayName(artist.data)}>
+                                <Avatar id={artist.id} data={artist.data} widths={[128]} sizes="64px" class="ev-avatar size-14 overflow-hidden rounded-xl object-cover md:size-16" />
+                              </a>
+                            )}
+                          </div>
+                          <p class="mt-4 flex flex-wrap gap-x-3 gap-y-1 text-xs">
+                            {artist && <a href={url(`choppers/${artist.id}/`)} class="link-u text-ink hover:text-accent-text">{displayName(artist.data)} →</a>}
+                            {e.data.sources.map((s, j) => <a href={s.url} target="_blank" rel="noopener nofollow" class="link-u text-ink-3 hover:text-ink">来源 {j + 1} ↗</a>)}
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ol>
+            </li>
           );
         })
       }
@@ -76,59 +149,182 @@ const decades = [...new Set(events.map((e) => Math.floor(e.data.year / 10) * 10)
   .decades {
     background: color-mix(in oklab, var(--bg) 94%, transparent);
   }
+
+  /* ---------- 年份密度条 ---------- */
+  .yb-grid {
+    display: grid;
+    gap: 6px;
+  }
+  .yb-row,
+  .yb-axis {
+    display: grid;
+    grid-template-columns: repeat(var(--n), minmax(0, 1fr));
+  }
+  .yb-row {
+    min-height: 18px;
+    align-items: end;
+    border-bottom: 1px dashed var(--line);
+    padding-bottom: 4px;
+  }
+  .yb-col {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3px;
+  }
+  .yb-dot {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--c);
+    box-shadow: 0 0 0 2px var(--surface);
+    transition: transform 0.2s ease;
+  }
+  a.yb-dot:hover,
+  a.yb-dot:focus-visible {
+    transform: scale(1.7);
+  }
+  .yb-tick {
+    font-family: var(--font-mono, ui-monospace, monospace);
+    font-size: 10px;
+    color: var(--ink-3);
+    text-align: left;
+    white-space: nowrap;
+  }
+  @media (max-width: 640px) {
+    .yb-dot {
+      width: 6px;
+      height: 6px;
+    }
+  }
+
+  /* ---------- 主轴 ---------- */
   .tl {
     --x: 11px;
+    --p: 0;
   }
-  .tl::before {
+  .tl::before,
+  .tl::after {
     content: '';
     position: absolute;
     left: var(--x);
     top: 0;
+    width: 2px;
+    margin-left: -0.5px;
+  }
+  .tl::before {
     bottom: 0;
-    width: 1px;
     background: linear-gradient(var(--line-strong), var(--line) 90%, transparent);
+  }
+  /* 随滚动"长出来"的进度线 */
+  .tl::after {
+    height: calc(var(--p) * 100%);
+    background: linear-gradient(var(--scene-world), var(--accent) 60%, var(--scene-china));
+    box-shadow: 0 0 12px color-mix(in oklab, var(--accent) 60%, transparent);
+    border-radius: 2px;
   }
   .event,
   .decade {
     padding-left: calc(var(--x) * 2 + 20px);
   }
+  .decade-num {
+    display: block;
+    font-size: clamp(3.5rem, 11vw, 7.5rem);
+    line-height: 0.9;
+    background: linear-gradient(120deg, color-mix(in oklab, var(--ink) 30%, transparent), color-mix(in oklab, var(--accent) 45%, transparent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
   .dot {
     position: absolute;
     left: calc(var(--x) - 6px);
     top: 30px;
+    z-index: 1;
     width: 13px;
     height: 13px;
     border-radius: 999px;
     background: var(--lc);
     box-shadow: 0 0 0 4px var(--bg), 0 0 18px var(--lc);
+    transition: transform 0.3s ease;
   }
+  .event:hover .dot,
+  .event:target .dot {
+    transform: scale(1.35);
+  }
+
+  /* ---------- 卡片 ---------- */
   .ev-card {
-    transition: border-color 0.3s ease;
+    border-top: 3px solid var(--lc);
+    transition:
+      border-color 0.3s ease,
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
   }
   .event:target .ev-card,
   .ev-card:hover {
     border-color: color-mix(in oklab, var(--lc) 55%, var(--line));
+    border-top-color: var(--lc);
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px -24px color-mix(in oklab, var(--lc) 60%, transparent);
+  }
+  .ev-year-bg {
+    position: absolute;
+    right: -0.08em;
+    bottom: -0.22em;
+    font-size: 7.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--lc);
+    opacity: 0.07;
+    pointer-events: none;
+    user-select: none;
+  }
+  .ev-media {
+    border-bottom: 1px solid var(--line);
   }
 
-  /* 桌面端：左右交错 */
+  /* ---------- 滚动进入时从两侧滑入（只在脚本启用后生效，不影响无脚本和搜索） ---------- */
+  .tl.js-reveal .event {
+    opacity: 0;
+    transform: translateX(-18px);
+    transition:
+      opacity 0.6s ease,
+      transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .tl.js-reveal .event.right {
+    transform: translateX(18px);
+  }
+  .tl.js-reveal .event.in {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* 桌面端：每个年代里世界排左栏、中国区排右栏，两栏顶部对齐，各自按时间往下排 */
   @media (min-width: 900px) {
     .tl {
       --x: 50%;
     }
-    .event,
     .decade {
       padding-left: 0;
-      width: 50%;
-    }
-    .decade {
-      width: 100%;
       text-align: center;
     }
+    .dec-events {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-flow: row dense;
+      align-items: start;
+    }
+    .event {
+      padding-left: 0;
+    }
     .event.left {
+      grid-column: 1;
       padding-right: 48px;
     }
     .event.right {
-      margin-left: 50%;
+      grid-column: 2;
       padding-left: 48px;
     }
     .event.left .dot {
@@ -144,10 +340,12 @@ const decades = [...new Set(events.map((e) => Math.floor(e.data.year / 10) * 10)
     .tl.single {
       --x: 11px;
     }
+    .tl.single .dec-events {
+      grid-template-columns: 1fr;
+    }
     .tl.single .event,
     .tl.single .decade {
-      width: auto;
-      margin-left: 0;
+      grid-column: 1;
       padding-left: calc(var(--x) * 2 + 20px);
       padding-right: 0;
       text-align: left;
@@ -171,16 +369,61 @@ const decades = [...new Set(events.map((e) => Math.floor(e.data.year / 10) * 10)
 <script>
   const btns = [...document.querySelectorAll<HTMLButtonElement>('.s-btn')];
   const items = [...document.querySelectorAll<HTMLElement>('li.event')];
+  const tl = document.querySelector<HTMLElement>('.tl')!;
   const apply = (v: string) => {
     btns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.value === v)));
     items.forEach((el) => (el.style.display = !v || el.dataset.scene === v ? '' : 'none'));
-    document.querySelector('.tl')?.classList.toggle('single', !!v);
+    tl.classList.toggle('single', !!v);
     document.querySelector('.tl-heads')?.classList.toggle('hide', !!v);
     const p = new URLSearchParams(location.search);
     v ? p.set('scene', v) : p.delete('scene');
     history.replaceState(history.state, '', (p.size ? `?${p}` : location.pathname) + location.hash);
+    updateProgress();
   };
   btns.forEach((b) => b.addEventListener('click', () => apply(b.dataset.value ?? '')));
+
+  // 卡片进入视口时滑入；已经在视口里的、或者带着 #锚点跳进来的，立即显示
+  if ('IntersectionObserver' in window) {
+    tl.classList.add('js-reveal');
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const en of entries) {
+          if (en.isIntersecting) {
+            en.target.classList.add('in');
+            io.unobserve(en.target);
+          }
+        }
+      },
+      { rootMargin: '0px 0px -8% 0px' },
+    );
+    items.forEach((el) => io.observe(el));
+    const showTarget = () => document.getElementById(location.hash.slice(1))?.classList.add('in');
+    showTarget();
+    window.addEventListener('hashchange', showTarget);
+  }
+
+  // 中轴进度线：滚到哪里，线就长到哪里
+  let ticking = false;
+  function updateProgress() {
+    const r = tl.getBoundingClientRect();
+    const mid = window.innerHeight * 0.6;
+    const p = Math.min(1, Math.max(0, (mid - r.top) / r.height));
+    tl.style.setProperty('--p', p.toFixed(4));
+    ticking = false;
+  }
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(updateProgress);
+      }
+    },
+    { passive: true },
+  );
+  window.addEventListener('resize', updateProgress);
+  updateProgress();
+
   const initial = new URLSearchParams(location.search).get('scene');
   if (initial && !location.hash) apply(initial);
 </script>

@@ -165,6 +165,23 @@ for (const f of (await fs.readdir(artistsDir)).filter((f) => f.endsWith('.md')))
 // ---------- 曲目缩略图 ----------
 const tracks = yaml.load(await fs.readFile(path.join(root, 'src/data/tracks.yaml'), 'utf8'));
 for (const t of tracks) {
+  if (!t.youtube) {
+    // 只在国内平台发行的歌：用网易云专辑封面
+    if (!t.netease) continue;
+    const dest = path.join(root, 'src/assets/tracks', `ne-${t.netease}.jpg`);
+    if (!force && (await exists(dest))) continue;
+    try {
+      const r = await fetch(`https://music.163.com/api/song/detail/?ids=[${t.netease}]`, { headers: { ...UA, Referer: 'https://music.163.com/' } });
+      const pic = (await r.json()).songs?.[0]?.album?.picUrl;
+      if (!pic) throw new Error('没有专辑封面');
+      await download(`${pic.replace('http://', 'https://')}?param=1280y720`, dest, { width: 1280 });
+      media.tracks[t.id] = { video: `https://music.163.com/#/song?id=${t.netease}`, size: 'netease', color: await dominant(dest) };
+      console.log(`✓ track ${t.id} (网易云封面)`);
+    } catch (e) {
+      console.warn(`✗ track ${t.id}: ${e.message}`);
+    }
+    continue;
+  }
   const dest = path.join(root, 'src/assets/tracks', `${t.youtube}.jpg`);
   if (!force && (await exists(dest))) continue;
   // maxresdefault 不一定存在，失败就退回 hqdefault

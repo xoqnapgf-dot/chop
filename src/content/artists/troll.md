@@ -47,6 +47,7 @@ sources:
   - { title: 'YouTube – Jackal - Donkey Kong (Ft. Troll)（2024）', url: 'https://www.youtube.com/watch?v=m7LiwxLWnkc' }
   - { title: 'YouTube – Troll - "Flow de Alien" (Feat. Retr0 & DOWN6)', url: 'https://www.youtube.com/watch?v=Vsm4--i-CDI' }
   - { title: 'YouTube – Troll - 533 Sílabas em 1 Minuto（2026-05-08）', url: 'https://www.youtube.com/watch?v=r8X6c-OjLv4' }
+  - { title: 'YouTube – Antares Convida, Pt. 1 (Feat. BLINGG, Faraway, Xia Chunyang, JTM) [Prod. Troll & SEDM]', url: 'https://www.youtube.com/watch?v=kIrbES5WK1E' }
   - { title: 'YouTube – TrollatorBR："TOP 10" Versos Mais Rápidos do Troll（2026-06-16）', url: 'https://www.youtube.com/watch?v=Hi3JIVO2mlA' }
   - { title: 'YouTube – TrollatorBR："TOP 50" Rappers Mais Rápidos do Brasil（2025-12-17）', url: 'https://www.youtube.com/watch?v=I89L4XLfXL0' }
   - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
@@ -70,6 +71,7 @@ TrollatorBR 做巴西年度最快榜、西语圈最快榜、单人最快 verse �
 | 2024 年 9 月 | 《Brazilian Choppers 2》（和 Retr0） | 他自己做伴奏、混音和视频，9 个 rapper 同台 |
 | 2025 年前后 | 《Flow de Alien》（ft. Retr0、DOWN6） | |
 | 2026 年 | 专辑《Labirinto do Próprio Medo》、《533 Sílabas em 1 Minuto》 | 后者标题意思是"1 分钟 533 个音节" |
+| 2026 年 9 月 | 《Antares Convida, Pt. 1》 | 他所在的 Antares Records 的合作曲，请了中国的夏淳扬（《Chinese Choppers》的发起人）、Faraway 等人 |
 
 《Vida Fútil》（意思是"空虚的生活"）系列写的是颓丧、厌世的情绪，和他 sad trap 的路子一致。
 

@@ -1,0 +1,109 @@
+---
+/**
+ * 浮动返回键（首页不显示）。
+ * 从站内点进来的：退回上一页（保留原来的滚动位置）；
+ * 直接打开链接的（分享、搜索引擎）：去上一级栏目，比如人物页 → 人物库。
+ */
+import { url } from '@/lib/url';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const path = Astro.url.pathname.replace(/\/$/, '');
+const rel = path.startsWith(base) ? path.slice(base.length) : path;
+const parts = rel.split('/').filter(Boolean);
+const isHome = parts.length === 0;
+const parent = url(parts.length > 1 ? `${parts.slice(0, -1).join('/')}/` : '');
+const parentName: Record<string, string> = { choppers: '人物库', learn: '百科', tracks: '曲目', china: '中国区', world: '世界' };
+const label = parts.length > 1 ? parentName[parts[0]] ?? '上一级' : '首页';
+---
+
+{
+  !isHome && (
+    <a href={parent} class="back-btn" data-back aria-label={`返回（没有上一页时去${label}）`} data-pagefind-ignore>
+      <svg viewBox="0 0 24 24" class="size-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M15 18l-6-6 6-6" />
+      </svg>
+      <span>返回</span>
+    </a>
+  )
+}
+
+<style>
+  .back-btn {
+    position: fixed;
+    left: max(16px, env(safe-area-inset-left));
+    bottom: max(16px, env(safe-area-inset-bottom));
+    z-index: 60;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.55rem 1rem 0.55rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    background: color-mix(in oklab, var(--surface) 82%, transparent);
+    color: var(--ink);
+    font-size: 0.875rem;
+    font-weight: 600;
+    box-shadow: 0 10px 30px -12px rgb(0 0 0 / 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition:
+      transform 0.25s ease,
+      opacity 0.25s ease,
+      background 0.2s ease;
+  }
+  .back-btn:hover {
+    background: var(--ink);
+    color: var(--bg);
+  }
+  .back-btn:active {
+    transform: scale(0.96);
+  }
+  /* 往下滚动读内容时缩成小圆点，不挡字；往上滚或停下时恢复 */
+  .back-btn.is-tucked {
+    padding: 0.55rem;
+  }
+  .back-btn.is-tucked span {
+    display: none;
+  }
+  @media print {
+    .back-btn {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  const btn = document.querySelector<HTMLAnchorElement>('[data-back]');
+  if (btn) {
+    btn.addEventListener('click', (e) => {
+      // 从本站点进来、且有历史记录：直接后退
+      let sameSite = false;
+      try {
+        sameSite = !!document.referrer && new URL(document.referrer).origin === location.origin;
+      } catch {
+        /* 忽略 */
+      }
+      if (sameSite && history.length > 1) {
+        e.preventDefault();
+        history.back();
+      }
+    });
+    let lastY = scrollY;
+    let ticking = false;
+    addEventListener(
+      'scroll',
+      () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const y = scrollY;
+          btn.classList.toggle('is-tucked', y > lastY + 4 && y > 300);
+          if (y < lastY - 4) btn.classList.remove('is-tucked');
+          lastY = y;
+          ticking = false;
+        });
+      },
+      { passive: true },
+    );
+  }
+</script>

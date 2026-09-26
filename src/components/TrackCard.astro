@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
-import { trackThumb } from '@/lib/media';
+import { trackCover } from '@/lib/media';
 import { url } from '@/lib/url';
 import { SCENE } from '@/lib/labels';
 import Confidence from './Confidence.astro';
@@ -9,7 +9,7 @@ import Confidence from './Confidence.astro';
 interface Props { track: CollectionEntry<'tracks'> }
 const { track } = Astro.props;
 const t = track.data;
-const thumb = trackThumb(t.youtube);
+const thumb = trackCover(t);
 ---
 
 <!-- 手机上横排（左图右文），一首歌只占一小行；平板以上竖排卡片。宽度一律撑满格子 -->

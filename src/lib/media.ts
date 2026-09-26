@@ -41,6 +41,11 @@ export function videoCover(id: string): ImageMetadata | undefined {
   return videoImgs[`/src/assets/videos/${id}.jpg`]?.default;
 }
 
-export function trackThumb(videoId: string): ImageMetadata | undefined {
-  return trackImgs[`/src/assets/tracks/${videoId}.jpg`]?.default;
+export function trackThumb(videoId?: string): ImageMetadata | undefined {
+  return videoId ? trackImgs[`/src/assets/tracks/${videoId}.jpg`]?.default : undefined;
+}
+
+/** 曲目封面：优先 YouTube 缩略图，没有就用网易云专辑封面（ne-<歌曲ID>.jpg） */
+export function trackCover(t: { youtube?: string; netease?: number }): ImageMetadata | undefined {
+  return trackThumb(t.youtube) ?? (t.netease ? trackThumb(`ne-${t.netease}`) : undefined);
 }
