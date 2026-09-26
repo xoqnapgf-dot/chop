@@ -162,9 +162,7 @@ const minutes = Math.max(1, Math.round((entry.body ?? '').replace(/\s+/g, '').le
     padding: 0.05rem 0.55rem;
     transform: translateY(-0.15rem);
   }
-  .prose-chop :global(table) {
-    display: block;
-    overflow-x: auto;
+  .prose-chop :global(.table-wrap) {
     border: 1px solid var(--line);
     border-radius: 16px;
     background: var(--surface);

@@ -91,17 +91,6 @@
   sources:
     - { title: 'YouTube – DNA vs Twisted Insane "No Mercy Rap Showdown"（2013）', url: 'https://www.youtube.com/watch?v=2dclINd3A1s' }
     - { title: 'YouTube – DNA vs Twisted Insane - Round 5 "Friendly Competition"（2015）', url: 'https://www.youtube.com/watch?v=j5-NuEpCvgE' }
-- id: 2013-tie-the-noose
-  year: 2013
-  title: 《Tie The Noose》：DNA、Leach、Yung Revival 三人合唱
-  body: DNA 在 2013 年 2 月的专辑《The Evolution》里收了这首和加拿大的 Leach、英国的 Yung Revival 的合唱，专辑介绍称 Leach 为"the chopper known as LEACH"。三人此后十几年一直有合作，2026 年 DNA 的专辑《Loosh Farm》里又有三人同曲的《Fire Breathers》。
-  scene: world
-  track: tie-the-noose
-  artist: leach
-  sources:
-    - { title: 'Bandcamp – DNA Tru Lyricist：The Evolution（2013-02-01）', url: 'https://dnatrulyricist.bandcamp.com/album/the-evolution' }
-    - { title: 'YouTube – DNA - Tie the Noose ft. LEACH, YUNG REVIVAL.（2013-03-27）', url: 'https://www.youtube.com/watch?v=mDs-83PVs_A' }
-    - { title: '网易云音乐 – Fire Breathers (feat. Leach & Yung Revival)（2026）', url: 'https://music.163.com/#/song?id=3422596966' }
 - id: 2015-star-warz
   year: 2015
   title: Star Warz
@@ -137,15 +126,6 @@
   artist: eminem
   sources:
     - { title: 'Wikipedia – Godzilla (Eminem song)', url: 'https://en.wikipedia.org/wiki/Godzilla_(Eminem_song)' }
-- id: 2022-jianjiang
-  year: 2022
-  title: 健将mixtape
-  body: 法老与小精灵在 10 月 11 日（法老生日当天）发行《健将mixtape》，同名曲成为中文快嘴的新标杆。
-  scene: china
-  track: jian-jiang
-  artist: pharaoh
-  sources:
-    - { title: '百度百科 – 健将mixtape', url: 'https://baike.baidu.com/item/%E5%81%A5%E5%B0%86mixtape/62070166' }
 - id: 2003-d-evil
   year: 2003
   title: 光光加入 D-Evil
@@ -164,15 +144,6 @@
   sources:
     - { title: '豆瓣 – 王者之路', url: 'https://m.douban.com/music/subject/3700917/' }
     - { title: '网易 – 谁才是中文说唱圈第一快嘴？', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }
-- id: 2009-kk-album
-  year: 2009
-  title: 《虚构的肖像》
-  body: '2009 年 9 月 11 日发行的首张个人街头专辑。他从 2008 年起不再以 diss 为主，转向写生活、社会现实和内心世界，这张专辑是转型后的第一张完整作品，伴奏由凤凰鸣/南征北战的醉人制作。'
-  scene: china
-  artist: kindergarten-killer
-  sources:
-    - { title: '豆瓣小组 – 幼稚园杀手 简介（2010）', url: 'https://www.douban.com/group/topic/14768861/' }
-    - { title: '豆瓣 – A-JING：幼稚园杀手 DISS 2011 MIXTAPE（简介，2011-10-05）', url: 'https://site.douban.com/widget/notes/4223495/note/176086511/' }
 - id: 2016-taotie
   year: 2016
   title: 《饕餮》：10 秒 128 字
@@ -193,24 +164,6 @@
   sources:
     - { title: '维基百科 – 中国有嘻哈', url: 'https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E5%9B%BD%E6%9C%89%E5%98%BB%E5%93%88' }
     - { title: '嘻哈中国 – 三年前的今天，《中国有嘻哈》开播', url: 'https://www.xihachina.com/51574.html' }
-- id: 2018-erzi-wawa
-  year: 2018
-  title: 《儿子娃娃》
-  body: 更名后的《中国新说唱》里，那吾克热凭《儿子娃娃》拿下节目第一个"3 Pass"，最终获亚军；冠军是同样来自新疆的艾热。
-  scene: china
-  track: erzi-wawa
-  artist: nawukere
-  sources:
-    - { title: '维基百科 – 那吾克热·玉素甫江', url: 'https://zh.wikipedia.org/zh-cn/%E9%82%A3%E5%90%BE%E5%85%8B%E7%83%AD%C2%B7%E7%8E%89%E7%B4%A0%E7%94%AB%E6%B1%9F' }
-    - { title: '新浪 – 艾热夺冠 那吾克热获亚军', url: 'http://doc.sina.cn/?id=comos%3Afxeuwws1542869' }
-- id: 2018-all-that
-  year: 2018
-  title: All That Records
-  body: 10 月，AR刘夫阳获得 DNV 音乐集团投资，成立说唱厂牌 All That Records。
-  scene: china
-  artist: ar-liu-fuyang
-  sources:
-    - { title: '红网 – AR刘夫阳成立说唱厂牌', url: 'https://ent.rednet.cn/c/2018/10/22/4755942.htm' }
 - id: 2019-keyng
   year: 2019
   title: 杨和苏夺冠
@@ -244,6 +197,25 @@
   scene: world
   sources:
     - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }
+- id: 2023-cn-third-gen
+  year: 2023
+  title: 中国第三代 chopper 冒头
+  body: 圈里按人才集中出现的时间来分代：小安迪那一批算第一代，2018 年 SLC 的这批算第二代，2023 年前后冒出来的新人算第三代。蘑菇（MUSHMACH）就是这个时候横空出世的，2023 年 8 月开始发 Undaspeed 系列；之后青藤 CyanVine、Zack、willbe 等人陆续出现，2024 年的《Bilibili Choppers》和 2026 年的《Chinese Choppers》主要就是这一代在唱。
+  scene: china
+  artist: mushmach
+  track: undaspeed-solo-1
+  sources:
+    - { title: 'YouTube – MUSHMACH - Undaspeed Solo1（GumBrass 666 Underground Lab TV，2023-08-02）', url: 'https://www.youtube.com/watch?v=6OmIbrnQkEE' }
+- id: 2024-bilibili-choppers
+  year: 2024
+  title: Bilibili Choppers
+  body: 6 月 23 日，一首凑齐了 B 站九位 chopper 的 cypher 发布：青藤（小青藤呐）、GumBrass、Stlicmc、Lil蓝莓、AKA Triple-W、Y Herry、iSwear、Nero·Wander 和蘑菇（MUSHMACH）各唱一段，其中 GumBrass、Y Herry、Nero·Wander 都是 SLC 的老成员。视频署名的策划是五里亭亭长和 GumBrass，五里亭亭长同时负责工程和剪辑。这首前后拖了很久才做完；两年后，夏淳扬等人又做了《Bilibili Choppers 2》。
+  scene: china
+  track: bilibili-choppers
+  sources:
+    - { title: 'B站 – 五里亭亭长：Bilibili Choppers（2024-06-23）', url: 'https://www.bilibili.com/video/BV1ym421V7oo/' }
+    - { title: 'YouTube – GumBrass - Bilibili Choppers（简介列出全部参与者和分工）', url: 'https://www.youtube.com/watch?v=zEv3_o16Nuo' }
+    - { title: '网易云音乐 – Bilibili Choppers 2（2026-09-23）', url: 'https://music.163.com/song?id=3440568361' }
 - id: 2026-chinese-choppers
   year: 2026
   title: Chinese Choppers Cypher
@@ -264,11 +236,23 @@
   sources:
     - { title: 'B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017（截止到2017/9）', url: 'https://www.bilibili.com/video/BV11x411L79b/' }
     - { title: 'YouTube – NahDah Vebb：[outdated] The Top 150 Fastest Rappers | 2017', url: 'https://www.youtube.com/watch?v=bdR0N0R3jYU' }
+- id: 2017-greed-uploads
+  year: 2017
+  title: 貪婪國的子民把 chop 合辑搬到 B 站
+  body: 2017 年 11 月，B 站 UP 主貪婪國的子民一口气上传了 DJ Lil Sprite 的《Undaground Choppers》1–7 和 MC Rice 的《Illest Choppers》1–3，大多配了歌词，之后又陆续补上 8、9、10 和《Illest Choppers 4》。这类整首的 chop 合辑，国内听众以前很难找到；他也往网易云音乐搬过不少 chop 歌曲。
+  scene: china
+  sources:
+    - { title: 'B站 – 貪婪國的子民：【歌词】Sprite Beatz (aka DJ Lil Sprite) - Undaground Choppers 1（2017-11-06）', url: 'https://www.bilibili.com/video/BV1tx411j7sC/' }
+    - { title: 'B站 – 貪婪國的子民：MC Rice - Illest Choppers 1（2017-11-20）', url: 'https://www.bilibili.com/video/BV1cx411j7tT/' }
+    - { title: 'B站 – 貪婪國的子民：MC Rice - Illest Choppers 4（2018-09-25）', url: 'https://www.bilibili.com/video/BV1MW41167Bk/' }
+    - { title: 'B站 – 貪婪國的子民：Dj Lil Sprite - Undaground Choppers 10（2019-12-22）', url: 'https://www.bilibili.com/video/BV1CJ41147SB/' }
 - id: 2018-china-chop-circle
   year: 2018
-  title: 中国第二代 chop 圈组建
-  body: 受 NahDah 榜单搬运视频的影响，一批专门练 chop 的中国新人出现了。2018 年，煦航把他们组织起来，组建了中国的 chop 圈。这一批人被看作中国的第二代 chopper。
+  title: Superluminal Choppers：中国第二代 chop 圈
+  body: 受 NahDah 榜单和 chop 合辑搬运的影响，一批专门练 chop 的中国新人出现了。2018 年，煦航建了一个 QQ 群，起名 Superluminal Choppers（SLC），把他们聚到一起；2018 年暑假前后人慢慢多起来，GumBrass、Kastelaro、Nero·Wander、Y Herry 都是最早的一批成员。这一批人被看作中国的第二代 chopper。圈子一直不大，SLC 也因为大家没时间、人凑不齐，始终没录成正式的 cypher；2021 年 Kastelaro 先单独发了自己那一段。
   scene: china
+  sources:
+    - { title: '网易云音乐 – Kastelaro：Superluminal Choppers (Kastelaro Part)（2021-04-04）', url: 'https://music.163.com/song?id=1836364021' }
 - id: 2021-cn-speed-measuring
   year: 2021
   title: 中文圈自己测速

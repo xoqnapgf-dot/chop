@@ -490,6 +490,15 @@
       "hasBanner": true,
       "color": "#f8a898",
       "fetchedAt": "2026-09-26"
+    },
+    "xia-chunyang": {
+      "photo": {
+        "site": "网易云音乐歌手页",
+        "url": "https://music.163.com/#/artist?id=124327478",
+        "name": "夏淳扬"
+      },
+      "color": "#4888d8",
+      "fetchedAt": "2026-09-26"
     }
   },
   "tracks": {
@@ -957,6 +966,31 @@
       "video": "https://music.163.com/#/song?id=3380166290",
       "size": "netease",
       "color": "#f8f8e8"
+    },
+    "superluminal-choppers-kastelaro": {
+      "video": "https://music.163.com/#/song?id=1836364021",
+      "size": "netease",
+      "color": "#080808"
+    },
+    "bilibili-choppers": {
+      "video": "https://www.youtube.com/watch?v=zEv3_o16Nuo",
+      "size": "maxresdefault",
+      "color": "#f8f8f8"
+    },
+    "si-hai": {
+      "video": "https://music.163.com/#/song?id=2752225152",
+      "size": "netease",
+      "color": "#080808"
+    },
+    "bilibili-choppers-2": {
+      "video": "https://music.163.com/#/song?id=3440568361",
+      "size": "netease",
+      "color": "#080808"
+    },
+    "undaspeed-solo-1": {
+      "video": "https://www.youtube.com/watch?v=6OmIbrnQkEE",
+      "size": "sddefault",
+      "color": "#080808"
     }
   }
 }
