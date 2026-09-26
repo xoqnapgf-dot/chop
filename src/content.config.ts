@@ -41,7 +41,7 @@ const artists = defineCollection({
     nameZh: z.string().optional(),
     realName: z.string().optional(),
     tagline: z.string(),
-    country: z.enum(['US', 'KR', 'TR', 'CN', 'PH', 'GE', 'MX', 'AU', 'CA', 'GB', 'AT', 'BR']),
+    country: z.enum(['US', 'KR', 'TR', 'CN', 'PH', 'GE', 'MX', 'AU', 'CA', 'GB', 'AT', 'BR', 'HU', 'MY']),
     city: z.string(),
     /** 分组用的地区名，中国区按这个分组（如"川渝"） */
     region: z.string(),
@@ -136,6 +136,10 @@ const learn = defineCollection({
     kicker: z.string(),
     summary: z.string(),
     order: z.number(),
+    /** 开头"三句话看懂"的要点 */
+    keyPoints: z.array(z.string()).default([]),
+    /** 开头的示意图（见 LearnFigure.astro） */
+    figure: z.enum(['tiers', 'origins', 'windows', 'guinness']).optional(),
     sources: z.array(source).default([]),
   }),
 });

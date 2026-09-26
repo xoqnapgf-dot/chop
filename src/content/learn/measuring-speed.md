@@ -3,6 +3,11 @@ title: 语速怎么测？本站的数据口径
 kicker: 方法论
 summary: 为什么网上的"每秒几个音节"经常对不上，以及本站怎么处理这些数字。
 order: 5
+keyPoints:
+  - '每个数字都要写出算式：音节数 ÷ 秒数。'
+  - '先看窗口：1 秒爆发、几秒短段、整段平均，差出一倍很正常。'
+  - '早期榜单数字普遍虚高，要看测算方法和有没有加速。'
+figure: windows
 sources:
   - { title: 'Wikipedia – Rap God', url: 'https://en.wikipedia.org/wiki/Rap_God' }
   - { title: 'Wikipedia – Godzilla (Eminem song)', url: 'https://en.wikipedia.org/wiki/Godzilla_(Eminem_song)' }

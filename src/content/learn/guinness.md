@@ -3,6 +3,11 @@ title: 吉尼斯"最快说唱"纪录：谁真的拿过
 kicker: 考据
 summary: 吉尼斯的"最快说唱"纪录换过好几次人，计时规则也改过，后来不再有新的认证。按时间把能查到的记录排一遍，再把"说话最快"和《Rap God》这些容易混的说法分开。
 order: 6
+keyPoints:
+  - '吉尼斯"最快说唱"前后认证过 5 次，2008 年以后没再认证新的。'
+  - '计时口径从"几十秒"改成"一分钟"，所以纪录保持者反而变慢了。'
+  - '"说话最快"和《Rap God》的"单词最多"都是别的项目，和说唱速度无关。'
+figure: guinness
 sources:
   - { title: 'Wikipedia – Twista（1992 年吉尼斯"最快的英语说唱者"）', url: 'https://en.wikipedia.org/wiki/Twista' }
   - { title: 'HipHopDX – Twista Talks G.O.O.D. Music, Reclaiming Guinness World Record（2012）', url: 'https://hiphopdx.com/news/id.19859/title.twista-talks-g-o-o-d-music-reclaiming-guinness-world-record' }

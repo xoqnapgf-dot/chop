@@ -100,6 +100,23 @@
   sources:
     - { title: 'YouTube – TrollatorBR："TOP 50" Rappers Mais Rápidos do Brasil（2021）', url: 'https://www.youtube.com/watch?v=Bn8BQsxuif0' }
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+- id: hu
+  name: 匈牙利
+  en: Hungary
+  geo: [47.2, 19.5]
+  summary: DUMANOID（早年叫 DNS）用匈牙利语和英语唱，三版 NahDah 榜都在前 15；他和奥地利的 Ruffian Rugged 合作了整张《For The Record》，其中就有《Onion Chopper》。
+  sources:
+    - { title: 'SPS and Chopper Rap Wiki – Dumanoid', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Dumanoid' }
+    - { title: 'YouTube – Dumanoid - The Evolution of a Chopper（2020）', url: 'https://www.youtube.com/watch?v=9fSwvbruiHU' }
+- id: my
+  name: 马来西亚
+  en: Malaysia
+  geo: [4.2, 102.0]
+  summary: 泰米尔语说唱的一个重镇。Sri Rascol 和 ADK 的 Rap Machines 出过多支千万级播放的 MV，《AYM》的高速段落进了 NahDah 2023 版第 11 名。
+  mentions: [ADK]
+  sources:
+    - { title: 'YouTube – Rap Machines（Sri Rascol 官方频道）', url: 'https://www.youtube.com/@srirascolofficial' }
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
 - id: dk
   name: 丹麦
   en: Denmark

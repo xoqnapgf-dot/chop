@@ -2,6 +2,7 @@
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import Base from '@/layouts/Base.astro';
 import Sources from '@/components/Sources.astro';
+import LearnFigure from '@/components/LearnFigure.astro';
 import { url } from '@/lib/url';
 
 export async function getStaticPaths() {
@@ -16,6 +17,8 @@ interface Props {
 const { entry, prev, next } = Astro.props;
 const { Content, headings } = await render(entry);
 const toc = headings.filter((h) => h.depth === 2);
+// 粗略阅读时间：中文按每分钟 500 字
+const minutes = Math.max(1, Math.round((entry.body ?? '').replace(/\s+/g, '').length / 500));
 ---
 
 <Base title={entry.data.title} description={entry.data.summary}>
@@ -23,11 +26,34 @@ const toc = headings.filter((h) => h.depth === 2);
     <header class="max-w-3xl">
       <a href={url('learn/')} class="eyebrow link-u hover:text-ink">← 百科</a>
       <div class="mt-5 flex flex-wrap items-center gap-2">
-        <span class="eyebrow">{entry.data.kicker}</span>
+        <span class="chip">{entry.data.kicker}</span>
+        <span class="chip font-mono">{toc.length} 节</span>
+        <span class="chip font-mono">约 {minutes} 分钟</span>
       </div>
       <h1 class="mt-4 text-4xl font-bold leading-tight md:text-6xl">{entry.data.title}</h1>
       <p class="mt-5 text-lg text-ink-2">{entry.data.summary}</p>
     </header>
+
+    {
+      (entry.data.figure || entry.data.keyPoints.length > 0) && (
+        <div class="mt-10 grid gap-4 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)]">
+          {entry.data.figure && <LearnFigure kind={entry.data.figure} />}
+          {entry.data.keyPoints.length > 0 && (
+            <aside class="kp card p-5 sm:p-7">
+              <p class="kp-cap">三句话看懂</p>
+              <ol class="mt-4 grid gap-3">
+                {entry.data.keyPoints.map((k, i) => (
+                  <li class="grid grid-cols-[2rem_1fr] gap-3">
+                    <span class="kp-n">{i + 1}</span>
+                    <span class="text-[0.95rem] leading-relaxed text-ink">{k}</span>
+                  </li>
+                ))}
+              </ol>
+            </aside>
+          )}
+        </div>
+      )
+    }
 
     <div class="mt-14 grid gap-12 lg:grid-cols-[minmax(0,1fr)_240px]">
       <div class="prose-chop max-w-3xl min-w-0"><Content /></div>
@@ -77,6 +103,80 @@ const toc = headings.filter((h) => h.depth === 2);
   }
   .prose-chop :global(h2) {
     scroll-margin-top: 6rem;
+  }
+  .kp {
+    background: color-mix(in oklab, var(--accent) 8%, var(--surface));
+  }
+  .kp-cap {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .kp-n {
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+  /* 正文：章节编号、表格做成卡片、引用做成提示框 */
+  .prose-chop {
+    counter-reset: sec;
+  }
+  .prose-chop :global(h2) {
+    counter-increment: sec;
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--line);
+  }
+  .prose-chop :global(h2)::before {
+    content: counter(sec, decimal-leading-zero);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-text);
+    border: 1px solid color-mix(in oklab, var(--accent) 50%, transparent);
+    border-radius: 999px;
+    padding: 0.05rem 0.55rem;
+    transform: translateY(-0.15rem);
+  }
+  .prose-chop :global(table) {
+    display: block;
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--surface);
+  }
+  .prose-chop :global(thead th) {
+    background: color-mix(in oklab, var(--accent) 12%, var(--surface));
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  .prose-chop :global(tbody tr:nth-child(even)) {
+    background: var(--surface-2);
+  }
+  .prose-chop :global(tbody tr:last-child td) {
+    border-bottom: 0;
+  }
+  .prose-chop :global(td:first-child) {
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .prose-chop :global(blockquote) {
+    border-radius: 0 14px 14px 0;
+  }
+  .prose-chop :global(p > strong) {
+    background: linear-gradient(transparent 62%, color-mix(in oklab, var(--accent) 28%, transparent) 62%);
+  }
+  .prose-chop :global(ol > li::marker) {
+    color: var(--accent-text);
+    font-weight: 700;
   }
 </style>
 
