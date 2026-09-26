@@ -102,7 +102,8 @@ const subdivisions = [
           <p class="mt-1 text-xs text-ink-3">每秒音符数 = BPM ÷ 60 × 每拍音符数</p>
 
           <div class="mt-8">
-            <p class="eyebrow mb-3">和已证实的纪录比</p>
+            <p class="eyebrow mb-1">离你最近的已证实纪录</p>
+            <p class="mb-3 text-xs text-ink-3">只列当前速度上下各 3 条，拖动 BPM 或换细分会跟着变。</p>
             <ul id="compare" class="grid gap-3"></ul>
           </div>
         </div>
@@ -296,7 +297,12 @@ const subdivisions = [
       rateEl.textContent = rate.toFixed(2);
       formula.textContent = `${bpm} ÷ 60 × ${sub} = ${rate.toFixed(2)}`;
       steps.innerHTML = Array.from({ length: 4 }, () => `<div class="beat">${'<i></i>'.repeat(sub)}</div>`).join('');
+      // 纪录按从快到慢排好了；取当前速度附近的 6 条
+      const at = refs.findIndex((r) => r.v <= rate);
+      const mid = at === -1 ? refs.length : at;
+      const from = Math.max(0, Math.min(refs.length - 6, mid - 3));
       compare.innerHTML = refs
+        .slice(from, from + 6)
         .map((r) => {
           const pct = Math.min(100, (rate / r.v) * 100);
           return `<li><div class="flex justify-between text-sm"><span class="text-ink">${r.name}</span><span class="font-mono tabular-nums text-ink-2">${Math.round((rate / r.v) * 100)}%</span></div>
