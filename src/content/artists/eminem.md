@@ -3,8 +3,8 @@ name: Eminem
 realName: Marshall Bruce Mathers III
 tagline: 用《Rap God》和《Godzilla》不断刷新自己语速纪录的底特律白人说唱巨星。
 country: US
-city: 底特律 Detroit
-region: 美国中西部
+city: 密歇根州 底特律
+region: 北美
 activeSince: 1988
 style: track
 styleNote: 风格多面，不是纯 chopper；因《Rap God》《Godzilla》等作品里的高速段落常被拿来比较语速。维基百科 Chopper 词条也把他列入中西部。

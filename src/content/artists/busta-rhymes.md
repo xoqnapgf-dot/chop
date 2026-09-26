@@ -3,8 +3,8 @@ name: Busta Rhymes
 realName: Trevor George Smith Jr.
 tagline: 布鲁克林的"人肉加特林"，在别人的歌里抢戏的快嘴客串之王。
 country: US
-city: 纽约 Brooklyn
-region: 美国东岸
+city: 纽约州 纽约
+region: 北美
 activeSince: 1986
 style: chopper
 styleNote: 维基百科 Chopper 词条列为东岸代表，也参与了 Worldwide Choppers。

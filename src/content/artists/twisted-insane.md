@@ -3,8 +3,8 @@ name: Twisted Insane
 realName: Michael Johnson
 tagline: 圣地亚哥的恐怖核快嘴，自己厂牌 Brainsick Muzik 的主理人。
 country: US
-city: 圣地亚哥 San Diego
-region: 美国西岸
+city: 加利福尼亚州 圣地亚哥
+region: 北美
 activeSince: 1996
 style: chopper
 styleNote: 维基百科称他以 chop 风格演唱。

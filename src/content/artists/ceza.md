@@ -3,8 +3,8 @@ name: Ceza
 realName: Bilgin Özçalkan
 tagline: 土耳其最快的说唱者，Worldwide Choppers 里唯一的土耳其语段落。
 country: TR
-city: 伊斯坦布尔 Istanbul
-region: 土耳其
+city: 伊斯坦布尔
+region: 西亚
 activeSince: 1995
 style: chopper
 styleNote: Worldwide Choppers 成员，被称为土耳其最快的说唱者。

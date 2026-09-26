@@ -3,8 +3,8 @@ name: DNA Tru Lyricist
 realName: David G. Phelps
 tagline: 得州泰勒的老牌地下 chopper，Lightspeed Chopper 系列的作者：资历深、合作广，影响力远大于知名度。
 country: US
-city: 泰勒 Tyler, Texas
-region: 美国南部
+city: 得克萨斯州 泰勒
+region: 北美
 geo: [32.35, -95.30]
 style: chopper
 styleNote: Lightspeed Chopper 系列的作者，DJ Lil Sprite《Undaground Choppers》系列的常客，NahDah 2023 榜第 9 名。他给自己的定位是"Tru Lyricist"：chop 不只要快，还要有多重韵和完整的歌词。
@@ -55,7 +55,7 @@ sources:
   - { title: '网易云音乐 – The Lightspeed Chopper Mixtape', url: 'https://music.163.com/#/song?id=1832667523' }
 ---
 
-DNA Tru Lyricist 本名 David G. Phelps，来自美国得克萨斯州东部的**泰勒（Tyler）**，早年用过 **Tru Ripsta** 这个名字。Genius 上记录的第一首歌是 2005 年的《Throwed in tha Game》。他 2009 年开通 YouTube 频道，频道简介里写着自己"说唱了二十多年"。2015 年他在评论区说，DNA 这个名字已经用了 16 年；他翻出来的一些早年作品还是卡带年代录的，那时他大概 16 岁。
+DNA Tru Lyricist 本名 David G. Phelps，来自美国得克萨斯州东部的**泰勒（Tyler）**，早年用过 **Tru Ripsta** 这个名字。Genius 上记录的第一首歌是 2005 年的《Throwed in tha Game》。他 2009 年开通 YouTube 频道，频道简介里写着自己"说唱了二十多年"。2015 年他在评论区说，DNA 这个名字已经用了 16 年；他翻出来的一些早年作品还是卡带年代录的。
 
 他在 Genius 简介里列出的偶像是 Tech N9ne、Bone Thugs-n-Harmony、Twista、Eminem、K-Rino、Z-RO、Rittz 和 Brotha Lynch Hung，基本就是一份中西部和南部 chopper 的名单。
 
@@ -73,7 +73,7 @@ DNA Tru Lyricist 本名 David G. Phelps，来自美国得克萨斯州东部的**
 
 其中《**Lightspeed Chopper 3**》（2015 年 4 月发行）是他最快的歌。第二段主歌开头他就唱：受够了总有人问他的 SPS 是多少。NahDah 2023 年的《Top 150 Fastest Rappers》把他排在**第 9 名**，1.070 秒 19 个音节，约 **17.76 SPS**。这份榜单只收正式录音室歌曲，发现加速就除名，文档里还按官方歌词逐个列出了这 19 个音节。NahDah 2017 版给的也是这首，1.47 秒 26 个音节（约 17.7），两版结果一致；2021 版少数了两个音节（约 16.26）。NahDah 三版榜单、五里亭亭长的全球榜、KillerAP 的 DNA 专题都认定这首是他最快的歌。
 
-另外，他 2020 年发过一个标题写着"Lightspeed Chopper 5 {32 sps}"的视频，那是个恶搞，评论区都在说"被骗到了"，不是真歌，本站不计。
+另外，他 2020 年发过一个标题写着"Lightspeed Chopper 5 {32 sps}"的视频，那是个恶搞，评论区都在说"被骗到了"，不是真歌。
 
 ## Undaground Choppers 的常客
 
@@ -97,17 +97,15 @@ UC8 发布后，他专门录了一期视频回应大家对他这段的评论和�
 
 ## 和 Leach 的对谈（2021）
 
-2021 年 3 月，DNA 在自己的频道上发了一段和 Leach 的聊天录音《Talk About RAP》。录音没有字幕，下面是按内容整理的要点，不是逐字原话：
+2021 年 3 月，DNA 在自己的频道上发了一段和 Leach 的聊天录音《Talk About RAP》，主要聊了这些：
 
 - **写得极快**：那段时间他说自己进入了"疯狂写作模式"，几乎每天早上起来就写一首、录一首。Leach 发来新歌的伴奏，他不到半小时就写完录完了；Leach 也说，每天早上醒来都能看到一首 DNA 的新歌。
 - **从灵魂里写**：Leach 说自己写词总想太多，怕押韵不工整、句子不够聪明。DNA 的建议是别想太多，想到下一句就写下来，"只要是从灵魂里出来的，就是真的"。多音节押韵这种功夫不用刻意，练多了自然会冒出来。他举的例子是两周前刚发的《The Multiple Killing Spree》：一开始没打算写成那样，写着写着就一口气写满了 235 个多音节押韵。
 - **贴合伴奏，而不是只比快**：他说在 Undaground Choppers 里，别人都在拼命唱得越快越好，他一直在想的是怎么贴合伴奏的氛围，"让听的人先感受到你的氛围，他们才会感受你的歌词"。
 - **互相推崇**：DNA 开场就说"我老是忘了 Leach 是史上最好的之一"；Leach 则说，能贴合一首歌的氛围，正是好说唱歌手和普通说唱歌手的区别。两人还聊到早年的合作《Tie The Noose》。
 
-录音最后两人提到一首快要发的合作。DNA 在视频评论里写的是"Leach 有首新歌要出，里面有我"。本站没找到这首歌后来发行的记录。
+录音最后两人提到一首快要发的合作。DNA 在视频评论里写的是"Leach 有首新歌要出，里面有我"。
 
 ## "真歌词"：不只比速度
 
-DNA 的名字就是他的立场：**Tru Lyricist**，真正的作词人。他更在意多重韵、词组和完整的歌词结构，也更在意贴合伴奏的氛围，这和本站"快 ≠ Chop"的观点一致：速度只是 chop 的表象。
-
-> 视频、简介和评论来自他本人的 YouTube 频道，本站逐条核对过；专辑、歌词和早年经历来自 Genius。邮箱、电话、家人等私人信息不收录。
+DNA 的名字就是他的立场：**Tru Lyricist**，真正的作词人。他更在意多重韵、词组和完整的歌词结构，也更在意贴合伴奏的氛围，这也说明了"快 ≠ Chop"：速度只是 chop 的表象。

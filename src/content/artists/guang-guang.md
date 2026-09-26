@@ -3,7 +3,7 @@ name: Guang Guang
 nameZh: 光光
 tagline: '南京 D-Evil 成员，2008 年的《Speed #1》常被称为中文说唱早期最快的作品。'
 country: CN
-city: 南京
+city: 江苏 南京
 region: 华东
 activeSince: 2003
 style: fast

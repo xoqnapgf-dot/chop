@@ -4,10 +4,10 @@ realName: Papuna Abesadze
 tagline: 来自格鲁吉亚、已退役的 chopper：一度被认为能稳定超过 20 SPS，后来多数高速作品被判定加速。
 country: GE
 city: 未公开
-region: 东欧
+region: 高加索
 geo: [42.3, 43.36]
 style: chopper
-styleNote: Undaground Choppers 4–8 的常客，频道简介自称"[已退役] 的东欧 chopper"。能认的只有 Syllabic War、UC4、UC7 这几首，其余最快的 verse 被判定加速，本站仍标 Chopper，但数字分开看。
+styleNote: Undaground Choppers 4–8 的常客，频道简介自称"[已退役] 的东欧 chopper"。能认的只有 Syllabic War、UC4、UC7 这几首，其余最快的 verse 被判定加速，仍标 Chopper，但数字分开看。
 tags: [格鲁吉亚, 已退役, Undaground Choppers, 加速争议]
 youtube: { channelId: UCmYuEGJ6CKaPVERYTsrHggQ, handle: '@ic8790', kind: official }
 # 头像用他本人频道的卡通头像（横幅是风景图，不用）
@@ -103,6 +103,4 @@ Interchopper 本名 Papuna Abesadze，来自东欧的**格鲁吉亚**。他 2016
 
 至于直播和现场，Genius 和 SPS wiki 都认为，那些"现场证明"更像是发出和歌词相似的声音，而不是一字一字唱清楚。
 
-这正是本站把"快"和"chop"分开的原因：一个数字再高，如果录音是加速的、现场唱不清，就说明不了什么。
-
-> 以上资料来自他本人的 YouTube 频道、Genius 和 SPS wiki。和音乐无关的个人信息（比如现在的工作）本站不收录。
+这正是"快"和"chop"要分开看的原因：一个数字再高，如果录音是加速的、现场唱不清，就说明不了什么。

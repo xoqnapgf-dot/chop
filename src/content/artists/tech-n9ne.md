@@ -3,8 +3,8 @@ name: Tech N9ne
 realName: Aaron Dontez Yates
 tagline: Strange Music 创始人，把 chop 做成系列企划、推向全世界的人。
 country: US
-city: 堪萨斯城 Kansas City
-region: 美国中西部
+city: 密苏里州 堪萨斯城
+region: 北美
 activeSince: 1991
 style: chopper
 styleNote: 把 chop 做成系列企划（Worldwide Choppers），维基百科称他在 1990 年代末让 chop 风格流行起来。

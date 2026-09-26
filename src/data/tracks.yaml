@@ -192,7 +192,7 @@
   youtubeChannel: Bagel Music
   officialUpload: false
   scene: china
-  note: 2022 年 10 月 11 日发行，正好是法老三十岁生日。有第三方测算称其中一段 5 秒快嘴约 10 字/秒。
+  note: 2022 年 10 月 11 日发行，正好是法老的生日。有第三方测算称其中一段 5 秒快嘴约 10 字/秒。
   sources:
     - { title: '网易云音乐 – 健将', url: 'https://music.163.com/song?id=1988565273' }
     - { title: '百度百科 – 健将mixtape', url: 'https://baike.baidu.com/item/%E5%81%A5%E5%B0%86mixtape/62070166' }
@@ -206,7 +206,7 @@
   officialUpload: false
   scene: china
   year: 2008
-  note: '常被列为幼稚园杀手最快的歌之一。知乎专栏《幼稚园杀手：论diss，在座各位都是垃圾》称它是 2008 年的作品，歌里 diss 了茶米；本站打不开原文逐字核对，能查到最早的公开上传是 2017 年的歌词视频，所以年份仍标待核实。'
+  note: '常被列为幼稚园杀手最快的歌之一。知乎专栏《幼稚园杀手：论diss，在座各位都是垃圾》称它是 2008 年的作品，歌里 diss 了茶米；能查到最早的公开上传是 2017 年的歌词视频。'
   confidence: pending
   sources:
     - { title: '百度百科 – 幼稚园杀手', url: 'https://baike.baidu.com/item/%E5%B9%BC%E7%A8%9A%E5%9B%AD%E6%9D%80%E6%89%8B/1475883' }
@@ -598,7 +598,7 @@
   youtubeChannel: 驁三春
   officialUpload: false
   scene: china
-  note: '和凤凰鸣的合作（2008）。两位 UP 主分别测过最快的一句：五里亭亭长 1.27 秒 21 个字 ≈ 16.5，石狐九和 1.16 秒 19 个字 ≈ 16.4，韵脚检查视频也数出 16–17 个字（吞字算法不同）。幼稚园杀手的人声变过调，本站不把这些数字计入纪录。'
+  note: '和凤凰鸣的合作（2008）。两位 UP 主分别测过最快的一句：五里亭亭长 1.27 秒 21 个字 ≈ 16.5，石狐九和 1.16 秒 19 个字 ≈ 16.4，韵脚检查视频也数出 16–17 个字（吞字算法不同）。幼稚园杀手的人声变过调，这些数字不能当纪录看。'
   sources:
     - { title: 'StreetVoice – 胜利 Feat. 凤凰鸣（幼稚园杀手官方账号）', url: 'https://streetvoice.com/kindagartenkilla/songs/62788/' }
     - { title: 'B站 – 【韵脚检查】幼杀局部语速最快的一首歌：胜利', url: 'https://www.bilibili.com/video/BV1EqZAYtEnJ/' }

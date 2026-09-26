@@ -10,7 +10,7 @@ import Avatar from '@/components/Avatar.astro';
 import Confidence from '@/components/Confidence.astro';
 import CollabNetwork from '@/components/CollabNetwork.astro';
 import { url } from '@/lib/url';
-import { STYLE, displayName } from '@/lib/labels';
+import { STYLE, displayName, placeLabel } from '@/lib/labels';
 import { mdLite } from '@/lib/md';
 
 const regions = (await getCollection('regions')).sort((a, b) => a.data.order - b.data.order);
@@ -136,7 +136,7 @@ const toc = [
                             <Avatar id={a.id} data={a.data} widths={[96]} sizes="48px" class="size-12 shrink-0 overflow-hidden rounded-lg object-cover" />
                             <span class="min-w-0 flex-1">
                               <span class="block truncate font-semibold">{displayName(a.data)}</span>
-                              <span class="block truncate text-xs text-ink-3">{a.data.city === '未公开' ? '所在地未公开' : a.data.city}</span>
+                              <span class="block truncate text-xs text-ink-3">{placeLabel(a.data)}</span>
                             </span>
                             <StyleChip style={a.data.style} />
                           </a>
@@ -222,7 +222,7 @@ const toc = [
       <div class="card p-6 sm:p-8">
         <p class="eyebrow mb-6">中国区语速数据</p>
         <SpeedChart scene="china" />
-        <p class="mt-4 text-xs text-ink-3">这些数字大多来自网络测算，本站都标了可信度。再强调一次：这张榜只比"快"，不代表谁是 chopper。</p>
+        <p class="mt-4 text-xs text-ink-3">这些数字大多来自网络测算。这张榜只比"快"，不代表谁是 chopper。</p>
       </div>
     </div>
   </section>

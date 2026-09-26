@@ -4,11 +4,11 @@ nameZh: 法老
 realName: 孙权
 tagline: 活死人厂牌创始人，中文说唱里最有代表性的技术流快嘴之一。
 country: CN
-city: 浙江海宁
+city: 浙江 海宁
 region: 华东
 activeSince: 2013
 style: fast
-styleNote: 以硬核快嘴著称，很多作品里有高速段落；本站没找到称他为 chopper 的可靠来源，所以标"快嘴"。
+styleNote: 以硬核快嘴著称，很多作品里有高速段落；但不以 chop 为核心风格，所以标"快嘴"。
 geo: [30.51, 120.68]
 born: '1992-10-11'
 tags: [中文, 活死人, 技术流]

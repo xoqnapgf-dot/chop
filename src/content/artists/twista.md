@@ -3,8 +3,8 @@ name: Twista
 realName: Carl Terrell Mitchell
 tagline: 1992 年吉尼斯认证的「最快英语说唱者」，芝加哥快嘴的活化石。
 country: US
-city: 芝加哥 Chicago
-region: 美国中西部
+city: 伊利诺伊州 芝加哥
+region: 北美
 activeSince: 1991
 style: chopper
 styleNote: Chop 风格的开创者之一，维基百科 Chopper 词条把他列为中西部代表。
@@ -24,7 +24,7 @@ speed:
     syllables: 598
     seconds: 55
     confidence: verified
-    note: 598 ÷ 55 ≈ 10.87。吉尼斯后来取消了这个类别，所以它是历史纪录，不是现行纪录。
+    note: 598 ÷ 55 ≈ 10.87。这个纪录 1998 年就被 Rebel XD 打破了，吉尼斯 2008 年以后也不再认证新的"最快说唱"，所以它是历史纪录。
     sources:
       - { title: 'Wikipedia – Twista', url: 'https://en.wikipedia.org/wiki/Twista' }
       - { title: 'HipHopHero – How Twista broke the record', url: 'https://hiphophero.com/twista-record-worlds-fastest-rapper/' }

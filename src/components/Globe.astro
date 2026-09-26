@@ -6,7 +6,7 @@
 import { getCollection } from 'astro:content';
 import Avatar from './Avatar.astro';
 import StyleChip from './StyleChip.astro';
-import { displayName } from '@/lib/labels';
+import { displayName, placeLabel } from '@/lib/labels';
 import { url } from '@/lib/url';
 
 interface Props { initial?: string }
@@ -76,7 +76,7 @@ const panels = scenes.map((s) => ({
                       <Avatar id={a.id} data={a.data} widths={[96]} sizes="44px" class="size-11 shrink-0 overflow-hidden rounded-lg object-cover" />
                       <span class="min-w-0 flex-1">
                         <span class="block truncate font-semibold">{displayName(a.data)}</span>
-                        <span class="block truncate text-xs text-ink-3">{a.data.city}</span>
+                        <span class="block truncate text-xs text-ink-3">{placeLabel(a.data)}</span>
                       </span>
                       <StyleChip style={a.data.style} />
                     </a>
@@ -87,7 +87,7 @@ const panels = scenes.map((s) => ({
 
             {s.data.mentions.length > 0 && (
               <p class="mt-4 text-sm text-ink-3">
-                来源中提到、本站暂未建档：<span class="text-ink-2">{s.data.mentions.join('、')}</span>
+                另有：<span class="text-ink-2">{s.data.mentions.join('、')}</span>
               </p>
             )}
 

@@ -3,8 +3,8 @@ name: Crucified
 realName: Richard Dickie Lee Mason
 tagline: 唱了二十多年的德州地下 chopper，和 Bizzy Bone、Twisted Insane 合作过，也是"只比 1 秒"之争的反面参照。
 country: US
-city: 新布朗费尔斯 New Braunfels
-region: 美国南部
+city: 得克萨斯州 新布朗费尔斯
+region: 北美
 activeSince: 2004
 born: '1987-06-18'
 style: chopper
@@ -23,7 +23,7 @@ speed:
     syllables: 949
     seconds: 49
     confidence: pending
-    note: '据 Rap Wiki 记载，Bizzy Bone 为他作证；半年后吉尼斯关闭了"最快说唱"类别，所以没有正式成绩。音节数是挑战自报的，没有第三方逐音节数过；NahDah 等榜单按规则不收纪录挑战。'
+    note: '据 Rap Wiki 记载，Bizzy Bone 为他作证；这次挑战没有得到吉尼斯认证。音节数是挑战自报的，没有第三方逐音节数过；NahDah 等榜单按规则不收纪录挑战。'
     sources:
       - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }
   - value: 17.37
@@ -113,7 +113,7 @@ Crucified 来自美国得克萨斯州的新布朗费尔斯，1987 年生。他�
 
 ## 吉尼斯挑战
 
-2013 年 9 月 13 日，他冲击吉尼斯"最快说唱"纪录：**49 秒 949 个音节，平均 19.37**，Bizzy Bone 为他作证。半年后，吉尼斯以"参与者太少"为由关闭了这个类别，所以这次挑战没有正式成绩。
+2013 年 9 月 13 日，他冲击吉尼斯"最快说唱"纪录：**49 秒 949 个音节，平均 19.37**，Bizzy Bone 为他作证。这次挑战没有得到吉尼斯认证；据 Rap Wiki，半年后吉尼斯以"参与者太少"为由关闭了这个类别。吉尼斯最后认证的"最快说唱"是 2008 年的 El Chojin（60 秒 921 个音节）。
 
 ## 被质疑"加速"和"乱吐字"
 
@@ -127,11 +127,9 @@ Crucified 来自美国得克萨斯州的新布朗费尔斯，1987 年生。他�
 
 ## 数字对照
 
-| 说法 | 来源 | 本站判断 |
+| 说法 | 来源 | 判断 |
 |---|---|---|
 | 《Power Up》28.9 SPS | 2017 年的误算 | 已辟谣 |
 | 《Power Up》爆发 18 SPS | SPS wiki | 与 Rap Wiki 的 19 不一致，有争议 |
 | 《Surprise》24.9 SPS | 他自己的视频标题 | SPS 社区测得 21，有争议 |
 | 现场 46 秒 799 音节 | 现场视频 | 可以复算：799 ÷ 46 ≈ 17.37 |
-
-> 本页资料来自两个粉丝 wiki（Rap Wiki、SPS and Chopper Rap Wiki），引用的视频本站都用 YouTube 公开接口核对过。两个 wiki 说法不一致的地方，都已并列标出。

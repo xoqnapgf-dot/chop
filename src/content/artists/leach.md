@@ -78,9 +78,9 @@ sources:
   - { title: 'B站 – DNA Tie The Noose ft LEACH Yung Revival（搬运，2021）', url: 'https://www.bilibili.com/video/BV1NZ4y1F786/' }
 ---
 
-Leach 是加拿大的地下 chopper，唱英语。NahDah 2021 版的榜单卡片上标的国家就是加拿大，J Battle 的《United Choppers 4》评论区列各人地区时也写他来自加拿大，听众上传他的歌时常加一句"加拿大最快的 rapper"。具体城市本站没找到可靠来源，不写。
+Leach 是加拿大的地下 chopper，唱英语。NahDah 2021 版的榜单卡片上标的国家就是加拿大，J Battle 的《United Choppers 4》评论区列各人地区时也写他来自加拿大，听众上传他的歌时常加一句"加拿大最快的 rapper"。
 
-他在圈里的分量很重，但公开信息很少：本站没查到他的个人专辑，他自己的 YouTube 频道只放过一首歌，大部分作品都散落在合作方频道和听众搬运里。
+他在圈里的分量很重，但公开信息很少：他自己的 YouTube 频道只放过一首歌，大部分作品都散落在合作方频道和听众搬运里。
 
 ## 早期：2012–2013
 
@@ -132,5 +132,3 @@ NahDah 2023 版的除名说明是这样写的：Leach 是"快速说唱史上广�
 ## 在中文圈
 
 中文圈听众很早就在搬运他：2019 年千石没林在 B 站发了"leach-最快的rap歌曲"，2021 年有人把《Tie The Noose》和《Ain't No Game》搬到 B 站，2023 年五里亭亭长做过一期《Ain't No Game》的慢放。不过 B 站那个"29.7 SPS"的标题并不成立，原因见上面的速度数据。
-
-> 国籍来自 NahDah 2021 版的卡片和合作方的标注，作品年份来自 DNA、J Battle 等人的官方上传和 Bandcamp。真名、城市、家人等私人信息不收录。
