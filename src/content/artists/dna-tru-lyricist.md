@@ -46,6 +46,10 @@ sources:
   - { title: 'YouTube – DNA - Rebel XD DISS（2015）', url: 'https://www.youtube.com/watch?v=sBmQbEqBsPo' }
   - { title: 'YouTube – DNA - UC8 VIDEO, REVIEW, and RESPONSE "Undaground Choppers 8"（2018）', url: 'https://www.youtube.com/watch?v=lNBB5mL_qGI' }
   - { title: 'YouTube – Tru Cipher ft. DNA, Leach, Nokturnal, Fluenci, Swift Homicide, DOWN6（2023）', url: 'https://www.youtube.com/watch?v=2wGRpq1w1co' }
+  - { title: 'YouTube – DNA Tru Lyricist and Leach: Talk About RAP :)（本人频道，2021-03-25）', url: 'https://www.youtube.com/watch?v=llc2rYpbcjU' }
+  - { title: 'YouTube – DNA Tru Lyricist - The Multiple Killing Spree (235 Multiples)（2021-03-11）', url: 'https://www.youtube.com/watch?v=LcbUhyPmths' }
+  - { title: 'YouTube – DNA - Tie The Noose ft LEACH, Yung Revival（2015）', url: 'https://www.youtube.com/watch?v=egCYAK2VzFQ' }
+  - { title: 'YouTube – DNA Tru Lyricist - Hypnotized ft. Leach（2020）', url: 'https://www.youtube.com/watch?v=BPTL5kQ_Z-4' }
   - { title: '网易云音乐 – The Lightspeed Chopper Mixtape', url: 'https://music.163.com/#/song?id=1832667523' }
 ---
 
@@ -83,14 +87,25 @@ UC8 发布后，他专门录了一期视频回应大家对他这段的评论和�
 
 ## 合作和交锋
 
-- **和 Leach 多次合作**：《Darkside Remix》（2015，ft. LEACH、YUNGREVIVAL）、《Darkside of the Moon》（ft. Vulvus & Leach）、《Chopper Homiez》（2019 年专辑《Tru》，ft. Big Loony、Fifth Elley、Fluenci & Leach）、《Nova Returns》（2025 年专辑《Warlock》），以及多人 cypher《**Tru Cipher**》（2023，ft. Leach、Nokturnal、Fluenci、Swift Homicide、DOWN6）。他在 Tru Cipher 的评论区说，Leach 是"史上最好的之一"，这首歌本来都不打算发，是 Nokturnal 说服了他。
+- **和 Leach 多次合作**：《Tie The Noose》（2015，ft. LEACH、Yung Revival）、《Darkside Remix》（2015，ft. LEACH、YUNGREVIVAL）、《Hypnotized》（2020，ft. Leach）、《Darkside of the Moon》（ft. Vulvus & Leach）、《Chopper Homiez》（2019 年专辑《Tru》，ft. Big Loony、Fifth Elley、Fluenci & Leach）、《Nova Returns》（2025 年专辑《Warlock》），以及多人 cypher《**Tru Cipher**》（2023，ft. Leach、Nokturnal、Fluenci、Swift Homicide、DOWN6）。他在 Tru Cipher 的评论区说，Leach 是"史上最好的之一"，这首歌本来都不打算发，是 Nokturnal 说服了他。
 - **和 Crucified 合作**：《Your Energy》（feat. Crucified），收在 2026 年的专辑《Loosh Farm》里。
 - **diss Rebel XD**：2015 年的《Rebel XD DISS》，简介写的是"Rebel XD 好像觉得自己无人能敌？是时候让他看看，他离作词的巅峰还差得远"。
 - **和 K-Fix 有合作，也有交锋**：他们合作过《Nightbreed》，DNA 后来又发了《Darkside 2 "K-Fix DISS"》。
 - **冲 Funk Volume 喊话**：2015 年他发过《Funk Volume Response "You're Not The Dopest"》，对象是 Hopsin 所在的厂牌 Funk Volume。
 
+## 和 Leach 的对谈（2021）
+
+2021 年 3 月，DNA 在自己的频道上发了一段和 Leach 的聊天录音《Talk About RAP》。录音没有字幕，下面是按内容整理的要点，不是逐字原话：
+
+- **写得极快**：那段时间他说自己进入了"疯狂写作模式"，几乎每天早上起来就写一首、录一首。Leach 发来新歌的伴奏，他不到半小时就写完录完了；Leach 也说，每天早上醒来都能看到一首 DNA 的新歌。
+- **从灵魂里写**：Leach 说自己写词总想太多，怕押韵不工整、句子不够聪明。DNA 的建议是别想太多，想到下一句就写下来，"只要是从灵魂里出来的，就是真的"。多音节押韵这种功夫不用刻意，练多了自然会冒出来。他举的例子是两周前刚发的《The Multiple Killing Spree》：一开始没打算写成那样，写着写着就一口气写满了 235 个多音节押韵。
+- **贴合伴奏，而不是只比快**：他说在 Undaground Choppers 里，别人都在拼命唱得越快越好，他一直在想的是怎么贴合伴奏的氛围，"让听的人先感受到你的氛围，他们才会感受你的歌词"。
+- **互相推崇**：DNA 开场就说"我老是忘了 Leach 是史上最好的之一"；Leach 则说，能贴合一首歌的氛围，正是好说唱歌手和普通说唱歌手的区别。两人还聊到早年的合作《Tie The Noose》。
+
+录音最后两人提到一首快要发的合作。DNA 在视频评论里写的是"Leach 有首新歌要出，里面有我"。本站没找到这首歌后来发行的记录。
+
 ## "真歌词"：不只比速度
 
-DNA 的名字就是他的立场：**Tru Lyricist**，真正的作词人。他更在意多重韵、词组和完整的歌词结构，这和本站"快 ≠ Chop"的观点一致：速度只是 chop 的表象。
+DNA 的名字就是他的立场：**Tru Lyricist**，真正的作词人。他更在意多重韵、词组和完整的歌词结构，也更在意贴合伴奏的氛围，这和本站"快 ≠ Chop"的观点一致：速度只是 chop 的表象。
 
 > 视频、简介和评论来自他本人的 YouTube 频道，本站逐条核对过；专辑、歌词和早年经历来自 Genius。邮箱、电话、家人等私人信息不收录。
