@@ -253,6 +253,33 @@
       "hasBanner": true,
       "color": "#282838",
       "fetchedAt": "2026-09-26"
+    },
+    "idylll": {
+      "channelUrl": "https://www.youtube.com/channel/UC_a1h9lRNxkZXdiZ8bvFSlw",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/c4VHz2WkjxHWSacHV2_hQ6txy_l1GzQmXXmg1otTrr6X_0EsrsuLOta57rc1KwDw_fnPY81E4Q=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/eS93UTBdhRNgazXvvjNzNuBnw03fw1Msl1DS0Mc0pxWnoqleREaDmzp-T4XHOkUUvV1l6-MhFQ=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#f8f8f8",
+      "fetchedAt": "2026-09-26"
+    },
+    "ruffian-rugged": {
+      "channelUrl": "https://www.youtube.com/channel/UCpOu2GN4UfC1jjCz7nMlLSA",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/QeUlm4NUGv4uJCboPRHJs5BIsfBoWcRlrruXtKIQq1BKPpqKXEErJ9wZt6rac9XBeUD7PO9ePQ=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/P_eYK14tMhVuAHb3GK3j_epN41dPlyTwY8udVWziKp89AZnJX0r3Q_Bepga4nwITuslPBRxhQw=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#f8f8f8",
+      "fetchedAt": "2026-09-26"
+    },
+    "shad": {
+      "channelUrl": "https://www.youtube.com/channel/UCcmSHsSXOSVI3FMQlidPkmA",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/JOK6IAWJehD4Uz8S1Z-VA1Wh5-sRSX9R3bN82hOoYCY7HehFVrhWZ9PkvIIq-Cb0q6DbV4eL=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/v4GkPGbmq-G-AP2guesY3kTMuewpGnn-8O0wQELpS5RfoaBLreE8enUtYaE5RzOWPGNwnpJUPNs=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#686868",
+      "fetchedAt": "2026-09-26"
     }
   },
   "tracks": {
@@ -553,6 +580,26 @@
     },
     "i-saw-red": {
       "video": "https://www.youtube.com/watch?v=cOos94buutU",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "mocca": {
+      "video": "https://www.youtube.com/watch?v=anDMZHlq8TQ",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "tha-shade": {
+      "video": "https://www.youtube.com/watch?v=_v6-zQ2FKS0",
+      "size": "maxresdefault",
+      "color": "#081808"
+    },
+    "infinite-choppers-2": {
+      "video": "https://www.youtube.com/watch?v=n2SmW1OREcA",
+      "size": "maxresdefault",
+      "color": "#181818"
+    },
+    "freezetyler": {
+      "video": "https://www.youtube.com/watch?v=Q6c32Z-Pbq4",
       "size": "maxresdefault",
       "color": "#080808"
     }

@@ -111,6 +111,8 @@
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
     scrollbar-gutter: stable;
+    /* 手机上防止内容略宽于屏幕时，上下滑动带出左右晃动 */
+    overflow-x: clip;
   }
   body {
     background: var(--bg);

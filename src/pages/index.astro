@@ -180,7 +180,7 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
   <section class="container-x mt-32">
     <SectionHeading index="05" eyebrow="Tracks" title="必听曲目" href="tracks/" linkLabel="曲目库" />
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {homeTracks.map((t) => <div class="flex"><TrackCard track={t} /></div>)}
+      {homeTracks.map((t) => <div class="flex min-w-0"><TrackCard track={t} /></div>)}
     </div>
   </section>
 
