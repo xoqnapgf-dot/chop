@@ -571,7 +571,7 @@
     - { title: 'SPS and Chopper Rap Wiki – IDYLLL', url: 'https://sps-and-chopper-rap.fandom.com/wiki/IDYLLL' }
 - id: infinite-choppers-2
   title: Infinite Choppers 2
-  artists: [down6, idylll, ruffian-rugged, dumanoid, kal-paseo]
+  artists: [down6, idylll, ruffian-rugged, dumanoid, kal-paseo, troll]
   credit: DOWN6 feat. Hurracane, Idylll, Asa Jake, Al Zabran, Tokumei, Troll, Dumanoid & Ruffian Rugged, Bloody Ruckus, dvagoh, Kal Paseo 等
   youtube: n2SmW1OREcA
   youtubeChannel: DOWN6
@@ -941,7 +941,7 @@
     - { title: 'YouTube – United Choppers 2（J Battle Vidz，2016-11-01）', url: 'https://www.youtube.com/watch?v=OhSs0hAsM1k' }
 - id: united-choppers-3
   title: United Choppers 3
-  artists: [j-battle, mizury-mize, leach]
+  artists: [j-battle, mizury-mize, leach, mgk-of-armr4]
   credit: J Battle ft. ARW, Mizury, Exodu$, MGK of ARMR4, Eclip$e, Leach, MC Rice
   youtube: SNcQq9GJKYQ
   youtubeChannel: J Battle Vidz
@@ -1060,3 +1060,95 @@
   note: 'DJ Lil Sprite 办的"Killin'' Shit"征选的第一名。'
   sources:
     - { title: 'YouTube – Mizury - Killin'' Shit [1st Place Winner Killing Shit CONTEST]（2016-10-18）', url: 'https://www.youtube.com/watch?v=eRzvwgkUFZ8' }
+- id: illest-choppers-4
+  title: Illest Choppers 4
+  artists: [mgk-of-armr4, dumanoid, sabotahe, don-xperto, the-jackal, yung-revival]
+  credit: MC Rice ft. Don Xperto, DNS（Dumanoid）, Fenksta, IAMCHRISCRAIG, The Jackal, Kardiyak, MCBustaflow, MGK of ARMR4, Nihilist, Sabotahe, SM The Ripper, Trust Tha Touch, VBL, Yung Revival
+  youtube: RLQEutWjQxI
+  youtubeChannel: YungDro Productions
+  officialUpload: false
+  scene: world
+  year: 2018
+  note: '法国 MC Rice 的 Illest Choppers 系列第四集，来自美国、墨西哥、菲律宾、匈牙利、澳大利亚、英国等地的 chopper 同台。NahDah 2023 版第 28 名 Kardiyak 用的就是这首。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'YouTube – MC Rice Presents ILLEST CHOPPERS 4（2018-08-13）', url: 'https://www.youtube.com/watch?v=RLQEutWjQxI' }
+- id: kill-4
+  title: Kill 4（Paslangin 4）
+  artists: [sabotahe, mgk-of-armr4]
+  credit: Aktibar x Sabotahe ft. Global Choppers（Reszback, CRhyme, Liquiid Vortex, MC Rice, MGK of ARMR4 等）
+  youtube: Q9Z1qXV47Zs
+  youtubeChannel: Aktibar Official
+  officialUpload: true
+  scene: world
+  year: 2018
+  note: 'Aktibar 的 Kill 系列第四部，十几位 rapper 接力，MGK of ARMR4 压轴。他那段测到 16.19，NahDah 2021 版第 9 名用的就是它；但 2023 版因为音质、也因为他本人不想再用这段，改用了《United Choppers 3》。'
+  sources:
+    - { title: 'NahDah Vebb – 2023 榜除名说明（MGK of ARMR4 一节）', url: 'https://docs.google.com/document/d/1DfcPmT5YCWYwDRP-uyFMEthi9n7ctGRsK2C3QxiFJrA' }
+    - { title: 'YouTube – Kill 4 - Aktibar x Sabotahe Ft Global Choppers（2018-11-06）', url: 'https://www.youtube.com/watch?v=Q9Z1qXV47Zs' }
+- id: onion-chopper-rmx
+  title: Onion Chopper RMX
+  artists: [ruffian-rugged, dumanoid, down6, kal-paseo, the-jackal, heureca]
+  credit: Ruffian Rugged & Dumanoid ft. Esrap, Swisher Sleep, DOWN6, Afu-Ra, Kinetical, Lucidd, Dvagoh, The Jackal, Jedal Strange, Kal Paseo, heureCa, Asa, Conrado Molina, SPLXT
+  youtube: QUdTwwol-x8
+  youtubeChannel: Def Ill aka Ruffian Rugged
+  officialUpload: true
+  scene: world
+  year: 2024
+  confidence: pending
+  note: '《Onion Chopper》的全明星 Remix，简介给每个人都标了国籍。芬兰的 HeureCa 那段 17 ÷ 1.067 ≈ 15.93，NahDah 2023 版第 19 名，测的时候这首还没发。B 站 UP 主"喜欢chop的艾拉"发布第二天就做了一期。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'YouTube – Ruffian & Dumanoid - Onion Chopper RMX（2024-12-29）', url: 'https://www.youtube.com/watch?v=QUdTwwol-x8' }
+    - { title: 'B站 – 喜欢chop的艾拉：【最新！！】Onion Chopper RMX（2024-12-25）', url: 'https://www.bilibili.com/video/BV1KnCcYhEqc/' }
+- id: vida-futil-1
+  title: Vida Fútil Pt. 1
+  artists: [troll]
+  credit: Troll（prod. Rocket Beats）
+  youtube: HavqE6D2IQk
+  youtubeChannel: Troll
+  officialUpload: true
+  scene: world
+  year: 2022
+  note: '巴西 speedflow。Troll 自己写、自己混音、自己做封面，标题写着"Fastest Rapper 2022"。1.058 秒 17 个音节 ≈ 16.07，NahDah 2023 版第 16 名。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'YouTube – Troll - Vida Fútil Pt. 1（2022-11-10）', url: 'https://www.youtube.com/watch?v=HavqE6D2IQk' }
+- id: donkey-kong
+  title: Donkey Kong
+  artists: [the-jackal, troll]
+  credit: The Jackal ft. Troll
+  youtube: m7LiwxLWnkc
+  youtubeChannel: The Jackal Rapper
+  officialUpload: true
+  scene: world
+  year: 2024
+  confidence: pending
+  note: '澳大利亚的 The Jackal 和巴西的 Troll 合作。Troll 在自己的测速频道把这首列为他最快的一段，18.13。'
+  sources:
+    - { title: 'YouTube – TrollatorBR："TOP 10" Versos Mais Rápidos do Troll（2026）', url: 'https://www.youtube.com/watch?v=Hi3JIVO2mlA' }
+- id: sos-monster
+  title: Monster
+  artists: [sos]
+  credit: SOS
+  youtube: UgEl8XcPrUU
+  youtubeChannel: SOS
+  officialUpload: true
+  scene: world
+  year: 2022
+  confidence: pending
+  note: '日本早口 rapper SOS 的原创曲。2:10 前后一段 1.008 秒 16 个音节 ≈ 15.87，NahDah 2023 版第 20 名；日语音节是按听感数的。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+- id: conqueror-haki
+  title: Conqueror Haki
+  artists: [crisone]
+  credit: Bradthugs, Nosram, Jumper, CrisOne
+  youtube: LJtOjMsJdDk
+  youtubeChannel: CrisOne Decano
+  officialUpload: true
+  scene: world
+  year: 2022
+  note: '菲律宾他加禄语四人合作曲，标题取自《海贼王》的"霸王色霸气"。CrisOne 唱最后一段，1.056 秒 18 个音节 ≈ 17.04，NahDah 2023 版第 13 名。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
