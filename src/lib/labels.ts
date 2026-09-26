@@ -14,6 +14,9 @@ export const COUNTRY: Record<string, { name: string }> = {
   HU: { name: '匈牙利' },
   MY: { name: '马来西亚' },
   PL: { name: '波兰' },
+  JP: { name: '日本' },
+  FI: { name: '芬兰' },
+  ZA: { name: '南非' },
 };
 
 /**

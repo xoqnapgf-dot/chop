@@ -10,7 +10,7 @@ nearChop: 参加过《Intercontinental Choppers》等 chopper cypher，最快的
 tags: [巴西, 葡萄牙语, speed flow, 巴西最快]
 youtube: { channelId: UCcmSHsSXOSVI3FMQlidPkmA, handle: '@Shad_999', kind: official }
 useBanner: false
-related: [sabotahe, idylll, ruffian-rugged]
+related: [sabotahe, idylll, ruffian-rugged, troll]
 speed:
   - value: 20
     unit: syl/s

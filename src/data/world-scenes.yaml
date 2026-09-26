@@ -95,8 +95,8 @@
   name: 巴西
   en: Brazil
   geo: [-14.2, -51.9]
-  summary: 葡萄牙语的 speed flow 圈有自己的测速频道（TrollatorBR、BruCalcs）。Shad 的《FreeZeTyler》1 秒 20 个音节，是巴西公认的最快，NahDah 2021 版第 2、2023 版第 6。
-  mentions: [MC Igu, TrollatorBR]
+  summary: 葡萄牙语的 speed flow 圈有自己的测速频道（TrollatorBR、BruCalcs）。Shad 的《FreeZeTyler》1 秒 20 个音节，是巴西公认的最快，NahDah 2021 版第 2、2023 版第 6；TrollatorBR 的主人 Troll 自己也是 speedflow rapper，NahDah 2023 版第 16。
+  mentions: [MC Igu]
   sources:
     - { title: 'YouTube – TrollatorBR："TOP 50" Rappers Mais Rápidos do Brasil（2021）', url: 'https://www.youtube.com/watch?v=Bn8BQsxuif0' }
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
@@ -125,6 +125,28 @@
   sources:
     - { title: 'YouTube – United Choppers 2（2016，简介写明"kVr-POLAND"）', url: 'https://www.youtube.com/watch?v=OhSs0hAsM1k' }
     - { title: 'NahDah Vebb – 2021 版榜单曲目文档', url: 'https://docs.google.com/document/d/1UpOgX1BNIrPTK4F1JwibltfDSiVjJMLcQFbbmueJvUs' }
+- id: jp
+  name: 日本
+  en: Japan
+  geo: [36.2, 138.3]
+  summary: 日语说唱里以"早口"（语速快）为卖点的一路。SOS 靠倍速翻唱走红，原创曲《Monster》进了 NahDah 2023 版第 20；嘯（usobuki）并不以快著称，但一段合作曲里的高速爆发排到了第 15。
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+- id: fi
+  name: 芬兰
+  en: Finland
+  geo: [64.0, 26.0]
+  summary: HeureCa 用芬兰语唱，通过奥地利的 Ruffian Rugged、匈牙利的 Dumanoid 进入 chopper 合作圈，《Onion Chopper》全明星 Remix 里那段是 NahDah 2023 版第 19。
+  sources:
+    - { title: 'YouTube – Ruffian & Dumanoid - Onion Chopper RMX（2024，简介标注"heureCa (Finland)"）', url: 'https://www.youtube.com/watch?v=QUdTwwol-x8' }
+- id: za
+  name: 南非
+  en: South Africa
+  geo: [-29.0, 25.0]
+  summary: 夸祖鲁-纳塔尔省的 Tuffo Da Bulletman 自称"非洲最快的 rapper"，2012 年上过《南非达人秀》，NahDah 2023 版第 18。
+  sources:
+    - { title: 'YouTube – SA''s Got Talent - Njabulo - Bulletman（e.tv，2012）', url: 'https://www.youtube.com/watch?v=QbGq2-xGMRE' }
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
 - id: dk
   name: 丹麦
   en: Denmark

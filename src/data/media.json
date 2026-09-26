@@ -358,6 +358,66 @@
       "hasBanner": true,
       "color": "#282828",
       "fetchedAt": "2026-09-26"
+    },
+    "crisone": {
+      "channelUrl": "https://www.youtube.com/channel/UCN5znz2Rzvw9En-9PuaXQ3w",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/Y0OTrhVbzAqZTVbERSH3wXi-9mDa7aaAUTFKGS_hvg8t7uTFtmJLveNPCm9fWeGLUAPnzq7w8Q=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/YR9NsFjvhjBvcWdnnxYREVQyAdccT3Sy7Alwztbc9SP0CeevcLH31E1cJucHUb6T2eKM05CPmWA=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-26"
+    },
+    "heureca": {
+      "channelUrl": "https://www.youtube.com/channel/UCR_r8BNebZasy3_ose9Q2Aw",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/Z4gKMfkUlD98nNd8_BnOWDSbjjQjDAKCz6axcbxfNR3rwMtQ-ioBoDsEO-IkG_cXDNmd0FxgLg=s800-c-k-c0x00ffffff-no-rj",
+      "banner": null,
+      "hasBanner": false,
+      "color": "#f8f8f8",
+      "fetchedAt": "2026-09-26"
+    },
+    "mgk-of-armr4": {
+      "channelUrl": "https://www.youtube.com/channel/UCcCmxx6peRTOUzAQkxwgOow",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_m9SLKZfVsMaNYnZ3o9hs_467B8kVZOGV4yHUTwOx-UT7Y=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/AeWzfdZUx8Qv-CLuguDJ1RKNF9rliIztQoNK9nM7S9K6L4MUmndzMT8KKGONAimEtWlC_b09=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-26"
+    },
+    "sos": {
+      "channelUrl": "https://www.youtube.com/channel/UCZY5ZBN98XUX-Mdld_58aJQ",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/UUxMxqEEPdE1nm7VXs0DhqLxmhM-tqRkfbY8UfO4zDm-rYo4jqyiaN6Y5YqFykFrxIB_B6XiSQ=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/3-iOJziMRTAfE2u5pTpOttSgJbiUuc_uitIKzNC-m-taiyzJ6LBzxD5b_3y4VEZpa_4d-Zl_EvU=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#f8f8f8",
+      "fetchedAt": "2026-09-26"
+    },
+    "troll": {
+      "channelUrl": "https://www.youtube.com/channel/UCnp0DtAyU_yzuASBlhI0x5Q",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/wxLYvA_HwQca7-oTrRGYubBcYw_b0ZhmoTHa3PwYKOy65TPES49pjbdKjrDBzjVKNolSXQgJYw=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/wed5myyylV0e79U5PdLEyiNjxNKXG1Yw1PFT4GQ3XKL7Yx2vO8QdkPZCn_j0xi_mz6GB72kSEw=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#181828",
+      "fetchedAt": "2026-09-26"
+    },
+    "tuffo-da-bulletman": {
+      "channelUrl": null,
+      "kind": "video",
+      "color": "#080808",
+      "fetchedAt": "2026-09-26"
+    },
+    "usobuki": {
+      "channelUrl": "https://www.youtube.com/channel/UCr0uFjd6EU6_o6zDngxWmow",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_nI9b1TV8WHmnFIkV62V4iWXHOd-T8x2VPsrheqE_cfdg=s800-c-k-c0x00ffffff-no-rj",
+      "banner": null,
+      "hasBanner": false,
+      "color": "#181818",
+      "fetchedAt": "2026-09-26"
     }
   },
   "tracks": {

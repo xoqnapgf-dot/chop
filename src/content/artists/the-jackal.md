@@ -9,7 +9,7 @@ styleNote: 长期混在 SPS 圈，参加过 Infinite Choppers 等 chopper cypher
 tags: [澳大利亚, 大洋洲, 数字虚高, Infinite Choppers]
 youtube: { channelId: UCEKagEPjE0QJCnLG86gOoBQ, handle: '@TheJackalRapper', kind: official }
 useBanner: false
-related: [sabotahe, crucified, don-xperto]
+related: [sabotahe, crucified, don-xperto, troll]
 speed:
   - value: 15.27
     unit: syl/s

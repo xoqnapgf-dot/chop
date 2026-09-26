@@ -13,7 +13,7 @@ youtube: { channelId: UCpOu2GN4UfC1jjCz7nMlLSA, handle: '@defillakaruffianrugged
 # 频道头像是专辑封面；人物照取自本人频道《NET FAIR》一镜到底版的缩略图
 portrait: { video: HPWLf1OzVec, focusX: 0.62 }
 useBanner: false
-related: [crucified, twisted-insane, sabotahe, idylll]
+related: [crucified, twisted-insane, sabotahe, idylll, heureca]
 speed:
   - value: 20.77
     unit: syl/s
