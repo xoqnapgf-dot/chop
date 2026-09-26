@@ -28,9 +28,10 @@
   name: 土耳其
   en: Türkiye
   geo: [39.0, 35.2]
-  summary: Ceza 被称为土耳其最快的说唱者，在 Worldwide Choppers 里贡献了唯一的土耳其语段落。
+  summary: Ceza 被称为土耳其最快的说唱者，在 Worldwide Choppers 里贡献了唯一的土耳其语段落。按 NahDah 团队 2024 年逐段测算，土耳其最快的一段则是 Kardiyak 在《Illest Choppers 4》里的 15.70。
   sources:
     - { title: 'Wikipedia – Ceza', url: 'https://en.wikipedia.org/wiki/Ceza' }
+    - { title: 'NahDah Vebb – The Fastest Rapper from Every Country（2024）曲目表', url: 'https://docs.google.com/spreadsheets/d/1q6ccbONUj_yDxAbRCYVqQK5DLmxcQ4I6wlK_zVeaz0o' }
 - id: ph
   name: 菲律宾
   en: Philippines
@@ -112,7 +113,7 @@
   name: 马来西亚
   en: Malaysia
   geo: [4.2, 102.0]
-  summary: 泰米尔语说唱的一个重镇。Sri Rascol 和 ADK 的 Rap Machines 出过多支千万级播放的 MV，《AYM》的高速段落进了 NahDah 2023 版第 11 名。
+  summary: 泰米尔语说唱的一个重镇。Sri Rascol 和 ADK 的 Rap Machines 出过多支千万级播放的 MV，《AYM》的高速段落进了 NahDah 2023 版第 11 名。马来语这边，柔佛的 Alep Hunter 在一期"最快 rapper"对决里的段落排第 25。
   mentions: [ADK]
   sources:
     - { title: 'YouTube – Rap Machines（Sri Rascol 官方频道）', url: 'https://www.youtube.com/@srirascolofficial' }
@@ -147,6 +148,13 @@
   sources:
     - { title: 'YouTube – SA''s Got Talent - Njabulo - Bulletman（e.tv，2012）', url: 'https://www.youtube.com/watch?v=QbGq2-xGMRE' }
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+- id: kw
+  name: 科威特
+  en: Kuwait
+  geo: [29.3, 47.5]
+  summary: 海湾地区的阿拉伯语说唱。Vortex 的 diss 曲《Gazra》里的高速段落是 NahDah 2023 版第 27，2024 年"每国最快"里也是科威特的代表。
+  sources:
+    - { title: 'NahDah Vebb – The Fastest Rapper from Every Country（2024）曲目表', url: 'https://docs.google.com/spreadsheets/d/1q6ccbONUj_yDxAbRCYVqQK5DLmxcQ4I6wlK_zVeaz0o' }
 - id: dk
   name: 丹麦
   en: Denmark

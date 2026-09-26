@@ -305,13 +305,16 @@
   }
 }
 
+/* 系统开了"减少动态效果"：不把动画全部清零（步进器、滚动名字带、地球本身就是内容），
+   只关掉入场的上浮效果和平滑滚动，滚动文字带放慢。 */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
-    scroll-behavior: auto !important;
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-rise {
+    animation: none !important;
+  }
+  .animate-marquee {
+    animation-duration: 80s;
   }
 }

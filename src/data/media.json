@@ -418,6 +418,78 @@
       "hasBanner": false,
       "color": "#181818",
       "fetchedAt": "2026-09-26"
+    },
+    "alep-hunter": {
+      "channelUrl": "https://www.youtube.com/channel/UC25axHXCRQNsMeqX1_D45sg",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_lMCy6omdV7uW9L_IcL5-iC1tekJDwZ0RzpSNo3kr7b6xI=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/I3tB2JxHUoM9E-6oEALxJl1tRSKHjQG_z-_KV2Z75BVH4gToiC2XmmxWF_XSnBV5V1qPCS5l-A=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#081848",
+      "fetchedAt": "2026-09-26"
+    },
+    "kaoz": {
+      "channelUrl": "https://www.youtube.com/channel/UCtc7h6qza0tKzFzuHss7Kqg",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_lsfeSOV0K6Xg9r5QY69X2zckC4eGvzKW7yAc5eZv__mDw=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/wkjVnkFX21iPY8WQ4c9n4e0YCOaoAoabyfskd84PAAtYn7Hcwcc_Pe7z6EwgRZWo0EomBUb25A=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-26"
+    },
+    "kardiyak": {
+      "channelUrl": "https://www.youtube.com/channel/UC3xnZtG7rmcAQPYy3uqPG3g",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/xmsJq5OLegP-4IXnDye3M7Huba6g5cO2bLj5NQ0ewYvv9-FrreSTTksZRE5143Tto7PuT70VKW0=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/WL9CvW44G8_-PB_9r_jf1WqB9O3ZMkJAL6u9UyhEKvamHXHPsCcNw88eChDGFCbznWLk8w48-w=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-26"
+    },
+    "lucky-n9ne": {
+      "channelUrl": "https://www.youtube.com/channel/UCwI_lZe40NVNOnV5yXfxrZA",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/aVo2RFAy0FgDAvcUlA06UtRi-XAvM_ndCZMTHOoZ3-RrxaX00wK3cdBfGlLzlqnHmI3-1B4qsQ=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/i360R_ntxyvRYgqN7QG8x1qTnO4Hf-bnEhSOyH2BAxECTZkEqYp79C6xDRc-wBkD8RkYXLeu3zg=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#181818",
+      "fetchedAt": "2026-09-26"
+    },
+    "lyrah": {
+      "channelUrl": "https://www.youtube.com/channel/UCJKEfvsFBkIRYk73pgvAr-A",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_kP17wEeUix5Ij6xriKz-VZR6SfqnaQTLP91KpnOzCz1uk=s800-c-k-c0x00ffffff-no-rj",
+      "banner": null,
+      "hasBanner": false,
+      "color": "#c8e8e8",
+      "fetchedAt": "2026-09-26"
+    },
+    "splxt": {
+      "channelUrl": "https://www.youtube.com/channel/UCgDkJwIjFuZJSI123KP3tBw",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/wY0nXuxs33MeLQXSzAg4IOke__e9mj3TuZy0p98ZRmV0BAO_bJD4NHoQhPp-R2aLdHw14RnWrA=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/H4cw6L7Phg2w5Z0LgZjjG0BFUs46rKsTC-SCVA65a2pUEpFr-pPttZhaZ1_VKC6D_CNcSsyOFg=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#f8f8f8",
+      "fetchedAt": "2026-09-26"
+    },
+    "vortex": {
+      "channelUrl": "https://www.youtube.com/channel/UCfVhU6bGN8kjK3U-Zd2Z0iA",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/crtdoTWsf7fqF6kk0eLwRQfyG4KutKHLWeLpttmXelsu_rZunGHXjovQo07gb_xx8D10BUSn=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/dIf_KgnVs4iL8Nt_qDk_sHUHUIWbuHMBPOrzqvPsfWAPt8iUo-yk0Q2ueCn6P8pzmaUXiSw2QA=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#081828",
+      "fetchedAt": "2026-09-26"
+    },
+    "watsky": {
+      "channelUrl": "https://www.youtube.com/channel/UCLJcVCVvcD802r80B9oaM3A",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/_-2DX6qF0NGzc1qJHCsQAIq3aXMcJz0BFD3GQjW3kCvbAYGJkG34d1EFh0GCpnmZ24BA8AuBHg=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/lj83D8gn3-81yE3jZtOLudqGeIrmuKYYjq1CKvJuM-Z9TALLuMxQT6NO4C68VEIMQpQSo1dXFg=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#f8a898",
+      "fetchedAt": "2026-09-26"
     }
   },
   "tracks": {
@@ -818,6 +890,66 @@
     },
     "killin-shit": {
       "video": "https://www.youtube.com/watch?v=eRzvwgkUFZ8",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "illest-choppers-4": {
+      "video": "https://www.youtube.com/watch?v=RLQEutWjQxI",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "kill-4": {
+      "video": "https://www.youtube.com/watch?v=Q9Z1qXV47Zs",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "onion-chopper-rmx": {
+      "video": "https://www.youtube.com/watch?v=QUdTwwol-x8",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "vida-futil-1": {
+      "video": "https://www.youtube.com/watch?v=HavqE6D2IQk",
+      "size": "maxresdefault",
+      "color": "#e8f8f8"
+    },
+    "donkey-kong": {
+      "video": "https://www.youtube.com/watch?v=m7LiwxLWnkc",
+      "size": "maxresdefault",
+      "color": "#481808"
+    },
+    "sos-monster": {
+      "video": "https://www.youtube.com/watch?v=UgEl8XcPrUU",
+      "size": "sddefault",
+      "color": "#080808"
+    },
+    "conqueror-haki": {
+      "video": "https://www.youtube.com/watch?v=LJtOjMsJdDk",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "undaground-choppers-3": {
+      "video": "https://www.youtube.com/watch?v=gWqv1rZqIYk",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "our-time": {
+      "video": "https://www.youtube.com/watch?v=Aevpmu9kmAs",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "hiroshima-speed-war-2": {
+      "video": "https://www.youtube.com/watch?v=SY2vAZKUPGY",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "gazra": {
+      "video": "https://www.youtube.com/watch?v=2zr0TssfHAE",
+      "size": "maxresdefault",
+      "color": "#586868"
+    },
+    "showdown-fastest-rapper": {
+      "video": "https://www.youtube.com/watch?v=CKSaNMTXca4",
       "size": "maxresdefault",
       "color": "#080808"
     }

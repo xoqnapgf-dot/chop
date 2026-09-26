@@ -40,7 +40,7 @@ const panels = scenes.map((s) => ({
 
 <section class="globe-block" data-initial={initial}>
   <div class="grid items-start gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-12">
-    <div class="relative">
+    <div class="relative lg:sticky lg:top-24">
       <div class="globe-stage relative mx-auto aspect-square w-full max-w-[640px]">
         <div class="globe-placeholder absolute inset-[8%] rounded-full" aria-hidden="true"></div>
         <canvas class="globe-canvas absolute inset-0 size-full touch-none" aria-label="世界 Chop 地图：拖动旋转，点击标记查看当地情况" role="img"></canvas>
@@ -50,7 +50,7 @@ const panels = scenes.map((s) => ({
     </div>
 
     <div class="min-w-0">
-      <div class="scene-tabs -mx-4 flex gap-2 overflow-x-auto px-4 pb-2 lg:mx-0 lg:flex-wrap lg:overflow-visible lg:px-0" role="tablist" aria-label="选择国家或地区">
+      <div class="scene-tabs -mx-4 flex gap-2 overflow-x-auto px-4 pb-2 lg:mx-0 lg:flex-wrap lg:gap-1.5 lg:overflow-visible lg:px-0" role="tablist" aria-label="选择国家或地区">
         {
           scenes.map((s) => (
             <button type="button" role="tab" class="scene-tab chip shrink-0 cursor-pointer" data-scene={s.id} aria-selected={s.id === initial ? 'true' : 'false'} aria-controls={`scene-${s.id}`}>
@@ -137,6 +137,16 @@ const panels = scenes.map((s) => ({
   }
   .scene-tabs {
     scrollbar-width: none;
+  }
+  /* 电脑上人物多的国家（如美国）列表在框内滚动，不把整块拉长 */
+  @media (min-width: 1024px) {
+    .people {
+      max-height: min(56vh, 520px);
+      overflow-y: auto;
+      padding-right: 4px;
+      scrollbar-width: thin;
+      overscroll-behavior: contain;
+    }
   }
 </style>
 

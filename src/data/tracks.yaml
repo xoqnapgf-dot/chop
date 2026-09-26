@@ -675,7 +675,7 @@
     - { title: 'YouTube – TrollatorBR："TOP 20" Sabotahe Fastest Verses (2026)', url: 'https://www.youtube.com/watch?v=iL9P__qKZOs' }
 - id: korona
   title: Korona（加长版）
-  artists: [sabotahe]
+  artists: [sabotahe, lucky-n9ne]
   credit: Sparo ft. Lucky9, SaintBrown, Sabotahe, Respero 等
   scene: world
   year: 2016
@@ -902,7 +902,7 @@
     - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
 - id: undaground-choppers-7
   title: Undaground Choppers 7
-  artists: [interchopper]
+  artists: [interchopper, kaoz, k-fix, kvr, mizury-mize, splxt]
   credit: DJ Lil Sprite（多人 chopper cypher，含 Interchopper）
   year: 2017
   youtube: gFsss9gLLOU
@@ -917,7 +917,7 @@
     - { title: 'SPS and Chopper Rap Wiki – Interchopper', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Interchopper' }
 - id: united-choppers
   title: United Choppers
-  artists: [j-battle, kvr, mizury-mize]
+  artists: [j-battle, kvr, mizury-mize, splxt, kaoz]
   credit: J Battle ft. SplytSecond, kVr, Mizury, Eclip$e, Kaoz
   youtube: 2hqSAz4zmsI
   youtubeChannel: J Battle Vidz
@@ -965,7 +965,7 @@
     - { title: 'YouTube – UNITED CHOPPERS 5（J Battle Vidz，2026-03-21）', url: 'https://www.youtube.com/watch?v=AaFFf7IFrPY' }
 - id: illest-choppers-2
   title: Illest Choppers 2
-  artists: [kvr, killhollow, dumanoid, dna-tru-lyricist]
+  artists: [kvr, killhollow, dumanoid, dna-tru-lyricist, kaoz]
   credit: MC Rice ft. LîL hØllÖw, BoneZ, CRhyme, S7ven Da Don, LEECH, Huslah, Kaoz, MSL, DNA, kVR, Chronic Boss, MGK of ARMR4, DNS & Twissler
   youtube: L_nDMhnXHLM
   youtubeChannel: YungDro Productions
@@ -980,7 +980,7 @@
     - { title: 'YouTube – MC Rice Presents ILLEST CHOPPERS 2（YungDro Productions，2016-12-20）', url: 'https://www.youtube.com/watch?v=L_nDMhnXHLM' }
 - id: undaground-choppers-5
   title: Undaground Choppers 5
-  artists: [mizury-mize, interchopper, dna-tru-lyricist]
+  artists: [mizury-mize, interchopper, dna-tru-lyricist, splxt, k-fix, kaoz]
   credit: DJ Lil Sprite ft. SplytSecond, K-Fix, Kaoz, Hurricane, Interchopper, Mister Hyde, Mizury Mize, Sensei, DNA
   youtube: fNWWcXNwIU0
   youtubeChannel: Dj Lil Sprite
@@ -993,7 +993,7 @@
     - { title: 'YouTube – Undaground Choppers 5（Dj Lil Sprite，2016-08-10）', url: 'https://www.youtube.com/watch?v=fNWWcXNwIU0' }
 - id: undaground-choppers-6
   title: Undaground Choppers 6
-  artists: [mizury-mize, killhollow, dna-tru-lyricist, interchopper]
+  artists: [mizury-mize, killhollow, dna-tru-lyricist, interchopper, splxt, k-fix, kaoz]
   credit: DJ Lil Sprite ft. SplytSecond, Big Loony, Hurricane, D-Spillz, Kaoz, Bonez, Mizury Mize, DNA, Interchopper, Lil Hollow, Fenksta, Tonik, Sensei, VBL, K-Fix
   youtube: lyH3ikyg6Wk
   youtubeChannel: Dj Lil Sprite
@@ -1062,7 +1062,7 @@
     - { title: 'YouTube – Mizury - Killin'' Shit [1st Place Winner Killing Shit CONTEST]（2016-10-18）', url: 'https://www.youtube.com/watch?v=eRzvwgkUFZ8' }
 - id: illest-choppers-4
   title: Illest Choppers 4
-  artists: [mgk-of-armr4, dumanoid, sabotahe, don-xperto, the-jackal, yung-revival]
+  artists: [mgk-of-armr4, dumanoid, sabotahe, don-xperto, the-jackal, yung-revival, kardiyak]
   credit: MC Rice ft. Don Xperto, DNS（Dumanoid）, Fenksta, IAMCHRISCRAIG, The Jackal, Kardiyak, MCBustaflow, MGK of ARMR4, Nihilist, Sabotahe, SM The Ripper, Trust Tha Touch, VBL, Yung Revival
   youtube: RLQEutWjQxI
   youtubeChannel: YungDro Productions
@@ -1152,3 +1152,72 @@
   note: '菲律宾他加禄语四人合作曲，标题取自《海贼王》的"霸王色霸气"。CrisOne 唱最后一段，1.056 秒 18 个音节 ≈ 17.04，NahDah 2023 版第 13 名。'
   sources:
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+- id: undaground-choppers-3
+  title: Undaground Choppers 3
+  artists: [splxt, k-fix, dna-tru-lyricist, crucified, mizury-mize, j-battle]
+  credit: DJ Lil Sprite ft. DNA, Hurricane, Kamikazi, K-Fix, SplytSecond, J-Battle, Mental Cases, Mizury, Kohn, JL of B.Hood, Crucified
+  youtube: gWqv1rZqIYk
+  youtubeChannel: Dj Lil Sprite
+  officialUpload: true
+  scene: world
+  year: 2015
+  note: 'DJ Lil Sprite 招牌系列第三集，DNA 混音。SplytSecond（现名 SPLXT）那段 16 ÷ 1.043 ≈ 15.34，NahDah 2021、2023 两版都用；DNA 在评论区说 K-Fix 和 SplytSecond 的快段"很难分高下"。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'YouTube – Undaground Choppers 3（Dj Lil Sprite，2015-07-31）', url: 'https://www.youtube.com/watch?v=gWqv1rZqIYk' }
+- id: our-time
+  title: Our Time
+  artists: [k-fix, kaoz]
+  credit: Kaotic Klique ft. K-Fix
+  album: The Overdose
+  youtube: Aevpmu9kmAs
+  youtubeChannel: Kaotic Klique
+  officialUpload: true
+  scene: world
+  year: 2014
+  confidence: pending
+  note: '奥斯汀组合 Kaotic Klique 的专辑曲。K-Fix 那段 16 ÷ 1.026 ≈ 15.60（NahDah 2023 版第 22），2021 版测同一段是 15.44；音节按听感数。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'YouTube – Our Time - Kaotic Klique featuring K-Fix（2014-09-14）', url: 'https://www.youtube.com/watch?v=Aevpmu9kmAs' }
+- id: hiroshima-speed-war-2
+  title: Hiroshima (Speed War II)
+  artists: [lyrah, sabotahe]
+  credit: DEE M, RANZ, BRADTHUGZ, Palazzo, cnine, Slymer, Jumong, Serial, Bastee, Lyrah Lyrah, Homeryoh, Dados M, Blessed Tongue, Nicolas, Siobal D, GK Ibarra, Sabotahe（prod. Pendo46）
+  youtube: SY2vAZKUPGY
+  youtubeChannel: HMGSKN official
+  officialUpload: true
+  scene: world
+  year: 2021
+  confidence: pending
+  note: '菲律宾 speed rap 圈 17 人接力，Sabotahe 压轴。Lyrah 唱第 10 段，16 ÷ 1.032 ≈ 15.50，NahDah 2023 版第 23 名；他加禄语音节按听感数。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'YouTube – "HIROSHIMA" (SPEED WAR II)（2021-02-26）', url: 'https://www.youtube.com/watch?v=SY2vAZKUPGY' }
+- id: gazra
+  title: Gazra（قازره）
+  artists: [vortex]
+  credit: Vortex（prod. LBandy）
+  youtube: 2zr0TssfHAE
+  youtubeChannel: Vortex Official
+  officialUpload: true
+  scene: world
+  year: 2021
+  confidence: pending
+  note: '科威特 rapper Vortex 的阿拉伯语 diss 曲。其中一段 16 ÷ 1.046 ≈ 15.30，NahDah 2023 版第 27 名，2024 年"每国最快"里也是科威特的代表；音节按听感数。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'YouTube – VORTEX - GAZRA（2021-01-31）', url: 'https://www.youtube.com/watch?v=2zr0TssfHAE' }
+- id: showdown-fastest-rapper
+  title: Showdown：Fastest Rapper
+  artists: [alep-hunter]
+  credit: RojakDaily「Showdown」（Alep Hunter 等）
+  youtube: CKSaNMTXca4
+  youtubeChannel: Danial Aressa
+  officialUpload: false
+  scene: world
+  year: 2019
+  note: '马来西亚媒体 RojakDaily 的一期"最快 rapper"对决，Alep Hunter 最后上场。他这段 16 ÷ 1.038 ≈ 15.41，按官方歌词数音节，NahDah 2021 版第 39、2023 版第 25。'
+  sources:
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+    - { title: 'YouTube – SHOWDOWN _ FASTEST RAPPER, AlepHunter raps（2019-09-19）', url: 'https://www.youtube.com/watch?v=CKSaNMTXca4' }
