@@ -1000,6 +1000,11 @@
       "video": "https://www.youtube.com/watch?v=6OmIbrnQkEE",
       "size": "sddefault",
       "color": "#080808"
+    },
+    "xie-di-rap-god-remix": {
+      "video": "https://www.bilibili.com/video/BV1Ez4y117xf/",
+      "size": "bilibili",
+      "color": "#080808"
     }
   }
 }

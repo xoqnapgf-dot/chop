@@ -166,6 +166,24 @@ for (const f of (await fs.readdir(artistsDir)).filter((f) => f.endsWith('.md')))
 const tracks = yaml.load(await fs.readFile(path.join(root, 'src/data/tracks.yaml'), 'utf8'));
 for (const t of tracks) {
   if (!t.youtube) {
+    // 只有 B 站视频的歌：用 B 站视频封面（通过搜索接口拿，详情接口经常 412）
+    if (!t.netease && t.bilibili) {
+      const dest = path.join(root, 'src/assets/tracks', `bv-${t.bilibili}.jpg`);
+      if (!force && (await exists(dest))) continue;
+      try {
+        const r = await fetch(`https://api.bilibili.com/x/web-interface/search/type?search_type=video&keyword=${t.bilibili}`, {
+          headers: { ...UA, Referer: 'https://search.bilibili.com/', Cookie: 'buvid3=chop-archive' },
+        });
+        const hit = ((await r.json()).data?.result ?? []).find((x) => x.bvid === t.bilibili);
+        if (!hit?.pic) throw new Error('没搜到 B 站封面');
+        await download(`https:${hit.pic.replace(/^https?:/, '')}@1280w_720h_1c.jpg`, dest, { width: 1280 });
+        media.tracks[t.id] = { video: `https://www.bilibili.com/video/${t.bilibili}/`, size: 'bilibili', color: await dominant(dest) };
+        console.log(`✓ track ${t.id} (B 站封面)`);
+      } catch (e) {
+        console.warn(`✗ track ${t.id}: ${e.message}`);
+      }
+      continue;
+    }
     // 只在国内平台发行的歌：用网易云专辑封面
     if (!t.netease) continue;
     const dest = path.join(root, 'src/assets/tracks', `ne-${t.netease}.jpg`);
