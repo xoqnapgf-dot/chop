@@ -26,6 +26,17 @@ speed:
     sources:
       - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
       - { title: 'B站 – 石狐九和：中文快嘴top10（新编）（2021）', url: 'https://www.bilibili.com/video/BV1bh411v7d7/' }
+  - value: 11.75
+    unit: char/s
+    label: '《军火库》一段 · 中文快嘴 TOP32 第 3'
+    kind: measured
+    by: '石狐九和 2021'
+    window: short
+    syllables: 85
+    confidence: pending
+    note: '85 个字，平均约 11.75（约 7.2 秒）。同一期 AR 还有《皇帝的新衣》《Real Rap Shit》两部分和《押韵歌》，都在 10.2–10.5 之间。石狐九和这期只收 50 字以上、平均不低于 10 字/秒的段落，逐帧计时。'
+    sources:
+      - { title: 'B站 – 石狐九和：众神归位！中文快嘴语速TOP32（2021-05-30）', url: 'https://www.bilibili.com/video/BV1M64y1k7wg/' }
 sources:
   - { title: '红网 – AR刘夫阳成立说唱厂牌 All That Records（2018）', url: 'https://ent.rednet.cn/c/2018/10/22/4755942.htm' }
   - { title: '金羊网 – DNV 音乐集团投资 AR刘夫阳成立说唱厂牌', url: 'http://ent.ycwb.com/2018-10/22/content_30115931.htm' }

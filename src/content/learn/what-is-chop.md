@@ -16,10 +16,6 @@ sources:
   - { title: 'SPS and Chopper Rap Wiki', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Sps_and_chopper_rap_Wiki' }
 ---
 
-## 一句话版本
-
-**快嘴**讲的是速度；**Chop** 讲的是一整套"切"音节的技术和风格，唱 chop 的人才叫 **chopper**。快是 chop 的表象，但快本身不等于 chop。
-
 ## 三个层次
 
 | 层次 | 意思 | 例子 |

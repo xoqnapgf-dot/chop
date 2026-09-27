@@ -68,7 +68,7 @@ The Jackal 来自澳大利亚，YouTube 频道叫 The Jackal Rapper，简介写�
 
 他出名很早。NahDah 2017 年的《Top 150 Fastest Rappers》把他排在**第 2 名**，仅次于 Sabotahe：1.02 秒 27 个音节，约 26.5。那份榜后来被 B 站 UP 主 Fatality丶九头龙搬到了国内。2018 年他还和 YouTube 上很有名的说唱歌手 DAX 合作了《Dedicated》。
 
-他的歌**音乐性不错**，这也是他那几年能被很多人记住的原因。
+他的歌**音乐性不错**，那几年很多人记住他靠的是这个。
 
 ## 数字基本作废
 

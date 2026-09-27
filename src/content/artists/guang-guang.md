@@ -25,6 +25,18 @@ speed:
       - { title: '网易 – 谁才是中文说唱圈第一快嘴？（2018）', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }
       - { title: '新浪 – MC光光/南京 D-Evil 十二年前的《Speed No1》', url: 'https://k.sina.cn/article_1163858357_m455f11b503300mplv.html' }
       - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
+  - value: 11.22
+    unit: char/s
+    label: '《Speed #1》一段 · 中文快嘴 TOP32 第 7'
+    kind: measured
+    by: '石狐九和 2021'
+    window: short
+    syllables: 88
+    seconds: 7.84
+    confidence: pending
+    note: '88 ÷ 7.84 ≈ 11.22，从"现在呢在这个地方唱着我的 hip hop 歌"到"如果你们学不会说不定我会指点下"。石狐九和这期只收 50 字以上、平均不低于 10 字/秒的段落，逐帧计时。'
+    sources:
+      - { title: 'B站 – 石狐九和：众神归位！中文快嘴语速TOP32（2021-05-30）', url: 'https://www.bilibili.com/video/BV1M64y1k7wg/' }
 sources:
   - { title: '新浪 – MC光光/南京 D-Evil 十二年前的《Speed No1》', url: 'https://k.sina.cn/article_1163858357_m455f11b503300mplv.html' }
   - { title: '网易 – 谁才是中文说唱圈第一快嘴？（2018）', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }
@@ -33,6 +45,6 @@ sources:
 
 光光（MC光光）是南京人，2003 年加入南京说唱团体 **D-Evil**。D-Evil 的四位成员是 ScRaTch_P、光光、老王和 lil D3VIL。
 
-2008 年 1 月 1 日，D-Evil 发行第二张 mixtape 《**王者之路**》，其中光光的 《**Speed #1**》把快嘴和弹舌推到了极致，常被称为中文说唱早期最快的作品。网友测算第二段主歌约 **8.27 字/秒**。
+2008 年 1 月 1 日，D-Evil 发行第二张 mixtape 《**王者之路**》，其中光光的 《**Speed #1**》把快嘴和弹舌推到了极致，常被称为中文说唱早期最快的作品。网友测算第二段主歌约 **8.27 字/秒**；石狐九和 2021 年逐帧测了其中最密的一段，7.84 秒 88 个字，约 **11.22**，在他的中文快嘴 TOP32 里排第 7。
 
 那时候没有综艺、也没有流媒体，这类作品主要靠论坛和下载站传播。

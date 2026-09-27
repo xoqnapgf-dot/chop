@@ -50,6 +50,6 @@ sources:
 
 Twista（早期艺名 Tung Twista）生于芝加哥西区 West Garfield Park 的 K-Town 一带。1992 年发行首张专辑 *Runnin' Off at da Mouth*，同年被吉尼斯世界纪录认证为**最快的英语说唱者**：55 秒内 598 个音节。
 
-真正让他进入主流的是 2004 年的专辑 *Kamikaze*，其中与 Kanye West、Jamie Foxx 合作的 **"Slow Jamz"** 登上了排行榜第一。他证明了快嘴不只是炫技，也能做成流行金曲。
+真正让他进入主流的是 2004 年的专辑 *Kamikaze*，其中与 Kanye West、Jamie Foxx 合作的 **"Slow Jamz"** 登上了排行榜第一，常被拿来当快嘴也能进主流的例子。
 
 2011 年，他参与了 Tech N9ne 的 "Worldwide Choppers"，和全世界的 chopper 同台。
