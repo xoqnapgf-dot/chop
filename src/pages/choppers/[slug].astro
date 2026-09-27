@@ -302,13 +302,13 @@ const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生
       {prev ? (
         <a href={url(`choppers/${prev.id}/`)} class="card group p-5 transition hover:border-line-strong">
           <span class="eyebrow">← 上一位</span>
-          <span class="mt-2 block font-display text-xl">{prev.data.name}</span>
+          <span class="mt-2 block font-display text-xl">{displayName(prev.data)}</span>
         </a>
       ) : <span />}
       {next && (
         <a href={url(`choppers/${next.id}/`)} class="card group p-5 text-right transition hover:border-line-strong">
           <span class="eyebrow">下一位 →</span>
-          <span class="mt-2 block font-display text-xl">{next.data.name}</span>
+          <span class="mt-2 block font-display text-xl">{displayName(next.data)}</span>
         </a>
       )}
     </nav>

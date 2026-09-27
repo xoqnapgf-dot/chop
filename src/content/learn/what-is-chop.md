@@ -26,7 +26,7 @@ sources:
 |---|---|---|
 | **快歌** | 某首歌、某一段很快，但这个人整体不以快著称 | Eminem、谢帝、那吾克热 |
 | **快嘴** | 以语速、咬字清晰度为主要标签 | 法老、杨和苏、光光、贝贝 |
-| **Chop** | 长期、整首地"切"音节；有可靠来源称其为 chopper 的人才归这一层 | Twista、Tech N9ne、Bone Thugs-n-Harmony、小安迪 |
+| **Chop** | 长期、整首地"切"音节；有可靠来源称其为 chopper、或本人明确自认的才归这一层 | Twista、Tech N9ne、Bone Thugs-n-Harmony、小安迪 |
 
 ## Chop 除了快，还有什么
 
@@ -46,7 +46,7 @@ SPS 是 syllables per second（每秒音节数）。海外 chopper 圈里有个�
 
 公开资料里也能看到这种现象：Rap Wiki 写道，"网上的小孩只想找最快的那一秒"；2024 年还有一群想自称"最快"的人试图改写纪录规则，只比 1 秒爆发。SPS 社区的 wiki 里，也有人被描述为"前 SPS kid"，或者被说在某个阶段"最像 SPS kid：只顾押韵和打爆发"。
 
-所以 SPS kid 和 chopper 正好是两个方向：**chopper 快，而且每个音节都是词、有 flow、能现场唱出来**；SPS kid 只剩一个数字。这也是本站坚持"快 ≠ Chop"的原因。
+所以 SPS kid 和 chopper 正好是两个方向：**chopper 快，而且每个音节都是词、有 flow、能现场唱出来**；SPS kid 只剩一个数字。所以快不等于 chop。
 
 一个对照的例子：德州的 [Crucified](../../choppers/crucified/) 被质疑"加速"和"乱吐字"后，录了一段现场视频（46 秒 799 个音节），并公开了歌词，证明自己每个音节都是词。
 
@@ -54,7 +54,7 @@ SPS 是 syllables per second（每秒音节数）。海外 chopper 圈里有个�
 
 中文里"快嘴"是通俗说法，很多文章会把 chopper 直接翻成快嘴。但在圈内讨论里，两者是分开的：会唱快的人很多，真正以 chopping 为核心风格的人很少。有些唱快嘴的人，本身也未必在玩 chop。
 
-所以本站的做法是：**只有找到可靠来源的，才标 Chopper**。目前中国区标为 Chopper 的是**小安迪**。像**赵辰龙**这样有争议、但可以算半个 chop 的人，本站标"快嘴"，再加一个"接近 Chop"的说明；韩国的 **Outsider** 也是这样处理：严格说是快嘴，但和 chopper 合作过，速度和强度都接近。
+所以这里的规矩是：**有可靠来源、或者本人明确自认的，才标 Chopper**。中国区标 Chopper 的有[小安迪](../../choppers/lil-andy/)，以及 B 站和 QQ 群里聚起来的[Kastelaro](../../choppers/kastelaro/)、[夏淳扬](../../choppers/xia-chunyang/)、[青藤 CyanVine](../../choppers/cyanvine/)、[MUSHMACH](../../choppers/mushmach/)。**赵辰龙**这样技术上够得着、但本人不往 chop 路线走的，标"快嘴"，再加一条"接近 Chop"的说明；韩国的 **Outsider** 也一样：严格说是快嘴，但和 chopper 合作过，速度和强度都接近。
 
 ## 速度怎么比
 

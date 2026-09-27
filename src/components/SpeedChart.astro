@@ -14,7 +14,8 @@ const { scene } = Astro.props;
 const artists = (await getCollection('artists')).filter((a) => !scene || (scene === 'china') === (a.data.country === 'CN'));
 const rows = artists
   .flatMap((a) => a.data.speed.map((s) => ({ ...s, artist: displayName(a.data), slug: a.id })))
-  .sort((a, b) => b.value - a.value);
+  // 已辟谣的数字放到每组最后，免得一眼看过去以为是真的
+  .sort((a, b) => Number(a.confidence === 'debunked') - Number(b.confidence === 'debunked') || b.value - a.value);
 
 const groups = (Object.keys(WINDOW) as SpeedWindow[])
   .sort((a, b) => WINDOW[a].order - WINDOW[b].order)
@@ -23,6 +24,8 @@ const groups = (Object.keys(WINDOW) as SpeedWindow[])
 
 // 出处筛选：按条数从多到少
 const byCounts = [...rows.reduce((m, r) => m.set(r.by, (m.get(r.by) ?? 0) + 1), new Map<string, number>())].sort((a, b) => b[1] - a[1]);
+// 出处太多时只露出条数最多的几个，其余收起
+const SHOW_BY = 6;
 const max = Math.max(5, Math.ceil(Math.max(...rows.map((r) => r.value), 0) / 5) * 5);
 const ticks = Array.from({ length: max / 5 + 1 }, (_, i) => i * 5);
 const guides = [
@@ -56,7 +59,8 @@ let i = 0;
     <div class="by-filter mb-6 flex flex-wrap items-center gap-2 text-xs" role="group" aria-label="按出处筛选">
       <span class="text-ink-3">只看：</span>
       <button type="button" class="chip" data-by="" aria-pressed="true">全部</button>
-      {byCounts.map(([b, n]) => <button type="button" class="chip" data-by={b} aria-pressed="false">{b} <span class="text-ink-3">{n}</span></button>)}
+      {byCounts.map(([b, n], k) => <button type="button" class:list={['chip', { 'by-more': k >= SHOW_BY }]} data-by={b} aria-pressed="false">{b} <span class="text-ink-3">{n}</span></button>)}
+      {byCounts.length > SHOW_BY && <button type="button" class="by-toggle chip border-dashed text-ink-3">更多出处 +{byCounts.length - SHOW_BY}</button>}
     </div>
   )}
 
@@ -149,6 +153,9 @@ let i = 0;
   .group-block[hidden] {
     display: none;
   }
+  .by-filter:not(.show-all) .by-more {
+    display: none;
+  }
   .by {
     display: inline-block;
     margin-right: 0.4rem;
@@ -219,7 +226,13 @@ let i = 0;
 <script>
   // 按出处筛选：只显示某一份榜单的数字，空组整组隐藏
   document.querySelectorAll<HTMLElement>('.speed-chart').forEach((chart) => {
-    const btns = chart.querySelectorAll<HTMLButtonElement>('.by-filter button');
+    const filter = chart.querySelector<HTMLElement>('.by-filter');
+    const toggle = chart.querySelector<HTMLButtonElement>('.by-toggle');
+    toggle?.addEventListener('click', () => {
+      const on = filter?.classList.toggle('show-all');
+      toggle.textContent = on ? '收起' : `更多出处 +${chart.querySelectorAll('.by-more').length}`;
+    });
+    const btns = chart.querySelectorAll<HTMLButtonElement>('.by-filter button[data-by]');
     btns.forEach((btn) =>
       btn.addEventListener('click', () => {
         const by = btn.dataset.by ?? '';

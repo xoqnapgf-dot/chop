@@ -28,7 +28,7 @@ const sourceCount = new Set(
   [...artists.flatMap((a) => a.data.sources), ...tracks.flatMap((t) => t.data.sources), ...timeline.flatMap((t) => t.data.sources)].map((s) => s.url),
 ).size;
 const stats = [
-  { n: cn.length, label: '位中国快嘴' },
+  { n: cn.length, label: '位中国区人物' },
   { n: world.length, label: '位世界人物' },
   { n: tracks.length, label: '首曲目' },
   { n: sourceCount, label: '条独立来源' },
@@ -110,7 +110,7 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
   <!-- ============ 快 ≠ Chop ============ -->
   <section class="container-x mt-28">
     <SectionHeading index="01" eyebrow="Fast ≠ Chop" title="快，不等于 Chop" href="learn/what-is-chop/" linkLabel="读完整解释">
-      <p class="mt-4 max-w-2xl text-ink-2">中文圈常把"快嘴"和"chop"混着说。Chop 是一种风格，唱 chop 的人才叫 chopper。本站按风格分成三层，只有找到可靠来源的才标 Chopper。刚入圈、只追速度、含糊乱吐音节的新人小孩，圈内叫"SPS kid"。</p>
+      <p class="mt-4 max-w-2xl text-ink-2">中文圈常把"快嘴"和"chop"混着说。Chop 是一种风格，唱 chop 的人才叫 chopper。这里按风格分成三层，有可靠来源或本人明确自认的才标 Chopper。刚入圈、只追速度、含糊乱吐音节的新人小孩，圈内叫"SPS kid"。</p>
     </SectionHeading>
     <ol class="tiers grid gap-4 md:grid-cols-3">
       {
@@ -141,7 +141,7 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
       <p class="eyebrow relative !text-white/70">China · 中国区</p>
       <h2 class="relative mt-3 text-4xl font-bold text-white sm:text-6xl">中国快嘴</h2>
       <p class="relative mt-4 max-w-md text-white/80">
-        按地区看：{regions.map((r) => r.data.name).join(' · ')}。从 2008 年的《Speed #1》到综艺舞台。
+        按地区看：{regions.map((r) => r.data.name).join(' · ')}。从 2008 年的《Speed #1》，到 B 站上自己组 cypher 的新一代 chopper。
       </p>
       <span class="relative mt-8 inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-black transition group-hover:gap-3">进入中国区 →</span>
     </a>
@@ -171,7 +171,7 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
   <!-- ============ 速度榜 ============ -->
   <section class="container-x mt-32">
     <SectionHeading index="04" eyebrow="Speed board" title="语速榜：先看口径" href="learn/measuring-speed/" linkLabel="数据怎么测">
-      <p class="mt-4 max-w-2xl text-ink-2">官方认证、第三方测算、传闻混在一起比没有意义，这里每一根条都标了可信度。记住：这张榜只比"快"，不代表谁是 chopper。</p>
+      <p class="mt-4 max-w-2xl text-ink-2">官方认证、第三方测算和传闻不能放在一起比，所以每根条都标了可信度。这张榜只比快，不代表谁是 chopper。</p>
     </SectionHeading>
     <div class="card p-5 sm:p-8"><SpeedChart /></div>
   </section>
