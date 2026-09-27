@@ -13,6 +13,20 @@ tags: [中文, 匿名, 变调人声]
 featured: true
 youtube: { channelId: UCDibK9D0Qh6sGZJEGm5r0tA, kind: topic }
 related: [zhao-chenlong, pharaoh]
+speed:
+  - value: 12.3
+    unit: char/s
+    label: '《大举进攻》一段 · 中文快嘴 top10 第 6'
+    kind: measured
+    by: '石狐九和 2021'
+    window: short
+    syllables: 61
+    seconds: 4.96
+    confidence: pending
+    note: '从"也许有一天我也会退出这个舞台"到"不如去问我的拥护者们"，4.96 秒 61 个字（62 个字减 1 个吞掉的），约 12.30。《大举进攻》是 2020 年 11 月同名专辑的主打，网易云署名幸存者联盟、幼稚园杀手。石狐九和在置顶评论里说"测速和吞字是准的，但视频是做着玩的"。'
+    sources:
+      - { title: 'B站 – 石狐九和：中文快嘴top10（新编）（2021-05-19）', url: 'https://www.bilibili.com/video/BV1bh411v7d7/' }
+      - { title: '网易云音乐 – 幸存者联盟、幼稚园杀手：大举进攻（2020-11-25）', url: 'https://music.163.com/song?id=1806342356' }
 sources:
   - { title: '豆瓣小组 – 幼稚园杀手 简介（2010）', url: 'https://www.douban.com/group/topic/14768861/' }
   - { title: '嘻哈中国 – 幼稚园杀手的真实身份', url: 'https://www.xihachina.com/7222.html' }

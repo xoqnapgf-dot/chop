@@ -4,7 +4,7 @@ export type Collab = CollectionEntry<'collabs'>;
 
 /** 一首合作曲的链接：优先网易云，其次写明的出处 */
 export const collabHref = (c: Collab) =>
-  c.data.netease ? `https://music.163.com/#/song?id=${c.data.netease}` : c.data.source!.url;
+  c.data.netease ? `https://music.163.com/song?id=${c.data.netease}` : c.data.source!.url;
 
 export const collabYear = (c: Collab) => c.data.date.slice(0, 4);
 

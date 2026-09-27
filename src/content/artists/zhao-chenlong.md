@@ -42,6 +42,19 @@ speed:
     sources:
       - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
       - { title: 'B站 – 山东卫视《超强音浪》南征北战醉人（赵辰龙）10 秒 128 字《饕餮》快嘴', url: 'https://www.bilibili.com/video/BV1vW411r7nh/' }
+  - value: 13.0
+    unit: char/s
+    label: '幸存者联盟《冥想》最快一句 · 中文快嘴 top10 第 5'
+    kind: measured
+    by: '石狐九和 2021'
+    window: burst
+    syllables: 13
+    seconds: 1.0
+    confidence: pending
+    note: '"计划变得更好但却倍感疲劳不堪"，1.0 秒 13 个字（石狐九和数的是 14 个字减 1 个吞掉的）。《冥想》收在 2020 年 11 月的专辑《大举进攻》里，网易云署名幸存者联盟。石狐九和在置顶评论里说"测速和吞字是准的，但视频是做着玩的"。'
+    sources:
+      - { title: 'B站 – 石狐九和：中文快嘴top10（新编）（2021-05-19）', url: 'https://www.bilibili.com/video/BV1bh411v7d7/' }
+      - { title: '网易云音乐 – 幸存者联盟：冥想（专辑《大举进攻》，2020-11-25）', url: 'https://music.163.com/song?id=1811881283' }
 sources:
   - { title: '维基百科 – 南征北战NZBZ', url: 'https://zh.wikipedia.org/zh-hans/%E5%8D%97%E5%BE%81%E5%8C%97%E6%88%98NZBZ' }
   - { title: '新浪 – 幼稚园杀手身份曝光！赵辰龙公开回应（2022-04-01）', url: 'https://k.sina.cn/article_1163858357_v455f11b5019012ps5.html' }
