@@ -71,7 +71,8 @@ const q = encodeURIComponent(title);
     audio.controls = true;
     audio.autoplay = true;
     audio.preload = 'auto';
-    audio.src = `https://music.163.com/song/media/outer/url?id=${ne}.mp3`;
+    const src = `https://music.163.com/song/media/outer/url?id=${ne}.mp3`;
+    audio.src = src;
     audio.className = 'w-full max-w-[420px]';
     const note = document.createElement('p');
     note.className = 'text-xs text-white/70';
@@ -89,11 +90,19 @@ const q = encodeURIComponent(title);
       note.textContent = '这首在站内放不了（可能是会员歌曲），去网易云听：';
       open.className = 'rounded-full bg-white px-5 py-2 text-sm font-semibold text-black';
     };
-    audio.addEventListener('error', fail);
-    // 10 秒还没开始加载数据，也当作放不了
+    // 网易云的音频 CDN 偶尔会连不上某个节点，失败先换个请求重试两次，再不行才给跳转
+    let tries = 0;
+    audio.addEventListener('error', () => {
+      if (tries < 2) {
+        tries++;
+        audio.src = `${src}&r=${Date.now()}`;
+        audio.play().catch(() => {});
+      } else fail();
+    });
+    // 15 秒还没开始加载数据，也当作放不了
     const timer = setTimeout(() => {
       if (audio.readyState < 2) fail();
-    }, 10000);
+    }, 15000);
     audio.addEventListener('canplay', () => clearTimeout(timer), { once: true });
     wrap.append(name, audio, note, open);
     // 顶部的"平台 / 官方上传"标签会压住歌名，播放时去掉
