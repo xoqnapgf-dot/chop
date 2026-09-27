@@ -1298,3 +1298,15 @@
   sources:
     - { title: 'YouTube – MUSHMACH - Undaspeed Solo1（2023-08-02）', url: 'https://www.youtube.com/watch?v=6OmIbrnQkEE' }
     - { title: 'B站 – GumBrass恐核速说频道：MUSHMACH - Undaspeed Solo1', url: 'https://www.bilibili.com/video/BV1CpSBYLEUZ/' }
+- id: xie-di-rap-god-remix
+  title: Rap God (Remix)
+  artists: [xie-di]
+  credit: 谢帝
+  scene: china
+  year: 2019
+  bilibili: BV1Ez4y117xf
+  officialUpload: true
+  note: '谢帝改编 Eminem《Rap God》的版本，是他最出名的快歌。官方发行时间没查到，B 站最早的搬运在 2019 年 10 月；说唱会馆 2021 年 3 月在 B 站上传，播放将近 90 万。'
+  sources:
+    - { title: 'B站 – CDC说唱会馆：谢帝 - Rap God (Remix)（2021-03-11）', url: 'https://www.bilibili.com/video/BV1Ez4y117xf/' }
+    - { title: 'B站 – 天气温云：【姆爷×谢帝】rap god（左右声道）（2019-10-20）', url: 'https://www.bilibili.com/video/BV1QE41167zs/' }

@@ -46,6 +46,6 @@ export function trackThumb(videoId?: string): ImageMetadata | undefined {
 }
 
 /** 曲目封面：优先 YouTube 缩略图，没有就用网易云专辑封面（ne-<歌曲ID>.jpg） */
-export function trackCover(t: { youtube?: string; netease?: number }): ImageMetadata | undefined {
-  return trackThumb(t.youtube) ?? (t.netease ? trackThumb(`ne-${t.netease}`) : undefined);
+export function trackCover(t: { youtube?: string; netease?: number; bilibili?: string }): ImageMetadata | undefined {
+  return trackThumb(t.youtube) ?? (t.netease ? trackThumb(`ne-${t.netease}`) : undefined) ?? (t.bilibili ? trackThumb(`bv-${t.bilibili}`) : undefined);
 }

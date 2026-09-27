@@ -11,7 +11,7 @@ import { trackThumb } from '@/lib/media';
 
 interface Props { id?: string; title: string; channel?: string; official?: boolean; bilibili?: string; netease?: number }
 const { id, title, channel, official, bilibili, netease } = Astro.props;
-const thumb = trackThumb(id) ?? (netease ? trackThumb(`ne-${netease}`) : undefined);
+const thumb = trackThumb(id) ?? (netease ? trackThumb(`ne-${netease}`) : undefined) ?? (bilibili ? trackThumb(`bv-${bilibili}`) : undefined);
 const q = encodeURIComponent(title);
 ---
 
