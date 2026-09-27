@@ -20,19 +20,33 @@ const scenes = Object.keys(SCENE) as (keyof typeof SCENE)[];
     <h1 class="mt-4 text-5xl font-bold md:text-7xl">曲目库</h1>
     <p class="mt-5 max-w-2xl text-lg text-ink-2">按年份排列。点击封面在页面内播放；优先收录艺人或厂牌官方上传的视频，非官方上传的会注明。</p>
 
-    <div class="mt-8 flex flex-wrap gap-2" role="group" aria-label="按分区筛选" data-pagefind-ignore>
-      <button class="t-btn chip cursor-pointer" data-value="" aria-pressed="true">全部</button>
-      {scenes.map((k) => <button class="t-btn chip cursor-pointer" data-value={k} aria-pressed="false">{SCENE[k].name}</button>)}
-      <button class="t-btn chip cursor-pointer" data-value="starter" aria-pressed="false">路人入门</button>
+    <div class="sticky top-16 z-20 -mx-4 mt-8 border-y border-line bg-bg/90 px-4 py-3 backdrop-blur md:static md:mx-0 md:border-0 md:bg-transparent md:p-0 md:backdrop-blur-none" data-pagefind-ignore>
+      <label class="relative block">
+        <span class="sr-only">搜歌名、歌手或年份</span>
+        <svg viewBox="0 0 24 24" class="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-ink-3" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+        <input type="search" class="t-q w-full rounded-xl border border-line bg-surface-2 py-2.5 pl-9 pr-3 text-sm outline-none focus:border-line-strong md:max-w-md" placeholder="搜歌名、歌手或年份" autocomplete="off" />
+      </label>
+      <div class="mt-3 flex flex-wrap items-center gap-2">
+        <div class="flex flex-wrap gap-2" role="group" aria-label="按分区筛选">
+          <button class="t-btn chip cursor-pointer" data-value="" aria-pressed="true">全部</button>
+          {scenes.map((k) => <button class="t-btn chip cursor-pointer" data-value={k} aria-pressed="false">{SCENE[k].name}</button>)}
+          <button class="t-btn chip cursor-pointer" data-value="starter" aria-pressed="false">路人入门</button>
+        </div>
+        <button type="button" class="t-sort chip ml-auto cursor-pointer" aria-label="切换排序">最早在前 ⇅</button>
+      </div>
     </div>
 
-    <p class="mt-6 text-sm text-ink-3 md:hidden">点一行展开播放器和介绍。</p>
-    <div class="mt-4 grid grid-cols-1 gap-3 md:mt-10 md:gap-x-8 md:gap-y-16 lg:grid-cols-2">
+    <p class="mt-5 flex items-center justify-between text-sm text-ink-3">
+      <span class="t-count">共 {tracks.length} 首</span>
+      <span class="md:hidden">点一行展开播放器和介绍</span>
+    </p>
+    <p class="t-empty mt-6 hidden text-ink-3">没有找到，换个关键词试试。</p>
+    <div class="t-grid mt-4 grid grid-cols-1 gap-3 md:mt-8 md:gap-x-8 md:gap-y-16 lg:grid-cols-2">
       {
         withArtists.map(({ t, artists }) => {
           const thumb = trackCover(t.data);
           return (
-          <article id={t.id} class="track min-w-0 scroll-mt-24 max-md:rounded-2xl max-md:border max-md:border-line max-md:bg-surface max-md:p-2" data-scene={t.data.scene} data-starter={t.data.starter ? '1' : undefined}>
+          <article id={t.id} class="track min-w-0 scroll-mt-40 md:scroll-mt-24 max-md:rounded-2xl max-md:border max-md:border-line max-md:bg-surface max-md:p-2" data-scene={t.data.scene} data-year={t.data.year} data-starter={t.data.starter ? '1' : undefined} data-q={`${t.data.title} ${t.data.credit} ${t.data.year ?? ''} ${t.data.album ?? ''} ${artists.map((a) => `${a.data.name} ${a.data.nameZh ?? ''}`).join(' ')}`.toLowerCase()}>
             {/* 手机：先只显示一行（缩略图 + 标题），点开再显示播放器和介绍 */}
             <button type="button" class="track-head flex w-full items-center gap-3 text-left md:hidden" aria-expanded="false" aria-controls={`body-${t.id}`}>
               <span class="relative aspect-video w-28 shrink-0 overflow-hidden rounded-lg bg-black">
@@ -100,17 +114,46 @@ const scenes = Object.keys(SCENE) as (keyof typeof SCENE)[];
 <script>
   const btns = [...document.querySelectorAll<HTMLButtonElement>('.t-btn')];
   const items = [...document.querySelectorAll<HTMLElement>('article.track')];
-  const apply = (v: string) => {
-    btns.forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.value === v)));
+  const grid = document.querySelector<HTMLElement>('.t-grid')!;
+  const q = document.querySelector<HTMLInputElement>('.t-q')!;
+  const count = document.querySelector<HTMLElement>('.t-count')!;
+  const empty = document.querySelector<HTMLElement>('.t-empty')!;
+  const sortBtn = document.querySelector<HTMLButtonElement>('.t-sort')!;
+  let scene = '';
+  const render = () => {
+    const words = q.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    let n = 0;
     items.forEach((el) => {
-      const ok = !v || (v === 'starter' ? el.dataset.starter === '1' : el.dataset.scene === v);
+      const inScene = !scene || (scene === 'starter' ? el.dataset.starter === '1' : el.dataset.scene === scene);
+      const hit = words.every((w) => (el.dataset.q ?? '').includes(w));
+      const ok = inScene && hit;
       el.style.display = ok ? '' : 'none';
+      if (ok) n++;
     });
+    count.textContent = n === items.length ? `共 ${n} 首` : `${n} / ${items.length} 首`;
+    empty.classList.toggle('hidden', n > 0);
+  };
+  const apply = (v: string) => {
+    scene = v;
+    btns.forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.value === v)));
+    render();
     const p = new URLSearchParams(location.search);
     v ? p.set('scene', v) : p.delete('scene');
     history.replaceState(history.state, '', (p.size ? `?${p}` : location.pathname) + location.hash);
   };
   btns.forEach((b) => b.addEventListener('click', () => apply(b.dataset.value ?? '')));
+  q.addEventListener('input', render);
+  // 排序：默认最早在前，点一下反过来
+  let newest = false;
+  sortBtn.addEventListener('click', () => {
+    newest = !newest;
+    // 年份待考的始终排在最后
+    const y = (el: HTMLElement) => Number(el.dataset.year) || (newest ? -Infinity : Infinity);
+    const keyed = items.map((el, k) => ({ el, k }));
+    keyed.sort((a, b) => (newest ? y(b.el) - y(a.el) : y(a.el) - y(b.el)) || (newest ? b.k - a.k : a.k - b.k));
+    grid.append(...keyed.map((x) => x.el));
+    sortBtn.textContent = newest ? '最新在前 ⇅' : '最早在前 ⇅';
+  });
 
   // 手机上的折叠行：点一下展开 / 收起；带锚点进来时直接展开那一首
   const setOpen = (el: HTMLElement, open: boolean) => {

@@ -36,6 +36,8 @@ const panels = scenes.map((s) => ({
   scene: s,
   people: artists.filter((a) => a.data.country === s.id.toUpperCase()).sort((a, b) => (a.data.activeSince ?? 9999) - (b.data.activeSince ?? 9999)),
 }));
+// 手机上每个国家先显示几位
+const PEOPLE_SHOW = 8;
 ---
 
 <section class="globe-block" data-initial={initial}>
@@ -70,8 +72,8 @@ const panels = scenes.map((s) => ({
 
             {people.length > 0 && (
               <ul class="people mt-5 grid grid-cols-1 gap-2">
-                {people.map((a) => (
-                  <li>
+                {people.map((a, k) => (
+                  <li class:list={{ 'is-more': k >= PEOPLE_SHOW }}>
                     <a href={url(`choppers/${a.id}/`)} class="group flex items-center gap-3 rounded-xl border border-line p-2 pr-3 transition hover:border-line-strong">
                       <Avatar id={a.id} data={a.data} widths={[96]} sizes="44px" class="size-11 shrink-0 overflow-hidden rounded-lg object-cover" />
                       <span class="min-w-0 flex-1">
@@ -83,6 +85,11 @@ const panels = scenes.map((s) => ({
                   </li>
                 ))}
               </ul>
+            )}
+            {people.length > PEOPLE_SHOW && (
+              <button type="button" class="people-more btn btn-ghost mt-3 w-full justify-center text-sm lg:hidden" data-n={people.length}>
+                展开全部 {people.length} 位
+              </button>
             )}
 
             {s.data.mentions.length > 0 && (
@@ -138,6 +145,12 @@ const panels = scenes.map((s) => ({
   .scene-tabs {
     scrollbar-width: none;
   }
+  /* 手机上人物多的国家先显示前几位，点"展开全部"再看其余 */
+  @media (max-width: 1023.98px) {
+    .people:not(.show-all) .is-more {
+      display: none;
+    }
+  }
   /* 电脑上人物多的国家（如美国）列表在框内滚动，不把整块拉长 */
   @media (min-width: 1024px) {
     .people {
@@ -157,6 +170,13 @@ const panels = scenes.map((s) => ({
     const tabs = [...block.querySelectorAll<HTMLButtonElement>('.scene-tab')];
     const panels = [...block.querySelectorAll<HTMLElement>('.scene-panel')];
     let api: { select: (id: string) => void } | undefined;
+    block.querySelectorAll<HTMLButtonElement>('.people-more').forEach((btn) =>
+      btn.addEventListener('click', () => {
+        const list = btn.previousElementSibling as HTMLElement | null;
+        const on = list?.classList.toggle('show-all');
+        btn.textContent = on ? '收起' : `展开全部 ${btn.dataset.n} 位`;
+      }),
+    );
 
     const show = (id: string) => {
       tabs.forEach((t) => t.setAttribute('aria-selected', String(t.dataset.scene === id)));
