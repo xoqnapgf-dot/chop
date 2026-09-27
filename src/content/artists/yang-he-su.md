@@ -15,6 +15,19 @@ tags: [活死人, 弹舌, 综艺冠军]
 featured: true
 youtube: { channelId: UCs08VDtgAT31Pjl2jQde8OA, handle: '@yanghesu-728', kind: official }
 related: [pharaoh, lil-andy, xie-di]
+speed:
+  - value: 10.1
+    unit: char/s
+    label: '综艺小组表演《饕餮》快嘴段'
+    kind: claimed
+    by: 'B站 街头社区（视频标题）'
+    window: short
+    syllables: 101
+    seconds: 10
+    confidence: pending
+    note: '综艺节目里的小组表演，他唱南征北战《饕餮》的快嘴段。"10 秒 101 字"是视频标题的说法，没找到逐帧测算；评论区有人质疑对口型，也有人说杨和苏工作室发过全开麦的现场。'
+    sources:
+      - { title: 'B站 – 街头社区：杨和苏极速快嘴！10秒Rap101字！小组表演《饕餮》（2021-12-25）', url: 'https://www.bilibili.com/video/BV1C34y167CE/' }
 sources:
   - { title: '维基百科 – 杨和苏', url: 'https://zh.wikipedia.org/zh-cn/%E6%9D%A8%E5%92%8C%E8%8B%8F' }
   - { title: '搜狐 – 杨和苏、福克斯、法老，活死人把手里的牌打到了极致', url: 'https://www.sohu.com/a/357323574_120046417' }
