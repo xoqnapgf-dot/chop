@@ -199,8 +199,11 @@ const ND = {
   <section class="container-x pt-28">
     <SectionHeading index="04" eyebrow="People" title="世界人物" href="choppers/?scene=world" linkLabel="在人物库里筛选" />
     <div class="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
-      {artists.map((a) => <ArtistCard artist={a} />)}
+      {artists.slice(0, 12).map((a) => <ArtistCard artist={a} />)}
     </div>
+    {artists.length > 12 && (
+      <a href={url('choppers/?scene=world')} class="btn btn-ghost mt-6 w-full justify-center sm:w-auto">人物库里看全部 {artists.length} 位 →</a>
+    )}
   </section>
 
   <section class="container-x pt-28">
@@ -211,8 +214,11 @@ const ND = {
   <section class="container-x pt-28">
     <SectionHeading index="06" eyebrow="Tracks" title="世界曲目" href="tracks/?scene=world" linkLabel="曲目库" />
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {tracks.map((t) => <div class="flex min-w-0"><TrackCard track={t} /></div>)}
+      {tracks.slice(-9).reverse().map((t) => <div class="flex min-w-0"><TrackCard track={t} /></div>)}
     </div>
+    {tracks.length > 9 && (
+      <a href={url('tracks/?scene=world')} class="btn btn-ghost mt-6 w-full justify-center sm:w-auto">曲目库里看全部 {tracks.length} 首世界曲目 →</a>
+    )}
   </section>
 
   <section class="container-x pt-28">

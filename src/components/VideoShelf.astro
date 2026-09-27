@@ -24,12 +24,13 @@ const href = (v: (typeof all)[number]) =>
   v.data.platform === 'bilibili' ? `https://www.bilibili.com/video/${v.id}/` : `https://www.youtube.com/watch?v=${v.id}`;
 ---
 
-<ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+<!-- 手机上横向滑动，电脑上网格 -->
+<ul class="vshelf -mx-4 flex snap-x snap-mandatory scroll-px-4 gap-3 overflow-x-auto px-4 pb-3 sm:mx-0 sm:grid sm:snap-none sm:grid-cols-2 sm:gap-4 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-3 xl:grid-cols-4">
   {
     list.map((v) => {
       const cover = videoCover(v.id);
       return (
-        <li class="flex">
+        <li class="flex w-[78vw] max-w-80 shrink-0 snap-start sm:w-auto sm:max-w-none">
           <a href={href(v)} target="_blank" rel="noopener" class="vcard card group flex w-full flex-col overflow-hidden">
             <div class="relative aspect-video overflow-hidden bg-black">
               {cover && <Image src={cover} alt="" widths={[320, 640]} sizes="(min-width: 1280px) 300px, (min-width: 640px) 45vw, 100vw" class="size-full object-cover transition duration-500 group-hover:scale-[1.03]" />}
@@ -54,6 +55,12 @@ const href = (v: (typeof all)[number]) =>
 </ul>
 
 <style>
+  .vshelf {
+    scrollbar-width: none;
+  }
+  .vshelf::-webkit-scrollbar {
+    display: none;
+  }
   .kind {
     background: color-mix(in oklab, var(--accent) 18%, transparent);
     color: var(--accent-text);
