@@ -1,8 +1,10 @@
 ---
 /**
  * 轻量播放器：先只显示本地缩略图，点击才加载 iframe。
- * 点击时先探测 YouTube 能不能连上：能连就播 YouTube；连不上（国内通常如此）就播 B 站，
- * 没有 B 站视频就用网易云外链播放器，都没有才给搜索入口。
+ * 点击后：有 B 站视频就直接播 B 站（国内最稳，也不用等探测）；
+ * 没有 B 站时先探测 YouTube 能不能连上，能连就播 YouTube；
+ * 连不上或没有 YouTube，就用站内音频播放网易云（外链小播放器容易卡死，不再用）；
+ * 网易云也放不了（会员歌曲等）时，直接给跳转按钮。
  */
 import { Image } from 'astro:assets';
 import { trackThumb } from '@/lib/media';
@@ -20,7 +22,7 @@ const q = encodeURIComponent(title);
       <svg viewBox="0 0 24 24" class="ml-1 size-7" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg>
     </span>
   </button>
-  <div class="pointer-events-none absolute inset-x-0 top-0 flex items-center justify-between gap-2 bg-gradient-to-b from-black/70 to-transparent p-3 text-xs text-white/85">
+  <div class="yt-label pointer-events-none absolute inset-x-0 top-0 flex items-center justify-between gap-2 bg-gradient-to-b from-black/70 to-transparent p-3 text-xs text-white/85">
     <span class="truncate">{channel ?? (id ? '' : netease ? '网易云音乐' : 'B 站')}</span>
     {official !== undefined && <span class="shrink-0 rounded-full bg-black/50 px-2 py-0.5">{official ? '官方上传' : '非官方上传'}</span>}
   </div>
@@ -35,7 +37,7 @@ const q = encodeURIComponent(title);
   }
   {
     netease ? (
-      <a class="link-u hover:text-ink" href={`https://music.163.com/#/song?id=${netease}`} target="_blank" rel="noopener">网易云 ↗</a>
+      <a class="link-u hover:text-ink" href={`https://music.163.com/song?id=${netease}`} target="_blank" rel="noopener">网易云 ↗</a>
     ) : (
       <a class="link-u hover:text-ink" href={`https://music.163.com/#/search/m/?s=${q}`} target="_blank" rel="noopener">在网易云搜 ↗</a>
     )
@@ -57,6 +59,48 @@ const q = encodeURIComponent(title);
       new Promise<boolean>((r) => setTimeout(() => r(false), 4000)),
     ]));
 
+  // 网易云：站内 <audio> 直接放（外链 iframe 播放器容易卡死）；放不了就给跳转按钮
+  function playNetease(btn: HTMLButtonElement, ne: string, title: string) {
+    const page = `https://music.163.com/song?id=${ne}`;
+    const wrap = document.createElement('div');
+    wrap.className = 'absolute inset-0 flex flex-col items-center justify-center gap-2.5 bg-black/75 p-4 text-center text-white backdrop-blur-[2px]';
+    const name = document.createElement('p');
+    name.className = 'max-w-full truncate text-sm font-semibold';
+    name.textContent = title;
+    const audio = document.createElement('audio');
+    audio.controls = true;
+    audio.autoplay = true;
+    audio.preload = 'auto';
+    audio.src = `https://music.163.com/song/media/outer/url?id=${ne}.mp3`;
+    audio.className = 'w-full max-w-[420px]';
+    const note = document.createElement('p');
+    note.className = 'text-xs text-white/70';
+    note.textContent = '网易云音乐 · 站内播放';
+    const open = document.createElement('a');
+    open.href = page;
+    open.target = '_blank';
+    open.rel = 'noopener';
+    open.className = 'rounded-full bg-white/15 px-4 py-1.5 text-xs font-semibold hover:bg-white hover:text-black';
+    open.textContent = '去网易云听 ↗';
+    const fail = () => {
+      if (wrap.dataset.failed) return;
+      wrap.dataset.failed = '1';
+      audio.remove();
+      note.textContent = '这首在站内放不了（可能是会员歌曲），去网易云听：';
+      open.className = 'rounded-full bg-white px-5 py-2 text-sm font-semibold text-black';
+    };
+    audio.addEventListener('error', fail);
+    // 10 秒还没开始加载数据，也当作放不了
+    const timer = setTimeout(() => {
+      if (audio.readyState < 2) fail();
+    }, 10000);
+    audio.addEventListener('canplay', () => clearTimeout(timer), { once: true });
+    wrap.append(name, audio, note, open);
+    // 顶部的"平台 / 官方上传"标签会压住歌名，播放时去掉
+    btn.parentElement?.querySelector('.yt-label')?.remove();
+    btn.replaceWith(wrap);
+  }
+
   document.querySelectorAll<HTMLElement>('.lite-yt').forEach((el) => {
     const btn = el.querySelector<HTMLButtonElement>('.play');
     btn?.addEventListener('click', async () => {
@@ -72,24 +116,20 @@ const q = encodeURIComponent(title);
         f.className = cls;
         return f;
       };
-      // 没有 YouTube 视频的（只在国内平台发行），直接走 B 站 / 网易云
+      const bv = el.dataset.bv;
+      const ne = el.dataset.ne;
+      const title = el.dataset.title ?? '';
+      // 有 B 站视频：直接播 B 站
+      if (bv) {
+        el.replaceChildren(frame(`https://player.bilibili.com/player.html?bvid=${bv}&autoplay=1&danmaku=0&high_quality=1`, title));
+        return;
+      }
       if (!el.dataset.id || !(await probe())) {
-        const bv = el.dataset.bv;
-        const ne = el.dataset.ne;
-        if (bv) {
-          // YouTube 连不上：直接播 B 站
-          el.replaceChildren(frame(`https://player.bilibili.com/player.html?bvid=${bv}&autoplay=1&danmaku=0&high_quality=1`, el.dataset.title ?? ''));
-          return;
-        }
         if (ne) {
-          // 没有 B 站视频：网易云外链播放器（只有音频，会员歌曲可能放不了）
-          const wrap = document.createElement('div');
-          wrap.className = 'absolute inset-0 grid place-items-center bg-black/85 p-4';
-          wrap.append(frame(`https://music.163.com/outchain/player?type=2&id=${ne}&auto=1&height=66`, el.dataset.title ?? '', 'h-[86px] w-full max-w-[420px] rounded-xl'));
-          btn.replaceWith(wrap);
+          playNetease(btn, ne, title);
           return;
         }
-        const q = encodeURIComponent(el.dataset.title ?? '');
+        const q = encodeURIComponent(title);
         const box = document.createElement('div');
         box.className = 'absolute inset-0 grid place-items-center bg-black/80 p-6 text-center text-sm text-white';
         box.innerHTML = `<div><p class="font-semibold">当前网络无法连接 YouTube</p>
