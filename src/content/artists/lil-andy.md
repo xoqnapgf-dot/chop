@@ -74,6 +74,18 @@ speed:
     sources:
       - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
       - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
+  - value: 10.25
+    unit: char/s
+    label: '《噬》一段 · 中文快嘴 TOP32 第 27'
+    kind: measured
+    by: '石狐九和 2021'
+    window: short
+    syllables: 107
+    seconds: 10.44
+    confidence: pending
+    note: '107 ÷ 10.44 ≈ 10.25，一口气十秒多。同一期《Rap Soldier》排第 9，约 11.11。石狐九和这期只收 50 字以上、平均不低于 10 字/秒的段落，逐帧计时。'
+    sources:
+      - { title: 'B站 – 石狐九和：众神归位！中文快嘴语速TOP32（2021-05-30）', url: 'https://www.bilibili.com/video/BV1M64y1k7wg/' }
 sources:
   - { title: '知乎 – 小安迪，靠作品说话的"活死人"', url: 'https://zhuanlan.zhihu.com/p/42062345' }
   - { title: '知乎 – 小安迪的深蓝儿童退出活死人厂牌', url: 'https://zhuanlan.zhihu.com/p/55226303' }

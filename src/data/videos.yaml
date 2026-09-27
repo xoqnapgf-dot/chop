@@ -188,6 +188,16 @@
   kind: speed
   scene: world
   note: 'NahDah 2023 版榜单的 B 站搬运，国内打不开 YouTube 时可以看这个。'
+- id: BV1M64y1k7wg
+  platform: bilibili
+  title: '众神归位！中文快嘴语速TOP32'
+  author: '石狐九和'
+  date: '2021-05-30'
+  duration: '14:55'
+  cover: 'https://i1.hdslb.com/bfs/archive/2174ab9edd84e858475479664e76b85e78505e8a.png'
+  kind: speed
+  scene: china
+  note: '只收 50 字以上、平均不低于 10 字/秒的段落，逐帧计时。前几名是幼杀《大举进攻》、业余诗人、AR《军火库》、Spylent《天花板之上》、法老《超主宰》，另附赵辰龙《饕餮》电视现场作为"TOP 0"。'
 - id: BV14R4y177Jn
   platform: bilibili
   title: '中文说唱快嘴测速素材库-第十九期'

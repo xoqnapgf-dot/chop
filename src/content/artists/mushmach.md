@@ -34,6 +34,7 @@ sources:
   - { title: 'B站 – 青柠QINGNINGl：超无敌的翻唱大赛 初赛下半部分回放【第二届幸福杯】（2023-11-12）', url: 'https://www.bilibili.com/video/BV11G411Q7En/' }
   - { title: 'B站 – GumBrass恐核速说频道：MUSHMACH - 小人物 Remix（2025-01-20）', url: 'https://www.bilibili.com/video/BV1oMwpeXEkj/' }
   - { title: 'B站 – M号 - MUSHMACH Lyrics video', url: 'https://www.bilibili.com/video/BV1Yw6dYnEro/' }
+  - { title: '网易云音乐 – 赵辰龙(Dragon X)：M号（专辑《致富》，2019-10-15）', url: 'https://music.163.com/song?id=1430620760' }
   - { title: 'YouTube – 喜欢chop的艾拉：Chinese Choppers Cypher MUSHMACH verse cover（标签 #mushmach #蘑菇）', url: 'https://www.youtube.com/watch?v=qaEeTOjFNPE' }
   - { title: 'NahDah Vebb – The Fastest Rapper from Every Country（2024）曲目表', url: 'https://docs.google.com/spreadsheets/d/1q6ccbONUj_yDxAbRCYVqQK5DLmxcQ4I6wlK_zVeaz0o' }
 ---
@@ -42,7 +43,7 @@ MUSHMACH 早先在 B 站圈子里叫**蘑菇**，现在发歌用的名字是 **S
 
 ## Undaspeed
 
-2023 年 8 月 2 日起，他陆续发了 **Undaspeed Solo** 系列（1、2、3、4，以及后来的 Solo X），都是一个人从头唱到尾的快段，由 GumBrass 的频道同步到 YouTube 和 B 站。另外还有《M 号 Remix》等改编。
+2023 年 8 月 2 日起，他陆续发了 **Undaspeed Solo** 系列（1、2、3、4，以及后来的 Solo X），都是一个人从头唱到尾的快段，由 GumBrass 的频道同步到 YouTube 和 B 站。另外还有《M 号 Remix》等改编，原曲《M号》是赵辰龙 2019 年专辑《致富》里的歌。
 
 有人把《M 号》的歌词视频搬到 B 站，评论区里青藤说"也是有人把蘑菇搬过来了"；参加过《Chinese Choppers》的 JMS 说，他是"靠圈子里都有排前的 chop 起家的"。
 
