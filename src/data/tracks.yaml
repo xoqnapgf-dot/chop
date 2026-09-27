@@ -571,7 +571,7 @@
     - { title: 'SPS and Chopper Rap Wiki – IDYLLL', url: 'https://sps-and-chopper-rap.fandom.com/wiki/IDYLLL' }
 - id: infinite-choppers-2
   title: Infinite Choppers 2
-  artists: [down6, idylll, ruffian-rugged, dumanoid, kal-paseo, troll]
+  artists: [down6, idylll, asa-jake, ruffian-rugged, dumanoid, kal-paseo, troll, faraway]
   credit: DOWN6 feat. Hurracane, Idylll, Asa Jake, Al Zabran, Tokumei, Troll, Dumanoid & Ruffian Rugged, Bloody Ruckus, dvagoh, Kal Paseo 等
   youtube: n2SmW1OREcA
   youtubeChannel: DOWN6
@@ -1310,3 +1310,53 @@
   sources:
     - { title: 'B站 – CDC说唱会馆：谢帝 - Rap God (Remix)（2021-03-11）', url: 'https://www.bilibili.com/video/BV1Ez4y117xf/' }
     - { title: 'B站 – 天气温云：【姆爷×谢帝】rap god（左右声道）（2019-10-20）', url: 'https://www.bilibili.com/video/BV1QE41167zs/' }
+- id: aang
+  title: Aang
+  artists: [eze]
+  credit: eze（prod. Soulis，混音 Troll）
+  scene: world
+  year: 2023
+  youtube: _QiU-jxqG7s
+  youtubeChannel: ezeq
+  officialUpload: true
+  note: 'NahDah 2024 年"每国最快"的巴西一栏：1.04 秒 21 个音节 ≈ 20.19，全表第 3。'
+  sources:
+    - { title: 'YouTube – eze - Aang (prod. Soulis)（2023-11-02）', url: 'https://www.youtube.com/watch?v=_QiU-jxqG7s' }
+    - { title: 'NahDah Vebb – The Fastest Rapper from Every Country（2024）曲目表', url: 'https://docs.google.com/spreadsheets/d/1q6ccbONUj_yDxAbRCYVqQK5DLmxcQ4I6wlK_zVeaz0o' }
+- id: unknown-cypher-5
+  title: Unknown Cypher 5
+  artists: [faraway, down6, troll]
+  credit: mana（Unknown）制作，ft. DOWN6、Kenos、Hasimoco、MC Rice、SKELETONE、druid、Muskrat、Troll、Branx、Teri、Faraway 等
+  scene: world
+  year: 2024
+  youtube: sCQGIpR91oU
+  youtubeChannel: Faraway
+  officialUpload: true
+  note: 'Faraway 负责混音和歌词视频。他那段 1 秒整 15 个音节，是 NahDah 2024 年"每国最快"的俄罗斯一栏。'
+  sources:
+    - { title: 'YouTube – mana — Unknown Cypher 5 (Lyric video)（2024-09-28，简介列出全部参与者）', url: 'https://www.youtube.com/watch?v=sCQGIpR91oU' }
+- id: bad-juju-remix
+  title: BAD JUJU (Tech N9ne Remix)
+  artists: [asa-jake]
+  credit: Asa
+  scene: world
+  year: 2024
+  youtube: jcw-k32BckQ
+  youtubeChannel: Asa
+  officialUpload: true
+  note: '改编 Tech N9ne 的《BAD JUJU》。0:34 那段 1 秒整 16 个音节，NahDah 2024 年"每国最快"的英国一栏。'
+  sources:
+    - { title: 'YouTube – Asa：BAD JUJU (TECH N9NE REMIX)（2024-08-02）', url: 'https://www.youtube.com/watch?v=jcw-k32BckQ' }
+- id: shadows
+  title: SHADOWS
+  artists: [down6, wedere]
+  credit: DOWN6 × Throwaway ft. Wedere
+  scene: world
+  year: 2023
+  youtube: n2Zj-3kt53Q
+  youtubeChannel: Wedere
+  officialUpload: true
+  note: 'Wedere 上传的是自己客串的那段。1 秒整 17 个音节，NahDah 2024 年"每国最快"的意大利一栏。'
+  sources:
+    - { title: 'YouTube – WEDERE - SHADOWS - RAP PIÙ VELOCE D''ITALIA（2024-07-23）', url: 'https://www.youtube.com/watch?v=n2Zj-3kt53Q' }
+

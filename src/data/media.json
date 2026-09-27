@@ -526,6 +526,42 @@
       },
       "color": "#281828",
       "fetchedAt": "2026-09-27"
+    },
+    "asa-jake": {
+      "channelUrl": "https://www.youtube.com/channel/UCA1jtAs8J88oHY6kqYx54ig",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/ndZNPU4c3ViZNm2jEfL9VsCGXF4kyF_2J4PBQ3OL3DwSVwfT_nnzKoBnxYwkNpbutUl9CqUHB74=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/Dw7pT2THNs38o_VfqAhvgylRcQ-FQleyOdVzVZjLrIw-KgYgS2a5gjc06J3FofLWQ8h6iyoUIw=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#d8d8e8",
+      "fetchedAt": "2026-09-27"
+    },
+    "eze": {
+      "channelUrl": "https://www.youtube.com/channel/UCMQgs8m2eGhLAKffM9_xRGA",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/gs0RqATCZn7nBJFXBfp4iJHImvKNN8sc62r-PFdBuZ0034JNq6T-ljKIvMD3gXRl_XwiXaSQUuM=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/NTDxP8JeVwDg-HqLmNj0CxsLm2Z5J1FpVotY9fVi4MEMiPz01_oJ96uMCqFuaZ_W6UyxeyAs=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-27"
+    },
+    "faraway": {
+      "channelUrl": "https://www.youtube.com/channel/UC7ZpqR6DaaRqA9r5YO_KVbQ",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/qZzRnAyr87aXsVBQVBrN1pT9LOVrIgirHvEClT-BI5NOX00E_2cu8vW7U61eZHM1p3zWjPDn=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/wNgJkZk56M1jnucS9eemvvyqwDlriTQbLrLSS__JKJ0Y884CWG2Lm0Qj2OI9J9V4uoI02X9AJQ=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#f8f8f8",
+      "fetchedAt": "2026-09-27"
+    },
+    "wedere": {
+      "channelUrl": "https://www.youtube.com/channel/UCNeYdwwQJuW5aJqBTPmkMFA",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/kOpa2GC6qm6Z6elpzcSCBYpLUlz7wGyigYwXcrvkbpZVtJesEnny_enmDmTv8ZfNE-NIdbaEM3A=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/tvdCjyzbSw-l8ZBbqRpHvSSTJ8PeiV4v17WmtoXwn2BV2NPMoJGyqtzYQYlgwMrIyGwQJ63E=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-27"
     }
   },
   "tracks": {
@@ -1022,6 +1058,26 @@
     "xie-di-rap-god-remix": {
       "video": "https://www.bilibili.com/video/BV1Ez4y117xf/",
       "size": "bilibili",
+      "color": "#080808"
+    },
+    "aang": {
+      "video": "https://www.youtube.com/watch?v=_QiU-jxqG7s",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "unknown-cypher-5": {
+      "video": "https://www.youtube.com/watch?v=sCQGIpR91oU",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "bad-juju-remix": {
+      "video": "https://www.youtube.com/watch?v=jcw-k32BckQ",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "shadows": {
+      "video": "https://www.youtube.com/watch?v=n2Zj-3kt53Q",
+      "size": "maxresdefault",
       "color": "#080808"
     }
   }

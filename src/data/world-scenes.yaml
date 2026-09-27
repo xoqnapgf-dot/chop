@@ -13,7 +13,7 @@
   name: 中国
   en: China
   geo: [34.5, 108.9]
-  summary: 中文圈更常说"快嘴"。从南京 D-Evil、活死人到综艺舞台，地区场景各有特色。
+  summary: 中文圈更常说"快嘴"。从南京 D-Evil、活死人，到 B 站和 QQ 群里自己组 cypher 的新一代 chopper。
   link: china/
   sources:
     - { title: '网易 – 谁才是中文说唱圈第一快嘴？（2018）', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }
@@ -79,7 +79,7 @@
   name: 英国
   en: United Kingdom
   geo: [54.0, -2.4]
-  summary: Yung Revival 来自这里。他 2013 年和 DNA、Leach 合唱《Tie The Noose》，NahDah 2017 版第 13；沉寂多年后 2025 年回归，又和 DNA、Leach、Crucified 等人合作了一连串新歌。
+  summary: Yung Revival 来自这里。他 2013 年和 DNA、Leach 合唱《Tie The Noose》，NahDah 2017 版第 13；沉寂多年后 2025 年回归，又和 DNA、Leach、Crucified 等人合作了一连串新歌，同台的常有英国的 Asa Jake，他是 NahDah 2024 年"每国最快"的英国代表。
   sources:
     - { title: 'YouTube – YUNG REVIVAL OFFICIAL（本人频道）', url: 'https://www.youtube.com/@YUNGREVIVALOFFICIAL' }
     - { title: 'YouTube – DNA - Yung Revival Shout Out "From the UK"（2015）', url: 'https://www.youtube.com/watch?v=vkvL1z3_Li0' }
@@ -96,7 +96,7 @@
   name: 巴西
   en: Brazil
   geo: [-14.2, -51.9]
-  summary: 葡萄牙语的 speed flow 圈有自己的测速频道（TrollatorBR、BruCalcs）。Shad 的《FreeZeTyler》1 秒 20 个音节，是巴西公认的最快，NahDah 2021 版第 2、2023 版第 6；TrollatorBR 的主人 Troll 自己也是 speedflow rapper，NahDah 2023 版第 16。
+  summary: 葡萄牙语的 speed flow 圈有自己的测速频道（TrollatorBR、BruCalcs）。Shad 的《FreeZeTyler》1 秒 20 个音节，是巴西公认的最快，NahDah 2021 版第 2、2023 版第 6；TrollatorBR 的主人 Troll 自己也是 speedflow rapper，NahDah 2023 版第 16。NahDah 2024 年"每国最快"里巴西选的是 eze，《Aang》1 秒 21 个音节左右，全表第 3。
   mentions: [MC Igu]
   sources:
     - { title: 'YouTube – TrollatorBR："TOP 50" Rappers Mais Rápidos do Brasil（2021）', url: 'https://www.youtube.com/watch?v=Bn8BQsxuif0' }
@@ -172,3 +172,18 @@
   mentions: [Samy Deluxe, Kollegah, DCVDNS]
   sources:
     - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
+- id: it
+  name: 意大利
+  en: Italy
+  geo: [45.9, 13.1]
+  summary: 弗留利的 Wedere 是 SPS 圈测速委员会的成员，自己也唱：给 DOWN6 客串的《SHADOWS》是 NahDah 2024 年意大利一栏，《Infinite Choppers 3》的征选也是他赢的。
+  sources:
+    - { title: 'YouTube – Wedere：SHADOWS - RAP PIÙ VELOCE D''ITALIA（2024）', url: 'https://www.youtube.com/watch?v=n2Zj-3kt53Q' }
+- id: ru
+  name: 俄罗斯
+  en: Russia
+  geo: [55.75, 37.6]
+  summary: Faraway 的频道简介就叫"俄罗斯最快的 rapper"。他唱过《Infinite Choppers 2》《Unknown Cypher 5》，也和巴西的 Troll、中国的夏淳扬一起上过《Antares Convida》。
+  sources:
+    - { title: 'YouTube – Faraway 本人频道', url: 'https://www.youtube.com/@faraway_is_close' }
+
