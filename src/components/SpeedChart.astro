@@ -26,6 +26,8 @@ const groups = (Object.keys(WINDOW) as SpeedWindow[])
 const byCounts = [...rows.reduce((m, r) => m.set(r.by, (m.get(r.by) ?? 0) + 1), new Map<string, number>())].sort((a, b) => b[1] - a[1]);
 // 出处太多时只露出条数最多的几个，其余收起
 const SHOW_BY = 6;
+// 每组先显示前几条，其余点"展开"
+const ROWS_SHOW = 10;
 const max = Math.max(5, Math.ceil(Math.max(...rows.map((r) => r.value), 0) / 5) * 5);
 const ticks = Array.from({ length: max / 5 + 1 }, (_, i) => i * 5);
 const guides = [
@@ -80,12 +82,12 @@ let i = 0;
             ))}
           </div>
           <ol class="relative grid gap-3 pt-2">
-            {g.rows.map((r) => {
+            {g.rows.map((r, k) => {
               const c = CONFIDENCE[r.confidence];
               const f = formula(r);
               const n = i++;
               return (
-                <li class="row group grid items-center gap-x-4 gap-y-1.5" style={`--c:${c.color};--i:${n}`} data-by={r.by}>
+                <li class="row group grid items-center gap-x-4 gap-y-1.5" style={`--c:${c.color};--i:${n}`} data-by={r.by} data-more={k >= ROWS_SHOW ? '' : undefined}>
                   <a href={url(`choppers/${r.slug}/`)} class="min-w-0">
                     <span class="block truncate text-sm font-semibold text-ink group-hover:text-accent-text">{r.artist}</span>
                     <span class="block truncate text-xs text-ink-3"><span class="by">{r.by}</span>{r.label}</span>
@@ -108,6 +110,11 @@ let i = 0;
               );
             })}
           </ol>
+          {g.rows.length > ROWS_SHOW && (
+            <button type="button" class="rows-more btn btn-ghost mt-4 w-full justify-center text-sm" data-n={g.rows.length}>
+              展开这一组（共 {g.rows.length} 条）
+            </button>
+          )}
         </div>
       </section>
     ))
@@ -151,6 +158,12 @@ let i = 0;
   }
   .row[hidden],
   .group-block[hidden] {
+    display: none;
+  }
+  .speed-chart:not(.filtering) .group-block:not(.show-all) .row[data-more] {
+    display: none;
+  }
+  .speed-chart.filtering .rows-more {
     display: none;
   }
   .by-filter:not(.show-all) .by-more {
@@ -232,11 +245,18 @@ let i = 0;
       const on = filter?.classList.toggle('show-all');
       toggle.textContent = on ? '收起' : `更多出处 +${chart.querySelectorAll('.by-more').length}`;
     });
+    chart.querySelectorAll<HTMLButtonElement>('.rows-more').forEach((btn) =>
+      btn.addEventListener('click', () => {
+        const on = btn.closest('.group-block')?.classList.toggle('show-all');
+        btn.textContent = on ? '收起' : `展开这一组（共 ${btn.dataset.n} 条）`;
+      }),
+    );
     const btns = chart.querySelectorAll<HTMLButtonElement>('.by-filter button[data-by]');
     btns.forEach((btn) =>
       btn.addEventListener('click', () => {
         const by = btn.dataset.by ?? '';
         btns.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+        chart.classList.toggle('filtering', !!by);
         chart.querySelectorAll<HTMLElement>('.row').forEach((row) => (row.hidden = !!by && row.dataset.by !== by));
         chart.querySelectorAll<HTMLElement>('.group-block').forEach((g) => (g.hidden = !g.querySelector('.row:not([hidden])')));
       }),
