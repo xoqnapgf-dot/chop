@@ -10,7 +10,7 @@ import { url } from '@/lib/url';
 const all = await getCollection('artists');
 const profiled = new Map(all.map((a) => [a.data.name.toLowerCase(), a.id]));
 // 表里用的名字和本站档案名不同的
-const alias: Record<string, string> = { '6fbh': 'kvr' };
+const alias: Record<string, string> = { '6fbh': 'kvr', asa: 'asa-jake' };
 const slugOf = (name: string) => alias[name.toLowerCase()] ?? profiled.get(name.toLowerCase());
 
 const max = rows[0].sps;
