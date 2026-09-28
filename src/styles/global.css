@@ -9,73 +9,59 @@
 /* ---------- 设计令牌 ---------- */
 :root {
   color-scheme: light;
-  /* 中性纸白 + 墨黑 + 朱红为主强调；世界区和 Chopper 用靛蓝，不再满屏金色 */
-  --bg: #f4f3f0;
-  --bg-2: #ebe9e4;
-  --surface: #fdfdfb;
-  --surface-2: #f6f5f2;
-  --line: #e1ded8;
-  --line-strong: #c5c0b7;
-  --ink: #141211;
-  --ink-2: #46423d;
-  --ink-3: #76716a;
-  --accent: #d0261f; /* 朱红，作为底色使用 */
-  --accent-ink: #ffffff; /* 红底上的文字 */
-  --accent-text: #b41f19; /* 红作为文字时的加深版 */
+  /* 红黑金：暖纸底 + 墨黑 + 朱红 + 暗金 */
+  --bg: #f5efe4;
+  --bg-2: #ede4d4;
+  --surface: #fffaf1;
+  --surface-2: #f8f1e5;
+  --line: #e0d4c0;
+  --line-strong: #c4b39a;
+  --ink: #140e0a;
+  --ink-2: #4a3f35;
+  --ink-3: #7a6c5d;
+  --accent: #d9a62b; /* 金，作为底色使用 */
+  --accent-ink: #140e0a; /* 金底上的文字 */
+  --accent-text: #8a5a00; /* 金作为文字时的加深版 */
   --hot: #c8211b;
-  --gold: #b88a1e; /* 只在少数点缀里用 */
-  --style-chopper: #2b54b8;
+  --style-chopper: #8a5a00;
   --style-fast: #c8211b;
-  --tone-muted: #6b6760;
+  --tone-muted: #6b6358;
   --scene-china: #c8211b;
-  --scene-world: #2b54b8;
+  --scene-world: #8a5a00;
   --good: #3d7a4a;
   --warning: #a86400;
   --serious: #c85a2e;
   --critical: #b3261e;
-  --neutral: #76716a;
-  --shadow: 0 1px 0 rgb(0 0 0 / 0.04), 0 12px 32px -12px rgb(20 20 30 / 0.18);
+  --neutral: #7a6c5d;
+  --shadow: 0 1px 0 rgb(0 0 0 / 0.04), 0 12px 32px -12px rgb(60 30 10 / 0.2);
 }
 
 :root[data-theme='dark'] {
   color-scheme: dark;
-  --bg: #0c0c0d;
-  --bg-2: #111113;
-  --surface: #17171a;
-  --surface-2: #1e1e22;
-  --line: #2a2a30;
-  --line-strong: #3f3f47;
-  --ink: #f2f1ee;
-  --ink-2: #bebbb5;
-  --ink-3: #86837d;
-  --accent: #ff5747;
-  --accent-ink: #140707;
-  --accent-text: #ff7b6d;
+  --bg: #0a0807;
+  --bg-2: #100c0a;
+  --surface: #17110e;
+  --surface-2: #1e1713;
+  --line: #2e241e;
+  --line-strong: #4a3b30;
+  --ink: #f6efe3;
+  --ink-2: #c7b9a5;
+  --ink-3: #8b7d6c;
+  --accent: #e8b84a;
+  --accent-ink: #120c07;
+  --accent-text: #f0c75e;
   --hot: #ff4b3e;
-  --gold: #e3b54f;
-  --style-chopper: #7ea6ff;
+  --style-chopper: #f0c75e;
   --style-fast: #ff5a4a;
-  --tone-muted: #b3afa8;
+  --tone-muted: #b9ae9e;
   --scene-china: #ff4b3e;
-  --scene-world: #7ea6ff;
+  --scene-world: #f0c75e;
   --good: #7cbf86;
   --warning: #f5a524;
   --serious: #ec835a;
   --critical: #ff6b5e;
-  --neutral: #86837d;
+  --neutral: #8b7d6c;
   --shadow: 0 1px 0 rgb(255 255 255 / 0.03), 0 20px 40px -20px rgb(0 0 0 / 0.8);
-}
-
-/* 世界区：强调色换成靛蓝 */
-[data-tone='world'] {
-  --accent: #2b54b8;
-  --accent-ink: #ffffff;
-  --accent-text: #2b54b8;
-}
-:root[data-theme='dark'] [data-tone='world'] {
-  --accent: #7ea6ff;
-  --accent-ink: #0b1020;
-  --accent-text: #9dbbff;
 }
 
 @theme inline {

@@ -68,14 +68,14 @@ export function mountGlobe(canvas: HTMLCanvasElement, opts: Options) {
   let backdrop: HTMLCanvasElement | null = null;
 
   function readColors() {
-    const cs = getComputedStyle(document.body);
+    const cs = getComputedStyle(document.documentElement);
     const v = (k: string) => cs.getPropertyValue(k).trim();
     return {
       ink: v('--ink') || '#f6efe3',
-      bg: v('--bg') || '#0c0c0d',
+      bg: v('--bg') || '#0a0807',
       china: v('--scene-china') || '#ff4b3e',
-      world: v('--scene-world') || '#2b54b8',
-      accent: v('--accent') || '#d0261f',
+      world: v('--scene-world') || '#f0c75e',
+      accent: v('--accent') || '#e8b84a',
       dark: document.documentElement.dataset.theme !== 'light',
       font: `600 ${coarse ? 12 : 13}px ${getComputedStyle(document.body).fontFamily}`,
     };

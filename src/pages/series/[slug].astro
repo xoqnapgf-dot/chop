@@ -24,12 +24,11 @@ const artists = new Map((await getCollection('artists')).map((a) => [a.id, a]));
 const tracks = new Map((await getCollection('tracks')).map((t) => [t.id, t]));
 const regs = regulars(entry);
 const people = regs.length;
-const tone = d.scene === 'china' ? 'china' : 'world';
 // 最新的一集放最上面
 const eps = [...d.episodes].reverse();
 ---
 
-<Base tone={tone} title={d.name} description={d.summary}>
+<Base title={d.name} description={d.summary}>
   <article class="container-x pt-14 md:pt-20">
     <header class="max-w-3xl">
       <a href={url('series/')} class="eyebrow link-u hover:text-ink">← 系列</a>
