@@ -42,8 +42,7 @@ const presets = [
 ];
 
 const tiers = [
-  { key: 'track', eg: 'Eminem · 谢帝 · 那吾克热', text: '某首歌、某一段很快，但这个人整体不以快著称。' },
-  { key: 'fast', eg: '法老 · 杨和苏 · 光光 · 贝贝', text: '语速和咬字清晰度就是他的主要标签。' },
+  { key: 'fast', eg: '法老 · 杨和苏 · 光光 · Eminem', text: '有公认的高速段落，或者语速、咬字就是他的招牌；但没有整首、长期地"切"音节。' },
   { key: 'chopper', eg: 'Twista · Tech N9ne · 小安迪', text: '整首、长期地"切"音节：一拍塞多个音节、flow 多变、押韵密集。' },
 ] as const;
 const styleCount = (k: string) => artists.filter((a) => a.data.style === k).length;
@@ -60,7 +59,7 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
           把音节<br /><span class="chop-word">剁碎</span><span class="text-accent-text">。</span>
         </h1>
         <p class="mt-7 max-w-xl text-lg leading-relaxed text-ink-2">
-          一个只讲<strong class="text-ink">快速说唱</strong>的档案馆：从美国中西部的 chopper，到南京、成都、西安、乌鲁木齐的中文快嘴。每个数字都附来源，每个人都标清楚是"快歌""快嘴"还是"Chopper"。
+          一个只讲<strong class="text-ink">快速说唱</strong>的档案馆：从美国中西部的 chopper，到南京、成都、西安、乌鲁木齐的中文快嘴。每个数字都附来源，每个人都标清楚是"快嘴"还是"Chopper"。
         </p>
         <div class="mt-9 flex flex-wrap gap-3">
           <a href={url('china/')} class="btn btn-accent">进入中国区 →</a>
@@ -110,15 +109,15 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
   <!-- ============ 快 ≠ Chop ============ -->
   <section class="container-x mt-28">
     <SectionHeading index="01" eyebrow="Fast ≠ Chop" title="快，不等于 Chop" href="learn/what-is-chop/" linkLabel="读完整解释">
-      <p class="mt-4 max-w-2xl text-ink-2">中文圈常把"快嘴"和"chop"混着说。Chop 是一种风格，唱 chop 的人才叫 chopper。这里按风格分成三层，有可靠来源或本人明确自认的才标 Chopper。刚入圈、只追速度、含糊乱吐音节的新人小孩，圈内叫"SPS kid"。</p>
+      <p class="mt-4 max-w-2xl text-ink-2">中文圈常把"快嘴"和"chop"混着说。Chop 是一种风格，唱 chop 的人才叫 chopper。这里只分两层：快嘴和 Chop，有可靠来源或本人明确自认的才标 Chopper。刚入圈、只追速度、含糊乱吐音节的新人小孩，圈内叫"SPS kid"。</p>
     </SectionHeading>
-    <ol class="tiers grid gap-4 md:grid-cols-3">
+    <ol class="tiers grid gap-4 md:grid-cols-2">
       {
         tiers.map((t, i) => (
           <li class="tier card relative overflow-hidden p-6" style={`--sc:${STYLE[t.key].color};--lvl:${i + 1}`}>
             <div class="tier-bars mb-8 flex h-16 items-end gap-[3px]" aria-hidden="true">
               {Array.from({ length: 24 }, (_, j) => (
-                <i style={`--h:${0.2 + Math.abs(Math.sin(j * (0.9 + i * 0.55))) * (0.35 + i * 0.3)}`} />
+                <i style={`--h:${0.2 + Math.abs(Math.sin(j * (0.9 + (i + 1) * 0.55))) * (0.35 + (i + 1) * 0.3)}`} />
               ))}
             </div>
             <p class="eyebrow">Level {i + 1}</p>
@@ -280,7 +279,7 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
     border-color: var(--accent);
   }
 
-  /* 三层 */
+  /* 两层 */
   .tier {
     border-top: 3px solid var(--sc);
   }

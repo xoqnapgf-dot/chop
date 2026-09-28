@@ -8,9 +8,8 @@ interface Props { kind: 'tiers' | 'origins' | 'windows' | 'guinness' }
 const { kind } = Astro.props;
 
 const tiers = [
-  { name: '快歌', level: 1, text: '某首、某段很快，人不以快著称', eg: 'Eminem · 谢帝 · 那吾克热' },
-  { name: '快嘴', level: 2, text: '语速和咬字是主要标签', eg: '法老 · 杨和苏 · 光光 · 贝贝' },
-  { name: 'Chop', level: 3, text: '长期、整首地切音节，flow 多变、押韵密', eg: 'Twista · Tech N9ne · 小安迪' },
+  { name: '快嘴', level: 1, text: '有高速段落，或语速、咬字是招牌', eg: '法老 · 杨和苏 · Eminem' },
+  { name: 'Chop', level: 2, text: '长期、整首地切音节，flow 多变、押韵密', eg: 'Twista · Tech N9ne · 小安迪' },
 ];
 
 const origins = [
@@ -44,7 +43,7 @@ const gMax = 21;
   {
     kind === 'tiers' && (
       <div>
-        <figcaption class="lf-cap">三个层次：越往上，越看整首、长期的"切"</figcaption>
+        <figcaption class="lf-cap">两个层次：快嘴看速度，Chop 看整首、长期的"切"</figcaption>
         <ol class="mt-5 grid gap-2.5">
           {[...tiers].reverse().map((t) => (
             <li class="tier" style={`--lv:${t.level}`}>
@@ -53,13 +52,13 @@ const gMax = 21;
                 <span class="block text-sm text-ink">{t.text}</span>
                 <span class="block truncate text-xs text-ink-3">{t.eg}</span>
               </span>
-              <span class="meter" aria-label={`切音节程度 ${t.level}/3`}>
-                {[1, 2, 3].map((n) => <i class:list={{ on: n <= t.level }} />)}
+              <span class="meter" aria-label={`切音节程度 ${t.level}/2`}>
+                {[1, 2].map((n) => <i class:list={{ on: n <= t.level }} />)}
               </span>
             </li>
           ))}
         </ol>
-        <p class="mt-4 text-xs text-ink-3">右边的格子 = 切音节的程度。只追数字、不管咬字的"SPS kid"不在这三层里。</p>
+        <p class="mt-4 text-xs text-ink-3">右边的格子 = 切音节的程度。只追数字、不管咬字的"SPS kid"不在这两层里。</p>
       </div>
     )
   }
@@ -136,7 +135,7 @@ const gMax = 21;
     font-weight: 600;
     color: var(--ink);
   }
-  /* 三个层次 */
+  /* 两个层次 */
   .tier {
     display: grid;
     grid-template-columns: 4.2rem minmax(0, 1fr) auto;
@@ -145,8 +144,8 @@ const gMax = 21;
     padding: 0.7rem 0.9rem;
     border-radius: 14px;
     border: 1px solid var(--line);
-    background: color-mix(in oklab, var(--accent) calc(var(--lv) * 7%), var(--surface));
-    margin-left: calc((3 - var(--lv)) * 0.9rem);
+    background: color-mix(in oklab, var(--accent) calc(var(--lv) * 10%), var(--surface));
+    margin-left: calc((2 - var(--lv)) * 0.9rem);
   }
   .tier-name {
     font-family: var(--font-display);

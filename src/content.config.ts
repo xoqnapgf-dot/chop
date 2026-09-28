@@ -41,7 +41,7 @@ const artists = defineCollection({
     nameZh: z.string().optional(),
     realName: z.string().optional(),
     tagline: z.string(),
-    country: z.enum(['US', 'KR', 'TR', 'CN', 'PH', 'GE', 'MX', 'AU', 'CA', 'GB', 'AT', 'BR', 'HU', 'MY', 'PL', 'JP', 'FI', 'ZA', 'KW', 'IT', 'RU']),
+    country: z.enum(['US', 'KR', 'TR', 'CN', 'PH', 'GE', 'MX', 'AU', 'CA', 'GB', 'AT', 'BR', 'HU', 'MY', 'PL', 'JP', 'FI', 'ZA', 'KW', 'IT', 'RU', 'DK', 'DE']),
     city: z.string(),
     /** 分组用的地区名，中国区按这个分组（如"川渝"） */
     region: z.string(),
@@ -52,10 +52,9 @@ const artists = defineCollection({
     /**
      * 风格标签（快 ≠ Chop；chop 是风格，chopper 是唱 chop 的人）：
      * chopper = 有来源称其为 chopper，或长期整首地唱 chop
-     * fast    = 以语速/快嘴著称
-     * track   = 因个别快歌或快段落出圈，本人不以快著称
+     * fast    = 快嘴：有高速段落或以语速著称，但不是整首、长期地唱 chop
      */
-    style: z.enum(['chopper', 'fast', 'track']),
+    style: z.enum(['chopper', 'fast']),
     styleNote: z.string(),
     /** 没标 Chopper，但接近 chop（有争议、和 chopper 合作过、速度强度接近等），写明理由 */
     nearChop: z.string().optional(),

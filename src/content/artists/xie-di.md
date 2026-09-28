@@ -2,13 +2,13 @@
 name: Xie Di
 nameZh: 谢帝
 realName: 蔡镇鸿
-tagline: 成都说唱会馆的代表人物，用四川话说唱。本人不以快嘴见长，最出名的快歌是改编 Eminem 的《Rap God (Remix)》。
+tagline: 成都说唱会馆的代表人物，用四川话说唱。本人不以快嘴见长，最出名的快嘴作品是改编 Eminem 的《Rap God (Remix)》。
 country: CN
 city: 四川 成都
 region: 川渝
 activeSince: 2014
-style: track
-styleNote: 以四川话说唱和生活化的歌词出名，整体不以快嘴为主；《Rap God (Remix)》这类快歌是个别作品，所以标"快歌"。
+style: fast
+styleNote: 以四川话说唱和生活化的歌词出名，整体不以快嘴为主，《Rap God (Remix)》这类高速作品是个别的；没有整首唱 chop，所以标快嘴。
 geo: [30.66, 104.07]
 born: '1989-11-06'
 tags: [四川话, 说唱会馆, 中国好歌曲]
@@ -26,4 +26,4 @@ sources:
 
 他属于成都的说唱会馆一派，代表作以生活化、带点幽默的川味歌词为主，并不以语速见长。
 
-他最出名的快歌是改编 Eminem《Rap God》的《**Rap God (Remix)**》：B 站上最早的搬运在 2019 年 10 月，说唱会馆 2021 年在 B 站上传的版本播放将近 90 万。他和杨和苏、AR刘夫阳、光光、贝贝等快嘴歌手也合作过不少歌，见中国区的合作网络。
+他最出名的快嘴作品是改编 Eminem《Rap God》的《**Rap God (Remix)**》：B 站上最早的搬运在 2019 年 10 月，说唱会馆 2021 年在 B 站上传的版本播放将近 90 万。他和杨和苏、AR刘夫阳、光光、贝贝等快嘴歌手也合作过不少歌，见中国区的合作网络。

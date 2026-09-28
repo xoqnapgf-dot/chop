@@ -5,8 +5,8 @@ country: PH
 city: 未公开
 region: 东南亚
 activeSince: 2018
-style: track
-styleNote: 作品大多是情歌、团体合作曲和本地说唱比赛的现场，并不以快著称；进榜靠的是《Conqueror Haki》里的一段高速 verse，所以标"快歌"。
+style: fast
+styleNote: 作品大多是情歌、团体合作曲和本地说唱比赛的现场，并不以快著称；进榜靠的是《Conqueror Haki》里的一段高速 verse，所以标快嘴而不是 Chopper。
 tags: [菲律宾, 他加禄语, Alagad ng Musika, Conqueror Haki]
 youtube: { channelId: UCN5znz2Rzvw9En-9PuaXQ3w, handle: '@crisonedecano5872', kind: official }
 useBanner: false

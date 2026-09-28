@@ -6,8 +6,8 @@ country: CN
 city: 未公开
 region: 网络
 activeSince: 2019
-style: track
-styleNote: 网易云上一百多首歌，主要是旋律说唱和 trap；快嘴只是个别歌里的玩法，最典型的就是《要不再快点？还不够糊啊哥》。本人不以快为标签，所以标"快歌"。
+style: fast
+styleNote: 网易云上一百多首歌，主要是旋律说唱和 trap；快嘴只是个别歌里的玩法，最典型的就是《要不再快点？还不够糊啊哥》。没有整首唱 chop，所以标快嘴。
 tags: [ASPT, 阿斯巴甜, YKY]
 photoSource: { site: netease, id: 28638705, image: cover }
 speed:

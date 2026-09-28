@@ -1,6 +1,6 @@
 ---
 name: Display Music
-tagline: 底特律的快嘴，2013 年前后用 DisplayMusic23 这个名字发清唱秀语速的视频，被快嘴搬运频道 ☣FastRapGuy☣ 连着三期排进"最快 rapper"前三。后来改名 Lil Droptop，不再唱快歌。
+tagline: 底特律的快嘴，2013 年前后用 DisplayMusic23 这个名字发清唱秀语速的视频，被快嘴搬运频道 ☣FastRapGuy☣ 连着三期排进"最快 rapper"前三。后来改名 Lil Droptop，不再唱快嘴。
 country: US
 city: 密歇根州 底特律
 region: 北美
@@ -39,4 +39,4 @@ Display Music 来自美国密歇根州的底特律。2013 年前后，他在自�
 
 ## 后来
 
-他的频道后来改名 **Lil Droptop**（也叫 Lil Droptop Golf Cart），handle 仍然是 @Displaymusic23。改名以后他转做讽刺风格的 trap 和搞笑短视频，Know Your Meme 称他是"讽刺型 meme rapper"，不再唱快歌。2020 年有听众把他早年的快段重新传了上来，标题写的是"DisplayMusic23/Lil Droptop"。
+他的频道后来改名 **Lil Droptop**（也叫 Lil Droptop Golf Cart），handle 仍然是 @Displaymusic23。改名以后他转做讽刺风格的 trap 和搞笑短视频，Know Your Meme 称他是"讽刺型 meme rapper"，不再唱快嘴。2020 年有听众把他早年的快段重新传了上来，标题写的是"DisplayMusic23/Lil Droptop"。

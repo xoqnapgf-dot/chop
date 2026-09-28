@@ -4,8 +4,8 @@ tagline: 科威特的阿拉伯语 rapper（فورتكس），频道十几万订�
 country: KW
 city: 未公开
 region: 西亚
-style: track
-styleNote: 海湾地区很受欢迎的阿拉伯语 rapper，MV 动辄几十万、上百万播放，听众夸的是歌词和 punchline；不以语速为招牌，进榜靠的是《Gazra》等歌里的快段落，所以标"快歌"。
+style: fast
+styleNote: 海湾地区很受欢迎的阿拉伯语 rapper，MV 动辄几十万、上百万播放，听众夸的是歌词和 punchline；不以语速为招牌，进榜靠的是《Gazra》等歌里的快段落，所以标快嘴。
 tags: [科威特, 阿拉伯语, Gazra, diss]
 youtube: { channelId: UCfVhU6bGN8kjK3U-Zd2Z0iA, handle: '@VortexOfficial', kind: official }
 useBanner: false

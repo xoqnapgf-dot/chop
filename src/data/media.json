@@ -571,6 +571,21 @@
       "hasBanner": false,
       "color": "#281818",
       "fetchedAt": "2026-09-28"
+    },
+    "dcvdns": {
+      "channelUrl": "https://www.youtube.com/channel/UCet9ZprxkA2yUrQ8WPvi2aw",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_ljkwMEE8gEhxVC7XgqqSstGeeVPeu1t8uMrQvus6_ewQE=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/kE1U16L9v8OCVIC4TIeTlCUenh2sUY0XIP9v6mQTeVOr0ht0CCY2aKmLd_hfCGxj6AnnKTUg=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#c8c8d8",
+      "fetchedAt": "2026-09-28"
+    },
+    "uso": {
+      "channelUrl": null,
+      "kind": "video",
+      "color": "#080808",
+      "fetchedAt": "2026-09-28"
     }
   },
   "tracks": {
