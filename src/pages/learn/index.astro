@@ -11,13 +11,13 @@ const sectionsOf = (body = '') => (body.match(/^## /gm) ?? []).length;
 
 // 术语速查：定义和《快嘴 ≠ Chop》《语速怎么比》两篇保持一致
 const terms = [
-  { t: '快嘴', d: '有公认的高速段落，或语速、咬字就是招牌，但没有整首、长期地唱 chop 的 rapper。', href: 'learn/what-is-chop/#两个层次' },
-  { t: 'Chop', d: '长期、整首地"切"音节的风格：把一个音节的位置塞进两三四个音节。', href: 'learn/what-is-chop/#chop-除了快还有什么' },
-  { t: 'Chopper', d: '唱 chop 的人。有可靠来源这样称呼、或本人明确自认的，才标 Chopper。', href: 'learn/chopper/' },
-  { t: 'SPS', d: 'syllables per second，每秒音节数，测语速的通用单位。BPM 是伴奏节拍，不是语速。', href: 'learn/measuring-speed/' },
-  { t: '爆发', d: '1 秒左右的峰值窗口，满 1 秒含金量最高；和整段平均不能直接比。', href: 'learn/measuring-speed/' },
-  { t: 'SPS kid', d: '只追数字、含糊吐字、靠加速的新人，和 chopper 是两个方向。', href: 'learn/what-is-chop/#最极端的一种sps-kid' },
-  { t: '加速', d: '后期把人声调快。NahDah 的规则：最快那首被判加速，这个人整体除名。', href: 'learn/measuring-speed/' },
+  { t: '快嘴', d: '有公认的高速段落，或语速、咬字就是招牌，但没有整首、长期地唱 chop 的 rapper。' },
+  { t: 'Chop', d: '长期、整首地"切"音节的风格：把一个音节的位置塞进两三四个音节。' },
+  { t: 'Chopper', d: '唱 chop 的人。有可靠来源这样称呼、或本人明确自认的，才标 Chopper。' },
+  { t: 'SPS', d: 'syllables per second，每秒音节数，测语速的通用单位。BPM 是伴奏节拍，不是语速。' },
+  { t: '爆发', d: '1 秒左右的峰值窗口，满 1 秒含金量最高；和整段平均不能直接比。' },
+  { t: 'SPS kid', d: '只追数字、含糊吐字、靠加速的新人，和 chopper 是两个方向。' },
+  { t: '加速', d: '后期把人声调快。NahDah 的规则：最快那首被判加速，这个人整体除名。' },
 ];
 ---
 
@@ -95,10 +95,10 @@ const terms = [
       <dl class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {
           terms.map((x) => (
-            <a href={url(x.href)} class="term card group p-5 transition hover:border-line-strong">
-              <dt class="font-display text-xl font-semibold group-hover:text-accent-text">{x.t}</dt>
+            <div class="term card p-5">
+              <dt class="font-display text-xl font-semibold">{x.t}</dt>
               <dd class="mt-2 text-sm leading-relaxed text-ink-2">{x.d}</dd>
-            </a>
+            </div>
           ))
         }
       </dl>
