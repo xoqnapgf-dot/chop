@@ -10,6 +10,7 @@ export const NAV = [
   { href: 'world/', label: '世界', en: 'World' },
   { href: 'choppers/', label: '人物', en: 'People' },
   { href: 'tracks/', label: '曲目', en: 'Tracks' },
+  { href: 'series/', label: '系列', en: 'Series' },
   { href: 'timeline/', label: '时间线', en: 'Timeline' },
   { href: 'learn/', label: '百科', en: 'Learn' },
   { href: 'lab/', label: '实验室', en: 'Lab' },

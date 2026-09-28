@@ -215,6 +215,25 @@ for (const t of tracks) {
   }
 }
 
+// ---------- 系列各集的缩略图（和曲目缩略图放在一起，按 YouTube ID 命名）----------
+for (const f of (await fs.readdir(path.join(root, 'src/content/series'))).filter((f) => f.endsWith('.md'))) {
+  const fm = frontmatter(await fs.readFile(path.join(root, 'src/content/series', f), 'utf8'));
+  for (const ep of fm.episodes ?? []) {
+    if (!ep.youtube) continue;
+    const dest = path.join(root, 'src/assets/tracks', `${ep.youtube}.jpg`);
+    if (!force && (await exists(dest))) continue;
+    for (const size of ['maxresdefault', 'sddefault', 'hqdefault']) {
+      try {
+        await download(`https://i.ytimg.com/vi/${ep.youtube}/${size}.jpg`, dest, { width: 1280 });
+        console.log(`✓ series ${f} ${ep.no} (${size})`);
+        break;
+      } catch {
+        /* 尝试下一个尺寸 */
+      }
+    }
+  }
+}
+
 // ---------- 视频封面（B 站 / YouTube）----------
 const videos = yaml.load(await fs.readFile(path.join(root, 'src/data/videos.yaml'), 'utf8')) ?? [];
 for (const v of videos) {

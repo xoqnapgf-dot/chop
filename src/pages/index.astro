@@ -9,6 +9,7 @@ import Marquee from '@/components/Marquee.astro';
 import Globe from '@/components/Globe.astro';
 import Avatar from '@/components/Avatar.astro';
 import { url } from '@/lib/url';
+import { allSeries } from '@/lib/series';
 import { STYLE, SCENE, displayName } from '@/lib/labels';
 
 const artists = await getCollection('artists');
@@ -45,6 +46,7 @@ const tiers = [
   { key: 'fast', eg: '法老 · 杨和苏 · 光光 · Eminem', text: '有公认的高速段落，或者语速、咬字就是他的招牌；但没有整首、长期地"切"音节。' },
   { key: 'chopper', eg: 'Twista · Tech N9ne · 小安迪', text: '整首、长期地"切"音节：一拍塞多个音节、flow 多变、押韵密集。' },
 ] as const;
+const seriesList = await allSeries();
 const styleCount = (k: string) => artists.filter((a) => a.data.style === k).length;
 ---
 
@@ -175,9 +177,29 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
     <div class="card p-5 sm:p-8"><SpeedChart /></div>
   </section>
 
+  <!-- ============ 系列 ============ -->
+  <section class="container-x mt-32">
+    <SectionHeading index="05" eyebrow="Series" title="Choppers 系列" href="series/" linkLabel="看全部系列">
+      <p class="mt-4 max-w-2xl text-ink-2">chop 圈的名场面大多出在多人合作里。从 Tech N9ne 的 Midwest Choppers，到地下圈的 Undaground Choppers、Illest Choppers，再到今天的 Infinite Choppers，逐集整理了名单和日期。</p>
+    </SectionHeading>
+    <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      {
+        seriesList.map((s) => (
+          <li>
+            <a href={url(`series/${s.id}/`)} class="home-series card group flex h-full flex-col p-5 transition hover:border-line-strong" style={`--c:var(${s.data.scene === 'china' ? '--scene-china' : '--scene-world'})`}>
+              <span class="font-display text-3xl font-bold" style="color:var(--c)">{s.data.short ?? s.data.name}</span>
+              <span class="mt-2 font-semibold">{s.data.name}</span>
+              <span class="mt-1 text-xs text-ink-3">{s.data.host} · {s.data.years} · {s.data.episodes.length} 集</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
   <!-- ============ 曲目 ============ -->
   <section class="container-x mt-32">
-    <SectionHeading index="05" eyebrow="Tracks" title="必听曲目" href="tracks/" linkLabel="曲目库" />
+    <SectionHeading index="06" eyebrow="Tracks" title="必听曲目" href="tracks/" linkLabel="曲目库" />
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {homeTracks.map((t) => <div class="flex min-w-0"><TrackCard track={t} /></div>)}
     </div>
@@ -186,7 +208,7 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
   <!-- ============ 时间线预览 ============ -->
   <section class="mt-32">
     <div class="container-x">
-      <SectionHeading index="06" eyebrow="Timeline" title="四十年，越来越快" href="timeline/" linkLabel="完整时间线" />
+      <SectionHeading index="07" eyebrow="Timeline" title="四十年，越来越快" href="timeline/" linkLabel="完整时间线" />
     </div>
     <div class="tl-scroll container-x flex snap-x gap-4 overflow-x-auto pb-6">
       {

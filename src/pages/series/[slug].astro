@@ -1,0 +1,213 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '@/layouts/Base.astro';
+import Avatar from '@/components/Avatar.astro';
+import LiteYouTube from '@/components/LiteYouTube.astro';
+import Sources from '@/components/Sources.astro';
+import { url } from '@/lib/url';
+import { displayName } from '@/lib/labels';
+import { allSeries, epDate, member, regulars, type SeriesEntry } from '@/lib/series';
+
+export async function getStaticPaths() {
+  const all = await allSeries();
+  return all.map((entry, i) => ({ params: { slug: entry.id }, props: { entry, prev: all[i - 1], next: all[i + 1] } }));
+}
+interface Props {
+  entry: SeriesEntry;
+  prev?: SeriesEntry;
+  next?: SeriesEntry;
+}
+const { entry, prev, next } = Astro.props;
+const d = entry.data;
+const { Content } = await render(entry);
+const artists = new Map((await getCollection('artists')).map((a) => [a.id, a]));
+const tracks = new Map((await getCollection('tracks')).map((t) => [t.id, t]));
+const regs = regulars(entry);
+const people = regs.length;
+const tone = d.scene === 'china' ? 'china' : 'world';
+// 最新的一集放最上面
+const eps = [...d.episodes].reverse();
+---
+
+<Base tone={tone} title={d.name} description={d.summary}>
+  <article class="container-x pt-14 md:pt-20">
+    <header class="max-w-3xl">
+      <a href={url('series/')} class="eyebrow link-u hover:text-ink">← 系列</a>
+      <div class="mt-5 flex flex-wrap items-center gap-2">
+        <span class="chip">{d.scene === 'china' ? '中国区' : '世界'}</span>
+        <span class="chip font-mono">{d.years}</span>
+        <span class="chip font-mono">{d.episodes.length} 集</span>
+        <span class="chip font-mono">{people} 人</span>
+      </div>
+      <h1 class="mt-4 text-4xl font-bold leading-tight md:text-6xl">{d.name}</h1>
+      <p class="mt-4 text-sm text-ink-3">发起：{d.hostSlug ? <a href={url(`choppers/${d.hostSlug}/`)} class="link-u text-ink-2">{d.host}</a> : <span class="text-ink-2">{d.host}</span>}</p>
+      <p class="mt-4 text-lg text-ink-2">{d.summary}</p>
+    </header>
+
+    <div class="mt-12 grid gap-12 lg:grid-cols-[minmax(0,1fr)_280px]">
+      <div class="min-w-0">
+        <div class="prose-chop max-w-3xl"><Content /></div>
+
+        <h2 class="mt-16 text-2xl font-semibold" id="episodes">逐集</h2>
+        <p class="mt-2 text-sm text-ink-3">最新的在上面。名单按演唱顺序；有档案的人可以点进去。</p>
+        <ol class="ep-list mt-8">
+          {
+            eps.map((ep) => {
+              const t = ep.track ? tracks.get(ep.track) : undefined;
+              const hasMedia = ep.youtube || ep.bilibili || ep.netease;
+              return (
+                <li id={`ep-${ep.no}`} class="ep scroll-mt-24">
+                  <span class="ep-no font-display" aria-hidden="true">{ep.no}</span>
+                  <div class="ep-body card min-w-0 p-4 sm:p-6">
+                    <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                      <h3 class="text-xl font-semibold">{ep.title}</h3>
+                      {ep.highlight && <span class="hi-badge">名场面</span>}
+                    </div>
+                    <p class="mt-1 font-mono text-xs text-ink-3">{epDate(ep)} · {ep.lineup.length} 人</p>
+                    {hasMedia && (
+                      <div class="mt-4">
+                        <LiteYouTube id={ep.youtube} title={ep.title} bilibili={ep.bilibili} netease={ep.netease} channel={t?.data.youtubeChannel} official={t?.data.officialUpload} />
+                      </div>
+                    )}
+                    {ep.note && <p class="mt-4 text-[0.95rem] leading-relaxed text-ink-2">{ep.note}</p>}
+                    <ul class="mt-4 flex flex-wrap gap-1.5" aria-label="名单">
+                      {ep.lineup.map((raw, i) => {
+                        const m = member(raw);
+                        const a = m.slug ? artists.get(m.slug) : undefined;
+                        return (
+                          <li>
+                            {a ? (
+                              <a href={url(`choppers/${a.id}/`)} class="lineup has-profile">
+                                <Avatar id={a.id} data={a.data} widths={[48]} sizes="20px" class="size-5 rounded-full object-cover" />
+                                {m.name}
+                              </a>
+                            ) : (
+                              <span class="lineup">{m.name}</span>
+                            )}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                    {t && <a href={url(`tracks/#${t.id}`)} class="mt-4 inline-block text-xs text-ink-3 link-u hover:text-ink">曲库里的这一首 →</a>}
+                  </div>
+                </li>
+              );
+            })
+          }
+        </ol>
+      </div>
+
+      <aside class="lg:sticky lg:top-24 lg:self-start">
+        <div class="card p-5">
+          <p class="eyebrow">常客</p>
+          <ol class="mt-4 grid gap-2">
+            {regs.slice(0, 10).map((r) => {
+              const a = r.m.slug ? artists.get(r.m.slug) : undefined;
+              return (
+                <li class="flex items-center gap-2 text-sm">
+                  {a ? <Avatar id={a.id} data={a.data} widths={[64]} sizes="28px" class="size-7 shrink-0 rounded-full object-cover" /> : <span class="grid size-7 shrink-0 place-items-center rounded-full bg-surface-2 text-[10px] text-ink-3">{r.m.name.slice(0, 2)}</span>}
+                  {a ? <a href={url(`choppers/${a.id}/`)} class="min-w-0 truncate link-u">{displayName(a.data)}</a> : <span class="min-w-0 truncate">{r.m.name}</span>}
+                  <span class="ml-auto shrink-0 font-mono text-xs text-ink-3">{r.n} 集</span>
+                </li>
+              );
+            })}
+          </ol>
+        </div>
+        <nav class="card mt-4 hidden p-5 lg:block" aria-label="跳到某一集">
+          <p class="eyebrow">跳到</p>
+          <div class="mt-3 flex flex-wrap gap-1.5">
+            {d.episodes.map((ep) => <a href={`#ep-${ep.no}`} class="chip font-mono">{ep.no}</a>)}
+          </div>
+        </nav>
+      </aside>
+    </div>
+
+    <div class="mt-16 max-w-3xl"><Sources sources={d.sources} /></div>
+
+    <nav class="mt-14 grid gap-3 border-t border-line pt-8 sm:grid-cols-2" aria-label="上一个 / 下一个系列">
+      {prev ? <a href={url(`series/${prev.id}/`)} class="card p-5 transition hover:border-line-strong"><span class="text-xs text-ink-3">← 上一个</span><span class="mt-1 block font-semibold">{prev.data.name}</span></a> : <span />}
+      {next && <a href={url(`series/${next.id}/`)} class="card p-5 text-right transition hover:border-line-strong"><span class="text-xs text-ink-3">下一个 →</span><span class="mt-1 block font-semibold">{next.data.name}</span></a>}
+    </nav>
+  </article>
+</Base>
+
+<style>
+  .ep-list {
+    display: grid;
+    gap: 1.5rem;
+  }
+  .ep {
+    display: grid;
+    grid-template-columns: 3.2rem minmax(0, 1fr);
+    gap: 0.9rem;
+    position: relative;
+  }
+  .ep::before {
+    content: '';
+    position: absolute;
+    left: 1.6rem;
+    top: 3.2rem;
+    bottom: -1.5rem;
+    width: 1px;
+    background: var(--line);
+  }
+  .ep:last-child::before {
+    display: none;
+  }
+  .ep-no {
+    display: grid;
+    place-items: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-weight: 700;
+    font-size: 0.8rem;
+    position: relative;
+    z-index: 1;
+  }
+  @media (max-width: 639px) {
+    .ep {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .ep::before {
+      display: none;
+    }
+    .ep-no {
+      width: auto;
+      height: auto;
+      justify-self: start;
+      padding: 0.2rem 0.7rem;
+      margin-bottom: -0.4rem;
+    }
+  }
+  .hi-badge {
+    font-size: 11px;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    background: color-mix(in oklab, var(--accent) 14%, transparent);
+    color: var(--accent-text);
+    font-weight: 600;
+  }
+  .lineup {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    font-size: 0.8rem;
+    color: var(--ink-2);
+    background: var(--surface-2);
+  }
+  .lineup.has-profile {
+    padding-left: 0.2rem;
+    color: var(--ink);
+    border-color: var(--line-strong);
+    background: var(--surface);
+  }
+  .lineup.has-profile:hover {
+    border-color: var(--accent);
+  }
+</style>

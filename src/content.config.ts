@@ -225,4 +225,43 @@ const videos = defineCollection({
   }),
 });
 
-export const collections = { artists, tracks, timeline, learn, regions, scenes, cyphers, collabs, videos };
+/**
+ * chopper 合作系列（Undaground Choppers、Illest Choppers 等）。正文写系列的来龙去脉。
+ * lineup 里写艺名；站内有档案的写成 "艺名@slug"，页面会链过去。
+ */
+const series = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/series' }),
+  schema: z.object({
+    name: z.string(),
+    /** 系列简称，比如 UC、IC */
+    short: z.string().optional(),
+    host: z.string(),
+    hostSlug: z.string().optional(),
+    scene: z.enum(['world', 'china']),
+    years: z.string(),
+    order: z.number(),
+    summary: z.string(),
+    episodes: z
+      .array(
+        z.object({
+          no: z.string(),
+          title: z.string(),
+          /** YYYY-MM-DD，只知道年份就写 YYYY */
+          date: z.string(),
+          lineup: z.array(z.string()).default([]),
+          note: z.string().optional(),
+          youtube: z.string().optional(),
+          bilibili: z.string().optional(),
+          netease: z.number().optional(),
+          /** 曲库里已有的曲目 */
+          track: z.string().optional(),
+          /** 名场面：写进时间线卡片的高亮 */
+          highlight: z.boolean().default(false),
+        }),
+      )
+      .min(1),
+    sources: z.array(source).min(1),
+  }),
+});
+
+export const collections = { artists, tracks, timeline, learn, regions, scenes, cyphers, collabs, videos, series };
