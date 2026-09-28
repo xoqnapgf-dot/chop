@@ -57,7 +57,7 @@ Troll（全名 **Trollator**）来自巴西米纳斯吉拉斯州的内陆。频�
 
 ## 他也是 TrollatorBR
 
-本站好几处引用的巴西测速频道 **TrollatorBR**，就是他本人开的：两个频道挂的是同一个 Instagram 账号，TrollatorBR 2026 年那期"Troll 最快的 10 段 verse"，简介里写的也是"我的 10 段最快的 verse"。
+好几位巴西 rapper 档案里引用的测速频道 **TrollatorBR**，就是他本人开的：两个频道挂的是同一个 Instagram 账号，TrollatorBR 2026 年那期"Troll 最快的 10 段 verse"，简介里写的也是"我的 10 段最快的 verse"。
 
 TrollatorBR 做巴西年度最快榜、西语圈最快榜、单人最快 verse 合集（Sabotahe、DOWN6 等），还出过两期从零教人测 SPS 的教程。2025 年底的巴西 Top 50 里他说，这一年忙学业，快两年没做测速内容了，这次回来"可能是最后一支舞"。
 

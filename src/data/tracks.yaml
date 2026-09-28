@@ -322,7 +322,7 @@
     - { title: 'Wikipedia – Upuan（2009 年 6 月 22 日发行）', url: 'https://en.wikipedia.org/wiki/Upuan' }
 - id: infinite-choppers
   title: Infinite Choppers
-  artists: [down6, kal-paseo, crucified, the-jackal]
+  artists: [down6, kal-paseo, crucified, the-jackal, splxt]
   credit: DOWN6 ft. Crucified, SPLXT, AceThaGoblin, Kal Paseo, LEECHY! 等 18 人
   scene: world
   year: 2023
@@ -558,7 +558,7 @@
     - { title: 'SPS and Chopper Rap Wiki – Def ill (Aka Ruffian rugged)', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Def_ill_(Aka_Ruffian_rugged)' }
 - id: tha-shade
   title: Tha Shade
-  artists: [idylll]
+  artists: [idylll, kal-paseo]
   credit: Idylll x Kal Paseo
   youtube: _v6-zQ2FKS0
   youtubeChannel: Idylll
@@ -817,7 +817,7 @@
     - { title: 'YouTube – DNA - Tie the Noose ft. LEACH, YUNG REVIVAL.（2013-03-27）', url: 'https://www.youtube.com/watch?v=mDs-83PVs_A' }
 - id: i-saw-red
   title: I Saw Red
-  artists: [yung-revival, crucified, twisted-insane, dna-tru-lyricist, leach]
+  artists: [yung-revival, crucified, twisted-insane, dna-tru-lyricist, leach, asa-jake, down6]
   credit: Yung Revival, Crucified, Twisted Insane, Asa Jake, DNA, DOWN6, Leach, R-Syke, Micsteam
   youtube: cOos94buutU
   youtubeChannel: DNA Tru Lyricist
@@ -829,7 +829,7 @@
     - { title: 'YouTube – I SAW RED（DNA 频道，2025-06-07）', url: 'https://www.youtube.com/watch?v=cOos94buutU' }
 - id: tru-cipher
   title: Tru Cipher
-  artists: [dna-tru-lyricist, leach]
+  artists: [dna-tru-lyricist, leach, down6]
   credit: DNA Tru Lyricist feat. Leach, Nokturnal, Fluenci, Swift Homicide, DOWN6
   youtube: 2wGRpq1w1co
   youtubeChannel: DNA Tru Lyricist
@@ -841,7 +841,7 @@
     - { title: 'YouTube – Tru Cipher（DNA 本人频道）', url: 'https://www.youtube.com/watch?v=2wGRpq1w1co' }
 - id: gou-pa-hei
   title: 狗怕黑
-  artists: [lil-andy]
+  artists: [lil-andy, gong-zijian]
   credit: 深蓝儿童（小安迪、Oxy 氧气哥、YLevoled 龚子建）
   year: 2019
   album: 宅の死（OTAKU DEATH）
@@ -872,7 +872,7 @@
     - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
 - id: si-ge-gou-bi
   title: 四哥购币
-  artists: [lil-andy]
+  artists: [lil-andy, gong-zijian]
   credit: 深蓝儿童（小安迪、Oxy 氧气哥、YLevoled 龚子建）/ 百川
   year: 2019
   youtube: 3UPRQXX94hA
@@ -887,7 +887,7 @@
     - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
 - id: shi-phage
   title: 噬 Phage
-  artists: [lil-andy]
+  artists: [lil-andy, gong-zijian]
   credit: 深蓝儿童（小安迪、Oxy 氧气哥、YLevoled 龚子建）feat. Foreign Hype & Tyrant Xenos
   year: 2019
   album: 宅の死（OTAKU DEATH）
@@ -965,7 +965,7 @@
     - { title: 'YouTube – UNITED CHOPPERS 5（J Battle Vidz，2026-03-21）', url: 'https://www.youtube.com/watch?v=AaFFf7IFrPY' }
 - id: illest-choppers-2
   title: Illest Choppers 2
-  artists: [kvr, killhollow, dumanoid, dna-tru-lyricist, kaoz]
+  artists: [kvr, killhollow, dumanoid, dna-tru-lyricist, kaoz, mgk-of-armr4]
   credit: MC Rice ft. LîL hØllÖw, BoneZ, CRhyme, S7ven Da Don, LEECH, Huslah, Kaoz, MSL, DNA, kVR, Chronic Boss, MGK of ARMR4, DNS & Twissler
   youtube: L_nDMhnXHLM
   youtubeChannel: YungDro Productions
@@ -1088,7 +1088,7 @@
     - { title: 'YouTube – Kill 4 - Aktibar x Sabotahe Ft Global Choppers（2018-11-06）', url: 'https://www.youtube.com/watch?v=Q9Z1qXV47Zs' }
 - id: onion-chopper-rmx
   title: Onion Chopper RMX
-  artists: [ruffian-rugged, dumanoid, down6, kal-paseo, the-jackal, heureca]
+  artists: [ruffian-rugged, dumanoid, down6, kal-paseo, the-jackal, heureca, asa-jake, splxt]
   credit: Ruffian Rugged & Dumanoid ft. Esrap, Swisher Sleep, DOWN6, Afu-Ra, Kinetical, Lucidd, Dvagoh, The Jackal, Jedal Strange, Kal Paseo, heureCa, Asa, Conrado Molina, SPLXT
   youtube: QUdTwwol-x8
   youtubeChannel: Def Ill aka Ruffian Rugged

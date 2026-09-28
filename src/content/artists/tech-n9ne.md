@@ -36,8 +36,25 @@ sources:
   - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
 ---
 
-Tech N9ne 来自密苏里州堪萨斯城，1999 年与商业伙伴 Travis O'Guin 创立独立厂牌 **Strange Music**。
+Tech N9ne 本名 Aaron Dontez Yates，1971 年生于密苏里州堪萨斯城。早年先后待过 Black Mafia（1991）、Nnutthowze（1993 年签 Perspective Records）和 Yukmouth 组的 The Regime（1997）。
 
-1990 年代末，还在地下的他让 chop 风格在自己庞大的粉丝群里流行起来。之后他把 chop 做成了**系列企划**："Worldwide Choppers"（2011，收录于 *All 6's and 7's*）是这个系列的第三部，集合了 Busta Rhymes、Twista、Yelawolf、Twisted Insane、土耳其的 Ceza、丹麦的 U$O 等人，歌词里有英语、丹麦语和土耳其语。
+## Strange Music
 
-2015 年的续作 **"Speedom (Worldwide Choppers 2)"** 请来了 Eminem 和 Krizz Kaliko。
+1999 年，他和商业伙伴 Travis O'Guin 创立独立厂牌 **Strange Music**，Krizz Kaliko、Kutt Calhoun、Brotha Lynch Hung、Stevie Stone 等人都签在这里。靠常年巡演和粉丝口碑，他在不靠大厂牌的情况下做到了总销量两百万张以上；《Caribou Lou》2017 年拿到白金。
+
+维基百科说，1990 年代末还在地下的时候，他就让 chop 风格在自己的粉丝群里流行了起来。
+
+## Choppers 系列
+
+他最有名的是一条专门给 chopper 的系列曲，每首都请一批快嘴同台：
+
+| 年份 | 歌 | 专辑 | 同台 |
+|---|---|---|---|
+| 2007 | 《Midwest Choppers》 | *Misery Loves Kompany* | D-Loc、Dalima、Krizz Kaliko |
+| 2009 | 《Midwest Choppers 2》 | *Sickology 101* | K-Dean、Krayzie Bone |
+| 2011 | 《Worldwide Choppers》 | *All 6's and 7's* | Busta Rhymes、Twista、Yelawolf、Twisted Insane、土耳其的 Ceza、丹麦的 U$O、D-Loc、JL B.Hood |
+| 2015 | 《Speedom (Worldwide Choppers 2)》 | *Special Effects* | Eminem、Krizz Kaliko |
+
+《Worldwide Choppers》是第一次把 chop 带出美国：歌词里有英语、丹麦语和土耳其语，后来拿到 RIAA 白金。
+
+第一首里的 Dalima，后来和中国的小安迪合作了《Real One》（2016）。小安迪说那是自己唯一一首 chop。

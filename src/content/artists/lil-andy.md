@@ -95,6 +95,7 @@ sources:
   - { title: '网易云音乐 – 小安迪LilAndyKillThemAll 歌手页', url: 'https://music.163.com/#/artist?id=12099063' }
   - { title: '网易云音乐 – Real One（LilAndy，LilG，Dalima）（2016-10-21）', url: 'https://music.163.com/#/song?id=436675058' }
   - { title: '网易云音乐 – Tech N9ne：Misery（feat. D-Loc、Dalima、Krizz Kaliko，Misery Loves Kompany，2007）', url: 'https://music.163.com/#/song?id=3765471' }
+  - { title: 'Wikipedia – Worldwide Choppers（Choppers 系列：Midwest Choppers 由 D-Loc、Dalima、Krizz Kaliko 参与）', url: 'https://en.wikipedia.org/wiki/Worldwide_Choppers' }
   - { title: '网易云音乐 – 龚子建 歌手页（深蓝儿童合作作品）', url: 'https://music.163.com/#/artist?id=12157356' }
   - { title: 'B站 – 小安迪直播点评《Chinese Choppers》（2026）', url: 'https://www.bilibili.com/video/BV1S2j36tERu/' }
   - { title: 'B站 – 小安迪LilAndyKTA：街头胡聊第 28 集｜南征北战 赵辰龙 尼成（2026-09-24）', url: 'https://www.bilibili.com/video/BV1D7aA6gEYU/' }
@@ -126,7 +127,7 @@ B 站 UP 主五里亭亭长 2021 年做过一期"小安迪最快的五首歌"，
 
 ## 《Real One》：他自己说的"唯一一首 chop"
 
-2026 年他在直播里点评《Chinese Choppers》时说，自己整个职业生涯**只做过一首 chop**：2016 年和堪萨斯城的说唱歌手 **Dalima** 合作的那首。网易云上能查到：《**Real One**》，2016 年 10 月 21 日发行，署名 LilAndy、LilG、Dalima，第三段主歌就是 Dalima 的英文 verse。Dalima 是 Tech N9ne 的合作者，2007 年上过 Tech N9ne 专辑 *Misery Loves Kompany* 里的《Misery》。
+2026 年他在直播里点评《Chinese Choppers》时说，自己整个职业生涯**只做过一首 chop**：2016 年和堪萨斯城的说唱歌手 **Dalima** 合作的那首。网易云上能查到：《**Real One**》，2016 年 10 月 21 日发行，署名 LilAndy、LilG、Dalima，第三段主歌就是 Dalima 的英文 verse。Dalima 是 Tech N9ne 的合作者：2007 年 Tech N9ne 的专辑 *Misery Loves Kompany* 里，他既上了《Misery》，也上了《**Midwest Choppers**》，也就是 Tech N9ne 那条 chopper 系列曲的第一首。
 
 按他的说法，这次合作是深蓝儿童的**龚子建**一直去联系对方、发了 demo，对方觉得不错才答应的，"一分钱没收"。
 
