@@ -1098,6 +1098,11 @@
       "video": "https://www.youtube.com/watch?v=2Y5J3VUC9qM",
       "size": "sddefault",
       "color": "#080808"
+    },
+    "planetary-choppers": {
+      "video": "https://www.youtube.com/watch?v=1-txdwgGtqA",
+      "size": "maxresdefault",
+      "color": "#080808"
     }
   }
 }

@@ -1104,6 +1104,20 @@
   sources:
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
     - { title: 'YouTube – MC Rice Presents ILLEST CHOPPERS 4（2018-08-13）', url: 'https://www.youtube.com/watch?v=RLQEutWjQxI' }
+- id: planetary-choppers
+  title: Planetary Choppers
+  artists: [interchopper, j-battle]
+  credit: Smokin Beatz Records ft. Nihilist, SM, MC Rice, J Battle, Criminal-R.O, Kw!n, Ice Dee, Interchopper
+  youtube: 1-txdwgGtqA
+  bilibili: BV1hx411V7Aa
+  youtubeChannel: Smokin Beatz Records
+  officialUpload: true
+  scene: world
+  year: 2017
+  note: '法国厂牌 Smokin Beatz Records 的国际 chopper 合作，D3B 制作，MC Rice 混音，2017 年 9 月 16 日发布。按简介的顺序：Nihilist（美国）、SM（俄罗斯）、MC Rice（法国）、J Battle（美国）、Criminal-R.O（巴西）、Kw!n（加拿大）、Ice Dee（巴西），最后是格鲁吉亚的 Interchopper 压轴。The Jackal 在评论区逐个点评，说 Nihilist"一如既往地快，一直在进步"。同年 11 月貪婪國的子民把它搬到了 B 站。'
+  sources:
+    - { title: 'YouTube – Smokin Beatz Records - Planetary Choppers (Prod. D3B)（2017-09-16，简介列了演唱顺序和国家）', url: 'https://www.youtube.com/watch?v=1-txdwgGtqA' }
+    - { title: 'B站 – 貪婪國的子民：Planetary Choppers（2017-11-21）', url: 'https://www.bilibili.com/video/BV1hx411V7Aa/' }
 - id: kill-4
   title: Kill 4（Paslangin 4）
   artists: [sabotahe, mgk-of-armr4]
