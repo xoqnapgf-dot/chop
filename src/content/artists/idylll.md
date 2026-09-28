@@ -51,6 +51,8 @@ sources:
   - { title: 'NahDah Vebb – 2021 版榜单曲目文档', url: 'https://docs.google.com/document/d/1UpOgX1BNIrPTK4F1JwibltfDSiVjJMLcQFbbmueJvUs' }
   - { title: 'B站 – NahDah Vebb：Top 150 Fastest Rappers 2021（转载，每条都有算式）', url: 'https://www.bilibili.com/video/BV1Av4y1Z7d7/' }
   - { title: 'SPS and Chopper Rap Wiki – IDYLLL', url: 'https://sps-and-chopper-rap.fandom.com/wiki/IDYLLL' }
+  - { title: 'YouTube – Discord Divine：Disabled Choppers 2（2017-11-05，简介里 Mistery 链接到 @idylllofficial）', url: 'https://www.youtube.com/watch?v=AaD3LQfSj9k' }
+  - { title: 'YouTube – Troll：Intercontinental Choppers（2018 年制作，署名 Mistery）', url: 'https://www.youtube.com/watch?v=Wlq1jQ5Jp8Y' }
 ---
 
 Idylll 是美国得克萨斯州的独立 rapper，NahDah 2021 版的榜单卡片上标的就是得州。他的频道简介是"COSMIC TIME LORD / INDEPENDENT MULTI-MUSICIAN"，也就是"宇宙时间领主、独立的多面音乐人"：写词、制作、混音、剪视频基本都是自己来。他的作品多挂在 Fourth Eye Records 名下，《Tha Shade》的署名里，作词、制作、工程都写着他和 Kal Paseo 两个人。
@@ -59,6 +61,8 @@ Idylll 是美国得克萨斯州的独立 rapper，NahDah 2021 版的榜单卡片
 
 | 时间 | 作品 | 说明 |
 |---|---|---|
+| 2017–2018 年 | 《Disabled Choppers》1–3、《Elemental Choppers》4–6（Discord Division） | 当时叫 **Mistery**；三集 Disabled Choppers 简介里 Mistery 链接的，就是他现在的 @idylllofficial 频道 |
+| 2018 年 | 《Intercontinental Choppers》（Shad、Troll 等） | 同样署名 Mistery |
 | 2021 年 2 月 1 日 | 《The Art of Subtlety》 | 专辑，其中的《Slugs》被 NahDah 用作 2021 版榜单视频的片尾曲 |
 | 2022 年 10 月 5 日 | 《Tha Shade》（与 Kal Paseo） | NahDah 2023 版给他算速度用的就是这首 |
 | 2024 年 6 月 19 日 | 《Infinite Choppers 2》 | DOWN6 牵头的 chopper cypher，他唱第二段，最快的一段在 SPS 圈测到 22 以上 |

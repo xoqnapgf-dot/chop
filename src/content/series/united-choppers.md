@@ -5,7 +5,7 @@ host: J Battle
 hostSlug: j-battle
 scene: world
 years: 2015–2026
-order: 4
+order: 6
 summary: 密歇根的 J Battle 发起的系列，2015 到 2026 年五集，每一集都有他。DOWN6 在第四集那段 20.00 进了 NahDah 2023 版第 7。
 episodes:
   - no: '1'

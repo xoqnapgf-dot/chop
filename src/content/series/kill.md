@@ -4,7 +4,7 @@ short: Kill
 host: Aktibar
 scene: world
 years: 2017–2026
-order: 5
+order: 10
 summary: 菲律宾伊洛伊洛的 Aktibar 发起的系列，他加禄语叫 Paslangin（"杀"）。一开始是伊洛伊洛本地 rapper 的接力，第四集起变成国际合作；Sabotahe 在第五集那段 21.01 是 NahDah 2023 版第 2 名。
 episodes:
   - no: '2'
