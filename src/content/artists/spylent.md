@@ -5,8 +5,8 @@ country: CN
 city: 未公开
 region: 网络
 activeSince: 2019
-style: track
-styleNote: 他出名靠的是文字游戏和双关，B 站上有专门逐句拆解他 wordplay 的视频；快嘴只是《天花板之上》等个别歌里的一段，本人也不以快为标签，所以标"快歌"。
+style: fast
+styleNote: 他出名靠的是文字游戏和双关，B 站上有专门逐句拆解他 wordplay 的视频；快嘴只是《天花板之上》等个别歌里的一段，没有整首唱 chop，所以标快嘴。
 tags: [B站, wordplay, 天花板之上]
 speed:
   - value: 11.62

@@ -6,7 +6,7 @@ country: US
 city: 密歇根州 底特律
 region: 北美
 activeSince: 1988
-style: track
+style: fast
 styleNote: 风格多面，不是纯 chopper；《Rap God》《Godzilla》等作品里的高速段落常被拿来比较语速。维基百科 Chopper 词条说他和 Tech N9ne 一样，早年是在中西部地下圈里用 chop 唱法起步的。
 geo: [42.33, -83.05]
 born: '1972-10-17'
@@ -91,4 +91,4 @@ Eminem 本名 Marshall Bruce Mathers III，1972 年生，在底特律长大。�
 - **Tech N9ne**：2015 年的《Speedom》是两人的正面合作，Strange Music 官宣时就把它叫作"Worldwide Choppers 2"。
 - **Busta Rhymes**：2014 年的《Calm Down》。按 Busta 的说法，这首一开始只是一首高能量的说唱歌，Eminem 先回了 42 小节，两人越唱越长。
 - **Yelawolf**：2011 年签进 Eminem 的 Shady Records，同一年他也在《Worldwide Choppers》里唱了一段。
-- **中文圈**：[谢帝](../xie-di/)最出名的快歌就是改编《Rap God》的《Rap God (Remix)》，B 站从 2019 年起就有人搬运。
+- **中文圈**：[谢帝](../xie-di/)最出名的快嘴作品就是改编《Rap God》的《Rap God (Remix)》，B 站从 2019 年起就有人搬运。

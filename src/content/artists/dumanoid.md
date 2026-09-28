@@ -39,7 +39,7 @@ speed:
       - { title: 'YouTube – Ruffian Rugged - SUMALADUMALA ft. Jackal, Dumanoid & Kal Paseo（2024-04-11）', url: 'https://www.youtube.com/watch?v=CSXxzJvQLEM' }
 sources:
   - { title: 'YouTube – Dumanoid 本人频道', url: 'https://www.youtube.com/@Dumanoid' }
-  - { title: 'YouTube – Dumanoid - The Evolution of a Chopper（2020-06-26，按时间排列的快歌合集）', url: 'https://www.youtube.com/watch?v=9fSwvbruiHU' }
+  - { title: 'YouTube – Dumanoid - The Evolution of a Chopper（2020-06-26，按时间排列的快段合集）', url: 'https://www.youtube.com/watch?v=9fSwvbruiHU' }
   - { title: 'SPS and Chopper Rap Wiki – Dumanoid（曾用名 DNS，匈牙利）', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Dumanoid' }
   - { title: 'YouTube – MC Rice Presents ILLEST CHOPPERS 4（2018-08-13，演唱名单里写作 DNS）', url: 'https://www.youtube.com/watch?v=RLQEutWjQxI' }
   - { title: 'YouTube – Ruffian & Dumanoid - Onion Chopper（2023-01-26）', url: 'https://www.youtube.com/watch?v=8T-HVOvWbqQ' }
@@ -57,7 +57,7 @@ DUMANOID（也写作 Dumanoid）是匈牙利的 rapper，早年用的名字是 *
 
 ## 一个 chopper 的进化
 
-2020 年，他把自己的快歌按时间顺序剪成了一个合集，标题就叫《**The Evolution of a Chopper**》（一个 chopper 的进化）：
+2020 年，他把自己的快段按时间顺序剪成了一个合集，标题就叫《**The Evolution of a Chopper**》（一个 chopper 的进化）：
 
 1. YouTube Choppers 1、Online Choppers、YouTube Choppers 2 的征选段落
 2. DNS 时期的匈牙利语歌，比如翻唱 Tech N9ne《My World》的《Az én világom》

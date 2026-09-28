@@ -1,7 +1,7 @@
 # 曲目库。youtube 是视频 ID；officialUpload 表示是否来自艺人/厂牌/官方媒体频道；starter = 路人入门
 - id: worldwide-choppers
   title: Worldwide Choppers
-  artists: [tech-n9ne, busta-rhymes, twista, twisted-insane, ceza]
+  artists: [tech-n9ne, busta-rhymes, twista, twisted-insane, ceza, uso]
   credit: Tech N9ne ft. Busta Rhymes, Ceza, D-Loc, JL B.Hood, Twista, Twisted Insane, U$O, Yelawolf
   year: 2011
   album: All 6's and 7's
@@ -373,7 +373,7 @@
   youtube: 1WFS34VWsYY
   youtubeChannel: Don Xperto
   officialUpload: true
-  note: '他自称"世界上最快的歌"的成名作：简介说 2007 年录好，2008 年 10 月上传，靠它上了墨西哥的电视节目。按后来的标准，它只算普通快歌。NahDah 2017 版把他排在第 5，速度来自另一首《Rapido》（约 24.1）；后来因为他的歌长期加速，把他永久除名。'
+  note: '他自称"世界上最快的歌"的成名作：简介说 2007 年录好，2008 年 10 月上传，靠它上了墨西哥的电视节目。按后来的标准，它的速度并不突出。NahDah 2017 版把他排在第 5，速度来自另一首《Rapido》（约 24.1）；后来因为他的歌长期加速，把他永久除名。'
   confidence: disputed
   sources:
     - { title: 'SoundCloud – donxperto（本人简介）', url: 'https://soundcloud.com/donxperto' }
@@ -494,6 +494,7 @@
     - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
 - id: german-choppers
   title: German Choppers
+  artists: [dcvdns]
   credit: DCVDNS feat. Tamas
   youtube: Z-E2yzcpP3k
   netease: 27767133
@@ -1351,7 +1352,7 @@
   year: 2019
   bilibili: BV1Ez4y117xf
   officialUpload: true
-  note: '谢帝改编 Eminem《Rap God》的版本，是他最出名的快歌。官方发行时间没查到，B 站最早的搬运在 2019 年 10 月；说唱会馆 2021 年 3 月在 B 站上传，播放将近 90 万。'
+  note: '谢帝改编 Eminem《Rap God》的版本，是他最出名的快嘴作品。官方发行时间没查到，B 站最早的搬运在 2019 年 10 月；说唱会馆 2021 年 3 月在 B 站上传，播放将近 90 万。'
   sources:
     - { title: 'B站 – CDC说唱会馆：谢帝 - Rap God (Remix)（2021-03-11）', url: 'https://www.bilibili.com/video/BV1Ez4y117xf/' }
     - { title: 'B站 – 天气温云：【姆爷×谢帝】rap god（左右声道）（2019-10-20）', url: 'https://www.bilibili.com/video/BV1QE41167zs/' }

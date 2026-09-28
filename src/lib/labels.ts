@@ -20,16 +20,17 @@ export const COUNTRY: Record<string, { name: string }> = {
   KW: { name: '科威特' },
   IT: { name: '意大利' },
   RU: { name: '俄罗斯' },
+  DK: { name: '丹麦' },
+  DE: { name: '德国' },
 };
 
 /**
  * 风格层级（快 ≠ Chop）：chop 是风格，chopper 是唱 chop 的人。
- * name = 贴在人物上的标签；level = 讲"三个层次"时用的风格名
+ * name = 贴在人物上的标签；level = 讲"两个层次"时用的风格名
  */
 export const STYLE = {
   chopper: { name: 'Chopper', level: 'Chop', short: 'Chopper', color: 'var(--style-chopper)', desc: '长期、整首地唱 chop；有可靠来源称其为 chopper，或本人明确自认' },
-  fast: { name: '快嘴', level: '快嘴', short: '快嘴', color: 'var(--style-fast)', desc: '以语速、咬字清晰度为主要标签' },
-  track: { name: '快歌', level: '快歌', short: '快歌', color: 'var(--style-track)', desc: '因个别快歌或快段落出圈，本人不以快著称' },
+  fast: { name: '快嘴', level: '快嘴', short: '快嘴', color: 'var(--style-fast)', desc: '有公认的高速段落，或以语速、咬字清晰度出名，但没有整首、长期地唱 chop' },
 } as const;
 export type Style = keyof typeof STYLE;
 

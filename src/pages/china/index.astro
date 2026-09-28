@@ -40,7 +40,7 @@ const toc = [
 ];
 ---
 
-<Base title="中国区" description="中文快嘴专区：按地区看川渝、新疆、西安、华东、华南的快嘴与快歌，附路人入门曲目、语速解析和时间线。">
+<Base title="中国区" description="中文快嘴专区：按地区看川渝、新疆、西安、华东、华南的快嘴和 chopper，附路人入门曲目、语速解析和时间线。">
   <!-- ============ 开头 ============ -->
   <section class="cn-hero relative border-b border-line">
     <div class="cn-hero-top relative overflow-hidden">
@@ -70,14 +70,14 @@ const toc = [
 
   <!-- ============ 先分清 ============ -->
   <section id="styles" class="container-x scroll-mt-32 pt-20">
-    <SectionHeading index="01" eyebrow="Fast ≠ Chop" title="先分清：快歌、快嘴、Chop">
+    <SectionHeading index="01" eyebrow="Fast ≠ Chop" title="先分清：快嘴和 Chop">
       <p class="mt-4 max-w-3xl text-ink-2">
         中文里"快嘴"是通俗说法，常被拿来翻译 chop。但在圈内讨论里两者是分开的：chop 是一种风格，唱 chop 的人才叫 chopper。会唱快的人很多，真正以 chop 为核心风格的人很少，有的快嘴歌手自己也不玩 chop。所以这里给每个人都标了一个层级，<strong class="text-ink">有可靠来源、或本人明确自认的才标 Chopper</strong>。
       </p>
     </SectionHeading>
-    <div class="grid gap-4 md:grid-cols-3">
+    <div class="grid gap-4 md:grid-cols-2">
       {
-        (['track', 'fast', 'chopper'] as const).map((k) => (
+        (['fast', 'chopper'] as const).map((k) => (
           <div class="card p-6" style={`border-top:3px solid ${STYLE[k].color}`}>
             <div class="flex items-center justify-between">
               <StyleChip style={k} size="md" level />

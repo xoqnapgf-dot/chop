@@ -8,8 +8,8 @@ region: 华东
 geo: [31.23, 121.47]
 born: '1999-04-28'
 activeSince: 2018
-style: track
-styleNote: 以技术流出名，押韵和 flow 编排很密，2019 年还改编过 Tech N9ne 的《Like I Ain't》。快段只在个别歌里，本人不以快嘴为标签，所以标"快歌"。
+style: fast
+styleNote: 以技术流出名，押韵和 flow 编排很密，2019 年还改编过 Tech N9ne 的《Like I Ain't》。快段只在个别歌里，没有整首唱 chop，所以标快嘴。
 tags: [1SHOT, 少年说唱企划, 上海]
 photoSource: { site: netease, id: 12781308, image: cover }
 speed:

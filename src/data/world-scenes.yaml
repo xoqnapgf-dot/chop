@@ -159,8 +159,7 @@
   name: 丹麦
   en: Denmark
   geo: [56.2, 9.5]
-  summary: 来自奥胡斯的 U$O 参与了 Worldwide Choppers，歌里有丹麦语段落。
-  mentions: [U$O]
+  summary: 奥胡斯的 U$O 以双倍速说唱出名，2011 年在《Worldwide Choppers》里唱了全曲唯一的丹麦语段落。NahDah 团队 2024 年逐段测算的"每国最快"里，丹麦一栏是 Mund de Carlo。
   sources:
     - { title: 'Wikipedia – Worldwide Choppers', url: 'https://en.wikipedia.org/wiki/Worldwide_Choppers' }
     - { title: 'Wikipedia – USO (rapper)', url: 'https://en.wikipedia.org/wiki/U$O' }
@@ -168,8 +167,8 @@
   name: 德国
   en: Germany
   geo: [51.2, 10.4]
-  summary: 维基百科 Chopper 词条列出的德语代表有 Samy Deluxe、Kollegah、DCVDNS。
-  mentions: [Samy Deluxe, Kollegah, DCVDNS]
+  summary: 维基百科 Chopper 词条列出的德语代表有 Samy Deluxe、Kollegah、DCVDNS 等人；DCVDNS 2013 年的《German Choppers》借用了 Tech N9ne 的"Choppers"命名。德国的 ShimmyMC 也请过 Twisted Insane 合作《Thron》。
+  mentions: [Samy Deluxe, Kollegah, ShimmyMC]
   sources:
     - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
 - id: it

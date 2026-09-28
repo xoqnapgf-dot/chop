@@ -49,7 +49,7 @@ DJ Lil Sprite 的《Undaground Choppers》是地下 chopper 最有名的 cypher 
 | 2013 年前后 | 《YouTube Choppers 2》 | 当时署名"SythLordz 的 SplytSecond" |
 | 2015 年 7 月 31 日 | 《Undaground Choppers 3》 | NahDah 2021、2023 两版都用这段 |
 | 2015–2017 年 | 《United Choppers》、UC5–UC7 | 和 J Battle、Kaoz、K-Fix 等人同台 |
-| 2018 年前后 | 《Fastest Rapper in Florida》 | 自己的快歌 |
+| 2018 年前后 | 《Fastest Rapper in Florida》 | 自己的快嘴单曲 |
 | 2023 年 7 月 | 《Infinite Choppers》（DOWN6） | |
 | 2024 年 12 月 | 《Onion Chopper RMX》 | 压轴 |
 
