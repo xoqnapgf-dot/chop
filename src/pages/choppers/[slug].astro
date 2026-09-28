@@ -88,7 +88,7 @@ const facts = [
 const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生成的 Topic 频道', label: '厂牌频道' };
 ---
 
-<Base title={data.nameZh ? `${data.nameZh} ${data.name}` : data.name} description={data.tagline} image={photo?.src}>
+<Base tone={data.country === 'CN' ? 'china' : 'world'} title={data.nameZh ? `${data.nameZh} ${data.name}` : data.name} description={data.tagline} image={photo?.src}>
   <article style={`--ac:${color}`}>
     <!-- ============ 人物头图 ============ -->
     <header class="relative overflow-hidden border-b border-line">
