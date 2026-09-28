@@ -125,6 +125,7 @@ const ND = {
                         )}
                         <span class="shrink-0 font-mono text-[11px] text-ink-3">{e.syllables}/{e.seconds.toFixed(3)}</span>
                       </span>
+                      {'flag' in e && e.flag && <span class="nd-flag mt-1 inline-block">{e.flag}</span>}
                       <span class="cy-bar mt-1 block h-1.5 rounded-full" />
                     </span>
                     <span class="text-right font-mono text-sm tabular-nums">{e.sps}</span>
@@ -160,7 +161,6 @@ const ND = {
           <div class="card p-5 sm:p-6">
             <div class="flex items-center justify-between gap-3">
               <p class="eyebrow">1 秒爆发 · 前 30 名和站内有档案的人</p>
-              <Confidence level="pending" />
             </div>
             <ol class="cy-list nd-list mt-4 grid gap-1.5">
               {nahdah.map((e, i) => {
@@ -176,7 +176,7 @@ const ND = {
                         ) : (
                           <span class="truncate text-sm font-semibold">{e.name}</span>
                         )}
-                        <a href={e.url} target="_blank" rel="noopener nofollow" class="min-w-0 truncate font-mono text-[11px] text-ink-3 hover:text-ink" title={e.song}>{e.syllables}/{e.seconds.toFixed(3)} · {e.song}{'flag' in e && e.flag && <span class="ml-1 font-sans text-[color:var(--critical)]">· {e.flag}</span>}</a>
+                        <span class="min-w-0 truncate font-mono text-[11px] text-ink-3" title={e.song}>{e.syllables}/{e.seconds.toFixed(3)} · {e.song}</span>
                       </span>
                       <span class="cy-bar mt-1 block h-1.5 rounded-full" />
                     </span>
@@ -261,5 +261,13 @@ const ND = {
   }
   .cy-bar {
     background: linear-gradient(90deg, var(--accent) var(--w), var(--line) var(--w));
+  }
+  .nd-flag {
+    font-size: 11px;
+    line-height: 1.4;
+    padding: 0.05rem 0.45rem;
+    border-radius: 999px;
+    color: var(--critical);
+    background: color-mix(in oklab, var(--critical) 12%, transparent);
   }
 </style>

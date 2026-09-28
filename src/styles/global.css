@@ -34,6 +34,13 @@
   --critical: #b3261e;
   --neutral: #7a6c5d;
   --shadow: 0 1px 0 rgb(0 0 0 / 0.04), 0 12px 32px -12px rgb(60 30 10 / 0.2);
+  /* 辅助色板：系列、地区、章节编号这类需要区分的地方轮流用，主色仍是朱红和金 */
+  --p1: #c8211b;
+  --p2: #a8740a;
+  --p3: #1f7a6c;
+  --p4: #8e3a6e;
+  --p5: #c8601a;
+  --p6: #5f6f1f;
 }
 
 :root[data-theme='dark'] {
@@ -62,6 +69,12 @@
   --critical: #ff6b5e;
   --neutral: #8b7d6c;
   --shadow: 0 1px 0 rgb(255 255 255 / 0.03), 0 20px 40px -20px rgb(0 0 0 / 0.8);
+  --p1: #ff5a4a;
+  --p2: #e8b84a;
+  --p3: #45c2a8;
+  --p4: #e08cc2;
+  --p5: #ff9d55;
+  --p6: #b9c65a;
 }
 
 @theme inline {
@@ -118,6 +131,16 @@
     background: var(--bg);
     min-height: 100dvh;
     overflow-x: clip;
+  }
+  /* 纸张颗粒：很淡的噪点，让大面积底色不那么平 */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
   ::selection {
     background: var(--accent);
@@ -321,5 +344,47 @@
   }
   .animate-marquee {
     animation-duration: 80s;
+  }
+}
+
+/* ---------- 列表页页头：多色光斑 + 点阵 + 大号描边水印 ---------- */
+.page-hero {
+  position: relative;
+  isolation: isolate;
+}
+.page-hero::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: -6rem -50vw 0;
+  background:
+    radial-gradient(38rem 20rem at 12% 20%, color-mix(in oklab, var(--hero-a, var(--p1)) 13%, transparent), transparent 70%),
+    radial-gradient(30rem 18rem at 78% 10%, color-mix(in oklab, var(--hero-b, var(--p3)) 12%, transparent), transparent 70%),
+    radial-gradient(26rem 16rem at 60% 90%, color-mix(in oklab, var(--hero-c, var(--p2)) 12%, transparent), transparent 70%),
+    radial-gradient(color-mix(in oklab, var(--ink) 10%, transparent) 1px, transparent 1.2px) 0 0 / 22px 22px;
+  mask-image: linear-gradient(to bottom, #000 55%, transparent);
+  pointer-events: none;
+}
+.page-hero[data-wm]::after {
+  content: attr(data-wm);
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(4rem, 14vw, 11rem);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  color: transparent;
+  -webkit-text-stroke: 1px color-mix(in oklab, var(--hero-a, var(--p1)) 26%, transparent);
+  pointer-events: none;
+  white-space: nowrap;
+  max-width: 60%;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .page-hero[data-wm]::after {
+    display: none;
   }
 }

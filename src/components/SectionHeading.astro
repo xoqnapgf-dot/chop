@@ -2,11 +2,13 @@
 import { url } from '@/lib/url';
 interface Props { eyebrow: string; title: string; href?: string; linkLabel?: string; index?: string }
 const { eyebrow, title, href, linkLabel = '查看全部', index } = Astro.props;
+// 章节编号轮流用辅助色板里的颜色
+const tone = index ? `var(--p${((Number(index) || 1) - 1) % 6 + 1})` : undefined;
 ---
 <div class="mb-10 flex flex-wrap items-end justify-between gap-4">
   <div>
     <p class="eyebrow mb-3 flex items-center gap-3">
-      {index && <span class="text-accent-text">{index}</span>}
+      {index && <span class="sh-index" style={`--t:${tone}`}>{index}</span>}
       {eyebrow}
     </p>
     <h2 class="text-3xl font-semibold md:text-5xl">{title}</h2>
@@ -21,3 +23,18 @@ const { eyebrow, title, href, linkLabel = '查看全部', index } = Astro.props;
     )
   }
 </div>
+
+<style>
+  .sh-index {
+    display: inline-grid;
+    place-items: center;
+    min-width: 2.1rem;
+    height: 1.5rem;
+    padding: 0 0.45rem;
+    border-radius: 999px;
+    font-weight: 700;
+    color: var(--t);
+    background: color-mix(in oklab, var(--t) 14%, transparent);
+    border: 1px solid color-mix(in oklab, var(--t) 35%, transparent);
+  }
+</style>

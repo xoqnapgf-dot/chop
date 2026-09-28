@@ -102,7 +102,7 @@ const toc = [
     </SectionHeading>
 
     <div class="region-chips -mx-4 mb-8 flex gap-2 overflow-x-auto px-4 md:mx-0 md:flex-wrap md:px-0" data-pagefind-ignore>
-      {regions.map((r) => <a href={`#r-${r.id}`} class="chip shrink-0 hover:border-line-strong">{r.data.name}<span class="text-ink-3">{inRegion(r.data.name).length}</span></a>)}
+      {regions.map((r, i) => <a href={`#r-${r.id}`} class="chip shrink-0 hover:border-line-strong"><span class="size-1.5 rounded-full" style={`background:var(--p${(i % 6) + 1})`} />{r.data.name}<span class="text-ink-3">{inRegion(r.data.name).length}</span></a>)}
     </div>
 
     <div class="grid grid-cols-1 gap-6">
@@ -110,7 +110,7 @@ const toc = [
         regions.map((r, i) => {
           const people = inRegion(r.data.name);
           return (
-            <article id={`r-${r.id}`} class="region card scroll-mt-32 overflow-hidden">
+            <article id={`r-${r.id}`} class="region card scroll-mt-32 overflow-hidden" style={`--rc:var(--p${(i % 6) + 1})`}>
               <div class="grid lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
                 <header class="region-head relative p-6 sm:p-8">
                   <span class="region-no font-display" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
@@ -120,7 +120,7 @@ const toc = [
                     <ul class="relative mt-5 flex flex-wrap gap-2">
                       {r.data.cities.map((c) => (
                         <li class="chip">
-                          <span class="size-1.5 rounded-full bg-china" />
+                          <span class="size-1.5 rounded-full" style="background:var(--rc)" />
                           {c.name}
                         </li>
                       ))}
@@ -293,7 +293,8 @@ const toc = [
     scrollbar-width: none;
   }
   .region-head {
-    background: radial-gradient(90% 70% at 0% 0%, color-mix(in oklab, var(--scene-china) 12%, transparent), transparent 70%);
+    background: radial-gradient(90% 70% at 0% 0%, color-mix(in oklab, var(--rc) 16%, transparent), transparent 70%);
+    border-top: 4px solid var(--rc);
   }
   .region-no {
     position: absolute;
@@ -303,7 +304,7 @@ const toc = [
     font-weight: 800;
     line-height: 1;
     color: transparent;
-    -webkit-text-stroke: 1px color-mix(in oklab, var(--scene-china) 45%, transparent);
+    -webkit-text-stroke: 1px color-mix(in oklab, var(--rc) 55%, transparent);
   }
   .region-body :global(ul) {
     margin-top: 0.8em;

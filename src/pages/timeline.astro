@@ -29,7 +29,7 @@ const byYear = (scene: 'world' | 'china', y: number) => events.filter((e) => e.d
 ---
 
 <Base title="时间线" description="从 1980 年到今天，世界 chopper 与中国快嘴的大事记，左右并行对照。">
-  <section class="container-x pt-14 md:pt-20">
+  <section class="page-hero container-x pt-14 md:pt-20" data-wm="1980—2026" style="--hero-a:var(--p4);--hero-b:var(--p2);--hero-c:var(--p3)">
     <p class="eyebrow">Timeline · {first}–{last}</p>
     <h1 class="mt-4 text-5xl font-bold md:text-7xl">时间线</h1>
     <p class="mt-5 max-w-2xl text-lg text-ink-2">两条线并行：左边是<span class="text-accent-text">世界</span>，右边是<span class="text-china">中国区</span>。同一时期两边各发生了什么，一眼就能对照。</p>
@@ -372,7 +372,12 @@ const byYear = (scene: 'world' | 'china', y: number) => events.filter((e) => e.d
   const tl = document.querySelector<HTMLElement>('.tl')!;
   const apply = (v: string) => {
     btns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.value === v)));
-    items.forEach((el) => (el.style.display = !v || el.dataset.scene === v ? '' : 'none'));
+    items.forEach((el) => {
+      const show = !v || el.dataset.scene === v;
+      el.style.display = show ? '' : 'none';
+      // 切换筛选时直接显示，不再等滑入动画
+      if (show) el.classList.add('in');
+    });
     tl.classList.toggle('single', !!v);
     document.querySelector('.tl-heads')?.classList.toggle('hide', !!v);
     const p = new URLSearchParams(location.search);
@@ -404,7 +409,13 @@ const byYear = (scene: 'world' | 'china', y: number) => events.filter((e) => e.d
 
   // 中轴进度线：滚到哪里，线就长到哪里
   let ticking = false;
+  // 兜底：滑入动画偶尔漏触发（快速滚动、返回页面时），已经滚到过的卡片一律显示
+  const revealPassed = () => {
+    const limit = window.innerHeight;
+    for (const el of items) if (!el.classList.contains('in') && el.getBoundingClientRect().top < limit) el.classList.add('in');
+  };
   function updateProgress() {
+    revealPassed();
     const r = tl.getBoundingClientRect();
     const mid = window.innerHeight * 0.6;
     const p = Math.min(1, Math.max(0, (mid - r.top) / r.height));
@@ -422,7 +433,9 @@ const byYear = (scene: 'world' | 'china', y: number) => events.filter((e) => e.d
     { passive: true },
   );
   window.addEventListener('resize', updateProgress);
+  window.addEventListener('pageshow', updateProgress);
   updateProgress();
+  setTimeout(updateProgress, 800);
 
   const initial = new URLSearchParams(location.search).get('scene');
   if (initial && !location.hash) apply(initial);

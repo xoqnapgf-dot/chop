@@ -21,15 +21,24 @@ const markers = [
     .filter((a) => a.data.geo)
     .map((a) => ({ id: `city:${a.id}`, name: displayName(a.data), lat: a.data.geo![0], lon: a.data.geo![1], kind: 'city', tone: a.data.country === 'CN' ? 'china' : 'world' })),
 ];
-// Worldwide Choppers（2011）：从 Tech N9ne 的堪萨斯城连到其他参与者的城市
-const KC: [number, number] = [39.1, -94.58];
-const arcs = [
-  [41.88, -87.63], // 芝加哥 Twista
-  [40.65, -73.95], // 纽约 Busta Rhymes
-  [32.72, -117.16], // 圣地亚哥 Twisted Insane
-  [41.01, 28.98], // 伊斯坦布尔 Ceza
-  [56.16, 10.2], // 奥胡斯 U$O
-].map((to) => ({ from: KC, to }));
+// 连线：同一首歌里合作过的国家（曲库 tracks + 系列 series 的名单，只算站内有档案的人），越粗合作越多
+const tracks = await getCollection('tracks');
+const series = await getCollection('series');
+const countryOf = new Map(artists.map((a) => [a.id, a.data.country.toLowerCase()]));
+const sceneGeo = new Map(scenes.map((s) => [s.id, s.data.geo as [number, number]]));
+const pairCount = new Map<string, number>();
+const songs: string[][] = [
+  ...tracks.map((t) => t.data.artists.map((a) => a.id)),
+  ...series.flatMap((s) => s.data.episodes.map((ep) => ep.lineup.map((r) => (r.includes('@') ? r.slice(r.lastIndexOf('@') + 1) : '')).filter(Boolean))),
+];
+for (const ids of songs) {
+  const cs = [...new Set(ids.map((id) => countryOf.get(id)).filter((c): c is string => !!c && sceneGeo.has(c)))].sort();
+  for (let i = 0; i < cs.length; i++) for (let j = i + 1; j < cs.length; j++) pairCount.set(`${cs[i]}|${cs[j]}`, (pairCount.get(`${cs[i]}|${cs[j]}`) ?? 0) + 1);
+}
+const arcs = [...pairCount].map(([k, w]) => {
+  const [a, b] = k.split('|');
+  return { from: sceneGeo.get(a)!, to: sceneGeo.get(b)!, w, tone: a === 'cn' || b === 'cn' ? 'china' : 'world' };
+});
 
 // 场景 id 就是小写的国家代码（us → US），每个国家收录的人物全部列出
 const panels = scenes.map((s) => ({
@@ -48,7 +57,7 @@ const PEOPLE_SHOW = 8;
         <canvas class="globe-canvas absolute inset-0 size-full touch-none" aria-label="世界 Chop 地图：拖动旋转，点击标记查看当地情况" role="img"></canvas>
         <script type="application/json" class="globe-data" set:html={JSON.stringify({ markers, arcs })} />
       </div>
-      <p class="mt-2 text-center text-xs text-ink-3">拖动旋转 · 点击发光的标记 · 虚线是 2011 年 Worldwide Choppers 的合作连线</p>
+      <p class="mt-2 text-center text-xs text-ink-3">拖动旋转 · 点击发光的标记 · 虚线连着同一首歌里合作过的国家，越粗合作越多（按曲库和各系列名单统计）</p>
     </div>
 
     <div class="min-w-0">
