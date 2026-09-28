@@ -562,6 +562,15 @@
       "hasBanner": true,
       "color": "#080808",
       "fetchedAt": "2026-09-27"
+    },
+    "mcbustaflo": {
+      "channelUrl": "https://www.youtube.com/channel/UC56vgKaDrvnpXiXPBcVcOMA",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_m2UvfGEHtIbDlFqelOLTD1N5JTKzIll_9YiCfKkwLuwQ=s800-c-k-c0x00ffffff-no-rj",
+      "banner": null,
+      "hasBanner": false,
+      "color": "#281818",
+      "fetchedAt": "2026-09-28"
     }
   },
   "tracks": {

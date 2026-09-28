@@ -14,6 +14,10 @@ sources:
   - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
   - { title: 'Rap Wiki – Crucified（关于"只找最快一秒"与 2024 年改规则之争）', url: 'https://rap.fandom.com/wiki/Crucified' }
   - { title: 'SPS and Chopper Rap Wiki', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Sps_and_chopper_rap_Wiki' }
+  - { title: 'YouTube – LYB：FASTEST FREESTYLE IN THE WORLD |46.2 Sps| LEGIT（2017-07-08，评论区有 The Jackal 的留言）', url: 'https://www.youtube.com/watch?v=ujVUixNXCmA' }
+  - { title: 'YouTube – LYB：My fastest rap |32.2 sps|（2017-07-01，简介列了 Cryptic Choppers 名单）', url: 'https://www.youtube.com/watch?v=ys418MNDttE' }
+  - { title: 'YouTube – Nihilist - Worldwide Choppers remix (full track)（听众上传，2021）', url: 'https://www.youtube.com/watch?v=nR0tnvJEE_s' }
+  - { title: 'B站 – 森敬文：『说唱搬运』Nihilist—Worldwide Choppers（Remix）（2019）', url: 'https://www.bilibili.com/video/BV1pt411E7YB/' }
 ---
 
 ## 三个层次
@@ -41,6 +45,11 @@ SPS 是 syllables per second（每秒音节数）。海外 chopper 圈里有个�
 - 只挑**最快的那 1 秒**来算，甚至**夸大测算结果**。
 
 公开资料里也能看到这种现象：Rap Wiki 写道，"网上的小孩只想找最快的那一秒"；2024 年还有一群想自称"最快"的人试图改写纪录规则，只比 1 秒爆发。SPS 社区的 wiki 里，也有人被描述为"前 SPS kid"，或者被说在某个阶段"最像 SPS kid：只顾押韵和打爆发"。
+
+早年常被拿来举例的两个名字：
+
+- **LYB**：2017 年前后 YouTube 上的一个新人，视频标题一个比一个高："32.2 SPS""38.1 SPS"，最夸张的一条写着"世界最快的即兴，46.2 SPS，LEGIT"。The Jackal 在他视频下面留言："一到快段你就是在滚同一个音节，让它听起来更快，其余的根本听不清。我不怀疑你脑子里有词，但你没把它们都说出来。"听众放慢了逐字数，最快的地方大约在 18 到 20。
+- **Nihilist**：中文圈叫他"虚无"。他那首《Worldwide Choppers》Remix 一直传着"30 多 SPS"的说法，评论区有人写 33，但听众各自测出来在 17.7 到 21.9 之间。2019 年这首被搬到 B 站时，就有人回"这才 17"。LYB 当年在视频简介里列过一份《Cryptic Choppers》的名单，里面也有他。
 
 所以 SPS kid 和 chopper 正好是两个方向：**chopper 快，而且每个音节都是词、有 flow、能现场唱出来**；SPS kid 只剩一个数字。所以快不等于 chop。
 
