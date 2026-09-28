@@ -15,7 +15,8 @@ export type GlobeMarker = {
   kind: 'scene' | 'city';
   tone: 'china' | 'world';
 };
-export type GlobeArc = { from: [number, number]; to: [number, number] };
+/** w = 合作次数（决定粗细）；tone = 牵涉中国时用红色 */
+export type GlobeArc = { from: [number, number]; to: [number, number]; w?: number; tone?: 'china' | 'world' };
 
 type Options = {
   markers: GlobeMarker[];
@@ -118,7 +119,7 @@ export function mountGlobe(canvas: HTMLCanvasElement, opts: Options) {
       const lift = 1 + 0.12 * Math.sin(Math.PI * t) * Math.min(1, om * 1.4);
       pts.push((s1 * p[0] + s2 * q[0]) * lift, (s1 * p[1] + s2 * q[1]) * lift, (s1 * p[2] + s2 * q[2]) * lift);
     }
-    return pts;
+    return { pts, w: a.w ?? 1, tone: a.tone ?? 'world' };
   });
 
   // ---- 尺寸 ----
@@ -221,12 +222,12 @@ export function mountGlobe(canvas: HTMLCanvasElement, opts: Options) {
 
     // 弧线
     if (arcs.length) {
-      ctx.lineWidth = 1.4;
       ctx.lineCap = 'round';
       ctx.setLineDash([4, 6]);
       ctx.lineDashOffset = -((now / (gentle ? 80 : 40)) % 10);
-      ctx.strokeStyle = hexA(colors.world, 0.85);
-      for (const pts of arcs) {
+      for (const { pts, w, tone } of arcs) {
+        ctx.lineWidth = 0.8 + Math.min(w, 12) * 0.16;
+        ctx.strokeStyle = hexA(tone === 'china' ? colors.china : colors.world, Math.min(0.9, 0.4 + w * 0.05));
         ctx.beginPath();
         let pen = false;
         for (let i = 0; i < pts.length; i += 3) {

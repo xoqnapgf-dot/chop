@@ -48,3 +48,6 @@ export async function seriesOf(slug: string) {
   }
   return out;
 }
+
+/** 每个系列一个颜色（按顺序轮流用辅助色板） */
+export const seriesColor = (s: SeriesEntry) => `var(--p${((s.data.order - 1) % 6) + 1})`;

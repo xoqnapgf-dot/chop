@@ -6,7 +6,7 @@ import Avatar from '@/components/Avatar.astro';
 import { url } from '@/lib/url';
 import { displayName } from '@/lib/labels';
 import { trackCover, trackThumb } from '@/lib/media';
-import { allSeries, epYear, member, regulars } from '@/lib/series';
+import { allSeries, epYear, member, regulars, seriesColor } from '@/lib/series';
 
 const series = await allSeries();
 const artists = new Map((await getCollection('artists')).map((a) => [a.id, a]));
@@ -30,7 +30,7 @@ const span = Array.from({ length: y1 - y0 + 1 }, (_, i) => y0 + i);
 ---
 
 <Base title="系列" description="Undaground Choppers、Illest Choppers、Infinite Choppers、Kill 等 chopper 合作系列，逐集整理名单、日期和名场面。">
-  <section class="container-x pt-14 md:pt-20">
+  <section class="page-hero container-x pt-14 md:pt-20" data-wm="SERIES" style="--hero-a:var(--p3);--hero-b:var(--p1);--hero-c:var(--p4)">
     <p class="eyebrow">Series · {series.length} 个系列 · {totalEps} 集</p>
     <h1 class="mt-4 text-5xl font-bold md:text-7xl">Choppers 系列</h1>
     <p class="mt-5 max-w-2xl text-lg text-ink-2">
@@ -54,13 +54,13 @@ const span = Array.from({ length: y1 - y0 + 1 }, (_, i) => y0 + i);
         {
           series.map((s) => (
             <>
-              <a href={url(`series/${s.id}/`)} class="chrono-name link-u" style={`--c:var(${s.data.scene === 'china' ? '--scene-china' : '--scene-world'})`}>{s.data.short ?? s.data.name}</a>
+              <a href={url(`series/${s.id}/`)} class="chrono-name link-u" style={`--c:${seriesColor(s)}`}>{s.data.short ?? s.data.name}</a>
               {span.map((y) => {
                 const eps = s.data.episodes.filter((e) => epYear(e) === y);
                 return (
                   <span class="chrono-cell">
                     {eps.map((e) => (
-                      <a href={url(`series/${s.id}/#ep-${e.no}`)} class:list={['chrono-dot', { hi: e.highlight }]} style={`--c:var(${s.data.scene === 'china' ? '--scene-china' : '--scene-world'})`} title={`${e.title} · ${e.date}`} aria-label={`${e.title}（${e.date}）`} />
+                      <a href={url(`series/${s.id}/#ep-${e.no}`)} class:list={['chrono-dot', { hi: e.highlight }]} style={`--c:${seriesColor(s)}`} title={`${e.title} · ${e.date}`} aria-label={`${e.title}（${e.date}）`} />
                     ))}
                   </span>
                 );
@@ -78,7 +78,7 @@ const span = Array.from({ length: y1 - y0 + 1 }, (_, i) => y0 + i);
         const cover = coverOf(s);
         const regs = regulars(s).slice(0, 5);
         return (
-          <article class="series-card group card overflow-hidden transition hover:border-line-strong" style={`--c:var(${s.data.scene === 'china' ? '--scene-china' : '--scene-world'})`}>
+          <article class="series-card group card overflow-hidden transition hover:border-line-strong" style={`--c:${seriesColor(s)}`}>
             <a href={url(`series/${s.id}/`)} class="block">
               <div class="relative aspect-[16/8] overflow-hidden bg-black">
                 {cover && <Image src={cover} alt="" widths={[480, 800]} sizes="(min-width: 768px) 560px, 100vw" class="size-full object-cover opacity-80 transition duration-700 group-hover:scale-[1.03] group-hover:opacity-95" />}

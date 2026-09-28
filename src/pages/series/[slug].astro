@@ -6,7 +6,7 @@ import LiteYouTube from '@/components/LiteYouTube.astro';
 import Sources from '@/components/Sources.astro';
 import { url } from '@/lib/url';
 import { displayName } from '@/lib/labels';
-import { allSeries, epDate, member, regulars, type SeriesEntry } from '@/lib/series';
+import { allSeries, epDate, member, regulars, seriesColor, type SeriesEntry } from '@/lib/series';
 
 export async function getStaticPaths() {
   const all = await allSeries();
@@ -29,7 +29,8 @@ const eps = [...d.episodes].reverse();
 ---
 
 <Base title={d.name} description={d.summary}>
-  <article class="container-x pt-14 md:pt-20">
+  <article class="container-x pt-14 md:pt-20" style={`--sc:${seriesColor(entry)};--hero-a:${seriesColor(entry)}`}>
+    <div class="page-hero" data-wm={d.short ?? ''}>
     <header class="max-w-3xl">
       <a href={url('series/')} class="eyebrow link-u hover:text-ink">← 系列</a>
       <div class="mt-5 flex flex-wrap items-center gap-2">
@@ -42,6 +43,7 @@ const eps = [...d.episodes].reverse();
       <p class="mt-4 text-sm text-ink-3">发起：{d.hostSlug ? <a href={url(`choppers/${d.hostSlug}/`)} class="link-u text-ink-2">{d.host}</a> : <span class="text-ink-2">{d.host}</span>}</p>
       <p class="mt-4 text-lg text-ink-2">{d.summary}</p>
     </header>
+    </div>
 
     <div class="mt-12 grid gap-12 lg:grid-cols-[minmax(0,1fr)_280px]">
       <div class="min-w-0">
@@ -159,8 +161,8 @@ const eps = [...d.episodes].reverse();
     width: 3.2rem;
     height: 3.2rem;
     border-radius: 999px;
-    background: var(--accent);
-    color: var(--accent-ink);
+    background: var(--sc);
+    color: #fff;
     font-weight: 700;
     font-size: 0.8rem;
     position: relative;
@@ -181,12 +183,15 @@ const eps = [...d.episodes].reverse();
       margin-bottom: -0.4rem;
     }
   }
+:global(:root[data-theme='dark']) .ep-no {
+    color: #140e0a;
+  }
   .hi-badge {
     font-size: 11px;
     padding: 0.1rem 0.5rem;
     border-radius: 999px;
-    background: color-mix(in oklab, var(--accent) 14%, transparent);
-    color: var(--accent-text);
+    background: color-mix(in oklab, var(--sc) 16%, transparent);
+    color: var(--sc);
     font-weight: 600;
   }
   .lineup {
@@ -207,6 +212,6 @@ const eps = [...d.episodes].reverse();
     background: var(--surface);
   }
   .lineup.has-profile:hover {
-    border-color: var(--accent);
+    border-color: var(--sc);
   }
 </style>

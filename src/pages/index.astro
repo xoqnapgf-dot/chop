@@ -9,7 +9,7 @@ import Marquee from '@/components/Marquee.astro';
 import Globe from '@/components/Globe.astro';
 import Avatar from '@/components/Avatar.astro';
 import { url } from '@/lib/url';
-import { allSeries } from '@/lib/series';
+import { allSeries, seriesColor } from '@/lib/series';
 import { STYLE, SCENE, displayName } from '@/lib/labels';
 
 const artists = await getCollection('artists');
@@ -186,7 +186,7 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
       {
         seriesList.map((s) => (
           <li>
-            <a href={url(`series/${s.id}/`)} class="home-series card group flex h-full flex-col p-5 transition hover:border-line-strong" style={`--c:var(${s.data.scene === 'china' ? '--scene-china' : '--scene-world'})`}>
+            <a href={url(`series/${s.id}/`)} class="home-series card group flex h-full flex-col p-5 transition hover:border-line-strong" style={`--c:${seriesColor(s)}`}>
               <span class="font-display text-3xl font-bold" style="color:var(--c)">{s.data.short ?? s.data.name}</span>
               <span class="mt-2 font-semibold">{s.data.name}</span>
               <span class="mt-1 text-xs text-ink-3">{s.data.host} · {s.data.years} · {s.data.episodes.length} 集</span>
