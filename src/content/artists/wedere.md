@@ -1,6 +1,6 @@
 ---
 name: Wedere
-tagline: 意大利弗留利的 chopper，也是 SPS 测速委员会的成员。站里好几条测算出自他手；自己唱的《SHADOWS》是 NahDah 2024 年意大利一栏。
+tagline: 意大利弗留利的 chopper，也是 SPS 测速委员会的成员。Crucified、Kal Paseo 等人的好几条测算出自他手；自己唱的《SHADOWS》是 NahDah 2024 年意大利一栏。
 country: IT
 city: 弗留利-威尼斯朱利亚
 region: 欧洲
@@ -40,7 +40,7 @@ Wedere 是意大利东北部弗留利-威尼斯朱利亚大区的 rapper，唱�
 
 ## 测速
 
-测速频道的简介说，他是 **SPS Council**（SPS 测速委员会）的一员。他做过 Crucified 最快 50 段、《Infinite Choppers》各集最快 verse 这类榜单，还录过一期《How to CALCULATE SPS》教学，B 站上有中文翻译。站里 Crucified、Kal Paseo、The Jackal 的好几条测算，出处都是他。
+测速频道的简介说，他是 **SPS Council**（SPS 测速委员会）的一员。他做过 Crucified 最快 50 段、《Infinite Choppers》各集最快 verse 这类榜单，还录过一期《How to CALCULATE SPS》教学，B 站上有中文翻译。Crucified、Kal Paseo、The Jackal 档案里的好几条测算，出处都是他。
 
 ## 自己唱
 

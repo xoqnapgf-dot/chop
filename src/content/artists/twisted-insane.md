@@ -35,8 +35,22 @@ sources:
   - { title: 'YouTube – Crucified ft. Twisted Insane - Wicked', url: 'https://www.youtube.com/watch?v=SoHpqUvSGQE' }
 ---
 
-Twisted Insane 的风格受 Bone Thugs-n-Harmony、Twista、Busta Rhymes 影响，又融进了恐怖核（horrorcore）元素，出过十五张录音室专辑。
+Twisted Insane 本名 Michael Johnson，1983 年生于加州圣地亚哥，12 岁开始写词。
 
-他参与的 "Worldwide Choppers"（2011）在 Bubbling Under Hot 100 排到第 4 名，是他商业上最成功的一次。代表专辑有 *Shoot for the Face*（2006）和 *Voodoo*（2015）。
+## Brainsick Muzik
 
-他也和德州的地下 chopper Crucified 合作过，比如 2011 年的《Wicked》。
+他所有作品都发在自己的独立厂牌 **Brainsick Muzik** 上。第一张 mixtape《Brainmatter》出在 2004 年；2006 年的首张录音室专辑 *Shoot for the Face*，是他还没有固定住处的时候做出来的。到 2024 年他一共出了十几张录音室专辑，风格是 chop 加恐怖核（horrorcore），维基百科列的影响来源是 Bone Thugs-n-Harmony、Twista、Busta Rhymes。
+
+## 同台
+
+| 年份 | 作品 | 说明 |
+|---|---|---|
+| 2011 | 《Wicked》（Crucified） | 和德州的 Crucified 合作 |
+| 2011 | 《Worldwide Choppers》（Tech N9ne） | 他商业上最成功的一次，Bubbling Under Hot 100 第 4 |
+| 2013 | 《So Dope (They Wanna)》（Tech N9ne） | 同台的还有 Wrekonize、Snow Tha Product |
+| 2013–2015 | 《DNA vs Twisted Insane》系列 | DNA 把两人的歌轮流放在一起对比，一共五回合 |
+| 2023 | 《Onion Chopper》（Ruffian Rugged） | 和 Crucified、Sabotahe、Dumanoid 等人同台 |
+| 2025 | 《I Saw Red》（Yung Revival） | 和 Crucified、DNA、Leach、Asa Jake 同台 |
+| 2026 | 《Infinite Choppers 3》（DOWN6） | 这一集最大的名字 |
+
+NahDah 两版榜单测的都是《Dome Split》：2021 版 15.50，2023 版 15.24，音节数一样，只差计时。
