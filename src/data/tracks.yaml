@@ -71,7 +71,7 @@
   youtubeChannel: Chris Brown
   officialUpload: true
   scene: world
-  note: Busta Rhymes 的客串段落，是无数人的快嘴启蒙。
+  note: Chris Brown 的单曲，Billboard Hot 100 最高第 6，拿了两项格莱美提名。Busta Rhymes 的段落在最后，XXL 和 Vibe 都把它算作他最出彩的客串之一。
   sources:
     - { title: 'Wikipedia – Look at Me Now', url: 'https://en.wikipedia.org/wiki/Look_at_Me_Now_(Chris_Brown_song)' }
 - id: gimme-some-more
@@ -104,6 +104,36 @@
   note: 插值了 Red Hot Chili Peppers 的 "Give It Away"。
   sources:
     - { title: 'Wikipedia – Break Ya Neck', url: 'https://en.wikipedia.org/wiki/Break_Ya_Neck' }
+- id: 60-second-assassins
+  title: 60 Second Assassins
+  artists: [busta-rhymes, twista, bone-thugs-n-harmony]
+  credit: DJ Kay Slay ft. Busta Rhymes, Layzie Bone, Twista & Jaz-O
+  year: 2010
+  album: Rhyme or Die
+  youtube: eCP34Jiq6L0
+  bilibili: BV18f4y137zd
+  netease: 1340094006
+  youtubeChannel: MixedByX
+  officialUpload: false
+  scene: world
+  note: '纽约 DJ Kay Slay 召集的快嘴合作，Araabmuzik 制作，2010 年 11 月放出，MV 2012 年才发。Stereogum 的说法是，他找了四个"唱得极快"的人，让他们尽可能往快里唱。Layzie Bone 是 Bone Thugs-n-Harmony 的成员；Jaz-O 是 Jay-Z 出道前的师傅，1990 年前后就在纽约唱快嘴。'
+  sources:
+    - { title: 'Fake Shore Drive – DJ Kay Slay feat. Twista, Layzie Bone, Busta Rhymes & Jaz-O「60 Second Assassins」（2010-11-30）', url: 'https://www.fakeshoredrive.com/2010/11/dj-kay-slay-feat-twista-layzie-bone-busta-rhymes-jaz-o-60-second-assassins.html/' }
+    - { title: 'Stereogum – DJ Kay Slay「60 Second Assassins」MV（2012-01-17）', url: 'https://stereogum.com/926412/dj-kay-slay-60-second-assassins-video-feat-busta-rhymes-layzie-bone-twista-jaz-o/news' }
+- id: calm-down
+  title: Calm Down
+  artists: [busta-rhymes, eminem]
+  credit: Busta Rhymes ft. Eminem
+  year: 2014
+  album: 'Extinction Level Event 2: The Wrath of God'
+  youtube: 2Y5J3VUC9qM
+  netease: 28747057
+  youtubeChannel: Busta Rhymes
+  officialUpload: true
+  scene: world
+  note: 'Scoop DeVille 制作，2014 年 7 月作为单曲发行，全长近 6 分钟，后来收进 2020 年的专辑。Busta 说这首一开始只是高能量的说唱歌，Eminem 先回了 42 小节，两人越唱越长，最后各唱了两分半左右。'
+  sources:
+    - { title: 'Wikipedia – Calm Down (Busta Rhymes song)', url: 'https://en.wikipedia.org/wiki/Calm_Down_(Busta_Rhymes_song)' }
 - id: tha-crossroads
   title: Tha Crossroads
   artists: [bone-thugs-n-harmony]
@@ -146,7 +176,7 @@
   youtubeChannel: CEZA
   officialUpload: true
   scene: world
-  note: 土耳其快嘴的标杆曲目。
+  note: 专辑《Rapstar》里的歌，土耳其媒体介绍时常说它是土耳其最快的歌之一，歌词"几乎不可能背下来"。
   sources:
     - { title: 'Wikipedia – Ceza', url: 'https://en.wikipedia.org/wiki/Ceza' }
     - { title: 'Last.fm – Holocaust', url: 'https://www.last.fm/music/Ceza/_/Holocaust' }

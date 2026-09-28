@@ -1079,6 +1079,16 @@
       "video": "https://www.youtube.com/watch?v=n2Zj-3kt53Q",
       "size": "maxresdefault",
       "color": "#080808"
+    },
+    "60-second-assassins": {
+      "video": "https://www.youtube.com/watch?v=eCP34Jiq6L0",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "calm-down": {
+      "video": "https://www.youtube.com/watch?v=2Y5J3VUC9qM",
+      "size": "sddefault",
+      "color": "#080808"
     }
   }
 }
