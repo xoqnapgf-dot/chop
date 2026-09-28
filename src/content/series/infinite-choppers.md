@@ -5,7 +5,7 @@ host: DOWN6
 hostSlug: down6
 scene: world
 years: 2023–2026
-order: 6
+order: 13
 summary: DOWN6 发起的系列，接的是 UC 和 Illest Choppers 停下来之后的空档。每一集都附一张逐段测速表，Kal Paseo、Idylll 最快的段落都出在这里；第三集请到了中国的 MUSHMACH。
 episodes:
   - no: '1'
@@ -52,3 +52,7 @@ UC 在 2019 年第十集之后停了，Illest Choppers 第五集之后也停了�
 ## 中文圈
 
 三集都是 GumBrass 在 B 站首发当天前后搬的；第三集还有 Messiar_80 做的中外双语歌词和解析版。
+
+- 第一集的置顶评论说，这个系列"主要是老前辈带新生代"。
+- 第二集的置顶说，这是 Idylll、DOWN6、Kal Paseo、Asa 这批新生代第一次同台，Bloody Ruckus、Bonez 这些 UC 老将也回来了。评论区有人数了语言：第一集 4 种，第二集 8 种。
+- 第三集的置顶把 DOWN6、Idylll、Troll 称作三位主理人，并说蘑菇 MUSHMACH 是"第一位入选国际一线 Chopper 系列的国人"。这一集算上普通话一共 7 种语言。

@@ -4,7 +4,7 @@ short: IC
 host: MC Rice
 scene: world
 years: 2016–2025
-order: 3
+order: 5
 summary: 法国 MC Rice 召集的国际 chopper 合作，厂牌是 Smokin Beatz Records。比 UC 更"世界"：印地语、法语、他加禄语、土耳其语、匈牙利语都上过，六集一直做到 2025 年的"最终章"。
 episodes:
   - no: IC1
@@ -74,3 +74,5 @@ MC Rice 自己既唱又混，第二集的简介里写"这是 MC Rice 做过最�
 ## 中文圈
 
 貪婪國的子民 2017 年 11 月把前三集搬到 B 站，第四集发布一个多月后也搬了；第五集是森敬文搬的。
+
+Sabotahe 本人在 B 站 IC4 的搬运下面留言："Illest choppers4 巅峰之作"。也有人回他，说自己觉得 IC3 最好听。

@@ -4,7 +4,7 @@ short: 中文
 host: SLC、五里亭亭长、夏淳扬等
 scene: china
 years: 2021–2026
-order: 8
+order: 20
 summary: 中国 chop 圈自己组的几首多人合作：SLC 同名 cypher、B 站的两首 Bilibili Choppers，以及 2026 年夏淳扬发起、十几个人参加的 Chinese Choppers。名字都沿用了 Tech N9ne 那套"Choppers"的叫法。
 episodes:
   - no: SLC
@@ -52,4 +52,4 @@ SLC 一直想做一首同名 cypher，但群里的人没时间、凑不齐，最
 
 2026 年，新一批人接上了：夏淳扬发起的《Chinese Choppers》十几个人、十六分钟，是目前规模最大的中文 chopper 合作；同年 9 月又有了《Bilibili Choppers 2》。
 
-中国的 chopper 也开始上国外的系列：2026 年 1 月，MUSHMACH（蘑菇）上了 DOWN6 的 [Infinite Choppers 3](../infinite-choppers/)。
+中国的 chopper 也开始上国外的系列：2026 年 1 月，MUSHMACH（蘑菇）上了 DOWN6 的 [Infinite Choppers 3](../infinite-choppers/)，GumBrass 在搬运的置顶里说他是"第一位入选国际一线 Chopper 系列的国人"。

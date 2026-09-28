@@ -4,7 +4,7 @@ short: UC
 host: DJ Lil Sprite
 scene: world
 years: 2013–2019
-order: 2
+order: 4
 summary: DJ Lil Sprite（Sprite Beatz）做伴奏、召集人马的地下 chopper 大合唱，2013 到 2019 年一共十集。Crucified、SPLXT、DNA、K-Fix、Interchopper 这批人几乎都是在这里被听众认识的；SPLXT 十集全在。
 episodes:
   - no: UC1
@@ -106,3 +106,5 @@ DJ Lil Sprite 也叫 Sprite Beatz，是做伴奏的。2013 年 1 月，他把十
 ## 中文圈
 
 2017 年 11 月，貪婪國的子民在 B 站把 UC1 到 UC7 一口气搬了过来，大部分还配了歌词；之后 UC8、UC9、UC10 也都是他搬的，一直到 2020 年还在补歌词版和伴奏。
+
+这些搬运下面的评论也很有圈子味：UC7 的 MV 里 Mizury 是在浴室里录的，森敬文管他叫"澡堂式 MV 创始人"，还有人补刀说 UC6 里他是边上厕所边唱；UC1 下面有人说"听来听去还是最喜欢 UC1"。

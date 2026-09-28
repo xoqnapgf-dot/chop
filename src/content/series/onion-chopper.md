@@ -5,7 +5,7 @@ host: Ruffian Rugged & Dumanoid
 hostSlug: ruffian-rugged
 scene: world
 years: 2023–2024
-order: 7
+order: 14
 summary: 奥地利的 Ruffian Rugged 和匈牙利的 Dumanoid 做的合作曲。原版里 Crucified 那段 21.09 是 NahDah 2023 版第 1 名；第二年的全明星 Remix 请了十几个人。
 episodes:
   - no: '1'
