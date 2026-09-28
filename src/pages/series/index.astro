@@ -1,0 +1,174 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '@/layouts/Base.astro';
+import Avatar from '@/components/Avatar.astro';
+import { url } from '@/lib/url';
+import { displayName } from '@/lib/labels';
+import { trackCover, trackThumb } from '@/lib/media';
+import { allSeries, epYear, member, regulars } from '@/lib/series';
+
+const series = await allSeries();
+const artists = new Map((await getCollection('artists')).map((a) => [a.id, a]));
+const tracks = new Map((await getCollection('tracks')).map((t) => [t.id, t]));
+
+// 封面：优先"名场面"那一集的 YouTube 缩略图，其次曲库里对应曲目的封面
+const coverOf = (s: (typeof series)[number]) => {
+  const eps = [...s.data.episodes.filter((e) => e.highlight), ...s.data.episodes];
+  for (const ep of eps) {
+    const img = trackThumb(ep.youtube) ?? (ep.track && tracks.get(ep.track) ? trackCover(tracks.get(ep.track)!.data) : undefined) ?? (ep.netease ? trackThumb(`ne-${ep.netease}`) : undefined);
+    if (img) return img;
+  }
+};
+
+const totalEps = series.reduce((n, s) => n + s.data.episodes.length, 0);
+const people = new Set(series.flatMap((s) => s.data.episodes.flatMap((e) => e.lineup.map((r) => member(r).slug ?? member(r).name.toLowerCase()))));
+const years = series.flatMap((s) => s.data.episodes.map(epYear));
+const y0 = Math.min(...years);
+const y1 = Math.max(...years);
+const span = Array.from({ length: y1 - y0 + 1 }, (_, i) => y0 + i);
+---
+
+<Base title="系列" description="Undaground Choppers、Illest Choppers、Infinite Choppers、Kill 等 chopper 合作系列，逐集整理名单、日期和名场面。">
+  <section class="container-x pt-14 md:pt-20">
+    <p class="eyebrow">Series · {series.length} 个系列 · {totalEps} 集</p>
+    <h1 class="mt-4 text-5xl font-bold md:text-7xl">Choppers 系列</h1>
+    <p class="mt-5 max-w-2xl text-lg text-ink-2">
+      chop 圈的名场面，大多出在这些多人合作里：一个人做伴奏、拉名单，十几个 chopper 每人一段。从 Tech N9ne 的 Midwest Choppers，到地下圈的 Undaground Choppers、Illest Choppers，再到今天的 Infinite Choppers 和中文圈自己的 Chinese Choppers。
+    </p>
+    <dl class="mt-10 grid max-w-2xl grid-cols-3 gap-6 border-t border-line pt-6">
+      <div><dt class="text-xs text-ink-3">系列</dt><dd class="mt-1 font-display text-3xl font-semibold">{series.length}</dd></div>
+      <div><dt class="text-xs text-ink-3">集数</dt><dd class="mt-1 font-display text-3xl font-semibold">{totalEps}</dd></div>
+      <div><dt class="text-xs text-ink-3">参与的人</dt><dd class="mt-1 font-display text-3xl font-semibold">{people.size}</dd></div>
+    </dl>
+  </section>
+
+  <!-- 年表：每个系列一行，每集一个点 -->
+  <section class="container-x mt-16" aria-labelledby="chrono-h">
+    <h2 id="chrono-h" class="text-2xl font-semibold">年表</h2>
+    <p class="mt-2 text-sm text-ink-3">每个点是一集，实心大点是名场面。点一下跳到那一集。</p>
+    <div class="chrono mt-6 overflow-x-auto rounded-2xl border border-line bg-surface p-4">
+      <div class="chrono-grid" style={`--cols:${span.length}`}>
+        <span></span>
+        {span.map((y) => <span class="chrono-y">{y % 5 === 0 || y === y0 || y === y1 ? y : ''}</span>)}
+        {
+          series.map((s) => (
+            <>
+              <a href={url(`series/${s.id}/`)} class="chrono-name link-u" style={`--c:var(${s.data.scene === 'china' ? '--scene-china' : '--scene-world'})`}>{s.data.short ?? s.data.name}</a>
+              {span.map((y) => {
+                const eps = s.data.episodes.filter((e) => epYear(e) === y);
+                return (
+                  <span class="chrono-cell">
+                    {eps.map((e) => (
+                      <a href={url(`series/${s.id}/#ep-${e.no}`)} class:list={['chrono-dot', { hi: e.highlight }]} style={`--c:var(${s.data.scene === 'china' ? '--scene-china' : '--scene-world'})`} title={`${e.title} · ${e.date}`} aria-label={`${e.title}（${e.date}）`} />
+                    ))}
+                  </span>
+                );
+              })}
+            </>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="container-x mt-16 grid gap-6 md:grid-cols-2">
+    {
+      series.map((s) => {
+        const cover = coverOf(s);
+        const regs = regulars(s).slice(0, 5);
+        return (
+          <article class="series-card group card overflow-hidden transition hover:border-line-strong" style={`--c:var(${s.data.scene === 'china' ? '--scene-china' : '--scene-world'})`}>
+            <a href={url(`series/${s.id}/`)} class="block">
+              <div class="relative aspect-[16/8] overflow-hidden bg-black">
+                {cover && <Image src={cover} alt="" widths={[480, 800]} sizes="(min-width: 768px) 560px, 100vw" class="size-full object-cover opacity-80 transition duration-700 group-hover:scale-[1.03] group-hover:opacity-95" />}
+                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+                <span class="series-short font-display">{s.data.short ?? ''}</span>
+                <div class="absolute inset-x-0 bottom-0 p-5 text-white">
+                  <p class="font-mono text-xs text-white/70">{s.data.years} · {s.data.episodes.length} 集</p>
+                  <h2 class="mt-1 text-2xl font-bold sm:text-3xl">{s.data.name}</h2>
+                </div>
+              </div>
+            </a>
+            <div class="p-5">
+              <p class="text-sm text-ink-3">发起：{s.data.hostSlug ? <a href={url(`choppers/${s.data.hostSlug}/`)} class="link-u text-ink-2">{s.data.host}</a> : <span class="text-ink-2">{s.data.host}</span>}</p>
+              <p class="mt-3 text-sm leading-relaxed text-ink-2">{s.data.summary}</p>
+              <div class="mt-4 flex flex-wrap items-center gap-2">
+                <span class="text-xs text-ink-3">常客</span>
+                {regs.map((r) => {
+                  const a = r.m.slug ? artists.get(r.m.slug) : undefined;
+                  return a ? (
+                    <a href={url(`choppers/${a.id}/`)} class="chip gap-1.5 !pl-1">
+                      <Avatar id={a.id} data={a.data} widths={[48]} sizes="24px" class="size-5 rounded-full object-cover" />
+                      {displayName(a.data)}<span class="font-mono text-ink-3">×{r.n}</span>
+                    </a>
+                  ) : (
+                    <span class="chip">{r.m.name}<span class="font-mono text-ink-3">×{r.n}</span></span>
+                  );
+                })}
+              </div>
+              <a href={url(`series/${s.id}/`)} class="mt-5 inline-block text-sm font-semibold text-accent-text link-u">逐集看 →</a>
+            </div>
+          </article>
+        );
+      })
+    }
+  </section>
+</Base>
+
+<style>
+  .chrono-grid {
+    display: grid;
+    grid-template-columns: 5.5rem repeat(var(--cols), minmax(1.35rem, 1fr));
+    align-items: center;
+    row-gap: 0.55rem;
+    min-width: calc(5.5rem + var(--cols) * 1.35rem);
+  }
+  .chrono-y {
+    font-family: var(--font-mono, ui-monospace);
+    font-size: 10px;
+    color: var(--ink-3);
+    text-align: center;
+  }
+  .chrono-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--c);
+    white-space: nowrap;
+  }
+  .chrono-cell {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    height: 1.35rem;
+    align-items: center;
+    border-left: 1px dashed color-mix(in oklab, var(--line) 70%, transparent);
+  }
+  .chrono-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 999px;
+    border: 1.5px solid var(--c);
+    background: var(--surface);
+    transition: transform 0.15s;
+  }
+  .chrono-dot.hi {
+    width: 0.8rem;
+    height: 0.8rem;
+    background: var(--c);
+  }
+  .chrono-dot:hover {
+    transform: scale(1.4);
+  }
+  .series-short {
+    position: absolute;
+    right: 1rem;
+    top: 0.6rem;
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1;
+    color: color-mix(in oklab, var(--c) 70%, white);
+    opacity: 0.9;
+    letter-spacing: -0.02em;
+  }
+</style>

@@ -12,6 +12,7 @@ import { COUNTRY, SPEED_KIND, UNIT, SCENE, STYLE, WINDOW, displayName, placeLabe
 import { url } from '@/lib/url';
 import nd24 from '@/data/nahdah-2024-countries.json';
 import { collabPairs, collabHref, collabYear } from '@/lib/collabs';
+import { seriesOf, member, epDate } from '@/lib/series';
 
 export async function getStaticPaths() {
   // 与人物库同样的顺序：中国区在前，各自按出道年份
@@ -59,6 +60,11 @@ const addSong = (song: Omit<SharedSong, 'others'>, others: string[]) => {
 for (const p of (await collabPairs()).pairs.filter((p) => p.a === id || p.b === id))
   for (const c of p.songs) addSong({ title: c.data.title, year: collabYear(c), href: collabHref(c), external: true }, [p.a, p.b]);
 for (const t of tracks) addSong({ title: t.data.title, year: String(t.data.year ?? ''), href: url(`tracks/#${t.id}`), external: false }, t.data.artists.map((a) => a.id));
+// 上过的 chopper 系列（Undaground Choppers 等）：也算同台
+const mySeries = await seriesOf(id);
+for (const { series: sr, eps } of mySeries)
+  for (const ep of eps)
+    addSong({ title: ep.title, year: ep.date.slice(0, 4), href: url(`series/${sr.id}/#ep-${ep.no}`), external: false }, ep.lineup.map((r) => member(r).slug).filter((x): x is string => !!x));
 const partnerIds = [...new Set([...songMap.values()].flatMap((s) => [...s.others]))];
 const partnerEntries = new Map((partnerIds.length ? await getEntries(partnerIds.map((pid) => ({ collection: 'artists' as const, id: pid }))) : []).filter(Boolean).map((e) => [e.id, e]));
 const sharedSongs = [...songMap.values()]
@@ -149,6 +155,25 @@ const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生
                 ))}
               </ul>
             )}
+          </section>
+        )}
+
+        {mySeries.length > 0 && (
+          <section class="mt-16">
+            <p class="eyebrow mb-5">上过的系列 · {mySeries.reduce((n, x) => n + x.eps.length, 0)} 集</p>
+            <ul class="grid gap-2.5 sm:grid-cols-2">
+              {mySeries.map(({ series: sr, eps }) => (
+                <li class="card p-4">
+                  <a href={url(`series/${sr.id}/`)} class="link-u font-semibold hover:text-accent-text">{sr.data.name}</a>
+                  <p class="mt-1 text-xs text-ink-3">{sr.data.host} · {sr.data.years}</p>
+                  <div class="mt-3 flex flex-wrap gap-1.5">
+                    {eps.map((ep) => (
+                      <a href={url(`series/${sr.id}/#ep-${ep.no}`)} class="chip font-mono" title={`${ep.title} · ${epDate(ep)}`}>{ep.no}</a>
+                    ))}
+                  </div>
+                </li>
+              ))}
+            </ul>
           </section>
         )}
 
