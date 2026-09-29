@@ -972,7 +972,7 @@
     - { title: 'YouTube – United Choppers 2（J Battle Vidz，2016-11-01）', url: 'https://www.youtube.com/watch?v=OhSs0hAsM1k' }
 - id: united-choppers-3
   title: United Choppers 3
-  artists: [j-battle, mizury-mize, leach, mgk-of-armr4]
+  artists: [j-battle, mizury-mize, leach, mgk-of-armr4, mc-rice]
   credit: J Battle ft. ARW, Mizury, Exodu$, MGK of ARMR4, Eclip$e, Leach, MC Rice
   youtube: SNcQq9GJKYQ
   youtubeChannel: J Battle Vidz
@@ -994,9 +994,30 @@
   note: '系列第五集，全长不到三分钟，每人一小段。评论区有人说"不是每首 chopper 歌都得十几分钟长才够硬"，还有人把五集的参与名单整理了出来：J Battle 五集全在。'
   sources:
     - { title: 'YouTube – UNITED CHOPPERS 5（J Battle Vidz，2026-03-21）', url: 'https://www.youtube.com/watch?v=AaFFf7IFrPY' }
+- id: syllabic-war
+  title: Syllabic War
+  artists: [interchopper, mc-rice]
+  credit: Interchopper ft. MC Rice
+  year: 2016
+  album: Syllabic War
+  youtube: GfnzhA18mbs
+  bilibili: BV1pt411V7vJ
+  netease: 1832675276
+  youtubeChannel: zvikito
+  officialUpload: false
+  scene: world
+  confidence: disputed
+  note: 'Interchopper 第一首公开作品，2016 年 6 月发，请的是法国的 MC Rice。快段 1.062 秒 20 个音节，约 18.83，Genius 记为 SPS 社区认可他的三首之一；但 SPS wiki 认为他几乎所有作品都加速过，所以标"有争议"。本人频道现在只剩第二段，这里用的是 2021 年听众存档的完整版；2019 年整张《Syllabic War》上了流媒体。B 站 2019 年由森敬文搬运，配了英文字幕。'
+  sources:
+    - { title: 'YouTube – Interchopper ft MC RICE - Syllabic war (second verse)（IC 频道，2016-06-17）', url: 'https://www.youtube.com/watch?v=Tbla3H_fxNk' }
+    - { title: 'YouTube – zvikito：Interchopper - Syllabic War (full track)（2021-04-18）', url: 'https://www.youtube.com/watch?v=GfnzhA18mbs' }
+    - { title: 'Genius – Interchopper 艺人页', url: 'https://genius.com/artists/Interchopper' }
+    - { title: 'SPS and Chopper Rap Wiki – Interchopper', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Interchopper' }
+    - { title: 'B站 – 森敬文：『说唱搬运』Syllabic war（音节战争）—interchopper ft. MC Rice 英文字幕版（2019）', url: 'https://www.bilibili.com/video/BV1pt411V7vJ/' }
+    - { title: '网易云音乐 – Interchopper：Syllabic War（专辑《Syllabic War》，2019-06-27 上架）', url: 'https://music.163.com/#/song?id=1832675276' }
 - id: illest-choppers-2
   title: Illest Choppers 2
-  artists: [kvr, killhollow, dumanoid, dna-tru-lyricist, kaoz, mgk-of-armr4]
+  artists: [kvr, killhollow, dumanoid, dna-tru-lyricist, kaoz, mgk-of-armr4, mc-rice]
   credit: MC Rice ft. LîL hØllÖw, BoneZ, CRhyme, S7ven Da Don, LEECH, Huslah, Kaoz, MSL, DNA, kVR, Chronic Boss, MGK of ARMR4, DNS & Twissler
   youtube: L_nDMhnXHLM
   youtubeChannel: YungDro Productions
@@ -1093,7 +1114,7 @@
     - { title: 'YouTube – Mizury - Killin'' Shit [1st Place Winner Killing Shit CONTEST]（2016-10-18）', url: 'https://www.youtube.com/watch?v=eRzvwgkUFZ8' }
 - id: illest-choppers-4
   title: Illest Choppers 4
-  artists: [mgk-of-armr4, dumanoid, sabotahe, don-xperto, the-jackal, yung-revival, kardiyak, mcbustaflo]
+  artists: [mgk-of-armr4, dumanoid, sabotahe, don-xperto, the-jackal, yung-revival, kardiyak, mcbustaflo, mc-rice]
   credit: MC Rice ft. Don Xperto, DNS（Dumanoid）, Fenksta, IAMCHRISCRAIG, The Jackal, Kardiyak, MCBustaflow, MGK of ARMR4, Nihilist, Sabotahe, SM The Ripper, Trust Tha Touch, VBL, Yung Revival
   youtube: RLQEutWjQxI
   bilibili: BV1MW41167Bk
@@ -1107,7 +1128,7 @@
     - { title: 'YouTube – MC Rice Presents ILLEST CHOPPERS 4（2018-08-13）', url: 'https://www.youtube.com/watch?v=RLQEutWjQxI' }
 - id: planetary-choppers
   title: Planetary Choppers
-  artists: [interchopper, j-battle]
+  artists: [interchopper, j-battle, mc-rice]
   credit: Smokin Beatz Records ft. Nihilist, SM, MC Rice, J Battle, Criminal-R.O, Kw!n, Ice Dee, Interchopper
   youtube: 1-txdwgGtqA
   bilibili: BV1hx411V7Aa
@@ -1121,7 +1142,7 @@
     - { title: 'B站 – 貪婪國的子民：Planetary Choppers（2017-11-21）', url: 'https://www.bilibili.com/video/BV1hx411V7Aa/' }
 - id: kill-4
   title: Kill 4（Paslangin 4）
-  artists: [sabotahe, mgk-of-armr4]
+  artists: [sabotahe, mgk-of-armr4, mc-rice]
   credit: Aktibar x Sabotahe ft. Global Choppers（Reszback, CRhyme, Liquiid Vortex, MC Rice, MGK of ARMR4 等）
   youtube: Q9Z1qXV47Zs
   youtubeChannel: Aktibar Official
@@ -1371,7 +1392,7 @@
     - { title: 'NahDah Vebb – The Fastest Rapper from Every Country（2024）曲目表', url: 'https://docs.google.com/spreadsheets/d/1q6ccbONUj_yDxAbRCYVqQK5DLmxcQ4I6wlK_zVeaz0o' }
 - id: unknown-cypher-5
   title: Unknown Cypher 5
-  artists: [faraway, down6, troll]
+  artists: [faraway, down6, troll, mc-rice]
   credit: mana（Unknown）制作，ft. DOWN6、Kenos、Hasimoco、MC Rice、SKELETONE、druid、Muskrat、Troll、Branx、Teri、Faraway 等
   scene: world
   year: 2024

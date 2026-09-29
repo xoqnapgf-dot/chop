@@ -2,6 +2,7 @@
 name: Illest Choppers
 short: IC
 host: MC Rice
+hostSlug: mc-rice
 scene: world
 years: 2016–2025
 order: 5
@@ -10,7 +11,7 @@ episodes:
   - no: IC1
     title: Illest Choppers
     date: '2016'
-    lineup: ['kVr@kvr', Psikosis, MC Rice, 'Interchopper@interchopper', Criminal-R.O, Tha Skeptic, 'MGK of ARMR4@mgk-of-armr4', Unyque, Abstract MC]
+    lineup: ['kVr@kvr', Psikosis, 'MC Rice@mc-rice', 'Interchopper@interchopper', Criminal-R.O, Tha Skeptic, 'MGK of ARMR4@mgk-of-armr4', Unyque, Abstract MC]
     note: 2016 年年中先发在 Interchopper 的频道上，10 月 Smokin Beatz 重传。LNE Beatz 做伴奏，Interchopper 剪 MV。Psikosis 和 Tha Skeptic 来自 Mental Cases。Interchopper 这段进过 NahDah 2023 版第 5 名（20.10），后来被判定加速。
     youtube: M62tbDEmx-s
     bilibili: BV1cx411j7tT
@@ -18,7 +19,7 @@ episodes:
   - no: IC2
     title: Illest Choppers 2
     date: '2016-12-20'
-    lineup: ['LîL hØllÖw@killhollow', BoneZ, CRhyme, S7ven Da Don, LEECH, Huslah, 'Kaoz@kaoz', MSL, 'DNA@dna-tru-lyricist', 'kVr@kvr', Chronic Boss, 'MGK of ARMR4@mgk-of-armr4', MC Rice, 'DNS@dumanoid', Twissler]
+    lineup: ['LîL hØllÖw@killhollow', BoneZ, CRhyme, S7ven Da Don, LEECH, Huslah, 'Kaoz@kaoz', MSL, 'DNA@dna-tru-lyricist', 'kVr@kvr', Chronic Boss, 'MGK of ARMR4@mgk-of-armr4', 'MC Rice@mc-rice', 'DNS@dumanoid', Twissler]
     note: 15 个人，Mr.MorenoBeats 做伴奏，MC Rice 自己混音、剪视频，简介说这是他"做过最史诗的一首"。波兰的 kVr 这段测到 19.86，NahDah 2021 版第 5 名用的就是它；他本人后来不想让这段算数，2023 版改用了别的歌。这里的 LEECH 不是加拿大的 Leach。
     youtube: L_nDMhnXHLM
     bilibili: BV1cx411j7YD
@@ -26,14 +27,14 @@ episodes:
   - no: IC3
     title: Illest Choppers 3
     date: '2017-05-20'
-    lineup: [Don DaDa, PooG Da Devil, Kxng E.R.A, Saint Sinister, Nameless, MC Rice, Mack Varpe, The Ghostwriter, SM, Kole Rawk, LEECH, Funky M.I.C, Illuzev Greenz, MadLogic, Chanok, Weedy]
+    lineup: [Don DaDa, PooG Da Devil, Kxng E.R.A, Saint Sinister, Nameless, 'MC Rice@mc-rice', Mack Varpe, The Ghostwriter, SM, Kole Rawk, LEECH, Funky M.I.C, Illuzev Greenz, MadLogic, Chanok, Weedy]
     note: 简介说这集有"印地语、法语、他加禄语"等好几种语言，中间和结尾是 MC Rice 的 hook。评论区有人说它"比 Worldwide Choppers 还 worldwide"。
     youtube: Zyn9fDAvDDI
     bilibili: BV1cx411j7iN
   - no: IC4
     title: Illest Choppers 4
     date: '2018-08-13'
-    lineup: [MC Rice, 'Yung Revival@yung-revival', Trust Tha Touch, Fenksta, 'MC BustaFlow@mcbustaflo', Kxng Era, Nihilist, 'MGK of ARMR4@mgk-of-armr4', 'DNS@dumanoid', VBL, 'The Jackal@the-jackal', 'Sabotahe@sabotahe', 'Lyrah@lyrah', 'FyberTest@kardiyak', SM, 'Don Xperto@don-xperto']
+    lineup: ['MC Rice@mc-rice', 'Yung Revival@yung-revival', Trust Tha Touch, Fenksta, 'MC BustaFlow@mcbustaflo', Kxng Era, Nihilist, 'MGK of ARMR4@mgk-of-armr4', 'DNS@dumanoid', VBL, 'The Jackal@the-jackal', 'Sabotahe@sabotahe', 'Lyrah@lyrah', 'FyberTest@kardiyak', SM, 'Don Xperto@don-xperto']
     note: 16 个人，后来 NahDah 榜上的好几个名字都在这一集。土耳其的 FyberTest（Kardiyak）这段是 NahDah 2023 版第 28 名（15.28），评论区最常被点名；芭蕾哥 MC BustaFlow 的段落后来在 B 站被做成了逐字歌词视频。
     youtube: RLQEutWjQxI
     bilibili: BV1MW41167Bk
@@ -42,7 +43,7 @@ episodes:
   - no: IC5
     title: Illest Choppers 5
     date: '2019-10-20'
-    lineup: ['DNA@dna-tru-lyricist', Jay Razzkull, The GhostWriter, Trust Tha Touch, LyteSpeed, DCO, SM, LiquiidVortex, MC Rice]
+    lineup: ['DNA@dna-tru-lyricist', Jay Razzkull, The GhostWriter, Trust Tha Touch, LyteSpeed, DCO, SM, LiquiidVortex, 'MC Rice@mc-rice']
     note: 英国的 Jallen Beats 做伴奏，MC Rice 混音。评论区有中文留言："时隔一年，终于又来了！"
     youtube: 0kmZVy2epDw
     bilibili: BV1uE411e7oE

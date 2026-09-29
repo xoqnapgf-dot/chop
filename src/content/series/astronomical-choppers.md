@@ -16,8 +16,8 @@ episodes:
   - no: '2'
     title: Astronomical Choppers 2
     date: '2024-11-26'
-    lineup: []
-    note: SameLevel 做伴奏，Troll 混音。简介没列名单。
+    lineup: [palessi, MRGVN, LTrains999, Titan]
+    note: SameLevel 做伴奏，Troll 混音。简介没列名单，这里只写 2025 年 justvii 那期测速榜里点到名的几个人：LTrains999 这段 16.35，MRGVN 14.00，palessi 大约 10.74。
     youtube: blvzgSHMR6k
   - no: '3'
     title: Astronomical Choppers III
@@ -28,6 +28,7 @@ episodes:
     highlight: true
 sources:
   - { title: 'YouTube – Wyntyrr：Astronomical Choppers 1–3（2024–2026）', url: 'https://www.youtube.com/watch?v=_wa4rksFcBw' }
+  - { title: 'YouTube – justvii：Top 7 Fastest Astronomical Choppers 2 Verses（2025-06-10，置顶评论有修正）', url: 'https://www.youtube.com/watch?v=KMnfOZKZ2LM' }
 ---
 
 三集都是歌词视频，由 Wyntyrr 剪。第三集的简介写得很坦白：原定的混音师忙不过来，自己花了一个多月找人，最后是 Troll 帮忙混完的；"我百分之百确定这是这个系列的最后一集"。

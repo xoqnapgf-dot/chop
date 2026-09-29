@@ -48,11 +48,12 @@ speed:
     syllables: 21
     seconds: 1
     confidence: pending
-    note: 'SPS 社区的测算（1 秒 21 个音节，计算：Wedere）。第二份只找到 SPS 圈测算者 devrimfastrap 在 THE CREM 测速短视频下的留言"其实是 21"，没有完整算式，所以还标待核实。'
+    note: 'SPS 社区的测算（1 秒 21 个音节，计算：Wedere）。第二份只找到 SPS 圈测算者 devrimfastrap 在 THE CREM 测速短视频下的留言"其实是 21"，没有完整算式；另有听众 2026 年给《Infinite Choppers》里他那段配歌词测速，评论里算的是 1 秒 20 个音节，差了一个音节，所以还标待核实。'
     sources:
       - { title: 'SPS and Chopper Rap Wiki – Crucified', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Crucified' }
       - { title: 'SPS and Chopper Rap Wiki – Infinite choppers 1（计算：Wedere）', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Infinite_choppers_1' }
       - { title: 'YouTube – THE CREM：How fast is crucified infinite choppers?（评论区有测算）', url: 'https://www.youtube.com/shorts/YjtNzArCKmU' }
+      - { title: 'YouTube – MCMusicc：DOWN6 Infinite Choppers (Crucified Verse Calc&Lyrics)（2026-01-28）', url: 'https://www.youtube.com/watch?v=K6SChQQazWw' }
   - value: 24.9
     unit: syl/s
     label: 《Surprise》视频标题的自称

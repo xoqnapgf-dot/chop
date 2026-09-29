@@ -18,8 +18,9 @@ episodes:
 sources:
   - { title: 'YouTube – Trash Music Presents: Speed Demons 2（2017-05-30）', url: 'https://www.youtube.com/watch?v=PNTjoowiFP0' }
   - { title: 'YouTube – Sketti - Speed Demons 3（听众从 B 站扒下来的片段，2021）', url: 'https://www.youtube.com/watch?v=r1N1t2EynbM' }
+  - { title: 'B站 – kagamiKILL_Sound：【说唱搬运】Sketti（MistaSL）-《Speed Demons 3》（2021-01-25）', url: 'https://www.bilibili.com/video/BV1gy4y1p7Tz/' }
 ---
 
 简介说 Speed Demons 是 MSL 的 chopper 系列，第二集由 Trash Music 出品。MSL 也在 Discord Division 的 Disabled Choppers 里唱过，后来改名 Sketti。
 
-第一集没找到公开上传。第三集在 YouTube 上已经找不到完整版，只剩一个听众 2021 年"从 B 站扒下来"的 Sketti 片段，评论区有人说第三段是 Idylll。
+第一集没找到公开上传。第三集在 YouTube 上已经找不到了。B 站 2021 年 1 月有 kagamiKILL_Sound 搬运过，标题写的是"Sketti（MistaSL）"，五里亭亭长在下面回了句"日常搬运"，搬运者自己说"怎么最后少一块"；同年一个外国听众又从 B 站把它扒回 YouTube，评论区有人说第三段是 Idylll。

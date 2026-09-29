@@ -47,10 +47,12 @@ speed:
     syllables: 21
     seconds: 1.048
     confidence: disputed
-    note: 'SPS wiki 上 Wedere 的测算，他本人频道上的练习视频也常标 19–22。但这和他正式作品一贯只有 15 左右的测算差得太远，不能当成他的真实水平。'
+    note: 'SPS wiki 上 Wedere 的测算，他本人频道上的练习视频也常标 19–22。但这和他正式作品一贯只有 15 左右的测算差得太远：2024 年底 LUC1DD 的《Limbo Cypher》简介给他那段标的是 14.81；同年《Bloody Choppers 5》他在 Wedere 的榜上和 Dumanoid 几乎并列第一，他自己留言说"我以为我这段只有 15 整"。所以这个数字不能当成他的常态。'
     sources:
       - { title: 'SPS and Chopper Rap Wiki – Infinite choppers 1（计算：Wedere）', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Infinite_choppers_1' }
       - { title: 'YouTube – INFINITE CHOPPERS | The Jackal''s Verse（本人频道，2023-07-28）', url: 'https://www.youtube.com/watch?v=DDD3jhy2nng' }
+      - { title: 'YouTube – scnic：LUC1DD - Limbo Cypher（2024-12-24，简介列了每段 SPS）', url: 'https://www.youtube.com/watch?v=wsb5UGOQqSE' }
+      - { title: 'YouTube – Wedere：FASTEST VERSES on BLOODY CHOPPERS 5（2024-11-17）', url: 'https://www.youtube.com/watch?v=G5gtHBYLDIw' }
 sources:
   - { title: 'YouTube – The Jackal Rapper（本人频道，简介："Fastest Rapper in Oceania"）', url: 'https://www.youtube.com/@TheJackalRapper' }
   - { title: 'YouTube – Dedicated (Ft. DAX)（本人频道，2018）', url: 'https://www.youtube.com/watch?v=uXZUPyC5ZnY' }

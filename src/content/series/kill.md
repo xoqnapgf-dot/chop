@@ -22,7 +22,7 @@ episodes:
   - no: '4'
     title: Kill 4（Paslangin 4）
     date: '2018-11-06'
-    lineup: [Reszback, Aktibar, CRhyme, Rizkie, Liquiid Vortex, 'Sabotahe@sabotahe', MC Rice, JRhyme, Flowkey, Krayziee Killaa, Pluma, Gato, MKLM, C-Mark, Esines, Apprentice, 'MGK of ARMR4@mgk-of-armr4']
+    lineup: [Reszback, Aktibar, CRhyme, Rizkie, Liquiid Vortex, 'Sabotahe@sabotahe', 'MC Rice@mc-rice', JRhyme, Flowkey, Krayziee Killaa, Pluma, Gato, MKLM, C-Mark, Esines, Apprentice, 'MGK of ARMR4@mgk-of-armr4']
     note: 第一次标"Global Choppers"，法国的 MC Rice、Illest Choppers 厂牌 Smokin Beatz 都挂了名。MGK of ARMR4 压轴，他这段 16.19 是 NahDah 2021 版第 9 名。
     youtube: Q9Z1qXV47Zs
     track: kill-4
@@ -38,19 +38,19 @@ episodes:
   - no: '6'
     title: Kill 6（Paslangin 6）
     date: '2020-12-23'
-    lineup: [Resz, Gak47, MC Rice, Plain, Bonez, Aktibar, Krayzie Killa, Taneshi, Kalibre22, Ploky, Liquid Vortex, 'Sabotahe@sabotahe']
+    lineup: [Resz, Gak47, 'MC Rice@mc-rice', Plain, Bonez, Aktibar, Krayzie Killa, Taneshi, Kalibre22, Ploky, Liquid Vortex, 'Sabotahe@sabotahe']
     note: 伴奏是 MC Rice 做的。简介说这首有美国、法国、波兰、俄罗斯和菲律宾的 MC。
     youtube: hlYNCfk-ZRo
   - no: '7'
     title: Kill 7（Paslangin 7.0）
     date: '2023-01-14'
-    lineup: [BlackFoot505, Resz, SieJohn, MC Rice, Sinko, Mz Reign, Shadmoss, Bonez, Beltran, 'CrisOne@crisone', Rhymaxx, Aktibar, 'Sabotahe@sabotahe']
+    lineup: [BlackFoot505, Resz, SieJohn, 'MC Rice@mc-rice', Sinko, Mz Reign, Shadmoss, Bonez, Beltran, 'CrisOne@crisone', Rhymaxx, Aktibar, 'Sabotahe@sabotahe']
     note: 伴奏 Aktibar 自己做。标题后来加了"Awarded Best Cypher"。
     youtube: D5ZJsm_-3jc
   - no: '8'
     title: Kill 8
     date: '2026-06-29'
-    lineup: [Oxsmugg, MC Rice, Baddee, 'Dumanoid@dumanoid', Aktibar, 'HeureCa@heureca', Rhymaxx, Ploky, 'DOWN6@down6', 'Idylll@idylll', 'Sabotahe@sabotahe', 'Ruffian Rugged@ruffian-rugged']
+    lineup: [Oxsmugg, 'MC Rice@mc-rice', Baddee, 'Dumanoid@dumanoid', Aktibar, 'HeureCa@heureca', Rhymaxx, Ploky, 'DOWN6@down6', 'Idylll@idylll', 'Sabotahe@sabotahe', 'Ruffian Rugged@ruffian-rugged']
     note: 美国、菲律宾、法国、匈牙利、芬兰、奥地利的人同台，Infinite Choppers 那批人第一次上 Kill。Ruffian Rugged 留言说"终于上了这个系列，很荣幸"。
     youtube: thD8UmJcke0
     highlight: true
