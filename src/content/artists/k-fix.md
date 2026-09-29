@@ -7,6 +7,7 @@ region: 北美
 style: chopper
 styleNote: 地下 chopper cypher 的老面孔，作品是孟菲斯地下那种阴暗、horror 风格的说唱，高速段落一直是他的招牌；UC3 下面 DNA 说他的快段和 SplytSecond 的"很难分高下"。
 tags: [孟菲斯, Undaground Choppers, Kaotic Klique, DNA]
+youtube: { channelId: UCOZtF7Gsv9h-PLLly6TcUgQ, handle: '@therealk-fix', kind: official }
 useBanner: false
 related: [kaoz, dna-tru-lyricist, splxt, mizury-mize]
 speed:

@@ -34,7 +34,7 @@ episodes:
   - no: IC4
     title: Illest Choppers 4
     date: '2018-08-13'
-    lineup: ['MC Rice@mc-rice', 'Yung Revival@yung-revival', Trust Tha Touch, Fenksta, 'MC BustaFlow@mcbustaflo', Kxng Era, Nihilist, 'MGK of ARMR4@mgk-of-armr4', 'DNS@dumanoid', VBL, 'The Jackal@the-jackal', 'Sabotahe@sabotahe', 'Lyrah@lyrah', 'FyberTest@kardiyak', SM, 'Don Xperto@don-xperto']
+    lineup: ['MC Rice@mc-rice', 'Yung Revival@yung-revival', Trust Tha Touch, Fenksta, 'MC BustaFlow@mcbustaflo', Kxng Era, 'Nihilist@nihilist', 'MGK of ARMR4@mgk-of-armr4', 'DNS@dumanoid', VBL, 'The Jackal@the-jackal', 'Sabotahe@sabotahe', 'Lyrah@lyrah', 'FyberTest@kardiyak', SM, 'Don Xperto@don-xperto']
     note: 16 个人，后来 NahDah 榜上的好几个名字都在这一集。土耳其的 FyberTest（Kardiyak）这段是 NahDah 2023 版第 28 名（15.28），评论区最常被点名；芭蕾哥 MC BustaFlow 的段落后来在 B 站被做成了逐字歌词视频。
     youtube: RLQEutWjQxI
     bilibili: BV1MW41167Bk

@@ -10,7 +10,7 @@ episodes:
   - no: LC1
     title: LT9 Choppers 1
     date: '2021-01-29'
-    lineup: [Chopra The Spitter, Prettyboy Enzo, Branx, Nihilist, Official Swago, Dark Cypher, Lucas TDD 999, .Archer]
+    lineup: [Chopra The Spitter, Prettyboy Enzo, Branx, 'Nihilist@nihilist', Official Swago, Dark Cypher, Lucas TDD 999, .Archer]
     note: 伴奏是 UC9 的 instrumental。Official Swago 混音。评论区有人说"用了完美的伴奏"。
     youtube: EYqb6Nh9xkw
   - no: LC2

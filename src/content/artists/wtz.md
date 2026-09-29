@@ -8,6 +8,7 @@ region: 网络
 activeSince: 2020
 style: fast
 styleNote: 以快嘴出名，翻唱幼杀的快嘴歌起家，自己的《狂躁》在石狐九和的测速素材库里测到 12.37。本人和圈内都当他是快嘴，不是 chopper。
+photoSource: { site: netease, id: 33612448, image: avatar }
 tags: [幸存者联盟, 幼稚园杀手, 翻唱]
 related: [zhao-chenlong, kindergarten-killer]
 speed:

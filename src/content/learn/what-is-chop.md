@@ -48,7 +48,7 @@ SPS 是 syllables per second（每秒音节数）。海外 chopper 圈里有个�
 早年常被拿来举例的两个名字：
 
 - **LYB**：2017 年前后 YouTube 上的一个新人。快段基本靠弹舌撑速度，评论区一堆人把他那段写成"grrrrrr"；视频标题却一个比一个吹得高："32.2 SPS""38.1 SPS"，最夸张的一条写着"世界最快的即兴，46.2 SPS，LEGIT"。The Jackal 在他视频下面留言："一到快段你就是在滚同一个音节，让它听起来更快，其余的根本听不清。我不怀疑你脑子里有词，但你没把它们都说出来。"听众放慢了逐字数，最快的地方大约在 18 到 20。
-- **Nihilist**：中文圈叫他"虚无"，美国人。2017 年的《Planetary Choppers》由他唱第一段、Interchopper 压轴，2018 年又上了 MC Rice 的《Illest Choppers 4》。他那首《Worldwide Choppers》Remix 一直传着"30 多 SPS"的说法，评论区有人写 33，但听众各自测出来在 17.7 到 21.9 之间。2019 年这首被搬到 B 站时，就有人回"这才 17"。LYB 当年在视频简介里列过一份《Cryptic Choppers》的名单，里面也有他。
+- **[Nihilist](../../choppers/nihilist/)**：中文圈叫他"虚无"，美国人。2017 年的《Planetary Choppers》由他唱第一段、Interchopper 压轴，2018 年又上了 MC Rice 的《Illest Choppers 4》。他那首《Worldwide Choppers》Remix 一直传着"30 多 SPS"的说法，评论区有人写 33，但听众各自测出来在 17.7 到 21.9 之间。2019 年这首被搬到 B 站时，就有人回"这才 17"。LYB 当年在视频简介里列过一份《Cryptic Choppers》的名单，里面也有他。
 
 所以 SPS kid 和 chopper 正好是两个方向：**chopper 快，而且每个音节都是词、有 flow、能现场唱出来**；SPS kid 只剩一个数字。
 
