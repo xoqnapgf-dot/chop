@@ -45,10 +45,11 @@ speed:
     window: burst
     syllables: 12
     seconds: 0.99
-    confidence: pending
-    note: '瘦恒 SoulHan 的歌，小安迪客串（2017）。窗口 0.99 秒，不满 1 秒，但超过一般要求的 0.7 秒。'
+    confidence: verified
+    note: '瘦恒 SoulHan 的歌，小安迪客串（2017）。窗口 0.99 秒，不满 1 秒，但超过一般要求的 0.7 秒。石狐九和 2021 年测同一首更长的一段约 11.11，窗口长、数字略低，两家对得上。'
     sources:
       - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
+      - { title: 'B站 – 石狐九和：众神归位！中文快嘴语速TOP32（2021-05-30）', url: 'https://www.bilibili.com/video/BV1M64y1k7wg/' }
   - value: 11.7
     unit: char/s
     label: '《四哥购币》最快一段 · 排第 4'
@@ -69,11 +70,12 @@ speed:
     window: burst
     syllables: 19
     seconds: 1.83
-    confidence: pending
-    note: '深蓝儿童《宅の死》（2019）。五里亭亭长更早的《语速最快的七位中文rapper》也测过这首：1.85 秒 18 个字 ≈ 9.7，和这次差一个字。'
+    confidence: verified
+    note: '深蓝儿童《宅の死》（2019）。五里亭亭长更早的《语速最快的七位中文rapper》也测过这首：1.85 秒 18 个字 ≈ 9.7，和这次差一个字。石狐九和另测了一段十秒多的，约 10.25，两家对得上。'
     sources:
       - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
       - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
+      - { title: 'B站 – 石狐九和：众神归位！中文快嘴语速TOP32（2021-05-30）', url: 'https://www.bilibili.com/video/BV1M64y1k7wg/' }
   - value: 10.25
     unit: char/s
     label: '《噬》一段 · 中文快嘴 TOP32 第 27'
@@ -82,10 +84,11 @@ speed:
     window: short
     syllables: 107
     seconds: 10.44
-    confidence: pending
-    note: '107 ÷ 10.44 ≈ 10.25，一口气十秒多。同一期《Rap Soldier》排第 9，约 11.11。石狐九和这期只收 50 字以上、平均不低于 10 字/秒的段落，逐帧计时。'
+    confidence: verified
+    note: '107 ÷ 10.44 ≈ 10.25，一口气十秒多。同一期《Rap Soldier》排第 9，约 11.11。石狐九和这期只收 50 字以上、平均不低于 10 字/秒的段落，逐帧计时。五里亭亭长测这首最快的 1.83 秒是 10.4，和这里基本一致。'
     sources:
       - { title: 'B站 – 石狐九和：众神归位！中文快嘴语速TOP32（2021-05-30）', url: 'https://www.bilibili.com/video/BV1M64y1k7wg/' }
+      - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
 sources:
   - { title: '知乎 – 小安迪，靠作品说话的"活死人"', url: 'https://zhuanlan.zhihu.com/p/42062345' }
   - { title: '知乎 – 小安迪的深蓝儿童退出活死人厂牌', url: 'https://zhuanlan.zhihu.com/p/55226303' }
@@ -123,7 +126,7 @@ B 站 UP 主五里亭亭长 2021 年做过一期"小安迪最快的五首歌"，
 | 4 | 《四哥购币》 | 17 ÷ 1.45 | 11.7 |
 | 5 | 《噬》 | 19 ÷ 1.83 | 10.4 |
 
-《狗怕黑》那一句石狐九和也单独测过（1.16 秒 14 个字 ≈ 12.07），字数一样、计时只差 0.05 秒，所以标为已证实；其余四首目前只找到五里亭亭长一家的测算，标为待核实。
+《狗怕黑》那一句石狐九和也单独测过（1.16 秒 14 个字 ≈ 12.07），字数一样、计时只差 0.05 秒，所以标为已证实。《Rap Soldier》和《噬》石狐九和也测过更长的段落（约 11.11 和 10.25），和亭长的数字对得上，同样标已证实；《活死人 2018 Cypher》和《四哥购币》目前只找到亭长一家，标为待核实。
 
 ## 《Real One》：他自己说的"唯一一首 chop"
 

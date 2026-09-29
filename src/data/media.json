@@ -586,6 +586,15 @@
       "kind": "video",
       "color": "#080808",
       "fetchedAt": "2026-09-28"
+    },
+    "mc-rice": {
+      "channelUrl": "https://www.youtube.com/channel/UCKApcOjSbOKpQ-yutcU3khA",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/gARvNkIRARjTlZouMMvTgPBbR1uG2L32thPaKEWi-krCx64A-2Qxr7rFnneXT_9Vb7B5ZMyS=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/hSrRhOkr5P8nK-nsJeDcu7uYW6uphs-1qwzqa-oblhAxp5_zgD7yYetHYA8Q12kHG0nSNqTmdyA=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080828",
+      "fetchedAt": "2026-09-28"
     }
   },
   "tracks": {
@@ -1116,6 +1125,11 @@
     },
     "planetary-choppers": {
       "video": "https://www.youtube.com/watch?v=1-txdwgGtqA",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "syllabic-war": {
+      "video": "https://www.youtube.com/watch?v=GfnzhA18mbs",
       "size": "maxresdefault",
       "color": "#080808"
     }

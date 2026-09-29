@@ -33,10 +33,11 @@ speed:
     syllables: 23
     seconds: 1.065
     confidence: pending
-    note: '23 ÷ 1.065 ≈ 21.60，SPS wiki 记为他最快的一段。之前的纪录是《Gas Pedal Remix》的 21.50（22 ÷ 1.023），但他本人不想让那段算数，因为那只是他《United Choppers 4》那段的改版。'
+    note: '23 ÷ 1.065 ≈ 21.60，SPS wiki 记为他最快的一段。之前的纪录是《Gas Pedal Remix》的 21.50（22 ÷ 1.023），但他本人不想让那段算数，因为那只是他《United Choppers 4》那段的改版。TrollatorBR 2025 年 12 月的《DOWN6 最快的 20 段》（测算：NFM）也是 21.60，两处一致，不过 SPS wiki 的数字很可能就出自同一位测算者。'
     sources:
       - { title: 'SPS and Chopper Rap Wiki – DOWN6', url: 'https://sps-and-chopper-rap.fandom.com/wiki/DOWN6' }
       - { title: 'YouTube – DOWN6 - LANDFILL（本人频道，2025-08-20）', url: 'https://www.youtube.com/watch?v=Zz9A3-0WHls' }
+      - { title: 'YouTube – TrollatorBR："TOP 20" DOWN6 Fastest Verses (2025)（测算：NFM）', url: 'https://www.youtube.com/watch?v=T6-Ly5sJjgI' }
 sources:
   - { title: 'YouTube – DOWN6 本人频道', url: 'https://www.youtube.com/@down6official' }
   - { title: 'SPS and Chopper Rap Wiki – DOWN6（曾用名 N-FROST，阿拉巴马）', url: 'https://sps-and-chopper-rap.fandom.com/wiki/DOWN6' }

@@ -12,7 +12,7 @@ tags: [格鲁吉亚, 已退役, Undaground Choppers, 加速争议]
 youtube: { channelId: UCmYuEGJ6CKaPVERYTsrHggQ, handle: '@ic8790', kind: official }
 # 头像用他本人频道的卡通头像（横幅是风景图，不用）
 useBanner: false
-related: [crucified, dna-tru-lyricist, mizury-mize, j-battle]
+related: [crucified, dna-tru-lyricist, mc-rice, mizury-mize]
 speed:
   - value: 18.83
     unit: syl/s
@@ -91,7 +91,7 @@ Interchopper 本名 Papuna Abesadze，来自东欧的**格鲁吉亚**。他 2016
 
 ## 在 chop 圈的位置
 
-他是 DJ Lil Sprite《**Undaground Choppers**》系列的常客，UC4、5、6、7、8 都有他。第一首公开作品是 2016 年 6 月的《**Syllabic War**（100k Counting Contest）》，另外还有 MC Rice 的《Illest Choppers》、《United Choppers 2》等。
+他是 DJ Lil Sprite《**Undaground Choppers**》系列的常客，UC4、5、6、7、8 都有他。第一首公开作品是 2016 年 6 月的《**Syllabic War**（100k Counting Contest）》，请的是法国的 [MC Rice](../mc-rice/)，另外还有 MC Rice 的《Illest Choppers》、《United Choppers 2》等。
 
 2016–2018 年，他被很多人看作当时最快的 chopper 之一，常和 Crucified 相提并论。UC5 那段出来后，圈里甚至讨论他"是人还是机器"。2017 年他在英国牛津的舞台上现场唱了 UC4 的段落。视频标题写的是"牛津大学"，但画面里舞台屏幕上的标志是 **Oxford Brookes University**（牛津布鲁克斯大学），和牛津大学不是同一所学校。
 

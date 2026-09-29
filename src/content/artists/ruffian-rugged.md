@@ -37,11 +37,13 @@ speed:
     window: burst
     syllables: 21
     seconds: 1.044
-    confidence: pending
-    note: '21 ÷ 1.044 ≈ 20.11。SPS wiki 把这段当作他最快的有效成绩。这首是 2024 年发行的，NahDah 2023 版还没收。'
+    confidence: verified
+    note: '21 ÷ 1.044 ≈ 20.11。SPS wiki 把这段当作他最快的有效成绩；2025 年 ILFR 的《IC2 最快 5 段》也是 20.11，排在 Idylll 之后。Wedere 那期 IC2 测速是 NahDah、NFM、Troll、ayng 等人一起核的。这首是 2024 年发行的，NahDah 2023 版还没收。'
     sources:
       - { title: 'SPS and Chopper Rap Wiki – Def ill (Aka Ruffian rugged)', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Def_ill_(Aka_Ruffian_rugged)' }
       - { title: 'YouTube – DOWN6 - INFINITE CHOPPERS 2（2024-06-19）', url: 'https://www.youtube.com/watch?v=n2SmW1OREcA' }
+      - { title: 'YouTube – ILFR：Top 5 fastest IC2 verses（2025-10-05，简介列了数字）', url: 'https://www.youtube.com/watch?v=prHit59gNYc' }
+      - { title: 'YouTube – Wedere：TOP 16 Fastest Verses on INFINITE CHOPPERS 2（2024-06-19）', url: 'https://www.youtube.com/watch?v=fi19Ar56vb0' }
 sources:
   - { title: 'Wikipedia（德语）– Def Ill', url: 'https://de.wikipedia.org/wiki/Def_Ill' }
   - { title: 'FM4 – Der Linzer Rapper Def Ill mischt sich in die Flüchtlingsdiskussion ein（2017-04-05）', url: 'https://fm4.orf.at/stories/2841153/' }

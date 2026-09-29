@@ -171,6 +171,14 @@
   mentions: [Samy Deluxe, Kollegah, ShimmyMC]
   sources:
     - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
+- id: fr
+  name: 法国
+  en: France
+  geo: [46.6, 2.4]
+  summary: 法语 chop 的代表是 MC Rice：他 2016 年起主持 Illest Choppers 系列，同年和 Interchopper 合作《Syllabic War》。NahDah 团队 2024 年逐段测算的"每国最快"里，法国一栏也是他（《#UC10CHALLENGE》，14.00）。
+  sources:
+    - { title: 'NahDah Vebb – The Fastest Rapper from Every Country（2024）曲目表', url: 'https://docs.google.com/spreadsheets/d/1q6ccbONUj_yDxAbRCYVqQK5DLmxcQ4I6wlK_zVeaz0o' }
+    - { title: 'YouTube – MC Rice Officiel 本人频道', url: 'https://www.youtube.com/@mcriceofficiel' }
 - id: it
   name: 意大利
   en: Italy

@@ -22,6 +22,7 @@ export const COUNTRY: Record<string, { name: string }> = {
   RU: { name: '俄罗斯' },
   DK: { name: '丹麦' },
   DE: { name: '德国' },
+  FR: { name: '法国' },
 };
 
 /**

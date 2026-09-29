@@ -24,7 +24,7 @@ episodes:
   - no: '3'
     title: United Choppers 3
     date: '2018-09-04'
-    lineup: ['J Battle@j-battle', ARW, 'Mizury@mizury-mize', Exodu$, 'MGK of ARMR4@mgk-of-armr4', Eclip$e, 'Leach@leach', MC Rice]
+    lineup: ['J Battle@j-battle', ARW, 'Mizury@mizury-mize', Exodu$, 'MGK of ARMR4@mgk-of-armr4', Eclip$e, 'Leach@leach', 'MC Rice@mc-rice']
     note: MGK of ARMR4 唱第一段，NahDah 2023 版第 17 名（16.00）用的就是这段。
     youtube: SNcQq9GJKYQ
     track: united-choppers-3

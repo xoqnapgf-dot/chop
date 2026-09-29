@@ -33,7 +33,7 @@ episodes:
   - no: UC4
     title: Undaground Choppers 4
     date: '2016-01-22'
-    lineup: ['DNA@dna-tru-lyricist', 'SplytSecond@splxt', 'Kaoz@kaoz', 'K-Fix@k-fix', Dez, Criminal R.O., 'Interchopper@interchopper', MC Rice, Mister Hyde, D-Spillz, 'Mizury@mizury-mize', 'Crucified@crucified']
+    lineup: ['DNA@dna-tru-lyricist', 'SplytSecond@splxt', 'Kaoz@kaoz', 'K-Fix@k-fix', Dez, Criminal R.O., 'Interchopper@interchopper', 'MC Rice@mc-rice', Mister Hyde, D-Spillz, 'Mizury@mizury-mize', 'Crucified@crucified']
     note: Kaoz 混音。Interchopper 第一次上 UC；巴西的 Criminal R.O. 是第一个上这个系列的巴西人；法国的 MC Rice 同年开了自己的 Illest Choppers。
     youtube: RdUUxmYNgjo
     bilibili: BV14x411j7Bz

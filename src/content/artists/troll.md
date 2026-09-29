@@ -32,11 +32,11 @@ speed:
     kind: claimed
     by: 'TrollatorBR（本人）'
     window: burst
-    confidence: pending
-    note: '他 2026 年在自己的测速频道列了"我最快的 10 段 verse"，第一名是 The Jackal 的《Donkey Kong》，18.13。这是本人自己算的，目前没有第二家测过。'
+    confidence: disputed
+    note: '他 2026 年在自己的测速频道列了"我最快的 10 段 verse"，第一名是 The Jackal 的《Donkey Kong》，18.13。这是本人自己算的。原视频评论区有听众单测了他 2:03 那处爆发，是 1.122 秒 17 个音节，约 15.15，差了将近 3，所以标"有争议"。'
     sources:
       - { title: 'YouTube – TrollatorBR："TOP 10" Versos Mais Rápidos do Troll（2026-06-16）', url: 'https://www.youtube.com/watch?v=Hi3JIVO2mlA' }
-      - { title: 'YouTube – Jackal - Donkey Kong (Ft. Troll)（2024）', url: 'https://www.youtube.com/watch?v=m7LiwxLWnkc' }
+      - { title: 'YouTube – Jackal - Donkey Kong (Ft. Troll)（2024，评论区有听众单测 2:03 处：17 ÷ 1.122）', url: 'https://www.youtube.com/watch?v=m7LiwxLWnkc' }
 sources:
   - { title: 'YouTube – Troll 本人频道（简介："Trollator (A.K.A. Troll) é um artista do interior de Minas Gerais"）', url: 'https://www.youtube.com/@Trollxakkkkj' }
   - { title: 'YouTube – TrollatorBR 测速频道（和本人频道挂同一个 Instagram：trollxakkkj）', url: 'https://www.youtube.com/@TrollatorBR' }
