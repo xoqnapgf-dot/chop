@@ -7,6 +7,7 @@ region: 网络
 activeSince: 2020
 style: chopper
 styleNote: 中国 chop 圈 QQ 群 Superluminal Choppers 最早的一批成员，歌词里直接唱"当我的 chop 登场的时候""we're superluminal choppers"。SLC 的同名 cypher 一直没录成，他先把自己那段单独发了出来。
+photoSource: { site: netease, id: 36238745, image: avatar }
 tags: [SLC, Superluminal Choppers, chop]
 speed:
   - value: 15.2
@@ -25,6 +26,7 @@ sources:
   - { title: '网易云音乐 – Kastelaro：Superluminal Choppers (Kastelaro Part)（2021-04-04，专辑简介："Superluminal Choppers 1 Kastelaro的个人段落"）', url: 'https://music.163.com/song?id=1836364021' }
   - { title: '网易云音乐 – Triple R 2020 cypher（2020-08-06）', url: 'https://music.163.com/song?id=1468710088' }
   - { title: 'B站 – 石狐九和：中文快嘴top10（新编）（2021-05-19）', url: 'https://www.bilibili.com/video/BV1bh411v7d7/' }
+  - { title: '网易云音乐 – Kastelaro 歌手页', url: 'https://music.163.com/#/artist?id=36238745' }
 ---
 
 Kastelaro 是 2018 年组建的 chop 圈 QQ 群 **Superluminal Choppers**（SLC）最早的一批成员，和 GumBrass、Nero·Wander、Y Herry 一样算是元老。本名、所在城市都没有公开，作品主要发在网易云音乐。

@@ -7,6 +7,7 @@ region: 网络
 activeSince: 2023
 style: chopper
 styleNote: 起步是 boombap，2023 年起在 Undaspeed 系列里专门练 chop；唱过《Bilibili Choppers》最后一段，又被 DOWN6 请进《Infinite Choppers 3》，和 Twisted Insane、Idylll、SPLXT 同台。
+photoSource: { site: netease, id: 51448836, image: avatar }
 tags: [蘑菇, Selfity, Undaspeed, Bilibili Choppers, Infinite Choppers 3]
 related: [zhao-chenlong, down6, cyanvine, xia-chunyang]
 speed:
@@ -37,6 +38,7 @@ sources:
   - { title: '网易云音乐 – 赵辰龙(Dragon X)：M号（专辑《致富》，2019-10-15）', url: 'https://music.163.com/song?id=1430620760' }
   - { title: 'YouTube – 喜欢chop的艾拉：Chinese Choppers Cypher MUSHMACH verse cover（标签 #mushmach #蘑菇）', url: 'https://www.youtube.com/watch?v=qaEeTOjFNPE' }
   - { title: 'NahDah Vebb – The Fastest Rapper from Every Country（2024）曲目表', url: 'https://docs.google.com/spreadsheets/d/1q6ccbONUj_yDxAbRCYVqQK5DLmxcQ4I6wlK_zVeaz0o' }
+  - { title: '网易云音乐 – $elfity 歌手页', url: 'https://music.163.com/#/artist?id=51448836' }
 ---
 
 MUSHMACH 早先在 B 站圈子里叫**蘑菇**，现在发歌用的名字是 **Selfity**。GumBrass 的 YouTube 频道 2023 年给他写的介绍是：来自中国吉林的 boombap rapper，正在努力成为新一代中国 chopper，已经学会了很多 chop 的 flow，能唱得非常快。

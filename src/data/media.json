@@ -595,6 +595,69 @@
       "hasBanner": true,
       "color": "#080828",
       "fetchedAt": "2026-09-28"
+    },
+    "cyanvine": {
+      "photo": {
+        "site": "网易云音乐歌手页",
+        "url": "https://music.163.com/#/artist?id=100316228",
+        "name": "青藤CyanVine"
+      },
+      "color": "#280808",
+      "fetchedAt": "2026-09-29"
+    },
+    "k-fix": {
+      "channelUrl": "https://www.youtube.com/channel/UCOZtF7Gsv9h-PLLly6TcUgQ",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_mT9UjDLe-ObInfAmQTfSJuzou8VzKvWurieWBXJerZ4g=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/HxTUbf9hu1O8fE9laXgwraEW8gaD_shIAAkU-cGVU4m4IxWrj15knxci0JcENdEF_qnphjYS=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#181818",
+      "fetchedAt": "2026-09-29"
+    },
+    "kastelaro": {
+      "photo": {
+        "site": "网易云音乐歌手页",
+        "url": "https://music.163.com/#/artist?id=36238745",
+        "name": "Kastelaro"
+      },
+      "color": "#f8f8e8",
+      "fetchedAt": "2026-09-29"
+    },
+    "mushmach": {
+      "photo": {
+        "site": "网易云音乐歌手页",
+        "url": "https://music.163.com/#/artist?id=51448836",
+        "name": "$elfity"
+      },
+      "color": "#281808",
+      "fetchedAt": "2026-09-29"
+    },
+    "nihilist": {
+      "channelUrl": "https://www.youtube.com/channel/UCLwpTfNGQnXDNAOVnKnkG0Q",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_nuXop4BTeZ9e93CUsIqcaKdZVIolGiQrDOz5YNM1phu-A=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/saRA_-ahr0FgUG1aN5d1zy_OnUOByPoS9OTEURjN_vtOzrR3BauoZO5Lui1kBvRHceYsx4jHSJM=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#080808",
+      "fetchedAt": "2026-09-29"
+    },
+    "spylent": {
+      "photo": {
+        "site": "网易云音乐歌手页",
+        "url": "https://music.163.com/#/artist?id=34055135",
+        "name": "Spylent"
+      },
+      "color": "#f8f858",
+      "fetchedAt": "2026-09-29"
+    },
+    "wtz": {
+      "photo": {
+        "site": "网易云音乐歌手页",
+        "url": "https://music.163.com/#/artist?id=33612448",
+        "name": "WTZ"
+      },
+      "color": "#080808",
+      "fetchedAt": "2026-09-29"
     }
   },
   "tracks": {

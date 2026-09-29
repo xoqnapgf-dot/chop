@@ -7,6 +7,7 @@ region: 网络
 activeSince: 2019
 style: fast
 styleNote: 他出名靠的是文字游戏和双关，B 站上有专门逐句拆解他 wordplay 的视频；快嘴只是《天花板之上》等个别歌里的一段，没有整首唱 chop，所以标快嘴。
+photoSource: { site: netease, id: 34055135, image: avatar }
 tags: [B站, wordplay, 天花板之上]
 speed:
   - value: 11.62
@@ -27,6 +28,7 @@ sources:
   - { title: 'B站 – Jar_V：【文字游戏解析】中文说唱的《天花板之上》最全wordplay解读（2021）', url: 'https://www.bilibili.com/video/BV1aX4y1A71H/' }
   - { title: 'B站 – Spylent：回答粉丝问题+Wordplay教学（2020）', url: 'https://www.bilibili.com/video/BV1J7411d7Hd/' }
   - { title: 'B站 – 石狐九和：中文快嘴top10（新编）（2021-05-19）', url: 'https://www.bilibili.com/video/BV1bh411v7d7/' }
+  - { title: '网易云音乐 – Spylent 歌手页', url: 'https://music.163.com/#/artist?id=34055135' }
 ---
 
 Spylent 是从 B 站起来的 rapper，账号简介写的是"学生 / RAPPER"，粉丝超过一百万。他最有名的是 **wordplay**：同一个词在一句里读出两三层意思，B 站上有人专门逐句拆解他的歌，他自己也发过"Wordplay 教学"。

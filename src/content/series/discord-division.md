@@ -10,13 +10,13 @@ episodes:
   - no: EC1
     title: Elemental Choppers
     date: '2017'
-    lineup: [Mythical, Echo, Isaac, Nihilist, SM, 'Don Xperto@don-xperto', Rapture, 3DVaiT, Pøn-3, Kraymaite, Kxng ERA]
+    lineup: [Mythical, Echo, Isaac, 'Nihilist@nihilist', SM, 'Don Xperto@don-xperto', Rapture, 3DVaiT, Pøn-3, Kraymaite, Kxng ERA]
     note: 系列第一首，Mythical 开场、Echo 第二段。歌词站按段落列了 11 个人，SM 和 3DVaiT 唱的是俄语；另一家歌词站只列了 8 段，多出一个 Chronic Boss，少了 Isaac、Don Xperto、Pøn-3 和 Kraymaite；B 站搬运下面有人说"Chronic Boss 就是 Nihilist"。原视频已删，GumBrass 2019 年把整首搬到了 B 站。
     bilibili: BV1at411T79Y
   - no: EC2
     title: Elemental Choppers 2
     date: '2017'
-    lineup: [LEECH, 'The Jackal@the-jackal', Tennin, Deus, Kxng ERA, NahDah, Lyr1c, Nihilist, Majr Havoc, Tuono, Anonymous-G, Revision-777, 'Mistery@idylll', Echo, Mythical, Danjor, 'MC Rice@mc-rice']
+    lineup: [LEECH, 'The Jackal@the-jackal', Tennin, Deus, Kxng ERA, NahDah, Lyr1c, 'Nihilist@nihilist', Majr Havoc, Tuono, Anonymous-G, Revision-777, 'Mistery@idylll', Echo, Mythical, Danjor, 'MC Rice@mc-rice']
     note: 17 个人，LEECH 开场，MC Rice 收尾。Danjor 2017 年 7 月 9 日先传了自己这段，简介写"谢谢 Echo 请我"；封面上是火、冰、闪电，Nihilist 在下面开玩笑说"还有一堆垃圾是给我的"。整首在 GumBrass 的 B 站搬运里，评论区说"虚无怎么越唱越大声"。
     youtube: 7hIjAI0T4RY
     bilibili: BV1at411T7fc
@@ -29,7 +29,7 @@ episodes:
   - no: EC3
     title: Elemental Choppers 3
     date: '2017'
-    lineup: [Mythical, Echo, Rapture, LYB, Majr Havoc, NahDah, Argo, Tuono, Sioux Chief, D-Struction, Anonymous-G, Nihilist, Deus, MurrK]
+    lineup: [Mythical, Echo, Rapture, LYB, Majr Havoc, NahDah, Argo, Tuono, Sioux Chief, D-Struction, Anonymous-G, 'Nihilist@nihilist', Deus, MurrK]
     note: 14 个人，LYB 也在里面。Anonymous-G（Tokumei）这段后来被人单独传过。
   - no: EC4
     title: Elemental Choppers 4
@@ -47,7 +47,7 @@ episodes:
   - no: DC2
     title: Disabled Choppers 2
     date: '2017-11-05'
-    lineup: [Ghost, Argo, Kazablanca, NahDah, 'Mistery@idylll', M0N5T3RRR, MurrK, Danjor, Kxng ERA, Tuono, ETR, Deus, Tempest, Nihilist, J.S, dvagoh, Echo, 'MC Rice@mc-rice', 'The Jackal@the-jackal', HellFire]
+    lineup: [Ghost, Argo, Kazablanca, NahDah, 'Mistery@idylll', M0N5T3RRR, MurrK, Danjor, Kxng ERA, Tuono, ETR, Deus, Tempest, 'Nihilist@nihilist', J.S, dvagoh, Echo, 'MC Rice@mc-rice', 'The Jackal@the-jackal', HellFire]
     note: 20 个人，SameLevel 做伴奏，M0N5T3RRR 混音。做榜的 NahDah Vebb 自己唱了一段，评论区有人说"没想到 NahDah 能唱这么快"；也有人说这首"领先了好几年"。
     youtube: AaD3LQfSj9k
     highlight: true

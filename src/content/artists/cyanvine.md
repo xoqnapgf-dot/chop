@@ -8,6 +8,7 @@ region: 网络
 activeSince: 2024
 style: chopper
 styleNote: B 站简介自称"不配上国际 cypher 的底层 chopper"。有人问他唱的是什么风格，他在置顶评论里答："这是 chop，追求纯粹的速度感与打击感的音乐"，并推荐大家去听 Crucified、Interchopper、Sabotahe。
+photoSource: { site: netease, id: 100316228, image: avatar }
 tags: [Bilibili Choppers, Chinese Choppers, chop]
 related: [xia-chunyang, mushmach, kastelaro]
 speed:
@@ -31,6 +32,7 @@ sources:
   - { title: '网易云音乐 – Chinese Choppers（2026-05-09）', url: 'https://music.163.com/song?id=3380166290' }
   - { title: '网易云音乐 – Bilibili Choppers 2（2026-09-23）', url: 'https://music.163.com/song?id=3440568361' }
   - { title: 'B站 – 喜欢整活的Zack：青藤CyanVine语速最快的段落top25（2026-02-15）', url: 'https://www.bilibili.com/video/BV135ZsBAEAZ/' }
+  - { title: '网易云音乐 – 青藤CyanVine 歌手页', url: 'https://music.163.com/#/artist?id=100316228' }
 ---
 
 青藤 CyanVine 在《Bilibili Choppers》里的署名是"小青藤呐"，唱的是第一段。那段歌词开门见山："他们都弄不懂什么是 chop 的 flow""一秒钟十五字不在话下，哥一秒钟十八个字依然不在话下"。
