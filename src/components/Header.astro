@@ -37,7 +37,7 @@ const isActive = (href: string) => path.startsWith(url(href));
       >
         <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
         搜索
-        <kbd class="font-mono text-[10px] text-ink-3">/</kbd>
+        <kbd class="font-mono text-xs text-ink-3">/</kbd>
       </a>
       <ThemeToggle />
       <button
@@ -75,8 +75,9 @@ const isActive = (href: string) => path.startsWith(url(href));
 
 <style>
   .site-header {
-    background: color-mix(in oklab, var(--bg) 94%, transparent);
-    border-bottom: 1px solid color-mix(in oklab, var(--line) 70%, transparent);
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 1px 0 color-mix(in oklab, var(--bg) 60%, transparent);
   }
   .nav-link.is-active {
     color: var(--ink);

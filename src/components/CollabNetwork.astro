@@ -64,7 +64,7 @@ const TOP = 6;
           return (
             <a href={url(`choppers/${id}/`)} class="node absolute flex flex-col items-center" style={`left:${p.x}%;top:${p.y}%`} data-node={id}>
               <Avatar id={id} data={a.data} widths={[120]} sizes="64px" class="face size-11 overflow-hidden rounded-full object-cover sm:size-16" />
-              <span class="label mt-1.5 whitespace-nowrap rounded-full px-2 py-0.5 text-[11px] font-semibold sm:text-xs">{name(id)}</span>
+              <span class="label mt-1.5 whitespace-nowrap rounded-full px-2 py-0.5 text-xs font-semibold sm:text-xs">{name(id)}</span>
             </a>
           );
         })

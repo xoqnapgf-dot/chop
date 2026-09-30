@@ -46,7 +46,7 @@ let i = 0;
     <span>单位：每秒音节数（中文按字/秒近似）</span>
     {(['verified', 'disputed', 'pending', 'debunked'] as const).filter((k) => rows.some((r) => r.confidence === k)).map((k) => (
       <span class="inline-flex items-center gap-1.5">
-        <span class="grid size-3.5 place-items-center rounded-full text-[9px] font-bold text-bg" style={`background:${CONFIDENCE[k].color}`}>{CONFIDENCE[k].icon}</span>
+        <span class="grid size-4 place-items-center rounded-full text-[11px] font-bold text-bg" style={`background:${CONFIDENCE[k].color}`}>{CONFIDENCE[k].icon}</span>
         {CONFIDENCE[k].label}
       </span>
     ))}
@@ -77,7 +77,7 @@ let i = 0;
           <div class="pointer-events-none absolute inset-y-0 hidden sm:block" style="left:var(--label-w);right:calc(3.5rem + 1rem)" aria-hidden="true">
             {guides.map((gd) => (
               <div class="absolute inset-y-0 border-l border-dashed border-line-strong" style={`left:${pct(gd.v)}`}>
-                <span class="absolute -top-4 -translate-x-1/2 whitespace-nowrap font-mono text-[10px] text-ink-3">{gd.label}</span>
+                <span class="absolute -top-4 -translate-x-1/2 whitespace-nowrap font-mono text-xs text-ink-3">{gd.label}</span>
               </div>
             ))}
           </div>
@@ -103,7 +103,7 @@ let i = 0;
                     </div>
                   </div>
                   <span class="flex items-center justify-end gap-1.5 font-mono text-sm tabular-nums text-ink">
-                    <span class="grid size-3.5 place-items-center rounded-full text-[9px] font-bold text-bg" style={`background:${c.color}`} title={c.label}>{c.icon}</span>
+                    <span class="grid size-4 place-items-center rounded-full text-[11px] font-bold text-bg" style={`background:${c.color}`} title={c.label}>{c.icon}</span>
                     <span class:list={{ 'line-through opacity-60': r.confidence === 'debunked' }}>{r.value}</span>
                   </span>
                 </li>
@@ -120,7 +120,7 @@ let i = 0;
     ))
   }
 
-  <div class="axis mt-3 hidden font-mono text-[10px] text-ink-3 sm:block" aria-hidden="true">
+  <div class="axis mt-3 hidden font-mono text-xs text-ink-3 sm:block" aria-hidden="true">
     <div class="relative h-4">
       {ticks.map((t) => <span class="absolute -translate-x-1/2" style={`left:${pct(t)}`}>{t}</span>)}
     </div>
@@ -177,7 +177,7 @@ let i = 0;
     background: var(--surface-2);
     border: 1px solid var(--line);
     color: var(--ink-2);
-    font-size: 10px;
+    font-size: 0.8125rem;
     line-height: 1.5;
   }
   .speed-chart {

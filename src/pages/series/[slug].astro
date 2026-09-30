@@ -106,7 +106,7 @@ const eps = [...d.episodes].reverse();
               const a = r.m.slug ? artists.get(r.m.slug) : undefined;
               return (
                 <li class="flex items-center gap-2 text-sm">
-                  {a ? <Avatar id={a.id} data={a.data} widths={[64]} sizes="28px" class="size-7 shrink-0 rounded-full object-cover" /> : <span class="grid size-7 shrink-0 place-items-center rounded-full bg-surface-2 text-[10px] text-ink-3">{r.m.name.slice(0, 2)}</span>}
+                  {a ? <Avatar id={a.id} data={a.data} widths={[64]} sizes="28px" class="size-7 shrink-0 rounded-full object-cover" /> : <span class="grid size-7 shrink-0 place-items-center rounded-full bg-surface-2 text-xs text-ink-3">{r.m.name.slice(0, 2)}</span>}
                   {a ? <a href={url(`choppers/${a.id}/`)} class="min-w-0 truncate link-u">{displayName(a.data)}</a> : <span class="min-w-0 truncate">{r.m.name}</span>}
                   <span class="ml-auto shrink-0 font-mono text-xs text-ink-3">{r.n} 集</span>
                 </li>
@@ -164,7 +164,7 @@ const eps = [...d.episodes].reverse();
     background: var(--sc);
     color: #fff;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 0.8125rem;
     position: relative;
     z-index: 1;
   }
@@ -187,7 +187,7 @@ const eps = [...d.episodes].reverse();
     color: #140e0a;
   }
   .hi-badge {
-    font-size: 11px;
+    font-size: 0.8125rem;
     padding: 0.1rem 0.5rem;
     border-radius: 999px;
     background: color-mix(in oklab, var(--sc) 16%, transparent);
@@ -201,7 +201,7 @@ const eps = [...d.episodes].reverse();
     padding: 0.2rem 0.6rem;
     border-radius: 999px;
     border: 1px solid var(--line);
-    font-size: 0.8rem;
+    font-size: 0.8125rem;
     color: var(--ink-2);
     background: var(--surface-2);
   }

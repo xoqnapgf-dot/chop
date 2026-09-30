@@ -18,7 +18,7 @@
   --line-strong: #c4b39a;
   --ink: #140e0a;
   --ink-2: #4a3f35;
-  --ink-3: #7a6c5d;
+  --ink-3: #6a5d4f;
   --accent: #d9a62b; /* 金，作为底色使用 */
   --accent-ink: #140e0a; /* 金底上的文字 */
   --accent-text: #8a5a00; /* 金作为文字时的加深版 */
@@ -29,17 +29,17 @@
   --scene-china: #c8211b;
   --scene-world: #8a5a00;
   --good: #3d7a4a;
-  --warning: #a86400;
+  --warning: #955700;
   --serious: #c85a2e;
   --critical: #b3261e;
-  --neutral: #7a6c5d;
+  --neutral: #6a5d4f;
   --shadow: 0 1px 0 rgb(0 0 0 / 0.04), 0 12px 32px -12px rgb(60 30 10 / 0.2);
   /* 辅助色板：系列、地区、章节编号这类需要区分的地方轮流用，主色仍是朱红和金 */
   --p1: #c8211b;
-  --p2: #a8740a;
+  --p2: #8f5f05;
   --p3: #1f7a6c;
   --p4: #8e3a6e;
-  --p5: #c8601a;
+  --p5: #b0500f;
   --p6: #5f6f1f;
 }
 
@@ -53,7 +53,7 @@
   --line-strong: #4a3b30;
   --ink: #f6efe3;
   --ink-2: #c7b9a5;
-  --ink-3: #8b7d6c;
+  --ink-3: #a19380;
   --accent: #e8b84a;
   --accent-ink: #120c07;
   --accent-text: #f0c75e;
@@ -67,7 +67,7 @@
   --warning: #f5a524;
   --serious: #ec835a;
   --critical: #ff6b5e;
-  --neutral: #8b7d6c;
+  --neutral: #a19380;
   --shadow: 0 1px 0 rgb(255 255 255 / 0.03), 0 20px 40px -20px rgb(0 0 0 / 0.8);
   --p1: #ff5a4a;
   --p2: #e8b84a;
@@ -78,6 +78,11 @@
 }
 
 @theme inline {
+  /* 字号下限：text-xs 12px→13px，text-sm 14px→15px（视力不好的读者也能看清） */
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.35rem;
+  --text-sm: 0.9375rem;
+  --text-sm--line-height: 1.5rem;
   --color-bg: var(--bg);
   --color-bg-2: var(--bg-2);
   --color-surface: var(--surface);
@@ -178,7 +183,7 @@
 
   .eyebrow {
     font-family: var(--font-mono);
-    font-size: 0.72rem;
+    font-size: 0.8125rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--ink-3);
@@ -197,7 +202,7 @@
     padding: 0.2em 0.65em;
     border: 1px solid var(--line);
     border-radius: 999px;
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     color: var(--ink-2);
     background: var(--surface-2);
     white-space: nowrap;
@@ -318,7 +323,7 @@
   .prose-chop th {
     color: var(--ink);
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     letter-spacing: 0.06em;
     font-weight: 600;
     white-space: nowrap;

@@ -53,7 +53,7 @@ const scenes = Object.keys(SCENE) as (keyof typeof SCENE)[];
                 {thumb && <Image src={thumb} alt="" widths={[240]} sizes="112px" class="size-full object-cover" />}
               </span>
               <span class="min-w-0 flex-1">
-                <span class="flex items-center gap-1.5 font-mono text-[11px] text-ink-3">
+                <span class="flex items-center gap-1.5 font-mono text-xs text-ink-3">
                   <span class="size-1.5 rounded-full" style={`background:${SCENE[t.data.scene].color}`} />{t.data.year ?? '年份待考'}
                 </span>
                 <span class="mt-0.5 line-clamp-2 block font-semibold leading-snug">{t.data.title}</span>
