@@ -137,11 +137,11 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
   <section class="container-x mt-28 grid gap-4 lg:grid-cols-2">
     <a href={url('china/')} class="zone zone-china group relative overflow-hidden rounded-[28px] p-7 sm:p-10">
       <div class="zone-faces" aria-hidden="true">
-        {cn.slice(0, 6).map((a) => <Avatar id={a.id} data={a.data} widths={[160]} sizes="80px" class="face size-16 overflow-hidden rounded-2xl object-cover sm:size-20" />)}
+        {cn.slice(0, 4).map((a) => <Avatar id={a.id} data={a.data} widths={[160]} sizes="80px" class="face size-16 overflow-hidden rounded-2xl object-cover sm:size-14 lg:size-16" />)}
       </div>
       <p class="eyebrow relative !text-white/70">China · 中国区</p>
       <h2 class="relative mt-3 text-4xl font-bold text-white sm:text-6xl">中国快嘴</h2>
-      <p class="relative mt-4 max-w-md text-white/80">
+      <p class="relative mt-4 max-w-md text-white/80 sm:max-w-[22rem] md:max-w-md lg:max-w-[22rem]">
         按地区看：{regions.map((r) => r.data.name).join(' · ')}。从 2008 年的《Speed #1》，到 B 站上自己组 cypher 的新一代 chopper。
       </p>
       <span class="relative mt-8 inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-black transition group-hover:gap-3">进入中国区 →</span>
@@ -330,7 +330,7 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
     top: 1.5rem;
     right: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
     gap: 0.5rem;
     transform: rotate(6deg);
     opacity: 0.9;
@@ -360,9 +360,9 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
   }
   .zone-rings {
     position: absolute;
-    top: -30%;
-    right: -20%;
-    width: 80%;
+    top: -22%;
+    right: -12%;
+    width: 46%;
     aspect-ratio: 1;
   }
   .zone-rings i {

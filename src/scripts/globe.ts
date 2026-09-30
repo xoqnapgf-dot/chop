@@ -155,17 +155,18 @@ export function mountGlobe(canvas: HTMLCanvasElement, opts: Options) {
     b.fill();
     // 球体：中性色的立体感，不带绿色
     const body = b.createRadialGradient(cx - R * 0.4, cy - R * 0.45, R * 0.05, cx, cy, R);
-    body.addColorStop(0, colors.dark ? 'rgba(255,255,255,0.09)' : 'rgba(255,255,255,0.9)');
-    body.addColorStop(0.6, colors.dark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.03)');
-    body.addColorStop(1, colors.dark ? 'rgba(0,0,0,0.35)' : 'rgba(0,0,0,0.1)');
-    b.fillStyle = colors.bg;
+    // 暗色下球体比页面底色亮一档，再叠一层左上高光，边缘留一圈亮线，避免和背景糊成一片
+    body.addColorStop(0, colors.dark ? 'rgba(255,236,205,0.22)' : 'rgba(255,255,255,0.9)');
+    body.addColorStop(0.55, colors.dark ? 'rgba(255,236,205,0.08)' : 'rgba(0,0,0,0.03)');
+    body.addColorStop(1, colors.dark ? 'rgba(0,0,0,0.28)' : 'rgba(0,0,0,0.1)');
+    b.fillStyle = colors.dark ? '#251d17' : colors.bg;
     b.beginPath();
     b.arc(cx, cy, R, 0, Math.PI * 2);
     b.fill();
     b.fillStyle = body;
     b.fill();
-    b.strokeStyle = hexA(colors.ink, colors.dark ? 0.14 : 0.18);
-    b.lineWidth = 1;
+    b.strokeStyle = hexA(colors.ink, colors.dark ? 0.32 : 0.18);
+    b.lineWidth = colors.dark ? 1.5 : 1;
     b.stroke();
   }
 
