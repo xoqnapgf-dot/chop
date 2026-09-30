@@ -60,6 +60,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      # Windows 本地预览脚本，只放进 site 分支，不进 GitHub Pages
+      - run: cp scripts/local-preview/* dist/
       - name: 推送到 site 分支
         run: |
           cd dist
