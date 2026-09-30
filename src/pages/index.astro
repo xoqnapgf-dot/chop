@@ -264,14 +264,17 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
     display: inline-block;
     color: var(--accent-text);
     overflow: hidden;
-    padding-right: 0.04em;
+    /* 行高只有 1.02，汉字底部会被 overflow 裁掉；下方补空间再用负边距抵回 */
+    padding: 0.06em 0.04em 0.16em 0;
+    margin-bottom: -0.16em;
   }
   .chop-word::after {
     content: '';
     position: absolute;
     left: -10%;
     right: -10%;
-    top: 52%;
+    /* 原来是盒子高度的 52%（约 0.53em）；盒子上方多了 0.06em 的补边，这里换算成 em 保持刀痕位置不变 */
+    top: 0.59em;
     height: 0.07em;
     background: var(--bg);
     transform: rotate(-9deg);
