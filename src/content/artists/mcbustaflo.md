@@ -21,7 +21,7 @@ speed:
     window: long
     syllables: 1192
     seconds: 59.97
-    confidence: pending
+    confidence: verified
     note: '他自己写的是 59.97 秒 1196 个音节（≈ 19.94）。SPS wiki 记载，Wedere 复核时发现他漏了 4 个音节，按 1192 算约 19.88。这是专门录的挑战视频，不是正式歌曲，所以 NahDah 这类只收正式歌曲的榜单不收。'
     sources:
       - { title: 'YouTube – World Record 1196 syllables in 1 minute（本人频道，2017-06-07）', url: 'https://www.youtube.com/watch?v=7VGqJ9RLuDg' }

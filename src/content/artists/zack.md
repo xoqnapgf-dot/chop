@@ -2,8 +2,9 @@
 name: Zack
 tagline: 中国第三代 chopper。B 站 UP 主"喜欢整活的Zack"，网易云署名 Zack-Official，合作曲里写作 THE ZACK。以翻唱国际 chopper cypher 里的段落出名，2026 年上了《Bilibili Choppers 2》。
 country: CN
-city: 未公开
+city: 江苏 苏州
 region: 网络
+geo: [31.30, 120.59]
 activeSince: 2025
 style: chopper
 styleNote: '中国第三代 chopper 里的一员，和青藤 CyanVine、夏淳扬这批 B 站 chopper 常在一起做合作曲。主要是翻唱：《Infinite Choppers 3》《Limbo Cypher》《Inutilis》这些国际 cypher 的段落他翻了很多段；自己的作品在网易云有 5 张，另外参加《Bilibili Choppers 2》和《GouBa Choppers》。他是 chopper 这一条来自圈内人的说法，公开资料里没有找到本人自称，也没有找到测速。'
@@ -24,6 +25,7 @@ sources:
   - { title: 'B站 – 喜欢整活的Zack：Astronomical Choppers3 翻唱（2026-02-22，评论区有他关于"不开倍速"的说明）', url: 'https://www.bilibili.com/video/BV1shZfBJELb/' }
   - { title: 'B站 – 喜欢整活的Zack：《Nightmare》翻唱（Crucified 那一段，2026-01-28）', url: 'https://www.bilibili.com/video/BV1JEz9B7EfK/' }
   - { title: 'B站 – 喜欢整活的Zack：青藤CyanVine语速最快的段落 top25（2026-02-15，置顶评论说明由青藤制作）', url: 'https://www.bilibili.com/video/BV135ZsBAEAZ/' }
+  - { title: '网易云音乐 – Zack-Official 个人主页（所在地为账号主人自填）', url: 'https://music.163.com/#/artist?id=121556037' }
 ---
 
 Zack 是[中国第三代 chopper](../../timeline/) 里的一员。他在 B 站的号叫"喜欢整活的Zack"，网易云上叫 Zack-Official，几首合作曲的名单里写的是 THE ZACK。主页简介很随意："只想随便当个 UP 主罢了……平常闲暇里喜欢翻唱各种高难度歌曲。"
@@ -66,3 +68,7 @@ Zack 是[中国第三代 chopper](../../timeline/) 里的一员。他在 B 站�
 ## 速度
 
 没有找到他的测速。B 站上其他人的测速视频里也没有收他，所以这里不放数字。
+
+## 所在地
+
+Zack 在网易云音乐的个人主页上把所在地选成了江苏苏州，是账号主人自己填的，没有找到第二处来源，仅供参考。
