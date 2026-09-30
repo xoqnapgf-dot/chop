@@ -2,8 +2,9 @@
 name: Kastelaro
 tagline: Superluminal Choppers（SLC）的元老之一。2021 年单独发出的《Superluminal Choppers》个人段落，被石狐九和排进《中文快嘴 top10》第 1。
 country: CN
-city: 未公开
+city: 广东 东莞
 region: 网络
+geo: [23.02, 113.75]
 activeSince: 2020
 style: chopper
 styleNote: 中国 chop 圈 QQ 群 Superluminal Choppers 最早的一批成员，歌词里直接唱"当我的 chop 登场的时候""we're superluminal choppers"。SLC 的同名 cypher 一直没录成，他先把自己那段单独发了出来。
@@ -27,6 +28,7 @@ sources:
   - { title: '网易云音乐 – Triple R 2020 cypher（2020-08-06）', url: 'https://music.163.com/song?id=1468710088' }
   - { title: 'B站 – 石狐九和：中文快嘴top10（新编）（2021-05-19）', url: 'https://www.bilibili.com/video/BV1bh411v7d7/' }
   - { title: '网易云音乐 – Kastelaro 歌手页', url: 'https://music.163.com/#/artist?id=36238745' }
+  - { title: '网易云音乐 – Kastelaro 个人主页（所在地为账号主人自填）', url: 'https://music.163.com/#/artist?id=36238745' }
 ---
 
 Kastelaro 是 2018 年组建的 chop 圈 QQ 群 **Superluminal Choppers**（SLC）最早的一批成员，和 GumBrass、Nero·Wander、Y Herry 一样算是元老。本名、所在城市都没有公开，作品主要发在网易云音乐。
@@ -46,3 +48,7 @@ SLC 一直想录一首和群同名的 cypher，但因为大家没时间、人凑
 | 2020 年 8 月 5 日 | 《Triple R 2020 cypher》 | 十二人 cypher，另有他的单独段落版 |
 | 2020 年 8 月 11 日 | 《芒种 Remix》 | 音阙诗听《芒种》的改编 |
 | 2021 年 4 月 4 日 | 《Superluminal Choppers (Kastelaro Part)》 | SLC 同名 cypher 里他的段落 |
+
+## 所在地
+
+Kastelaro 在网易云音乐的个人主页上把所在地选成了广东东莞，简介只有"在下说唱爱好者一枚"。这一项是账号主人自己填的，没有找到第二处来源，仅供参考。

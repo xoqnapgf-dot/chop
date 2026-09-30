@@ -3,8 +3,9 @@ name: CyanVine
 nameZh: 青藤
 tagline: 也叫小青藤呐。《Bilibili Choppers》第一段就是他，后来又唱了《Chinese Choppers》《Bilibili Choppers 2》；自称"底层 chopper"。
 country: CN
-city: 未公开
+city: 四川 绵阳
 region: 网络
+geo: [31.47, 104.68]
 activeSince: 2024
 style: chopper
 styleNote: B 站简介自称"不配上国际 cypher 的底层 chopper"。有人问他唱的是什么风格，他在置顶评论里答："这是 chop，追求纯粹的速度感与打击感的音乐"，并推荐大家去听 Crucified、Interchopper、Sabotahe。
@@ -33,6 +34,7 @@ sources:
   - { title: '网易云音乐 – Bilibili Choppers 2（2026-09-23）', url: 'https://music.163.com/song?id=3440568361' }
   - { title: 'B站 – 喜欢整活的Zack：青藤CyanVine语速最快的段落top25（2026-02-15）', url: 'https://www.bilibili.com/video/BV135ZsBAEAZ/' }
   - { title: '网易云音乐 – 青藤CyanVine 歌手页', url: 'https://music.163.com/#/artist?id=100316228' }
+  - { title: '网易云音乐 – 青藤 CyanVine 个人主页（所在地为账号主人自填）', url: 'https://music.163.com/#/artist?id=100316228' }
 ---
 
 青藤 CyanVine 在《Bilibili Choppers》里的署名是"小青藤呐"，唱的是第一段。那段歌词开门见山："他们都弄不懂什么是 chop 的 flow""一秒钟十五字不在话下，哥一秒钟十八个字依然不在话下"。
@@ -57,3 +59,7 @@ sources:
 | 2026 年 9 月 23 日 | 《Bilibili Choppers 2》 | |
 
 2026 年 2 月，[Zack](../zack/) 在 B 站发了一期《青藤 CyanVine 语速最快的段落 top25》，说明写"娱乐测速，友善交流"；他在评论里补充说，这期其实是青藤自己做的，发在他们的 QQ 群里，托 Zack 代传到 B 站。
+
+## 所在地
+
+青藤在网易云音乐的个人主页上把所在地选成了四川绵阳。这一项是账号主人自己填的，网上没有找到采访或本人说法来另行印证，所以只写到城市，仅供参考。

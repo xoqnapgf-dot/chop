@@ -2,8 +2,9 @@
 name: Spylent
 tagline: B 站上粉丝过百万的 rapper，以 wordplay 著称。《天花板之上》里有一段 20 秒的连续快段，石狐九和测为 11.62 字/秒。
 country: CN
-city: 未公开
+city: 辽宁 大连
 region: 网络
+geo: [38.91, 121.61]
 activeSince: 2019
 style: fast
 styleNote: 他出名靠的是文字游戏和双关，B 站上有专门逐句拆解他 wordplay 的视频；快嘴只是《天花板之上》等个别歌里的一段，没有整首唱 chop，所以标快嘴。
@@ -29,6 +30,8 @@ sources:
   - { title: 'B站 – Spylent：回答粉丝问题+Wordplay教学（2020）', url: 'https://www.bilibili.com/video/BV1J7411d7Hd/' }
   - { title: 'B站 – 石狐九和：中文快嘴top10（新编）（2021-05-19）', url: 'https://www.bilibili.com/video/BV1bh411v7d7/' }
   - { title: '网易云音乐 – Spylent 歌手页', url: 'https://music.163.com/#/artist?id=34055135' }
+  - { title: '网易云音乐 – Spylent 个人主页（所在地为账号主人自填）', url: 'https://music.163.com/#/artist?id=34055135' }
+  - { title: '豆瓣小组 – 介绍 Spylent 的帖子（"2002.12.29 出生，辽宁大连人"）', url: 'https://www.douban.com/group/topic/287833376/' }
 ---
 
 Spylent 是从 B 站起来的 rapper，账号简介写的是"学生 / RAPPER"，粉丝超过一百万。他最有名的是 **wordplay**：同一个词在一句里读出两三层意思，B 站上有人专门逐句拆解他的歌，他自己也发过"Wordplay 教学"。
@@ -48,3 +51,7 @@ Spylent 是从 B 站起来的 rapper，账号简介写的是"学生 / RAPPER"，
 | 2021 年 12 月 26 日 | 《Beside Me》 |
 | 2022 年 2 月 19 日 | 《他在乎（我去世了，然后...）》 |
 | 2023 年 12 月 26 日 | 《皮特皮》 |
+
+## 所在地
+
+Spylent 是辽宁大连人。网易云音乐个人主页填的所在地是大连；豆瓣小组里有一篇介绍他的帖子写"2002.12.29 出生，辽宁大连人"，说他约 2018 年出国读美国高中，之后在美国读大学。两处对得上，生日也和网易云资料一致。他现在人在哪里没有公开说法。
