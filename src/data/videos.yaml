@@ -228,3 +228,1861 @@
   kind: howto
   scene: world
   note: 'SPS 圈 Wedere 的测算教程《How to CALCULATE SPS (2025)》，中文翻译搬运。'
+
+# 人物页「相关视频」：来自各人物页出处里的 B 站 / YouTube 视频（kind: related，只在 artists 列出的人物页出现）
+- id: rb25nYFJEq4
+  platform: youtube
+  title: ALEPHUNTER - BAHASA (prod by Sang Kakala)(Lyrics Video)
+  author: ALEP HUNTER
+  date: '2019-01-09'
+  cover: https://i.ytimg.com/vi/rb25nYFJEq4/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - alep-hunter
+- id: BV1bh411v7d7
+  platform: bilibili
+  title: 中文快嘴top10（新编）（可惜标题不能打个狗头）
+  author: 石狐九和
+  date: '2021-05-19'
+  duration: '4:19'
+  cover: https://i1.hdslb.com/bfs/archive/87461783aa44cf32b5748acb42d5cb1f3d30d9e7.png
+  kind: related
+  scene: china
+  artists:
+  - ar-liu-fuyang
+  - aspartame
+  - kastelaro
+  - kindergarten-killer
+  - lil-andy
+  - pharaoh
+  - spylent
+- id: vKKSp3bAeSY
+  platform: youtube
+  title: GOAT (insane fast rap) *15 SPS*
+  author: Asa
+  date: '2026-03-26'
+  cover: https://i.ytimg.com/vi/vKKSp3bAeSY/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - asa-jake
+  note: 2026，Kal Paseo 混音
+- id: ddVgk2gcOqs
+  platform: youtube
+  title: Busta Rhymes - Hello ft. Chance The Rapper
+  author: I Am Hip-Hop
+  date: '2015-12-25'
+  cover: https://i.ytimg.com/vi/ddVgk2gcOqs/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - busta-rhymes
+- id: BV1C3411C7Hz
+  platform: bilibili
+  title: 对战Capper！小酷《Make it Real》说唱技巧秀翻全场！
+  author: 街头社区
+  date: '2021-10-10'
+  duration: '3:33'
+  cover: https://i2.hdslb.com/bfs/archive/77233ead07e577ff771f304487e4d12acb029d53.jpg
+  kind: related
+  scene: china
+  artists:
+  - coola
+- id: XdSwkVlMdaw
+  platform: youtube
+  title: MC Rice & TE2DY - Final Flash (Feat. CrisOne)
+  author: MC Rice Officiel
+  date: '2018-10-11'
+  cover: https://i.ytimg.com/vi/XdSwkVlMdaw/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - crisone
+- id: 1RFNsjHHKZk
+  platform: youtube
+  title: CrisOne Live @SPI GOT TALENT antipolo [1st Place]
+  author: CrisOne Decano
+  date: '2022-11-10'
+  cover: https://i.ytimg.com/vi/1RFNsjHHKZk/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - crisone
+- id: cKocvlSCerg
+  platform: youtube
+  title: speed of light - CrisOne
+  author: CrisOne Decano
+  date: '2024-08-12'
+  cover: https://i.ytimg.com/vi/cKocvlSCerg/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - crisone
+- id: K6SChQQazWw
+  platform: youtube
+  title: DOWN6 Infinite Choppers (Crucified Verse Calc&Lyrics)
+  author: MCMusicc
+  date: '2026-01-28'
+  cover: https://i.ytimg.com/vi/K6SChQQazWw/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - crucified
+- id: 4b_q5ImQQHI
+  platform: youtube
+  title: Crucified - Something in Texas - 4. Surprise (FASTEST RAPPER) 24.9 SYLLABLES PER SECOND
+  author: crucified830
+  date: '2025-10-24'
+  cover: https://i.ytimg.com/vi/4b_q5ImQQHI/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - crucified
+  note: 标题含 24.9
+- id: BV16FxszSE7s
+  platform: bilibili
+  title: 中国最快的一段说唱？
+  author: 青藤cyanvine
+  date: '2025-10-04'
+  duration: '1:01'
+  cover: https://i1.hdslb.com/bfs/archive/7624a5d5d0001c3b719f2e5adacd101129163e0a.jpg
+  kind: related
+  scene: china
+  artists:
+  - cyanvine
+  note: 置顶评论答疑
+- id: BV135ZsBAEAZ
+  platform: bilibili
+  title: 青藤CyanVine语速最快的段落top25
+  author: 喜欢整活的Zack
+  date: '2026-02-15'
+  duration: '4:20'
+  cover: https://i2.hdslb.com/bfs/archive/f785a6a893e4f6cfc3f50080d8dac27876cfa39d.jpg
+  kind: related
+  scene: china
+  artists:
+  - cyanvine
+  - zack
+  note: 置顶评论说明由青藤制作
+- id: 3IDnJLMtcvY
+  platform: youtube
+  title: Display Music - super fast verses ft Don Xperto ,DNA & Crucified
+  author: ☣FastRapGuy☣
+  date: '2013-12-05'
+  cover: https://i.ytimg.com/vi/3IDnJLMtcvY/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - display-music
+- id: 0FMnLwMcY5s
+  platform: youtube
+  title: 15 fastest rappers (XXX FAST)
+  author: ☣FastRapGuy☣
+  date: '2013-11-14'
+  cover: https://i.ytimg.com/vi/0FMnLwMcY5s/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - display-music
+  - lucky-n9ne
+- id: l54ab9NtK3E
+  platform: youtube
+  title: 10 fastest rappers (XXX FAST)
+  author: ☣FastRapGuy☣
+  date: '2013-11-15'
+  cover: https://i.ytimg.com/vi/l54ab9NtK3E/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - display-music
+  - lyrah
+- id: cOIblHSMq8g
+  platform: youtube
+  title: 28 fastest rappers
+  author: ☣FastRapGuy☣
+  date: '2013-12-01'
+  cover: https://i.ytimg.com/vi/cOIblHSMq8g/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - display-music
+- id: D4DI5skBvig
+  platform: youtube
+  title: DisplayMusic23/Lil Droptop Golf Cart Fast Verse Lyrical Menace.!
+  author: Shane Liccardi 2
+  date: '2020-07-30'
+  cover: https://i.ytimg.com/vi/D4DI5skBvig/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - display-music
+  note: 听众重传，2020
+- id: qJsQmhnQrHo
+  platform: youtube
+  title: DNA Tru Lyricist - Your Energy feat Crucified
+  author: BADSEED CHICITY
+  date: '2026-09-05'
+  cover: https://i.ytimg.com/vi/qJsQmhnQrHo/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - dna-tru-lyricist
+  note: 简介写明 Tyler, TX
+- id: llc2rYpbcjU
+  platform: youtube
+  title: 'DNA Tru Lyricist and Leach: Talk About RAP :)'
+  author: DNA Tru Lyricist
+  date: '2021-03-25'
+  cover: https://i.ytimg.com/vi/llc2rYpbcjU/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - dna-tru-lyricist
+- id: LcbUhyPmths
+  platform: youtube
+  title: DNA Tru Lyricist - The Multiple Killing Spree (235 Multiples)
+  author: DNA Tru Lyricist
+  date: '2021-03-11'
+  cover: https://i.ytimg.com/vi/LcbUhyPmths/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - dna-tru-lyricist
+- id: BPTL5kQ_Z-4
+  platform: youtube
+  title: DNA Tru Lyricist - Hypnotized ft. Leach
+  author: DNA Tru Lyricist
+  date: '2020-12-22'
+  cover: https://i.ytimg.com/vi/BPTL5kQ_Z-4/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - dna-tru-lyricist
+- id: 2dclINd3A1s
+  platform: youtube
+  title: DNA vs Twisted Insane "No Mercy Rap Showdown"
+  author: DNA Tru Lyricist
+  date: '2013-06-13'
+  cover: https://i.ytimg.com/vi/2dclINd3A1s/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - dna-tru-lyricist
+  note: 2013，第一回合
+- id: D7rJraJadgc
+  platform: youtube
+  title: '#6 Don Xperto en El programa SABADAZO'
+  author: Don Xperto
+  date: '2011-12-12'
+  cover: https://i.ytimg.com/vi/D7rJraJadgc/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - don-xperto
+  note: 本人上传，2011
+- id: ITEnGXa7cyM
+  platform: youtube
+  title: 🔴 TEST VELOCIDAD 26.7 SPS | Xperto
+  author: Don Xperto
+  date: '2014-07-21'
+  cover: https://i.ytimg.com/vi/ITEnGXa7cyM/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - don-xperto
+  note: 本人频道，2014
+- id: yItIahJyfJk
+  platform: youtube
+  title: 🔴MÁXIMA VELOCIDAD 29/SPS | Xperto
+  author: Don Xperto
+  date: '2015-01-28'
+  cover: https://i.ytimg.com/vi/yItIahJyfJk/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - don-xperto
+  note: 本人频道，2015
+- id: PuAnx0WJmRA
+  platform: youtube
+  title: '▶︎▶︎Fastest Man Alive!! ▶︎▶︎ 30/sps | Xperto #71'
+  author: Don Xperto
+  date: '2015-08-12'
+  cover: https://i.ytimg.com/vi/PuAnx0WJmRA/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - don-xperto
+  note: 本人频道，2015
+- id: ivvUTxtIoVk
+  platform: youtube
+  title: 'RETO 20/SPS: EMINEM, CHOJIN, CRUCIFIED, REBEL XD, BIG METRA - Xperto #68'
+  author: Don Xperto
+  date: '2015-08-09'
+  cover: https://i.ytimg.com/vi/ivvUTxtIoVk/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - don-xperto
+  note: 本人频道，2015
+- id: DVJQTxsq-1g
+  platform: youtube
+  title: KAL - DNA FAKE LYRICIST FT. DOWN6 (DNA TRU LYRICIST DISS TRACK)
+  author: KAL
+  date: '2023-08-08'
+  cover: https://i.ytimg.com/vi/DVJQTxsq-1g/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - down6
+  - kal-paseo
+- id: Qtntduvr0F4
+  platform: youtube
+  title: DOWN6 - INFINITE CHOPPERS 3 (FT. TWISTED INSANE, IDYLLL, SPLXT, L.O.D, MUSHMACH & MORE)
+  author: DOWN6
+  date: '2026-01-06'
+  cover: https://i.ytimg.com/vi/Qtntduvr0F4/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - down6
+  - idylll
+  note: 简介感谢 Idylll 协助制作
+- id: thD8UmJcke0
+  platform: youtube
+  title: Kill 8 - Aktibar x Down6 x Dumanoid x Global Choppers [Official Audio]
+  author: Aktibar Official
+  date: '2026-06-29'
+  cover: https://i.ytimg.com/vi/thD8UmJcke0/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - down6
+  - dumanoid
+- id: T6-Ly5sJjgI
+  platform: youtube
+  title: '"TOP 20" DOWN6 Fastest Verses (2025) ᴴᴰ'
+  author: TrollatorBR
+  date: '2025-12-03'
+  cover: https://i.ytimg.com/vi/T6-Ly5sJjgI/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - down6
+  note: 测算：NFM
+- id: NDCt_rpbHuw
+  platform: youtube
+  title: GAS PEDAL REMIX
+  author: DOWN6
+  date: '2025-03-29'
+  cover: https://i.ytimg.com/vi/NDCt_rpbHuw/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - down6
+- id: 9fSwvbruiHU
+  platform: youtube
+  title: Dumanoid - The Evolution of a Chopper
+  author: Dumanoid
+  date: '2020-06-26'
+  cover: https://i.ytimg.com/vi/9fSwvbruiHU/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - dumanoid
+  note: 按时间排列的快段合集
+- id: Q2rPxbnhYyA
+  platform: youtube
+  title: Crucified - 6. Nightmare ft. Dumanoid (The M.I.S.T)
+  author: crucified830
+  date: '2023-11-03'
+  cover: https://i.ytimg.com/vi/Q2rPxbnhYyA/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - dumanoid
+- id: BV1Av4y1Z7d7
+  platform: bilibili
+  title: 2021语速150排行榜The Top 150 Fastest Rappers Remade 2021 Accurate List
+  author: interchopper
+  date: '2021-02-05'
+  duration: '25:23'
+  cover: https://i2.hdslb.com/bfs/archive/54e4809a30b6d85d5d0a4179e94f1bb3069fd10c.jpg
+  kind: related
+  scene: world
+  artists:
+  - dumanoid
+  - kvr
+  - mizury-mize
+  - ruffian-rugged
+  - tech-n9ne
+  - the-jackal
+  - twista
+  - twisted-insane
+  note: 转载，每条都有算式
+- id: p6EpoQZpabk
+  platform: youtube
+  title: ezeq - A Luz Da Praça (Álbum completo)
+  author: ezeq
+  date: '2024-10-03'
+  cover: https://i.ytimg.com/vi/p6EpoQZpabk/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - eze
+- id: 2BqI92fwtAk
+  platform: youtube
+  title: INFINITE CHOPPERS 2 - Faraway Verse
+  author: Faraway
+  date: '2024-06-25'
+  cover: https://i.ytimg.com/vi/2BqI92fwtAk/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - faraway
+- id: bPbmdtHfA6s
+  platform: youtube
+  title: '#IC3CONTEST - Faraway'
+  author: Faraway
+  date: '2024-12-16'
+  cover: https://i.ytimg.com/vi/bPbmdtHfA6s/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - faraway
+- id: 0x535XEsS8Q
+  platform: youtube
+  title: Danjor x Faraway x Dvagoh — ANOTHER Intricate Choppers version from 2020
+  author: Faraway
+  date: '2023-08-09'
+  cover: https://i.ytimg.com/vi/0x535XEsS8Q/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - faraway
+- id: uAvPeCwPxUw
+  platform: youtube
+  title: Parokya ni Edgar feat. Francis M and Gloc-9 - Bagsakan (Official Lyric Video)
+  author: Universal Records Philippines
+  date: '2023-11-11'
+  cover: https://i.ytimg.com/vi/uAvPeCwPxUw/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - gloc-9
+- id: XkdvQZ1OeLM
+  platform: youtube
+  title: '04 - ARTillery (feat. Kinetical & HeureCa) [Ruffian Rugged & Dumanoid: For The Record]'
+  author: Dumanoid
+  date: '2023-08-27'
+  cover: https://i.ytimg.com/vi/XkdvQZ1OeLM/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - heureca
+- id: GJrrOkWG_Vo
+  platform: youtube
+  title: Kill 8 (HeureCa & Dumanoid verses only) with lyrics
+  author: Suomenautisti
+  date: '2026-07-03'
+  cover: https://i.ytimg.com/vi/GJrrOkWG_Vo/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - heureca
+- id: WUb4P9fKkzA
+  platform: youtube
+  title: HeureCa - mä liikun
+  author: Suomenautisti
+  date: '2023-04-01'
+  cover: https://i.ytimg.com/vi/WUb4P9fKkzA/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - heureca
+- id: JXsU3SzohpI
+  platform: youtube
+  title: 'HeureCa - #NOUTAJASAAPUU -räppihaaste'
+  author: Nigoc
+  date: '2021-04-18'
+  cover: https://i.ytimg.com/vi/JXsU3SzohpI/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - heureca
+  note: Nigoc 频道
+- id: t9_xNe2gXG0
+  platform: youtube
+  title: Onion Chopper RMX HeureCa verse cover
+  author: 喜欢chop的艾拉
+  date: '2025-01-04'
+  cover: https://i.ytimg.com/vi/t9_xNe2gXG0/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - heureca
+- id: wyR-SFNXSr0
+  platform: youtube
+  title: Idylll - The Art of Subtlety |[FULL ALBUM STREAM]|
+  author: Idylll
+  date: '2021-01-31'
+  cover: https://i.ytimg.com/vi/wyR-SFNXSr0/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - idylll
+- id: DuFa4h2XWT0
+  platform: youtube
+  title: Idylll - Slugs |[OFFICIAL AUDIO]|
+  author: Idylll
+  date: '2021-01-31'
+  cover: https://i.ytimg.com/vi/DuFa4h2XWT0/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - idylll
+  note: NahDah 2021 版的片尾曲
+- id: 9RpXNx0-p4s
+  platform: youtube
+  title: 'DOWN6 x dvagoh x Idylll - Cabala''s Big Game Juntin'': Huntin'' Bustaz'
+  author: Idylll
+  date: '2026-07-04'
+  cover: https://i.ytimg.com/vi/9RpXNx0-p4s/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - idylll
+- id: AaD3LQfSj9k
+  platform: youtube
+  title: Discord Division - Disabled Choppers 2
+  author: Discord Divine
+  date: '2017-11-05'
+  cover: https://i.ytimg.com/vi/AaD3LQfSj9k/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - idylll
+  - nihilist
+- id: ZSmeH9AD6r8
+  platform: youtube
+  title: Interchopper performing live on Oxford University stage (full video)
+  author: NFM
+  date: '2024-11-25'
+  cover: https://i.ytimg.com/vi/ZSmeH9AD6r8/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - interchopper
+- id: VZbRcZp2iEQ
+  platform: youtube
+  title: J Battle-Drag Em From The River Ft. King Jables
+  author: J Battle Vidz
+  date: '2013-03-04'
+  cover: https://i.ytimg.com/vi/VZbRcZp2iEQ/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - j-battle
+- id: 94UzP_uoSs8
+  platform: youtube
+  title: J Battle-Runnin' Lip
+  author: J Battle Vidz
+  date: '2013-07-27'
+  cover: https://i.ytimg.com/vi/94UzP_uoSs8/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - j-battle
+- id: yPTiWpcZg9E
+  platform: youtube
+  title: J Battle-Freestyle Heat(Fastest Freestyle Rapper 2016)
+  author: J Battle Vidz
+  date: '2016-07-25'
+  cover: https://i.ytimg.com/vi/yPTiWpcZg9E/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - j-battle
+- id: V4tsBC0h_lk
+  platform: youtube
+  title: J Battle-Roll Wit Me ft.Leach (Prod.Saavane)
+  author: J Battle Vidz
+  date: '2019-07-06'
+  cover: https://i.ytimg.com/vi/V4tsBC0h_lk/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - j-battle
+- id: 5f6szBUsAwM
+  platform: youtube
+  title: J Battle-Higher Level
+  author: J Battle Vidz
+  date: '2020-05-10'
+  cover: https://i.ytimg.com/vi/5f6szBUsAwM/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - j-battle
+- id: ugZhikxXGKw
+  platform: youtube
+  title: K-Fix - The Real Darkside (DNA DISS)
+  author: YungDro Productions
+  date: '2016-07-19'
+  cover: https://i.ytimg.com/vi/ugZhikxXGKw/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - k-fix
+- id: Xeei3pFXQGQ
+  platform: youtube
+  title: DNA Tru Lyricist - Darkside 2 "K-Fix DISS"
+  author: DNA Tru Lyricist
+  date: '2016-07-20'
+  cover: https://i.ytimg.com/vi/Xeei3pFXQGQ/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - k-fix
+- id: DsBe6LuQeKo
+  platform: youtube
+  title: 'Kal - #BSCypher2Contest WINNER'
+  author: KAL
+  date: '2021-08-13'
+  cover: https://i.ytimg.com/vi/DsBe6LuQeKo/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - kal-paseo
+  note: '"我的第一支 MV"'
+- id: mOuUIRF4Unk
+  platform: youtube
+  title: Kaoz verse for Undaground Choppers 7
+  author: Kaotic Klique
+  date: '2017-09-22'
+  cover: https://i.ytimg.com/vi/mOuUIRF4Unk/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - kaoz
+  note: Kaotic Klique 频道
+- id: UbPr2ssbrro
+  platform: youtube
+  title: The Fastest Rapper from Every Country in the World | 2024
+  author: NahDah Vebb
+  date: '2024-08-23'
+  cover: https://i.ytimg.com/vi/UbPr2ssbrro/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - kardiyak
+- id: f0W9BXdvQEc
+  platform: youtube
+  title: KillhOllOw Live in Mansfield, OH Pt. 1
+  author: KillhOllOw
+  date: '2020-04-08'
+  cover: https://i.ytimg.com/vi/f0W9BXdvQEc/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - killhollow
+- id: FqdyRRABp2w
+  platform: youtube
+  title: KillhOllOw x @SkillSyrup - ZORITA (OFFICIAL MUSIC VIDEO)
+  author: KillhOllOw
+  date: '2023-09-16'
+  cover: https://i.ytimg.com/vi/FqdyRRABp2w/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - killhollow
+- id: UNJZlFRNk5I
+  platform: youtube
+  title: LiL hOllOw - IC2 & UC6 Lyric Video
+  author: KillhOllOw
+  date: '2017-02-06'
+  cover: https://i.ytimg.com/vi/UNJZlFRNk5I/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - killhollow
+- id: OkoKVaWyl3s
+  platform: youtube
+  title: LiL hOllOw - Slaughter (MUSIC VIDEO)
+  author: KillhOllOw
+  date: '2017-02-06'
+  cover: https://i.ytimg.com/vi/OkoKVaWyl3s/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - killhollow
+- id: UxO-qcCmC2E
+  platform: youtube
+  title: LiL hOllOw - Ohio is Full of Shadow People ft. VuLvUs MUSIC VIDEO (Prod. by Griesgrammar)
+  author: KillhOllOw
+  date: '2018-05-11'
+  cover: https://i.ytimg.com/vi/UxO-qcCmC2E/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - killhollow
+- id: EUH4kEb-0vE
+  platform: youtube
+  title: kVr - Mic Check EP [full tape]
+  author: UVM
+  date: '2020-04-10'
+  cover: https://i.ytimg.com/vi/EUH4kEb-0vE/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - kvr
+- id: RXRWMQXkliA
+  platform: youtube
+  title: Top 8 kVr fastest verses
+  author: Chopper Rap
+  date: '2021-03-23'
+  cover: https://i.ytimg.com/vi/RXRWMQXkliA/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - kvr
+- id: wr4rj3_ZHCA
+  platform: youtube
+  title: Top 9 fastest KVR (6feetbelowhell) verses. Fastest rapper in Poland
+  author: Sorena gs354
+  date: '2025-07-27'
+  cover: https://i.ytimg.com/vi/wr4rj3_ZHCA/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - kvr
+- id: wBT0PzyAe40
+  platform: youtube
+  title: Leach - Through The Night
+  author: Leach
+  date: '2021-12-23'
+  cover: https://i.ytimg.com/vi/wBT0PzyAe40/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - leach
+- id: mDs-83PVs_A
+  platform: youtube
+  title: DNA - Tie the Noose ft. LEACH, YUNG REVIVAL.
+  author: DNA Tru Lyricist
+  date: '2013-03-27'
+  cover: https://i.ytimg.com/vi/mDs-83PVs_A/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - leach
+  - yung-revival
+- id: ypjpxpahZI0
+  platform: youtube
+  title: Youngrevival And Leachs - things that i saw
+  author: karl green
+  date: '2012-04-19'
+  cover: https://i.ytimg.com/vi/ypjpxpahZI0/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - leach
+- id: SANWLCBwtnY
+  platform: youtube
+  title: Leach ft Skinny-D & Yung Revival - The Death Bed
+  author: DJSkinny-D Endo
+  date: '2013-04-10'
+  cover: https://i.ytimg.com/vi/SANWLCBwtnY/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - leach
+  - yung-revival
+- id: bIr86h5eb9Q
+  platform: youtube
+  title: Leach fastest raps
+  author: ☣FastRapGuy☣
+  date: '2013-11-16'
+  cover: https://i.ytimg.com/vi/bIr86h5eb9Q/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - leach
+- id: BV1S2j36tERu
+  platform: bilibili
+  title: 小安迪直播re我们choppers的歌《Chinese Choppers》，在所有人都不看好chop的情况下，我们依旧不忘初心，做真实的自己，感谢大家的聆听！
+  author: 夏淳扬
+  date: '2026-06-16'
+  duration: '36:02'
+  cover: https://i2.hdslb.com/bfs/archive/b3f6a6062fa398e06ac5ffed5d1b4ccf36911ddd.jpg
+  kind: related
+  scene: china
+  artists:
+  - lil-andy
+  - xia-chunyang
+- id: BV1D7aA6gEYU
+  platform: bilibili
+  title: 街头胡聊第28集 | 南征北战NZBZ | 赵辰龙 | 尼成 | 关于音乐关于文化关于历程关于未来
+  author: 小安迪LilAndyKTA
+  date: '2026-09-24'
+  duration: '43:28'
+  cover: https://i2.hdslb.com/bfs/archive/efe2e3aa3598d1e48832e4a460773aa5f1724572.jpg
+  kind: related
+  scene: china
+  artists:
+  - lil-andy
+- id: kvM-Fc1dzkg
+  platform: youtube
+  title: TRES SAIS PART 2 OFFICIAL MUSIC VIDEO NUMERHUS, LUCKY NINE, SPARO, FLICT G
+  author: REDSTILO MILLETE
+  date: '2014-02-05'
+  cover: https://i.ytimg.com/vi/kvM-Fc1dzkg/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - lucky-n9ne
+- id: lRXYvwP5MKs
+  platform: youtube
+  title: 'NOVA MOB MAAARI PA DIN : LYRAH FT. SMOKIN.J OF SMOKIN KHILLAZ'
+  author: Lyrah Lyrah Novaliches Mob
+  date: '2014-04-22'
+  cover: https://i.ytimg.com/vi/lRXYvwP5MKs/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - lyrah
+- id: RobgKY0UXoU
+  platform: youtube
+  title: LYRAH LYRAH 44 BARS GLOC--9 CHALLENGE
+  author: Lyrah Lyrah Novaliches Mob
+  date: '2021-07-11'
+  cover: https://i.ytimg.com/vi/RobgKY0UXoU/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - lyrah
+- id: Tbla3H_fxNk
+  platform: youtube
+  title: Interchopper ft MC RICE-Syllabic war (second verse)
+  author: IC
+  date: '2016-06-17'
+  cover: https://i.ytimg.com/vi/Tbla3H_fxNk/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - mc-rice
+- id: nrdUPQVsU_w
+  platform: youtube
+  title: MC Rice - Illest Choppers (Live @ Plonevez Porzay)
+  author: MC Rice Officiel
+  date: '2016-11-20'
+  cover: https://i.ytimg.com/vi/nrdUPQVsU_w/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - mc-rice
+- id: Rpoxf6LChdg
+  platform: youtube
+  title: 'MC Rice - #UC8CONTEST (Prod. by Dj Lil Sprite)'
+  author: MC Rice Officiel
+  date: '2017-09-03'
+  cover: https://i.ytimg.com/vi/Rpoxf6LChdg/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - mc-rice
+- id: pKgZfY-NXLA
+  platform: youtube
+  title: MC Rice - Paslangin 4 verse (Fast Rap)
+  author: MC Rice Officiel
+  date: '2018-06-20'
+  cover: https://i.ytimg.com/vi/pKgZfY-NXLA/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - mc-rice
+- id: xZ7X8D1ZJ3I
+  platform: youtube
+  title: MC Rice - Thanos (FAST RAP)
+  author: MC Rice Officiel
+  date: '2018-12-20'
+  cover: https://i.ytimg.com/vi/xZ7X8D1ZJ3I/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - mc-rice
+- id: S3WD6KEQNuU
+  platform: youtube
+  title: McBustaflo Turn down for what
+  author: McBustaflo
+  date: '2015-07-23'
+  cover: https://i.ytimg.com/vi/S3WD6KEQNuU/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - mcbustaflo
+- id: knFbGyMDzhI
+  platform: youtube
+  title: Top 5 MCBustaflo Fastest Verses (Accurate 2022 List)
+  author: DASPSMXSTXR
+  date: '2022-04-25'
+  cover: https://i.ytimg.com/vi/knFbGyMDzhI/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - mcbustaflo
+  note: 评论区有他本人的说明
+- id: AIN08KIp5nI
+  platform: youtube
+  title: McFlow Supreme
+  author: McBustaflo
+  date: '2019-09-30'
+  cover: https://i.ytimg.com/vi/AIN08KIp5nI/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - mcbustaflo
+  note: 简介：快段 14.71
+- id: Z93_R8HpzrM
+  platform: youtube
+  title: InfoFlow
+  author: McBustaflo
+  date: '2020-07-21'
+  cover: https://i.ytimg.com/vi/Z93_R8HpzrM/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - mcbustaflo
+- id: 2mBUa6P-c0Q
+  platform: youtube
+  title: Ouchy
+  author: McBustaflo
+  date: '2023-02-27'
+  cover: https://i.ytimg.com/vi/2mBUa6P-c0Q/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - mcbustaflo
+- id: y4HM-vdF5Ys
+  platform: youtube
+  title: Hiroshima Speedwar 2 MGK OF ARMR4 "Scrap Verse"
+  author: MGK OF ARMR4
+  date: '2021-02-26'
+  cover: https://i.ytimg.com/vi/y4HM-vdF5Ys/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - mgk-of-armr4
+- id: oSZfHbICPiY
+  platform: youtube
+  title: Krayzie Bone - Hard To Let Go Cover by - MGK OF ARMR4
+  author: MGK OF ARMR4
+  date: '2020-12-11'
+  cover: https://i.ytimg.com/vi/oSZfHbICPiY/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - mgk-of-armr4
+- id: 4hbHYSwvobE
+  platform: youtube
+  title: Mizury- "Fukitol 1000mg" Feat. Twisted Insane, Omega Sin, & Cynical [Prod. By DJ Lil' Sprite]
+  author: Mizury Mize
+  date: '2016-10-19'
+  cover: https://i.ytimg.com/vi/4hbHYSwvobE/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - mizury-mize
+- id: 2FNoT9xHNFc
+  platform: youtube
+  title: Mizury- "Different Form Of Redneck" [Music Video]
+  author: Mizury Mize
+  date: '2016-11-11'
+  cover: https://i.ytimg.com/vi/2FNoT9xHNFc/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - mizury-mize
+- id: BV1oMwpeXEkj
+  platform: bilibili
+  title: MUSHMACH - 小人物 Remix
+  author: GumBrass恐核速说频道
+  date: '2025-01-20'
+  duration: '3:41'
+  cover: https://i0.hdslb.com/bfs/archive/bc4f6004901a448ac0ab8d78a8be3521160bf22b.jpg
+  kind: related
+  scene: china
+  artists:
+  - mushmach
+- id: BV1Yw6dYnEro
+  platform: bilibili
+  title: M号 - MUSHMACH Lyrics video
+  author: -Irozaka-
+  date: '2025-01-01'
+  duration: '3:22'
+  cover: https://i2.hdslb.com/bfs/archive/860e9395cb74555c2d537209a107e61cb2bacfc7.jpg
+  kind: related
+  scene: china
+  artists:
+  - mushmach
+- id: BV1oFqKBTE3X
+  platform: bilibili
+  title: DOWN6 - INFINITE CHOPPERS 3 (FT. TWISTED INSANE, IDYLLL, SPLXT, MUSHMACH & MORE)
+  author: GumBrass恐核速说频道
+  date: '2026-01-07'
+  duration: '13:01'
+  cover: https://i0.hdslb.com/bfs/archive/a5b8343882aab2202d87ed727b5a7879aa6b1997.jpg
+  kind: related
+  scene: china
+  artists:
+  - mushmach
+- id: BV11G411Q7En
+  platform: bilibili
+  title: 超无敌的翻唱大赛 初赛下半部分回放【第二届幸福杯】
+  author: 青柠QINGNINGl
+  date: '2023-11-12'
+  duration: '166:32'
+  cover: https://i1.hdslb.com/bfs/archive/8eb3d6069e46bdd6be892f16c97e657ff07eb34a.jpg
+  kind: related
+  scene: china
+  artists:
+  - mushmach
+- id: _NsS_iJQKEg
+  platform: youtube
+  title: MUSHMACH - MEET MR NICE GUY (REMIX) FT. DOWN6
+  author: GumBrass 666 Underground Lab TV
+  date: '2026-05-30'
+  cover: https://i.ytimg.com/vi/_NsS_iJQKEg/hqdefault.jpg
+  kind: related
+  scene: china
+  artists:
+  - mushmach
+- id: _EnpfIAIeHs
+  platform: youtube
+  title: Selfity aka MUSHMACH - 我拥有很多的财富 (I have a lot of wealth) [MUSIC VIDEO]
+  author: GumBrass 666 Underground Lab TV
+  date: '2025-05-01'
+  cover: https://i.ytimg.com/vi/_EnpfIAIeHs/hqdefault.jpg
+  kind: related
+  scene: china
+  artists:
+  - mushmach
+- id: nR0tnvJEE_s
+  platform: youtube
+  title: Nihilist - Worldwide Choppers remix (full track)
+  author: zvikito
+  date: '2021-04-04'
+  cover: https://i.ytimg.com/vi/nR0tnvJEE_s/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - nihilist
+  note: 听众上传，2021
+- id: 9UaMW_9zRIU
+  platform: youtube
+  title: '#EC8CONTESTENTRY- Danjor'
+  author: Danjor
+  date: '2018-02-21'
+  cover: https://i.ytimg.com/vi/9UaMW_9zRIU/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - nihilist
+  note: 评论区有 Nihilist The God 的留言
+- id: ys418MNDttE
+  platform: youtube
+  title: My fastest rap |32.2 sps|
+  author: LYB
+  date: '2017-07-01'
+  cover: https://i.ytimg.com/vi/ys418MNDttE/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - nihilist
+  note: 简介列了 Cryptic Choppers 名单
+- id: BV1pt411E7YB
+  platform: bilibili
+  title: 『说唱搬运』Nihilist—Worldwide Choppers（Remix）
+  author: 森敬文
+  date: '2019-07-21'
+  duration: '1:16'
+  cover: https://i1.hdslb.com/bfs/archive/b1783c9ce814392f393c4aff2c474c3f2fbd48bc.jpg
+  kind: related
+  scene: world
+  artists:
+  - nihilist
+- id: BV1H84y1c7Fa
+  platform: bilibili
+  title: outsider快的40首歌
+  author: interchopper
+  date: '2021-05-04'
+  duration: '9:16'
+  cover: https://i0.hdslb.com/bfs/archive/18c6da773f5bcdc6bfc98ef642ef9ebb14a8df79.jpg
+  kind: related
+  scene: world
+  artists:
+  - outsider
+- id: WC1UbvJwEI8
+  platform: youtube
+  title: KILL 8 🧠 Ruffian Rugged 🤜 DUBBED VERSE WITH LYRICS ON SCREEN
+  author: Def Ill aka Ruffian Rugged (generalrugged)
+  date: '2026-06-30'
+  cover: https://i.ytimg.com/vi/WC1UbvJwEI8/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - ruffian-rugged
+- id: KyFQJtjScOM
+  platform: youtube
+  title: Undaground Choppers 10
+  author: Dj Lil Sprite
+  date: '2019-12-18'
+  cover: https://i.ytimg.com/vi/KyFQJtjScOM/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - ruffian-rugged
+- id: prHit59gNYc
+  platform: youtube
+  title: Top 5 fastest IC2 verses
+  author: ILFR
+  date: '2025-10-05'
+  cover: https://i.ytimg.com/vi/prHit59gNYc/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - ruffian-rugged
+  note: 简介列了数字
+- id: fi19Ar56vb0
+  platform: youtube
+  title: TOP 16 | Fastest Verses on INFINITE CHOPPERS 2
+  author: Wedere - Fast Rap
+  date: '2024-06-19'
+  cover: https://i.ytimg.com/vi/fi19Ar56vb0/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - ruffian-rugged
+  - wedere
+- id: ZGS0d4cGH8Q
+  platform: youtube
+  title: KARGADO - sabotahe x nicolas x homeryo
+  author: P.pride208 official
+  date: '2016-05-16'
+  cover: https://i.ytimg.com/vi/ZGS0d4cGH8Q/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - sabotahe
+- id: hlYNCfk-ZRo
+  platform: youtube
+  title: Kill 6 - Aktibar x Sabotahe x Global Choppers [Official Audio]
+  author: Aktibar Official
+  date: '2020-12-23'
+  cover: https://i.ytimg.com/vi/hlYNCfk-ZRo/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - sabotahe
+- id: D5ZJsm_-3jc
+  platform: youtube
+  title: KILL 7 - Aktibar x Sabotahe x Global Choppers [Official Audio] Awarded Best Cypher
+  author: Aktibar Official
+  date: '2023-01-14'
+  cover: https://i.ytimg.com/vi/D5ZJsm_-3jc/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - sabotahe
+- id: Mtt0rVRRo-g
+  platform: youtube
+  title: 'Sabotahe new record paslangin 5( top #3 fastest rap in the world 2021 accurate list.)19SPS'
+  author: 'SABOTAHE RAP VLOG '
+  date: '2021-02-16'
+  cover: https://i.ytimg.com/vi/Mtt0rVRRo-g/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - sabotahe
+  note: 本人频道，2021
+- id: iL9P__qKZOs
+  platform: youtube
+  title: '"TOP 20" Sabotahe Fastest Verses (2026) ᴴᴰ'
+  author: TrollatorBR
+  date: '2026-01-20'
+  cover: https://i.ytimg.com/vi/iL9P__qKZOs/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - sabotahe
+- id: dguRJ4Ir8tA
+  platform: youtube
+  title: Shad - FreeZeTyler (Cálculo) ᴴᴰ
+  author: TrollatorBR
+  date: '2020-06-13'
+  cover: https://i.ytimg.com/vi/dguRJ4Ir8tA/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - shad
+- id: CuHrKS0hR8o
+  platform: youtube
+  title: '''''TOP 10'''' - Versos Mais Rápidos do Shad ᴴᴰ'
+  author: TrollatorBR
+  date: '2021-03-30'
+  cover: https://i.ytimg.com/vi/CuHrKS0hR8o/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - shad
+- id: 9V-LTQBXHGA
+  platform: youtube
+  title: Top 5 | Versos Mais Rápidos do Shad (2020)
+  author: BruCalcs
+  date: '2020-07-10'
+  cover: https://i.ytimg.com/vi/9V-LTQBXHGA/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - shad
+- id: VJlWyEABtzI
+  platform: youtube
+  title: Top 9 - Versos Mais Rápidos Do Shad
+  author: Confront Hud
+  date: '2017-12-23'
+  cover: https://i.ytimg.com/vi/VJlWyEABtzI/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - shad
+- id: WYnm3YOwsRk
+  platform: youtube
+  title: Partitura
+  author: Shad
+  date: '2018-02-12'
+  cover: https://i.ytimg.com/vi/WYnm3YOwsRk/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - shad
+- id: Zoj3W6vZQOQ
+  platform: youtube
+  title: Ako si Skrima (Pakinggan mu to LHABOY hahaha)
+  author: SignozPro21
+  date: '2013-05-09'
+  cover: https://i.ytimg.com/vi/Zoj3W6vZQOQ/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - skrima
+- id: w7cQV2s5PEA
+  platform: youtube
+  title: SKRIMADOR (olympia thugs crew)
+  author: Olympia thugs Crew
+  date: '2016-05-09'
+  cover: https://i.ytimg.com/vi/w7cQV2s5PEA/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - skrima
+- id: q81MSZouAZg
+  platform: youtube
+  title: SKRIMADOR LIVE - katay droga at Mamatid (champion)
+  author: Olympia thugs Crew
+  date: '2017-11-16'
+  cover: https://i.ytimg.com/vi/q81MSZouAZg/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - skrima
+- id: yXYnt35l9_0
+  platform: youtube
+  title: Skrima ft. Dekots - WAKE UP
+  author: DM.RECORD
+  date: '2026-09-04'
+  cover: https://i.ytimg.com/vi/yXYnt35l9_0/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - skrima
+- id: mEwkMBbjC9g
+  platform: youtube
+  title: PASENSYA KANA - (official music video) Crizinto , J.i , Jhaypee , Skrima (Olympia Thugs Crew Pro.)
+  author: Olympia thugs Crew
+  date: '2016-07-11'
+  cover: https://i.ytimg.com/vi/mEwkMBbjC9g/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - skrima
+- id: tFG4IYD--7o
+  platform: youtube
+  title: 【初音ミクの消失】早口のギネス世界記録保持者が歌ってみた
+  author: SOS
+  date: '2025-06-16'
+  cover: https://i.ytimg.com/vi/tFG4IYD--7o/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - sos
+- id: ZJLo2ZmcZEQ
+  platform: youtube
+  title: Youtube Choppers 2 (SplytSecond of the SythLordz verse)
+  author: SPLXT スプリット
+  date: '2012-11-13'
+  cover: https://i.ytimg.com/vi/ZJLo2ZmcZEQ/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - splxt
+- id: X5HTcrfErhE
+  platform: youtube
+  title: SplytSecond - FASTEST RAPPER IN FLORIDA!!!
+  author: SPLXT スプリット
+  date: '2018-05-08'
+  cover: https://i.ytimg.com/vi/X5HTcrfErhE/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - splxt
+- id: BV1ch41197W3
+  platform: bilibili
+  title: 天花板之上
+  author: Spylent
+  date: '2020-09-19'
+  duration: '3:57'
+  cover: https://i0.hdslb.com/bfs/archive/be48dc0989c579003e868fdaaed4153f0d76915e.jpg
+  kind: related
+  scene: china
+  artists:
+  - spylent
+- id: BV1J7411d7Hd
+  platform: bilibili
+  title: 【Spylent】回答粉丝问题+Wordplay教学
+  author: Spylent
+  date: '2020-03-18'
+  duration: '3:12'
+  cover: https://i0.hdslb.com/bfs/archive/b0ee3395dac490b38b3e78922c8223cacf15effc.jpg
+  kind: related
+  scene: china
+  artists:
+  - spylent
+- id: BV1aX4y1A71H
+  platform: bilibili
+  title: 【文字游戏解析】中文说唱的《天花板之上》最全wordplay解读！Spylent！！！
+  author: Jar_V
+  date: '2021-06-18'
+  duration: '3:50'
+  cover: https://i1.hdslb.com/bfs/archive/09447ecd11388a5a825ea8e1e80916f98fdeac44.jpg
+  kind: related
+  scene: china
+  artists:
+  - spylent
+- id: AwW2RF_lPAc
+  platform: youtube
+  title: ADK x Teejay x Sri Rascol - VELLAI POOVE | Rap Machines ( Video )
+  author: Rap Machines
+  date: '2017-04-25'
+  cover: https://i.ytimg.com/vi/AwW2RF_lPAc/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - sri-rascol
+- id: EznbNdnrOBg
+  platform: youtube
+  title: ADK x Sri Rascol x Rolex Rasathy - MAAYAVI | Rap Machines ( Video )
+  author: Rap Machines
+  date: '2018-04-28'
+  cover: https://i.ytimg.com/vi/EznbNdnrOBg/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - sri-rascol
+- id: xQlKoa7CXlY
+  platform: youtube
+  title: Sri Rascol - Killambomb INTRO
+  author: Third Eye Music MEDIA
+  date: '2020-09-09'
+  cover: https://i.ytimg.com/vi/xQlKoa7CXlY/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - sri-rascol
+- id: DDD3jhy2nng
+  platform: youtube
+  title: INFINITE CHOPPERS | The Jackal's Verse | Fastest Rap | Official Video
+  author: The Jackal Rapper
+  date: '2023-07-28'
+  cover: https://i.ytimg.com/vi/DDD3jhy2nng/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - the-jackal
+  note: 本人频道，2023
+- id: uXZUPyC5ZnY
+  platform: youtube
+  title: Dedicated (Ft. DAX) [Prod. By B4LLIN STAWNS]
+  author: The Jackal Rapper
+  date: '2018-07-24'
+  cover: https://i.ytimg.com/vi/uXZUPyC5ZnY/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - the-jackal
+  note: 本人频道，2018
+- id: wsb5UGOQqSE
+  platform: youtube
+  title: LUC1DD - Limbo Cypher (ft. Ruffian Rugged, Tokumei, Jackal, DOWN6, Dumanoid, etc.)
+  author: scnic
+  date: '2024-12-24'
+  cover: https://i.ytimg.com/vi/wsb5UGOQqSE/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - the-jackal
+  note: 简介列了每段 SPS
+- id: G5gtHBYLDIw
+  platform: youtube
+  title: FASTEST VERSES on BLOODY CHOPPERS 5
+  author: Wedere - Fast Rap
+  date: '2024-11-17'
+  cover: https://i.ytimg.com/vi/G5gtHBYLDIw/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - the-jackal
+- id: FhkHLEK95pU
+  platform: youtube
+  title: Troll - Vida Fútil Pt. 2 (Prod. Shad) [Fastest Rapper 2023]
+  author: Troll
+  date: '2023-07-04'
+  cover: https://i.ytimg.com/vi/FhkHLEK95pU/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - troll
+- id: ZmVkv6law4s
+  platform: youtube
+  title: Troll - INFINITE CHOPPERS 2 (feat. Asa, Ruffian Rugged, Bloody Ruckus, Al Zabran, Idylll, & More)
+  author: Troll
+  date: '2024-06-19'
+  cover: https://i.ytimg.com/vi/ZmVkv6law4s/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - troll
+- id: FwRMRh33IDc
+  platform: youtube
+  title: Retr0 X Troll - BRAZILIAN CHOPPERS 2 (Prod. Troll)
+  author: Troll
+  date: '2024-09-01'
+  cover: https://i.ytimg.com/vi/FwRMRh33IDc/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - troll
+- id: Vsm4--i-CDI
+  platform: youtube
+  title: Troll - "Flow de Alien" (Feat. Retr0 & DOWN6) [Prod. MaaBeatz]
+  author: Troll
+  date: '2024-12-04'
+  cover: https://i.ytimg.com/vi/Vsm4--i-CDI/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - troll
+- id: r8X6c-OjLv4
+  platform: youtube
+  title: 533 Sílabas em 1 Minuto
+  author: Troll
+  date: '2026-05-08'
+  cover: https://i.ytimg.com/vi/r8X6c-OjLv4/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - troll
+- id: mMf8vzq7uNg
+  platform: youtube
+  title: PRO$PER vs TUFFO DA BULLETMAN Co-Hosted by @ZakweSA | RONG10 BATTLE LEAGUE
+  author: eGalini TV
+  date: '2024-07-25'
+  cover: https://i.ytimg.com/vi/mMf8vzq7uNg/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - tuffo-da-bulletman
+- id: SudqMBRI4Ts
+  platform: youtube
+  title: TUFFO DA BULLETMAN vs SMUNQA | RAP BATTLE | RONG10 (KuFoFaYo)
+  author: eGalini TV
+  date: '2026-06-10'
+  cover: https://i.ytimg.com/vi/SudqMBRI4Ts/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - tuffo-da-bulletman
+- id: qOcNEs5Y8p4
+  platform: youtube
+  title: Tuffo Da Bulletman - Godzilla Challenge
+  author: NFM
+  date: '2024-11-25'
+  cover: https://i.ytimg.com/vi/qOcNEs5Y8p4/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - tuffo-da-bulletman
+- id: QbGq2-xGMRE
+  platform: youtube
+  title: SA's Got Talent Njabulo Bulletman
+  author: ETV
+  date: '2012-09-27'
+  cover: https://i.ytimg.com/vi/QbGq2-xGMRE/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - tuffo-da-bulletman
+- id: JeffYztIvcI
+  platform: youtube
+  title: KZN Lock Down Cypher S3
+  author: Tuffo Da Bulletman Afrikazfastestrapper
+  date: '2024-04-17'
+  cover: https://i.ytimg.com/vi/JeffYztIvcI/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - tuffo-da-bulletman
+- id: lsWYkFj0XcU
+  platform: youtube
+  title: KATO ft. U$O & Johnson 'Hey Shorty (Yeah Yeah Part II)' (live) | Curlingklubben
+  author: P3 x Musik
+  date: '2020-11-14'
+  cover: https://i.ytimg.com/vi/lsWYkFj0XcU/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - uso
+  note: P3 现场
+- id: x15vzpGPNFU
+  platform: youtube
+  title: USO - Autopilot (Officiel Video)
+  author: USO
+  date: '2017-05-24'
+  cover: https://i.ytimg.com/vi/x15vzpGPNFU/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - uso
+- id: 8oV9x_6eCJc
+  platform: youtube
+  title: 歌詞の書き方 / 嘯
+  author: 嘯 / usobuki
+  date: '2021-03-22'
+  cover: https://i.ytimg.com/vi/8oV9x_6eCJc/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - usobuki
+- id: _fL_DwWCgPI
+  platform: youtube
+  title: 嘯 1st EP「じしん」[Full]
+  author: 嘯 / usobuki
+  date: '2025-11-05'
+  cover: https://i.ytimg.com/vi/_fL_DwWCgPI/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - usobuki
+- id: REZZQnAiFi8
+  platform: youtube
+  title: VORTEX - TOO BAD (Official Music Video) Prod. Big Moe | فورتكس - تو باد
+  author: Vortex Official
+  date: '2022-08-19'
+  cover: https://i.ytimg.com/vi/REZZQnAiFi8/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - vortex
+- id: YqyQzf4AD3s
+  platform: youtube
+  title: VORTEX x KHALIFA OG - AMWAJ (OFFICIAL VIDEO) | فورتكس و خليفة - امواج
+  author: Vortex Official
+  date: '2022-12-15'
+  cover: https://i.ytimg.com/vi/YqyQzf4AD3s/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - vortex
+- id: NjCowuIe8a0
+  platform: youtube
+  title: George Watsky performs "Goat Fast Rapper" LIVE
+  author: What's Trending
+  date: '2011-09-06'
+  cover: https://i.ytimg.com/vi/NjCowuIe8a0/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - watsky
+- id: QQ6UeCfxjNA
+  platform: youtube
+  title: Watsky- Godzilla Challenge
+  author: GEORGE WATSKY!
+  date: '2020-03-06'
+  cover: https://i.ytimg.com/vi/QQ6UeCfxjNA/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - watsky
+- id: BV1cs411x7ni
+  platform: bilibili
+  title: 【George Watsky】小哥唱【Watsky raps fast】.，3秒唱60字，这语速我服！
+  author: 俞心池tube
+  date: '2016-11-01'
+  duration: '1:28'
+  cover: https://i1.hdslb.com/bfs/archive/53157c47c58c7240609894153ec8b6ffd0096448.png
+  kind: related
+  scene: world
+  artists:
+  - watsky
+  note: 2016 搬运
+- id: RTotQDlEIgw
+  platform: youtube
+  title: '#IC3CONTEST - Wedere - CONTEST WINNER'
+  author: Wedere
+  date: '2024-12-27'
+  cover: https://i.ytimg.com/vi/RTotQDlEIgw/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - wedere
+- id: BV1Hv411M7eG
+  platform: bilibili
+  title: Beef碾压！Diss疯狂轰炸"幼杀专辑都有的Feat！"-赵辰龙兄弟WTZ《天才小子》
+  author: 街头社区
+  date: '2021-11-06'
+  duration: '3:07'
+  cover: https://i0.hdslb.com/bfs/archive/73841370587b7aa9b6032d89a9641496cb114d64.jpg
+  kind: related
+  scene: china
+  artists:
+  - wtz
+  note: 评论区转引赵辰龙微博："不是我小号"
+- id: BV1Pg411T7fw
+  platform: bilibili
+  title: 厌烦粉丝用“幼杀”说事 TACE diss 赵辰龙？WTZ半路杀出！WTZ vs TACE diss Reaction
+  author: 麦豆与莱塔
+  date: '2021-11-17'
+  duration: '32:23'
+  cover: https://i0.hdslb.com/bfs/archive/4a305c03ab56ce096c26f7839d76880c080bd112.jpg
+  kind: related
+  scene: china
+  artists:
+  - wtz
+- id: BV1mw9YBzE5o
+  platform: bilibili
+  title: Chinese choppers cypher coming soon！5.10
+  author: 夏淳扬
+  date: '2026-04-30'
+  duration: 0:12
+  cover: https://i1.hdslb.com/bfs/archive/4edaf947f4970b939f103118b4dfa53b0af3fff4.jpg
+  kind: related
+  scene: china
+  artists:
+  - xia-chunyang
+- id: BV13XQMB6Ert
+  platform: bilibili
+  title: 什么？26年了居然还有人坚持做快嘴，盘点那些新晋快嘴rapper
+  author: 夏淳扬
+  date: '2026-04-11'
+  duration: '3:22'
+  cover: https://i0.hdslb.com/bfs/archive/bcae43a307f58e7ba8700ebfbe5574c3af868417.jpg
+  kind: related
+  scene: china
+  artists:
+  - xia-chunyang
+- id: BV1x6Jc6YE9N
+  platform: bilibili
+  title: 来听听硬核chop rap
+  author: 夏淳扬
+  date: '2026-06-14'
+  duration: 0:39
+  cover: https://i0.hdslb.com/bfs/archive/2c1af84ade7dc215bdb956f1bf73699d6167c598.jpg
+  kind: related
+  scene: china
+  artists:
+  - xia-chunyang
+- id: BV1Qt4y1C7f2
+  platform: bilibili
+  title: 强强合作！AR × 杨和苏新歌《寄生虫》来了，疯狂的Wordplay！
+  author: 嘻笑堂
+  date: '2020-05-29'
+  duration: '3:13'
+  cover: https://i1.hdslb.com/bfs/archive/842e86343eb78345eccb8f0cb393580d1b089319.jpg
+  kind: related
+  scene: china
+  artists:
+  - yang-he-su
+- id: BV1C34y167CE
+  platform: bilibili
+  title: 杨和苏极速快嘴！10秒Rap101字！小组表演《饕餮》
+  author: 街头社区
+  date: '2021-12-25'
+  duration: '1:55'
+  cover: https://i0.hdslb.com/bfs/archive/f583e9fb9353f9e5842a00346b6c5827aa693ee8.jpg
+  kind: related
+  scene: china
+  artists:
+  - yang-he-su
+- id: s25_Nf6BAP0
+  platform: youtube
+  title: Yung Revival - shot caller (verse)
+  author: ☣FastRapGuy☣
+  date: '2013-12-05'
+  cover: https://i.ytimg.com/vi/s25_Nf6BAP0/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - yung-revival
+- id: vkvL1z3_Li0
+  platform: youtube
+  title: DNA - Yung Revival Shout Out "From the UK"
+  author: DNA Tru Lyricist
+  date: '2015-03-04'
+  cover: https://i.ytimg.com/vi/vkvL1z3_Li0/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - yung-revival
+- id: sTxG9w7AqSQ
+  platform: youtube
+  title: Yung Revival Lost Tracks Archive
+  author: GumBrass 666 Underground Lab TV
+  date: '2024-08-30'
+  cover: https://i.ytimg.com/vi/sTxG9w7AqSQ/hqdefault.jpg
+  kind: related
+  scene: world
+  artists:
+  - yung-revival
+- id: BV1eDcFzGE6m
+  platform: bilibili
+  title: 【MV】凌晨屠杀场Cypher
+  author: 喜欢整活的Zack
+  date: '2026-02-08'
+  duration: '4:08'
+  cover: https://i1.hdslb.com/bfs/archive/f71c5db98f6828b5b58270124de4a0b29cc170d5.jpg
+  kind: related
+  scene: china
+  artists:
+  - zack
+- id: BV1wQSSBvE4W
+  platform: bilibili
+  title: 【MV】GouBa Choppers
+  author: 喜欢整活的Zack
+  date: '2026-04-05'
+  duration: '4:21'
+  cover: https://i2.hdslb.com/bfs/archive/31dd2881cd3ab1897f990621f40e19cca47de40d.jpg
+  kind: related
+  scene: china
+  artists:
+  - zack
+  note: 名单含 THE ZACK
+- id: BV15SSDBdEjo
+  platform: bilibili
+  title: 【MV】GouBa Choppers2
+  author: 喜欢整活的Zack
+  date: '2026-04-05'
+  duration: '5:04'
+  cover: https://i1.hdslb.com/bfs/archive/3e7ab646ac4784e00836ebc85192fd018ee135f8.jpg
+  kind: related
+  scene: china
+  artists:
+  - zack
+- id: BV1shZfBJELb
+  platform: bilibili
+  title: 【窒息节奏+人类极限语速】Astronomical Choppers3翻唱（原唱：Wyntrr、THE JACKAI、HI-SUNKO、Wedere）
+  author: 喜欢整活的Zack
+  date: '2026-02-22'
+  duration: '2:27'
+  cover: https://i1.hdslb.com/bfs/archive/14dcdae9277b1e6826105b96e513a3e7d0c32ddb.jpg
+  kind: related
+  scene: china
+  artists:
+  - zack
+  note: 评论区有他关于"不开倍速"的说明
+- id: BV1JEz9B7EfK
+  platform: bilibili
+  title: 【全程恐怖高能预警】《Nightmare》翻唱（Crucified那一段）
+  author: 喜欢整活的Zack
+  date: '2026-01-28'
+  duration: '2:10'
+  cover: https://i0.hdslb.com/bfs/archive/ffee67dfbb366aaadcc2f74d878b1aa16f31470d.jpg
+  kind: related
+  scene: china
+  artists:
+  - zack
+- id: BV19Y4y1t7fw
+  platform: bilibili
+  title: 惊掉下巴！赵辰龙直播中演示幸存者联盟的各种声音！表示不是变速器并评价了王铁柱
+  author: 青岛迅易通手机维修
+  date: '2022-05-04'
+  duration: '6:27'
+  cover: https://i0.hdslb.com/bfs/archive/2569e770865d789f48797b3c4d3a3cd67b20a4c1.jpg
+  kind: related
+  scene: china
+  artists:
+  - zhao-chenlong
+- id: BV1vW411r7nh
+  platform: bilibili
+  title: 山东卫视超强音浪 - 南征北战醉人（赵辰龙） 10秒炫技 128字超强
+  author: EZStudio阿涛
+  date: '2018-09-22'
+  duration: 0:47
+  cover: https://i1.hdslb.com/bfs/archive/32a8f86d395b136ad0f1abd59c493becb13525d7.jpg
+  kind: related
+  scene: china
+  artists:
+  - zhao-chenlong
+- id: BV1UJ411R7Ew
+  platform: bilibili
+  title: 赵辰龙金属风暴般的《饕餮》快嘴rap。
+  author: 昨日不再重现2020
+  date: '2019-11-22'
+  duration: 0:26
+  cover: https://i1.hdslb.com/bfs/archive/1b72d9ad8572c4378b0f995a1b9f52829af31204.jpg
+  kind: related
+  scene: china
+  artists:
+  - zhao-chenlong
+  note: 南征北战访谈片段，2019
+- id: BV1DJ41167c8
+  platform: bilibili
+  title: 醉人赵辰龙又发歌了！9 Tribez《秋裤之歌》
+  author: 嘻笑堂
+  date: '2019-12-17'
+  duration: '3:30'
+  cover: https://i0.hdslb.com/bfs/archive/53600e7248bd7b5262fce020fec1d37c1f679bc6.jpg
+  kind: related
+  scene: china
+  artists:
+  - zhao-chenlong
+- id: BV1iW411B7sk
+  platform: bilibili
+  title: 【9 Tribez/赵辰龙】浮躁
+  author: 冲啥小香
+  date: '2018-01-06'
+  duration: '3:46'
+  cover: https://i1.hdslb.com/bfs/archive/2584e3dac4f16fd9df6b325435f4873ebb0c2a70.jpg
+  kind: related
+  scene: china
+  artists:
+  - zhao-chenlong
+  note: 2018，简介写明是赵辰龙的小号
+- id: BV1NV411u7RU
+  platform: bilibili
+  title: 醉人/耐踹/赵辰龙合体 新版《生命力》韵脚检查
+  author: 青柠QINGNINGl
+  date: '2023-07-04'
+  duration: '3:18'
+  cover: https://i2.hdslb.com/bfs/archive/4b21aad04d28babd5ab858af33e2d29bf91fed30.jpg
+  kind: related
+  scene: china
+  artists:
+  - zhao-chenlong

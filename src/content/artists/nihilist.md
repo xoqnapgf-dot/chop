@@ -49,7 +49,7 @@ sources:
 
 Nihilist 是美国的地下 chopper，中文圈都叫他"虚无"。公开资料很少，本人的 YouTube 频道 Nihilist The God 现在一个视频都没有，能找到的基本都是合作曲和别人的重传。
 
-注意别和澳大利亚悉尼那位同名 rapper 搞混：那位 2016 年在 Sub Conscious Records 发过专辑《NightShift》，是另一个人。
+澳大利亚悉尼另有一位同名 rapper，2016 年在 Sub Conscious Records 发过专辑《NightShift》，是另一个人。
 
 ## 合作
 

@@ -29,11 +29,11 @@ const SHEET = 'https://docs.google.com/spreadsheets/d/1q6ccbONUj_yDxAbRCYVqQK5DL
     <div class="card p-5 text-sm leading-relaxed text-ink-2 sm:p-6">
       <p class="eyebrow">NahDah Vebb · 2024 年 8 月 23 日</p>
       <p class="mt-2 text-lg font-semibold text-ink">The Fastest Rapper from Every Country</p>
-      <p class="mt-3">NahDah 和 TrollatorBR、Dvagoh、Wedere、The Jackal、NFM 等十几位研究和测算者一起，在一百九十多个国家和地区<strong class="text-ink">各找出最快的一段</strong>。原表把台湾单列，共 195 栏；这里按中国大陆的通行说法把它并入中国，下面的列表共 {rows.length} 栏。The Jackal 在评论区说，这是"好几年的研究"。</p>
+      <p class="mt-3">NahDah 和 TrollatorBR、Dvagoh、Wedere、The Jackal、NFM 等十几位测算者，在一百九十多个国家和地区<strong class="text-ink">各找出最快的一段</strong>。原表把台湾单列共 195 栏，这里并入中国，共 {rows.length} 栏。The Jackal 称这是"好几年的研究"。</p>
       <ul class="mt-3 grid gap-1.5">
         <li>· 看的是<strong class="text-ink">峰值</strong>：1 秒或稍长的窗口，不用 10 秒平均</li>
         <li>· 每国只选 1 人，和《Top 150》不是一回事，名次不能互相比</li>
-        <li>· 团队自己也说不可能听遍每个国家，欢迎补充更快的</li>
+        <li>· 团队自己说没法听遍每个国家，欢迎补充</li>
       </ul>
       <p class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs">
         <a href={VIDEO} target="_blank" rel="noopener nofollow" class="link-u text-ink-3 hover:text-ink">YouTube 视频 ↗</a>
@@ -63,7 +63,7 @@ const SHEET = 'https://docs.google.com/spreadsheets/d/1q6ccbONUj_yDxAbRCYVqQK5DL
         <dd class="text-xs text-ink-2">{rows.at(-1)!.nameZh} · {rows.at(-1)!.rapper}</dd>
       </div>
     </dl>
-    <p class="text-xs leading-relaxed text-ink-3">中国一栏取最快的一段：MUSHMACH 在《ON THE BIBLE REMIX》里的 15.47；原表另列的中国台湾一栏是王力宏的现场表演片段，13.02。中文圈自己的测速（五里亭亭长、石狐九和等）口径不同，数字不直接对比。</p>
+    <p class="text-xs leading-relaxed text-ink-3">中国一栏取最快的一段：MUSHMACH《ON THE BIBLE REMIX》15.47；原表另列的中国台湾一栏是王力宏现场片段，13.02。中文圈自己的测速（五里亭亭长、石狐九和等）口径不同，不直接对比。</p>
   </div>
 
   <div class="card p-4 sm:p-5">

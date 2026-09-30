@@ -72,7 +72,7 @@ const TOP = 6;
     </div>
     <div>
       <p class="max-w-md text-ink-2">
-        线越粗，两人合作的歌越多。把鼠标移到一个人身上，只看他的合作线；点头像进人物页。
+        线越粗，合作的歌越多。悬停看单人的合作线，点头像进人物页。
       </p>
       <dl class="mt-8 grid max-w-md grid-cols-3 gap-4">
         <div><dd class="font-display text-3xl font-semibold tabular-nums">{all.length}</dd><dt class="mt-1 text-xs text-ink-3">首合作曲</dt></div>
@@ -80,7 +80,7 @@ const TOP = 6;
         <div><dd class="font-display text-3xl font-semibold tabular-nums">{order.length}</dd><dt class="mt-1 text-xs text-ink-3">位人物</dt></div>
       </dl>
       <p class="mt-8 max-w-md text-xs leading-relaxed text-ink-3">
-        只统计有档案的人物之间的合作，署名以网易云音乐为准，去掉了伴奏版和 skit。cypher 里同时出现的人也算合作。
+        仅统计有档案的人物，署名以网易云音乐为准，不含伴奏版和 skit；cypher 里同场出现也算合作。
       </p>
     </div>
   </div>

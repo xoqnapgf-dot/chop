@@ -15,7 +15,7 @@ const artists = (await getCollection('artists')).sort(
     <p class="eyebrow">People · {artists.length}</p>
     <h1 class="mt-4 text-5xl font-bold md:text-7xl">人物库</h1>
     <p class="mt-5 max-w-2xl text-lg text-ink-2">
-      每个人都标了层级：<span style="color:var(--style-fast)">快嘴</span>或 <span style="color:var(--style-chopper)">Chopper</span>（唱 chop 的人）。快不等于 chop，标签依据写在每个人的页面里。
+      分 <span style="color:var(--style-fast)">快嘴</span> 和 <span style="color:var(--style-chopper)">Chopper</span>（唱 chop 的人）两层，依据写在各人页面里。
     </p>
 
     <div class="filters sticky top-16 z-30 -mx-4 mt-10 border-y border-line px-4 py-4 md:mx-0 md:rounded-2xl md:border md:px-5" data-pagefind-ignore>
@@ -40,7 +40,7 @@ const artists = (await getCollection('artists')).sort(
     <div id="grid" class="mt-4 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
       {artists.map((a, i) => <ArtistCard artist={a} eager={i < 4} />)}
     </div>
-    <p id="empty" class="hidden py-24 text-center text-ink-3">没有匹配的人物。换个关键词试试？</p>
+    <p id="empty" class="hidden py-24 text-center text-ink-3">没有匹配的人物。</p>
   </section>
 </Base>
 

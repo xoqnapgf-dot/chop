@@ -18,7 +18,7 @@ const scenes = Object.keys(SCENE) as (keyof typeof SCENE)[];
   <section class="page-hero container-x pt-14 md:pt-20" data-wm="TRACKS" style="--hero-a:var(--p5);--hero-b:var(--p4);--hero-c:var(--p2)">
     <p class="eyebrow">Tracks · {tracks.length}</p>
     <h1 class="mt-4 text-5xl font-bold md:text-7xl">曲目库</h1>
-    <p class="mt-5 max-w-2xl text-lg text-ink-2">按年份排列。点击封面在页面内播放；优先收录艺人或厂牌官方上传的视频，非官方上传的会注明。</p>
+    <p class="mt-5 max-w-2xl text-lg text-ink-2">按年份排列，点封面播放。优先收录官方上传，非官方的会注明。</p>
 
     <div class="sticky top-16 z-20 -mx-4 mt-8 border-y border-line bg-bg px-4 py-3 md:static md:mx-0 md:border-0 md:bg-transparent md:p-0 md:backdrop-blur-none" data-pagefind-ignore>
       <label class="relative block">
@@ -38,10 +38,10 @@ const scenes = Object.keys(SCENE) as (keyof typeof SCENE)[];
 
     <p class="mt-5 flex items-center justify-between text-sm text-ink-3">
       <span class="t-count">共 {tracks.length} 首</span>
-      <span class="md:hidden">点一行展开播放器和介绍</span>
+      <span class="md:hidden">点一行展开播放</span>
     </p>
-    <p class="t-empty mt-6 hidden text-ink-3">没有找到，换个关键词试试。</p>
-    <div class="t-grid mt-4 grid grid-cols-1 gap-3 md:mt-8 md:gap-x-8 md:gap-y-16 lg:grid-cols-2">
+    <p class="t-empty mt-6 hidden text-ink-3">没有匹配的曲目。</p>
+    <div class="t-grid mt-4 grid grid-cols-1 gap-3 md:mt-8 md:gap-x-6 md:gap-y-12 lg:grid-cols-2 xl:grid-cols-3">
       {
         withArtists.map(({ t, artists }) => {
           const thumb = trackCover(t.data);
@@ -90,7 +90,7 @@ const scenes = Object.keys(SCENE) as (keyof typeof SCENE)[];
   <section id="videos" class="container-x scroll-mt-24 pt-24">
     <p class="eyebrow">Videos</p>
     <h2 class="mt-3 text-3xl font-semibold md:text-5xl">测速、推荐和教学视频</h2>
-    <p class="mt-4 max-w-3xl text-ink-2">B 站和 YouTube 上值得看的快嘴视频：语速测算、作品合集、怎么练。视频里的数字是作者自己测的，口径不一。</p>
+    <p class="mt-4 max-w-3xl text-ink-2">B 站和 YouTube 上值得看的快嘴视频：语速测算、作品合集、教学。数字为作者自测，口径不一。</p>
     <div class="mt-8"><VideoShelf /></div>
   </section>
 </Base>

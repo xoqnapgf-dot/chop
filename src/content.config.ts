@@ -219,9 +219,11 @@ const videos = defineCollection({
     duration: z.string().optional(),
     /** 封面原图地址，由 scripts/fetch-youtube.mjs 下载到 src/assets/videos/ */
     cover: z.url(),
-    kind: z.enum(['speed', 'picks', 'howto']),
+    kind: z.enum(['speed', 'picks', 'howto', 'related']),
     scene: z.enum(['china', 'world']),
-    note: z.string(),
+    /** 只在这些人物页的「相关视频」里出现（related 类必填） */
+    artists: z.array(z.string()).default([]),
+    note: z.string().optional(),
   }),
 });
 

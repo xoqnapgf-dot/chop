@@ -7,16 +7,18 @@ import { Image } from 'astro:assets';
 import { videoCover } from '@/lib/media';
 
 interface Props {
-  kinds?: ('speed' | 'picks' | 'howto')[];
+  kinds?: ('speed' | 'picks' | 'howto' | 'related')[];
   scene?: 'china' | 'world';
   limit?: number;
+  /** 人物 slug：只列这个人的相关视频 */
+  artist?: string;
 }
-const { kinds, scene, limit } = Astro.props;
-const KIND = { speed: '测速', picks: '推荐', howto: '教学' } as const;
+const { kinds, scene, limit, artist } = Astro.props;
+const KIND = { speed: '测速', picks: '推荐', howto: '教学', related: '相关' } as const;
 const all = (await getCollection('videos'))
-  .filter((v) => (!kinds || kinds.includes(v.data.kind)) && (!scene || v.data.scene === scene))
-  // 中国区在前，同区按类型（测速 → 推荐 → 教学）
-  .sort((a, b) => (a.data.scene === b.data.scene ? 0 : a.data.scene === 'china' ? -1 : 1) || Object.keys(KIND).indexOf(a.data.kind) - Object.keys(KIND).indexOf(b.data.kind));
+  .filter((v) => (artist ? v.data.artists.includes(artist) : v.data.kind !== 'related') && (!kinds || kinds.includes(v.data.kind)) && (!scene || v.data.scene === scene))
+  // 人物页按时间倒序；其他页中国区在前，同区按类型（测速 → 推荐 → 教学）
+  .sort((a, b) => artist ? b.data.date.localeCompare(a.data.date) : (a.data.scene === b.data.scene ? 0 : a.data.scene === 'china' ? -1 : 1) || Object.keys(KIND).indexOf(a.data.kind) - Object.keys(KIND).indexOf(b.data.kind));
 const list = limit ? all.slice(0, limit) : all;
 // B 站给的时长是 "3:0" 这种，统一补成 "3:00"
 const dur = (d: string) => d.split(':').map((p, i) => (i === 0 ? p : p.padStart(2, '0'))).join(':');
@@ -31,28 +33,54 @@ const href = (v: (typeof all)[number]) =>
       const cover = videoCover(v.id);
       return (
         <li class="flex w-[78vw] max-w-80 shrink-0 snap-start sm:w-auto sm:max-w-none">
-          <a href={href(v)} target="_blank" rel="noopener" class="vcard card group flex w-full flex-col overflow-hidden">
-            <div class="relative aspect-video overflow-hidden bg-black">
-              {cover && <Image src={cover} alt="" widths={[320, 640]} sizes="(min-width: 1280px) 300px, (min-width: 640px) 45vw, 100vw" class="size-full object-cover transition duration-500 group-hover:scale-[1.03]" />}
-              <span class="absolute left-2 top-2 rounded-full bg-black/65 px-2 py-0.5 text-xs font-semibold text-white">{v.data.platform === 'bilibili' ? 'B 站' : 'YouTube'}</span>
-              {v.data.duration && <span class="absolute bottom-2 right-2 rounded bg-black/70 px-1.5 py-0.5 font-mono text-xs text-white">{dur(v.data.duration)}</span>}
+          <article class="vcard card group flex w-full flex-col overflow-hidden">
+            <div class="vplay relative aspect-video overflow-hidden bg-black" data-platform={v.data.platform} data-id={v.id}>
+              {cover && <Image src={cover} alt="" widths={[320, 640]} sizes="(min-width: 1280px) 300px, (min-width: 640px) 45vw, 100vw" class="size-full object-cover transition duration-500 group-hover:scale-[1.03]" loading="lazy" />}
+              <button type="button" class="vbtn absolute inset-0 grid place-items-center" aria-label={`播放：${v.data.title}`}>
+                <span class="grid size-11 place-items-center rounded-full bg-black/55 text-white shadow-lg transition group-hover:scale-110 group-hover:bg-accent group-hover:text-accent-ink">
+                  <svg viewBox="0 0 24 24" class="ml-0.5 size-5" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z" /></svg>
+                </span>
+              </button>
+              <span class="vbadge pointer-events-none absolute left-2 top-2 rounded-full bg-black/65 px-2 py-0.5 text-xs font-semibold text-white">{v.data.platform === 'bilibili' ? 'B 站' : 'YouTube'}</span>
+              {v.data.duration && <span class="vbadge pointer-events-none absolute bottom-2 right-2 rounded bg-black/70 px-1.5 py-0.5 font-mono text-xs text-white">{dur(v.data.duration)}</span>}
             </div>
-            <div class="flex flex-1 flex-col p-4">
+            <a href={href(v)} target="_blank" rel="noopener" class="flex flex-1 flex-col p-4">
               <p class="flex items-center gap-2 text-xs text-ink-3">
                 <span class="kind rounded-full px-2 py-0.5 font-semibold" data-kind={v.data.kind}>{KIND[v.data.kind]}</span>
                 <span>{v.data.scene === 'china' ? '中文' : '海外'}</span>
                 <span class="ml-auto font-mono">{v.data.date.slice(0, 7)}</span>
               </p>
               <p class="mt-2 line-clamp-2 text-sm font-semibold leading-snug group-hover:underline">{v.data.title}</p>
-              <p class="mt-1 text-xs text-ink-3">{v.data.author}</p>
-              <p class="mt-2 text-xs leading-relaxed text-ink-2">{v.data.note}</p>
-            </div>
-          </a>
+              <p class="mt-1 text-xs text-ink-3">{v.data.author} ↗</p>
+              {v.data.note && <p class="mt-2 text-xs leading-relaxed text-ink-2">{v.data.note}</p>}
+            </a>
+          </article>
         </li>
       );
     })
   }
 </ul>
+
+<script>
+  // 点封面就地播放：B 站用官方播放器，YouTube 用 nocookie 嵌入；标题仍链到原视频
+  document.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('.vplay .vbtn');
+    if (!btn) return;
+    const box = btn.parentElement as HTMLElement;
+    const { platform, id } = box.dataset;
+    const src =
+      platform === 'bilibili'
+        ? `https://player.bilibili.com/player.html?bvid=${id}&page=1&high_quality=1&autoplay=1&danmaku=0`
+        : `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+    const f = document.createElement('iframe');
+    f.src = src;
+    f.className = 'absolute inset-0 size-full border-0';
+    f.allow = 'autoplay; fullscreen; picture-in-picture';
+    f.allowFullscreen = true;
+    f.title = btn.getAttribute('aria-label') ?? '视频';
+    box.replaceChildren(f);
+  });
+</script>
 
 <style>
   .vshelf {
