@@ -35,7 +35,7 @@ speed:
     syllables: 799
     seconds: 46
     confidence: pending
-    note: '为回应"后期加速"的质疑录的现场视频，其中最快的部分超过 19 SPS。799 这个数是视频标题自报的，没有第三方逐音节数过。'
+    note: '为回应"后期加速"的质疑录的现场视频，其中最快的部分超过 19 SPS。799 这个数是视频标题自报的，没有第三方逐音节数过。他本人在这条视频下留言：熟悉他音乐的人都知道他一秒能唱到 20 个音节以上，这是真的，演出结尾他经常清唱这种速度段。'
     sources:
       - { title: 'YouTube – Crucified spits 799 syllables in 46 seconds', url: 'https://www.youtube.com/watch?v=UazJea9uaDc' }
       - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }
@@ -97,11 +97,12 @@ speed:
     syllables: 22
     seconds: 1.043
     confidence: verified
-    note: '他本人说这段是 22 SPS；NahDah 团队"非常接近但没能核实"，测得 1.043 秒 22 个音节 ≈ 21.09。两边都在 21–22 之间，SPS wiki 也说他有 4 首歌到了 21 整。'
+    note: '他本人说这段是 22 SPS；NahDah 团队"非常接近但没能核实"，测得 1.043 秒 22 个音节 ≈ 21.09。两边都在 21–22 之间，SPS wiki 也说他有 4 首歌到了 21 整。Wyntyrr 在视频评论区算过整段：1092 个音节、64.22 秒，平均约 17.0，7:10 处的爆发就是这个 21.09。'
     sources:
       - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
       - { title: 'YouTube – NahDah Vebb：[2023] Top 150 Fastest Rappers in the World', url: 'https://www.youtube.com/watch?v=4SjqPAqjsWo' }
       - { title: 'NahDah Vebb – 测速方法 FAQ（Onion Chopper 一节）', url: 'https://docs.google.com/document/d/1zPWDPfnmmfRIuuskCmTMeTlWTjY9uc9NQ2nM3MU-mCU' }
+      - { title: 'YouTube – Onion Chopper（评论区 Wyntyrr 的整段测算）', url: 'https://www.youtube.com/watch?v=8T-HVOvWbqQ' }
 sources:
   - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }
   - { title: 'SPS and Chopper Rap Wiki – Crucified', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Crucified' }

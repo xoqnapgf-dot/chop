@@ -29,6 +29,16 @@ speed:
     sources:
       - { title: 'B站 – 山东卫视《超强音浪》南征北战醉人（赵辰龙）10 秒 128 字《饕餮》快嘴', url: 'https://www.bilibili.com/video/BV1vW411r7nh/' }
       - { title: '网易云音乐 – 南征北战《饕餮》歌词', url: 'https://music.163.com/#/song?id=445702397' }
+  - value: 11.7
+    unit: char/s
+    label: '《M号》最快一段 · 语速最快的七位中文 rapper 第 3'
+    kind: measured
+    by: '五里亭亭长 2021'
+    window: burst
+    confidence: pending
+    note: '同一期里他还有《浮躁》11.2，《饕餮》现场版 13.2。这两个数是评论区有人整理的视频数字表，只有亭长一家，没找到窗口的音节数和秒数。'
+    sources:
+      - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
   - value: 13.18
     unit: char/s
     label: 《饕餮》现场版最快一段
@@ -56,6 +66,8 @@ speed:
       - { title: 'B站 – 石狐九和：中文快嘴top10（新编）（2021-05-19）', url: 'https://www.bilibili.com/video/BV1bh411v7d7/' }
       - { title: '网易云音乐 – 幸存者联盟：冥想（专辑《大举进攻》，2020-11-25）', url: 'https://music.163.com/song?id=1811881283' }
 sources:
+  - { title: '酷歌词 – 南征北战NZBZ：破影而出（《忍者神龟2·破影而出》主题曲，歌词按人标了演唱分段）', url: 'https://www.kugeci.com/song/rMWe5Zrl' }
+  - { title: 'Spotify – 南征北戰：破影而出', url: 'https://open.spotify.com/track/2dMYMnOl6RaY808CppuItB' }
   - { title: '维基百科 – 南征北战NZBZ', url: 'https://zh.wikipedia.org/zh-hans/%E5%8D%97%E5%BE%81%E5%8C%97%E6%88%98NZBZ' }
   - { title: '新浪 – 幼稚园杀手身份曝光！赵辰龙公开回应（2022-04-01）', url: 'https://k.sina.cn/article_1163858357_v455f11b5019012ps5.html' }
   - { title: '网易 – 自爆身份？幼稚园杀手就是赵辰龙？？（2021-06-26）', url: 'https://www.163.com/dy/article/GDEPBML10512SDU4.html' }
@@ -74,7 +86,7 @@ sources:
   - { title: '网易云音乐 – 幼稚园杀手/幸存者联盟《空壳》（2021-09-30）', url: 'https://music.163.com/#/song?id=1882750624' }
 ---
 
-赵辰龙来自广西桂林，是瑶族。他是 2012 年 10 月 1 日出道的组合**南征北战**（NZBZ）的成员，在组合里负责音乐制作和作词。
+赵辰龙来自广西桂林，是瑶族。他是 2012 年 10 月 1 日出道的组合**南征北战**（NZBZ）的成员，在组合里负责音乐制作和作词。2016 年 6 月，南征北战为电影《忍者神龟2：破影而出》做了中国区主题曲《破影而出》，和大鹏合作，赵辰龙有演唱段落；同年的《饕餮》是另一部电影《长城》的推广曲。这条线索最早来自 B 站听众在《饕餮》下面的评论，歌词页和 Spotify 上的同名歌曲对得上。
 
 他在圈里也叫**醉人**，以**快嘴**和**多变的声线**出名。电影《长城》推广曲《**饕餮**》（2016）里的快嘴段落就是他唱的：官方发行只署组合名，但 B 站上的慢放分析、南征北战的访谈片段都把这段快嘴归到他名下，五里亭亭长 2021 年的中文语速排行也收了他唱的《饕餮》现场版。
 

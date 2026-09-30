@@ -11,7 +11,7 @@ episodes:
     title: Planetary Choppers
     date: '2017-09-16'
     lineup: ['Nihilist@nihilist', SM, 'MC Rice@mc-rice', 'J Battle@j-battle', Criminal-R.O, Kw!n, Ice Dee, 'Interchopper@interchopper']
-    note: D3B 制作，MC Rice 混音，简介说做了一年。按顺序：Nihilist（美国）、SM（俄罗斯）、MC Rice（法国）、J Battle（美国）、Criminal-R.O（巴西）、Kw!n（加拿大）、Ice Dee（巴西）、Interchopper（格鲁吉亚）。The Jackal 在评论区逐个点评，说 Nihilist"一如既往地快，一直在进步"。
+    note: D3B 制作，MC Rice 混音，简介说做了一年。按顺序：Nihilist（美国）、SM（俄罗斯）、MC Rice（法国）、J Battle（美国）、Criminal-R.O（巴西）、Kw!n（加拿大）、Ice Dee（巴西）、Interchopper（格鲁吉亚）。dvagoh 在 2023 年留言说这个伴奏是 YouTube 上的现成 beat，不是 D3B 做的，和简介写的"Prod. D3B"对不上，只有他一个人这么说。The Jackal 在评论区逐个点评，说 Nihilist"一如既往地快，一直在进步"。
     youtube: 1-txdwgGtqA
     bilibili: BV1hx411V7Aa
     track: planetary-choppers

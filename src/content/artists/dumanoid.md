@@ -88,6 +88,6 @@ Ruffian Rugged 在评论区帮他标了时间戳，还留言"KING IN THIS!"。
 | SPS wiki | Dumanoid | 《Nightmare》（Crucified ft. Dumanoid） | 19 ÷ 1.024 ≈ 18.55 | 他认可的最快 |
 | SPS wiki | Dumanoid | 《Sumaladumala》 | 22 ÷ 1.008 ≈ 21.83 | 本人不算 |
 
-三版 NahDah 榜都有他，而且名次一直在前 15 以内，是这几年最稳定的名字之一。《Sumaladumala》的 21.83 其实是他测出来最快的，但他觉得那段"偷懒了"，主动不算。
+三版 NahDah 榜都有他，而且名次一直在前 15 以内，是这几年最稳定的名字之一。《Sumaladumala》的 21.83 其实是他测出来最快的，但他觉得那段"偷懒了"，主动不算。2023 榜发布时他在评论区说，自己一直不愿为了名次去追更高的爆发，仍然认为更长的爆发才更能说明速度功底；不过这份榜也促使他和 Ruffian Rugged 去做了《For The Record》，他觉得这次的第 10 名比上一版更准确、更实至名归。
 
 《Sumaladumala》和《Nightmare》下面，听众夸得最多的是他的**文字游戏**：Wedere 留言"Dumanoid 的音节玩法太离谱了"，也有人说"他的文字游戏、flow 和速度之间的平衡很疯狂"。

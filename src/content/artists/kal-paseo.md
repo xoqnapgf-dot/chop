@@ -20,7 +20,7 @@ speed:
     syllables: 22
     seconds: 1.041
     confidence: pending
-    note: '22 ÷ 1.041 ≈ 21.13，是这首 18 人 cypher 里最快的一段，比 Crucified 的 21.00 还快一点。测算者是 SPS 圈的 Wedere。'
+    note: '22 ÷ 1.041 ≈ 21.13，是这首 18 人 cypher 里最快的一段，比 Crucified 的 21.00 还快一点。测算者是 SPS 圈的 Wedere。他本人在原视频下留言说明：就算自己现在拿着第一，这个纪录也随时会被友好的竞争改写，他预计 Crucified 或 Idylll 很快会拿回去；做这些是因为 Crucified，他是圈里的传奇，应该得到这些年的尊重。'
     sources:
       - { title: 'SPS and Chopper Rap Wiki – Infinite choppers 1', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Infinite_choppers_1' }
       - { title: 'SPS and Chopper Rap Wiki – Kal paseo', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Kal_paseo' }

@@ -39,7 +39,7 @@ episodes:
     title: Kill 6（Paslangin 6）
     date: '2020-12-23'
     lineup: [Resz, Gak47, 'MC Rice@mc-rice', Plain, Bonez, Aktibar, Krayzie Killa, Taneshi, Kalibre22, Ploky, Liquid Vortex, 'Sabotahe@sabotahe']
-    note: 伴奏是 MC Rice 做的。简介说这首有美国、法国、波兰、俄罗斯和菲律宾的 MC。
+    note: 伴奏是 MC Rice 做的。简介说这首有美国、法国、波兰、俄罗斯和菲律宾的 MC。Aktibar 在 Kill 4 的评论区自己列过这首里几个人的速度（自报，没有第三方核过）：Liquid Vortex 11、Taneshi 13、Ploky 14、Aktibar 15、Sabotahe 21 SPS。
     youtube: hlYNCfk-ZRo
   - no: '7'
     title: Kill 7（Paslangin 7.0）

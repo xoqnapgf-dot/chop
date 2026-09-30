@@ -27,6 +27,19 @@ speed:
     sources:
       - { title: 'B站 – 石狐九和：中文快嘴top10（新编）（2021-05-19）', url: 'https://www.bilibili.com/video/BV1bh411v7d7/' }
       - { title: '网易云音乐 – 幸存者联盟、幼稚园杀手：大举进攻（2020-11-25）', url: 'https://music.163.com/song?id=1806342356' }
+  - value: 16.5
+    unit: char/s
+    label: '《胜利》最快一句 · 语速最快的七位中文 rapper 第 1'
+    kind: measured
+    by: '五里亭亭长 2021'
+    window: burst
+    syllables: 21
+    seconds: 1.27
+    confidence: verified
+    note: '1.27 秒 21 个字 ≈ 16.5，石狐九和另测同一句 1.16 秒 19 个字 ≈ 16.4，两家对得上。人声变过调，这个数字不能当纪录看。亭长在这期视频的置顶评论里写"毫无疑问，优鲨是中国第一快嘴"。同一期里他另两首是《谋杀》10.8、《猫王》11.5（评论区有人整理了视频里的数字表，只有这一处来源）。'
+    sources:
+      - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
+      - { title: 'B站 – 石狐九和：幼稚园杀手的快嘴究竟有多快-全网最全语速测试（2021）', url: 'https://www.bilibili.com/video/BV1Zf4y1a73W/' }
 sources:
   - { title: '豆瓣小组 – 幼稚园杀手 简介（2010）', url: 'https://www.douban.com/group/topic/14768861/' }
   - { title: '嘻哈中国 – 幼稚园杀手的真实身份', url: 'https://www.xihachina.com/7222.html' }
