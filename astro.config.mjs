@@ -5,11 +5,12 @@ import sitemap from '@astrojs/sitemap';
 import { satteri } from '@astrojs/markdown-satteri';
 import { tableWrap } from './src/lib/rehype-table-wrap.mjs';
 
-// GitHub Pages：https://<user>.github.io/<repo>/
-// 如果以后绑定自定义域名，把 site 改成域名、base 改成 '/'。
+// 默认是 GitHub Pages：https://<user>.github.io/chop/
+// 部署到别的托管（域名根目录）时用环境变量覆盖：
+//   SITE_URL=https://你的域名 BASE_PATH=/ npm run build
 export default defineConfig({
-  site: 'https://xoqnapgf-dot.github.io',
-  base: '/chop',
+  site: process.env.SITE_URL ?? 'https://xoqnapgf-dot.github.io',
+  base: process.env.BASE_PATH ?? '/chop',
   trailingSlash: 'ignore',
   integrations: [sitemap()],
   vite: { plugins: [tailwindcss()] },

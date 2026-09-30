@@ -41,3 +41,31 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # 另外构建一份「域名根目录」版本（index.html 在最外层），放到 site 分支，
+  # 给要传到其他托管（FTP / 网页上传）的人：在 GitHub 上打开 site 分支 → Code → Download ZIP。
+  # 不影响上面的 GitHub Pages 部署。想用自己的域名：仓库 Settings → Variables 里加 SITE_URL。
+  package-root:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      BASE_PATH: /
+      SITE_URL: ${{ vars.SITE_URL || 'https://xoqnapgf-dot.github.io' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: 推送到 site 分支
+        run: |
+          cd dist
+          git init -q -b site
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "构建自 ${GITHUB_SHA::7}（域名根目录版本）"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" site
