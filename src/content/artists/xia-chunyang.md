@@ -6,7 +6,7 @@ country: CN
 city: 浙江 衢州
 region: 网络
 geo: [28.97, 118.86]
-activeSince: 2023
+activeSince: 2018
 style: chopper
 styleNote: 发起并策划了《Chinese Choppers》（2026 年 5 月），又在《Bilibili Choppers 2》（2026 年 9 月）里署名第一位；自己在 B 站发的作品标题就叫"来听听硬核 chop rap"。网易云主页写自己的作品以"恐核说唱和电子音乐融合"为主。
 tags: [Chinese Choppers, Bilibili Choppers 2, 恐核, chop]
@@ -25,7 +25,7 @@ sources:
   - { title: 'B站 – 夏淳扬上传：小安迪直播 re《Chinese Choppers》（2026-06-16）', url: 'https://www.bilibili.com/video/BV1S2j36tERu/' }
 ---
 
-夏淳扬是浙江衢州人。2026 年的单曲《姑蔑吾乡》写的就是家乡，简介第一句是"姑蔑，是衢州最古老的名字"；另一首《锦绣临安》写的是他 2021–2026 年在杭州临安度过的五年。
+夏淳扬是浙江衢州人。据他本人说，2018 年就开始发歌，那时用的是另一个账号，旧账号目前没有公开链接可查；下面的作品表只收现在这个账号（2023 年起）的作品。2026 年的单曲《姑蔑吾乡》写的就是家乡，简介第一句是"姑蔑，是衢州最古老的名字"；另一首《锦绣临安》写的是他 2021–2026 年在杭州临安度过的五年。
 
 ## Cypher
 

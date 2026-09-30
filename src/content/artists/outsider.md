@@ -55,6 +55,7 @@ speed:
 sources:
   - { title: 'Wikipedia – Outsider (rapper)', url: 'https://en.wikipedia.org/wiki/Outsider_(rapper)' }
   - { title: 'Wikipedia – Chopper (rap)', url: 'https://en.wikipedia.org/wiki/Chopper_(rap)' }
+  - { title: 'Preply – Who’s the Fastest Rapper?（“21 秒 721 个音节”一说，未注明出处）', url: 'https://preply.com/en/blog/fastest-rappers/' }
   - { title: 'xportsnews – 아웃사이더, 美래퍼 트위스타와 세기의 속사포 랩 배틀（2015）', url: 'https://www.xportsnews.com/article/540238' }
 ---
 
@@ -62,4 +63,4 @@ Outsider 本名申玉哲，2007 年发行首张专辑 *Soliloquist*。2009 年�
 
 2015 年 1 月 8 日，他和美国 chopper **Twista** 合作发行《**Star Warz**》（별들의 전쟁），整首歌是两人你来我往的速射段落，韩国媒体称之为"世纪速射说唱对决"。
 
-他的语速数字在网上流传很多个版本（16、21……），都找不到一手测量，所以标**有争议**；能按正式歌曲核实的，是 NahDah 2023 版测的《주인공》14.95。
+他的语速数字在网上流传很多个版本（16、21，还有英文文章写的“21 秒 721 个音节”，折合约 34/秒），都找不到一手测量，所以标**有争议**；能按正式歌曲核实的，是 NahDah 2023 版测的《주인공》14.95。
