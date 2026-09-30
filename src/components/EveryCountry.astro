@@ -92,10 +92,10 @@ const SHEET = 'https://docs.google.com/spreadsheets/d/1q6ccbONUj_yDxAbRCYVqQK5DL
                     <span class="min-w-0 truncate text-sm text-ink-2">{r.rapper}</span>
                   )}
                 </span>
-                <span class="block truncate font-mono text-[11px] text-ink-3" title={r.song}>{r.syllables}/{r.seconds.toFixed(3)} · {r.song}</span>
+                <span class="block truncate font-mono text-xs text-ink-3" title={r.song}>{r.syllables}/{r.seconds.toFixed(3)} · {r.song}</span>
                 <span class="ec-bar mt-1 block h-1 rounded-full" />
                 {r.includes?.map((x) => (
-                  <span class="mt-1 block truncate text-[11px] text-ink-3">含{x.nameZh}：{x.rapper} {x.sps.toFixed(2)}（{x.syllables}/{x.seconds.toFixed(3)} · {x.song}）</span>
+                  <span class="mt-1 block truncate text-xs text-ink-3">含{x.nameZh}：{x.rapper} {x.sps.toFixed(2)}（{x.syllables}/{x.seconds.toFixed(3)} · {x.song}）</span>
                 ))}
               </span>
               <span class="text-right font-mono text-sm tabular-nums">{r.sps.toFixed(2)}</span>
@@ -122,7 +122,7 @@ const SHEET = 'https://docs.google.com/spreadsheets/d/1q6ccbONUj_yDxAbRCYVqQK5DL
     background: var(--surface-2);
   }
   .ec-rank {
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     color: var(--ink-3);
   }
   .ec-bar {

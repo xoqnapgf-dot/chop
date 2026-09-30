@@ -6,7 +6,7 @@ const { style, size = 'sm', onDark = false, level = false } = Astro.props;
 const s = STYLE[style];
 ---
 <span
-  class:list={['style-chip inline-flex items-center gap-1.5 rounded-full border font-semibold whitespace-nowrap', size === 'sm' ? 'px-2 py-0.5 text-[11px]' : 'px-3 py-1 text-xs', { 'on-dark': onDark }]}
+  class:list={['style-chip inline-flex items-center gap-1.5 rounded-full border font-semibold whitespace-nowrap', size === 'sm' ? 'px-2 py-0.5 text-xs' : 'px-3 py-1 text-xs', { 'on-dark': onDark }]}
   style={`--sc:${s.color}`}
   title={s.desc}
 >

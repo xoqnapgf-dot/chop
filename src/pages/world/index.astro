@@ -123,7 +123,7 @@ const ND = {
                         ) : (
                           <span class="truncate text-sm font-semibold">{e.name}</span>
                         )}
-                        <span class="shrink-0 font-mono text-[11px] text-ink-3">{e.syllables}/{e.seconds.toFixed(3)}</span>
+                        <span class="shrink-0 font-mono text-xs text-ink-3">{e.syllables}/{e.seconds.toFixed(3)}</span>
                       </span>
                       {'flag' in e && e.flag && <span class="nd-flag mt-1 inline-block">{e.flag}</span>}
                       <span class="cy-bar mt-1 block h-1.5 rounded-full" />
@@ -176,7 +176,7 @@ const ND = {
                         ) : (
                           <span class="truncate text-sm font-semibold">{e.name}</span>
                         )}
-                        <span class="min-w-0 truncate font-mono text-[11px] text-ink-3" title={e.song}>{e.syllables}/{e.seconds.toFixed(3)} · {e.song}</span>
+                        <span class="min-w-0 truncate font-mono text-xs text-ink-3" title={e.song}>{e.syllables}/{e.seconds.toFixed(3)} · {e.song}</span>
                       </span>
                       <span class="cy-bar mt-1 block h-1.5 rounded-full" />
                     </span>
@@ -263,7 +263,7 @@ const ND = {
     background: linear-gradient(90deg, var(--accent) var(--w), var(--line) var(--w));
   }
   .nd-flag {
-    font-size: 11px;
+    font-size: 0.8125rem;
     line-height: 1.4;
     padding: 0.05rem 0.45rem;
     border-radius: 999px;
