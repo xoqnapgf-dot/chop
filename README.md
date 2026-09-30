@@ -73,4 +73,18 @@ scripts/fetch-youtube.mjs  从 YouTube 抓取人物图片和视频缩略图
 1. 仓库 Settings → Pages → Source 选 **GitHub Actions**。
 2. 推送到 `main` 分支会自动构建并部署到 `https://xoqnapgf-dot.github.io/chop/`。
 
-绑定自定义域名时，改 `astro.config.mjs` 里的 `site`，并把 `base` 改成 `'/'`。
+### 部署到其他托管（需要 index.html 的静态文件）
+
+同一份源码有两种产物：
+
+| 产物 | 路径前缀 | 用途 |
+|---|---|---|
+| `dist/`（默认） | `/chop/` | GitHub Pages |
+| 根目录版本 | `/` | 传到别的托管的网站根目录 |
+
+- **不用自己构建**：推送到 `main` 后，GitHub 会自动把根目录版本放进 `site` 分支，在 GitHub 打开该分支 → Code → Download ZIP，解压后里面就是 `index.html`，整体上传即可。
+- **自己构建**：`npm run build:root`（可加参数 `-- https://你的域名`），生成 `site-root/`。
+- 想让自动构建的版本用自己的域名：仓库 Settings → Secrets and variables → Actions → Variables，新建 `SITE_URL`。
+- 也可以直接用环境变量：`SITE_URL=https://你的域名 BASE_PATH=/ npm run build`。
+
+详细步骤见 [部署说明.md](./部署说明.md)。
