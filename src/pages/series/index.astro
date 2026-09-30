@@ -34,7 +34,7 @@ const span = Array.from({ length: y1 - y0 + 1 }, (_, i) => y0 + i);
     <p class="eyebrow">Series · {series.length} 个系列 · {totalEps} 集</p>
     <h1 class="mt-4 text-5xl font-bold md:text-7xl">Choppers 系列</h1>
     <p class="mt-5 max-w-2xl text-lg text-ink-2">
-      chop 圈的名场面，大多出在这些多人合作里：一个人做伴奏、拉名单，十几个 chopper 每人一段。从 Tech N9ne 的 Midwest Choppers，到地下圈的 Undaground Choppers、Illest Choppers，再到今天的 Infinite Choppers 和中文圈自己的 Chinese Choppers。
+      一个人做伴奏、拉名单，十几个 chopper 每人一段。从 Tech N9ne 的 Midwest Choppers，到 Undaground Choppers、Illest Choppers、Infinite Choppers，再到中文圈的 Chinese Choppers。
     </p>
     <dl class="mt-10 grid max-w-2xl grid-cols-3 gap-6 border-t border-line pt-6">
       <div><dt class="text-xs text-ink-3">系列</dt><dd class="mt-1 font-display text-3xl font-semibold">{series.length}</dd></div>
@@ -46,7 +46,7 @@ const span = Array.from({ length: y1 - y0 + 1 }, (_, i) => y0 + i);
   <!-- 年表：每个系列一行，每集一个点 -->
   <section class="container-x mt-16" aria-labelledby="chrono-h">
     <h2 id="chrono-h" class="text-2xl font-semibold">年表</h2>
-    <p class="mt-2 text-sm text-ink-3">每个点是一集，实心大点是名场面。点一下跳到那一集。</p>
+    <p class="mt-2 text-sm text-ink-3">一个点一集，大实心点是名场面</p>
     <div class="chrono mt-6 overflow-x-auto rounded-2xl border border-line bg-surface p-4">
       <div class="chrono-grid" style={`--cols:${span.length}`}>
         <span></span>

@@ -8,6 +8,7 @@ import SectionHeading from '@/components/SectionHeading.astro';
 import Marquee from '@/components/Marquee.astro';
 import Globe from '@/components/Globe.astro';
 import Avatar from '@/components/Avatar.astro';
+import VideoShelf from '@/components/VideoShelf.astro';
 import { url } from '@/lib/url';
 import { allSeries, seriesColor } from '@/lib/series';
 import { STYLE, SCENE, displayName } from '@/lib/labels';
@@ -61,7 +62,7 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
           把音节<br /><span class="chop-word">剁碎</span><span class="text-accent-text">。</span>
         </h1>
         <p class="mt-7 max-w-xl text-lg leading-relaxed text-ink-2">
-          一个只讲<strong class="text-ink">快速说唱</strong>的档案馆：从美国中西部的 chopper，到南京、成都、西安、乌鲁木齐的中文快嘴。每个数字都附来源，每个人都标清楚是"快嘴"还是"Chopper"。
+          <strong class="text-ink">快速说唱</strong>档案馆。从美国中西部的 chopper，到南京、成都、西安、乌鲁木齐的中文快嘴。
         </p>
         <div class="mt-9 flex flex-wrap gap-3">
           <a href={url('china/')} class="btn btn-accent">进入中国区 →</a>
@@ -92,7 +93,7 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
         <div class="seq-grid mt-6 grid grid-cols-8 gap-1.5 sm:gap-2" aria-hidden="true">
           {Array.from({ length: 32 }, (_, i) => <span class:list={['cell', { beat: i % 8 === 0 }]} />)}
         </div>
-        <p class="mt-4 text-xs text-ink-3">每个格子是一个音节，亮起的速度就是真实的每秒音节数。</p>
+        <p class="mt-4 text-xs text-ink-3">一格一个音节，按真实速度亮起</p>
         <div class="mt-5 flex flex-wrap gap-2" role="radiogroup" aria-label="选择速度">
           {
             presets.map((p, i) => (
@@ -111,7 +112,7 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
   <!-- ============ 快 ≠ Chop ============ -->
   <section class="container-x mt-28">
     <SectionHeading index="01" eyebrow="Fast ≠ Chop" title="快，不等于 Chop" href="learn/what-is-chop/" linkLabel="读完整解释">
-      <p class="mt-4 max-w-2xl text-ink-2">中文圈常把"快嘴"和"chop"混着说。Chop 是一种风格，唱 chop 的人才叫 chopper。这里只分两层：快嘴和 Chop，有可靠来源或本人明确自认的才标 Chopper。刚入圈、只追速度、含糊乱吐音节的新人小孩，圈内叫"SPS kid"。</p>
+      <p class="mt-4 max-w-2xl text-ink-2">Chop 是一种风格，唱 chop 的人才叫 chopper。会唱得快的人，不一定唱 chop。</p>
     </SectionHeading>
     <ol class="tiers grid gap-4 md:grid-cols-2">
       {
@@ -171,8 +172,8 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
 
   <!-- ============ 速度榜 ============ -->
   <section class="container-x mt-32">
-    <SectionHeading index="04" eyebrow="Speed board" title="语速榜：先看口径" href="learn/measuring-speed/" linkLabel="数据怎么测">
-      <p class="mt-4 max-w-2xl text-ink-2">官方认证、第三方测算和传闻不能放在一起比，所以每根条都标了可信度。这张榜只比快，不代表谁是 chopper。</p>
+    <SectionHeading index="04" eyebrow="Speed board" title="语速榜" href="learn/measuring-speed/" linkLabel="数据怎么测">
+      <p class="mt-4 max-w-2xl text-ink-2">每根条都标了可信度：官方认证、第三方测算、传闻分开看。</p>
     </SectionHeading>
     <div class="card p-5 sm:p-8"><SpeedChart /></div>
   </section>
@@ -180,7 +181,7 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
   <!-- ============ 系列 ============ -->
   <section class="container-x mt-32">
     <SectionHeading index="05" eyebrow="Series" title="Choppers 系列" href="series/" linkLabel="看全部系列">
-      <p class="mt-4 max-w-2xl text-ink-2">chop 圈的名场面大多出在多人合作里。从 Tech N9ne 的 Midwest Choppers，到地下圈的 Undaground Choppers、Illest Choppers，再到今天的 Infinite Choppers，逐集整理了名单和日期。</p>
+      <p class="mt-4 max-w-2xl text-ink-2">多人合作的 cypher 是 chop 圈的名场面：Midwest Choppers、Undaground Choppers、Illest Choppers、Infinite Choppers，逐集有名单和日期。</p>
     </SectionHeading>
     <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
       {
@@ -205,10 +206,16 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
     </div>
   </section>
 
+  <!-- ============ 视频 ============ -->
+  <section class="container-x mt-32">
+    <SectionHeading index="07" eyebrow="Watch" title="值得一看" href="tracks/#videos" linkLabel="全部视频" />
+    <div class="mt-8"><VideoShelf kinds={['speed', 'picks']} limit={8} /></div>
+  </section>
+
   <!-- ============ 时间线预览 ============ -->
   <section class="mt-32">
     <div class="container-x">
-      <SectionHeading index="07" eyebrow="Timeline" title="四十年，越来越快" href="timeline/" linkLabel="完整时间线" />
+      <SectionHeading index="08" eyebrow="Timeline" title="四十年，越来越快" href="timeline/" linkLabel="完整时间线" />
     </div>
     <div class="tl-scroll container-x flex snap-x gap-4 overflow-x-auto pb-6">
       {

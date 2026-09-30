@@ -32,7 +32,7 @@ const byYear = (scene: 'world' | 'china', y: number) => events.filter((e) => e.d
   <section class="page-hero container-x pt-14 md:pt-20" data-wm="1980—2026" style="--hero-a:var(--p4);--hero-b:var(--p2);--hero-c:var(--p3)">
     <p class="eyebrow">Timeline · {first}–{last}</p>
     <h1 class="mt-4 text-5xl font-bold md:text-7xl">时间线</h1>
-    <p class="mt-5 max-w-2xl text-lg text-ink-2">两条线并行：左边是<span class="text-accent-text">世界</span>，右边是<span class="text-china">中国区</span>。同一时期两边各发生了什么，一眼就能对照。</p>
+    <p class="mt-5 max-w-2xl text-lg text-ink-2">左边<span class="text-accent-text">世界</span>，右边<span class="text-china">中国区</span>，同一时期对照着看。</p>
 
     <dl class="tl-stats mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
       <div class="card p-4"><dd class="font-display text-3xl font-semibold tabular-nums">{events.length}</dd><dt class="mt-1 text-xs text-ink-3">件大事</dt></div>
@@ -44,7 +44,7 @@ const byYear = (scene: 'world' | 'china', y: number) => events.filter((e) => e.d
     <!-- 年份密度条：一眼看出哪些年份最热闹，点一下跳过去 -->
     <figure class="yearbar card mt-4 p-4 sm:p-5" data-pagefind-ignore>
       <figcaption class="flex flex-wrap items-center justify-between gap-2 text-xs text-ink-3">
-        <span>每个点是一件事，点一下跳过去</span>
+        <span>一个点一件事</span>
         <span class="flex items-center gap-3">
           <span class="flex items-center gap-1.5"><i class="yb-dot" style="--c:var(--scene-world)"></i>世界</span>
           <span class="flex items-center gap-1.5"><i class="yb-dot" style="--c:var(--scene-china)"></i>中国区</span>

@@ -10,7 +10,7 @@ keyPoints:
 figure: guinness
 sources:
   - { title: 'Wikipedia – Twista（1992 年吉尼斯"最快的英语说唱者"）', url: 'https://en.wikipedia.org/wiki/Twista' }
-  - { title: 'HipHopDX – Twista Talks G.O.O.D. Music, Reclaiming Guinness World Record（2012）', url: 'https://hiphopdx.com/news/id.19859/title.twista-talks-g-o-o-d-music-reclaiming-guinness-world-record' }
+  - { title: 'OurStage Magazine – Soundcheck: Twista To Sign With G.O.O.D. Music?（2012-06-05，引用他谈重夺纪录的话）', url: 'https://blog.ourstage.com/2012/06/05/soundcheck-twista-to-sign-with-g-o-o-d-music/' }
   - { title: 'Guinness World Records – Fastest Rap MC（2006 年官网页面存档：Ricky Brown，723 音节 / 51.27 秒）', url: 'https://web.archive.org/web/20061024041919/http://www.guinnessworldrecords.com/records/arts_and_media/music_feats_and_facts/fastest_rap_mc.aspx' }
   - { title: 'Wikipedia – NoClue（引《西雅图时报》2005：打破 Rebel XD 1998 年的 12.5 音节/秒）', url: 'https://en.wikipedia.org/wiki/NoClue' }
   - { title: 'YouTube – Rebel XD rapping 20 syllables per second（本人频道，2008-02-07，评论区有他本人的说明）', url: 'https://www.youtube.com/watch?v=wlPAuYItZm0' }
@@ -46,7 +46,7 @@ sources:
 | 2007–2010 | Outsider（韩国） | 自称 17.1/秒，后来 21/秒 | 没有被认证 |
 | 2013 年 9 月 13 日 | Crucified | 49 秒 949 个音节 ≈ 19.37/秒（自报） | 没有被认证。据 Rap Wiki，Bizzy Bone 为他作证；半年后吉尼斯关闭了这个类别 |
 
-所以"Twista 是吉尼斯最快说唱"这句话只对 1992 年成立：他的纪录 1998 年就被 Rebel XD 打破了。2012 年接受 HipHopDX 采访时，Twista 自己也只说"如果粉丝想看，我可以再试试"。
+所以"Twista 是吉尼斯最快说唱"这句话只对 1992 年成立：他的纪录 1998 年就被 Rebel XD 打破了。2012 年 6 月接受采访时，Twista 自己也只说"如果粉丝想看，我可以再试试"。
 
 ## 为什么这么乱
 

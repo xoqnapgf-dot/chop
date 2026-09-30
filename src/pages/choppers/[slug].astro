@@ -7,6 +7,7 @@ import Avatar from '@/components/Avatar.astro';
 import Confidence from '@/components/Confidence.astro';
 import Sources from '@/components/Sources.astro';
 import LiteYouTube from '@/components/LiteYouTube.astro';
+import VideoShelf from '@/components/VideoShelf.astro';
 import { artistPhoto, artistBanner, artistColor, artistMedia } from '@/lib/media';
 import { COUNTRY, SPEED_KIND, UNIT, SCENE, STYLE, WINDOW, displayName, placeLabel } from '@/lib/labels';
 import { url } from '@/lib/url';
@@ -47,6 +48,7 @@ const related = data.related.length ? await getEntries(data.related) : [];
 
 const tracks = (await getCollection('tracks', (t) => t.data.artists.some((a) => a.id === id))).sort((a, b) => (b.data.year ?? 0) - (a.data.year ?? 0));
 const [lead, ...moreTracks] = tracks;
+const hasVideos = (await getCollection('videos')).some((v) => v.data.artists.includes(id));
 const events = (await getCollection('timeline', (e) => e.data.artist?.id === id)).sort((a, b) => a.data.year - b.data.year);
 // 同台过的人：网易云合作记录（collabs）+ 曲库里同一首歌的收录人物（tracks）。按歌分组，同名歌只记一次
 type SharedSong = { title: string; year: string; href: string; external: boolean; others: Set<string> };
@@ -158,6 +160,13 @@ const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生
           </section>
         )}
 
+        {hasVideos && (
+          <section class="mt-16">
+            <p class="eyebrow mb-5">相关视频</p>
+            <VideoShelf artist={id} limit={6} />
+          </section>
+        )}
+
         {mySeries.length > 0 && (
           <section class="mt-16">
             <p class="eyebrow mb-5">上过的系列 · {mySeries.reduce((n, x) => n + x.eps.length, 0)} 集</p>
@@ -205,7 +214,7 @@ const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生
               ))}
             </ul>
             <p class="mt-3 text-xs text-ink-3">
-              来自曲库和网易云的署名，只算站内有档案的人。{isCN && <a href={url('china/#links')} class="link-u hover:text-ink">看中国区合作网络 →</a>}
+              曲库和网易云署名，仅统计有档案的人物。{isCN && <a href={url('china/#links')} class="link-u hover:text-ink">看中国区合作网络 →</a>}
             </p>
           </section>
         )}
@@ -255,7 +264,7 @@ const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生
               ，抓取于 {media.fetchedAt}。版权归原作者所有。
             </p>
           ) : (
-            <p class="mt-6 text-xs text-ink-3">暂时没有找到来源可靠的照片，所以用名字做了一个文字头像。</p>
+            <p class="mt-6 text-xs text-ink-3">暂无可靠来源的照片，用名字做了文字头像。</p>
           )}
         </section>
       </div>

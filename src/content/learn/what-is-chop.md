@@ -1,7 +1,7 @@
 ---
 title: 快嘴 ≠ Chop：先把概念分清
 kicker: 入门
-summary: 语速快不等于 chop。chop 是风格，唱 chop 的人叫 chopper；这里只分快嘴和 Chop 两层；刚入圈、只追速度的新人小孩，圈内叫"SPS kid"。
+summary: 语速快不等于 chop。chop 是风格，唱 chop 的人叫 chopper；刚入圈、只追速度的新人小孩，圈内叫"SPS kid"。
 order: 1
 keyPoints:
   - '快不等于 chop：chop 是一种"切"音节的风格，唱它的人才叫 chopper。'
