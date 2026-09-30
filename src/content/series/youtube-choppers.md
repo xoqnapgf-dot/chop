@@ -18,7 +18,7 @@ episodes:
     title: YouTube Choppers 2
     date: '2012'
     lineup: ['SplytSecond@splxt', 'DNS@dumanoid']
-    note: 2012 年征过段落，SplytSecond 11 月传了自己那段。完整版一直没发，2015 年有听众把能找到的段落拼成了一首。匈牙利的 DNS（Dumanoid）在这里的段落，是 NahDah 2017 版给他算速度用的那首（26 ÷ 1.39 ≈ 18.7）。名单只列了能确认的两个人。
+    note: 2012 年征过段落，SplytSecond 11 月传了自己那段。完整版一直没发，2015 年有听众把已公开的段落拼成了一首。匈牙利的 DNS（Dumanoid）在这里的段落，是 NahDah 2017 版给他算速度用的那首（26 ÷ 1.39 ≈ 18.7）。名单只列了已确认的两个人。
     youtube: KJMcqec7V-U
 sources:
   - { title: 'YouTube – NeuroCrypt：YouTube Choppers - Fast Rap Collab（2011-09-27，简介有演唱顺序）', url: 'https://www.youtube.com/watch?v=iMLlD0nK8s0' }

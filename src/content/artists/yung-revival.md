@@ -79,7 +79,7 @@ Yung Revival 是英国的地下 chopper。他的频道简介写着"来自英国�
 
 ## 出现得少：2013–2018，然后沉寂
 
-和 DNA、Leach 比，他的作品一直不多。能查到的早期作品主要是 2013 年的几段 verse（包括 The Real Mr.Homicide 的《Shot Caller》）、2015 年的《Darkside Remix》，以及两首大型 cypher：
+和 DNA、Leach 比，他的作品一直不多。已知的早期作品主要是 2013 年的几段 verse（包括 The Real Mr.Homicide 的《Shot Caller》）、2015 年的《Darkside Remix》，以及两首大型 cypher：
 
 - **Trash Cypher 2017**（Trash Music，2017 年 3 月）：他的段落从 7:08 开始，这是 NahDah 2017 版给他算速度用的那首。评论区里有人说他快得"像嗑了药"，也有人喊"Yung Revival 悠着点"。
 - **Illest Choppers 4**（MC Rice，2018 年 8 月）：他唱第二段，同一首里还有 The Jackal、Sabotahe、Don Xperto 等人。

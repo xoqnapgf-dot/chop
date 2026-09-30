@@ -48,7 +48,7 @@ Skrima 是菲律宾的地下 rapper，唱他加禄语，是 **Olympia Thugs Crew
 
 | 时间 | 作品 | 说明 |
 |---|---|---|
-| 2013 年 5 月 | 《Ako si Skrima》 | 能查到的最早上传，标题意思是"我是 Skrima" |
+| 2013 年 5 月 | 《Ako si Skrima》 | 已知最早的上传，标题意思是"我是 Skrima" |
 | 2015 年 6 月 | 《16 Bars Challenge》 | 他最快的一段，NahDah 2023 版第 12 名 |
 | 2016 年 | 《Skrimador》、《Pasensya Ka Na》（与 Crizinto 等） | OTC 的作品，后者是一首情歌 |
 | 2017 年 11 月 | 《Skrimador Live》 | 现场演出 |
