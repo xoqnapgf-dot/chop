@@ -65,6 +65,24 @@ const label = parts.length > 1 ? parentName[parts[0]] ?? '上一级' : '首页';
   .back-btn.is-tucked span {
     display: none;
   }
+  /* 电脑端：默认只显示小圆钮，贴在页边，不压正文；鼠标移上去或键盘聚焦时展开成"返回" */
+  @media (min-width: 768px) {
+    .back-btn {
+      left: 10px;
+      padding: 0.55rem;
+    }
+    .back-btn span {
+      display: none;
+    }
+    .back-btn:hover,
+    .back-btn:focus-visible {
+      padding: 0.55rem 1rem 0.55rem 0.75rem;
+    }
+    .back-btn:hover span,
+    .back-btn:focus-visible span {
+      display: inline;
+    }
+  }
   @media print {
     .back-btn {
       display: none;

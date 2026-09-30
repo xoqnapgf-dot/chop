@@ -175,6 +175,7 @@ const gMax = 21;
   }
   .road li {
     position: relative;
+    overflow-wrap: anywhere;
   }
   .road .dot {
     position: absolute;
@@ -188,7 +189,9 @@ const gMax = 21;
   }
   @media (min-width: 768px) {
     .road {
-      grid-template-columns: repeat(6, minmax(0, 1fr));
+      /* 按容器宽度自动分列：半宽卡片里 3 列，整页宽度时一排，避免英文长标题互相压住 */
+      grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+      gap: 1.5rem 1rem;
       border-left: 0;
       border-top: 2px solid var(--line);
       padding-left: 0;
