@@ -130,7 +130,7 @@ B 站 UP 主五里亭亭长 2021 年做过一期"小安迪最快的五首歌"，
 
 ## 《Real One》：他自己说的"唯一一首 chop"
 
-2026 年他在直播里点评《Chinese Choppers》时说，自己整个职业生涯**只做过一首 chop**：2016 年和堪萨斯城的说唱歌手 **Dalima** 合作的那首。网易云上能查到：《**Real One**》，2016 年 10 月 21 日发行，署名 LilAndy、LilG、Dalima，第三段主歌就是 Dalima 的英文 verse。Dalima 是 Tech N9ne 的合作者：2007 年 Tech N9ne 的专辑 *Misery Loves Kompany* 里，他既上了《Misery》，也上了《**Midwest Choppers**》，也就是 Tech N9ne 那条 chopper 系列曲的第一首。
+2026 年他在直播里点评《Chinese Choppers》时说，自己整个职业生涯**只做过一首 chop**：2016 年和堪萨斯城的说唱歌手 **Dalima** 合作的那首。网易云上有：《**Real One**》，2016 年 10 月 21 日发行，署名 LilAndy、LilG、Dalima，第三段主歌就是 Dalima 的英文 verse。Dalima 是 Tech N9ne 的合作者：2007 年 Tech N9ne 的专辑 *Misery Loves Kompany* 里，他既上了《Misery》，也上了《**Midwest Choppers**》，也就是 Tech N9ne 那条 chopper 系列曲的第一首。
 
 按他的说法，这次合作是深蓝儿童的**龚子建**一直去联系对方、发了 demo，对方觉得不错才答应的，"一分钱没收"。
 

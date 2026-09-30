@@ -236,7 +236,7 @@
   officialUpload: false
   scene: china
   year: 2008
-  note: '常被列为幼稚园杀手最快的歌之一。知乎专栏《幼稚园杀手：论diss，在座各位都是垃圾》称它是 2008 年的作品，歌里 diss 了茶米；能查到最早的公开上传是 2017 年的歌词视频。'
+  note: '常被列为幼稚园杀手最快的歌之一。知乎专栏《幼稚园杀手：论diss，在座各位都是垃圾》称它是 2008 年的作品，歌里 diss 了茶米；已知最早的公开上传是 2017 年的歌词视频。'
   confidence: pending
   sources:
     - { title: '百度百科 – 幼稚园杀手', url: 'https://baike.baidu.com/item/%E5%B9%BC%E7%A8%9A%E5%9B%AD%E6%9D%80%E6%89%8B/1475883' }
@@ -526,7 +526,7 @@
   youtubeChannel: TwistedInsaneVEVO
   officialUpload: true
   scene: world
-  note: 'Twisted Insane 最快的歌：NahDah 2023 版 1.050 秒 16 个音节 ≈ 15.24（第 32 名），2021 版 1.032 秒 16 个音节 ≈ 15.50。发行年份没法确定：最早的上传在 2011 年 4 月，上传者说是他早年 mixtape 里的歌，但说不清是哪一张。'
+  note: 'Twisted Insane 最快的歌：NahDah 2023 版 1.050 秒 16 个音节 ≈ 15.24（第 32 名），2021 版 1.032 秒 16 个音节 ≈ 15.50。发行年份不详：最早的上传在 2011 年 4 月，上传者说是他早年 mixtape 里的歌，但说不清是哪一张。'
   sources:
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
     - { title: 'B站 – NahDah Vebb：Top 150 Fastest Rappers 2021（转载，每条都有算式）', url: 'https://www.bilibili.com/video/BV1Av4y1Z7d7/' }

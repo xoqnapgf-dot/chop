@@ -31,7 +31,7 @@ sources:
   - { title: '网易云音乐 – Kastelaro 个人主页（所在地为账号主人自填）', url: 'https://music.163.com/#/artist?id=36238745' }
 ---
 
-Kastelaro 是 2018 年组建的 chop 圈 QQ 群 **Superluminal Choppers**（SLC）最早的一批成员，和 GumBrass、Nero·Wander、Y Herry 一样算是元老。本名、所在城市都没有公开，作品主要发在网易云音乐。
+Kastelaro 是 2018 年组建的 chop 圈 QQ 群 **Superluminal Choppers**（SLC）最早的一批成员，和 GumBrass、Nero·Wander、Y Herry 一样算是元老。本名没有公开，作品主要发在网易云音乐。
 
 ## Superluminal Choppers
 

@@ -29,7 +29,7 @@ episodes:
     title: Bloody Choppers 5
     date: '2024'
     lineup: [Chopra The Spitter, 'The Jackal@the-jackal', 'Dumanoid@dumanoid', 'Faraway@faraway', Branx the King]
-    note: Faraway 做 MV。Wedere 的测速视频里，The Jackal 和 Dumanoid 只差 0.09，几乎并列第一。名单只列了能确认的人；评论区说 B 站上还有这一集。
+    note: Faraway 做 MV。Wedere 的测速视频里，The Jackal 和 Dumanoid 只差 0.09，几乎并列第一。名单只列了已确认的人；评论区说 B 站上还有这一集。
     youtube: d4PFkw7EaLg
 sources:
   - { title: 'YouTube – Wedere：TOP 11 Fastest Verses on Bloody Choppers 4（2023-05-18）', url: 'https://www.youtube.com/watch?v=fVuI5UYQeu0' }
