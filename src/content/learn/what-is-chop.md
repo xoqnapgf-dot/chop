@@ -58,7 +58,7 @@ SPS 是 syllables per second（每秒音节数）。海外 chopper 圈里有个�
 
 中文里"快嘴"是通俗说法，很多文章会把 chopper 直接翻成快嘴。但在圈内讨论里，两者是分开的：会唱快的人很多，真正以 chopping 为核心风格的人很少。有些唱快嘴的人，本身也未必在玩 chop。
 
-所以这里的规矩是：**有可靠来源、或者本人明确自认的，才标 Chopper**。中国区标 Chopper 的有[小安迪](../../choppers/lil-andy/)，以及 B 站和 QQ 群里聚起来的[Kastelaro](../../choppers/kastelaro/)、[夏淳扬](../../choppers/xia-chunyang/)、[青藤 CyanVine](../../choppers/cyanvine/)、[MUSHMACH](../../choppers/mushmach/)。**赵辰龙**这样技术上够得着、但本人不往 chop 路线走的，标"快嘴"，再加一条"接近 Chop"的说明；韩国的 **Outsider** 也一样：严格说是快嘴，但和 chopper 合作过，速度和强度都接近。
+所以这里的规矩是：**有可靠来源、圈内人明确指认、或者本人明确自认的，才标 Chopper**。中国区标 Chopper 的有[小安迪](../../choppers/lil-andy/)，以及 B 站和 QQ 群里聚起来的[Kastelaro](../../choppers/kastelaro/)、[夏淳扬](../../choppers/xia-chunyang/)、[青藤 CyanVine](../../choppers/cyanvine/)、[MUSHMACH](../../choppers/mushmach/)、[Zack](../../choppers/zack/)。**赵辰龙**这样技术上够得着、但本人不往 chop 路线走的，标"快嘴"，再加一条"接近 Chop"的说明；韩国的 **Outsider** 也一样：严格说是快嘴，但和 chopper 合作过，速度和强度都接近。
 
 ## 速度怎么比
 

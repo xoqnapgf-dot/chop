@@ -658,6 +658,15 @@
       },
       "color": "#080808",
       "fetchedAt": "2026-09-29"
+    },
+    "zack": {
+      "photo": {
+        "site": "网易云音乐歌手页",
+        "url": "https://music.163.com/#/artist?id=121556037",
+        "name": "Zack-Official"
+      },
+      "color": "#080808",
+      "fetchedAt": "2026-09-30"
     }
   },
   "tracks": {

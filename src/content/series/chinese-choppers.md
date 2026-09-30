@@ -34,7 +34,7 @@ episodes:
   - no: BC2
     title: Bilibili Choppers 2
     date: '2026-09-23'
-    lineup: ['夏淳扬@xia-chunyang', Zack-Official, '青藤 CyanVine@cyanvine', jms, notboy, 74l'votmzreg, ZeroNight 无夜, frk05]
+    lineup: ['夏淳扬@xia-chunyang', 'Zack-Official@zack', '青藤 CyanVine@cyanvine', jms, notboy, 74l'votmzreg, ZeroNight 无夜, frk05]
     note: 《Bilibili Choppers》的续作，约 4 分 44 秒，简介说"有很多国际友人参加"。
     netease: 3440568361
     track: bilibili-choppers-2
