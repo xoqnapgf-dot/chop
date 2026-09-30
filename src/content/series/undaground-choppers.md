@@ -42,7 +42,7 @@ episodes:
     title: Undaground Choppers 5
     date: '2016-08-10'
     lineup: ['SplytSecond@splxt', 'K-Fix@k-fix', 'Kaoz@kaoz', Hurricane, 'Interchopper@interchopper', Mister Hyde, 'Mizury Mize@mizury-mize', Sensei, 'DNA@dna-tru-lyricist']
-    note: Kaoz 混音，Silencyde 弹吉他。这集没有 Crucified，评论区说"有 Interchopper 在，一点都不空"。
+    note: Kaoz 混音，Silencyde 弹吉他。这集没有 Crucified，评论区说"有 Interchopper 在，一点都不空"。十年前有听众按 2 到 5 秒的持续窗口给三个人测过：SplytSecond 5 秒 72 个音节（约 14.4），Sensei 2.3 秒 31 个（约 13.5），Mizury 2.7 秒 37 个（约 13.7）。这是持续段落的平均，不是 1 秒爆发，也只是一位听众的测算。
     youtube: fNWWcXNwIU0
     bilibili: BV14x411j7mZ
     track: undaground-choppers-5
@@ -86,6 +86,7 @@ episodes:
     youtube: KyFQJtjScOM
     bilibili: BV1CJ41147SB
 sources:
+  - { title: 'YouTube – Undaground Choppers 5（2016-08-10，评论区有听众的持续段落测算）', url: 'https://www.youtube.com/watch?v=fNWWcXNwIU0' }
   - { title: 'YouTube – Dj Lil Sprite 频道：Undaground Choppers 1–10（简介里有每集的名单和混音）', url: 'https://www.youtube.com/watch?v=nHCjFo3kun8' }
   - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
   - { title: 'YouTube – MC Rice - #UC10CHALLENGE (Prod. DJ Lil Sprite)', url: 'https://www.youtube.com/watch?v=B9CTcF3XEHA' }

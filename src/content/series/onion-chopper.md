@@ -12,7 +12,7 @@ episodes:
     title: Onion Chopper
     date: '2023'
     lineup: ['Ruffian Rugged@ruffian-rugged', 'Dumanoid@dumanoid', 'Twisted Insane@twisted-insane', Kurşun, 'Sabotahe@sabotahe', 'Crucified@crucified', Fate]
-    note: Crucified 这段 1.043 秒 22 个音节，约 21.09，NahDah 2023 版第 1 名。他本人说是 22，NahDah 团队"非常接近但没能核实"。
+    note: Crucified 这段 1.043 秒 22 个音节，约 21.09，NahDah 2023 版第 1 名。他本人说是 22，NahDah 团队"非常接近但没能核实"。Wyntyrr 在评论区算过他整段：1092 个音节、64.22 秒，平均约 17.0，7:10 处爆发 21.09。dvagoh 留言特别感谢 Ruffian Rugged 做伴奏、做各种切换并把整首拼起来；Kurşun 和 Dumanoid 那段也被评论区点名说被低估。NahDah 在 2023 榜的置顶评论里说，榜上所有段落里 Kurşun 的快段是他唯一觉得有可能加速的，不过别人告诉他那只是叠层和处理，他问观众怎么看。
     youtube: 8T-HVOvWbqQ
     netease: 2017089392
     track: onion-chopper

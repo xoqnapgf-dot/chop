@@ -21,7 +21,7 @@ episodes:
     title: Infinite Choppers 2
     date: '2024-06-19'
     lineup: [Hurracane, 'Idylll@idylll', 'Asa Jake@asa-jake', Al Zabran, Tokumei, 'DOWN6@down6', 'Troll@troll', 'Ruffian Rugged@ruffian-rugged', 'Dumanoid@dumanoid', 'Faraway@faraway', Bonez, 'eze@eze', 'CrisOne@crisone', Bloody Ruckus, dvagoh, 'Kal Paseo@kal-paseo']
-    note: 做了 9 到 10 个月。Idylll 这段视频上写 23.41，简介说重算成 22.40，SPS wiki 最后认定 22.73，不管取哪个都是近几年正式录音里最快的一批。第八段由 Ruffian Rugged 和 Dumanoid 合唱。
+    note: 做了 9 到 10 个月。Idylll 这段视频上写 23.41，简介说重算成 22.40，SPS wiki 最后认定 22.73，不管取哪个都是近几年正式录音里最快的一批。第八段由 Ruffian Rugged 和 Dumanoid 合唱。Hurracane 在评论区说自己是这首里的“老前辈”，还特别说明他从不分段补录，所有东西都是一遍录完；NahDah 留言说这首里每个人都值得称赞，他们多年来一直把 chopper 圈子撑着。
     youtube: n2SmW1OREcA
     bilibili: BV144421S7Jt
     track: infinite-choppers-2

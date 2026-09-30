@@ -11,6 +11,17 @@ styleNote: Battle MC 出身，以子弹般的语速和大词汇量著称，外�
 geo: [34.34, 108.94]
 tags: [红花会, Battle MC, 押韵]
 photoSource: { site: netease, id: 51957057, image: avatar }
+speed:
+  - value: 11.8
+    unit: char/s
+    label: '《红花会 2018 Cypher》最快一段 · 语速最快的七位中文 rapper 第 5'
+    kind: measured
+    by: '五里亭亭长 2021'
+    window: burst
+    confidence: pending
+    note: '视频里给的数字，评论区有人整理了完整的数字表，只有亭长一家，没找到窗口的音节数和秒数。这首常被称为他"生涯最快的 verse"。'
+    sources:
+      - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
 sources:
   - { title: '嘻哈中国 – "李京泽"成为了"贝贝"后……', url: 'https://www.xihachina.com/15379.html' }
   - { title: '网易 – 谁才是中文说唱圈第一快嘴？（2018）', url: 'https://www.163.com/dy/article/E22BSRNQ0512S3SL.html' }
