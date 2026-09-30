@@ -11,13 +11,13 @@ episodes:
     title: 'Inutilis: Choppers'
     date: '2023'
     lineup: [LUC1DD, Palessi, Chopper Demon, ConVIcteX, A-ZSTRANGLER, Phenomix, Ayyokden, 'Wedere@wedere', Branx the King, Yagikira, Wyntyrr, Retr0, Liquiid Vortex, TRFCHOPS, Chuck Bronson, 'DOWN6@down6']
-    note: 16 个人，伴奏 Ryini Beats。原视频现在搜不到了，2024 年 4 月作为专辑《Unleashed》的一首上了流媒体，发行信息里列全了名单。Ayyokden 就是后来的 Greenhoe440；A-ZSTRANGLER 录音那天刚戴上牙套，成了全曲最慢的一段。
+    note: 16 个人，伴奏 Ryini Beats。原视频现已无法观看，2024 年 4 月作为专辑《Unleashed》的一首上了流媒体，发行信息里列全了名单。Ayyokden 就是后来的 Greenhoe440；A-ZSTRANGLER 录音那天刚戴上牙套，成了全曲最慢的一段。
     youtube: q7L3Ct-Yj7Q
   - no: '1.5'
     title: 'Inutilis: Liminal'
     date: '2024'
     lineup: ['MC Rice@mc-rice', LEECHY, ODSTAR, Muskrat, "Lil' Rapid Fire", Transcendentem, Greenhoe440, Liquiid Vortex, HI-SUNKO, 'DOWN6@down6', LUC1DD]
-    note: 只列能确认的人，完整名单没找到。Muskrat 说是 LUC1DD 听了他给第一首做的 remix 才请他来，2023 年 10 月他先传了自己这段；韩国的 Transcendentem 这段测出 19.01，ODSTAR 那段被人做成了"直播间反应"。原视频已删，B 站的"喜欢chop的艾拉"翻唱过 MC Rice 和 LEECHY 两段。
+    note: 只列已确认的人，完整名单不详。Muskrat 说是 LUC1DD 听了他给第一首做的 remix 才请他来，2023 年 10 月他先传了自己这段；韩国的 Transcendentem 这段测出 19.01，ODSTAR 那段被人做成了"直播间反应"。原视频已删，B 站的"喜欢chop的艾拉"翻唱过 MC Rice 和 LEECHY 两段。
   - no: LC
     title: Limbo Cypher
     date: '2024-12-24'

@@ -17,7 +17,7 @@ episodes:
     title: Astronomical Choppers 2
     date: '2024-11-26'
     lineup: [palessi, MRGVN, LTrains999, Titan]
-    note: SameLevel 做伴奏，Troll 混音。简介没列名单，这里只写 2025 年 justvii 那期测速榜里点到名的几个人：LTrains999 这段 16.35，MRGVN 14.00，palessi 大约 10.74。
+    note: SameLevel 做伴奏，Troll 混音。简介没列名单；2025 年 justvii 那期测速榜里点到名的有：LTrains999 这段 16.35，MRGVN 14.00，palessi 大约 10.74。
     youtube: blvzgSHMR6k
   - no: '3'
     title: Astronomical Choppers III

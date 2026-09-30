@@ -48,7 +48,7 @@ speed:
     syllables: 21
     seconds: 1
     confidence: pending
-    note: 'SPS 社区的测算（1 秒 21 个音节，计算：Wedere）。第二份只找到 SPS 圈测算者 devrimfastrap 在 THE CREM 测速短视频下的留言"其实是 21"，没有完整算式；另有听众 2026 年给《Infinite Choppers》里他那段配歌词测速，评论里算的是 1 秒 20 个音节，差了一个音节，所以还标待核实。'
+    note: 'SPS 社区的测算（1 秒 21 个音节，计算：Wedere）。SPS 圈测算者 devrimfastrap 在 THE CREM 测速短视频下留言"其实是 21"，没有完整算式；另有听众 2026 年给《Infinite Choppers》里他那段配歌词测速，评论里算的是 1 秒 20 个音节，差了一个音节，所以还标待核实。'
     sources:
       - { title: 'SPS and Chopper Rap Wiki – Crucified', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Crucified' }
       - { title: 'SPS and Chopper Rap Wiki – Infinite choppers 1（计算：Wedere）', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Infinite_choppers_1' }

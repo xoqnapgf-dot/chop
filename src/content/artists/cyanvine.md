@@ -22,7 +22,7 @@ speed:
     syllables: 19
     seconds: 1.052
     confidence: pending
-    note: '19 ÷ 1.052 ≈ 18.06，测的是视频 0:44 处。同一条评论还测了紧接着的两处：21 个音节 1.240 秒（约 16.94）、17 个音节 1.002 秒（约 16.97）。只是一位网友在评论区的测算，没有第二个来源。'
+    note: '19 ÷ 1.052 ≈ 18.06，测的是视频 0:44 处。同一条评论还测了紧接着的两处：21 个音节 1.240 秒（约 16.94）、17 个音节 1.002 秒（约 16.97）。这是一位网友在评论区的测算。'
     sources:
       - { title: 'YouTube – GumBrass - Bilibili Choppers（评论区测算）', url: 'https://www.youtube.com/watch?v=zEv3_o16Nuo' }
 sources:

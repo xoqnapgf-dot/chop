@@ -20,7 +20,7 @@ speed:
     by: 'YouTube 听众'
     window: burst
     confidence: pending
-    note: '听众测得最高的一处在 0:37，约 21.90；各人测出来在 17.7 到 21.9 之间，2019 年这首搬到 B 站时也有人回"这才 17"。都是评论区的测算，没有公开逐音节的算式，也没有找到 NahDah 这类榜单收录。'
+    note: '听众测得最高的一处在 0:37，约 21.90；各人测出来在 17.7 到 21.9 之间，2019 年这首搬到 B 站时也有人回"这才 17"。都是评论区的测算，没有公开逐音节的算式，未见 NahDah 这类榜单收录。'
     sources:
       - { title: 'YouTube – Nihilist - Worldwide Choppers remix (full track)（听众 zvikito 上传，2021-04-04）', url: 'https://www.youtube.com/watch?v=nR0tnvJEE_s' }
       - { title: 'B站 – 森敬文：『说唱搬运』Nihilist—Worldwide Choppers（Remix）（2019）', url: 'https://www.bilibili.com/video/BV1pt411E7YB/' }
@@ -65,6 +65,6 @@ B 站 Elemental Choppers 第一首的搬运下面有人说"Chronic Boss 就是 N
 
 ## 《Worldwide Choppers》Remix 和"30 多 SPS"
 
-他最出名的是一首翻唱 Tech N9ne《Worldwide Choppers》伴奏的 Remix。原视频早就找不到了，2019 年森敬文搬到 B 站，2021 年又有听众从存档里传回 YouTube。
+他最出名的是一首翻唱 Tech N9ne《Worldwide Choppers》伴奏的 Remix。原视频早已无法观看，2019 年森敬文搬到 B 站，2021 年又有听众从存档里传回 YouTube。
 
 这首一直传着"30 多 SPS"的说法（32.8、33），评论区有人把歌词写成一串乱码，也有人说"分不清他是快还是在说胡话"。听众放慢了测，最快的地方在 17.7 到 21.9 之间；五里亭亭长 2021 年做全球排行时，专门在置顶评论里反驳了 32.8 这个数。所以他常被拿来当"SPS 数字虚高"的例子，详见[快嘴 ≠ Chop](../../learn/what-is-chop/)。

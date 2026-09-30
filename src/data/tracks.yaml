@@ -253,7 +253,7 @@
   bilibili: BV1LJ411H7NX
   youtubeChannel: good music
   officialUpload: false
-  note: '中文说唱早期的快嘴标杆。网易云收在 D-Evil 的专辑《王者之路》（2008）里，曲名写作 speed；2020 年的回顾文章也说它是"十二年前"的歌。网友测算第二段主歌约 8.27 字/秒，但没有说明方法，所以仍标待核实。'
+  note: '中文说唱早期的快嘴标杆。网易云收在 D-Evil 的专辑《王者之路》（2008）里，曲名写作 speed；2020 年的回顾文章也说它是"十二年前"的歌。网友测算第二段主歌约 8.27 字/秒，但没有说明方法。'
   confidence: pending
   sources:
     - { title: '新浪 – MC光光/南京 D-Evil 十二年前的《Speed No1》', url: 'https://k.sina.cn/article_1163858357_m455f11b503300mplv.html' }
@@ -555,7 +555,7 @@
   officialUpload: true
   scene: world
   year: 2019
-  note: 'NahDah 2023 榜里 Twista 最快的一段：1.091 秒 15 个音节，约 13.75 SPS，第 137 名。这一段目前只找到 NahDah 一家的测算。'
+  note: 'NahDah 2023 榜里 Twista 最快的一段：1.091 秒 15 个音节，约 13.75 SPS，第 137 名。这一段目前只有 NahDah 一家测算。'
   confidence: pending
   sources:
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
@@ -621,7 +621,7 @@
   youtubeChannel: blaqsea（重传）
   officialUpload: false
   scene: world
-  note: 'Shad 最快的一段：1 秒整 20 个音节，TrollatorBR、BruCalcs、NahDah 2021 和 2023 版都测出 20。原视频所在的 Saving Tracks 频道已转为私享，这里是 2026 年的重传；发行年份没查到，只能确定在 2020 年 6 月以前。'
+  note: 'Shad 最快的一段：1 秒整 20 个音节，TrollatorBR、BruCalcs、NahDah 2021 和 2023 版都测出 20。原视频所在的 Saving Tracks 频道已转为私享，这里是 2026 年的重传；发行年份不详，最晚在 2020 年 6 月以前。'
   sources:
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
     - { title: 'YouTube – TrollatorBR：Shad - FreeZeTyler (Cálculo)（2020）', url: 'https://www.youtube.com/watch?v=dguRJ4Ir8tA' }
@@ -897,7 +897,7 @@
   youtubeChannel: 嘻哈音乐分享NR
   officialUpload: false
   scene: china
-  note: '五里亭亭长排的"小安迪最快的五首歌"第 3：12 字 / 0.99 秒 ≈ 12.1 字/秒（窗口不满 1 秒，但超过一般要求的 0.7 秒）。目前只找到五里亭亭长一家的测算。'
+  note: '五里亭亭长排的"小安迪最快的五首歌"第 3：12 字 / 0.99 秒 ≈ 12.1 字/秒（窗口不满 1 秒，但超过一般要求的 0.7 秒）。目前只有五里亭亭长一家测算。'
   confidence: pending
   sources:
     - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
@@ -912,7 +912,7 @@
   youtubeChannel: LIOUBE
   officialUpload: false
   scene: china
-  note: '五里亭亭长排的"小安迪最快的五首歌"第 4：17 字 / 1.45 秒 ≈ 11.7 字/秒。目前只找到五里亭亭长一家的测算。'
+  note: '五里亭亭长排的"小安迪最快的五首歌"第 4：17 字 / 1.45 秒 ≈ 11.7 字/秒。目前只有五里亭亭长一家测算。'
   confidence: pending
   sources:
     - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
@@ -927,7 +927,7 @@
   youtubeChannel: TYRANT XENOS
   officialUpload: true
   scene: china
-  note: '五里亭亭长排的"小安迪最快的五首歌"第 5：19 字 / 1.83 秒 ≈ 10.4 字/秒。YouTube 链接来自合作方 Tyrant Xenos 的频道。目前只找到五里亭亭长一家的测算。'
+  note: '五里亭亭长排的"小安迪最快的五首歌"第 5：19 字 / 1.83 秒 ≈ 10.4 字/秒。YouTube 链接来自合作方 Tyrant Xenos 的频道。目前只有五里亭亭长一家测算。'
   confidence: pending
   sources:
     - { title: 'B站 – 五里亭亭长：小安迪最快的五首歌【精确排行】（2021）', url: 'https://www.bilibili.com/video/BV1nb4y1Q7XA/' }
@@ -1373,7 +1373,7 @@
   year: 2019
   bilibili: BV1Ez4y117xf
   officialUpload: true
-  note: '谢帝改编 Eminem《Rap God》的版本，是他最出名的快嘴作品。官方发行时间没查到，B 站最早的搬运在 2019 年 10 月；说唱会馆 2021 年 3 月在 B 站上传，播放将近 90 万。'
+  note: '谢帝改编 Eminem《Rap God》的版本，是他最出名的快嘴作品。官方发行时间不详，B 站最早的搬运在 2019 年 10 月；说唱会馆 2021 年 3 月在 B 站上传，播放将近 90 万。'
   sources:
     - { title: 'B站 – CDC说唱会馆：谢帝 - Rap God (Remix)（2021-03-11）', url: 'https://www.bilibili.com/video/BV1Ez4y117xf/' }
     - { title: 'B站 – 天气温云：【姆爷×谢帝】rap god（左右声道）（2019-10-20）', url: 'https://www.bilibili.com/video/BV1QE41167zs/' }

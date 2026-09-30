@@ -21,6 +21,6 @@ sources:
   - { title: 'B站 – 貪婪國的子民：Planetary Choppers（2017-11-21）', url: 'https://www.bilibili.com/video/BV1hx411V7Aa/' }
 ---
 
-The Jackal 的 NahDah 2017 条目里列过一首《Planetary Choppers 2》，说明后来至少做过第二集，但公开渠道没找到完整版。
+The Jackal 的 NahDah 2017 条目里列过一首《Planetary Choppers 2》，说明后来至少做过第二集，但没有公开的完整版。
 
 同年 11 月，貪婪國的子民把第一集搬到了 B 站。

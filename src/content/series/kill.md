@@ -11,7 +11,7 @@ episodes:
     title: Kill 2（Paslangin II）
     date: '2017-04-04'
     lineup: [Aktibar, Sinko, Lazta, Carlcent One, Sparo, Resz, Mlazy, J-Sim, Rhon, Apprentice, Twan, CMark, Crazy Killa, One Lie Ace]
-    note: StreetFame Familia 和 Southsyd Souljaz 出品，14 个伊洛伊洛本地 rapper 接力。第一集没找到公开上传。
+    note: StreetFame Familia 和 Southsyd Souljaz 出品，14 个伊洛伊洛本地 rapper 接力。第一集没有公开上传。
     youtube: bhMFnXZtlsk
   - no: '3'
     title: Kill 3（Paslangin III）
