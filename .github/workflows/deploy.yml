@@ -44,14 +44,14 @@ jobs:
 
   # 另外构建一份「域名根目录」版本（index.html 在最外层），放到 site 分支，
   # 给要传到其他托管（FTP / 网页上传）的人：在 GitHub 上打开 site 分支 → Code → Download ZIP。
-  # 不影响上面的 GitHub Pages 部署。想用自己的域名：仓库 Settings → Variables 里加 SITE_URL。
+  # 不影响上面的 GitHub Pages 部署。换域名：仓库 Settings → Variables 里加 SITE_URL。
   package-root:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     env:
       BASE_PATH: /
-      SITE_URL: ${{ vars.SITE_URL || 'https://xoqnapgf-dot.github.io' }}
+      SITE_URL: ${{ vars.SITE_URL || 'https://chop.wuaze.com' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
