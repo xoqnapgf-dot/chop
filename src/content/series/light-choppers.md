@@ -24,4 +24,4 @@ sources:
   - { title: 'YouTube – Mc. Rocket - Light Choppers 2（2025-07-02）', url: 'https://www.youtube.com/watch?v=emcsZv0rTJU' }
 ---
 
-之后还有第三集，目前只找到参与者自己传的段落。
+之后还有第三集，目前只有参与者自己传的段落。

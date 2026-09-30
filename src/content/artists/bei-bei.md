@@ -19,7 +19,7 @@ speed:
     by: '五里亭亭长 2021'
     window: burst
     confidence: pending
-    note: '视频里给的数字，评论区有人整理了完整的数字表，只有亭长一家，没找到窗口的音节数和秒数。这首常被称为他"生涯最快的 verse"。'
+    note: '视频里只给了数字，评论区有人整理了完整的数字表；只有亭长一家测算，没标窗口的音节数和秒数。这首常被称为他"生涯最快的 verse"。'
     sources:
       - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
 sources:

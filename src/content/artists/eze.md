@@ -6,7 +6,7 @@ city: 未公开
 region: 拉丁美洲
 activeSince: 2023
 style: fast
-nearChop: 和 Troll 关系很近：《Aang》是 Troll 混音的，专辑里两首请了 Troll，2026 年又和 Troll、Faraway、夏淳扬一起上了《Antares Convida》。但他自己的作品还是以葡语 speedflow 为主，没找到自称 chopper 的说法。
+nearChop: 和 Troll 关系很近：《Aang》是 Troll 混音的，专辑里两首请了 Troll，2026 年又和 Troll、Faraway、夏淳扬一起上了《Antares Convida》。但他自己的作品还是以葡语 speedflow 为主，未见他自称 chopper。
 styleNote: 葡萄牙语 speedflow，歌词密、速度快；评论区叫他"巴西最快的 rapper"。
 tags: [巴西, speedflow, Troll]
 youtube: { channelId: UCMQgs8m2eGhLAKffM9_xRGA, handle: '@e_ze_q', kind: official }

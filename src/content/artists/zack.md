@@ -7,7 +7,7 @@ region: 网络
 geo: [31.30, 120.59]
 activeSince: 2025
 style: chopper
-styleNote: '中国第三代 chopper 里的一员，和青藤 CyanVine、夏淳扬这批 B 站 chopper 常在一起做合作曲。主要是翻唱：《Infinite Choppers 3》《Limbo Cypher》《Inutilis》这些国际 cypher 的段落他翻了很多段；自己的作品在网易云有 5 张，另外参加《Bilibili Choppers 2》和《GouBa Choppers》。他是 chopper 这一条来自圈内人的说法，公开资料里没有找到本人自称，也没有找到测速。'
+styleNote: '中国第三代 chopper 里的一员，和青藤 CyanVine、夏淳扬这批 B 站 chopper 常在一起做合作曲。主要是翻唱：《Infinite Choppers 3》《Limbo Cypher》《Inutilis》这些国际 cypher 的段落他翻了很多段；自己的作品在网易云有 5 张，另外参加《Bilibili Choppers 2》和《GouBa Choppers》。他是 chopper 这一条来自圈内人的说法，公开资料里未见他本人自称，也没有测速记录。'
 tags: [B站, 翻唱, Bilibili Choppers 2, GouBa Choppers, Zack-Official, THE ZACK]
 photoSource: { site: netease, id: 121556037, image: avatar }
 useBanner: false

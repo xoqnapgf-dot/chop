@@ -36,7 +36,7 @@ speed:
     by: '五里亭亭长 2021'
     window: burst
     confidence: pending
-    note: '同一期里他还有《浮躁》11.2，《饕餮》现场版 13.2。这两个数是评论区有人整理的视频数字表，只有亭长一家，没找到窗口的音节数和秒数。'
+    note: '同一期里他还有《浮躁》11.2，《饕餮》现场版 13.2。这两个数是评论区有人整理的视频数字表，只有亭长一家，没标窗口的音节数和秒数。'
     sources:
       - { title: 'B站 – 五里亭亭长：语速最快的七位中文rapper（2021）', url: 'https://www.bilibili.com/video/BV1rN411X75u/' }
   - value: 13.18

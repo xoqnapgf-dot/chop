@@ -8,7 +8,7 @@ region: 华东
 geo: [31.82, 117.23]
 activeSince: 2016
 style: fast
-styleNote: 快段主要是法老《行凶3.0》里那段客串，歌里还唱了"Keep it real Choppin"；小安迪说自己唯一一首 chop《Real One》也有他。但没找到他自称 chopper、或别人这样称呼他的来源，所以先标快嘴。
+styleNote: 快段主要是法老《行凶3.0》里那段客串，歌里还唱了"Keep it real Choppin"；小安迪说自己唯一一首 chop《Real One》也有他。但没有他自称 chopper、或别人这样称呼他的记载，所以标为快嘴。
 tags: [深蓝儿童, 活死人, Lil G]
 photoSource: { site: netease, id: 12157356, image: avatar }
 related: [lil-andy, pharaoh]

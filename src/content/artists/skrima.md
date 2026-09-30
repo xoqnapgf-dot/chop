@@ -22,7 +22,7 @@ speed:
     syllables: 18
     seconds: 1.042
     confidence: pending
-    note: '18 ÷ 1.042 ≈ 17.27。他加禄语没有现成的官方分音节歌词，NahDah 标明这 18 个音节是"非官方、按听感大致数的"。目前只找到这一家测算。'
+    note: '18 ÷ 1.042 ≈ 17.27。他加禄语没有现成的官方分音节歌词，NahDah 标明这 18 个音节是"非官方、按听感大致数的"。目前只有这一家测算。'
     sources:
       - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
       - { title: 'YouTube – Skrima -16 Bars Challenge (OTC)（Olympia Thugs Crew，2015-06-05）', url: 'https://www.youtube.com/watch?v=LZWht6glpKY' }

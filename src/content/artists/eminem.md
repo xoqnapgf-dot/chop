@@ -25,7 +25,7 @@ speed:
     syllables: 330
     seconds: 31
     confidence: verified
-    note: 'Genius 数出 224 个单词、330 个音节，330 ÷ 31 ≈ 10.65；维基百科和 Maxim 等媒体引用的都是这组数字。网上另有"30 秒 229 个单词、339 个音节、11.3"的转述，找不到 Genius 原文对应。'
+    note: 'Genius 数出 224 个单词、330 个音节，330 ÷ 31 ≈ 10.65；维基百科和 Maxim 等媒体引用的都是这组数字。网上另有"30 秒 229 个单词、339 个音节、11.3"的转述，出处不明。'
     sources:
       - { title: 'Genius – Eminem''s "Godzilla" Verse Is Faster Than "Rap God" & "Majesty"（2020-01-23）', url: 'https://genius.com/a/eminem-s-godzilla-verse-is-faster-than-rap-god-majesty' }
       - { title: 'Maxim – Eminem Breaks World Speed Record With "Godzilla" Verse（转述 Genius 的三组数字）', url: 'https://www.maxim.com/entertainment/eminems-godzilla-breaks-world-speed-record-2020-1/' }

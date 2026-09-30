@@ -21,7 +21,7 @@ speed:
     syllables: 14
     seconds: 1.0
     confidence: pending
-    note: '14 ÷ 1.000 = 14.00。用的是 DJ Lil Sprite 给 Undaground Choppers 10 做的伴奏，发布前圈里办过一轮 #UC10CHALLENGE。目前只找到 NahDah 团队这一家的测算。'
+    note: '14 ÷ 1.000 = 14.00。用的是 DJ Lil Sprite 给 Undaground Choppers 10 做的伴奏，发布前圈里办过一轮 #UC10CHALLENGE。目前只有 NahDah 团队一家测算。'
     sources:
       - { title: 'NahDah Vebb – The Fastest Rapper from Every Country（2024）曲目表', url: 'https://docs.google.com/spreadsheets/d/1q6ccbONUj_yDxAbRCYVqQK5DLmxcQ4I6wlK_zVeaz0o' }
       - { title: 'YouTube – MC Rice - #UC10CHALLENGE (Prod. DJ Lil Sprite)', url: 'https://www.youtube.com/watch?v=B9CTcF3XEHA' }
