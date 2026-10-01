@@ -1,6 +1,5 @@
 ---
 name: Don Xperto
-nameZh: 董哥
 realName: Emmanuel Garcia Niño
 tagline: 中文圈叫他"董哥"（Don 的音译）。墨西哥的西语快嘴，早年自称"世界最快"、上过电视、进过 NahDah 2017 榜前五；后来被 NahDah 以"长期加速"永久除名。
 country: MX
