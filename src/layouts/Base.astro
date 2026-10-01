@@ -25,6 +25,18 @@ const ogImage = image ? new URL(image, Astro.site).href : undefined;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script is:inline>
+      // 只在手机上从主屏幕图标打开、或在安卓 App 里打开时，按设备宽度固定比例，不能缩放；
+      // 普通浏览器里（手机和电脑）照常可以缩放
+      (() => {
+        const app = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true || / CHOPApp\//.test(navigator.userAgent);
+        if (!app || !matchMedia('(pointer: coarse)').matches) return;
+        document.documentElement.classList.add('app-mode');
+        document.querySelector('meta[name=viewport]').content = 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no';
+        // iOS 不认 user-scalable=no，双指缩放要单独拦
+        document.addEventListener('gesturestart', (e) => e.preventDefault());
+      })();
+    </script>
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     {!is404 && <link rel="canonical" href={canonical} />}

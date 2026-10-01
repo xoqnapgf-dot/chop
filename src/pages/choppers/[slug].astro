@@ -42,7 +42,8 @@ const media = artistMedia(id);
 const country = COUNTRY[data.country];
 const isCN = data.country === 'CN';
 const title = displayName(data);
-const subtitle = isCN ? data.name : data.nameZh;
+const subtitle = (isCN ? data.name : data.nameZh) || undefined;
+const showSubtitle = subtitle && subtitle !== title;
 const style = STYLE[data.style];
 const related = data.related.length ? await getEntries(data.related) : [];
 
@@ -118,7 +119,7 @@ const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生
             <span class="chip">{isCN ? `中国区 · ${data.region}` : country.name}</span>
           </div>
           <h1 class="mt-4 text-[clamp(2.2rem,10vw,4.5rem)] font-bold leading-[1] [overflow-wrap:anywhere]">{title}</h1>
-          {subtitle && <p class="mt-2 font-display text-2xl text-ink-2 md:text-3xl">{subtitle}</p>}
+          {showSubtitle && <p class="mt-2 font-display text-2xl text-ink-2 md:text-3xl">{subtitle}</p>}
           <p class="mt-5 max-w-2xl text-lg leading-relaxed text-ink-2">{data.tagline}</p>
           <div class="mt-6 flex flex-wrap gap-2">
             {data.tags.map((t) => <a href={url(`choppers/?q=${encodeURIComponent(t)}`)} class="chip hover:border-line-strong">#{t}</a>)}
