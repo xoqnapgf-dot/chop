@@ -10,7 +10,7 @@ activeSince: 2024
 style: chopper
 styleNote: B 站简介自称"不配上国际 cypher 的底层 chopper"。有人问他唱的是什么风格，他在置顶评论里答："这是 chop，追求纯粹的速度感与打击感的音乐"，并推荐大家去听 Crucified、Interchopper、Sabotahe。
 photoSource: { site: netease, id: 100316228, image: avatar }
-tags: [Bilibili Choppers, Chinese Choppers, chop]
+tags: [Bilibili Choppers, Chinese Choppers, OVERDRIVE POSSE, chop]
 related: [xia-chunyang, mushmach, kastelaro]
 speed:
   - value: 18.06
@@ -28,6 +28,8 @@ speed:
 sources:
   - { title: 'B站 – 五里亭亭长：Bilibili Choppers（2024-06-23，Verse 1：小青藤呐）', url: 'https://www.bilibili.com/video/BV1ym421V7oo/' }
   - { title: 'YouTube – GumBrass - Bilibili Choppers（简介列出全部参与者和分工）', url: 'https://www.youtube.com/watch?v=zEv3_o16Nuo' }
+  - { title: 'Apple Music – scnic：OVERDRIVE POSSE（2026-07-31，客串名单含 CyanVine）', url: 'https://music.apple.com/us/album/overdrive-posse-feat-damianixx-keiththeking-trfchops/6797225801' }
+  - { title: 'YouTube – DAMIANIXX x scnic - OVERDRIVE POSSE（Lil'' Rapid Fire 频道）', url: 'https://www.youtube.com/watch?v=GTeh_hSlLZE' }
   - { title: 'B站 – 青藤cyanvine：中国最快的一段说唱？（2025-10-04，置顶评论答疑）', url: 'https://www.bilibili.com/video/BV16FxszSE7s/' }
   - { title: '网易云音乐 – 夏淳扬、青藤CyanVine：死骸（2025-10-02，简介："说唱歌手小青藤首支单曲"）', url: 'https://music.163.com/song?id=2752225152' }
   - { title: '网易云音乐 – Chinese Choppers（2026-05-09）', url: 'https://music.163.com/song?id=3380166290' }
@@ -56,6 +58,7 @@ sources:
 | 2024 年 6 月 23 日 | 《Bilibili Choppers》 | 第一段 |
 | 2025 年 10 月 2 日 | 《死骸》（和夏淳扬） | 第一首单曲；同一天还发了《To be tha guy》 |
 | 2026 年 5 月 9 日 | 《Chinese Choppers》 | 另有他和夏淳扬、YKY 的 part 2 |
+| 2026 年 7 月 31 日 | 《OVERDRIVE POSSE》 | scnic 和 DAMIANIXX 牵头的国际 cypher，约 11 分钟，16 位客串，同场有 [DOWN6](../down6/)、[Dumanoid](../dumanoid/)、NoSeriousKit、[Asa Jake](../asa-jake/) 等 |
 | 2026 年 9 月 23 日 | 《Bilibili Choppers 2》 | |
 
 2026 年 2 月，[Zack](../zack/) 在 B 站发了一期《青藤 CyanVine 语速最快的段落 top25》，说明写"娱乐测速，友善交流"；他在评论里补充说，这期其实是青藤自己做的，发在他们的 QQ 群里，托 Zack 代传到 B 站。
