@@ -29,6 +29,12 @@ const ogImage = image ? new URL(image, Astro.site).href : undefined;
     <meta name="description" content={description} />
     {!is404 && <link rel="canonical" href={canonical} />}
     <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />
+    <link rel="apple-touch-icon" href={url('icons/apple-touch-icon.png')} />
+    <link rel="manifest" href={url('manifest.webmanifest')} />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="CHOP/" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link rel="sitemap" href={url('sitemap-index.xml')} />
     <meta name="theme-color" content="#0a0807" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#f5efe4" media="(prefers-color-scheme: light)" />
