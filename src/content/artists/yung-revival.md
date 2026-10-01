@@ -1,6 +1,7 @@
 ---
 name: Yung Revival
-tagline: 英国的地下 chopper，2013 年就和 DNA、Leach 合唱了《Tie The Noose》，那段瞬间爆发一直被听众点名。NahDah 2017 版第 13；之后沉寂多年，2025 年回归，和 DNA、Leach 又有了一连串合作。
+nameZh: 杨爷
+tagline: 中文圈叫他"杨爷"（Yung 的音译）。英国的地下 chopper，2013 年就和 DNA、Leach 合唱了《Tie The Noose》，那段瞬间爆发一直被听众点名。NahDah 2017 版第 13；之后沉寂多年，2025 年回归，和 DNA、Leach 又有了一连串合作。
 country: GB
 city: 未公开
 region: 欧洲
