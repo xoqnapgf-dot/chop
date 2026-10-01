@@ -8,6 +8,11 @@ keyPoints:
   - '快嘴和 Chop 是两个层次：快嘴看速度，Chop 看整首、长期的切分，而不只是某一段快。'
   - '只追数字、含糊吐字、靠加速的新人，圈里叫"SPS kid"，和 chopper 是两个方向。'
 figure: tiers
+hue: red
+stats:
+  - { n: '{{chopper}}', unit: '位', label: '站内标为 Chopper 的人物' }
+  - { n: '{{fast}}', unit: '位', label: '站内标为快嘴的人物' }
+  - { n: '18–20', unit: 'SPS', label: 'LYB 视频标题写 46.2，听众放慢逐字数出来的最快处' }
 sources:
   - { title: '知乎 – chopping 在说唱中是什么风格？', url: 'https://www.zhihu.com/question/295864036' }
   - { title: '网易 – 国内很少提到的 Chopper 是什么说唱风格？（2017）', url: 'https://www.163.com/dy/article/D5V5SPNJ0518I8NI.html' }
@@ -43,12 +48,29 @@ SPS 是 syllables per second（每秒音节数）。海外 chopper 圈里有个�
 - 靠**剪辑拼接、后期加速**等技巧把数字堆上去；
 - 只挑**最快的那 1 秒**来算，甚至**夸大测算结果**。
 
+<figure class="mdfig mf-vs" aria-label="SPS kid 和 chopper 的对照">
+<figcaption>同样是快，两条路差在哪</figcaption>
+<div class="mf-vs-head"><span></span><b>SPS kid</b><b>Chopper</b></div>
+<div class="mf-vs-row"><span>追什么</span><p>数字越高越好</p><p>快，而且清楚</p></div>
+<div class="mf-vs-row"><span>吐字</span><p>含糊，甚至胡乱发音</p><p>每个音节都是词</p></div>
+<div class="mf-vs-row"><span>手段</span><p>剪辑拼接、后期加速</p><p>有 flow，现场也唱得出来</p></div>
+<div class="mf-vs-row"><span>取样</span><p>只挑最快的 1 秒</p><p>整首、长期地切</p></div>
+</figure>
+
 公开资料里也能看到这种现象：Rap Wiki 写道，"网上的小孩只想找最快的那一秒"；2024 年还有一群想自称"最快"的人试图改写纪录规则，只比 1 秒爆发。SPS 社区的 wiki 里，也有人被描述为"前 SPS kid"，或者被说在某个阶段"最像 SPS kid：只顾押韵和打爆发"。
 
 早年常被拿来举例的两个名字：
 
 - **LYB**：2017 年前后 YouTube 上的一个新人。快段基本靠弹舌撑速度，评论区一堆人把他那段写成"grrrrrr"；视频标题却一个比一个吹得高："32.2 SPS""38.1 SPS"，最夸张的一条写着"世界最快的即兴，46.2 SPS，LEGIT"。The Jackal 在他视频下面留言："一到快段你就是在滚同一个音节，让它听起来更快，其余的根本听不清。我不怀疑你脑子里有词，但你没把它们都说出来。"听众放慢了逐字数，最快的地方大约在 18 到 20。
 - **[Nihilist](../../choppers/nihilist/)**：中文圈叫他"虚无"，美国人。2017 年的《Planetary Choppers》由他唱第一段、Interchopper 压轴，2018 年又上了 MC Rice 的《Illest Choppers 4》。他那首《Worldwide Choppers》Remix 一直传着"30 多 SPS"的说法，评论区有人写 33，但听众各自测出来在 17.7 到 21.9 之间。2019 年这首被搬到 B 站时，就有人回"这才 17"。LYB 当年在视频简介里列过一份《Cryptic Choppers》的名单，里面也有他。
+
+<figure class="mdfig" aria-label="标出来的数字和听众测出来的数字">
+<figcaption>标出来的 vs 听众逐字数的（SPS）</figcaption>
+<div class="mf-row"><span class="mf-l">LYB<small>视频标题</small></span><span class="mf-bar"><i class="mf-ghost" style="--w:92.4%"></i></span><b>46.2</b></div>
+<div class="mf-row"><span class="mf-l">LYB<small>听众测</small></span><span class="mf-bar"><i style="--w:40%"></i></span><b>18–20</b></div>
+<div class="mf-row"><span class="mf-l">Nihilist<small>流传的数字</small></span><span class="mf-bar"><i class="mf-ghost" style="--w:65.6%"></i></span><b>32.8</b></div>
+<div class="mf-row"><span class="mf-l">Nihilist<small>听众测</small></span><span class="mf-bar"><i style="--w:43.8%"></i></span><b>17.7–21.9</b></div>
+</figure>
 
 所以 SPS kid 和 chopper 正好是两个方向：**chopper 快，而且每个音节都是词、有 flow、能现场唱出来**；SPS kid 只剩一个数字。
 

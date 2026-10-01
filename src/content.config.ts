@@ -142,6 +142,10 @@ const learn = defineCollection({
     keyPoints: z.array(z.string()).default([]),
     /** 开头的示意图（见 LearnFigure.astro） */
     figure: z.enum(['tiers', 'origins', 'windows', 'guinness']).optional(),
+    /** 文章主色（见 global.css 的 data-hue），不写则用默认金色 */
+    hue: z.enum(['red', 'teal', 'plum', 'orange', 'olive']).optional(),
+    /** 开头的"数字速览"：n 可以写 {{chopper}} / {{fast}} / {{people}}，构建时换成站内实时数量 */
+    stats: z.array(z.object({ n: z.string(), unit: z.string().optional(), label: z.string() })).default([]),
     sources: z.array(source).default([]),
   }),
 });

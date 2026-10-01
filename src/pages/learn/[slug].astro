@@ -17,13 +17,21 @@ interface Props {
 const { entry, prev, next } = Astro.props;
 const { Content, headings } = await render(entry);
 const toc = headings.filter((h) => h.depth === 2);
+// 数字速览里的 {{chopper}} / {{fast}} / {{people}}：换成站内实时数量，改人物档案时不用回来改文章
+const artists = await getCollection('artists');
+const live: Record<string, number> = {
+  chopper: artists.filter((a) => a.data.style === 'chopper').length,
+  fast: artists.filter((a) => a.data.style === 'fast').length,
+  people: artists.length,
+};
+const stats = entry.data.stats.map((t) => ({ ...t, n: t.n.replace(/\{\{(\w+)\}\}/g, (_, k) => String(live[k] ?? '')) }));
 // 粗略阅读时间：中文按每分钟 500 字
 const minutes = Math.max(1, Math.round((entry.body ?? '').replace(/\s+/g, '').length / 500));
 ---
 
 <Base title={entry.data.title} description={entry.data.summary}>
   <div class="read-progress" aria-hidden="true"><i></i></div>
-  <article class="container-x pt-14 md:pt-20">
+  <article class="container-x pt-14 md:pt-20" data-hue={entry.data.hue}>
     <header class="max-w-3xl">
       <a href={url('learn/')} class="eyebrow link-u hover:text-ink">← 百科</a>
       <div class="mt-5 flex flex-wrap items-center gap-2">
@@ -36,8 +44,21 @@ const minutes = Math.max(1, Math.round((entry.body ?? '').replace(/\s+/g, '').le
     </header>
 
     {
+      stats.length > 0 && (
+        <dl class="stat-row mt-10 grid gap-3 sm:grid-cols-3" aria-label="数字速览">
+          {stats.map((t) => (
+            <div class="stat card p-5">
+              <dd class="stat-n font-display tabular-nums">{t.n}{t.unit && <small>{t.unit}</small>}</dd>
+              <dt class="mt-2 text-sm leading-snug text-ink-2">{t.label}</dt>
+            </div>
+          ))}
+        </dl>
+      )
+    }
+
+    {
       (entry.data.figure || entry.data.keyPoints.length > 0) && (
-        <div class="mt-10 grid gap-4 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)]">
+        <div class="mt-4 grid gap-4 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)]">
           {entry.data.figure && <LearnFigure kind={entry.data.figure} />}
           {entry.data.keyPoints.length > 0 && (
             <aside class="kp card p-5 sm:p-7">
@@ -140,6 +161,203 @@ const minutes = Math.max(1, Math.round((entry.body ?? '').replace(/\s+/g, '').le
     font-family: var(--font-display);
     font-weight: 700;
   }
+
+  /* 数字速览：几个大数字，先给结论 */
+  .stat {
+    border-top: 3px solid var(--accent);
+  }
+  .stat-n {
+    font-size: clamp(1.9rem, 5vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--accent-text);
+  }
+  .stat-n small {
+    margin-left: 0.4rem;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--ink-3);
+  }
+  /* 编号列表：每条做成带编号的卡片，不再是一整段长文字 */
+  .prose-chop :global(ol) {
+    list-style: none;
+    counter-reset: step;
+    display: grid;
+    gap: 0.6rem;
+    padding-left: 0;
+  }
+  .prose-chop :global(ol > li) {
+    counter-increment: step;
+    position: relative;
+    padding: 0.8rem 1rem 0.8rem 3.1rem;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--surface);
+  }
+  .prose-chop :global(ol > li)::before {
+    content: counter(step);
+    position: absolute;
+    left: 0.85rem;
+    top: 0.8rem;
+    display: grid;
+    place-items: center;
+    width: 1.55rem;
+    height: 1.55rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  /* 以加粗开头的段落（"计时口径变过。……"）做成带色边的小卡片 */
+  .prose-chop :global(p:has(> strong:first-child)) {
+    padding: 0.8rem 1rem;
+    border-left: 3px solid var(--accent);
+    border-radius: 0 12px 12px 0;
+    background: color-mix(in oklab, var(--accent) 6%, var(--surface));
+  }
+  .prose-chop :global(p:has(> strong:first-child) > strong:first-child) {
+    background: none;
+    color: var(--accent-text);
+  }
+  /* 文中嵌入的小图表（在 Markdown 里直接写 <figure class="mdfig">） */
+  .prose-chop :global(.mdfig) {
+    margin: 1.5rem 0;
+    padding: 1.1rem 1.2rem 1.2rem;
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--accent);
+    border-radius: 16px;
+    background: var(--surface);
+  }
+  .prose-chop :global(.mdfig figcaption) {
+    margin-bottom: 0.9rem;
+    font-family: var(--font-display);
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .prose-chop :global(.mf-row) {
+    display: grid;
+    grid-template-columns: 7.2rem minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.3rem 0;
+    font-size: 0.9rem;
+  }
+  .prose-chop :global(.mf-l) {
+    color: var(--ink);
+    font-weight: 600;
+    line-height: 1.25;
+  }
+  .prose-chop :global(.mf-l small) {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--ink-3);
+  }
+  .prose-chop :global(.mf-row b) {
+    min-width: 3.4rem;
+    text-align: right;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  .prose-chop :global(.mf-bar) {
+    display: grid;
+    gap: 3px;
+  }
+  .prose-chop :global(.mf-bar i) {
+    display: block;
+    height: 0.7rem;
+    width: var(--w);
+    border-radius: 0 5px 5px 0;
+    background: var(--accent);
+  }
+  .prose-chop :global(i.mf-ghost) {
+    background: repeating-linear-gradient(135deg, transparent 0 3px, color-mix(in oklab, var(--accent) 55%, transparent) 3px 5px);
+    border: 1.5px solid var(--accent);
+    border-left: 0;
+  }
+  .prose-chop :global(.mf-key) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: -0.3rem 0 0.5rem;
+    font-size: 0.8rem;
+    color: var(--ink-3);
+  }
+  .prose-chop :global(.mf-key span) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .prose-chop :global(.mf-key i) {
+    display: block;
+    width: 1.2rem;
+    height: 0.7rem;
+    border-radius: 3px;
+    background: var(--accent);
+  }
+  .prose-chop :global(.mf-key i.mf-ghost) {
+    border-left: 1.5px solid var(--accent);
+  }
+  /* 对照卡 */
+  .prose-chop :global(.mf-vs-head),
+  .prose-chop :global(.mf-vs-row) {
+    display: grid;
+    grid-template-columns: 4.2rem 1fr 1fr;
+    gap: 0.6rem;
+    align-items: start;
+  }
+  .prose-chop :global(.mf-vs-head b) {
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--accent);
+  }
+  .prose-chop :global(.mf-vs-head b:first-of-type) {
+    border-color: var(--line-strong);
+    color: var(--ink-3);
+  }
+  .prose-chop :global(.mf-vs-row) {
+    padding: 0.55rem 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  .prose-chop :global(.mf-vs-row:last-child) {
+    border-bottom: 0;
+  }
+  .prose-chop :global(.mf-vs-row span) {
+    font-size: 0.8rem;
+    color: var(--ink-3);
+    padding-top: 0.1rem;
+  }
+  .prose-chop :global(.mf-vs-row p) {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: var(--ink-2);
+  }
+  .prose-chop :global(.mf-vs-row p:last-child) {
+    color: var(--ink);
+    font-weight: 600;
+  }
+  @media (max-width: 520px) {
+    .prose-chop :global(.mf-row) {
+      grid-template-columns: 5.6rem minmax(0, 1fr) auto;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+    }
+    .prose-chop :global(.mf-vs-head),
+    .prose-chop :global(.mf-vs-row) {
+      grid-template-columns: 3.4rem 1fr 1fr;
+      gap: 0.4rem;
+    }
+  }
+
   /* 正文：章节编号、表格做成卡片、引用做成提示框 */
   .prose-chop {
     counter-reset: sec;
