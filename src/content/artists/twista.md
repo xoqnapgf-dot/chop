@@ -61,4 +61,4 @@ Twista 本名 Carl Terrell Mitchell，1973 年生于芝加哥西区。1991 年�
 
 《Slow Jamz》常被拿来当快嘴也能进主流的例子。2008 年他成立了自己的厂牌 Get Money Gang。
 
-吉尼斯纪录 1998 年就被 Rebel XD 打破，后来又换过几次人，详见[吉尼斯"最快说唱"纪录](../../learn/guinness/)。
+吉尼斯纪录 1998 年就被 Rebel XD 打破，后来又换过几次人，详见[吉尼斯"最快说唱"纪录](../../learn/guinness/#按时间排一遍)。

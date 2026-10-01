@@ -49,7 +49,7 @@ SPS 是 syllables per second（每秒音节数）。海外 chopper 圈里有个�
 - 只挑**最快的那 1 秒**来算，甚至**夸大测算结果**。
 
 <figure class="mdfig mf-vs" aria-label="SPS kid 和 chopper 的对照">
-<figcaption>同样是快，两条路差在哪</figcaption>
+<figcaption>SPS kid 和 chopper 的区别</figcaption>
 <div class="mf-vs-head"><span></span><b>SPS kid</b><b>Chopper</b></div>
 <div class="mf-vs-row"><span>追什么</span><p>数字越高越好</p><p>快，而且清楚</p></div>
 <div class="mf-vs-row"><span>吐字</span><p>含糊，甚至胡乱发音</p><p>每个音节都是词</p></div>
