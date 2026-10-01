@@ -28,11 +28,14 @@ const years = Array.from({ length: span }, (_, i) => first + i);
 const byYear = (scene: 'world' | 'china', y: number) => events.filter((e) => e.data.scene === scene && e.data.year === y);
 ---
 
-<Base title="时间线" description="从 1980 年到今天，世界 chopper 与中国快嘴的大事记，左右并行对照。">
+<Base title="时间线" description="从 1980 年到今天，世界 chopper 与中国快嘴的大事记，世界与中国区按时间对照。">
   <section class="page-hero container-x pt-14 md:pt-20" data-wm="1980—2026" style="--hero-a:var(--p4);--hero-b:var(--p2);--hero-c:var(--p3)">
     <p class="eyebrow">Timeline · {first}–{last}</p>
     <h1 class="mt-4 text-5xl font-bold md:text-7xl">时间线</h1>
-    <p class="mt-5 max-w-2xl text-lg text-ink-2">左边<span class="text-accent-text">世界</span>，右边<span class="text-china">中国区</span>，同一时期对照着看。</p>
+    <p class="mt-5 max-w-2xl text-lg text-ink-2">
+      <span class="hidden min-[900px]:inline">左边<span class="text-accent-text">世界</span>，右边<span class="text-china">中国区</span>，同一时期对照着看。</span>
+      <span class="min-[900px]:hidden"><span class="text-accent-text">世界</span>和<span class="text-china">中国区</span>按时间排在同一条线上，用颜色区分，同一时期对照着看。</span>
+    </p>
 
     <dl class="tl-stats mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
       <div class="card p-4"><dd class="font-display text-3xl font-semibold tabular-nums">{events.length}</dd><dt class="mt-1 text-xs text-ink-3">件大事</dt></div>
