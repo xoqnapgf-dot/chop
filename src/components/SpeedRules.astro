@@ -190,6 +190,7 @@ const faq = [
     </div>
   </details>
 
+  <div data-hue="violet">
   <h3 class="mt-10 text-2xl font-semibold">问答</h3>
   <div class="mt-4 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
     {faq.map((f, i) => (
@@ -275,6 +276,7 @@ const faq = [
       </article>
     ))}
   </div>
+  </div>
 
   <div class="mt-4 rounded-2xl border border-line bg-surface-2 p-5 text-xs leading-relaxed text-ink-3">
     <p>
@@ -307,7 +309,8 @@ const faq = [
     margin-right: 0.25rem;
     padding: 0.05rem 0.45rem;
     border-radius: 999px;
-    background: color-mix(in oklab, var(--accent) 22%, transparent);
+    background: var(--surface-2);
+    border: 1px solid color-mix(in oklab, var(--accent) 55%, var(--line));
     color: var(--ink);
   }
   .dots {
@@ -335,7 +338,7 @@ const faq = [
     flex: 1;
     height: calc(var(--h, 13) / 16 * 100%);
     border-radius: 3px 3px 0 0;
-    background: color-mix(in oklab, var(--accent) 45%, var(--line));
+    background: color-mix(in oklab, var(--ink-3) 38%, var(--line));
   }
   .wave.peak i[style*='--h:16'] {
     background: var(--accent);
@@ -403,7 +406,7 @@ const faq = [
     background: var(--accent);
   }
   .hbar.dim i {
-    background: color-mix(in oklab, var(--accent) 40%, var(--line));
+    background: color-mix(in oklab, var(--ink-3) 38%, var(--line));
   }
   .hbar b {
     font-family: var(--font-mono);
