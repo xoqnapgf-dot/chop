@@ -36,12 +36,15 @@ const stats = [
   { n: sourceCount, label: '条独立来源' },
 ];
 
-// 首页右侧"步进器"的几档速度（音节/秒）
+// 首页右侧"步进器"的几档速度（音节/秒），从慢到快，档与档之间拉开差距
 const presets = [
-  { label: 'Twista 1992', v: 10.87 },
-  { label: '光光 Speed #1', v: 8.27 },
+  { label: '90 BPM 8 分', v: 3 },
   { label: '90 BPM 16 分', v: 6 },
+  { label: 'Twista 1992', v: 10.87 },
+  { label: 'El Chojin 2008', v: 15.4 },
+  { label: 'Crucified 爆发', v: 21 },
 ];
+const defaultPreset = 2;
 
 const tiers = [
   { key: 'fast', eg: '法老 · 杨和苏 · 光光 · Eminem', text: '有公认的高速段落，或者语速、咬字就是他的招牌；但没有整首、长期地"切"音节。' },
@@ -82,11 +85,11 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
       </div>
 
       <!-- 步进器：直观展示每秒多少个音节 -->
-      <div class="seq card relative p-5 shadow-[var(--shadow)] sm:p-7" data-rate={presets[0].v}>
+      <div class="seq card relative p-5 shadow-[var(--shadow)] sm:p-7" data-rate={presets[defaultPreset].v}>
         <div class="flex items-start justify-between gap-4">
           <div>
             <p class="eyebrow">Syllables / second</p>
-            <p class="mt-2 font-display text-5xl font-semibold tabular-nums sm:text-6xl"><span class="seq-rate">{presets[0].v}</span></p>
+            <p class="mt-2 font-display text-5xl font-semibold tabular-nums sm:text-6xl"><span class="seq-rate">{presets[defaultPreset].v}</span></p>
           </div>
           <span class="chip"><span class="size-1.5 animate-pulse rounded-full bg-hot"></span>LIVE</span>
         </div>
@@ -97,7 +100,7 @@ const styleCount = (k: string) => artists.filter((a) => a.data.style === k).leng
         <div class="mt-5 flex flex-wrap gap-2" role="radiogroup" aria-label="选择速度">
           {
             presets.map((p, i) => (
-              <button type="button" role="radio" aria-checked={i === 0 ? 'true' : 'false'} class="seq-preset chip cursor-pointer transition" data-v={p.v}>
+              <button type="button" role="radio" aria-checked={i === defaultPreset ? 'true' : 'false'} class="seq-preset chip cursor-pointer transition" data-v={p.v}>
                 {p.label} · {p.v}
               </button>
             ))
