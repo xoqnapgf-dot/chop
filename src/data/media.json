@@ -681,6 +681,15 @@
         "name": "喜欢chop的艾拉"
       },
       "fetchedAt": "2026-10-01"
+    },
+    "jms": {
+      "photo": {
+        "site": "B站个人空间",
+        "url": "https://space.bilibili.com/1922786636",
+        "name": "AKA_JMS"
+      },
+      "color": "#f8f8f8",
+      "fetchedAt": "2026-10-01"
     }
   },
   "tracks": {

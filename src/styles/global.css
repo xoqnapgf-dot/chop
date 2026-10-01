@@ -121,6 +121,10 @@
 
 /* ---------- 基础 ---------- */
 @layer base {
+  /* 只在主屏幕 / App 模式下去掉双击放大（Base.astro 里加的 class），普通网页照常缩放 */
+  html.app-mode {
+    touch-action: manipulation;
+  }
   html {
     background: var(--bg);
     color: var(--ink);

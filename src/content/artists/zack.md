@@ -45,7 +45,7 @@ Zack 是[中国第三代 chopper](../../timeline/#2023-cn-third-gen) 里的一�
 - **Infinite Choppers 3**：至少十段，包括 DOWN6、Twisted Insane、Idylll、L.O.D、Ace Tha Goblin、MUSHMACH，以及意大利语的 Wedere、土耳其语的 MANYAK、芬兰语的 HeureCa。
 - **Limbo Cypher**：第 3 到 6 段、第 8、13、15 段等。
 - **Inutilis: Liminal / VAPORIZED**：Transcendentem、Tokumei、Greenhoe440 的段落。
-- **其他**：Astronomical Choppers 3、Onion Chopper RMX、United Choppers 5、2024 年的《Bilibili Choppers》、Crucified《Nightmare》里那一段，以及中文圈的《Chinese Choppers》（JMS、赛文凯的段落）和青藤 CyanVine 的《死骸》《Grief Choppers》。
+- **其他**：Astronomical Choppers 3、Onion Chopper RMX、United Choppers 5、2024 年的《Bilibili Choppers》、Crucified《Nightmare》里那一段，以及中文圈的《Chinese Choppers》（[JMS](../jms/)、赛文凯的段落）和青藤 CyanVine 的《死骸》《Grief Choppers》。
 
 有听众在《Astronomical Choppers 3》的翻唱下面怀疑他开了倍速，他回复说自己翻唱从来不开倍速，是一句一句唱下来的。这是他本人的说法，没有第三方核过。
 

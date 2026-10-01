@@ -1,14 +1,14 @@
 ---
 name: Isla
 nameZh: 艾拉
-tagline: 中国新生代 chopper，B 站和 YouTube 上叫"喜欢chop的艾拉"。主要翻唱国际 chopper cypher，芬兰语、法语、意大利语的段落都照原词唱过；还把 Wedere 的 SPS 测算教程翻成了中文。
+tagline: 中国新生代 chopper，B 站和 YouTube 上的"喜欢chop的艾拉"。以翻唱国际 chopper cypher 出名，常把外语段落逐音节扒下来再唱，翻过芬兰语、法语、意大利语的 verse，还把 Wedere 的 SPS 测算教程翻成了中文。
 country: CN
 city: 上海
 region: 网络
 geo: [31.23, 121.47]
 activeSince: 2024
 style: chopper
-styleNote: '作品几乎都是翻唱，chop 之外也翻中文流行歌、动画和音游曲。'
+styleNote: '中国新生代 chopper 里的一员，作品几乎都是翻唱：Onion Chopper RMX、Inutilis、Chinese Choppers、OVERDRIVE POSSE 这些 cypher 的段落，很多是外语原词照唱。频道里也有不少中文流行歌、动画和音游曲目的翻唱。'
 tags: [B站, YouTube, 翻唱, 多语言, Inutilis, OVERDRIVE POSSE]
 photoSource: { site: bilibili, id: 186757411, name: 喜欢chop的艾拉 }
 youtube: { channelId: UCNfSeBkTJIfEwf22SdnfFDQ, handle: '@喜欢音游的艾拉', kind: official }
@@ -36,20 +36,22 @@ sources:
 
 ## 翻唱
 
-chop 方面基本都是翻唱，外语段落也照原词唱：
+他的 chop 作品几乎都是翻唱，挑的多是国际 chopper cypher 里难度高的段落，而且常常直接唱外语原词：
 
 | 时间 | 翻唱 | 说明 |
 |---|---|---|
 | 2024 年 | 《Inutilis: LIMINAL》 | MC Rice 和 LEECHY 两段 |
-| 2024 年 12 月 25 日 | 《Onion Chopper RMX》 | Remix 发布第二天 |
+| 2024 年 12 月 25 日 | 《Onion Chopper RMX》 | Remix 发布第二天就在 B 站发了一期 |
 | 2025 年 1 月 4 日 | 《Onion Chopper RMX》[HeureCa](../heureca/) 段 | 芬兰语。HeureCa 本人留言："挺好的，很有天赋，都快比我的好了。" |
-| 2026 年 | 《Chinese Choppers》 | 分段翻了 JMS、Willbe、[青藤 CyanVine](../cyanvine/)、坤鹏飞和[夏淳扬](../xia-chunyang/)、赛文凯和 ChaChe、[MUSHMACH](../mushmach/) 的段落 |
+| 2026 年 | 《Chinese Choppers》 | 分段翻了 [JMS](../jms/)、Willbe、[青藤 CyanVine](../cyanvine/)、坤鹏飞和[夏淳扬](../xia-chunyang/)、赛文凯和 ChaChe、[MUSHMACH](../mushmach/) 的段落 |
 | 2026 年 8 月 8 日 | 《OVERDRIVE POSSE》 | 青藤 CyanVine、NoSeriousKit、loordmtxxx 三段 |
 | 2026 年 8 月 11 日 | 《OVERDRIVE POSSE》HI-SUNKO 段、《LIGHTSOUT》V1olette 段 | V1olette 那段是法语 |
 | 2026 年 8 月 13 日 | 《Inutilis: VAPORIZED》 | 整首翻唱 |
 
-另外翻过《Astronomical Choppers 3》里 Wedere 的意大利语段落。频道里还有几期多语言翻唱：22 种语言的《命に嫌われている》，10 种语言的《Deltarune》插曲《Don't Forget》。
+外语段落他是一个音节一个音节扒出来的：V1olette 那段法语，他用 0.25 倍速逐音节听，给歌词标上音标，再对着原曲的干声改发音重录；德语段落也是自己给每句标注发音。
+
+他还翻过《Astronomical Choppers 3》里 Wedere 的意大利语段落。频道里另有一类"多语言"翻唱，比如用 22 种语言唱《命に嫌われている》，用 10 种语言唱《Deltarune》的《Don't Forget》。
 
 ## 翻译测速教程
 
-2025 年 12 月，他把 SPS 圈 Wedere 的教程《How to CALCULATE SPS (2025)》翻成中文发到 B 站，约 20 分钟，讲怎么数音节、怎么计时。方法和本站[语速怎么测](../../learn/measuring-speed/#sps-社区怎么测)里写的是同一套。
+2025 年 12 月，他把 SPS 圈 Wedere 的测算教程《How to CALCULATE SPS (2025)》翻成中文发到 B 站，全长约 20 分钟，讲的是怎么按音节数和秒数算出每秒音节数。站里的[语速怎么测](../../learn/measuring-speed/#sps-社区怎么测)讲的也是这一套方法。

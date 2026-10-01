@@ -26,7 +26,7 @@ episodes:
   - no: CC
     title: Chinese Choppers
     date: '2026-05-09'
-    lineup: ['夏淳扬@xia-chunyang', '青藤 CyanVine@cyanvine', JMS, WILLBE, YKY, zenk, 陆字 Lil-3ard, 小旭 8ight 2wo 9ine, 金鼠儿, 芒斯特, ChaChe, 赛文凯, CHD, Lil king, Tricky阎]
+    lineup: ['夏淳扬@xia-chunyang', '青藤 CyanVine@cyanvine', 'JMS@jms', WILLBE, YKY, zenk, 陆字 Lil-3ard, 小旭 8ight 2wo 9ine, 金鼠儿, 芒斯特, ChaChe, 赛文凯, CHD, Lil king, Tricky阎]
     note: 夏淳扬发起、策划并做音频编辑，全长约 16 分钟，另有 part 1、part 2 分段版。发布后 B 站、YouTube 上很快有人逐段翻唱；小安迪在直播里完整听了一遍，说这是真正的 chop。
     netease: 3380166290
     track: chinese-choppers
