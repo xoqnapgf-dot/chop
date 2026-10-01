@@ -667,6 +667,20 @@
       },
       "color": "#080808",
       "fetchedAt": "2026-09-30"
+    },
+    "isla": {
+      "channelUrl": "https://www.youtube.com/channel/UCNfSeBkTJIfEwf22SdnfFDQ",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/SNDE5Z1wihhoe_4fgsRA92Z6uoFQEntwz3zpqqJ5sB3j0jsbrWmiGmQ-ajSgiHwLPlSfHH0Cgw=s800-c-k-c0x00ffffff-no-rj",
+      "banner": null,
+      "hasBanner": false,
+      "color": "#f8f8f8",
+      "photo": {
+        "site": "B站个人空间",
+        "url": "https://space.bilibili.com/186757411",
+        "name": "喜欢chop的艾拉"
+      },
+      "fetchedAt": "2026-10-01"
     }
   },
   "tracks": {

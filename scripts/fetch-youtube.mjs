@@ -25,6 +25,16 @@ const media = JSON.parse(await fs.readFile(mediaFile, 'utf8').catch(() => '{"art
 
 const exists = (p) => fs.access(p).then(() => true, () => false);
 
+/** 按昵称搜 B 站用户，用 UID 核对后返回 { name, face } */
+async function bilibiliUser(mid, keyword) {
+  if (!keyword) throw new Error('photoSource 缺 name（B 站昵称）');
+  const r = await fetch(`https://api.bilibili.com/x/web-interface/search/type?search_type=bili_user&keyword=${encodeURIComponent(keyword)}`, {
+    headers: { ...UA, Referer: 'https://search.bilibili.com/', Cookie: 'buvid3=chop-archive' },
+  });
+  const hit = ((await r.json()).data?.result ?? []).find((x) => x.mid === mid);
+  return hit && { name: hit.uname, face: hit.upic.replace(/^\/\//, 'https://') };
+}
+
 async function download(url, dest, { width } = {}) {
   const res = await fetch(url, { headers: UA });
   if (!res.ok) throw new Error(`${res.status} ${url}`);
@@ -94,15 +104,26 @@ for (const f of (await fs.readdir(artistsDir)).filter((f) => f.endsWith('.md')))
       console.warn(`✗ ${slug} portrait: ${e.message}`);
     }
   }
-  // 网易云音乐歌手页的头像/封面（本人官方主页的图）
+  // 网易云音乐歌手页的头像/封面，或 B 站个人空间头像（本人官方主页的图）
   const photoPath = path.join(dir, 'photo.jpg');
-  if (fm.photoSource?.site === 'netease' && (force || !(await exists(photoPath)))) {
+  if (fm.photoSource && (force || !(await exists(photoPath)))) {
     try {
       const ps = fm.photoSource;
-      const res = await fetch(`https://music.163.com/api/artist/head/info/get?id=${ps.id}`, { headers: { ...UA, referer: 'https://music.163.com/' } });
-      const artist = (await res.json())?.data?.artist;
-      const src = (ps.image === 'cover' ? artist?.cover : artist?.avatar)?.replace(/^http:/, 'https:');
-      if (!src) throw new Error('网易云没有这张图');
+      let src, photo, label;
+      if (ps.site === 'bilibili') {
+        const user = await bilibiliUser(ps.id, ps.name);
+        src = user?.face;
+        if (!src) throw new Error('B 站搜不到这个 UID 的头像');
+        photo = { site: 'B站个人空间', url: `https://space.bilibili.com/${ps.id}`, name: user.name };
+        label = `B 站 ${user.name}`;
+      } else {
+        const res = await fetch(`https://music.163.com/api/artist/head/info/get?id=${ps.id}`, { headers: { ...UA, referer: 'https://music.163.com/' } });
+        const artist = (await res.json())?.data?.artist;
+        src = (ps.image === 'cover' ? artist?.cover : artist?.avatar)?.replace(/^http:/, 'https:');
+        if (!src) throw new Error('网易云没有这张图');
+        photo = { site: '网易云音乐歌手页', url: `https://music.163.com/#/artist?id=${ps.id}`, name: artist.name };
+        label = `网易云 ${artist.name} (${ps.image})`;
+      }
       const buf = Buffer.from(await (await fetch(src, { headers: UA })).arrayBuffer());
       const { width, height } = await sharp(buf).metadata();
       const side = Math.round(Math.min(width, height) / (ps.zoom ?? 1));
@@ -112,11 +133,11 @@ for (const f of (await fs.readdir(artistsDir)).filter((f) => f.endsWith('.md')))
       await sharp(buf).extract({ left, top, width: side, height: side }).resize(800, 800, { withoutEnlargement: true }).jpeg({ quality: 88, mozjpeg: true }).toFile(photoPath);
       media.artists[slug] = {
         ...(media.artists[slug] ?? {}),
-        photo: { site: '网易云音乐歌手页', url: `https://music.163.com/#/artist?id=${ps.id}`, name: artist.name },
+        photo,
         color: await dominant(photoPath),
         fetchedAt: new Date().toISOString().slice(0, 10),
       };
-      console.log(`✓ ${slug} photo ← 网易云 ${artist.name} (${ps.image})`);
+      console.log(`✓ ${slug} photo ← ${label}`);
     } catch (e) {
       console.warn(`✗ ${slug} photo: ${e.message}`);
     }

@@ -227,7 +227,7 @@ const channelLabel = { official: '官方艺人频道', topic: 'YouTube 自动生
                 <li class="relative">
                   <span class="absolute -left-[31px] top-1.5 size-2.5 rounded-full border-2 border-bg" style={`background:${SCENE[e.data.scene].color}`}></span>
                   <p class="font-mono text-sm text-ink-3">{e.data.year}</p>
-                  <p class="mt-1 font-semibold">{e.data.title}</p>
+                  <p class="mt-1 font-semibold"><a href={url(`timeline/#${e.id}`)} class="link-u hover:text-accent-text">{e.data.title}</a></p>
                   <p class="mt-1 text-sm text-ink-2">{e.data.body}</p>
                 </li>
               ))}

@@ -69,12 +69,17 @@ const artists = defineCollection({
       .optional(),
     /** 频道头像不是本人时，用官方视频截图当人物照（由 scripts/fetch-youtube.mjs 生成 portrait.jpg） */
     portrait: z.object({ video: z.string(), focusX: z.number().min(0).max(1).default(0.5) }).optional(),
-    /** 没有合适的 YouTube 图时，从网易云音乐歌手页取图（avatar 头像 / cover 封面），裁成正方形存为 photo.jpg */
+    /**
+     * 没有合适的 YouTube 图时，从别的官方主页取图，裁成正方形存为 photo.jpg：
+     * 网易云音乐歌手页（avatar 头像 / cover 封面），或 B 站个人空间头像（id 是 UID）
+     */
     photoSource: z
       .object({
-        site: z.literal('netease'),
+        site: z.enum(['netease', 'bilibili']),
         id: z.number().int(),
-        image: z.enum(['avatar', 'cover']),
+        /** B 站昵称：按昵称搜索用户，再用 UID 核对（B 站按 UID 直接查的接口要登录） */
+        name: z.string().optional(),
+        image: z.enum(['avatar', 'cover']).default('avatar'),
         focusX: z.number().min(0).max(1).default(0.5),
         focusY: z.number().min(0).max(1).default(0.5),
         /** >1 表示放大裁切（取更小的正方形） */

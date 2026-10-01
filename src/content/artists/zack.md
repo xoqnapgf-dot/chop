@@ -28,7 +28,7 @@ sources:
   - { title: '网易云音乐 – Zack-Official 个人主页（所在地为账号主人自填）', url: 'https://music.163.com/#/artist?id=121556037' }
 ---
 
-Zack 是[中国第三代 chopper](../../timeline/) 里的一员。他在 B 站的号叫"喜欢整活的Zack"，网易云上叫 Zack-Official，几首合作曲的名单里写的是 THE ZACK。主页简介很随意："只想随便当个 UP 主罢了……平常闲暇里喜欢翻唱各种高难度歌曲。"
+Zack 是[中国第三代 chopper](../../timeline/#2023-cn-third-gen) 里的一员。他在 B 站的号叫"喜欢整活的Zack"，网易云上叫 Zack-Official，几首合作曲的名单里写的是 THE ZACK。主页简介很随意："只想随便当个 UP 主罢了……平常闲暇里喜欢翻唱各种高难度歌曲。"
 
 ## 三个名字
 
