@@ -397,3 +397,17 @@
     display: none;
   }
 }
+
+/* ---------- 分区主色 ----------
+   在任意容器上写 data-hue="teal" 等，容器内所有用到 --accent 的地方（按钮、章节编号、图表、表头）一起换色。
+   不写则保持默认的金色。金/朱红本身在曲目、人物里有"chopper / 快嘴"的含义，所以百科和实验室才用这几组辅助色。 */
+[data-hue='red'] { --accent: #c8211b; --accent-text: #b3261e; --accent-ink: #fffaf1; }
+[data-hue='teal'] { --accent: #1f7a6c; --accent-text: #17695c; --accent-ink: #fffaf1; }
+[data-hue='plum'] { --accent: #8e3a6e; --accent-text: #7d2f60; --accent-ink: #fffaf1; }
+[data-hue='orange'] { --accent: #b0500f; --accent-text: #9a4309; --accent-ink: #fffaf1; }
+[data-hue='olive'] { --accent: #5f6f1f; --accent-text: #515f17; --accent-ink: #fffaf1; }
+:root[data-theme='dark'] [data-hue='red'] { --accent: #ff5a4a; --accent-text: #ff8274; --accent-ink: #1a0705; }
+:root[data-theme='dark'] [data-hue='teal'] { --accent: #45c2a8; --accent-text: #6fd6bf; --accent-ink: #07120f; }
+:root[data-theme='dark'] [data-hue='plum'] { --accent: #e08cc2; --accent-text: #ecaad4; --accent-ink: #1c0a15; }
+:root[data-theme='dark'] [data-hue='orange'] { --accent: #ff9d55; --accent-text: #ffb67c; --accent-ink: #1c0d02; }
+:root[data-theme='dark'] [data-hue='olive'] { --accent: #b9c65a; --accent-text: #cbd77a; --accent-ink: #12150a; }

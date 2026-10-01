@@ -8,6 +8,11 @@ keyPoints:
   - '先看窗口：1 秒爆发、几秒短段、整段平均，差出一倍很正常。'
   - '早期榜单数字普遍虚高，要看测算方法和有没有加速。'
 figure: windows
+hue: plum
+stats:
+  - { n: '21', unit: 'SPS', label: 'Crucified 的 1 秒爆发：21 ÷ 1.000' }
+  - { n: '10.87', unit: 'SPS', label: 'Twista 的 55 秒整段：598 ÷ 55' }
+  - { n: '28.9→18', unit: 'SPS', label: '《Power Up》的数字被 SPS 团队更正' }
 sources:
   - { title: 'Wikipedia – Rap God', url: 'https://en.wikipedia.org/wiki/Rap_God' }
   - { title: 'Wikipedia – Godzilla (Eminem song)', url: 'https://en.wikipedia.org/wiki/Godzilla_(Eminem_song)' }
@@ -83,6 +88,14 @@ NahDah Vebb 在 YouTube 上做"最快说唱歌手 Top 150"榜单，属于美洲�
 | Crucified 最快 | 《Undaground Choppers》37 ÷ 1.46 ≈ 25.3（NahDah 2017 版第 3）；流传的《Power Up》28.9 早已被推翻 | 《Onion Chopper》22 / 1.043 ≈ 21.09（NahDah 2023 版） |
 | Sabotahe | 《Kargado》34 ÷ 1.24 ≈ 27.4（NahDah 2017 版第 1） | 《Paslangin 5》22 / 1.047 ≈ 21.01（NahDah 2023 版） |
 | The Jackal | 《Discord Choppers》27 ÷ 1.02 ≈ 26.5（NahDah 2017 版第 2） | 《Charlie Sheen Remix》16 ÷ 1.048 ≈ 15.27（NahDah 2023 版第 29） |
+
+<figure class="mdfig" aria-label="NahDah 2017 版与 2023 版的最快数字对比">
+<figcaption>同一个人，两版榜单的最快数字（SPS）</figcaption>
+<p class="mf-key"><span><i class="mf-ghost"></i>2017 版</span><span><i></i>2023 版</span></p>
+<div class="mf-row"><span class="mf-l">Crucified</span><span class="mf-bar"><i class="mf-ghost" style="--w:84.3%"></i><i style="--w:70.3%"></i></span><b>25.3 → 21.09</b></div>
+<div class="mf-row"><span class="mf-l">Sabotahe</span><span class="mf-bar"><i class="mf-ghost" style="--w:91.3%"></i><i style="--w:70%"></i></span><b>27.4 → 21.01</b></div>
+<div class="mf-row"><span class="mf-l">The Jackal</span><span class="mf-bar"><i class="mf-ghost" style="--w:88.3%"></i><i style="--w:50.9%"></i></span><b>26.5 → 15.27</b></div>
+</figure>
 
 原因主要有这几个：
 

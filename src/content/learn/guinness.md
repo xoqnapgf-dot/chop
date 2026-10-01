@@ -8,6 +8,11 @@ keyPoints:
   - '计时口径从"几十秒"改成"一分钟"，所以纪录保持者反而变慢了。'
   - '"说话最快"和《Rap God》的"单词最多"都是别的项目，和说唱速度无关。'
 figure: guinness
+hue: orange
+stats:
+  - { n: '5', unit: '次', label: '吉尼斯"最快说唱"前后认证过的次数' }
+  - { n: '20.2', unit: 'SPS', label: 'Rebel XD 42.2 秒 852 个音节，认证过的最高值' }
+  - { n: '15.4', unit: 'SPS', label: 'El Chojin 一分钟 921 个音节，最后一位认证者' }
 sources:
   - { title: 'Wikipedia – Twista（1992 年吉尼斯"最快的英语说唱者"）', url: 'https://en.wikipedia.org/wiki/Twista' }
   - { title: 'OurStage Magazine – Soundcheck: Twista To Sign With G.O.O.D. Music?（2012-06-05，引用他谈重夺纪录的话）', url: 'https://blog.ourstage.com/2012/06/05/soundcheck-twista-to-sign-with-g-o-o-d-music/' }
