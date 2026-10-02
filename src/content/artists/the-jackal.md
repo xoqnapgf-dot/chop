@@ -5,7 +5,7 @@ country: AU
 city: 未公开
 region: 大洋洲
 style: fast
-styleNote: 长期混在 SPS 圈，参加过 Infinite Choppers 等 chopper cypher，但速度数字常年虚高，快嘴的清晰度和质量也一般，所以只标"快嘴"。他的长处在音乐性和早期的知名度。
+styleNote: 参加过《Infinite Choppers》等多个 chopper 系列，但自己的作品多数是正常歌曲，整体偏快嘴，所以站里标为"快嘴"（没有逐首统计过）。圈内也有人认为他算 chopper，这点有分歧。NahDah 2017 版的 26.5，后来几次复测只有 15 左右。
 tags: [澳大利亚, 大洋洲, 数字虚高, Infinite Choppers]
 youtube: { channelId: UCEKagEPjE0QJCnLG86gOoBQ, handle: '@TheJackalRapper', kind: official }
 useBanner: false
