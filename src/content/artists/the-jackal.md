@@ -1,11 +1,11 @@
 ---
 name: The Jackal
-tagline: 澳大利亚的快嘴，自称"大洋洲最快"。早年在 NahDah 2017 版排到第 2（26.5），系统复测后只有 15 左右，速度数字基本作废；音乐性和早期知名度还不错。
+tagline: 澳大利亚的 chopper，自称"大洋洲最快"。早年在 NahDah 2017 版排到第 2（26.5），系统复测后只有 15 左右，速度数字基本作废；音乐性和早期知名度还不错。
 country: AU
 city: 未公开
 region: 大洋洲
-style: fast
-styleNote: 参加过《Infinite Choppers》等多个 chopper 系列，圈内对他算快嘴还是 chopper 有分歧。站里暂时标为"快嘴"，他完整的作品还没有逐首核对过，分类以后可能改。NahDah 2017 版的 26.5，后来几次复测只有 15 左右。
+style: chopper
+styleNote: 参加过《Infinite Choppers》等多个 chopper 系列，所以标为 chopper。圈内对他算快嘴还是 chopper 有分歧，他完整的作品也还没有逐首核对过。NahDah 2017 版的 26.5，后来几次复测只有 15 左右。
 tags: [澳大利亚, 大洋洲, 数字虚高, Infinite Choppers]
 youtube: { channelId: UCEKagEPjE0QJCnLG86gOoBQ, handle: '@TheJackalRapper', kind: official }
 useBanner: false
