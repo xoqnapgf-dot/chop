@@ -10,8 +10,8 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-const SITE = 'https://xoqnapgf-dot.github.io';
-const BASE = '/chop';
+const SITE = process.env.SITE_URL || 'https://xoqnapgf-dot.github.io';
+const BASE = (process.env.BASE_PATH ?? '/chop').replace(/\/$/, '');
 const out = path.resolve('dist/_astro');
 
 async function get(url) {
