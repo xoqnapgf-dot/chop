@@ -1,7 +1,7 @@
 ---
 name: McBustaflo
 nameZh: 芭蕾哥
-tagline: 美国的 chopper，也写作 MC Bustaflow，中文圈戏称"芭蕾哥""摇头哥"。2017 年那段"1 分钟 1196 个音节"的现场视频，常被拿来讨论人类语速的上限；2018 年上了 MC Rice 的《Illest Choppers 4》。
+tagline: 美国的 chopper，也写作 MC Bustaflow，中文圈戏称"芭蕾哥""摇头哥"。2017 年那段"1 分钟 1196 个音节"的现场视频，最快的一秒在 22 上下，常被拿来讨论人类语速的上限；2018 年上了 MC Rice 的《Illest Choppers 4》。
 country: US
 city: 未公开
 region: 北美
@@ -13,6 +13,30 @@ youtube: { channelId: UC56vgKaDrvnpXiXPBcVcOMA, handle: '@mcbustaflo4653', kind:
 useBanner: false
 related: [idylll, wedere, down6, the-jackal]
 speed:
+  - value: 21.8
+    unit: syl/s
+    label: 一分钟视频里最快的一秒 · 五里亭亭长 2022 第 1 名
+    kind: measured
+    by: '五里亭亭长 2022'
+    window: burst
+    syllables: 24
+    seconds: 1.1
+    confidence: verified
+    note: '24 ÷ 1.1 ≈ 21.8，排在五里亭亭长 2022 年世界榜的第 1 名，评语说他是"目前世界上最快的人"。他 2021 年搬运这段时给的是 22.4，SPS wiki 写的是 23.14，几家都在 22 上下。比起 19.88 那个含换气的整段平均，这个数更能代表他开口唱的速度。'
+    sources:
+      - { title: 'B站 – 五里亭亭长：2022世界语速排行榜（2022-05-01）', url: 'https://www.bilibili.com/video/BV1ZY4y1k7a1/' }
+      - { title: 'B站 – 五里亭亭长：摇头哥bustaflow22sps原版视频（2021）', url: 'https://www.bilibili.com/video/BV1TK4y1R7T7/' }
+  - value: 23.14
+    unit: syl/s
+    label: 一分钟视频里最快的一秒 · SPS wiki
+    kind: measured
+    by: 'SPS wiki'
+    window: burst
+    confidence: pending
+    note: 'SPS wiki 写的是他在这段一分钟里最快到过 23.14，没有公开逐音节的算式。五里亭亭长 2021 年在 B 站搬运时给的数是 22.4，2022 年测的是 21.8。几处都在 22 上下。'
+    sources:
+      - { title: 'SPS and chopper rap Wiki – Mcbustaflo', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Mcbustaflo' }
+      - { title: 'B站 – 五里亭亭长：摇头哥bustaflow22sps原版视频（2021）', url: 'https://www.bilibili.com/video/BV1TK4y1R7T7/' }
   - value: 19.88
     unit: syl/s
     label: 《World Record 1196 syllables in 1 minute》现场一镜到底（2017）
@@ -26,18 +50,6 @@ speed:
     sources:
       - { title: 'YouTube – World Record 1196 syllables in 1 minute（本人频道，2017-06-07）', url: 'https://www.youtube.com/watch?v=7VGqJ9RLuDg' }
       - { title: 'SPS and chopper rap Wiki – Mcbustaflo', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Mcbustaflo' }
-  - value: 23.14
-    unit: syl/s
-    label: 同一段视频里最快的一秒
-    kind: measured
-    by: 'SPS wiki'
-    window: burst
-    confidence: pending
-    note: 'SPS wiki 写的是他在这段一分钟里最快到过 23.14。五里亭亭长 2021 年在 B 站搬运时给的数是 22.4，2022 年的榜单里测的是 1.1 秒 24 个音节，约 21.8，排第 1。几处都在 22 上下。'
-    sources:
-      - { title: 'B站 – 五里亭亭长：2022世界语速排行榜（2022-05-01）', url: 'https://www.bilibili.com/video/BV1ZY4y1k7a1/' }
-      - { title: 'SPS and chopper rap Wiki – Mcbustaflo', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Mcbustaflo' }
-      - { title: 'B站 – 五里亭亭长：摇头哥bustaflow22sps原版视频（2021）', url: 'https://www.bilibili.com/video/BV1TK4y1R7T7/' }
   - value: 20.5
     unit: syl/s
     label: 《Magic Rap》第三遍（2016）
