@@ -22,7 +22,8 @@
 
   const fontsReady = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
   let pct = 0;
-  const show = () => (btnLabel.textContent = `加载中 ${Math.round(pct * 100)}%`);
+  const loadFill = document.getElementById('load-fill');
+  const show = () => { btnLabel.textContent = `加载中 ${Math.round(pct * 100)}%`; loadFill.style.width = pct * 100 + '%'; };
   const imgs = F.preloadAll((k) => { pct = k * 0.9; show(); });
   const audio = document.getElementById('audio');
   const audioReady = new Promise((res) => {
@@ -44,12 +45,15 @@
     document.body.classList.remove('covered');
     document.body.classList.add('clean');
     window.renderFrame = (t) => { F.seek(t); return true; };
-    Promise.all([fontsReady, imgs]).then(() => { window.__ready = true; });
+    Promise.all([fontsReady, imgs]).then(() => { F.runFit(); F.seek(t0); window.__ready = true; });
     return;
   }
 
   Promise.all([fontsReady, imgs, audioReady]).then(() => {
     pct = 1;
+    show();
+    document.getElementById('cover').classList.add('ready');
+    F.runFit();
     btn.disabled = false;
     btnLabel.textContent = t0 > 0 ? `从 ${Math.floor(t0 / 60)}:${String(Math.floor(t0 % 60)).padStart(2, '0')} 播放` : '播放宣传片';
     F.seek(t0);

@@ -134,7 +134,7 @@
   g({ stars: 0.25 }, T_TURKEY, 2);
   g({ markers: 1, labels: 1 }, T_TURKEY + 1.5, 1.2);
   tl.set(FXP, { hud: 0 }, T_TURKEY);
-  tl.to(FXP, { hud: 1, duration: 1, ease: 'power2.out' }, T_TURKEY + 0.6);
+  tl.to(FXP, { hud: 0.82, duration: 1, ease: 'power2.out' }, T_TURKEY + 0.6);
   tl.to(FXP, { lb: 90, duration: 1.2, ease: 'power3.inOut' }, T_TURKEY);
   GLX.addLabel(41.0, 28.98, '<div class="in"><small>ISTANBUL</small>伊斯坦布尔 · Ceza</div>', 'big', (t) => (t > T_TURKEY + 2.4 && t < T_MIDWEST ? 1 : 0));
 
@@ -245,6 +245,10 @@
   g({ warp: 0.35, stretch: 160, stars: 0.6 }, T_DROP, 1, 'power2.out');
   tl.fromTo(G, { travel: 9000 }, { travel: 15000, duration: BAR(17) - T_DROP, ease: 'power1.out', immediateRender: false }, T_DROP);
 
+  // 32s 起：光速线不停，减弱并反向——拖尾朝向镜头，像镜头在缓缓后撤（从静止平滑起步）
+  g({ warp: 0.2, stars: 0.42 }, BAR(17) - 0.2, 1.2, 'power2.inOut');
+  tl.fromTo(G, { stretch: 160 }, { stretch: -120, duration: 1.0, ease: 'power2.inOut', immediateRender: false }, BAR(17) - 0.3);
+  tl.fromTo(G, { travel: 15000 }, { travel: 9500, duration: BAR(23) - BAR(17), ease: 'power1.in', immediateRender: false }, BAR(17));
   scene('hero', T_DROP, BAR(17), (root) => {
     el('div', 'glow', null, root);
     const eb = el('div', 'eb eyebrow', 'CHOP <b>·</b> 快嘴 <b>·</b> 中国区 &amp; 世界', root);
@@ -275,7 +279,7 @@
   // 产品镜头：站点首页
   scene('product', BAR(17), BAR(19), (root) => {
     const persp = el('div', 'persp', null, root);
-    const pl = plate(persp, 'assets/img/site/home.jpg', 'xoqnapgf-dot.github.io/chop/');
+    const pl = plate(persp, 'assets/img/site/home.jpg', 'zhishixuebao2026.github.io/chop/');
     ft(pl.p, { rotateY: -28, rotateX: 14, z: -500, x: 300, opacity: 0 }, { rotateY: -16, rotateX: 8, z: 0, x: 0, opacity: 1 }, BAR(17), 0.9, 'expo.out');
     tl.to(pl.p, { rotateY: -10, rotateX: 4, z: 120, duration: BAR(19) - BAR(17) - 0.9, ease: 'none' }, BAR(17) + 0.9);
     tl.fromTo(pl.im, { y: 0 }, { y: -1100, duration: BAR(19) - BAR(17), ease: 'power1.inOut', immediateRender: false }, BAR(17));
@@ -381,7 +385,7 @@
       const tdiv = el('div', 'tile ' + a.style, null, wall);
       img(a.img, null, tdiv);
       el('span', 'dot', a.style === 'chopper' ? '● Chopper' : '● 快嘴', tdiv);
-      el('div', 'nm', a.zh || a.name, tdiv);
+      F.fitText(el('div', 'nm', a.zh || a.name, tdiv), 152, 0.6);
       return tdiv;
     });
     const order = tiles.map((_, i) => i).sort((a, b) => rand(a * 3.3) - rand(b * 3.3));
@@ -417,7 +421,7 @@
       el('div', 'fade', null, pic);
       el('div', 'idx', `${String(i + 1).padStart(2, '0')} / 08`, ph);
       if (a.zh) el('div', 'zh', a.zh, ph);
-      el('div', 'nm', a.name, ph);
+      F.fitText(el('div', 'nm', a.name, ph), 1180, 0.55);
       el('div', 'meta', `<span class="chip ${a.style}">${a.style === 'chopper' ? 'Chopper' : '快嘴'}</span><span>${a.city}</span>${a.since ? `<span class="dim">· ${a.since} 起</span>` : ''}`, ph);
       el('div', 'tagline', a.tagline || '', ph);
       const s = BAR(28, i), e = BAR(28, i + 1);
@@ -427,7 +431,7 @@
       tl.fromTo(im, { scale: 1.25, x: 40 }, { scale: 1.05, x: 0, duration: BEAT, ease: 'expo.out', immediateRender: false }, s);
       tl.fromTo(ph.querySelector('.nm'), { x: -60, opacity: 0 }, { x: 0, opacity: 1, duration: 0.3, ease: 'expo.out', immediateRender: false }, s);
     });
-    tl.set(CAM, { rgb: 1.2 }, BAR(28));
+    tl.set(CAM, { rgb: 0.45 }, BAR(28));
     tl.set(CAM, { rgb: 0 }, BAR(30));
   });
 
@@ -476,7 +480,7 @@
     top.forEach((r, i) => {
       const row = el('div', 'row', null, rows);
       av(r.a, 'av', row);
-      el('div', 'nm', `${r.a.name}<small>${r.by} · ${r.a.city || ''}</small>`, row);
+      F.fitText(el('div', 'nm', `${r.a.name}<small>${r.by} · ${r.a.city || ''}</small>`, row), 330, 0.7);
       const tr = el('div', 'track', null, row);
       const bar = el('i', 'bar', null, tr);
       bar.style.width = (r.v / MAXV) * 100 + '%';
@@ -504,19 +508,20 @@
     av(byId.crucified, null, who);
     el('div', null, `<h3>Crucified</h3><p>${cru.label} · ${cru.by}</p>`, who);
     el('div', 'badge', '● 已证实', card);
-    const f = el('div', 'f', `<span class="a">${cru.syl}</span> <span class="op">÷</span> <span class="b">${cru.sec}</span> <span class="op">≈</span> <span class="r">${cru.v}</span>`, card);
-    el('div', 'lbls', '<span>音节数</span><span>秒数</span><span>每秒音节数</span>', card);
-    ft(card, { opacity: 0, scale: 0.86, rotateX: 25 }, { opacity: 1, scale: 1, rotateX: 0 }, BAR(34), 0.7, 'expo.out');
-    const fs = [...f.children];
-    ft(fs, { opacity: 0, y: 50 }, { opacity: 1, y: 0, stagger: BEAT / 2 }, BAR(34, 1), 0.4, 'expo.out');
-    punch(BAR(35), 0.04);
-    tl.to(card, { scale: 1.06, duration: BAR(36) - BAR(34) - 0.7, ease: 'none' }, BAR(34) + 0.7);
+    // 每一项是一列：数字在上、说明在下，说明永远对齐自己的数字
+    const f = el('div', 'f', null, card);
+    const term = (v, l, cls) => el('div', 'term ' + (cls || ''), `<b>${v}</b><span>${l}</span>`, f);
+    const fs = [term(cru.syl, '音节数'), el('div', 'op', '÷', f), term(cru.sec, '秒数'), el('div', 'op', '≈', f), term(cru.v, '每秒音节数', 'r')];
+    ft(card, { opacity: 0, scale: 0.92, y: 40 }, { opacity: 1, scale: 1, y: 0 }, BAR(34), 0.7, 'expo.out');
+    ft(fs, { opacity: 0, y: 40 }, { opacity: 1, y: 0, stagger: BEAT / 2 }, BAR(34, 1), 0.45, 'expo.out');
+    punch(BAR(35), 0.025);
+    tl.to(card, { scale: 1.03, duration: BAR(36) - BAR(34) - 0.7, ease: 'none' }, BAR(34) + 0.7);
   });
 
   // 实验室：测速规则
   scene('lab', BAR(36), BAR(40), (root) => {
     const persp = el('div', 'persp', null, root);
-    const pl = plate(persp, 'assets/img/site/lab.jpg', 'xoqnapgf-dot.github.io/chop/lab/');
+    const pl = plate(persp, 'assets/img/site/lab.jpg', 'zhishixuebao2026.github.io/chop/lab/');
     ft(pl.p, { rotateY: 24, rotateX: 10, z: -400, x: -200, opacity: 0 }, { rotateY: 14, rotateX: 6, z: 0, x: 0, opacity: 1 }, BAR(36), 0.9, 'expo.out');
     tl.fromTo(pl.im, { y: -120 }, { y: -600, duration: BAR(40) - BAR(36), ease: 'none', immediateRender: false }, BAR(36));
     tl.to(pl.p, { rotateY: 8, z: 80, duration: BAR(40) - BAR(36) - 0.9, ease: 'none' }, BAR(36) + 0.9);
@@ -651,7 +656,7 @@
     ft(por, { opacity: 0 }, { opacity: 1 }, BAR(56), 0.3, 'power2.out');
     const rt = el('div', 'rt', null, root);
     el('div', 'eyebrow', 'GUINNESS WORLD RECORDS <b>·</b> 1992', rt);
-    el('h2', null, 'TWISTA', rt);
+    F.fitText(el('h2', null, 'TWISTA', rt), 960);
     el('h3', null, '最快的英语说唱者', rt);
     inUp([...rt.children], BAR(56) + 0.1, 0.7, 60, 0.1);
     const cnt = el('div', 'cnt', null, root);
@@ -787,7 +792,7 @@
     out(hd, BAR(76) - 0.2, 0.2);
     // 站点世界页
     const persp = el('div', 'persp', null, root);
-    const pl = plate(persp, 'assets/img/site/world.jpg', 'xoqnapgf-dot.github.io/chop/world/');
+    const pl = plate(persp, 'assets/img/site/world.jpg', 'zhishixuebao2026.github.io/chop/world/');
     gsap.set(pl.p, { opacity: 0 });
     tl.fromTo(pl.p, { opacity: 0, rotateY: -30, rotateX: 12, x: 500, z: -300 }, { opacity: 1, rotateY: -14, rotateX: 6, x: 0, z: 0, duration: 0.8, ease: 'expo.out', immediateRender: false }, BAR(76));
     tl.fromTo(pl.im, { y: 0 }, { y: -900, duration: BAR(80) - BAR(76), ease: 'power1.inOut', immediateRender: false }, BAR(76));
@@ -805,13 +810,27 @@
   // 系列企划：21 个名字飞快滚过
   scene('series', BAR(78), BAR(80), (root) => {
     const col = el('div', 'col', null, root);
-    const names = [...S.series.map((s) => s.name.replace(/（.*?）/g, '')), ...S.series.map((s) => s.name.replace(/（.*?）/g, ''))];
-    const rows = names.map((n, i) => el('div', i % 3 === 0 ? 'g' : '', n, col));
+    // 颜色和站点系列页一致：按 order 轮流用 --p1…--p6（深色主题的值）
+    const PAL = ['#ff5a4a', '#e8b84a', '#45c2a8', '#e08cc2', '#ff9d55', '#b9c65a'];
+    const hexA = (h, a) => `rgba(${parseInt(h.slice(1, 3), 16)},${parseInt(h.slice(3, 5), 16)},${parseInt(h.slice(5, 7), 16)},${a})`;
+    // "XX Choppers" 只给前缀上色；没有 Chopper 字样的（Cypher、Kill、Inutilis…）整个名字上色
+    const paint = (name) => {
+      if (!/chopper/i.test(name)) return `<span class="px">${name}</span>`;
+      return name.split(/(\bChoppers?\b|\s*\/\s*)/i).filter((x) => x).map((x) => (/^(Choppers?|\s*\/\s*)$/i.test(x) ? x : `<span class="px">${x}</span>`)).join('');
+    };
+    const list = [...S.series, ...S.series];
+    const rows = list.map((sr) => {
+      const r = el('div', null, paint(sr.name.replace(/（.*?）/g, '')), col);
+      const c = PAL[(sr.order - 1 + 6) % 6];
+      r.style.setProperty('--c', c);
+      r.style.setProperty('--c2', hexA(c, 0.55));
+      return r;
+    });
     el('div', 'mask', null, root);
     const lab = el('div', 'lab eyebrow', 'SERIES <b>·</b> 系列企划', root);
     const cnt = el('div', 'cnt', `<b>${STAT.series}</b>个 chopper 系列`, root);
     fadeIn([lab, cnt], BAR(78), 0.3);
-    const LH = 116 * 1.12;
+    const LH = 104 * 1.12;
     frame(BAR(78), BAR(80), (t) => {
       const k = ez('power2.inOut')(clamp01((t - BAR(78)) / (BAR(80) - BAR(78))));
       const y = 540 - LH / 2 - k * LH * (S.series.length + 2);
@@ -949,7 +968,7 @@
   chapter(13, 'FINALE', 176.69, '收尾');
   flash(T_FIN, 1, 0.6);
   tl.to(FXP, { leak: 0.6, duration: 1 }, T_FIN);
-  tl.set(CAM, { kickZoom: 1.6 }, T_FIN);
+  tl.set(CAM, { kickZoom: 0.9 }, T_FIN);
   scene('final', T_FIN, BAR(103), (root) => {
     const secs = [
       ['CHINA', '中国区', '川渝、新疆、西安、华东、华南，和网络上的新一代 chopper。', 'china', 'china/', 'cn'],
@@ -962,10 +981,10 @@
     ];
     secs.forEach(([en, zh, ds, shot, path, tone], i) => {
       const s = el('div', 'sec', null, root);
-      const pl = plate(s, `assets/img/site/${shot}.jpg`, `xoqnapgf-dot.github.io/chop/${path}`);
+      const pl = plate(s, `assets/img/site/${shot}.jpg`, `zhishixuebao2026.github.io/chop/${path}`);
       el('div', 'ix', `${String(i + 1).padStart(2, '0')} / 07`, s);
       el('div', 'en', en, s);
-      const nm = el('div', 'nm', zh, s);
+      const nm = F.fitText(el('div', 'nm', zh, s), 560);
       if (tone === 'cn') nm.style.color = 'var(--hot)';
       el('div', 'ds', ds, s);
       const a = BAR(96 + i), b = BAR(97 + i);
@@ -999,7 +1018,7 @@
     el('span', null, 'CHOP<em>/</em>', logo);
     const sub = el('div', 'sub', '快嘴档案馆', root);
     const desc = el('div', 'desc', 'Chopper 快嘴说唱 · 人物、曲目、时间线、速度数据 · 每条资料都附来源和可信度标签', root);
-    const url = el('div', 'url', 'xoqnapgf-dot.github.io/chop', root);
+    const url = el('div', 'url', 'zhishixuebao2026.github.io/chop', root);
     gsap.set(url, { xPercent: -50, x: 0 });
     const stats = el('div', 'stats', `<span><b>${STAT.cn}</b>位中国区人物</span><span><b>${STAT.world}</b>位世界人物</span><span><b>${STAT.tracks}</b>首曲目</span><span><b>${STAT.sources}</b>条独立来源</span>`, root);
     gsap.set(stats, { xPercent: -50, x: 0 });

@@ -112,7 +112,7 @@
 #s-spot .ph .pic img { position: absolute; left: 0; top: 0; width: 1080px; height: 1080px; object-fit: cover; filter: grayscale(1) contrast(1.15) brightness(0.9); }
 #s-spot .ph .tone { position: absolute; left: 0; top: 0; width: 1080px; height: 1080px; mix-blend-mode: multiply; }
 #s-spot .ph .fade { position: absolute; left: 0; top: 0; width: 1080px; height: 1080px; background: linear-gradient(90deg, var(--bg) 0%, transparent 40%), linear-gradient(0deg, rgba(10, 8, 7, 0.8), transparent 40%); }
-#s-spot .ph .nm { position: absolute; left: 110px; top: 380px; font-family: var(--display); font-weight: 900; font-size: 136px; text-shadow: 0 8px 40px rgba(0,0,0,0.7); letter-spacing: -0.04em; line-height: 0.92; width: 1300px; }
+#s-spot .ph .nm { position: absolute; left: 110px; top: 400px; font-family: var(--display); font-weight: 900; font-size: 136px; text-shadow: 0 8px 40px rgba(0,0,0,0.7); letter-spacing: -0.04em; line-height: 0.92; width: 1300px; }
 #s-spot .ph .zh { position: absolute; left: 116px; top: 300px; font-family: var(--zh); font-weight: 900; font-size: 60px; color: var(--gold); }
 #s-spot .ph .meta { position: absolute; left: 116px; top: 720px; display: flex; align-items: center; gap: 20px; font-family: var(--zh); font-size: 26px; color: var(--ink-2); }
 #s-spot .ph .meta .chip { font-size: 20px; }
@@ -141,15 +141,18 @@
 #s-chart .guide { position: absolute; top: 250px; bottom: 120px; width: 1px; background: rgba(246, 239, 227, 0.22); }
 #s-chart .guide span { position: absolute; bottom: -34px; left: 50%; transform: translateX(-50%); font-family: var(--zh); font-size: 16px; color: var(--ink-3); white-space: nowrap; }
 #s-chart .src { position: absolute; left: 140px; bottom: 60px; font-family: var(--zh); font-size: 17px; color: var(--ink-3); }
-#s-formula .card { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 1300px; padding: 70px 90px; }
-#s-formula .who { display: flex; align-items: center; gap: 26px; }
-#s-formula .who .avatar { width: 96px; height: 96px; border: 2px solid var(--good); }
+#s-formula .card { position: absolute; left: 50%; top: 50%; width: 1400px; padding: 64px 84px 70px; }
+#s-formula .who { display: flex; align-items: center; gap: 26px; padding-right: 220px; }
+#s-formula .who .avatar { width: 96px; height: 96px; border: 2px solid var(--good); flex: none; }
 #s-formula .who h3 { font-family: var(--display); font-size: 52px; }
 #s-formula .who p { font-family: var(--zh); font-size: 22px; color: var(--ink-2); margin-top: 6px; }
-#s-formula .f { margin-top: 56px; font-family: var(--mono); font-weight: 600; font-size: 128px; letter-spacing: -0.02em; white-space: nowrap; }
-#s-formula .f .op { color: var(--ink-3); font-weight: 300; }
-#s-formula .f .r { color: var(--gold); }
-#s-formula .lbls { display: flex; gap: 120px; margin-top: 18px; font-family: var(--zh); font-size: 22px; color: var(--ink-3); }
+#s-formula .f { margin-top: 60px; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; padding-top: 40px; border-top: 1px solid var(--line); }
+#s-formula .f .term { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+#s-formula .f .term b { font-family: var(--mono); font-weight: 600; font-size: 112px; line-height: 1; letter-spacing: -0.03em; white-space: nowrap; }
+#s-formula .f .term span { font-family: var(--zh); font-size: 22px; color: var(--ink-3); letter-spacing: 0.08em; }
+#s-formula .f .term.r b { color: var(--gold); }
+#s-formula .f .term.r span { color: var(--gold-2); }
+#s-formula .f .op { font-family: var(--mono); font-size: 84px; font-weight: 300; line-height: 112px; color: var(--ink-3); }
 #s-formula .badge { position: absolute; right: 70px; top: 70px; padding: 10px 22px; border-radius: 999px; border: 2px solid var(--good); color: var(--good); font-family: var(--zh); font-weight: 700; font-size: 24px; }
 #s-lab .persp { position: absolute; inset: 0; perspective: 2200px; }
 #s-lab .plate { left: 90px; top: 150px; width: 1180px; transform-style: preserve-3d; }
@@ -251,12 +254,14 @@
 #s-map .plate { left: 640px; top: 150px; width: 1440px; transform-style: preserve-3d; }
 #s-map .plate .view { height: 880px; }
 #s-series .col { position: absolute; left: 0; right: 0; top: 0; text-align: center; will-change: transform; }
-#s-series .col div { font-family: var(--display); font-weight: 900; font-size: 116px; letter-spacing: -0.04em; line-height: 1.12; white-space: nowrap; color: transparent; -webkit-text-stroke: 2px rgba(246, 239, 227, 0.2); }
+#s-series .col div { font-family: var(--display); font-weight: 900; font-size: 104px; letter-spacing: -0.04em; line-height: 1.12; white-space: nowrap; color: transparent; -webkit-text-stroke: 2px rgba(246, 239, 227, 0.2); }
+#s-series .col div .px { -webkit-text-stroke-color: var(--c2); }
 #s-series .col div.on { color: var(--ink); -webkit-text-stroke: 0; }
-#s-series .col div.on.g { color: var(--gold); }
+#s-series .col div.on .px { color: var(--c); }
 #s-series .mask { position: absolute; inset: 0; background: linear-gradient(180deg, var(--bg) 0%, transparent 30%, transparent 70%, var(--bg) 100%); }
 #s-series .lab { position: absolute; left: 110px; top: 110px; }
-#s-series .cnt { position: absolute; right: 110px; bottom: 110px; text-align: right; font-family: var(--zh); font-size: 26px; color: var(--ink-2); }
+#s-series .cnt { position: absolute; right: 110px; bottom: 110px; z-index: 1; text-align: right; font-family: var(--zh); font-size: 26px; color: var(--ink-2); }
+#s-series .cnt::before { content: ''; position: absolute; inset: -140px -120px -120px -260px; z-index: -1; background: radial-gradient(ellipse at 65% 65%, rgba(10, 8, 7, 0.96) 35%, transparent 70%); }
 #s-series .cnt b { display: block; font-family: var(--display); font-size: 150px; line-height: 0.9; color: var(--gold); }
 
 /* ---------- 11 SPS kid ---------- */
