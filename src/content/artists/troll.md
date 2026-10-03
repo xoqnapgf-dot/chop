@@ -5,9 +5,8 @@ country: BR
 city: 米纳斯吉拉斯州
 region: 拉丁美洲
 activeSince: 2021
-style: fast
-styleNote: 频道简介说他以 speedflow 的技术出名，作品在 sad trap 和 dark trap 之间，很多歌标题直接写着"Fast Rap"或"Fastest Rapper"。他不自称 chopper，所以标"快嘴"。
-nearChop: 参加过《Infinite Choppers 2》《Infinite Choppers 3》，自己制作了《Brazilian Choppers 2》，和 DOWN6、The Jackal 都合作过。
+style: chopper
+styleNote: 参加过《Intercontinental Choppers》《Infinite Choppers 2》《Infinite Choppers 3》，自己制作了《Brazilian Choppers 2》，和 DOWN6、The Jackal 都合作过，所以标为 chopper。频道简介说他以 speedflow 的技术出名，作品在 sad trap 和 dark trap 之间，很多歌标题直接写着"Fast Rap"或"Fastest Rapper"。
 tags: [巴西, 葡萄牙语, speedflow, TrollatorBR, 测速博主]
 youtube: { channelId: UCnp0DtAyU_yzuASBlhI0x5Q, handle: '@Trollxakkkkj', kind: official }
 useBanner: false
