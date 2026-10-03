@@ -23,11 +23,21 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      # 读出本仓库 GitHub Pages 的实际地址（仓库名大小写、自定义域名都算上），
+      # 克隆到别的账号或改了仓库名也能直接部署，不用改配置
+      - id: pages
+        uses: actions/configure-pages@v5
       - run: npm ci
       - run: npm run check
       - run: npm run build
+        env:
+          SITE_URL: ${{ steps.pages.outputs.origin }}
+          BASE_PATH: ${{ steps.pages.outputs.base_path || '/' }}
       # 把线上当前版本的 CSS / JS 一起带上，浏览器里缓存的旧页面才不会丢样式
       - run: node scripts/keep-live-assets.mjs
+        env:
+          SITE_URL: ${{ steps.pages.outputs.origin }}
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
