@@ -1,6 +1,6 @@
 ---
 name: Shad
-tagline: 巴西的葡萄牙语快嘴，《FreeZeTyler》1 秒 20 个音节，巴西测速圈公认的"全国最快"，NahDah 2021 版第 2、2023 版第 6。
+tagline: 巴西的葡萄牙语快嘴，在巴西测速频道的榜上长期排第 1。《FreeZeTyler》那段，巴西两家测速频道和 NahDah 都算作 1 秒 20 个音节（NahDah 2021 版第 2、2023 版第 6），五里亭亭长逐音节慢放测出来只有 17 左右。
 country: BR
 city: 未公开
 region: 拉丁美洲
@@ -20,13 +20,26 @@ speed:
     window: burst
     syllables: 20
     seconds: 1.0
-    confidence: verified
-    note: '20 ÷ 1.000 = 20.00。NahDah 2021 版同样是 20.00（第 2 名），2023 版第 6 名。巴西的两家测速频道 TrollatorBR 和 BruCalcs 在 2020 年也各自测过这一段，结果都是 20。'
+    confidence: disputed
+    note: '20 ÷ 1.000 = 20.00。NahDah 2021 版同样是 20.00（第 2 名），2023 版第 6 名。巴西的两家测速频道 TrollatorBR 和 BruCalcs 在 2020 年也各自测过这一段，结果都是 20。但五里亭亭长 2021、2022 年两次逐音节慢放，都只测到 17 左右，分歧在音节怎么数，所以标"有争议"。'
     sources:
       - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
       - { title: 'B站 – NahDah Vebb：Top 150 Fastest Rappers 2021（转载，每条都有算式）', url: 'https://www.bilibili.com/video/BV1Av4y1Z7d7/' }
       - { title: 'YouTube – TrollatorBR：Shad - FreeZeTyler (Cálculo)（2020-06-13）', url: 'https://www.youtube.com/watch?v=dguRJ4Ir8tA' }
       - { title: 'YouTube – BruCalcs：Top 5 | Versos Mais Rápidos do Shad（2020-07-10）', url: 'https://www.youtube.com/watch?v=9V-LTQBXHGA' }
+  - value: 17.1
+    unit: syl/s
+    label: 《FreeZeTyler》爆发 · 五里亭亭长 2022 第 8 名
+    kind: measured
+    by: '五里亭亭长 2022'
+    window: burst
+    syllables: 24
+    seconds: 1.4
+    confidence: pending
+    note: '24 ÷ 1.4 ≈ 17.1，画面上的评语是"经常被高估的 chopper，但 chop 的质量依然很好"。2021 版他测的是 24 ÷ 1.44 ≈ 16.7，排第 10。两次是同一个人测的，结果接近，但还没有别家按这个数法复测。'
+    sources:
+      - { title: 'B站 – 五里亭亭长：2022世界语速排行榜（2022-05-01）', url: 'https://www.bilibili.com/video/BV1ZY4y1k7a1/' }
+      - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
 sources:
   - { title: 'YouTube – Shad 本人频道（@Shad_999）', url: 'https://www.youtube.com/@Shad_999' }
   - { title: 'YouTube – Shad Musics（听众整理："músicas apagadas do shad"，Shad 删掉的歌）', url: 'https://www.youtube.com/@shadmusics' }
@@ -42,20 +55,26 @@ sources:
   - { title: 'YouTube – Shad - Dominó（本人频道，2023-10-11）', url: 'https://www.youtube.com/watch?v=sLYmYkEfscI' }
   - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
   - { title: 'B站 – NahDah Vebb：Top 150 Fastest Rappers 2021（转载，每条都有算式）', url: 'https://www.bilibili.com/video/BV1Av4y1Z7d7/' }
+  - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021，第 10 名）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
+  - { title: 'B站 – 五里亭亭长：2022世界语速排行榜（2022-05-01，第 8 名）', url: 'https://www.bilibili.com/video/BV1ZY4y1k7a1/' }
 ---
 
-Shad 是巴西的 rapper，唱葡萄牙语。NahDah 2021 版的榜单卡片上标的是巴西。在巴西的测速圈里，他是公认的"全国最快"：TrollatorBR 2021 年的巴西前 50 名、BruCalcs 2020 年的巴西榜，第 1 名都是他，而且和第 2 名差了一大截（TrollatorBR 那份，第 2 名 MC Igu 是 15）。TrollatorBR 2020 年的世界前 10 名，也把他排在第 1。
+Shad 是巴西的 rapper，唱葡萄牙语。NahDah 2021 版的榜单卡片上标的是巴西。在巴西的测速圈里，他长期排在"全国最快"：TrollatorBR 2021 年的巴西前 50 名、BruCalcs 2020 年的巴西榜，第 1 名都是他，而且和第 2 名差了一大截（TrollatorBR 那份，第 2 名 MC Igu 是 15）。TrollatorBR 2020 年的世界前 10 名，也把他排在第 1。
 
 ## 《FreeZeTyler》
 
-他最出名的就是《**FreeZeTyler**》里那一段：1 秒整 20 个音节。NahDah 2023 文档按官方歌词列出的音节是"a-noa-qui-dá-fa-lha-mui-to-ma-noa-qui-da-fa-lha-ma-to-ma-no-que-da"。这一段先后被四家测过：
+他最出名的就是《**FreeZeTyler**》里那一段，按 NahDah 的数法是 1 秒整 20 个音节。NahDah 2023 文档按官方歌词列出的音节是"a-noa-qui-dá-fa-lha-mui-to-ma-noa-qui-da-fa-lha-ma-to-ma-no-que-da"。这一段先后被五家测过：
 
 | 测算 | 结果 |
 |---|---|
 | TrollatorBR（2020 年 6 月） | 20 |
 | BruCalcs（2020 年 7 月） | 20 |
 | NahDah 2021 版 | 20 ÷ 1.000 = 20.00，第 2 名 |
+| 五里亭亭长 2021 | 24 ÷ 1.44 ≈ 16.7，第 10 名 |
+| 五里亭亭长 2022 | 24 ÷ 1.4 ≈ 17.1，第 8 名 |
 | NahDah 2023 版 | 20 ÷ 1.000 = 20.00，第 6 名 |
+
+巴西两家和 NahDah 都是 20，五里亭亭长两次都只有 17 左右，差的是音节怎么数：他用 0.1–0.2 倍速一个一个听，在 2022 版里评价 Shad 是"经常被高估的 chopper，但 chop 的质量依然很好"。
 
 这首歌的原视频发在一个叫 Saving Tracks 的频道上，后来这个频道把所有视频都转成了私享，2026 年 1 月才有人重新上传。具体发行年份不详，最晚在 2020 年 6 月以前。
 

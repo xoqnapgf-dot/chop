@@ -1,7 +1,7 @@
 ---
 name: Nihilist
 nameZh: 虚无
-tagline: 美国的地下 chopper，中文圈叫他"虚无"。2017–2021 年几乎每个地下 chopper 合作都有他：Elemental Choppers 1–3、Disabled Choppers 2、Planetary Choppers 开场、Illest Choppers 4。《Worldwide Choppers》Remix 一直传着"30 多 SPS"，听众实测在 17.7 到 21.9 之间。
+tagline: 美国的地下 chopper，中文圈叫他"虚无"。2017–2021 年几乎每个地下 chopper 合作都有他：Elemental Choppers 1–3、Disabled Choppers 2、Planetary Choppers 开场、Illest Choppers 4。《Worldwide Choppers》Remix 一直传着"30 多 SPS"，听众实测在 17.7 到 21.9 之间，五里亭亭长 2022 年测是 16.7。
 country: US
 city: 未公开
 region: 北美
@@ -24,6 +24,18 @@ speed:
     sources:
       - { title: 'YouTube – Nihilist - Worldwide Choppers remix (full track)（听众 zvikito 上传，2021-04-04）', url: 'https://www.youtube.com/watch?v=nR0tnvJEE_s' }
       - { title: 'B站 – 森敬文：『说唱搬运』Nihilist—Worldwide Choppers（Remix）（2019）', url: 'https://www.bilibili.com/video/BV1pt411E7YB/' }
+  - value: 16.7
+    unit: syl/s
+    label: 《Worldwide Choppers》Remix 爆发 · 五里亭亭长 2022 第 10 名
+    kind: measured
+    by: '五里亭亭长 2022'
+    window: burst
+    syllables: 22
+    seconds: 1.32
+    confidence: pending
+    note: '22 ÷ 1.32 ≈ 16.7。画面上的评语说，很多人以为他能到 33，其实只有一半左右；又说他的 chop 太含糊、"像漱口"，测了十几次才定下来，可能仍然不准。'
+    sources:
+      - { title: 'B站 – 五里亭亭长：2022世界语速排行榜（2022-05-01）', url: 'https://www.bilibili.com/video/BV1ZY4y1k7a1/' }
   - value: 32.8
     unit: syl/s
     label: 《Worldwide Choppers》Remix「32.8 SPS」传言
@@ -36,6 +48,7 @@ speed:
       - { title: 'B站 – 五里亭亭长：全球rapper语速排行榜（2021）', url: 'https://www.bilibili.com/video/BV1gZ4y1P7J3/' }
       - { title: 'YouTube – Nihilist - Worldwide Choppers remix (full track)（评论区有测算）', url: 'https://www.youtube.com/watch?v=nR0tnvJEE_s' }
 sources:
+  - { title: 'B站 – 五里亭亭长：2022世界语速排行榜（2022-05-01，第 10 名）', url: 'https://www.bilibili.com/video/BV1ZY4y1k7a1/' }
   - { title: 'YouTube – Smokin Beatz Records - Planetary Choppers（2017-09-16，简介写明 Nihilist 来自美国）', url: 'https://www.youtube.com/watch?v=1-txdwgGtqA' }
   - { title: 'YouTube – MC Rice Presents ILLEST CHOPPERS 4（2018-08-13）', url: 'https://www.youtube.com/watch?v=RLQEutWjQxI' }
   - { title: 'eLyricsWorld – Echo (956)：Elemental Choppers 1–3 歌词（按段落署名）', url: 'https://www.elyricsworld.com/elemental_choppers_lyrics_echo_(956).html' }
@@ -67,4 +80,4 @@ B 站 Elemental Choppers 第一首的搬运下面有人说"Chronic Boss 就是 N
 
 他最出名的是一首翻唱 Tech N9ne《Worldwide Choppers》伴奏的 Remix。原视频早已无法观看，2019 年森敬文搬到 B 站，2021 年又有听众从存档里传回 YouTube。
 
-这首一直传着"30 多 SPS"的说法（32.8、33），评论区有人把歌词写成一串乱码，也有人说"分不清他是快还是在说胡话"。听众放慢了测，最快的地方在 17.7 到 21.9 之间；五里亭亭长 2021 年做全球排行时，专门在置顶评论里反驳了 32.8 这个数。所以他常被拿来当"SPS 数字虚高"的例子，详见[快嘴 ≠ Chop](../../learn/what-is-chop/#最极端的一种sps-kid)。
+这首一直传着"30 多 SPS"的说法（32.8、33），评论区有人把歌词写成一串乱码，也有人说"分不清他是快还是在说胡话"。听众放慢了测，最快的地方在 17.7 到 21.9 之间；五里亭亭长 2021 年做全球排行时，专门在置顶评论里反驳了 32.8 这个数，2022 年的榜里自己测是 1.32 秒 22 个音节，约 16.7，排第 10，还说因为太含糊，测了十几次才定下来。所以他常被拿来当"SPS 数字虚高"的例子，详见[快嘴 ≠ Chop](../../learn/what-is-chop/#最极端的一种sps-kid)。

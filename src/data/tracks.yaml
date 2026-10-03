@@ -621,10 +621,11 @@
   youtubeChannel: blaqsea（重传）
   officialUpload: false
   scene: world
-  note: 'Shad 最快的一段：1 秒整 20 个音节，TrollatorBR、BruCalcs、NahDah 2021 和 2023 版都测出 20。原视频所在的 Saving Tracks 频道已转为私享，这里是 2026 年的重传；发行年份不详，最晚在 2020 年 6 月以前。'
+  note: 'Shad 最快的一段：TrollatorBR、BruCalcs、NahDah 2021 和 2023 版都算作 1 秒 20 个音节，五里亭亭长 2021、2022 年逐音节慢放只测到 17 左右。原视频所在的 Saving Tracks 频道已转为私享，这里是 2026 年的重传；发行年份不详，最晚在 2020 年 6 月以前。'
   sources:
     - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
     - { title: 'YouTube – TrollatorBR：Shad - FreeZeTyler (Cálculo)（2020）', url: 'https://www.youtube.com/watch?v=dguRJ4Ir8tA' }
+    - { title: 'B站 – 五里亭亭长：2022世界语速排行榜（2022-05-01）', url: 'https://www.bilibili.com/video/BV1ZY4y1k7a1/' }
 - id: united-choppers-4
   title: United Choppers 4
   artists: [j-battle, down6, leach]
