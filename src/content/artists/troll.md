@@ -5,9 +5,8 @@ country: BR
 city: 米纳斯吉拉斯州
 region: 拉丁美洲
 activeSince: 2021
-style: fast
-styleNote: 频道简介说他以 speedflow 的技术出名，作品在 sad trap 和 dark trap 之间，很多歌标题直接写着"Fast Rap"或"Fastest Rapper"。他不自称 chopper，所以标"快嘴"。
-nearChop: 参加过《Infinite Choppers 2》《Infinite Choppers 3》，自己制作了《Brazilian Choppers 2》，和 DOWN6、The Jackal 都合作过。
+style: chopper
+styleNote: 参加过《Intercontinental Choppers》《Infinite Choppers 2》《Infinite Choppers 3》，自己制作了《Brazilian Choppers 2》，和 DOWN6、The Jackal 都合作过，所以标为 chopper。频道简介说他以 speedflow 的技术出名，作品在 sad trap 和 dark trap 之间，很多歌标题直接写着"Fast Rap"或"Fastest Rapper"。
 tags: [巴西, 葡萄牙语, speedflow, TrollatorBR, 测速博主]
 youtube: { channelId: UCnp0DtAyU_yzuASBlhI0x5Q, handle: '@Trollxakkkkj', kind: official }
 useBanner: false
@@ -26,17 +25,17 @@ speed:
     sources:
       - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
       - { title: 'YouTube – Troll - Vida Fútil Pt. 1 (Prod. Rocket)（2022-11-10）', url: 'https://www.youtube.com/watch?v=HavqE6D2IQk' }
-  - value: 18.13
+  - value: 17.00
     unit: syl/s
-    label: 《Donkey Kong》（The Jackal ft. Troll）· 本人测算
+    label: 《Vida Fútil Pt. 2》爆发 · 本人测算
     kind: claimed
     by: 'TrollatorBR（本人）'
     window: burst
-    confidence: disputed
-    note: '他 2026 年在自己的测速频道列了"我最快的 10 段 verse"，第一名是 The Jackal 的《Donkey Kong》，18.13。这是本人自己算的。原视频评论区有听众单测了他 2:03 那处爆发，是 1.122 秒 17 个音节，约 15.15，差了将近 3，所以标"有争议"。'
+    confidence: pending
+    note: '他 2026 年在自己的测速频道列了"我最快的 10 段 verse"，《Vida Fútil Pt. 2》是 17.00。榜单第一名其实是 The Jackal《Donkey Kong》里他那段的 18.13，但他本人不认这个数，表示要算就算《Vida Fútil Pt. 2》的 17.00。都是本人自己算的，还没有第三方复测。'
     sources:
       - { title: 'YouTube – TrollatorBR："TOP 10" Versos Mais Rápidos do Troll（2026-06-16）', url: 'https://www.youtube.com/watch?v=Hi3JIVO2mlA' }
-      - { title: 'YouTube – Jackal - Donkey Kong (Ft. Troll)（2024，评论区有听众单测 2:03 处：17 ÷ 1.122）', url: 'https://www.youtube.com/watch?v=m7LiwxLWnkc' }
+      - { title: 'YouTube – Troll - Vida Fútil Pt. 2 (Prod. Shad) [Fastest Rapper 2023]', url: 'https://www.youtube.com/watch?v=FhkHLEK95pU' }
 sources:
   - { title: 'YouTube – Troll 本人频道（简介："Trollator (A.K.A. Troll) é um artista do interior de Minas Gerais"）', url: 'https://www.youtube.com/@Trollxakkkkj' }
   - { title: 'YouTube – TrollatorBR 测速频道（和本人频道挂同一个 Instagram：trollxakkkj）', url: 'https://www.youtube.com/@TrollatorBR' }
@@ -67,7 +66,7 @@ TrollatorBR 做巴西年度最快榜、西语圈最快榜、单人最快 verse �
 |---|---|---|
 | 2022 年 11 月 | 《Vida Fútil Pt. 1》 | 标题写着"Fastest Rapper 2022"，NahDah 2023 版第 16 名 |
 | 2023 年 | 《Vida Fútil Pt. 2》 | 伴奏是 Shad 做的，本人测 17.00 |
-| 2024 年 | 《Infinite Choppers 2》《Donkey Kong》（The Jackal ft. Troll） | 前者是 DOWN6 的 cypher，后者是他自己算的最快一段 |
+| 2024 年 | 《Infinite Choppers 2》《Donkey Kong》（The Jackal ft. Troll） | 前者是 DOWN6 的 cypher，后者他自己算过 18.13，但本人不认这个数 |
 | 2024 年 9 月 | 《Brazilian Choppers 2》（和 Retr0） | 他自己做伴奏、混音和视频，9 个 rapper 同台 |
 | 2025 年前后 | 《Flow de Alien》（ft. Retr0、DOWN6） | |
 | 2026 年 | 专辑《Labirinto do Próprio Medo》、《533 Sílabas em 1 Minuto》 | 后者标题意思是"1 分钟 533 个音节" |
@@ -80,6 +79,8 @@ TrollatorBR 做巴西年度最快榜、西语圈最快榜、单人最快 verse �
 | 测算 | 歌 | 数字 |
 |---|---|---|
 | NahDah 2023（第 16） | 《Vida Fútil Pt. 1》 | 17 ÷ 1.058 ≈ 16.07 |
-| 本人（TrollatorBR 2026） | 《Donkey Kong》 | 18.13 |
 | 本人（TrollatorBR 2026） | 《Vida Fútil Pt. 2》 | 17.00 |
+| 本人（TrollatorBR 2026） | 《Donkey Kong》 | 18.13（本人不认） |
 | 本人（TrollatorBR 2026） | 《Brazilian Choppers 2》 | 15.53 |
+
+《Donkey Kong》的 18.13 是那份榜单的第一名，但他本人后来表示不认这个数，要算就算《Vida Fútil Pt. 2》的 17.00，所以本站以 17.00 为准。《Donkey Kong》视频的评论区也有听众单测过他 2:03 那处爆发：1.122 秒 17 个音节，约 15.15，和 18.13 差了将近 3。
