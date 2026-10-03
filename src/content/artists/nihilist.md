@@ -64,6 +64,8 @@ Nihilist 是美国的地下 chopper，中文圈都叫他"虚无"。公开资料�
 
 澳大利亚悉尼另有一位同名 rapper，2016 年在 Sub Conscious Records 发过专辑《NightShift》，是另一个人。
 
+> **说明：** 圈内存在针对 Nihilist 的与音乐无关的严重指控，本站只记录他与 chop 相关的公开作品和测速资料，对此不做评价。
+
 ## 合作
 
 2017 到 2018 年是他最活跃的时候，Discord 那群 chopper 做的歌几乎都有他：
