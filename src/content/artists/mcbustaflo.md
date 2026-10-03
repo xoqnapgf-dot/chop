@@ -1,7 +1,7 @@
 ---
 name: McBustaflo
 nameZh: 芭蕾哥
-tagline: 美国的 chopper，也写作 MC Bustaflow，中文圈戏称"芭蕾哥""摇头哥"。2017 年那段"1 分钟 1196 个音节"的现场视频，常被拿来讨论人类语速的上限；2018 年上了 MC Rice 的《Illest Choppers 4》。
+tagline: 美国的 chopper，也写作 MC Bustaflow，中文圈戏称"芭蕾哥""摇头哥"。2017 年那段"1 分钟 1196 个音节"的现场视频，最快的一秒在 22 上下，常被拿来讨论人类语速的上限；2018 年上了 MC Rice 的《Illest Choppers 4》。
 country: US
 city: 未公开
 region: 北美
@@ -13,6 +13,30 @@ youtube: { channelId: UC56vgKaDrvnpXiXPBcVcOMA, handle: '@mcbustaflo4653', kind:
 useBanner: false
 related: [idylll, wedere, down6, the-jackal]
 speed:
+  - value: 21.8
+    unit: syl/s
+    label: 一分钟视频里最快的一秒 · 五里亭亭长 2022 第 1 名
+    kind: measured
+    by: '五里亭亭长 2022'
+    window: burst
+    syllables: 24
+    seconds: 1.1
+    confidence: verified
+    note: '24 ÷ 1.1 ≈ 21.8，排在五里亭亭长 2022 年世界榜的第 1 名，评语说他是"目前世界上最快的人"。他 2021 年搬运这段时给的是 22.4，SPS wiki 写的是 23.14，几家都在 22 上下。比起 19.88 那个含换气的整段平均，这个数更能代表他开口唱的速度。'
+    sources:
+      - { title: 'B站 – 五里亭亭长：2022世界语速排行榜（2022-05-01）', url: 'https://www.bilibili.com/video/BV1ZY4y1k7a1/' }
+      - { title: 'B站 – 五里亭亭长：摇头哥bustaflow22sps原版视频（2021）', url: 'https://www.bilibili.com/video/BV1TK4y1R7T7/' }
+  - value: 23.14
+    unit: syl/s
+    label: 一分钟视频里最快的一秒 · SPS wiki
+    kind: measured
+    by: 'SPS wiki'
+    window: burst
+    confidence: pending
+    note: 'SPS wiki 写的是他在这段一分钟里最快到过 23.14，没有公开逐音节的算式。五里亭亭长 2021 年在 B 站搬运时给的数是 22.4，2022 年测的是 21.8。几处都在 22 上下。'
+    sources:
+      - { title: 'SPS and chopper rap Wiki – Mcbustaflo', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Mcbustaflo' }
+      - { title: 'B站 – 五里亭亭长：摇头哥bustaflow22sps原版视频（2021）', url: 'https://www.bilibili.com/video/BV1TK4y1R7T7/' }
   - value: 19.88
     unit: syl/s
     label: 《World Record 1196 syllables in 1 minute》现场一镜到底（2017）
@@ -22,21 +46,10 @@ speed:
     syllables: 1192
     seconds: 59.97
     confidence: verified
-    note: '他自己写的是 59.97 秒 1196 个音节（≈ 19.94）。SPS wiki 记载，Wedere 复核时发现他漏了 4 个音节，按 1192 算约 19.88。这是专门录的挑战视频，不是正式歌曲，所以 NahDah 这类只收正式歌曲的榜单不收。'
+    note: '他自己写的是 59.97 秒 1196 个音节（≈ 19.94）。SPS wiki 记载，Wedere 复核时发现他漏了 4 个音节，按 1192 算约 19.88。这是专门录的挑战视频，不是正式歌曲，所以 NahDah 这类只收正式歌曲的榜单不收。这个平均把中间换气的时间也算了进去，真正开口唱的部分比 19.88 更快。'
     sources:
       - { title: 'YouTube – World Record 1196 syllables in 1 minute（本人频道，2017-06-07）', url: 'https://www.youtube.com/watch?v=7VGqJ9RLuDg' }
       - { title: 'SPS and chopper rap Wiki – Mcbustaflo', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Mcbustaflo' }
-  - value: 23.14
-    unit: syl/s
-    label: 同一段视频里最快的一秒
-    kind: measured
-    by: 'SPS wiki'
-    window: burst
-    confidence: pending
-    note: 'SPS wiki 写的是他在这段一分钟里最快到过 23.14。五里亭亭长 2021 年在 B 站搬运时给的数是 22.4。两家都在 22 以上，没有公开逐音节的算式。'
-    sources:
-      - { title: 'SPS and chopper rap Wiki – Mcbustaflo', url: 'https://sps-and-chopper-rap.fandom.com/wiki/Mcbustaflo' }
-      - { title: 'B站 – 五里亭亭长：摇头哥bustaflow22sps原版视频（2021）', url: 'https://www.bilibili.com/video/BV1TK4y1R7T7/' }
   - value: 20.5
     unit: syl/s
     label: 《Magic Rap》第三遍（2016）
@@ -88,7 +101,7 @@ SPS wiki 还记载，他给 DOWN6 的《Infinite Choppers 3》交过征选作品
 
 ## 1196 个音节和"23 的上限"
 
-那段一分钟的视频，他在简介里写的是：这套词任何人练练都能过 15，下足功夫能过 20。SPS wiki 记载，Wedere 复核后发现漏了 4 个音节，按 1192 算平均约 19.88；其中最快的一秒到过 23.14。
+那段一分钟的视频，他在简介里写的是：这套词任何人练练都能过 15，下足功夫能过 20。SPS wiki 记载，Wedere 复核后发现漏了 4 个音节，按 1192 算平均约 19.88；其中最快的一秒到过 23.14。19.88 是把换气也算进去的整段平均，开口唱的时候更快：五里亭亭长 2021 年测是 22.4，2022 年的世界榜里测是 1.1 秒 24 个音节，约 21.8，排第 1，评语说他是"目前世界上最快的人"。
 
 2023 年 GumBrass 在 B 站搬运《Ouchy》时，置顶评论里翻译了他本人的一段话，大意是：
 

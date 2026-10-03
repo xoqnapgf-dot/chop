@@ -34,11 +34,24 @@ speed:
     window: long
     syllables: 799
     seconds: 46
-    confidence: pending
-    note: '为回应"后期加速"的质疑录的现场视频，其中最快的部分超过 19 SPS。799 这个数是视频标题自报的，没有第三方逐音节数过。他本人在这条视频下留言：熟悉他音乐的人都知道他一秒能唱到 20 个音节以上，这是真的，演出结尾他经常清唱这种速度段。'
+    confidence: verified
+    note: '为回应"后期加速"的质疑录的现场视频，其中最快的部分超过 19 SPS。799 这个数是视频标题自报的；五里亭亭长 2022 年的榜单测的就是这段视频，最快一处 1.1 秒 20 个音节，约 18.2，和整段平均 17.37 对得上。他本人在这条视频下留言：熟悉他音乐的人都知道他一秒能唱到 20 个音节以上，这是真的，演出结尾他经常清唱这种速度段。'
     sources:
       - { title: 'YouTube – Crucified spits 799 syllables in 46 seconds', url: 'https://www.youtube.com/watch?v=UazJea9uaDc' }
       - { title: 'Rap Wiki – Crucified', url: 'https://rap.fandom.com/wiki/Crucified' }
+      - { title: 'B站 – 五里亭亭长：2022世界语速排行榜（2022-05-01）', url: 'https://www.bilibili.com/video/BV1ZY4y1k7a1/' }
+  - value: 18.2
+    unit: syl/s
+    label: 2014 年现场视频最快一处 · 五里亭亭长 2022 第 6 名
+    kind: measured
+    by: '五里亭亭长 2022'
+    window: burst
+    syllables: 20
+    seconds: 1.1
+    confidence: pending
+    note: '20 ÷ 1.1 ≈ 18.2，取自那段 46 秒的现场视频。画面上的评语是：他是全世界最有名的 chopper 之一，风格怪而快，但速度没有传说中那么夸张。'
+    sources:
+      - { title: 'B站 – 五里亭亭长：2022世界语速排行榜（2022-05-01）', url: 'https://www.bilibili.com/video/BV1ZY4y1k7a1/' }
   - value: 21
     unit: syl/s
     label: Infinite Choppers 等 4 首的最快爆发
@@ -135,3 +148,4 @@ chopper 和"SPS kid"的区别就在这：**快，还得真的在说词**。
 | 《Power Up》爆发 18 SPS | SPS wiki | 与 Rap Wiki 的 19 不一致，有争议 |
 | 《Surprise》24.9 SPS | 他自己的视频标题 | SPS 社区测得 21，有争议 |
 | 现场 46 秒 799 音节 | 现场视频 | 可以复算：799 ÷ 46 ≈ 17.37 |
+| 现场视频最快一处 | 五里亭亭长 2022 | 20 ÷ 1.1 ≈ 18.2，和整段平均对得上 |
