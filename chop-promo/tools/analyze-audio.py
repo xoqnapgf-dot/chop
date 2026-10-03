@@ -12,7 +12,7 @@
   0:00–1:30.2（Ceza、Tech N9ne）+ 2:44.0–3:43.0（Twista）+ 4:42.1–结尾（D-Loc、Twisted Insane）
 节拍：梳状滤波拟合，三段都是 130.0 BPM，而且落在同一张网格上（t = 0.315 + 0.4615k）。
   （在 mp3 上重新拟合会因为编码器延迟差 5ms 左右，不影响画面。）
-每秒音节数：按歌词行粗略估算（英语用 CMU 词典，其他语言数元音组），只用于 HUD 上的"估算"读数，不是测速数据。
+每秒音节数：按歌词行粗略估算（英语用 CMU 词典，其他语言数元音组），片子里目前没有显示，也不是测速数据。
 需要：pip install librosa soundfile scipy pronouncing；系统里要有 ffmpeg。
 """
 import json

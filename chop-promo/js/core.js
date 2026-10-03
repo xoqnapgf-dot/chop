@@ -251,8 +251,6 @@
   const hudBar = document.getElementById('hud-bar');
   const hudNo = document.getElementById('hud-no');
   const hudName = document.getElementById('hud-name');
-  const spsV = document.getElementById('sps-v');
-  const spsFill = document.getElementById('sps-fill');
   const hudBars = [...document.querySelectorAll('.hud-logo .bars i')];
   const lbBars = [...document.querySelectorAll('#letterbox i')];
   const pad = (n, l = 2) => String(n).padStart(l, '0');
@@ -266,9 +264,6 @@
     let ch = chapters[0];
     for (const c of chapters) if (t >= c.t) ch = c;
     if (ch) { hudNo.textContent = pad(ch.no); hudName.textContent = ch.name; }
-    const sps = spsAt(t);
-    spsV.textContent = sps.toFixed(1);
-    spsFill.style.width = Math.min(100, (sps / 25) * 100) + '%';
     const lv = [env('low', t), env('mid', t), env('rms', t), env('mid', t - 0.05), env('high', t)];
     hudBars.forEach((b, i) => (b.style.transform = `scaleY(${0.25 + lv[i] * 0.85})`));
   }
