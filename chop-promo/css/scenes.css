@@ -1,0 +1,332 @@
+/* ========== 各场景的样式 ========== */
+
+/* 地球标签 */
+.gl-label { position: absolute; left: 0; top: 0; will-change: transform, opacity; opacity: 0; }
+.gl-label .in { position: absolute; left: 14px; top: -14px; white-space: nowrap; display: flex; align-items: center; gap: 10px; padding: 5px 12px; background: rgba(10, 8, 7, 0.72); border: 1px solid rgba(232, 184, 74, 0.45); border-radius: 999px; font-family: var(--zh); font-size: 17px; font-weight: 600; color: var(--ink); }
+.gl-label .in small { font-family: var(--mono); font-size: 12px; letter-spacing: 0.2em; color: var(--gold); font-weight: 400; }
+.gl-label.cn .in { border-color: rgba(255, 75, 62, 0.6); }
+.gl-label.cn .in small { color: var(--hot); }
+.gl-label.big .in { font-size: 22px; padding: 8px 18px; }
+
+/* ---------- 00 冷开场 ---------- */
+#s-cold .meter { position: absolute; left: 50%; top: 540px; transform: translate(-50%, -50%); display: flex; gap: 6px; align-items: center; height: 120px; }
+#s-cold .meter i { display: block; width: 6px; height: 100%; border-radius: 3px; background: var(--gold); transform-origin: center; transform: scaleY(0.04); opacity: 0.9; }
+#s-cold .q1, #s-cold .q2 { position: absolute; left: 0; right: 0; text-align: center; font-family: var(--serif); font-weight: 700; color: var(--ink); }
+#s-cold .q1 { top: 300px; font-size: 64px; letter-spacing: 0.08em; }
+#s-cold .q2 { top: 680px; font-size: 64px; letter-spacing: 0.08em; }
+#s-cold .q2 .gold { font-weight: 900; }
+#s-cold .eb { position: absolute; left: 0; right: 0; top: 200px; text-align: center; }
+#s-cold .num { position: absolute; left: 0; right: 0; top: 330px; text-align: center; font-family: var(--display); font-weight: 800; font-size: 300px; letter-spacing: -0.04em; line-height: 1; color: var(--ink); opacity: 0; }
+#s-cold .num small { display: block; margin-top: 18px; font-family: var(--mono); font-size: 24px; font-weight: 400; letter-spacing: 0.3em; color: var(--gold); }
+
+/* ---------- 01 土耳其 ---------- */
+#s-turkey .big { position: absolute; left: 110px; top: 260px; white-space: nowrap; font-family: var(--display); font-weight: 900; font-size: 168px; letter-spacing: -0.04em; line-height: 0.9; }
+#s-turkey .zhname { position: absolute; left: 118px; top: 450px; font-family: var(--zh); font-weight: 900; font-size: 84px; letter-spacing: 0.1em; }
+#s-turkey .who { position: absolute; left: 118px; top: 640px; display: flex; gap: 26px; align-items: center; padding: 18px 30px 18px 18px; }
+#s-turkey .who .avatar { width: 110px; height: 110px; border: 2px solid var(--gold); }
+#s-turkey .who h3 { font-family: var(--display); font-size: 44px; font-weight: 700; }
+#s-turkey .who p { font-family: var(--zh); font-size: 20px; color: var(--ink-2); margin-top: 6px; }
+#s-turkey .langs { position: absolute; left: 118px; top: 840px; font-family: var(--zh); font-size: 30px; color: var(--ink-2); letter-spacing: 0.06em; }
+#s-turkey .langs b { color: var(--gold); font-weight: 700; }
+
+/* ---------- 02 中西部 → 世界 ---------- */
+#s-midwest .side { position: absolute; left: 110px; top: 300px; width: 760px; }
+#s-midwest .side h2 { font-family: var(--zh); font-weight: 900; font-size: 96px; line-height: 1.12; letter-spacing: 0.02em; margin-top: 26px; }
+#s-midwest .side p { font-family: var(--zh); font-size: 26px; line-height: 1.7; color: var(--ink-2); margin-top: 30px; width: 640px; }
+#s-midwest .count { position: absolute; left: 110px; top: 800px; display: flex; gap: 70px; }
+#s-midwest .count div b { display: block; font-family: var(--display); font-size: 92px; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+#s-midwest .count div span { font-family: var(--zh); font-size: 20px; color: var(--ink-3); letter-spacing: 0.1em; }
+#s-midwest .logo { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex; align-items: center; gap: 46px; font-family: var(--display); font-weight: 900; font-size: 300px; letter-spacing: -0.05em; }
+#s-midwest .logo .bars { height: 230px; gap: 16px; }
+#s-midwest .logo .bars i { width: 26px; border-radius: 13px; }
+#s-midwest .logo em { font-style: normal; color: var(--gold); }
+#s-midwest .sub { position: absolute; left: 0; right: 0; top: 760px; text-align: center; font-family: var(--zh); font-weight: 700; font-size: 44px; letter-spacing: 1em; padding-left: 1em; color: var(--ink-2); }
+
+/* ---------- 03 把音节剁碎 ---------- */
+#s-hero .glow { position: absolute; left: 50%; top: 50%; width: 1600px; height: 1600px; transform: translate(-50%, -50%); background: radial-gradient(circle, rgba(232, 184, 74, 0.22), rgba(200, 33, 27, 0.08) 40%, transparent 65%); }
+#s-hero .h1 { position: absolute; left: 150px; top: 150px; font-family: var(--zh); font-weight: 900; font-size: 330px; line-height: 1.02; letter-spacing: -0.02em; }
+#s-hero .h1 .l2 { color: var(--gold); }
+#s-hero .eb { position: absolute; left: 160px; top: 110px; }
+#s-hero .note { position: absolute; right: 150px; bottom: 190px; width: 520px; font-family: var(--zh); font-size: 28px; line-height: 1.7; color: var(--ink-2); text-align: right; }
+#s-hero .note b { color: var(--ink); }
+#s-hero .knife { position: absolute; left: 0; height: 3px; width: 1920px; background: linear-gradient(90deg, transparent, #fff, var(--gold), transparent); box-shadow: 0 0 30px var(--gold); transform-origin: left center; }
+
+#s-product .persp { position: absolute; inset: 0; perspective: 2400px; perspective-origin: 70% 40%; }
+#s-product .plate { left: 760px; top: 120px; width: 1440px; transform-style: preserve-3d; }
+#s-product .plate .view { height: 900px; }
+#s-product .left { position: absolute; left: 110px; top: 250px; width: 620px; }
+#s-product .left h2 { font-family: var(--zh); font-weight: 900; font-size: 92px; line-height: 1.1; margin-top: 24px; }
+#s-product .left p { font-family: var(--zh); font-size: 26px; line-height: 1.7; color: var(--ink-2); margin-top: 26px; }
+#s-product .stats { position: absolute; left: 110px; top: 760px; display: grid; grid-template-columns: repeat(2, 260px); gap: 30px 20px; }
+#s-product .stats b { display: block; font-family: var(--display); font-weight: 700; font-size: 76px; line-height: 1; font-variant-numeric: tabular-nums; }
+#s-product .stats span { font-family: var(--zh); font-size: 19px; color: var(--ink-3); }
+
+#s-neq .eq { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -54%); display: flex; align-items: center; gap: 70px; font-family: var(--display); font-weight: 900; font-size: 260px; letter-spacing: -0.04em; white-space: nowrap; }
+#s-neq .eq .k { font-family: var(--zh); color: var(--hot); }
+#s-neq .eq .ne { color: var(--ink-3); font-weight: 300; }
+#s-neq .eq .c { color: var(--gold); }
+#s-neq .cap { position: absolute; left: 0; right: 0; top: 760px; text-align: center; font-family: var(--zh); font-size: 34px; color: var(--ink-2); letter-spacing: 0.08em; }
+#s-neq .tiers { position: absolute; left: 150px; right: 150px; top: 170px; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+#s-neq .tier { padding: 40px 46px 44px; height: 740px; position: relative; overflow: hidden; }
+#s-neq .tier::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 4px; }
+#s-neq .tier.fast::before { background: var(--hot); }
+#s-neq .tier.chop::before { background: var(--gold); }
+#s-neq .tier .tb { display: flex; gap: 8px; align-items: flex-end; height: 120px; }
+#s-neq .tier .tb i { flex: 1; border-radius: 2px; transform-origin: bottom; }
+#s-neq .tier.fast .tb i { background: var(--hot-deep); }
+#s-neq .tier.chop .tb i { background: var(--gold); }
+#s-neq .tier .lv { margin-top: 44px; font-family: var(--mono); font-size: 20px; letter-spacing: 0.3em; color: var(--ink-3); }
+#s-neq .tier h3 { margin-top: 12px; font-family: var(--zh); font-weight: 900; font-size: 96px; }
+#s-neq .tier.fast h3 { color: var(--hot); }
+#s-neq .tier.chop h3 { color: var(--gold); font-family: var(--display); }
+#s-neq .tier p { margin-top: 22px; font-family: var(--zh); font-size: 30px; line-height: 1.6; color: var(--ink-2); }
+#s-neq .tier .eg { margin-top: 30px; font-family: var(--zh); font-size: 24px; color: var(--ink-3); }
+#s-neq .tier .eg b { color: var(--ink); font-weight: 600; }
+#s-neq .rule4 { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); text-align: center; font-family: var(--zh); font-weight: 900; font-size: 168px; letter-spacing: 0.02em; }
+#s-neq .rule4 small { display: block; font-family: var(--mono); font-weight: 400; font-size: 24px; letter-spacing: 0.4em; color: var(--gold); margin-bottom: 30px; }
+
+#s-wwc .w { position: absolute; left: 0; right: 0; text-align: center; white-space: nowrap; font-family: var(--display); font-weight: 900; font-size: 196px; letter-spacing: -0.04em; line-height: 0.92; }
+#s-wwc .w1 { top: 330px; }
+#s-wwc .w2 { top: 530px; }
+
+/* ---------- 04 人物 ---------- */
+#s-people .wallwrap { position: absolute; inset: 0; perspective: 2000px; perspective-origin: 50% 45%; }
+#s-people .wall { position: absolute; left: 50%; top: 50%; width: 2600px; height: 1300px; margin-left: -1300px; margin-top: -650px; display: grid; grid-template-columns: repeat(13, 1fr); gap: 22px; transform-style: preserve-3d; }
+#s-people .tile { position: relative; aspect-ratio: 1 / 1.24; border-radius: 16px; overflow: hidden; background: var(--surface); border: 1px solid rgba(102, 85, 74, 0.6); }
+#s-people .tile img { width: 100%; height: 81%; object-fit: cover; display: block; filter: saturate(0.9) contrast(1.05); }
+#s-people .tile .nm { position: absolute; left: 12px; right: 10px; bottom: 9px; font-family: var(--display); font-weight: 700; font-size: 17px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#s-people .tile .dot { position: absolute; left: 10px; top: 10px; padding: 3px 9px; border-radius: 999px; font-family: var(--zh); font-size: 13px; font-weight: 700; background: rgba(10, 8, 7, 0.75); }
+#s-people .tile.chopper .dot { color: var(--gold-2); }
+#s-people .tile.fast .dot { color: var(--hot); }
+#s-people .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10, 8, 7, 0.96) 0%, rgba(10, 8, 7, 0.7) 32%, transparent 60%); }
+#s-people .title { position: absolute; left: 110px; top: 300px; }
+#s-people .title h2 { font-family: var(--zh); font-weight: 900; font-size: 120px; margin-top: 20px; }
+#s-people .title .n { font-family: var(--display); font-weight: 800; font-size: 250px; line-height: 0.9; letter-spacing: -0.05em; color: var(--gold); font-variant-numeric: tabular-nums; }
+#s-people .title .chips { display: flex; gap: 16px; margin-top: 34px; }
+#s-people .title .chips .chip { font-size: 22px; padding: 8px 20px 8px 16px; }
+#s-people .split { position: absolute; left: 110px; top: 860px; display: flex; gap: 60px; font-family: var(--zh); font-size: 24px; color: var(--ink-2); }
+#s-people .split b { font-family: var(--display); font-size: 48px; color: var(--ink); margin-right: 10px; }
+
+#s-spot .ph { position: absolute; inset: 0; overflow: hidden; }
+#s-spot .ph .pic { position: absolute; right: 0; top: 0; width: 1080px; height: 1080px; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 38%); mask-image: linear-gradient(90deg, transparent 0%, #000 38%); }
+#s-spot .ph .pic img { position: absolute; left: 0; top: 0; width: 1080px; height: 1080px; object-fit: cover; filter: grayscale(1) contrast(1.15) brightness(0.9); }
+#s-spot .ph .tone { position: absolute; left: 0; top: 0; width: 1080px; height: 1080px; mix-blend-mode: multiply; }
+#s-spot .ph .fade { position: absolute; left: 0; top: 0; width: 1080px; height: 1080px; background: linear-gradient(90deg, var(--bg) 0%, transparent 40%), linear-gradient(0deg, rgba(10, 8, 7, 0.8), transparent 40%); }
+#s-spot .ph .nm { position: absolute; left: 110px; top: 380px; font-family: var(--display); font-weight: 900; font-size: 136px; text-shadow: 0 8px 40px rgba(0,0,0,0.7); letter-spacing: -0.04em; line-height: 0.92; width: 1300px; }
+#s-spot .ph .zh { position: absolute; left: 116px; top: 300px; font-family: var(--zh); font-weight: 900; font-size: 60px; color: var(--gold); }
+#s-spot .ph .meta { position: absolute; left: 116px; top: 720px; display: flex; align-items: center; gap: 20px; font-family: var(--zh); font-size: 26px; color: var(--ink-2); }
+#s-spot .ph .meta .chip { font-size: 20px; }
+#s-spot .ph .tagline { position: absolute; left: 116px; top: 790px; width: 760px; font-family: var(--zh); font-size: 26px; line-height: 1.6; color: var(--ink-3); }
+#s-spot .ph .idx { position: absolute; left: 116px; top: 220px; font-family: var(--mono); font-size: 20px; letter-spacing: 0.3em; color: var(--ink-3); }
+
+/* ---------- 05 测速 ---------- */
+#s-sps .bigs { position: absolute; left: 0; right: 0; top: 190px; text-align: center; font-family: var(--display); font-weight: 900; font-size: 420px; letter-spacing: -0.06em; line-height: 0.9; }
+#s-sps .def { position: absolute; left: 0; right: 0; top: 600px; text-align: center; font-family: var(--mono); font-size: 30px; letter-spacing: 0.3em; color: var(--gold); }
+#s-sps .def2 { position: absolute; left: 0; right: 0; top: 670px; text-align: center; font-family: var(--zh); font-size: 54px; font-weight: 700; }
+#s-sps .def2 .op { color: var(--gold); padding: 0 20px; }
+
+#s-chart .head { position: absolute; left: 140px; top: 104px; }
+#s-chart .head h2 { font-family: var(--zh); font-weight: 900; font-size: 64px; margin-top: 14px; }
+#s-chart .legend { position: absolute; right: 140px; top: 150px; display: flex; gap: 28px; font-family: var(--zh); font-size: 20px; color: var(--ink-2); }
+#s-chart .legend span { display: inline-flex; align-items: center; gap: 10px; }
+#s-chart .legend i { width: 14px; height: 14px; border-radius: 50%; }
+#s-chart .rows { position: absolute; left: 140px; right: 140px; top: 270px; }
+#s-chart .row { position: relative; display: grid; grid-template-columns: 60px 330px 1fr 120px; align-items: center; height: 58px; gap: 18px; }
+#s-chart .row .av { width: 46px; height: 46px; }
+#s-chart .row .nm { font-family: var(--display); font-weight: 700; font-size: 25px; white-space: nowrap; }
+#s-chart .row .nm small { display: block; font-family: var(--zh); font-weight: 400; font-size: 15px; color: var(--ink-3); margin-top: 2px; }
+#s-chart .row .track { position: relative; height: 26px; }
+#s-chart .row .bar { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 4px; background: var(--good); transform-origin: left; }
+#s-chart .row .v { font-family: var(--display); font-weight: 700; font-size: 30px; text-align: right; font-variant-numeric: tabular-nums; }
+#s-chart .guide { position: absolute; top: 250px; bottom: 120px; width: 1px; background: rgba(246, 239, 227, 0.22); }
+#s-chart .guide span { position: absolute; bottom: -34px; left: 50%; transform: translateX(-50%); font-family: var(--zh); font-size: 16px; color: var(--ink-3); white-space: nowrap; }
+#s-chart .src { position: absolute; left: 140px; bottom: 60px; font-family: var(--zh); font-size: 17px; color: var(--ink-3); }
+#s-formula .card { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 1300px; padding: 70px 90px; }
+#s-formula .who { display: flex; align-items: center; gap: 26px; }
+#s-formula .who .avatar { width: 96px; height: 96px; border: 2px solid var(--good); }
+#s-formula .who h3 { font-family: var(--display); font-size: 52px; }
+#s-formula .who p { font-family: var(--zh); font-size: 22px; color: var(--ink-2); margin-top: 6px; }
+#s-formula .f { margin-top: 56px; font-family: var(--mono); font-weight: 600; font-size: 128px; letter-spacing: -0.02em; white-space: nowrap; }
+#s-formula .f .op { color: var(--ink-3); font-weight: 300; }
+#s-formula .f .r { color: var(--gold); }
+#s-formula .lbls { display: flex; gap: 120px; margin-top: 18px; font-family: var(--zh); font-size: 22px; color: var(--ink-3); }
+#s-formula .badge { position: absolute; right: 70px; top: 70px; padding: 10px 22px; border-radius: 999px; border: 2px solid var(--good); color: var(--good); font-family: var(--zh); font-weight: 700; font-size: 24px; }
+#s-lab .persp { position: absolute; inset: 0; perspective: 2200px; }
+#s-lab .plate { left: 90px; top: 150px; width: 1180px; transform-style: preserve-3d; }
+#s-lab .plate .view { height: 880px; }
+#s-lab .rules { position: absolute; right: 100px; top: 190px; width: 640px; }
+#s-lab .lrule { display: flex; gap: 22px; align-items: baseline; padding: 22px 30px; margin-bottom: 14px; background: rgba(10, 8, 7, 0.86); border: 1px solid rgba(255, 75, 62, 0.45); border-left: 4px solid var(--hot); border-radius: 12px; backdrop-filter: blur(6px); }
+#s-lab .lrule b { font-family: var(--mono); font-size: 22px; color: var(--hot); }
+#s-lab .lrule span { font-family: var(--zh); font-size: 32px; font-weight: 700; }
+
+/* ---------- 06 时间线 ---------- */
+#s-time .tunnel { position: absolute; inset: 0; perspective: 900px; perspective-origin: 50% 50%; overflow: hidden; }
+#s-time .yearbg { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); text-align: center; font-family: var(--display); font-weight: 900; font-size: 520px; letter-spacing: -0.06em; color: transparent; -webkit-text-stroke: 2px rgba(232, 184, 74, 0.28); font-variant-numeric: tabular-nums; }
+#s-time .ev { position: absolute; left: 50%; top: 50%; width: 600px; margin-left: -300px; margin-top: -140px; padding: 28px 34px 30px; transform-style: preserve-3d; will-change: transform, opacity; }
+#s-time .ev .y { font-family: var(--display); font-weight: 800; font-size: 58px; line-height: 1; }
+#s-time .ev .sc { margin-left: 14px; font-family: var(--zh); font-size: 18px; vertical-align: middle; }
+#s-time .ev h4 { margin-top: 12px; font-family: var(--zh); font-weight: 800; font-size: 34px; line-height: 1.3; }
+#s-time .ev p { margin-top: 10px; font-family: var(--zh); font-size: 19px; line-height: 1.6; color: var(--ink-2); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+#s-time .ev.world { border-top: 3px solid var(--gold); }
+#s-time .ev.world .y, #s-time .ev.world .sc { color: var(--gold); }
+#s-time .ev.china { border-top: 3px solid var(--hot); }
+#s-time .ev.china .y, #s-time .ev.china .sc { color: var(--hot); }
+#s-time .hdr { position: absolute; left: 110px; top: 110px; }
+#s-time .hdr h2 { font-family: var(--zh); font-weight: 900; font-size: 64px; margin-top: 12px; }
+#s-time .lanes { position: absolute; right: 110px; top: 130px; display: flex; gap: 28px; font-family: var(--zh); font-size: 22px; }
+#s-time .lanes span { display: inline-flex; align-items: center; gap: 10px; }
+#s-time .lanes i { width: 12px; height: 12px; border-radius: 50%; }
+#s-time .yr { position: absolute; left: 110px; bottom: 120px; font-family: var(--display); font-weight: 800; font-size: 120px; line-height: 1; font-variant-numeric: tabular-nums; }
+#s-time .yr small { display: block; font-family: var(--zh); font-size: 22px; font-weight: 400; color: var(--ink-3); margin-top: 14px; }
+
+/* ---------- 07 曲目墙 ---------- */
+#s-tracks .plane { position: absolute; left: 50%; top: 50%; width: 3400px; margin-left: -1700px; margin-top: -1100px; transform: perspective(2200px) rotateX(46deg) rotateZ(-14deg); transform-style: preserve-3d; }
+#s-tracks .lane { display: flex; gap: 26px; margin-bottom: 26px; will-change: transform; }
+#s-tracks .lane img { width: 400px; height: 225px; object-fit: cover; border-radius: 12px; flex: none; box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8); }
+#s-tracks .dim { position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 50%, rgba(10, 8, 7, 0.88) 10%, rgba(10, 8, 7, 0.55) 45%, rgba(10, 8, 7, 0.25) 80%); }
+#s-tracks .title { position: absolute; left: 110px; top: 330px; }
+#s-tracks .title .n { font-family: var(--display); font-weight: 800; font-size: 280px; letter-spacing: -0.06em; line-height: 0.9; font-variant-numeric: tabular-nums; }
+#s-tracks .title h2 { font-family: var(--zh); font-weight: 900; font-size: 96px; margin-top: 10px; }
+#s-tracks .title p { margin-top: 26px; font-family: var(--zh); font-size: 28px; color: var(--ink-2); }
+#s-tracks .feat { position: absolute; right: 130px; top: 200px; width: 860px; padding: 26px 26px 32px; }
+#s-tracks .feat img { width: 100%; height: 450px; object-fit: cover; border-radius: 14px; display: block; }
+#s-tracks .feat .y { margin-top: 24px; font-family: var(--mono); font-size: 20px; letter-spacing: 0.3em; color: var(--gold); }
+#s-tracks .feat h3 { font-family: var(--display); font-weight: 800; font-size: 56px; margin-top: 10px; }
+#s-tracks .feat p { margin-top: 12px; font-family: var(--zh); font-size: 23px; line-height: 1.6; color: var(--ink-2); }
+
+/* ---------- 08 芝加哥 1992 ---------- */
+#s-twista .portrait { position: absolute; left: 0; top: 0; width: 900px; height: 1080px; overflow: hidden; }
+#s-twista .portrait img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.2) brightness(0.85); }
+#s-twista .portrait .tone { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(232, 184, 74, 0.55), rgba(200, 33, 27, 0.45)); mix-blend-mode: multiply; }
+#s-twista .portrait .fade { position: absolute; inset: 0; background: linear-gradient(90deg, transparent 50%, var(--bg) 100%), linear-gradient(0deg, rgba(10, 8, 7, 0.6), transparent 40%); }
+#s-twista .rt { position: absolute; left: 860px; top: 150px; width: 960px; }
+#s-twista .rt h2 { font-family: var(--display); font-weight: 900; font-size: 190px; letter-spacing: -0.05em; line-height: 0.9; margin-top: 20px; }
+#s-twista .rt h3 { font-family: var(--zh); font-weight: 900; font-size: 64px; margin-top: 18px; }
+#s-twista .cnt { position: absolute; left: 860px; top: 560px; display: flex; gap: 70px; align-items: flex-end; }
+#s-twista .cnt b { display: block; font-family: var(--display); font-weight: 800; font-size: 150px; line-height: 0.9; font-variant-numeric: tabular-nums; letter-spacing: -0.03em; }
+#s-twista .cnt span { font-family: var(--zh); font-size: 24px; color: var(--ink-3); }
+#s-twista .eqn { position: absolute; left: 860px; top: 800px; font-family: var(--mono); font-size: 54px; font-weight: 600; }
+#s-twista .eqn .r { color: var(--gold); }
+#s-twista .foot { position: absolute; left: 860px; top: 900px; width: 900px; font-family: var(--zh); font-size: 22px; line-height: 1.6; color: var(--ink-3); }
+
+#s-ladder .seq { position: absolute; left: 50%; top: 520px; transform: translate(-50%, -50%); display: grid; grid-template-columns: repeat(16, 70px); gap: 14px; }
+#s-ladder .seq i { height: 70px; border-radius: 10px; background: rgba(246, 239, 227, 0.06); border: 1px solid rgba(246, 239, 227, 0.12); }
+#s-ladder .seq i.on { background: var(--gold); border-color: var(--gold); box-shadow: 0 0 30px rgba(232, 184, 74, 0.7); }
+#s-ladder .val { position: absolute; left: 0; right: 0; top: 110px; text-align: center; font-family: var(--display); font-weight: 900; font-size: 210px; letter-spacing: -0.05em; line-height: 1; font-variant-numeric: tabular-nums; }
+#s-ladder .val small { font-family: var(--mono); font-size: 30px; font-weight: 400; letter-spacing: 0.2em; color: var(--ink-3); margin-left: 18px; }
+#s-ladder .lbl { position: absolute; left: 0; right: 0; top: 760px; text-align: center; font-family: var(--zh); font-weight: 700; font-size: 46px; }
+#s-ladder .steps { position: absolute; left: 50%; top: 880px; transform: translateX(-50%); display: flex; gap: 14px; }
+#s-ladder .steps span { padding: 8px 18px; border-radius: 999px; border: 1px solid var(--line); font-family: var(--zh); font-size: 20px; color: var(--ink-3); white-space: nowrap; }
+#s-ladder .steps span.on { background: var(--gold); color: #120c07; border-color: var(--gold); font-weight: 700; }
+#s-ladder .note { position: absolute; left: 0; right: 0; top: 970px; text-align: center; font-family: var(--zh); font-size: 18px; color: var(--ink-3); }
+
+/* ---------- 09 中国区 ---------- */
+#s-china .hd { position: absolute; right: 120px; top: 150px; text-align: right; }
+#s-china .hd h2 { font-family: var(--zh); font-weight: 900; font-size: 180px; line-height: 1; letter-spacing: 0.02em; margin-top: 18px; }
+#s-china .hd h2 .hot { color: var(--hot); }
+#s-china .hd p { margin-top: 24px; font-family: var(--zh); font-size: 26px; line-height: 1.7; color: var(--ink-2); width: 760px; margin-left: auto; }
+#s-china .st { position: absolute; right: 120px; top: 640px; display: flex; gap: 60px; }
+#s-china .st div { text-align: right; }
+#s-china .st b { display: block; font-family: var(--display); font-weight: 800; font-size: 84px; line-height: 1; font-variant-numeric: tabular-nums; }
+#s-china .st span { font-family: var(--zh); font-size: 19px; color: var(--ink-3); }
+#s-china .reg { position: absolute; right: 120px; top: 230px; width: 820px; padding: 44px 48px; overflow: hidden; }
+#s-china .reg .no { position: absolute; right: 40px; top: 24px; font-family: var(--display); font-weight: 800; font-size: 150px; color: transparent; -webkit-text-stroke: 2px rgba(255, 75, 62, 0.35); line-height: 1; }
+#s-china .reg .en { font-family: var(--mono); font-size: 18px; letter-spacing: 0.3em; color: var(--hot); text-transform: uppercase; }
+#s-china .reg h3 { font-family: var(--zh); font-weight: 900; font-size: 110px; margin-top: 6px; }
+#s-china .reg p { font-family: var(--zh); font-size: 27px; line-height: 1.65; color: var(--ink-2); margin-top: 18px; }
+#s-china .reg .who { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+#s-china .reg .who span { display: inline-flex; align-items: center; gap: 12px; padding: 6px 18px 6px 6px; border-radius: 999px; background: rgba(246, 239, 227, 0.05); border: 1px solid var(--line); font-family: var(--zh); font-size: 22px; font-weight: 700; }
+#s-china .reg .who .avatar { width: 46px; height: 46px; }
+#s-china .ring { position: absolute; inset: 0; }
+#s-china .ring .avatar { position: absolute; width: 120px; height: 120px; margin: -60px 0 0 -60px; border: 3px solid var(--hot); box-shadow: 0 0 40px rgba(255, 75, 62, 0.5); }
+#s-china .ringtxt { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); text-align: center; font-family: var(--zh); font-weight: 900; font-size: 76px; line-height: 1.3; }
+#s-china .ringtxt small { display: block; font-size: 30px; font-weight: 500; color: var(--ink-2); margin-top: 16px; }
+
+/* ---------- 10 世界地图 / 系列 ---------- */
+#s-map .hd { position: absolute; left: 110px; top: 210px; width: 700px; }
+#s-map .hd h2 { font-family: var(--zh); font-weight: 900; font-size: 120px; line-height: 1.05; margin-top: 18px; }
+#s-map .hd h2 .gold { font-family: var(--display); }
+#s-map .hd p { margin-top: 26px; font-family: var(--zh); font-size: 26px; line-height: 1.7; color: var(--ink-2); }
+#s-map .persp { position: absolute; inset: 0; perspective: 2200px; }
+#s-map .plate { left: 640px; top: 150px; width: 1440px; transform-style: preserve-3d; }
+#s-map .plate .view { height: 880px; }
+#s-series .col { position: absolute; left: 0; right: 0; top: 0; text-align: center; will-change: transform; }
+#s-series .col div { font-family: var(--display); font-weight: 900; font-size: 116px; letter-spacing: -0.04em; line-height: 1.12; white-space: nowrap; color: transparent; -webkit-text-stroke: 2px rgba(246, 239, 227, 0.2); }
+#s-series .col div.on { color: var(--ink); -webkit-text-stroke: 0; }
+#s-series .col div.on.g { color: var(--gold); }
+#s-series .mask { position: absolute; inset: 0; background: linear-gradient(180deg, var(--bg) 0%, transparent 30%, transparent 70%, var(--bg) 100%); }
+#s-series .lab { position: absolute; left: 110px; top: 110px; }
+#s-series .cnt { position: absolute; right: 110px; bottom: 110px; text-align: right; font-family: var(--zh); font-size: 26px; color: var(--ink-2); }
+#s-series .cnt b { display: block; font-family: var(--display); font-size: 150px; line-height: 0.9; color: var(--gold); }
+
+/* ---------- 11 SPS kid ---------- */
+#s-kid .hd { position: absolute; left: 0; right: 0; top: 120px; text-align: center; }
+#s-kid .hd h2 { font-family: var(--display); font-weight: 900; font-size: 120px; letter-spacing: -0.04em; margin-top: 14px; }
+#s-kid .hd h2 .ne { color: var(--ink-3); font-weight: 300; padding: 0 30px; }
+#s-kid .tbl { position: absolute; left: 240px; right: 240px; top: 400px; }
+#s-kid .tr { display: grid; grid-template-columns: 200px 1fr 1fr; align-items: center; gap: 30px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+#s-kid .tr span { font-family: var(--zh); font-size: 24px; color: var(--ink-3); letter-spacing: 0.1em; }
+#s-kid .tr p { font-family: var(--zh); font-size: 38px; font-weight: 700; }
+#s-kid .tr p.k { color: var(--ink-3); text-decoration: line-through; text-decoration-color: rgba(255, 75, 62, 0.7); text-decoration-thickness: 3px; }
+#s-kid .tr p.c { color: var(--gold); }
+#s-kid .tr.h p { font-family: var(--display); font-size: 30px; letter-spacing: 0.04em; color: var(--ink-2); text-decoration: none; }
+#s-kid .vs { position: absolute; left: 200px; right: 200px; top: 330px; }
+#s-kid .vs .r { display: grid; grid-template-columns: 340px 1fr 280px; align-items: center; gap: 30px; height: 120px; }
+#s-kid .vs .r .l { font-family: var(--display); font-weight: 700; font-size: 44px; }
+#s-kid .vs .r .l small { display: block; font-family: var(--zh); font-size: 22px; font-weight: 400; color: var(--ink-3); margin-top: 4px; }
+#s-kid .vs .r .b { position: relative; height: 44px; }
+#s-kid .vs .r .b i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 6px; transform-origin: left; }
+#s-kid .vs .r .b i.ghost { background: repeating-linear-gradient(-45deg, rgba(246, 239, 227, 0.22) 0 10px, transparent 10px 20px); border: 2px dashed rgba(246, 239, 227, 0.4); }
+#s-kid .vs .r .b i.real { background: var(--gold); }
+#s-kid .vs .r .v { font-family: var(--display); font-weight: 800; font-size: 64px; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+#s-kid .vs .r.claim .v { color: var(--ink-3); text-decoration: line-through; text-decoration-color: var(--hot); text-decoration-thickness: 6px; }
+#s-kid .vs .cap { margin-top: 50px; font-family: var(--zh); font-size: 26px; line-height: 1.7; color: var(--ink-2); }
+#s-kid .vs .cap b { color: var(--ink); }
+#s-kid .vs h3 { font-family: var(--zh); font-size: 54px; font-weight: 900; margin-bottom: 30px; }
+
+/* ---------- 12 可信度 / 来源 ---------- */
+#s-conf .grid { position: absolute; left: 150px; right: 150px; top: 250px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 34px; }
+#s-conf .st { padding: 44px 36px 40px; height: 560px; position: relative; overflow: hidden; }
+#s-conf .st .ic { width: 110px; height: 110px; border-radius: 50%; display: grid; place-items: center; font-family: var(--display); font-weight: 900; font-size: 60px; color: #120c07; }
+#s-conf .st h3 { margin-top: 40px; font-family: var(--zh); font-weight: 900; font-size: 64px; }
+#s-conf .st .en { margin-top: 8px; font-family: var(--mono); font-size: 20px; letter-spacing: 0.2em; color: var(--ink-3); }
+#s-conf .st p { margin-top: 24px; font-family: var(--zh); font-size: 26px; line-height: 1.65; color: var(--ink-2); }
+#s-conf .st::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: var(--c); }
+#s-conf .hd { position: absolute; left: 150px; top: 110px; }
+#s-conf .hd h2 { font-family: var(--zh); font-weight: 900; font-size: 60px; margin-top: 10px; }
+#s-src .ticker { position: absolute; right: 120px; top: 0; bottom: 0; width: 900px; overflow: hidden; }
+#s-src .ticker .col { position: absolute; left: 0; right: 0; top: 0; will-change: transform; }
+#s-src .ticker .col div { padding: 14px 0; border-bottom: 1px solid rgba(102, 85, 74, 0.4); font-family: var(--zh); font-size: 23px; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#s-src .ticker .col div::before { content: '↗ '; color: var(--gold); font-family: var(--mono); }
+#s-src .ticker .fade { position: absolute; inset: 0; background: linear-gradient(180deg, var(--bg), transparent 20%, transparent 80%, var(--bg)); }
+#s-src .n { position: absolute; left: 110px; top: 260px; font-family: var(--display); font-weight: 900; font-size: 330px; letter-spacing: -0.06em; line-height: 0.9; color: var(--gold); font-variant-numeric: tabular-nums; }
+#s-src .lbl { position: absolute; left: 120px; top: 580px; font-family: var(--zh); font-weight: 900; font-size: 86px; }
+#s-src .p { position: absolute; left: 120px; top: 710px; width: 700px; font-family: var(--zh); font-size: 28px; line-height: 1.7; color: var(--ink-2); }
+#s-recalc .line { position: absolute; left: 0; right: 0; text-align: center; font-family: var(--serif); font-weight: 900; font-size: 92px; letter-spacing: 0.06em; }
+#s-recalc .eqs { position: absolute; left: 0; right: 0; top: 560px; text-align: center; }
+#s-recalc .eqs div { font-family: var(--mono); font-size: 48px; line-height: 1.7; color: var(--ink-2); }
+#s-recalc .eqs div .r { color: var(--gold); }
+#s-recalc .eqs div small { font-family: var(--zh); font-size: 22px; color: var(--ink-3); margin-left: 24px; }
+
+/* ---------- 13 收尾 ---------- */
+#s-final .sec { position: absolute; inset: 0; }
+#s-final .sec .plate { left: 700px; top: 170px; width: 1300px; }
+#s-final .sec .plate .view { height: 760px; }
+#s-final .sec .nm { position: absolute; left: 110px; top: 330px; font-family: var(--zh); font-weight: 900; font-size: 190px; line-height: 1; }
+#s-final .sec .en { position: absolute; left: 116px; top: 280px; font-family: var(--mono); font-size: 22px; letter-spacing: 0.4em; color: var(--gold); }
+#s-final .sec .ds { position: absolute; left: 116px; top: 560px; width: 520px; font-family: var(--zh); font-size: 28px; line-height: 1.6; color: var(--ink-2); }
+#s-final .sec .ix { position: absolute; left: 116px; top: 230px; font-family: var(--display); font-size: 24px; color: var(--ink-3); }
+#s-final .cut { position: absolute; inset: 0; }
+#s-final .cut img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(0.4) contrast(1.15) brightness(0.7); }
+#s-final .cut .w { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); text-align: center; font-family: var(--zh); font-weight: 900; font-size: 220px; text-shadow: 0 10px 60px rgba(0, 0, 0, 0.8); }
+#s-end .logo { position: absolute; left: 50%; top: 440px; transform: translate(-50%, -50%); display: flex; align-items: center; gap: 50px; font-family: var(--display); font-weight: 900; font-size: 280px; letter-spacing: -0.05em; }
+#s-end .logo .bars { height: 210px; gap: 15px; }
+#s-end .logo .bars i { width: 24px; border-radius: 12px; }
+#s-end .logo em { font-style: normal; color: var(--gold); }
+#s-end .sub { position: absolute; left: 0; right: 0; top: 650px; text-align: center; font-family: var(--zh); font-weight: 700; font-size: 46px; letter-spacing: 0.9em; padding-left: 0.9em; }
+#s-end .desc { position: absolute; left: 0; right: 0; top: 740px; text-align: center; font-family: var(--zh); font-size: 26px; color: var(--ink-2); letter-spacing: 0.08em; }
+#s-end .url { position: absolute; left: 50%; top: 840px; transform: translateX(-50%); padding: 14px 30px; border-radius: 999px; border: 1px solid rgba(232, 184, 74, 0.6); font-family: var(--mono); font-size: 26px; color: var(--gold); white-space: nowrap; }
+#s-end .stats { position: absolute; left: 50%; top: 950px; transform: translateX(-50%); display: flex; gap: 60px; font-family: var(--zh); font-size: 20px; color: var(--ink-3); white-space: nowrap; }
+#s-end .stats b { font-family: var(--display); color: var(--ink); font-size: 26px; margin-right: 8px; }
+#s-end .glow { position: absolute; left: 50%; top: 440px; width: 1800px; height: 900px; transform: translate(-50%, -50%); background: radial-gradient(ellipse, rgba(232, 184, 74, 0.2), transparent 60%); }
+#s-end .credit { position: absolute; left: 0; right: 0; bottom: 34px; text-align: center; font-family: var(--zh); font-size: 15px; color: #6d6253; letter-spacing: 0.06em; }

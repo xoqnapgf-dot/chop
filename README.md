@@ -4,6 +4,8 @@ Chopper 快嘴说唱、Chopped & Screwed、Sample Chop 切采样的资料网站�
 
 纯静态站点：Astro 7 + Tailwind CSS 4，部署在 GitHub Pages。
 
+> ⚠️ **`chop-promo/` 是站点的宣传片项目，请勿删除。** 它和站点源码互相独立（站点构建不读它），双击里面的 `index.html` 就能播放。说明见 [chop-promo/README.md](./chop-promo/README.md)。
+
 ## 本地运行
 
 ```bash

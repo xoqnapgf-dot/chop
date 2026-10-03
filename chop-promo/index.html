@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CHOP/ 快嘴档案馆 · 宣传片</title>
+  <meta name="description" content="CHOP/ 快嘴档案馆的宣传短片：Chopper 快嘴说唱的人物、曲目、时间线与测速数据。" />
+  <meta name="theme-color" content="#0a0807" />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/film.css" />
+  <link rel="stylesheet" href="css/scenes.css" />
+</head>
+<body>
+  <!-- 舞台：固定 1920×1080，按窗口等比缩放，四周留黑边 -->
+  <div id="viewport">
+    <div id="stage">
+      <div id="cam">
+        <canvas id="gl"></canvas>
+        <div id="scenes"></div>
+      </div>
+      <canvas id="fx"></canvas>
+      <div id="flash"></div>
+      <div id="letterbox"><i></i><i></i></div>
+      <div id="hud" aria-hidden="true">
+        <div class="hud-tl">
+          <span class="hud-logo"><b class="bars"><i></i><i></i><i></i><i></i><i></i></b>CHOP<em>/</em></span>
+          <span class="hud-chapter"><b id="hud-no">00</b><span id="hud-name">COLD OPEN</span></span>
+        </div>
+        <div class="hud-tr">
+          <span id="hud-tc">00:00:00</span>
+          <span id="hud-bar">BAR 00 · 1</span>
+        </div>
+        <div class="hud-bl">
+          <div class="sps">
+            <div class="sps-row"><b id="sps-v">0.0</b><span>音节 / 秒</span></div>
+            <div class="sps-meter"><i id="sps-fill"></i><s style="left:20%"></s><s style="left:30%"></s><s style="left:40%"></s></div>
+            <div class="sps-note">按歌词行粗略估算 · 不是测速数据</div>
+          </div>
+        </div>
+        <div class="hud-br">
+          <span class="np">NOW PLAYING</span>
+          <span class="np-title">Worldwide Choppers</span>
+          <span class="np-by">Tech N9ne ft. Ceza · Twista · Busta Rhymes · D-Loc · Twisted Insane …</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 封面 / 加载 -->
+  <div id="cover">
+    <div class="cover-in">
+      <div class="cover-logo"><b class="bars"><i></i><i></i><i></i><i></i><i></i></b>CHOP<em>/</em></div>
+      <p class="cover-sub">快嘴档案馆 · 宣传片</p>
+      <button id="play" disabled><span class="tri"></span><span id="play-label">加载中 0%</span></button>
+      <p class="cover-hint">空格 播放/暂停 · ← → 快退/快进 · F 全屏 · H 隐藏界面 · 1–9 跳章节</p>
+      <p class="cover-music">音乐：Tech N9ne《Worldwide Choppers》（2011）剪辑版 · 仅作非商业展示</p>
+    </div>
+  </div>
+
+  <!-- 播放控制（鼠标移动时出现） -->
+  <div id="ui">
+    <button id="ui-play" aria-label="播放/暂停"></button>
+    <div id="ui-time">0:00</div>
+    <div id="ui-bar"><div id="ui-chapters"></div><div id="ui-fill"></div><div id="ui-head"></div></div>
+    <div id="ui-dur">3:13</div>
+    <button id="ui-hud" title="H">HUD</button>
+    <button id="ui-fs" title="F">全屏</button>
+  </div>
+
+  <audio id="audio" src="assets/audio/worldwide-choppers-edit.mp3" preload="auto"></audio>
+
+  <script src="js/lib/gsap.min.js"></script>
+  <script src="js/lib/three.min.js"></script>
+  <script src="js/data/site.js"></script>
+  <script src="js/data/audio.js"></script>
+  <script src="js/data/globe.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/gl.js"></script>
+  <script src="js/scenes.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
