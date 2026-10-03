@@ -1,0 +1,31 @@
+<a
+  class="translate-btn grid size-9 place-items-center rounded-full border border-line text-ink-2 transition hover:border-line-strong hover:text-ink"
+  aria-label="Translate this site（Google 翻译，翻页后保持翻译）"
+  title="Translate / 翻译"
+  hidden
+>
+  <svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h8M8 3v2M10.5 5c-.8 3.6-3.2 6.6-6.5 8"/><path d="M5.5 8.5c1.2 2 3 3.6 5 4.5"/><path d="m12.5 21 4-9 4 9M14 17.5h5"/></svg>
+</a>
+
+<script>
+  // 浏览器自带的"翻译网页"每换一页都要重新点。这里改走 Google 翻译的网页代理（*.translate.goog）：
+  // 代理会把站内链接都改写成代理地址，点到哪页都保持翻译。本地预览、App、已在代理里时不显示。
+  function initTranslate() {
+    const { protocol, hostname, pathname, search, hash } = location;
+    const local =
+      protocol !== 'https:' || hostname === 'localhost' || hostname.endsWith('.local') || /^[\d.]+$/.test(hostname) || !hostname.includes('.') || / CHOPApp\//.test(navigator.userAgent);
+    if (local || hostname.endsWith('.translate.goog')) return;
+    const lang = (navigator.language || 'en').toLowerCase();
+    const tl = lang.startsWith('zh') ? 'en' : lang.split('-')[0];
+    const host = hostname.replace(/-/g, '--').replace(/\./g, '-') + '.translate.goog';
+    const q = new URLSearchParams(search);
+    q.set('_x_tr_sl', 'zh-CN');
+    q.set('_x_tr_tl', tl);
+    q.set('_x_tr_hl', tl);
+    document.querySelectorAll<HTMLAnchorElement>('.translate-btn').forEach((a) => {
+      a.href = `https://${host}${pathname}?${q}${hash}`;
+      a.hidden = false;
+    });
+  }
+  initTranslate();
+</script>

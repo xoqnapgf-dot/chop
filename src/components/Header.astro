@@ -1,6 +1,7 @@
 ---
 import Logo from './Logo.astro';
 import ThemeToggle from './ThemeToggle.astro';
+import TranslateButton from './TranslateButton.astro';
 import { NAV } from '@/lib/site';
 import { url } from '@/lib/url';
 
@@ -39,6 +40,7 @@ const isActive = (href: string) => path.startsWith(url(href));
         搜索
         <kbd class="font-mono text-xs text-ink-3">/</kbd>
       </a>
+      <TranslateButton />
       <ThemeToggle />
       <button
         type="button"
