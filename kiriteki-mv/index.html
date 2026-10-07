@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>霧笛 — さよならは終わりじゃない</title>
+<meta name="description" content="霧の港町を舞台にした、リアルタイム描画のミュージックビデオ（WebGL2）。">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="gl"></canvas>
+</div>
+
+<div id="intro" class="layer">
+  <div class="intro-inner">
+    <div class="title-v"><span class="t-main">霧笛</span><span class="t-sub">さよならは終わりじゃない</span></div>
+    <div id="loadbox">
+      <div class="bar"><i id="loadfill"></i></div>
+      <div id="loadtxt">読み込み中…</div>
+    </div>
+    <button id="playbtn" class="play" disabled aria-label="再生">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span>再生</span>
+    </button>
+    <p class="hint">ヘッドホン推奨 ・ Space 再生／停止 ・ ← → 5秒 ・ F 全画面 ・ H UI表示</p>
+  </div>
+</div>
+
+<div id="ui" class="hidden">
+  <div class="row">
+    <button id="pp" class="ib" aria-label="再生／停止"><svg viewBox="0 0 24 24"><path id="ppicon" d="M8 5.5v13l11-6.5z"/></svg></button>
+    <span id="time">0:00.0 / 3:30.6</span>
+    <div id="tl"><div id="tlsec"></div><div id="tlfill"></div><div id="tlhead"></div></div>
+    <select id="quality" aria-label="画質">
+      <option value="1.5">4K寄り</option>
+      <option value="1" selected>高画質</option>
+      <option value="0.75">中画質</option>
+      <option value="0.5">低画質</option>
+    </select>
+    <button id="fs" class="ib" aria-label="全画面"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+  </div>
+</div>
+<div id="dbg" class="hidden"></div>
+<div id="err" class="hidden"></div>
+
+<audio id="song" src="audio/song.m4a" preload="auto"></audio>
+
+<!-- data (small) -->
+<script src="js/data.js"></script>
+<script src="js/manifest.js"></script>
+<script src="js/meta.js"></script>
+<script src="js/kanjivg.js"></script>
+<script src="js/lineart.js"></script>
+<script src="js/pitch.js"></script>
+<!-- engine -->
+<script src="js/core.js"></script>
+<script src="js/shaders.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/shots.js"></script>
+<script src="js/director.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

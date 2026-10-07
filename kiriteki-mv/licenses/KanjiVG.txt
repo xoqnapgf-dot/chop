@@ -1,0 +1,10 @@
+KanjiVG
+Copyright (C) Ulrich Apel
+https://kanjivg.tagaini.net/
+
+KanjiVG is released under the Creative Commons Attribution-Share Alike 3.0 licence
+(CC BY-SA 3.0): https://creativecommons.org/licenses/by-sa/3.0/
+
+js/kanjivg.js contains stroke-order paths derived from KanjiVG (resampled to normalized
+polylines for the brush animation). That derived data is distributed under the same
+licence, CC BY-SA 3.0.
