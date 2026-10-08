@@ -42,7 +42,7 @@ George Watsky 是美国旧金山出身的 rapper，也是诗人、作家。他�
 
 2020 年前后，他在自己频道也做过一期 Eminem 的《Godzilla Challenge》。
 
-## 不只是快
+## 专辑和歌词
 
 之后他出了七张录音室专辑：《Watsky》（2009）、《Cardboard Castles》（2013）、《All You Can Do》（2014）、《x Infinity》（2016）、《Complaint》（2019）、《Placement》（2020）、《Intention》（2023），题材多是叙事、抒情和社会议题。2016 年的散文集《How to Ruin Everything》进过《纽约时报》畅销榜前十。
 
