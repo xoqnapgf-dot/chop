@@ -70,11 +70,11 @@ sources:
 
 MC Igu 本名 Igor de Oliveira Kuwahara，Last.fm 的简介说他生在日本山梨县，小时候搬到圣保罗州的伊塔佩蒂宁加。他早年的歌里常把家乡叫"Itapecity"，属于一个叫 Juminai（Bonde Juminai / Juminai Gang）的小团体。YouTube 频道 @McIgu 现在有 77.6 万订阅。
 
-他主要唱 trap，葡萄牙语。Troll 说他是 2014 年前后巴西第一个真正的 chopper；公开能查到最早的作品是 2015 年 4 月的《Sherlock》。2017 年 9 月他连着发了《Flow Anime》《Flow Corey Taylor》，用"Flow + 名字"的标题，每首换一种唱法。
+他主要唱 trap，葡萄牙语。Troll 说他是 2014 年前后巴西第一个真正的 chopper。2017 年 9 月他连着发了《Flow Anime》《Flow Corey Taylor》。
 
 ## 速度
 
-- **2015 年 4 月**：Jumba 的《Sherlock》里他客串并做了伴奏，是目前能查到最早的公开作品。NahDah 2021 版把这首列在他的名下，排第 90 名。
+- **2015 年 4 月**：Jumba 的《Sherlock》里他客串并做了伴奏，是最早能查到的公开作品。NahDah 2021 版把这首列在他的名下，排第 90 名。
 - **2017 年 4 月**：《O Rapper mais rápido do Brasil》，标题写"2 分钟 1000 多个音节"，换算下来整首平均至少每秒 8.3 个音节（1000 ÷ 120）。这是整首的平均，不是爆发。
 - **2020 年**：《552 Sílabas em 1 Minuto》在网上流传。一分钟 552 个音节平均每秒 9.2，但换气都算进去了，转载标题还有写 527、522 的，说法不一致。
 - **2021 年 4 月**：TrollatorBR 做了一期他的最快十句，第 1 名《Juminai IV》是 15，第 2 名《Grand Chase》13.8，第 10 名就是那首《552 Sílabas》里最快的一段，11.9。同年底 TrollatorBR 的巴西前 50 里，他以 15 排第 2，前面只有 Shad。
