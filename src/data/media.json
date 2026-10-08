@@ -690,6 +690,15 @@
       },
       "color": "#f8f8f8",
       "fetchedAt": "2026-10-01"
+    },
+    "mc-igu": {
+      "channelUrl": "https://www.youtube.com/channel/UCvRPhsZr4yRv7tOqlHmbQDA",
+      "kind": "official",
+      "avatar": "https://yt3.googleusercontent.com/3YrXDYU1_UltuoE40Zxyf0-YInI2Pg9MrHr0cgWCVjiDVNMptAx70zPF9OO5nxV0P914X3ed=s800-c-k-c0x00ffffff-no-rj",
+      "banner": "https://yt3.googleusercontent.com/ixh-dgwWN8SnS-fZv-bDNaXk8V31Osw8JYNU__8RkVC3Ztd55E3LmKSmwvrX_VWIhGEWbmMXWg=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "hasBanner": true,
+      "color": "#485878",
+      "fetchedAt": "2026-10-08"
     }
   },
   "tracks": {
@@ -1225,6 +1234,16 @@
     },
     "syllabic-war": {
       "video": "https://www.youtube.com/watch?v=GfnzhA18mbs",
+      "size": "maxresdefault",
+      "color": "#080808"
+    },
+    "sherlock-mc-igu": {
+      "video": "https://www.youtube.com/watch?v=3LvXXgj-Fcw",
+      "size": "sddefault",
+      "color": "#080808"
+    },
+    "flow-anime": {
+      "video": "https://www.youtube.com/watch?v=UZJFzNKi9zc",
       "size": "maxresdefault",
       "color": "#080808"
     }

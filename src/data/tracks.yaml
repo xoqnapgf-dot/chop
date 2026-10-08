@@ -1428,3 +1428,28 @@
   sources:
     - { title: 'YouTube – WEDERE - SHADOWS - RAP PIÙ VELOCE D''ITALIA（2024-07-23）', url: 'https://www.youtube.com/watch?v=n2Zj-3kt53Q' }
 
+- id: sherlock-mc-igu
+  title: Sherlock
+  artists: [mc-igu]
+  credit: Jumba ft. Mc Igu
+  scene: world
+  year: 2015
+  youtube: 3LvXXgj-Fcw
+  youtubeChannel: Jumba
+  officialUpload: true
+  note: 'Jumba 的歌，Mc Igu 客串并做了伴奏（标题写 Prod Mc Igu）。NahDah 2021 版把这首列在他名下，排第 90 名；TrollatorBR 2021 年测他这首是 13。'
+  sources:
+    - { title: 'YouTube – Jumba - Sherlock pt. Mc Igu [Prod Mc Igu]（2015-04-19）', url: 'https://www.youtube.com/watch?v=3LvXXgj-Fcw' }
+    - { title: 'YouTube – TrollatorBR："TOP 10" Versos Mais Rápidos do Mc Igu（2021-04-26）', url: 'https://www.youtube.com/watch?v=Xkdt6sdQL7s' }
+- id: flow-anime
+  title: Flow Anime
+  artists: [mc-igu]
+  credit: Mc Igu
+  scene: world
+  year: 2017
+  youtube: UZJFzNKi9zc
+  youtubeChannel: Mc Igu
+  officialUpload: true
+  note: '2017 年 9 月他连发的"Flow + 名字"系列之一，另一首是 9 月 14 日的《Flow Corey Taylor》。没有人公开测过这首的速度。'
+  sources:
+    - { title: 'YouTube – Mc Igu - Flow Anime（2017-09-11）', url: 'https://www.youtube.com/watch?v=UZJFzNKi9zc' }
