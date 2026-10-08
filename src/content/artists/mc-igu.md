@@ -7,7 +7,7 @@ city: 圣保罗州 伊塔佩蒂宁加
 region: 拉丁美洲
 activeSince: 2015
 style: chopper
-styleNote: 'TrollatorBR 的主人 Troll 说，据他所知 MC Igu 是 2014 年前后巴西第一个真正的 chopper，对巴西圈很重要。公开资料里最早能查到的是 2015 年的合作曲。他主要唱 trap，但一直穿插很快的 speed flow：2017 年就有一首 2 分钟 1000 多个音节的《O Rapper mais rápido do Brasil》，TrollatorBR 还做过一期《Versos Mais Rápidos do Mc Igu》的 Top 10。'
+styleNote: 'TrollatorBR 的主人 Troll 说，据他所知 MC Igu 是 2014 年前后巴西第一个真正的 chopper。他主要唱 trap，但一直穿插很快的 speed flow：2017 年有一首 2 分钟 1000 多个音节的《O Rapper mais rápido do Brasil》，TrollatorBR 还做过一期他的最快十句。'
 tags: [巴西, 葡萄牙语, speed flow, trap, Juminai Gang]
 youtube: { channelId: UCvRPhsZr4yRv7tOqlHmbQDA, handle: '@McIgu', kind: official }
 useBanner: false
@@ -70,7 +70,7 @@ sources:
 
 MC Igu 本名 Igor de Oliveira Kuwahara，Last.fm 的简介说他生在日本山梨县，小时候搬到圣保罗州的伊塔佩蒂宁加。他早年的歌里常把家乡叫"Itapecity"，属于一个叫 Juminai（Bonde Juminai / Juminai Gang）的小团体。YouTube 频道 @McIgu 现在有 77.6 万订阅。
 
-他主要唱 trap，葡萄牙语。2017 年 9 月他连着发了《Flow Anime》《Flow Corey Taylor》，用"Flow + 名字"的标题，每首换一种唱法。
+他主要唱 trap，葡萄牙语。Troll 说他是 2014 年前后巴西第一个真正的 chopper；公开能查到最早的作品是 2015 年 4 月的《Sherlock》。2017 年 9 月他连着发了《Flow Anime》《Flow Corey Taylor》，用"Flow + 名字"的标题，每首换一种唱法。
 
 ## 速度
 
@@ -79,7 +79,3 @@ MC Igu 本名 Igor de Oliveira Kuwahara，Last.fm 的简介说他生在日本山
 - **2020 年**：《552 Sílabas em 1 Minuto》在网上流传。一分钟 552 个音节平均每秒 9.2，但换气都算进去了，转载标题还有写 527、522 的，说法不一致。
 - **2021 年 4 月**：TrollatorBR 做了一期他的最快十句，第 1 名《Juminai IV》是 15，第 2 名《Grand Chase》13.8，第 10 名就是那首《552 Sílabas》里最快的一段，11.9。同年底 TrollatorBR 的巴西前 50 里，他以 15 排第 2，前面只有 Shad。
 - **2023 年**：NahDah 的榜单里，他的《Grand Chase》是 15 个音节 1.07 秒，14.02，第 104 名。
-
-## 说明
-
-"巴西第一个 chopper"是 TrollatorBR 的主人 Troll 告诉本站的，他的原话是"据我所知，2014 年"。Troll 长期研究巴西的葡萄牙语快嘴，他的说法本站采用并署名；公开资料里最早能查到的作品是 2015 年 4 月的《Sherlock》。
