@@ -8,7 +8,7 @@
     "build": "astro build && node scripts/cn-quotes.mjs && node scripts/check-dist.mjs && pagefind --site dist",
     "preview": "astro preview",
     "build:root": "node scripts/build-root.mjs",
-    "check": "node scripts/lint-yaml.mjs && astro check",
+    "check": "node scripts/lint-yaml.mjs && node scripts/lint-tone.mjs && astro check",
     "fetch:yt": "node scripts/fetch-youtube.mjs",
     "build:globe": "node scripts/build-globe.mjs 22000"
   },
