@@ -58,7 +58,7 @@ sources:
   - { title: 'B站 – 五里亭亭长：2022世界语速排行榜（2022-05-01，第 8 名）', url: 'https://www.bilibili.com/video/BV1ZY4y1k7a1/' }
 ---
 
-Shad 是巴西的 rapper，唱葡萄牙语。NahDah 2021 版的榜单卡片上标的是巴西。在巴西的测速圈里，他长期排在"全国最快"：TrollatorBR 2021 年的巴西前 50 名、BruCalcs 2020 年的巴西榜，第 1 名都是他，而且和第 2 名差了一大截（TrollatorBR 那份，第 2 名[MC Igu](../mc-igu/)是 15）。TrollatorBR 2020 年的世界前 10 名，也把他排在第 1。
+Shad 是巴西的 rapper，唱葡萄牙语。NahDah 2021 版的榜单卡片上标的是巴西。在巴西的测速圈里，他长期排在"全国最快"：TrollatorBR 2021 年的巴西前 50 名、BruCalcs 2020 年的巴西榜，第 1 名都是他，而且和第 2 名差了一大截（TrollatorBR 那份，第 2 名是[MC Igu](../mc-igu/)，他那个 15 的数后来被 Troll 说不准）。TrollatorBR 2020 年的世界前 10 名，也把他排在第 1。
 
 > **说明：** Shad 已被部分测速榜单除名，原因是与音乐无关的严重指控。本站只记录他与 chop 相关的公开作品和测速资料，对此不做评价。
 
