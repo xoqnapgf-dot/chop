@@ -1453,3 +1453,78 @@
   note: '2017 年 9 月 11 日发的，三天后又发了《Flow Corey Taylor》。没有人公开测过这首的速度。'
   sources:
     - { title: 'YouTube – Mc Igu - Flow Anime（2017-09-11）', url: 'https://www.youtube.com/watch?v=UZJFzNKi9zc' }
+- id: mc-igu-552-silabas
+  title: 552 Sílabas em 1 Minuto
+  artists: [mc-igu]
+  credit: Mc Igu
+  scene: world
+  year: 2018
+  youtube: xLQwK5wXXnA
+  youtubeChannel: Saving Tracks
+  officialUpload: false
+  note: '标题的意思是一分钟 552 个音节。Saving Tracks 2018 年 6 月 28 日重传，原发布时间不详。'
+  sources:
+    - { title: 'YouTube – Saving Tracks：Mc Igu - 552 Silabas em 1 Minuto（2018-06-28 上传）', url: 'https://www.youtube.com/watch?v=xLQwK5wXXnA' }
+- id: mc-igu-grand-chase
+  title: Grand Chase
+  artists: [mc-igu]
+  credit: Mc Igu
+  scene: world
+  year: 2018
+  youtube: ysd4L76fq40
+  youtubeChannel: Saving Tracks
+  officialUpload: false
+  note: 'NahDah 2023 版第 104 名的那段（15 个音节 1.07 秒）出自这首。Saving Tracks 2018 年 8 月 6 日重传，原发布时间不详。'
+  sources:
+    - { title: 'YouTube – Saving Tracks：Mc Igu - Grand Chase（2018-08-06 上传）', url: 'https://www.youtube.com/watch?v=ysd4L76fq40' }
+    - { title: 'NahDah Vebb – Top 150 Fastest Rappers（2023）逐条测算文档', url: 'https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA' }
+- id: mc-igu-alhartem
+  title: Alhartem (Letra Corrigida)
+  artists: [mc-igu]
+  credit: Mc Igu
+  scene: world
+  year: 2018
+  youtube: ruYneqvCn8s
+  youtubeChannel: Saving Tracks
+  officialUpload: false
+  note: 'TrollatorBR 2021 年的清单里排第 6，12.6。Saving Tracks 2018 年 6 月 28 日重传，原发布时间不详。'
+  sources:
+    - { title: 'YouTube – Saving Tracks：Mc Igu - Alhartem (Letra Corrigida)（2018-06-28 上传）', url: 'https://www.youtube.com/watch?v=ruYneqvCn8s' }
+    - { title: 'YouTube – TrollatorBR：\"TOP 10\" Versos Mais Rápidos do Mc Igu（2021-04-26）', url: 'https://www.youtube.com/watch?v=Xkdt6sdQL7s' }
+- id: mc-igu-prazer-terror-dos-modinhas
+  title: Prazer, Terror dos Modinhas
+  artists: [mc-igu]
+  credit: Mc Igu
+  scene: world
+  year: 2018
+  youtube: 9qEZdN5TXvA
+  youtubeChannel: Saving Tracks
+  officialUpload: false
+  note: 'TrollatorBR 2021 年的清单里排第 8，12。Saving Tracks 2018 年 12 月 11 日重传，原发布时间不详。'
+  sources:
+    - { title: 'YouTube – Saving Tracks：Mc Igu - Prazer, Terror dos Modinhas（2018-12-11 上传）', url: 'https://www.youtube.com/watch?v=9qEZdN5TXvA' }
+    - { title: 'YouTube – TrollatorBR：\"TOP 10\" Versos Mais Rápidos do Mc Igu（2021-04-26）', url: 'https://www.youtube.com/watch?v=Xkdt6sdQL7s' }
+- id: mc-igu-todos-os-bonde-juminai
+  title: TODOS os Bonde Juminai
+  artists: [mc-igu]
+  credit: Mc Igu
+  scene: world
+  year: 2019
+  youtube: hSVgGzZ-R30
+  youtubeChannel: Saving Tracks
+  officialUpload: false
+  note: '标题的意思是"Juminai 全员"。Saving Tracks 2019 年 9 月 21 日重传，原发布时间不详。'
+  sources:
+    - { title: 'YouTube – Saving Tracks：Mc Igu - TODOS os Bonde Juminai（2019-09-21 上传）', url: 'https://www.youtube.com/watch?v=hSVgGzZ-R30' }
+- id: authentic-rcthahazard
+  title: Authentic
+  artists: [mc-igu]
+  credit: RcThaHazard ft. Mista Pompeo, Mc Igu e Skalli
+  scene: world
+  year: 2020
+  youtube: gPF6fD6cJ7U
+  youtubeChannel: Saving Tracks
+  officialUpload: false
+  note: 'MC Igu 客串。Saving Tracks 2020 年 11 月 5 日重传，原发布时间不详。'
+  sources:
+    - { title: 'YouTube – Saving Tracks：RcThaHazard - Authentic (Feat. Mista Pompeo, Mc Igu e Skalli)（2020-11-05 上传）', url: 'https://www.youtube.com/watch?v=gPF6fD6cJ7U' }
