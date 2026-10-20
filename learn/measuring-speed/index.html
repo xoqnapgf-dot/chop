@@ -1,0 +1,233 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>
+      // 只在手机上从主屏幕图标打开、或在安卓 App 里打开时，按设备宽度固定比例，不能缩放；
+      // 普通浏览器里（手机和电脑）照常可以缩放
+      (() => {
+        const app = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true || / CHOPApp\//.test(navigator.userAgent);
+        if (!app || !matchMedia('(pointer: coarse)').matches) return;
+        document.documentElement.classList.add('app-mode');
+        document.querySelector('meta[name=viewport]').content = 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no';
+        // iOS 不认 user-scalable=no，双指缩放要单独拦
+        document.addEventListener('gesturestart', (e) => e.preventDefault());
+      })();
+    </script><title>语速怎么测？数据口径说明 · CHOP/ 快嘴档案馆</title><meta name="description" content="为什么网上的&quot;每秒几个音节&quot;经常对不上，这些数字该怎么看。"><link rel="canonical" href="https://chop.wuaze.com/learn/measuring-speed/"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"><link rel="manifest" href="/manifest.webmanifest"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="CHOP/"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="sitemap" href="/sitemap-index.xml"><meta name="theme-color" content="#0a0807" media="(prefers-color-scheme: dark)"><meta name="theme-color" content="#f5efe4" media="(prefers-color-scheme: light)"><meta property="og:type" content="website"><meta property="og:site_name" content="CHOP/ 快嘴档案馆"><meta property="og:title" content="语速怎么测？数据口径说明 · CHOP/ 快嘴档案馆"><meta property="og:description" content="为什么网上的&quot;每秒几个音节&quot;经常对不上，这些数字该怎么看。"><meta name="twitter:card" content="summary"><!-- 首帧前确定主题，避免闪烁 --><script>
+      (function () {
+        var t;
+        try {
+          t = localStorage.getItem('theme');
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.dataset.theme = t;
+      })();
+    </script><link rel="stylesheet" href="/_astro/Base.D2IyzwtW.css"><style>.lf[data-astro-cid-kaqs5r2j]{border-top:3px solid var(--accent)}.lf-cap[data-astro-cid-kaqs5r2j]{font-family:var(--font-display);color:var(--ink);font-size:1.05rem;font-weight:600}.tier[data-astro-cid-kaqs5r2j]{border:1px solid var(--line);background:color-mix(in oklab, var(--accent) calc(var(--lv) * 10%), var(--surface));margin-left:calc((2 - var(--lv)) * .9rem);border-radius:14px;grid-template-columns:4.2rem minmax(0,1fr) auto;align-items:center;gap:.9rem;padding:.7rem .9rem;display:grid}.tier-name[data-astro-cid-kaqs5r2j]{font-family:var(--font-display);color:var(--ink);font-size:1.1rem;font-weight:700}.meter[data-astro-cid-kaqs5r2j]{gap:3px;display:flex}.meter[data-astro-cid-kaqs5r2j] i[data-astro-cid-kaqs5r2j]{background:var(--line);border-radius:3px;width:.55rem;height:1.1rem}.meter[data-astro-cid-kaqs5r2j] i[data-astro-cid-kaqs5r2j].on{background:var(--accent)}.road[data-astro-cid-kaqs5r2j]{border-left:2px solid var(--line);gap:1rem;padding-left:1.1rem;display:grid}.road[data-astro-cid-kaqs5r2j] li[data-astro-cid-kaqs5r2j]{overflow-wrap:anywhere;position:relative}.road[data-astro-cid-kaqs5r2j] .dot[data-astro-cid-kaqs5r2j]{background:var(--accent);width:10px;height:10px;box-shadow:0 0 0 3px var(--surface);border-radius:999px;position:absolute;top:.3rem;left:calc(-1.1rem - 6px)}@media (width>=768px){.road[data-astro-cid-kaqs5r2j]{border-left:0;border-top:2px solid var(--line);grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:1.5rem 1rem;padding-top:1.1rem;padding-left:0}.road[data-astro-cid-kaqs5r2j] .dot[data-astro-cid-kaqs5r2j]{top:calc(-1.1rem - 6px);left:0}}.win[data-astro-cid-kaqs5r2j]{grid-template-columns:3rem minmax(0,1fr) 5.5rem;align-items:center;gap:.4rem .8rem;display:grid}.track[data-astro-cid-kaqs5r2j]{align-items:center;gap:.5rem;height:1.2rem;display:flex;position:relative}.track[data-astro-cid-kaqs5r2j] i[data-astro-cid-kaqs5r2j]{height:.7rem;width:var(--w);background:var(--accent);border-radius:999px;display:block}.track[data-astro-cid-kaqs5r2j] b[data-astro-cid-kaqs5r2j]{font-family:var(--font-mono);color:var(--ink-3);white-space:nowrap;font-size:.8125rem;font-weight:500}.gbar[data-astro-cid-kaqs5r2j]{grid-template-columns:3.6rem 6.5rem minmax(0,1fr) 2.8rem;align-items:center;gap:.6rem;display:grid}@media (width<=480px){.gbar[data-astro-cid-kaqs5r2j]{grid-template-columns:3.2rem 5.2rem minmax(0,1fr) 2.6rem;gap:.4rem}}.bar[data-astro-cid-kaqs5r2j] i[data-astro-cid-kaqs5r2j],.key[data-astro-cid-kaqs5r2j]{background:var(--accent);border-radius:0 4px 4px 0;height:.75rem;display:block}.bar[data-astro-cid-kaqs5r2j] i[data-astro-cid-kaqs5r2j]{width:var(--w)}.bar[data-astro-cid-kaqs5r2j] i[data-astro-cid-kaqs5r2j].no,.key[data-astro-cid-kaqs5r2j].no{background:repeating-linear-gradient(135deg, transparent 0 3px, color-mix(in oklab, var(--accent) 55%, transparent) 3px 5px);border:1.5px solid var(--accent)}.key[data-astro-cid-kaqs5r2j]{border-radius:3px;width:1.2rem}
+</style><link rel="stylesheet" href="/_astro/_slug_.MR6H8CVZ.css"><script type="module" src="/_astro/page.CMFgH77u.js"></script></head><body><a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] btn btn-accent">跳到正文</a><header class="site-header sticky top-0 z-50" data-astro-cid-nen7h5rs><div class="container-x flex h-16 items-center gap-6" data-astro-cid-nen7h5rs><a href="/" class="text-lg" aria-label="CHOP/ 首页" data-astro-cid-nen7h5rs><span class="inline-flex items-center gap-2 font-display font-bold tracking-tight" data-astro-cid-f7espo7c><span class="logo-bars" aria-hidden="true" data-astro-cid-f7espo7c><i style="--h:0.45;--i:0" data-astro-cid-f7espo7c></i><i style="--h:0.8;--i:1" data-astro-cid-f7espo7c></i><i style="--h:1;--i:2" data-astro-cid-f7espo7c></i><i style="--h:0.65;--i:3" data-astro-cid-f7espo7c></i><i style="--h:0.3;--i:4" data-astro-cid-f7espo7c></i></span><span data-astro-cid-f7espo7c>CHOP<span class="text-accent-text" data-astro-cid-f7espo7c>/</span></span></span></a><nav class="hidden flex-1 lg:block" aria-label="主导航" data-astro-cid-nen7h5rs><ul class="flex items-center gap-1" data-astro-cid-nen7h5rs><li data-astro-cid-nen7h5rs><a href="/china/" class="nav-link rounded-full px-3 py-1.5 text-sm text-ink-2 transition hover:text-ink" data-nav="china/" data-astro-cid-nen7h5rs>中国区</a></li><li data-astro-cid-nen7h5rs><a href="/world/" class="nav-link rounded-full px-3 py-1.5 text-sm text-ink-2 transition hover:text-ink" data-nav="world/" data-astro-cid-nen7h5rs>世界</a></li><li data-astro-cid-nen7h5rs><a href="/choppers/" class="nav-link rounded-full px-3 py-1.5 text-sm text-ink-2 transition hover:text-ink" data-nav="choppers/" data-astro-cid-nen7h5rs>人物</a></li><li data-astro-cid-nen7h5rs><a href="/tracks/" class="nav-link rounded-full px-3 py-1.5 text-sm text-ink-2 transition hover:text-ink" data-nav="tracks/" data-astro-cid-nen7h5rs>曲目</a></li><li data-astro-cid-nen7h5rs><a href="/series/" class="nav-link rounded-full px-3 py-1.5 text-sm text-ink-2 transition hover:text-ink" data-nav="series/" data-astro-cid-nen7h5rs>系列</a></li><li data-astro-cid-nen7h5rs><a href="/timeline/" class="nav-link rounded-full px-3 py-1.5 text-sm text-ink-2 transition hover:text-ink" data-nav="timeline/" data-astro-cid-nen7h5rs>时间线</a></li><li data-astro-cid-nen7h5rs><a href="/learn/" class="nav-link rounded-full px-3 py-1.5 text-sm text-ink-2 transition hover:text-ink is-active" data-nav="learn/" data-astro-cid-nen7h5rs>百科</a></li><li data-astro-cid-nen7h5rs><a href="/lab/" class="nav-link rounded-full px-3 py-1.5 text-sm text-ink-2 transition hover:text-ink" data-nav="lab/" data-astro-cid-nen7h5rs>实验室</a></li></ul></nav><div class="ml-auto flex items-center gap-2 lg:ml-0" data-astro-cid-nen7h5rs><a href="/search/" class="hidden items-center gap-2 rounded-full border border-line px-3 py-1.5 text-sm text-ink-3 transition hover:border-line-strong hover:text-ink sm:inline-flex" data-astro-cid-nen7h5rs><svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" data-astro-cid-nen7h5rs><circle cx="11" cy="11" r="7" data-astro-cid-nen7h5rs></circle><path d="m20 20-3.5-3.5" data-astro-cid-nen7h5rs></path></svg>搜索<kbd class="font-mono text-xs text-ink-3" data-astro-cid-nen7h5rs>/</kbd></a><a class="translate-btn grid size-9 place-items-center rounded-full border border-line text-ink-2 transition hover:border-line-strong hover:text-ink" aria-label="Translate this site（Google 翻译，翻页后保持翻译）" title="Translate / 翻译" hidden><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h8M8 3v2M10.5 5c-.8 3.6-3.2 6.6-6.5 8"></path><path d="M5.5 8.5c1.2 2 3 3.6 5 4.5"></path><path d="m12.5 21 4-9 4 9M14 17.5h5"></path></svg></a><script type="module">function e(){let{protocol:e,hostname:t,pathname:n,search:r,hash:i}=location;if(e!==`https:`||t===`localhost`||t.endsWith(`.local`)||/^[\d.]+$/.test(t)||!t.includes(`.`)||/ CHOPApp\//.test(navigator.userAgent)||t.endsWith(`.translate.goog`))return;let a=(navigator.language||`en`).toLowerCase(),o=a.startsWith(`zh`)?`en`:a.split(`-`)[0],s=t.replace(/-/g,`--`).replace(/\./g,`-`)+`.translate.goog`,c=new URLSearchParams(r);c.set(`_x_tr_sl`,`zh-CN`),c.set(`_x_tr_tl`,o),c.set(`_x_tr_hl`,o),document.querySelectorAll(`.translate-btn`).forEach(e=>{e.href=`https://${s}${n}?${c}${i}`,e.hidden=!1})}e();</script><button type="button" class="theme-toggle grid size-9 place-items-center rounded-full border border-line text-ink-2 transition hover:border-line-strong hover:text-ink" aria-label="切换亮色/暗色主题" data-astro-cid-l6lhmie6><svg class="sun size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" data-astro-cid-l6lhmie6><circle cx="12" cy="12" r="4" data-astro-cid-l6lhmie6></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" data-astro-cid-l6lhmie6></path></svg><svg class="moon size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-l6lhmie6><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" data-astro-cid-l6lhmie6></path></svg></button><script type="module">function e(){document.querySelectorAll(`.theme-toggle`).forEach(e=>{e.onclick=()=>{let e=document.documentElement.dataset.theme===`dark`?`light`:`dark`;document.documentElement.dataset.theme=e;try{localStorage.setItem(`theme`,e)}catch{}}})}e();</script><button type="button" class="menu-btn grid size-9 place-items-center rounded-full border border-line lg:hidden" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-nav" data-astro-cid-nen7h5rs><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" data-astro-cid-nen7h5rs><path d="M4 7h16M4 12h16M4 17h10" data-astro-cid-nen7h5rs></path></svg></button></div></div><nav id="mobile-nav" class="mobile-nav lg:hidden" aria-label="移动端导航" hidden data-astro-cid-nen7h5rs><ul class="container-x grid grid-cols-2 gap-1 pb-5 pt-2" data-astro-cid-nen7h5rs><li data-astro-cid-nen7h5rs><a href="/china/" class="flex items-baseline justify-between rounded-xl px-3 py-3 text-lg font-display" data-nav="china/" data-astro-cid-nen7h5rs>中国区<span class="eyebrow" data-astro-cid-nen7h5rs>China</span></a></li><li data-astro-cid-nen7h5rs><a href="/world/" class="flex items-baseline justify-between rounded-xl px-3 py-3 text-lg font-display" data-nav="world/" data-astro-cid-nen7h5rs>世界<span class="eyebrow" data-astro-cid-nen7h5rs>World</span></a></li><li data-astro-cid-nen7h5rs><a href="/choppers/" class="flex items-baseline justify-between rounded-xl px-3 py-3 text-lg font-display" data-nav="choppers/" data-astro-cid-nen7h5rs>人物<span class="eyebrow" data-astro-cid-nen7h5rs>People</span></a></li><li data-astro-cid-nen7h5rs><a href="/tracks/" class="flex items-baseline justify-between rounded-xl px-3 py-3 text-lg font-display" data-nav="tracks/" data-astro-cid-nen7h5rs>曲目<span class="eyebrow" data-astro-cid-nen7h5rs>Tracks</span></a></li><li data-astro-cid-nen7h5rs><a href="/series/" class="flex items-baseline justify-between rounded-xl px-3 py-3 text-lg font-display" data-nav="series/" data-astro-cid-nen7h5rs>系列<span class="eyebrow" data-astro-cid-nen7h5rs>Series</span></a></li><li data-astro-cid-nen7h5rs><a href="/timeline/" class="flex items-baseline justify-between rounded-xl px-3 py-3 text-lg font-display" data-nav="timeline/" data-astro-cid-nen7h5rs>时间线<span class="eyebrow" data-astro-cid-nen7h5rs>Timeline</span></a></li><li data-astro-cid-nen7h5rs><a href="/learn/" class="flex items-baseline justify-between rounded-xl px-3 py-3 text-lg font-display" data-nav="learn/" data-astro-cid-nen7h5rs>百科<span class="eyebrow" data-astro-cid-nen7h5rs>Learn</span></a></li><li data-astro-cid-nen7h5rs><a href="/lab/" class="flex items-baseline justify-between rounded-xl px-3 py-3 text-lg font-display" data-nav="lab/" data-astro-cid-nen7h5rs>实验室<span class="eyebrow" data-astro-cid-nen7h5rs>Lab</span></a></li><li data-astro-cid-nen7h5rs><a href="/search/" class="flex items-baseline justify-between rounded-xl px-3 py-3 text-lg font-display" data-astro-cid-nen7h5rs>搜索 <span class="eyebrow" data-astro-cid-nen7h5rs>Search</span></a></li></ul></nav></header><script type="module">function e(e=``){return`${`/`.replace(/\/$/,``)}/${e.replace(/^\//,``)}`}var t=location.pathname;document.querySelectorAll(`#mobile-nav [data-nav]`).forEach(n=>{t.startsWith(e(n.dataset.nav))&&n.classList.add(`is-active`)});var n=document.querySelector(`.menu-btn`),r=document.getElementById(`mobile-nav`),i=e=>{n&&r&&(r.hidden=!e,n.setAttribute(`aria-expanded`,String(e)))};n?.addEventListener(`click`,()=>i(!!r?.hidden)),document.addEventListener(`keydown`,t=>{t.key===`Escape`&&i(!1);let n=t.target;t.key===`/`&&!/INPUT|TEXTAREA|SELECT/.test(n.tagName)&&!n.isContentEditable&&(t.preventDefault(),location.href=e(`search/`))});</script><main id="main" data-pagefind-body><div class="read-progress" aria-hidden="true" data-astro-cid-yuqcs7zz><i data-astro-cid-yuqcs7zz></i></div><article class="container-x pt-14 md:pt-20" data-hue="plum" data-astro-cid-yuqcs7zz><header class="max-w-3xl" data-astro-cid-yuqcs7zz><a href="/learn/" class="eyebrow link-u hover:text-ink" data-astro-cid-yuqcs7zz>← 百科</a><div class="mt-5 flex flex-wrap items-center gap-2" data-astro-cid-yuqcs7zz><span class="chip" data-astro-cid-yuqcs7zz>方法论</span><span class="chip font-mono" data-astro-cid-yuqcs7zz>8 节</span><span class="chip font-mono" data-astro-cid-yuqcs7zz>约 10 分钟</span></div><h1 class="mt-4 text-4xl font-bold leading-tight md:text-6xl" data-astro-cid-yuqcs7zz>语速怎么测？数据口径说明</h1><p class="mt-5 text-lg text-ink-2" data-astro-cid-yuqcs7zz>为什么网上的“每秒几个音节”经常对不上，这些数字该怎么看。</p></header><dl class="stat-row mt-10 grid gap-3 sm:grid-cols-3" aria-label="数字速览" data-astro-cid-yuqcs7zz><div class="stat card p-5" data-astro-cid-yuqcs7zz><dd class="stat-n font-display tabular-nums" data-astro-cid-yuqcs7zz>21<small data-astro-cid-yuqcs7zz>SPS</small></dd><dt class="mt-2 text-sm leading-snug text-ink-2" data-astro-cid-yuqcs7zz>Crucified 的 1 秒爆发：21 ÷ 1.000</dt></div><div class="stat card p-5" data-astro-cid-yuqcs7zz><dd class="stat-n font-display tabular-nums" data-astro-cid-yuqcs7zz>10.87<small data-astro-cid-yuqcs7zz>SPS</small></dd><dt class="mt-2 text-sm leading-snug text-ink-2" data-astro-cid-yuqcs7zz>Twista 的 55 秒整段：598 ÷ 55</dt></div><div class="stat card p-5" data-astro-cid-yuqcs7zz><dd class="stat-n font-display tabular-nums" data-astro-cid-yuqcs7zz>28.9→18<small data-astro-cid-yuqcs7zz>SPS</small></dd><dt class="mt-2 text-sm leading-snug text-ink-2" data-astro-cid-yuqcs7zz>《Power Up》的数字被 SPS 团队更正</dt></div></dl><div class="mt-4 grid gap-4 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)]" data-astro-cid-yuqcs7zz><figure class="lf card p-5 sm:p-7" data-astro-cid-kaqs5r2j><div data-astro-cid-kaqs5r2j><figcaption class="lf-cap" data-astro-cid-kaqs5r2j>同样是“快”，窗口一长，数字就掉</figcaption><div class="mt-5 grid gap-4" data-astro-cid-kaqs5r2j><div class="win" data-astro-cid-kaqs5r2j><span class="text-sm font-semibold text-ink" data-astro-cid-kaqs5r2j>爆发</span><span class="track" title="爆发：1 秒" data-astro-cid-kaqs5r2j><i style="--w:2.5%" data-astro-cid-kaqs5r2j></i><b data-astro-cid-kaqs5r2j>1 秒</b></span><span class="text-right font-mono text-ink" data-astro-cid-kaqs5r2j><strong class="text-lg" data-astro-cid-kaqs5r2j>21</strong> <span class="text-xs text-ink-3" data-astro-cid-kaqs5r2j>SPS</span></span><span class="col-span-full -mt-2 text-xs text-ink-3 sm:col-start-2" data-astro-cid-kaqs5r2j>Crucified《Infinite Choppers》21 ÷ 1.000</span></div><div class="win" data-astro-cid-kaqs5r2j><span class="text-sm font-semibold text-ink" data-astro-cid-kaqs5r2j>短段</span><span class="track" title="短段：5 秒" data-astro-cid-kaqs5r2j><i style="--w:9.090909090909092%" data-astro-cid-kaqs5r2j></i><b data-astro-cid-kaqs5r2j>5 秒</b></span><span class="text-right font-mono text-ink" data-astro-cid-kaqs5r2j><strong class="text-lg" data-astro-cid-kaqs5r2j>≈10</strong> <span class="text-xs text-ink-3" data-astro-cid-kaqs5r2j>字/秒</span></span><span class="col-span-full -mt-2 text-xs text-ink-3 sm:col-start-2" data-astro-cid-kaqs5r2j>法老《健将》一段 5 秒的快嘴</span></div><div class="win" data-astro-cid-kaqs5r2j><span class="text-sm font-semibold text-ink" data-astro-cid-kaqs5r2j>整段</span><span class="track" title="整段：55 秒" data-astro-cid-kaqs5r2j><i style="--w:100%" data-astro-cid-kaqs5r2j></i><b data-astro-cid-kaqs5r2j>55 秒</b></span><span class="text-right font-mono text-ink" data-astro-cid-kaqs5r2j><strong class="text-lg" data-astro-cid-kaqs5r2j>10.87</strong> <span class="text-xs text-ink-3" data-astro-cid-kaqs5r2j>SPS</span></span><span class="col-span-full -mt-2 text-xs text-ink-3 sm:col-start-2" data-astro-cid-kaqs5r2j>Twista 1992 年吉尼斯 598 ÷ 55</span></div></div><p class="mt-4 text-xs text-ink-3" data-astro-cid-kaqs5r2j>条的长度 = 计时窗口（按 55 秒等比例），同窗口的数字才能直接比</p></div></figure><aside class="kp card p-5 sm:p-7" data-astro-cid-yuqcs7zz><p class="kp-cap" data-astro-cid-yuqcs7zz>三句话看懂</p><ol class="mt-4 grid gap-3" data-astro-cid-yuqcs7zz><li class="grid grid-cols-[2rem_1fr] gap-3" data-astro-cid-yuqcs7zz><span class="kp-n" data-astro-cid-yuqcs7zz>1</span><span class="text-[0.95rem] leading-relaxed text-ink" data-astro-cid-yuqcs7zz>每个数字都要写出算式：音节数 ÷ 秒数。</span></li><li class="grid grid-cols-[2rem_1fr] gap-3" data-astro-cid-yuqcs7zz><span class="kp-n" data-astro-cid-yuqcs7zz>2</span><span class="text-[0.95rem] leading-relaxed text-ink" data-astro-cid-yuqcs7zz>先看窗口：1 秒爆发、几秒短段、整段平均，差出一倍很正常。</span></li><li class="grid grid-cols-[2rem_1fr] gap-3" data-astro-cid-yuqcs7zz><span class="kp-n" data-astro-cid-yuqcs7zz>3</span><span class="text-[0.95rem] leading-relaxed text-ink" data-astro-cid-yuqcs7zz>早期榜单数字普遍虚高，要看测算方法和有没有加速。</span></li></ol></aside></div><div class="mt-14 grid gap-12 lg:grid-cols-[minmax(0,1fr)_240px]" data-astro-cid-yuqcs7zz><div class="prose-chop max-w-3xl min-w-0" data-astro-cid-yuqcs7zz><h2 id="公式">公式</h2>
+<p><strong>语速（音节/秒）= 音节数 ÷ 秒数</strong></p>
+<p>中文按“字/秒”计算。汉字基本一字一音节，所以可以和英文粗略对比；但英文单词的音节数要逐词数，不能拿单词数直接比。</p>
+<h2 id="最重要的一件事测了多长">最重要的一件事：测了多长</h2>
+<p>同一个人，<strong>1 秒的爆发速度</strong>可以是<strong>整段平均速度</strong>的两倍。所以每个数字都要标测量窗口，只在同一个窗口里比较：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>窗口</th>
+<th>时长</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>爆发</strong></td>
+<td>约 0.7–2 秒（满 1 秒含金量最高）</td>
+<td>Crucified 在 Infinite Choppers 里 1.000 秒唱 21 个音节 = 21 SPS</td>
+</tr>
+<tr>
+<td><strong>短段</strong></td>
+<td>3–15 秒</td>
+<td>法老《健将》中一段 5 秒的快嘴，约 10 字/秒</td>
+</tr>
+<tr>
+<td><strong>整段平均</strong></td>
+<td>15 秒以上</td>
+<td>Twista 1992 年 55 秒 598 个音节 ≈ 10.87</td>
+</tr>
+</tbody>
+</table></div>
+<p>所以 Crucified 的 21 和 Twista 的 10.87 <strong>不能</strong>直接说“前者快一倍”：一个是 1 秒峰值，一个是近一分钟的平均。</p>
+<h2 id="sps-社区怎么测">SPS 社区怎么测</h2>
+<p>海外有一个专门测语速的圈子，叫 <strong>SPS 社区</strong>（SPS = syllables per second，每秒音节数），主要在 YouTube 和 Discord 上活动。他们维护的 wiki 里能看到几条规则和习惯：</p>
+<ol>
+<li><strong>写出算式</strong>：例如“21/1.000”表示 1.000 秒内 21 个音节；“23/1.263”约等于 18.21 SPS。</li>
+<li><strong>分窗口</strong>：常见的有“1 秒爆发”和“10 秒”两种口径，例如“10 秒 134 个音节”= 13.4 SPS。</li>
+<li><strong>剪辑不算</strong>：如果爆发段落里有剪辑拼接（cut），这个数就作废。Crucified 的《Try Me》曾被算成 21 SPS，后来发现有剪辑，被撤销了。</li>
+<li><strong>会更正</strong>：Crucified 的《Power Up》2017 年被算成 28.9 SPS，后来 SPS 团队更正为 18 SPS。</li>
+<li><strong>不下模糊结论</strong>：规则里写明，不清楚的时候不要说某人是“最快的”，要写清具体数值和算式。</li>
+</ol>
+<h2 id="nahdah-的-top-150美洲一派的规则">NahDah 的 Top 150：美洲一派的规则</h2>
+<p>NahDah Vebb 在 YouTube 上做“最快说唱歌手 Top 150”榜单，属于美洲一派的测速圈。他早期的榜单错误很多，也有凭想象给的数字；2022 年 7 月重做、2023 年 1 月发布的版本开始系统化，附了三份公开文档：方法说明、除名名单，以及 150 条逐条测算（每条都有 1 秒片段录音和音节拆分）。规则里值得记住的几条：</p>
+<ol>
+<li><strong>数“唱出来的”音节，不数“写出来的”</strong>：同一个 fire，可以唱成一个音节（fah），也可以唱成两个（fi-yah），要听实际怎么唱。</li>
+<li><strong>窗口满 1 秒</strong>：15 ÷ 1.000 = 15 SPS，14 ÷ 0.933 也约等于 15 SPS，但后者实际只唱了 14 个音节。满 1 秒不是圈内公认的标准，但含金量最高；圈里一般要求至少 0.7 秒，片段太短，几个弹舌音就能把数字抬上去，容易不被认可。</li>
+<li><strong>不用 10 秒窗口</strong>：13–14 SPS 以上的爆发很少能持续 3–4 秒，10 秒窗口会被慢段、停顿和别的 take 稀释。同样是 10 秒 130 个音节，一个人可能全程 13，另一个人可能峰值 16、其余时间放慢。</li>
+<li><strong>只收正式录音室歌曲</strong>：清唱、现场、吉尼斯挑战都不算。所以 Outsider 以前靠纪录挑战排得很高，2023 版换成了他最快的正式歌曲《주인공》，14.95 SPS；Rebel XD 从上一版的第 1 名变成落榜：他的速度只出现在纪录挑战里，而且靠大量无意义的弹舌音（西班牙语那种 “derrr” 卷舌）撑起来。</li>
+<li><strong>加速、拼接一律除名</strong>：最快那首被发现或高度怀疑加速，或者把补录的句子拼成“一口气”，这个人就整体除名，其他正常的歌也不算。</li>
+<li><strong>承认误差</strong>：零点几秒就能改变名次，所以榜单写明结果是“相对的”。Crucified 自称《Onion Chopper》是 22 SPS，NahDah 团队“非常接近但没能核实”，最后写的是 22 个音节 / 1.043 秒 ≈ 21.09。</li>
+</ol>
+<p>把这 150 条逐条复算一遍，只有 1 条算式对不上。榜单本身只比 1 秒爆发，和 SPS wiki 一样，<strong>只说明有多快，不说明谁是更好的 chopper</strong>：SPS 不等于 chop。</p>
+<p>完整的规则、除名名单和问答，做成了卡片放在<a href="../../lab/#rules">速度实验室</a>。</p>
+<h2 id="早期的数字为什么虚高">早期的数字为什么虚高</h2>
+<p>先说结论：<strong>虚高主要集中在最顶端的那几个极端数字</strong>，比如 27、28、30 以上这种。大多数中段的数字，还有近几年的测算，不同榜单之间其实差得不多。</p>
+<h3 id="顶端差了一大截">顶端：差了一大截</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>说法</th>
+<th>早期</th>
+<th>后来</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Crucified 最快</td>
+<td>《Undaground Choppers》37 ÷ 1.46 ≈ 25.3（NahDah 2017 版第 3）；流传的《Power Up》28.9 早已被推翻</td>
+<td>《Onion Chopper》22 / 1.043 ≈ 21.09（NahDah 2023 版）</td>
+</tr>
+<tr>
+<td>Sabotahe</td>
+<td>《Kargado》34 ÷ 1.24 ≈ 27.4（NahDah 2017 版第 1）</td>
+<td>《Paslangin 5》22 / 1.047 ≈ 21.01（NahDah 2023 版）</td>
+</tr>
+<tr>
+<td>The Jackal</td>
+<td>《Discord Choppers》27 ÷ 1.02 ≈ 26.5（NahDah 2017 版第 2）</td>
+<td>《Charlie Sheen Remix》16 ÷ 1.048 ≈ 15.27（NahDah 2023 版第 29）</td>
+</tr>
+</tbody>
+</table></div>
+<figure class="mdfig" aria-label="NahDah 2017 版与 2023 版的最快数字对比">
+<figcaption>同一个人，两版榜单的最快数字（SPS）</figcaption>
+<p class="mf-key"><span><i class="mf-ghost"></i>2017 版</span><span><i></i>2023 版</span></p>
+<div class="mf-row"><span class="mf-l">Crucified</span><span class="mf-bar"><i class="mf-ghost" style="--w:84.3%"></i><i style="--w:70.3%"></i></span><b>25.3 → 21.09</b></div>
+<div class="mf-row"><span class="mf-l">Sabotahe</span><span class="mf-bar"><i class="mf-ghost" style="--w:91.3%"></i><i style="--w:70%"></i></span><b>27.4 → 21.01</b></div>
+<div class="mf-row"><span class="mf-l">The Jackal</span><span class="mf-bar"><i class="mf-ghost" style="--w:88.3%"></i><i style="--w:50.9%"></i></span><b>26.5 → 15.27</b></div>
+</figure>
+<p>原因主要有这几个：</p>
+<ol>
+<li><strong>按单词或书面歌词算</strong>：圈里有一种说法，早年很多数字是拿歌词里的单词数（或者照着歌词数出来的音节）除以时间，并没有人真的一个音节一个音节去听。NahDah 后来的方法说明专门讲了这一点：单词长短不一，同一个词唱法不同音节数也不同，只看书面歌词不可靠。</li>
+<li><strong>窗口太短</strong>：不满 1 秒就除，小数会把结果放大。</li>
+<li><strong>把弹舌音算成音节</strong>。</li>
+<li><strong>没有放慢核对</strong>：后来的做法是放到 0.1–0.2 倍速，逐个音节确认。</li>
+</ol>
+<h3 id="中段前后差不多">中段：前后差不多</h3>
+<p>拿 NahDah 的 2021 版和 2023 版逐人对比，很多人用的是<strong>同一首歌</strong>，两次各自计时，数字几乎一样：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>人物</th>
+<th>歌</th>
+<th>2021 版</th>
+<th>2023 版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Twisted Insane</td>
+<td>Dome Split</td>
+<td>第 14 · 16 ÷ 1.032 ≈ 15.50</td>
+<td>第 32 · 16 ÷ 1.050 ≈ 15.24</td>
+</tr>
+<tr>
+<td>K-Fix</td>
+<td>Our Time</td>
+<td>第 15 · 16 ÷ 1.038 ≈ 15.44</td>
+<td>第 22 · 15.60</td>
+</tr>
+<tr>
+<td>Watsky</td>
+<td>GOAT Fast Rap</td>
+<td>第 18 · 16 ÷ 1.040 ≈ 15.38</td>
+<td>第 24 · 15.47</td>
+</tr>
+<tr>
+<td>SPLXT</td>
+<td>Undaground Choppers 3</td>
+<td>第 17 · 16 ÷ 1.039 ≈ 15.39</td>
+<td>第 26 · 15.34</td>
+</tr>
+<tr>
+<td>Kardiyak</td>
+<td>Illest Choppers 4</td>
+<td>第 19 · 16 ÷ 1.051 ≈ 15.22</td>
+<td>第 28 · 15.28</td>
+</tr>
+<tr>
+<td>DNA Tru Lyricist</td>
+<td>Lightspeed Chopper 3</td>
+<td>第 11 · 17 ÷ 1.045 ≈ 16.26</td>
+<td>第 9 · 19 ÷ 1.070 ≈ 17.76</td>
+</tr>
+</tbody>
+</table></div>
+<p>前五行两次都数出 16 个音节，差距都在 0.3 以内。DNA 这首是例外：2021 版少数了 2 个音节，2017 版和 2023 版都是约 17.7。</p>
+<p>名次有些往后挪，主要是因为 2023 版收进了更多新人、新歌，不是这些人的数字变了。2021 到 2023 的大变动几乎都来自<strong>规则</strong>：纪录挑战不再算（Rebel XD 从第 1 落榜，Outsider 从第 13 掉到第 54）、加速的被除名（Mizury Mize、Leach，Interchopper 换歌），以及新歌上榜（Crucified 的《Onion Chopper》、Idylll 的《Tha Shade》）。</p>
+<p>方法跟上以后，准确度才上来。NahDah 本人后来把 2017、2021 版都标成了 outdated。中文圈里，2021 年前后 B 站开始有人系统地测：五里亭亭长做全球排行时，用 0.1–0.2 倍速逐个音节听，排除含弹舌音的歌，还在置顶评论里专门反驳了 Power Up 28.9、Nihilist 32.8 这两个流传最广的数字；石狐九和的《中文说唱快嘴测速素材库》从 2021 年做到 2024 年，给大量中文快嘴段落留了档。</p>
+<p>2023 版的分工写在 NahDah 自己的置顶评论里：主要是三个人，他自己、巴西的 TrollatorBR 和意大利的 dvagoh。他和 Trollator 把 200 多段爆发一段一段重新核对、裁剪；dvagoh 负责找歌、算数，也替榜上的艺人做联络。Dumanoid 和 Ruffian Rugged 帮着推荐快嘴，还让他们提前听测了没发布的歌；Idylll 和他一起设计视频版面，并做了片头伴奏。NahDah 说自己 2015 年起就在 SPS 圈子里。</p>
+<p>数字虽然不准，2017 年那版被搬到 B 站后，还是让很多中国听众第一次知道了 chop 和 SPS，2018 年那批专门练 chop 的新人不少就是这么入坑的。</p>
+<h2 id="中文的例子变调和加速">中文的例子：变调和加速</h2>
+<p>幼稚园杀手的人声经过变调处理，个别作品被质疑有后期加速。音高一变，就很难从录音判断原速，所以这类作品的数字都不采用。</p>
+<p>反过来，也别把玩笑当证据：赵辰龙 2022 年说过自己的快嘴“都是一个字一个字录好拼接在一起的”，那是否认自己是幼杀时的自嘲，他在电视舞台和直播里都现场唱过。判断能不能计入纪录，要看<strong>现场和原始录音</strong>，不要只看一句话。</p>
+<h2 id="为什么数字总对不上">为什么数字总对不上</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>原因</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>窗口不同</strong></td>
+<td>1 秒爆发 vs 5 秒短段 vs 整段平均（见上文）</td>
+</tr>
+<tr>
+<td><strong>计时起止点不同</strong></td>
+<td>从第一个音节算起，还是从小节线算起</td>
+</tr>
+<tr>
+<td><strong>计时差一点</strong></td>
+<td>Rap God 最快段落 157 个音节：Genius 计 16.3 秒（≈ 9.6），维基百科 Rap God 词条计 16.45 秒（≈ 9.54）</td>
+</tr>
+<tr>
+<td><strong>来源本身冲突</strong></td>
+<td>Outsider：一个词条写“超过 16”，另一个写“21”</td>
+</tr>
+<tr>
+<td><strong>拿 BPM 当语速</strong></td>
+<td>《饕餮》宣传写“演唱速度 332 BPM”，但 BPM 只是节拍，不是字数。实际要数字：快嘴段 128 字，赵辰龙在山东卫视现场 10 秒唱完，约 12.8 字/秒</td>
+</tr>
+<tr>
+<td><strong>拿过时的纪录当现行纪录</strong></td>
+<td>Twista 1992 年的吉尼斯纪录 1998 年就被打破；吉尼斯 2008 年以后不再认证新的“最快说唱”，详见《吉尼斯“最快说唱”纪录：谁真的拿过》</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="四级可信度标签">四级可信度标签</h2>
+<ul>
+<li><strong>已证实</strong>：有权威或至少两个独立来源，数字可以复算。</li>
+<li><strong>有争议</strong>：来源之间互相矛盾，或口径不清。</li>
+<li><strong>待核实</strong>：只有单一来源，或来源可信度一般（例如只有社区 wiki 的测算）。</li>
+<li><strong>已辟谣</strong>：被证明是错的，例如 Crucified《Power Up》的 28.9 SPS。</li>
+</ul>
+</div><nav class="hidden lg:block" aria-label="目录" data-astro-cid-yuqcs7zz><div class="sticky top-24" data-astro-cid-yuqcs7zz><p class="eyebrow mb-4" data-astro-cid-yuqcs7zz>目录</p><ul class="toc grid gap-2 border-l border-line text-sm" data-astro-cid-yuqcs7zz><li data-astro-cid-yuqcs7zz><a href="#公式" class="-ml-px block border-l border-transparent pl-4 text-ink-3 transition hover:border-ink hover:text-ink" data-toc="公式" data-astro-cid-yuqcs7zz>公式</a></li><li data-astro-cid-yuqcs7zz><a href="#最重要的一件事测了多长" class="-ml-px block border-l border-transparent pl-4 text-ink-3 transition hover:border-ink hover:text-ink" data-toc="最重要的一件事测了多长" data-astro-cid-yuqcs7zz>最重要的一件事：测了多长</a></li><li data-astro-cid-yuqcs7zz><a href="#sps-社区怎么测" class="-ml-px block border-l border-transparent pl-4 text-ink-3 transition hover:border-ink hover:text-ink" data-toc="sps-社区怎么测" data-astro-cid-yuqcs7zz>SPS 社区怎么测</a></li><li data-astro-cid-yuqcs7zz><a href="#nahdah-的-top-150美洲一派的规则" class="-ml-px block border-l border-transparent pl-4 text-ink-3 transition hover:border-ink hover:text-ink" data-toc="nahdah-的-top-150美洲一派的规则" data-astro-cid-yuqcs7zz>NahDah 的 Top 150：美洲一派的规则</a></li><li data-astro-cid-yuqcs7zz><a href="#早期的数字为什么虚高" class="-ml-px block border-l border-transparent pl-4 text-ink-3 transition hover:border-ink hover:text-ink" data-toc="早期的数字为什么虚高" data-astro-cid-yuqcs7zz>早期的数字为什么虚高</a></li><li data-astro-cid-yuqcs7zz><a href="#中文的例子变调和加速" class="-ml-px block border-l border-transparent pl-4 text-ink-3 transition hover:border-ink hover:text-ink" data-toc="中文的例子变调和加速" data-astro-cid-yuqcs7zz>中文的例子：变调和加速</a></li><li data-astro-cid-yuqcs7zz><a href="#为什么数字总对不上" class="-ml-px block border-l border-transparent pl-4 text-ink-3 transition hover:border-ink hover:text-ink" data-toc="为什么数字总对不上" data-astro-cid-yuqcs7zz>为什么数字总对不上</a></li><li data-astro-cid-yuqcs7zz><a href="#四级可信度标签" class="-ml-px block border-l border-transparent pl-4 text-ink-3 transition hover:border-ink hover:text-ink" data-toc="四级可信度标签" data-astro-cid-yuqcs7zz>四级可信度标签</a></li></ul></div></nav></div><div class="mt-16 max-w-3xl border-t border-line pt-10" data-astro-cid-yuqcs7zz><div class="sources"><p class="eyebrow mb-3">来源 · 18</p><ol class="grid gap-2"><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[1]</span><a href="https://en.wikipedia.org/wiki/Rap_God" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">Wikipedia – Rap God</span><span class="ml-2 font-mono text-xs text-ink-3">en.wikipedia.org ↗</span></a></li><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[2]</span><a href="https://en.wikipedia.org/wiki/Godzilla_(Eminem_song)" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">Wikipedia – Godzilla (Eminem song)</span><span class="ml-2 font-mono text-xs text-ink-3">en.wikipedia.org ↗</span></a></li><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[3]</span><a href="https://en.wikipedia.org/wiki/Outsider_(rapper)" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">Wikipedia – Outsider (rapper)</span><span class="ml-2 font-mono text-xs text-ink-3">en.wikipedia.org ↗</span></a></li><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[4]</span><a href="https://www.wanda.cn/2016/2016latest_1209/34181.html" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">万达 – 南征北战献唱《长城》推广曲（饕餮）</span><span class="ml-2 font-mono text-xs text-ink-3">wanda.cn ↗</span></a></li><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[5]</span><a href="https://sps-and-chopper-rap.fandom.com/wiki/Rules" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">SPS and Chopper Rap Wiki – Rules</span><span class="ml-2 font-mono text-xs text-ink-3">sps-and-chopper-rap.fandom.com ↗</span></a></li><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[6]</span><a href="https://www.youtube.com/watch?v=4SjqPAqjsWo" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">YouTube – NahDah Vebb：[2023] Top 150 Fastest Rappers in the World</span><span class="ml-2 font-mono text-xs text-ink-3">youtube.com ↗</span></a></li><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[7]</span><a href="https://docs.google.com/document/d/1zPWDPfnmmfRIuuskCmTMeTlWTjY9uc9NQ2nM3MU-mCU" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">NahDah Vebb – 测速方法 FAQ</span><span class="ml-2 font-mono text-xs text-ink-3">docs.google.com ↗</span></a></li><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[8]</span><a href="https://docs.google.com/document/d/1DfcPmT5YCWYwDRP-uyFMEthi9n7ctGRsK2C3QxiFJrA" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">NahDah Vebb – 除名说明</span><span class="ml-2 font-mono text-xs text-ink-3">docs.google.com ↗</span></a></li><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[9]</span><a href="https://docs.google.com/document/d/1inMqOs_9LQzq-AiatVcLJPOOYKkwP2cm0u8O0-RPTHA" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">NahDah Vebb – 150 条逐条测算</span><span class="ml-2 font-mono text-xs text-ink-3">docs.google.com ↗</span></a></li><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[10]</span><a href="https://www.bilibili.com/video/BV11x411L79b/" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">B站 – Fatality丶九头龙：世界最快速說唱歌手排行榜2017（NahDah 2017 版搬运）</span><span class="ml-2 font-mono text-xs text-ink-3">bilibili.com ↗</span></a></li><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[11]</span><a href="https://www.bilibili.com/video/BV1gZ4y1P7J3/" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">B站 – 五里亭亭长：全球rapper语速排行榜（2021）</span><span class="ml-2 font-mono text-xs text-ink-3">bilibili.com ↗</span></a></li><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[12]</span><a href="https://www.bilibili.com/video/BV14R4y177Jn/" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">B站 – 石狐九和：中文说唱快嘴测速素材库-第十九期（2022）</span><span class="ml-2 font-mono text-xs text-ink-3">bilibili.com ↗</span></a></li><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[13]</span><a href="https://docs.google.com/document/d/1UpOgX1BNIrPTK4F1JwibltfDSiVjJMLcQFbbmueJvUs" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">NahDah Vebb – 2021 版榜单曲目文档（[outdated] Top 150, 2021）</span><span class="ml-2 font-mono text-xs text-ink-3">docs.google.com ↗</span></a></li><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[14]</span><a href="https://www.bilibili.com/video/BV1Av4y1Z7d7/" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">B站 – NahDah Vebb：Top 150 Fastest Rappers 2021（转载，每条都有算式）</span><span class="ml-2 font-mono text-xs text-ink-3">bilibili.com ↗</span></a></li><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[15]</span><a href="https://genius.com/a/eminem-s-godzilla-verse-is-faster-than-rap-god-majesty" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">Genius – Eminem&#39;s “Godzilla” Verse Is Faster Than “Rap God” &amp; “Majesty”（2020）</span><span class="ml-2 font-mono text-xs text-ink-3">genius.com ↗</span></a></li><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[16]</span><a href="https://sps-and-chopper-rap.fandom.com/wiki/Crucified" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">SPS and Chopper Rap Wiki – Crucified</span><span class="ml-2 font-mono text-xs text-ink-3">sps-and-chopper-rap.fandom.com ↗</span></a></li><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[17]</span><a href="https://sps-and-chopper-rap.fandom.com/wiki/Infinite_choppers_1" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">SPS and Chopper Rap Wiki – Infinite choppers 1</span><span class="ml-2 font-mono text-xs text-ink-3">sps-and-chopper-rap.fandom.com ↗</span></a></li><li class="flex gap-3 text-sm"><span class="font-mono text-ink-3">[18]</span><a href="https://k.sina.cn/article_1163858357_v455f11b5019012ps5.html" target="_blank" rel="noopener nofollow" class="group min-w-0 flex-1"><span class="link-u text-ink-2 group-hover:text-ink">新浪 – 赵辰龙公开回应（2022-04-01）</span><span class="ml-2 font-mono text-xs text-ink-3">k.sina.cn ↗</span></a></li></ol></div></div><nav class="mt-16 grid max-w-3xl gap-4 sm:grid-cols-2" aria-label="上一篇 / 下一篇" data-astro-cid-yuqcs7zz><a href="/learn/chopper/" class="card p-5 transition hover:border-line-strong" data-astro-cid-yuqcs7zz><span class="eyebrow" data-astro-cid-yuqcs7zz>← 上一篇</span><span class="mt-2 block font-semibold" data-astro-cid-yuqcs7zz>Chop 的起源：从美国中西部到全世界</span></a><a href="/learn/guinness/" class="card p-5 text-right transition hover:border-line-strong" data-astro-cid-yuqcs7zz><span class="eyebrow" data-astro-cid-yuqcs7zz>下一篇 →</span><span class="mt-2 block font-semibold" data-astro-cid-yuqcs7zz>吉尼斯“最快说唱”纪录：谁真的拿过</span></a></nav></article></main><footer class="mt-32 border-t border-line"><div class="container-x grid gap-10 py-14 md:grid-cols-[1.4fr_1fr]"><div class="max-w-sm"><a href="/" class="text-2xl"><span class="inline-flex items-center gap-2 font-display font-bold tracking-tight" data-astro-cid-f7espo7c><span class="logo-bars" aria-hidden="true" data-astro-cid-f7espo7c><i style="--h:0.45;--i:0" data-astro-cid-f7espo7c></i><i style="--h:0.8;--i:1" data-astro-cid-f7espo7c></i><i style="--h:1;--i:2" data-astro-cid-f7espo7c></i><i style="--h:0.65;--i:3" data-astro-cid-f7espo7c></i><i style="--h:0.3;--i:4" data-astro-cid-f7espo7c></i></span><span data-astro-cid-f7espo7c>CHOP<span class="text-accent-text" data-astro-cid-f7espo7c>/</span></span></span></a><p class="mt-4 text-sm leading-relaxed text-ink-3">快速说唱资料库：中国快嘴专区与世界 chop 地图，人物、曲目、历史、语速数据，每条都附来源。</p></div><div><p class="eyebrow mb-4">导航</p><ul class="grid grid-cols-2 gap-2 text-sm"><li><a class="link-u text-ink-2 hover:text-ink" href="/china/">中国区</a></li><li><a class="link-u text-ink-2 hover:text-ink" href="/world/">世界</a></li><li><a class="link-u text-ink-2 hover:text-ink" href="/choppers/">人物</a></li><li><a class="link-u text-ink-2 hover:text-ink" href="/tracks/">曲目</a></li><li><a class="link-u text-ink-2 hover:text-ink" href="/series/">系列</a></li><li><a class="link-u text-ink-2 hover:text-ink" href="/timeline/">时间线</a></li><li><a class="link-u text-ink-2 hover:text-ink" href="/learn/">百科</a></li><li><a class="link-u text-ink-2 hover:text-ink" href="/lab/">实验室</a></li><li><a class="link-u text-ink-2 hover:text-ink" href="/about/">关于与版权</a></li></ul></div></div><div class="container-x flex flex-wrap justify-between gap-3 border-t border-line py-6 text-xs text-ink-3"><p>人物图片来自艺人官方 YouTube 频道或网易云音乐歌手页，版权归原作者所有，仅用于介绍和评论。</p><p class="font-mono">© 2026 CHOP/ · 非商业粉丝项目</p></div></footer><a href="/learn/" class="back-btn" data-back aria-label="返回（没有上一页时去百科）" data-pagefind-ignore data-astro-cid-whntzoeg><svg viewBox="0 0 24 24" class="size-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-whntzoeg><path d="M15 18l-6-6 6-6" data-astro-cid-whntzoeg></path></svg><span data-astro-cid-whntzoeg>返回</span></a><script type="module">var e=document.querySelector(`[data-back]`);if(e){e.addEventListener(`click`,e=>{let t=!1;try{t=!!document.referrer&&new URL(document.referrer).origin===location.origin}catch{}t&&history.length>1&&(e.preventDefault(),history.back())});let t=scrollY,n=!1;addEventListener(`scroll`,()=>{n||(n=!0,requestAnimationFrame(()=>{let r=scrollY;e.classList.toggle(`is-tucked`,r>t+4&&r>300),r<t-4&&e.classList.remove(`is-tucked`),t=r,n=!1}))},{passive:!0})}</script><!-- 返回时保留浏览进度：浏览器自己恢复了就不动，没恢复（部分 App 内置浏览器）才补一次 --><script>
+      (function () {
+        var key = 'scroll:' + location.pathname + location.search;
+        addEventListener('pagehide', function () {
+          try { sessionStorage.setItem(key, String(Math.round(scrollY))); } catch (e) {}
+        });
+        var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+        if (!nav || nav.type !== 'back_forward') return;
+        var y = 0;
+        try { y = Number(sessionStorage.getItem(key)) || 0; } catch (e) {}
+        if (y < 10) return;
+        addEventListener('load', function () {
+          requestAnimationFrame(function () { if (scrollY < 10) scrollTo(0, y); });
+        });
+      })();
+    </script></body></html><script type="module">function e(){let e=document.querySelectorAll(`[data-toc]`);if(!e.length)return;let t=new Map([...e].map(e=>[e.dataset.toc,e])),n=new IntersectionObserver(n=>{for(let r of n)r.isIntersecting&&(e.forEach(e=>e.classList.remove(`is-current`)),t.get(r.target.id)?.classList.add(`is-current`))},{rootMargin:`0px 0px -70% 0px`});document.querySelectorAll(`.prose-chop h2[id]`).forEach(e=>n.observe(e))}e();{let e=document.querySelector(`.read-progress`),t=document.querySelector(`.prose-chop`);if(e&&t){let n=!1,r=()=>{let r=t.getBoundingClientRect(),i=r.height-innerHeight*.6,a=Math.min(1,Math.max(0,-r.top/Math.max(1,i)));e.style.setProperty(`--rp`,a.toFixed(4)),n=!1};addEventListener(`scroll`,()=>{n||(n=!0,requestAnimationFrame(r))},{passive:!0}),r()}}</script>
